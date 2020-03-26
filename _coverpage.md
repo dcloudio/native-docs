@@ -2,7 +2,7 @@
 
 > 助力原生App 快速获取小程序能力
 
-[GitHub](https://github.com/xiaohuapunk/unimp-docs)
+[GitHub](https://github.com/dcloudio/native-docs)
 [Get Started](#概述)
 
 

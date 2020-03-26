@@ -4,31 +4,31 @@
 	
 * 下载
 
-	* [Android](UniMPSDK/SDKDownload/android.md)
-	* [iOS](/UniMPSDK/SDKDownload/ios.md)
-	* [源码公开策略](/UniMPSDK/SDKDownload/opensource.md)
+	* [Android](UniMPDocs/SDKDownload/android.md)
+	* [iOS](/UniMPDocs/SDKDownload/ios.md)
+	* [源码公开策略](/UniMPDocs/SDKDownload/opensource.md)
 	
 * 集成教程
 
-	* [Android](/UniMPSDK/UseSdk/android.md)
-	* [iOS](/UniMPSDK/UseSdk/ios.md)
+	* [Android](/UniMPDocs/UseSdk/android.md)
+	* [iOS](/UniMPDocs/UseSdk/ios.md)
 	
 * 功能点
 		
-	* [启动小程序](/UniMPSDK/Sample/start.md) 
+	* [启动小程序](/UniMPDocs/Sample/start.md) 
 	
 * 内置功能模块集成
 
-	* [Android](/UniMPSDK/UseModule/android.md)
-	* [iOS](/UniMPSDK/UseModule/ios.md)
+	* [Android](/UniMPDocs/UseModule/android.md)
+	* [iOS](/UniMPDocs/UseModule/ios.md)
 		
 * 扩展原生能力
 
-	* [Android](/UniMPSDK/Extension/android.md)
-	* [iOS](/UniMPSDK/Extension/ios.md)
+	* [Android](/UniMPDocs/Extension/android.md)
+	* [iOS](/UniMPDocs/Extension/ios.md)
 		
 	
 * 常见问题
 
-	* [Android](/UniMPSDK/FAQ/android.md)
-	* [iOS](/UniMPSDK/FAQ/ios.md)
+	* [Android](/UniMPDocs/FAQ/android.md)
+	* [iOS](/UniMPDocs/FAQ/ios.md)
