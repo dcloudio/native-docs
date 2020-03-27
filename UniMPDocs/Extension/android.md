@@ -206,7 +206,30 @@ module 支持在 vue 和 nvue 中使用
 	
  - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
  - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
- 
+ - Component 自定义事件
+	对于每个组件默认提供了一些事件能力，如点击等。也可以自定义事件。在uni小程序代码中，通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
+	
+	```JAVA
+	//原生触发fireEvent 自定义事件onTel
+	Map<String, Object> params = new HashMap<>();
+    Map<String, Object> number = new HashMap<>();
+    number.put("tel", telNumber);
+    //目前uni限制 参数需要放入到"detail"中 否则会被清理
+    params.put("detail", number);
+    fireEvent("onTel", params);
+	
+	```
+	```Javascript
+	//标签注册接收onTel事件
+	<myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
+	//事件回调
+	methods: {  
+		onTel: (e)=> {
+			console.log("onTel="+e.detail.tel);
+		}
+	}  
+	```
+	
 ### 3.注册TestComponent组件
 
 由于uni小程序运行在独立子进程中。内存与宿主不共享。所以`宿主进程`注册了`TestComponent`，在uni小程序是无法使用的。
@@ -245,11 +268,23 @@ public class App extends Application {
 ```Javascript
 <template>
 	<div>
-		<myText tel="12305" style="width:200;height:100"></myText>
+		<myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
 	</div>
 </template>
 
-<script>
-
+<script>  
+    export default {  
+        data() {  
+            return {  
+            }  
+        },  
+        onLoad() {  
+        },  
+        methods: {  
+			onTel: (e)=> {
+				console.log("onTel="+e.detail.tel);
+			}
+        }  
+    }  
 </script>
 ```
