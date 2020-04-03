@@ -81,14 +81,14 @@ var arguments = plus.runtime.arguments;
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
 
 ```
-pages/component/view/view?a=1&b=2
+pages/component/view/view?action=redirect
 ```
 
 **iOS 示例**
 
 ```Objcetive-C
 // 启动直达页面
-NSString *pagePath = @"pages/component/view/view?a=1&b=2";
+NSString *pagePath = @"pages/component/view/view?action=redirect";
 [DCUniMPSDKEngine openApp:k_AppId arguments:nil redirectPath:pagePaht];
 ```
 
@@ -96,5 +96,33 @@ NSString *pagePath = @"pages/component/view/view?a=1&b=2";
 
 ```JAVA
 // 启动直达页面
-DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/view/view?a=1&b=2");
+DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
 ```
+
+**屏蔽返回**
+
+直达二级页面如果您想屏蔽返回按钮及返回手势，可以在小程序页面的 `onLoad()` 方法中获取当前页面调用 `setStyle()` 方法实现，代码如下
+
+> `onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
+
+```
+// 启动直达二级页面屏蔽返回手势及返回按钮
+<script>
+	export default {
+		onLoad(e) {
+			// #ifdef APP-PLUS
+			// 判断是否为启动直达页面
+			if (e.action === "redirect") {
+				const currentWebview = this.$scope.$getAppWebview();
+				currentWebview.setStyle({
+					popGesture: 'none', // 取消手势返回
+					titleNView: { 
+						autoBackButton: false // 取消默认返回按钮
+					}
+				})
+			}
+			// #endif
+		}
+	}
+</script>
+``` 

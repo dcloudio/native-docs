@@ -15,7 +15,8 @@
 	
 * 功能点
 		
-	* [启动小程序](/UniMPDocs/Sample/start.md) 
+	* [启动小程序](/UniMPDocs/Sample/start.md)
+	* [关闭小程序](/UniMPDocs/Sample/close.md) 
 	
 * 内置功能模块集成
 
