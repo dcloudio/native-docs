@@ -1,13 +1,7 @@
 * 简介
 
 	* [简介](README.md)
-	
-* 下载
-
-	* [Android](UniMPDocs/SDKDownload/android.md)
-	* [iOS](/UniMPDocs/SDKDownload/ios.md)
-	* [源码公开策略](/UniMPDocs/SDKDownload/opensource.md)
-	
+		
 * 集成教程
 
 	* [Android](/UniMPDocs/UseSdk/android.md)
@@ -17,6 +11,7 @@
 		
 	* [启动小程序](/UniMPDocs/Sample/start.md)
 	* [关闭小程序](/UniMPDocs/Sample/close.md) 
+	* [宿主-小程序通讯](/UniMPDocs/Sample/event.md) 
 	
 * 内置功能模块集成
 
@@ -27,7 +22,12 @@
 
 	* [Android](/UniMPDocs/Extension/android.md)
 	* [iOS](/UniMPDocs/Extension/ios.md)
-		
+
+* 下载
+
+	* [Android](UniMPDocs/SDKDownload/android.md)
+	* [iOS](/UniMPDocs/SDKDownload/ios.md)
+	* [源码公开策略](/UniMPDocs/SDKDownload/opensource.md)	
 	
 * 常见问题
 
