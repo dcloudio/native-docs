@@ -1,5 +1,3 @@
-uni小程序SDK原生开发者交流QQ群： 892918401
-
 ## 概述 
 uni小程序SDK，是一个用于原生App中集成的SDK，它可以帮助原生App快速实现小程序的能力，效果如下：
 
@@ -16,13 +14,18 @@ uni小程序SDK，是一个用于原生App中集成的SDK，它可以帮助原�
 
 ## 集成流程
 1. 宿主开发者下载uni小程序sdk，根据文档集成到宿主App中
-2. 小程序开发者使用 HBuilderX 创建并完成 uni-app 开发，开发阶段可以通过运行到内置基座进行测试，开发完毕后在发行菜单导出wgt包
+2. 小程序开发者使用uni-app框架开发，通过运行到手机App进行测试，开发完毕后在发行菜单导出wgt包
 3. 宿主开发者将wgt集成到宿主App中，可离线集成直接打包进去，也可以在线下载wgt
 4. 通过uni小程序sdk的api，可以调起wgt，执行为一个小程序
 5. uni小程序支持wgt升级，可在线更新wgt应用，即热更新
 
+原生工程集成 uni小程序sdk 文档
+
+ - [iOS 原生工程集成 uni小程序SDK 教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36940)
+ - [Android 原生工程集成 uni小程序SDK 教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36958)
+
 ## 特色
-uni-app 在app端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。包括webview渲染在Android上也同时支持系统webview渲染和x5渲染。
+uni-app在app端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。包括webview渲染在Android上也同时支持系统webview渲染和x5渲染。
 
 - 性能
 uni小程序sdk的性能，与uni-app的app端v3编译器相同，性能超过市面其他小程序引擎。在启动速度、页面加载速度、逻辑层与视图层通信优化等方面均优有更优秀的表现。
