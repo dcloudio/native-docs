@@ -60,29 +60,12 @@ pre:after {
 	font-weight: 600;
 } */
 
-[data-page="/README.md"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="cloud"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="sponsor"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page="/share.md"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="snippet"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="template"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="frame"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="matter"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="platform"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="use"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="quickstart"] .app-nav.no-badge>ul>li:nth-child(1)>a,
 [data-page="README.md"] .app-nav.no-badge>ul>li:nth-child(1)>a,
-[data-page*="collocation"] .app-nav.no-badge>ul>li:nth-child(2)>a,
-[data-page*="component"] .app-nav.no-badge>ul>li:nth-child(3)>a,
-[data-page*="api"] .app-nav.no-badge>ul>li:nth-child(4)>a,
-[data-page*="uniCloud"] .app-nav.no-badge>ul>li:nth-child(5)>a {
+[data-page*="UniMPDocs/"] .app-nav.no-badge>ul>li:nth-child(1)>a,
+[data-page*="5PlusDocs/"] .app-nav.no-badge>ul>li:nth-child(2)>a,
+[data-page*="NativePlugin/"] .app-nav.no-badge>ul>li:nth-child(3)>a {
   border-bottom: 2px solid #42b983;
   color: #42b983;
-}
-
-[data-page*="uniCloud"] .app-nav.no-badge>ul>li:nth-child(1)>a {
-  border-bottom: none;
-  color: #34495e;
 }
 
 body.close .app-nav.no-badge {
