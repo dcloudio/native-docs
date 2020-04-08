@@ -1,4 +1,6 @@
 * [uni小程序 SDK](README.md)
+* [5+ SDK](5PlusDocs/README.md)
+* [原生插件开发](NativePlugin/README.md)
 
 <ul class="nav-href">
 	<li><a href="//dev.dcloud.net.cn/wish/?channel=uniapp" target="__blank">需求墙</a></li>
