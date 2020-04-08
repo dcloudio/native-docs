@@ -67,10 +67,10 @@ uni.onNativeEventReceive((event,data)=>{
 
 **参数说明**
 
-|属性|类型|说明|
-|:--|:--|:--|
-event|String|事件名称|
-data|String / JsonObject|宿主传递的数据|
+|属性|类型|说明
+|:---|:---|:---
+|event|String|事件名称
+|data|String或JsonObject|宿主传递的数据
 
 ## 小程序向宿主 App 发送事件
 
@@ -86,10 +86,10 @@ uni.sendNativeEvent(event,callback)
 
 **参数说明**
 
-|属性|类型|说明|
-|:--|:--|:--|
-event|String|事件名称|
-callback|Function|宿主App回调方法，参数可以是 String 或 JsonObject，取决于宿主的实现|
+|属性|类型|说明
+|:--|:--|:--
+|event|String|事件名称
+|callback|Function|宿主App回调方法。参数可以是 String 或 JsonObject。取决于宿主的实现
 
 **示例**
 

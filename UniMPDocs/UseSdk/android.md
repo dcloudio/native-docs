@@ -11,7 +11,7 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 
 打开Android Studio加载已有android项目或新建android项目。然后按照以下步骤配置您的项目。
 
-### 第一步、添加基础依赖库及资源文件
+## 添加基础依赖库及资源文件
 
 解压uni小程序SDK包。得到uniMPSDK文件夹。
 uniMPSDK文件夹目录结构说明:
@@ -266,7 +266,7 @@ try {
 }
 ```
 
-### Tips
+#### Tips
 
  - 以上示例代码可参考uniMPSDK中DEMO示例。
  - 由于uni小程序是多进程架构，在跨进程启动 Activity 的时候，activty 不可以是 singleTask 方式，否则会有页面栈问题（从小程序进入一个 activity，返回之后发现回到主进程了）。

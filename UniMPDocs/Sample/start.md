@@ -103,7 +103,9 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/vie
 
 直达二级页面如果您想屏蔽返回按钮及返回手势，可以在小程序页面的 `onLoad()` 方法中获取当前页面调用 `setStyle()` 方法实现，代码如下
 
-> `onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
+**Tips**
+
+`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
 
 ```
 // 启动直达二级页面屏蔽返回手势及返回按钮

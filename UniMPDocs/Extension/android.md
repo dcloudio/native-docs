@@ -12,7 +12,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 - 下载uni小程序 SDK [详情](https://ask.dcloud.net.cn/article/36939)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 
-### 注意事项
+## 注意事项
 
 如果你扩展的`Module`或`Component`要与宿主进行数据交互需要注意。宿主与小程序不在同一进程，内存不共享。所以需要开发者自己实现跨进程通信。后续会完善此交互问题。
 
@@ -22,7 +22,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 下面以`TestModule`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；
 
-### 1.创建Android Studio的Module模块
+#### 1.创建Android Studio的Module模块
 
  - 在现有Android项目中创建library的Module。例如`TestModule`
  - 配置刚创建的Module的build.gradle信息。
@@ -51,7 +51,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 	
 	uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	
-### 2.创建TestModule类
+#### 2.创建TestModule类
 
  - Module 扩展必须继承 WXModule 类
  
@@ -90,7 +90,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
  - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：-keep public class * extends com.taobao.weex.common.WXModule{*;}
  - Module 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
 
-### 3.注册TestModule
+#### 3.注册TestModule
 
 由于uni小程序运行在独立子进程中。内存与宿主不共享。所以`宿主进程`注册了`TestModule`，在uni小程序是无法使用的。
 Android创建子进程时会主动再次初始化Application！所以uni小程序注册`TestModule`必须在Application中的onCreate初始化或注册。
@@ -166,11 +166,11 @@ module 支持在 vue 和 nvue 中使用
 
 下面以`TestComponent`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；
 
-### 1.创建Android Studio的Module模块
+#### 1.创建Android Studio的Module模块
 
 请参考 扩展 Module
 
-### 2.创建TestComponent类
+#### 2.创建TestComponent类
 
  - Component 扩展类必须继承 WXComponent
 
@@ -219,7 +219,7 @@ module 支持在 vue 和 nvue 中使用
     fireEvent("onTel", params);
 	
 	```
-	```Javascript
+	```JS
 	//标签注册接收onTel事件
 	<myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
 	//事件回调
@@ -229,8 +229,13 @@ module 支持在 vue 和 nvue 中使用
 		}
 	}  
 	```
+ 	
+	**注意**
 	
-### 3.注册TestComponent组件
+	执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
+ 
+ 
+#### 3.注册TestComponent组件
 
 由于uni小程序运行在独立子进程中。内存与宿主不共享。所以`宿主进程`注册了`TestComponent`，在uni小程序是无法使用的。
 Android创建子进程时会主动再次初始化Application！所以uni小程序注册`TestComponent`必须在Application中的onCreate初始化或注册。
@@ -287,4 +292,31 @@ public class App extends Application {
         }  
     }  
 </script>
+```
+
+## Android 扩展开发小提示
+
+#### 查看Android原生日志
+
+小程序运行在独立子进程。所以想要看小程序的日志需要将进程切换到`io.dcloud.unimp`进程查看log！
+
+#### 查看小程序 console日志
+
+修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!
+修改后查看`io.dcloud.unimp`进程查看log。TAG为`console`
+
+#### 在WXModule、WXComponent中跳转原生页面
+
+获取WXSDKInstance对象。该对象中可以获取到上下文。
+
+**示例**
+
+```
+@JSMethod (uiThread = true)
+public void gotoNativePage(){
+    if(mWXSDKInstance != null) {
+        Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
+        mWXSDKInstance.getContext().startActivity(intent);
+    }
+}
 ```
