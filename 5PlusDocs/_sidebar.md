@@ -6,9 +6,7 @@
 * 内置功能模块集成
 	* [Android](/5PlusDocs/usemodule/android.md)
 	* [iOS](/5PlusDocs/usemodule/ios.md)
-* 导入App打包资源
-	* [Android](/5PlusDocs/importfeproject/android.md)
-	* [iOS](/5PlusDocs/importfeproject/ios.md)
+* [导入App打包资源](/5PlusDocs/importfeproject/ios.md)
 * 生成安装包
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
