@@ -40,6 +40,7 @@ HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为
 **开发方法和步骤请参考文档：**
 
 [IOS平台第三方插件开发指导](http://ask.dcloud.net.cn/article/67)
+
 [Android平台第三方插件开发指导](http://ask.dcloud.net.cn/article/66)
 
 
