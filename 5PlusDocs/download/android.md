@@ -17,6 +17,7 @@
 5.  修复 视频播放控件（VideoPlayer）可能无法播放某些本地视频文件的Bug
 6. 修复 数据库执行SQL语句（plus.sqlite.executeSql）传入错误sql语句时，可能在控制台输出错误日志且不触发错误回调的Bug
 
+
 ### 历史版本
 <details>
 <summary>展开查看</summary>

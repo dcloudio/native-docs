@@ -14,18 +14,22 @@ HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为
 
 **Android平台：**
 
-- [Android平台本地（离线）打包教程，导入5+SDK中自带的示例工程](https://ask.dcloud.net.cn/article/508)
-- [Android平台本地（离线）打包教程，创建最简打包工程](https://ask.dcloud.net.cn/article/13232)
+- [Android平台本地（离线）打包教程，导入5+SDK中自带的示例工程](/5PlusDocs/usesdk/useHBuilderHello.md)
+- [Android平台本地（离线）打包教程，创建最简打包工程](/5PlusDocs/usesdk/android.md)
+
+
+<!--
 - [Android平台本地（离线）打包，配置开通广告](https://ask.dcloud.net.cn/article/13141)
 - [Android平台本地（离线）打包，常见问题](https://ask.dcloud.net.cn/article/39)
 - [Android平台uni-app本地（离线）打包注意事项](https://ask.dcloud.net.cn/article/35139)
+-->
 
 **iOS平台：**
 
 **离线打包的配置方法可参考文档：**
 
 - [iOS离线打包](http://ask.dcloud.net.cn/article/41)
-- [安卓离线打包](http://ask.dcloud.net.cn/article/38)
+<!--- [安卓离线打包](http://ask.dcloud.net.cn/article/38)-->
 - [uni-app离线打包注意事项及配置](http://ask.dcloud.net.cn/article/35139)
 
 ## 开发HTML5+ 功能扩展
@@ -36,9 +40,11 @@ HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为
 **开发方法和步骤请参考文档：**
 
 [IOS平台第三方插件开发指导](http://ask.dcloud.net.cn/article/67)
+
 [Android平台第三方插件开发指导](http://ask.dcloud.net.cn/article/66)
 
 
+<!--
 ## HTML5+SDK 集成
 > 开发者可以在现有的项目中集成 HTML5+SDK，使自己开发中的项目能够使用HTLM5+扩展功能。
 HTML5+集成方式有两种，Widget应用方式集成和Webview方式集成。
@@ -63,3 +69,4 @@ HTML5+集成方式有两种，Widget应用方式集成和Webview方式集成。
 
 - [Android平台以WebView方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/80)
 - [iOS平台以WebView方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/83)
+-->
