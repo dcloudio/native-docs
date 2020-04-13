@@ -111,7 +111,7 @@ dependencies {
 
 ## 生成小程序应用资源
 
-**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！**
+**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！ 确保你的uniapp在HX基座可以正常运行**
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
@@ -282,6 +282,7 @@ try {
 #### uni小程序应用资源升级
 
  - 可通过SDK的getAppBasePath获取运行时路径。自行拷贝应用资源到运行时路径。也可通过SDK的releaseWgtToRunPathFromePath方法释放升级后的wgt资源包。直接替换原有应用资源。
+
 #### uni小程序应用删除
 
  - 可通过SDK的getAppBasePath获取运行时路径。遍历查找出要删除的appid应用资源路径。执行file删除操作即可。
