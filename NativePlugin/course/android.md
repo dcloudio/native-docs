@@ -6,7 +6,7 @@
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - 5+SDK下载：[最新android平台SDK下载](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)
 
-## 导入uni插件AndroidStudio工程项目
+## 导入uni插件示例工程
 
 - UniPlugin-Hello-AS工程请在[5+SDK](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
@@ -149,12 +149,52 @@ public void setTel(String telNumber) {
 ```
 - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
 - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
- 
-- Component 自定义事件
+- Component定义组件方法.
 
-对于每个组件默认提供了一些事件能力，如点击等。也可以自定义事件。在uni小程序代码中，通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
+ **示例:**
+ + 在组件中如下声明一个组件方法
+ ```JAVA
+ @JSMethod
+ public void clearTel() {
+    getHostView().setText("");
+ }
+ ```
+ + 注册组之后，你可以在weex 文件中调用
+ 
+ ```JS
+ <template>
+ 	<div>
+ 		<myText ref="telText" tel="12305" style="width:200;height:100" @onTel="onTel" @click="myTextClick"></myText>
+ 	</div>
+ </template>
+ <script>  
+     export default {  
+         methods: {  
+ 			myTextClick(e) {
+ 				this.$refs.telText.clearTel();
+ 			}
+         }  
+     } 
+ </script>  
+ ```
+ 
+### 自定义发送事件
+
+向JS环境发送一些事件，比如click事件
+```
+void fireEvent(elementRef,type)
+void fireEvent(elementRef,type, data)
+void fireEvent(elementRef,type,data,domChanges)
+```
+
+- `elementRef`(String)：产生事件的组件id
+- `type`(String): 事件名称，weex默认事件名称格式为"onXXX",比如`OnPullDown`
+- `data`(Map<String, Object>): 需要发送的一些额外数据，比如`click`时，view大小，点击坐标等等。
+- `domChanges`(Map<String, Object>): 目标组件的属性和样式发生的修改内容
 
 **示例:**
+
+通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
 
 ```JAVA
 //原生触发fireEvent 自定义事件onTel
@@ -176,16 +216,96 @@ methods: {
 	}
 }  
 ```
-	
+### JSCallback结果回调
+
+JS调用时，有的场景需要返回一些数，比如以下例子，返回x、y坐标
+```
+void invoke(Object data);
+void invokeAndKeepAlive(Object data);
+```
+- `invoke`调用javascript回调方法，此方法将在调用后被销毁。
+- `invokeAndKeepAlive` 调用javascript回调方法并保持回调活动以备以后使用。
+
+
 **注意**
 	
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
+### 示例RichAlert插件
+
+封装了一个 RichAlertWXModule, 富文本alert弹窗Module
+
+#### 代码可参考UniPlugin-Hello-AS工程中的uniplugin_richalert模块。（UniPlugin-Hello-AS工程请在5+SDK中查找）
+
+```JAVA
+public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
+    public String CONTENT = "content";
+    public String CONTENT_COLOR  = "contentColor";
+    public String CONTENT_ALIGN  = "contentAlign";
+    public String POSITION = "position";
+    public String BUTTONS = "buttons";
+    public String CHECKBOX = "checkBox";
+    public String TITLE_ALIGN = "titleAlign";
+```
+
+#### HBuilderX 项目中使用RichAlert示例
+
+```JS
+// require插件名称  
+const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');              
+
+// 使用插件  
+dcRichAlert.show({  
+    position: 'bottom',  
+    title: "提示信息",  
+    titleColor: '#FF0000',  
+    content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",  
+    contentAlign: 'left',  
+    checkBox: {  
+        title: '不再提示',  
+        isSelected: true  
+    },  
+    buttons: [{  
+        title: '取消'  
+    },  
+    {  
+        title: '否'  
+    },  
+    {  
+        title: '确认',  
+        titleColor: '#3F51B5'  
+    }  
+    ]  
+}, result => {  
+    switch (result.type) {  
+        case 'button':  
+            console.log("callback---button--" + result.index);  
+            break;  
+        case 'checkBox':  
+            console.log("callback---checkBox--" + result.isSelected);  
+            break;  
+        case 'a':  
+            console.log("callback---a--" + JSON.stringify(result));  
+            break;  
+        case 'backCancel':  
+            console.log("callback---backCancel--");  
+            break;  
+   }  
+});
+```
+
+### 插件注意事项
+
 #### 目前对weex支持的问题
 + Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
 + .vue暂时只能使用module形式。component还不支持在.vue下使用
-+ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法**
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_9.png)
++ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法
+
+|文件类型|是否支持js同步函数|是否支持component
+|:----|:----|:----
+|.vue|暂不支持|不支持
+|.nvue|支持|支持
+
 + component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityResume 、onActivityPause、onActivityResult其他暂时不支持
 
 #### 第三方依赖库
@@ -200,120 +320,141 @@ methods: {
 + Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
 如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
 			
-## 本地调试测试插件并运用到uni-app中
-* 本地注册插件
-	+ 第一种方式
-		- 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件。 在moudles节点下 添加你要注册的Module 或 Component
-    + 第二种方式
-	    - 创建一个实体类并实现AppHookProxy接口，在onCreate函数中添加weex注册相关参数 或 填写插件需要在启动时初始化的逻辑。
-		- 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现AppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成AppHookProxy接口)
-	 	- 具体写法如图：
-		![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_10.png)
-	以上两种方式选一即可
-	+ dcloud_uniplugins.json说明:
-	   - nativePlugins： 插件跟节点 可存放多个插件 
-	   - hooksClass： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
-	   - name : 注册名称， 
-	   - class : module 或 component 实体类完整名称  
-	   - type : module 或 component类型。
+## 插件调试
+
+### 本地注册插件
+
+以上两种方式选一即可
+
++ 第一种方式
+ - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件。 在moudles节点下 添加你要注册的Module 或 Component
++ 第二种方式
+ - 创建一个实体类并实现AppHookProxy接口，在onCreate函数中添加weex注册相关参数 或 填写插件需要在启动时初始化的逻辑。
+ - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现AppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成AppHookProxy接口)
+ 
+ ```JAVA
+  public class RichAlert_AppProxy implements AppHookProxy {
+  	@Override
+  	public void onCreate(Application application) {
+  		//可写初始化触发逻辑
+  	}
+  }
+  ```
+		
+
+#### 关于dcloud_uniplugins.json说明:
+- nativePlugins： 插件跟节点 可存放多个插件 
+- hooksClass： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
+- name : 注册名称， 
+- class : module 或 component 实体类完整名称  
+- type : module 或 component类型。
 	   
-		```
+```JSON
+{
+	"nativePlugins": [
 		{
-		  "nativePlugins": [
+		    "hooksClass": "uni.dcloud.io.uniplugin_richalert.apphooks",
+		    "plugins": [
 		    {
-		      "hooksClass": "uni.dcloud.io.uniplugin_richalert.apphooks",
-		      "plugins": [
-		        {
-		          "type": "module",
-		          "name": "DCloud-RichAlert",
-		          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertWXModule"
-		        }
-		      ]
+		        "type": "module",
+		        "name": "DCloud-RichAlert",
+		        "class": "uni.dcloud.io.uniplugin_richalert.RichAlertWXModule"
 		    }
-		  ]
+		    ]
 		}
-		```
+	]
+}
+```
 			
-### 本地测试运行带有插件的uni-app
-	- 安装最新[HbuilderX](http://www.dcloud.io/hbuilderx.html) 大于等于1.4.0.xxxxxx
-	- 创建uni-app工程或在已有的uni-app工程编写相关的.nvue 和.vue文件。使用uni-app插件中的module 或 component。
-	- xxx.vue 示例代码（RichAlert为示例）
-	    ```
-	    <template>
-	        <view>
-		        <button @click="showRichAlert">
-			        点击弹出RichAlert
-		        </button>
-	        </view>
-        </template>
-        <script>
-            // require插件名称
-	        const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');
-	        export default {
-		        methods: {
-		            showRichAlert() {
-		                // 使用插件
-				        dcRichAlert.show({
-					        position: 'bottom',
-					        title: "提示信息",
-					        titleColor: '#FF0000',
-					        content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",
-					        contentAlign: 'left',
-					        checkBox: {
-						        title: '不再提示',
-						        isSelected: true
-					        },
-					        buttons: [{
-							    title: '取消'
-						    },
-						    {
-							    title: '否'
-						    },
-						    {
-							    title: '确认',
-							    titleColor: '#3F51B5'
-						    }]
-				        }, result => {
-					        switch (result.type) {
-						        case 'button':
-							        console.log("callback---button--" + result.index);
-							    break;
-						        case 'checkBox':
-							        console.log("callback---checkBox--" + result.isSelected);
-							    break;
-						        case 'a':
-							        console.log("callback---a--" + JSON.stringify(result));
-							    break;
-						        case 'backCancel':
-							        console.log("callback---backCancel--");
-							    break;
-					       }
-				        });
-		            }
-		        }
-	        }
-        </script>
+### 集成uni-app项目测试插件
 
-	    ```
-	- 选择 发行--->原生APP-本地打包--->生成本地打包App资源 等待资源生成！
-        [attach]30046[/attach]
-    - 在控制台会输出编译日志，编译成功会给出App资源路径
-        [attach]30047[/attach]
-	- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](https://ask.dcloud.net.cn/article/508)。
-	- appid注意 一定要统一否则会导致应用无法正常运行！
-       [attach]30042[/attach]
-	- 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
+- 安装最新[HbuilderX](http://www.dcloud.io/hbuilderx.html) 大于等于1.4.0.xxxxxx
+- 创建uni-app工程或在已有的uni-app工程编写相关的.nvue 和.vue文件。使用uni-app插件中的module 或 component。
+- xxx.vue 示例代码（RichAlert为示例）
+
+```JS
+<template>
+	<view class="button-sp-area">
+		<button type="primary" plain="true" @click="showRichAlert()">点击显示弹窗</button>
+	</view>
+</template>
+<script>
+	const modal = uni.requireNativePlugin('modal');
+	const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');
+	export default {
+		data() {
+			return {
+				title: ''
+			}
+		},
+		methods: {
+			showRichAlert() {
+				dcRichAlert.show({
+					position: 'bottom',
+					title: "提示信息",
+					titleColor: '#FF0000',
+					content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",
+					contentAlign: 'left',
+					checkBox: {
+						title: '不再提示',
+						isSelected: true
+					},
+					buttons: [{
+							title: '取消'
+						},
+						{
+							title: '否'
+						},
+						{
+							title: '确认',
+							titleColor: '#3F51B5'
+						}
+					]
+				}, result => {
+					const msg = JSON.stringify(result);
+					modal.toast({
+						message: msg,
+						duration: 1.5
+					});
+					switch (result.type) {
+						case 'button':
+							console.log("callback---button--" + result.index);
+							break;
+						case 'checkBox':
+							console.log("callback---checkBox--" + result.isSelected);
+							break;
+						case 'a':
+							console.log("callback---a--" + JSON.stringify(result));
+							break;
+						case 'backCancel':
+							console.log("callback---backCancel--");
+							break;
+					}
+				});
+			}
+		}
+	}
+</script>
+```
+- 选择 发行--->原生APP-本地打包--->生成本地打包App资源 等待资源生成！
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_14.png)
+- 在控制台会输出编译日志，编译成功会给出App资源路径
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png)
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](https://ask.dcloud.net.cn/article/508)。
+- appid注意 一定要统一否则会导致应用无法正常运行！
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png)
+- 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
 	
-		```
-		// 添加uni-app插件
-    	implementation project(':uniplugin_richalert')	
-		```
-	- 运行测试。测试运行时一切要以真机运行为主。
+```
+// 添加uni-app插件
+implementation project(':uniplugin_richalert')	
+```
+- 运行测试。测试运行时一切要以真机运行为主。
 
-## 六、打包uni-app插件
+## 生产uni-app插件
 + 选择Gradle--->插件module--->Tasks--->build--->assembleRelease编译module的aar文件
 **注意：新版本Android studio将assembleRelease放入other中了**
-[attach]30080[/attach]
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_17.png)
 + 将编译依赖库文件或仓储代码放入libs目录下或配置到package.json中
 + 在[package.json](https://ask.dcloud.net.cn/article/35414)填写必要的信息
 + 完整的android 插件包包含：
@@ -324,14 +465,14 @@ methods: {
 		- [点击查看具体说明](https://ask.dcloud.net.cn/article/35414) 
 + 生成提交插件市场的.ZIP包
 	- 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
-	[attach]29283[/attach]
+	![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
 	- 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
-        [attach]29284[/attach]
+    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
 - **注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
 + [本地uni-app原生插件提交云端打包](https://ask.dcloud.net.cn/article/35844)
 
 
-## 七、如果想要共享给其他开发者，把这个插件提交插件市场
+## 如果想要共享给其他开发者，把这个插件提交插件市场
 
 + [提交插件到DCloud插件市场](https://ask.dcloud.net.cn/article/35426)
 
