@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-待补充
-=======
 ## 开发者须知
 在您阅读此文档时，我们假定您已经具备了相应Android应用开发经验，使用Android Studio开发过Android原生。学习过 weex 知识并能够理解相关概念。您也应该对HTML,JavaScript,CSS等有一定的了解, 并且熟悉在JavaScript和JAVA环境下的JSON格式数据操作等。
 
@@ -500,4 +497,3 @@ implementation project(':uniplugin_richalert')
 
 **iOS原生插件开发参考：[https://ask.dcloud.net.cn/article/35415](https://ask.dcloud.net.cn/article/35415)**
 更多uni-app原生插件文档参考：[uni-app原生插件开发指南](https://ask.dcloud.net.cn/article/35428)
->>>>>>> 608089e10df144af9c586206329659eb2ac28121
