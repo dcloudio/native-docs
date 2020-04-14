@@ -1,7 +1,7 @@
 ## 概述
 扩展原生能力指的是将您原生开发的功能通过一定规范暴露给 uni小程序环境，然后即可在 uni小程序应用中调用您的原生功能。
 
-### 扩展方式
+## 扩展方式
 
 uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力有两种方式：一种是不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，这种情况可通过扩展`module`的方式来实现；另一种是需要参与页面布局，比如：map、image，这种情况需要通过扩展`component`即组件的方法来实现；
 
@@ -206,33 +206,34 @@ module 支持在 vue 和 nvue 中使用
 	
  - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
  - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
- - Component 自定义事件
-	对于每个组件默认提供了一些事件能力，如点击等。也可以自定义事件。在uni小程序代码中，通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
-	
-	```JAVA
-	//原生触发fireEvent 自定义事件onTel
-	Map<String, Object> params = new HashMap<>();
-    Map<String, Object> number = new HashMap<>();
-    number.put("tel", telNumber);
-    //目前uni限制 参数需要放入到"detail"中 否则会被清理
-    params.put("detail", number);
-    fireEvent("onTel", params);
-	
-	```
-	```JS
-	//标签注册接收onTel事件
-	<myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
-	//事件回调
-	methods: {  
-		onTel: (e)=> {
-			console.log("onTel="+e.detail.tel);
-		}
-	}  
-	```
- 	
-	**注意**
-	
-	执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
+ - Component定义组件方法.
+
+ **示例:**
+ + 在组件中如下声明一个组件方法
+ ```JAVA
+ @JSMethod
+ public void clearTel() {
+    getHostView().setText("");
+ }
+ ```
+ + 注册组之后，你可以在weex 文件中调用
+ 
+ ```JS
+ <template>
+ 	<div>
+ 		<myText ref="telText" tel="12305" style="width:200;height:100" @onTel="onTel" @click="myTextClick"></myText>
+ 	</div>
+ </template>
+ <script>  
+     export default {  
+         methods: {  
+ 			myTextClick(e) {
+ 				this.$refs.telText.clearTel();
+ 			}
+         }  
+     } 
+ </script>  
+ ```
  
  
 #### 3.注册TestComponent组件
@@ -293,6 +294,64 @@ public class App extends Application {
     }  
 </script>
 ```
+
+## 自定义发送事件
+
+向JS环境发送一些事件，比如click事件
+```
+void fireEvent(elementRef,type)
+void fireEvent(elementRef,type, data)
+void fireEvent(elementRef,type,data,domChanges)
+```
+
+- `elementRef`(String)：产生事件的组件id
+- `type`(String): 事件名称，weex默认事件名称格式为"onXXX",比如`OnPullDown`
+- `data`(Map<String, Object>): 需要发送的一些额外数据，比如`click`时，view大小，点击坐标等等。
+- `domChanges`(Map<String, Object>): 目标组件的属性和样式发生的修改内容
+
+**示例:**
+
+通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
+
+```JAVA
+//原生触发fireEvent 自定义事件onTel
+Map<String, Object> params = new HashMap<>();
+Map<String, Object> number = new HashMap<>();
+number.put("tel", telNumber);
+//目前uni限制 参数需要放入到"detail"中 否则会被清理
+params.put("detail", number);
+fireEvent("onTel", params);
+```
+
+```JS
+//标签注册接收onTel事件
+<myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
+//事件回调
+methods: {  
+	onTel: (e)=> {
+		console.log("onTel="+e.detail.tel);
+	}
+}  
+```
+
+**注意**
+	
+执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
+
+## JSCallback结果回调
+
+JS调用时，有的场景需要返回一些数，比如以下例子，返回x、y坐标
+```
+void invoke(Object data);
+void invokeAndKeepAlive(Object data);
+```
+- `invoke`调用javascript回调方法，此方法将在调用后被销毁。
+- `invokeAndKeepAlive` 调用javascript回调方法并保持回调活动以备以后使用。
+
+
+**注意**
+	
+执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
 ## Android 扩展开发小提示
 

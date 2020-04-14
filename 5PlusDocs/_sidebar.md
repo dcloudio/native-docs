@@ -11,8 +11,8 @@
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
 * SDK 下载
-	* [Android](/5PlusDocs/download/android.md)
-	* [iOS](/5PlusDocs/download/ios.md)
+	* [正式版SDK](https://ask.dcloud.net.cn/article/103)
+	* [Alpha版SDK](https://ask.dcloud.net.cn/article/35968)
 <div class="contact-box">
 	<div class="contact-item">
 	  <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>

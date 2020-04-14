@@ -30,7 +30,7 @@
 
 [iOS离线打包 - 语音识别(Speech)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/35358)
 
-[iOS离线打包 - LivePusher直播推流插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/35376)
+[iOS离线打包 - 直播推流(LivePusher)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/35376)
 
 [iOS离线打包 - 消息推送(Push)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/171)
 
@@ -43,3 +43,7 @@
 [iOS离线打包 - 支付(Payment)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/246)
 
 [iOS离线打包 - 登录鉴权(Oauth)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/309)
+
+[iOS离线打包 - uni-AD广告联盟配置](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36807)
+
+[iOS离线打包 - UIWebview模块](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36348)
