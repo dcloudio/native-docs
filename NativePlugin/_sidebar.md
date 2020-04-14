@@ -1,5 +1,8 @@
 * 简介
 	* [概述](/NativePlugin/README.md)
+* 开发教程
+	* [Android](/NativePlugin/course/android.md) 
+	* [iOS](/NativePlugin/course/ios.md) 
 <div class="contact-box">
 	<div class="contact-item">
 	  <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
