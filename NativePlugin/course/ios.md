@@ -138,11 +138,11 @@ dcRichAlert.show({
 Module扩展和Component扩展在引用中的name 需要前缀加入你自己的标识，防止插件冲突。 
 如示例中配置的name为“DCloud-RichAlert”，其中“DCloud”就是标识！
 
-###4.1 编译生成插件静态库.a文件
+### 4.1 编译生成插件静态库.a文件
 .a库必须是真机环境的，并且需要支持armv7和arm64架构，且Build Active Architecture Only设置为NO，您可以在终端用以下命令查看.a库支持的架构：
 lipo -info libWeexDCRichAlert.a
 
-###4.2 编写package.json文件，按下列链接配置
+### 4.2 编写package.json文件，按下列链接配置
 [点击查看详细配置说明](https://ask.dcloud.net.cn/article/35414)
 iOS平台 package.json 详细说明请查看这篇文档前面部分，会帮助您更好的理解如何配置 [https://ask.dcloud.net.cn/article/35764](https://ask.dcloud.net.cn/article/35764)
 
@@ -155,7 +155,7 @@ iOS 插件包 至少需要包含：package.json文件  和 ios文件夹（名称
 
 <img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20181228/c1c6f7a00519142961e2edb9cf87bef4.png" width="70%">
 
-###4.3 生成.zip包
+### 4.3 生成.zip包
  将DCloud-RichAlert文件夹打成zip包，zip包的名称为（DCloud-RichAlert.zip）然后准备提交插件市场，其中***DCloud-RichAlert文件夹名称和package.json 里id的值一致，zip包的名称是id值***。
 
 ## 五、如果想要共享给其他开发者，把这个插件提交插件市场
