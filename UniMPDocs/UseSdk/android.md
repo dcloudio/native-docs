@@ -36,14 +36,21 @@ uniMPSDK文件夹目录结构说明:
 
 Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可根据功能增删修改。具体可阅读`Features 依赖库说明.xls`参考修改添加等操作。
 
-以下`依赖库`是宿主必须集成的。不集成会导致小程序无法正常运行
+除视频、地图、分享、支付、登录、直播pusher等功只集成基础模块如下:
 
-```
-uniMPSDK-release.aar
-uniapp-release.aar
-miit_mdid_1.0.10.aar
-android-gif-drawable-release@1.2.17.aar
-```
+ ```
+ uniMPSDK-release.aar  //必须集成
+ uniapp-release.aar //必须集成
+ sqlite-release.aar
+ miit_mdid_1.0.10.aar //必须集成
+ messaging-release.aar
+ iBeacon-release.aar
+ fingerprint-release.aar
+ contacts-release.aar
+ Bluetooth-release.aar
+ android-gif-drawable-release@1.2.17.aar //必须集成
+ ```
+**标注`必须集成`的依赖库一定要集成。否则会导致小程序无法正常运行**
 
 **注意**
 

@@ -6,7 +6,7 @@
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - 5+SDK下载：[最新android平台SDK下载](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)
 
-## 导入uni插件示例工程
+## 导入uni插件原生项目
 
 - UniPlugin-Hello-AS工程请在[5+SDK](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
@@ -178,7 +178,7 @@ public void setTel(String telNumber) {
  </script>  
  ```
  
-### 自定义发送事件
+### component 自定义发送事件
 
 向JS环境发送一些事件，比如click事件
 ```
@@ -194,7 +194,7 @@ void fireEvent(elementRef,type,data,domChanges)
 
 **示例:**
 
-通过 @事件名="方法名" 添加事件，如下添加`onTel`事件
+以myText标签为例， 通过 @事件名="方法名" 添加事件，如下添加`onTel`事件，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_component`模块
 
 ```JAVA
 //原生触发fireEvent 自定义事件onTel
@@ -226,12 +226,25 @@ void invokeAndKeepAlive(Object data);
 - `invoke`调用javascript回调方法，此方法将在调用后被销毁。
 - `invokeAndKeepAlive` 调用javascript回调方法并保持回调活动以备以后使用。
 
+**示例：**
+
+```JAVA
+@JSMethod(uiThread = true)
+public void testAsyncFunc(JSONObject options, JSCallback callback) {
+    Log.e(TAG, "testAsyncFunc--"+options);
+    if(callback != null) {
+        JSONObject data = new JSONObject();
+        data.put("code", "success");
+        callback.invoke(data);
+    }
+}
+```
 
 **注意**
 	
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
-### 示例RichAlert插件
+### RichAlert插件
 
 封装了一个 RichAlertWXModule, 富文本alert弹窗Module
 

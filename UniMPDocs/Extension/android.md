@@ -160,6 +160,9 @@ module 支持在 vue 和 nvue 中使用
 
 ```
 
+**Tips** 
+
+uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持该方法！
 
 
 ## 扩展组件 component 
