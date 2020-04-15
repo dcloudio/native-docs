@@ -128,7 +128,7 @@
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-8.png)
 		
-	[HBuilderX导出资源](https://ask.dcloud.net.cn/question/60254)
+	[导入app资源](/5PlusDocs/importfeproject/android.md)
 		
 	* 修改dcloud_control.xml文件
 
@@ -136,7 +136,7 @@
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-9.png)
 
-5. 模块配置
+<!--5. 模块配置
 
 	* 依赖库配置
 
@@ -170,102 +170,12 @@
 		* [地图插件配置](http://ask.dcloud.net.cn/article/212)
 		* [支付插件配置](http://ask.dcloud.net.cn/article/214)
 		* [定位插件配置](http://ask.dcloud.net.cn/article/213)
+
+-->
 	
 ## 运行
 
 连接手机，点击运行即可。
-	
-## 其他配置及注意事项
-
-* 广告配置
-
-	新版本SDK简化了离线打包支持[DCloud广告联盟](http://ask.dcloud.net.cn/article/13084)功能。
-	AndroidManifest.xml文件中添加如下节点到<application>节点中，并配置替换其中5+应用appid、广告联盟会员adid的值和渠道标识，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为5+应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现**。
-	
-	~~~
-   <meta-data android:name="DCLOUD_AD_ID" android:value="广告标识"/>
-   <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"/><!--如果不开启开屏广告则不设置此字段或者值设置为false-->
-   <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="包名|应用标识|广告标识|渠道，如io.dcloud.appid|appid|adid|google" /><!--为了保证广告统计的有效性，请正确设置此值-->
-	~~~
-	
-	+ 包名：对应Android项目中build.gradle中的applicationId，如io.dcloud.HBuilder
-	+ 应用标识：对应对应5+或uni-app项目manifest.json中appid
-	+ 广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可
-	+ 渠道：[渠道包制作指南](http://ask.dcloud.net.cn/article/35974)
-
-	注意：以上操作只是配置5+应用具备广告能力，实际开通需要在manifest.json配置开关，具体参考[DCloud广告联盟](http://ask.dcloud.net.cn/article/13084)。
-	
-	**注意：提交谷歌应用市场（Google Play）时一定要将渠道标识设置为google！！！**
-
-* provider配置
-	
-	在Androidmanifest.xml的application节点中添加如下内容
-	~~~
-		<provider
-            android:name="io.dcloud.common.util.DCloud_FileProvider"
-            android:authorities="${apk.applicationId}.dc.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/dcloud_file_provider" />
-        </provider>
-	~~~
-
-	${apk.applicationId}须替换成应用的包名。
-
-* x5配置
-
-	如果需要使用x5内核，将webview-x5-release.aar拷贝到libs目录下，直接运行即可。
-	
-	uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目录下即可。
-	
-* 推送上传谷歌市场注意事项
-
-	SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，解决部分用户上传谷歌市场违反相关政策的问题。
-	
-	如需上传谷歌应用市场，个推须将aps-igexin-release.aar替换成aps-igexin-gp-release.aar，UniPush须将aps-unipush-release.aar替换成aps-unipush-gp-release.aar。
-	
-	谷歌市场版的个推需要在原配置的基础上新增如下内容
-	
-	~~~
-	        <service  
-	            android:name="io.dcloud.feature.apsGt.GTPushDevService"  
-	            android:exported="true"  
-	            android:label="PushService"  
-	            android:process=":pushservice" />  
-	        <activity  
-	            android:name="com.igexin.sdk.PrivacyActivity"  
-	            android:exported="false"/>  
-	~~~
-
-* 高德地图上传谷歌市场注意事项
-
-	如需上传谷歌市场，将原来的amap-libs-release.aar替换成amap-gp-libs-release.aar即可。
-	
-* uni-app离线打包注意事项
-
-	[uni-app离线打包Android平台注意事项](https://ask.dcloud.net.cn/article/35139)
-	
-* 重写application
-
-	如果集成离线SDK时需要重写application，必须继承自DCloudApplication，否则会导致SDK中业务逻辑无法正常运行。
-	
-	将对应的application配置到Androidmanifest.xml中（如下），并添加tools:replace="android:name"以防出现冲突。
-	
-	~~~
-	<application  
-	    android:name="io.dcloud.test.TestApplication"  
-	    android:icon="@drawable/icon"  
-	    android:label="@string/app_name"  
-	    tools:replace="android:name">
-	</application>
-	~~~
-	
-* 添加so库
-
-	如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，如果添加其他文件夹会导致在部分手机上无法运行。
-
 	
 
 	

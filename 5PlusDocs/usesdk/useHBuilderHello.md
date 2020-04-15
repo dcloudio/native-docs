@@ -9,7 +9,7 @@
 + libs：SDK库文件目录
 + Feature-Android.xls：Android平台各扩展Feature API对应的permission
 + Readme.txt：版本说明文件
-+ UniPlugin-Hello-AS uni-app 插件开发示例
++ UniPlugin-Hello-AS： uni-app 插件开发示例
 
 ### 导入HBuilder-Hello
 点击Android studio file -> New -> Import Projet... 如下

@@ -26,10 +26,11 @@
 	
 ## 其他模块配置
 
-* [推送插件配置](http://ask.dcloud.net.cn/article/227)
-* [分享插件配置](http://ask.dcloud.net.cn/article/210)
-* [登陆鉴权插件配置](http://ask.dcloud.net.cn/article/211)
-* [地图插件配置](http://ask.dcloud.net.cn/article/212)
-* [支付插件配置](http://ask.dcloud.net.cn/article/214)
-* [定位插件配置](http://ask.dcloud.net.cn/article/213)
+* [推送插件配置](/5PlusDocs/usemodule/androidModuleConfig/push.md)
+* [分享插件配置](/5PlusDocs/usemodule/androidModuleConfig/share.md)
+* [登陆鉴权插件配置](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
+* [地图插件配置](/5PlusDocs/usemodule/androidModuleConfig/map.md)
+* [支付插件配置](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
+* [定位插件配置](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
+* [语音识别插件配置](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
 	
