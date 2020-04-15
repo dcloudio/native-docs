@@ -87,7 +87,10 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
     }
 	```
 	
- - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：-keep public class * extends com.taobao.weex.common.WXModule{*;}
+ - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
+ ```
+ -keep public class * extends com.taobao.weex.common.WXModule{*;}
+ ```
  - Module 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
 
 #### 3.注册TestModule
@@ -207,7 +210,11 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
     }
 	```
 	
- - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+ - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
+ ```
+ -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+ ```
+ 
  - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
  - Component定义组件方法.
 
@@ -298,7 +305,7 @@ public class App extends Application {
 </script>
 ```
 
-## 自定义发送事件
+## component 自定义发送事件
 
 向JS环境发送一些事件，比如click事件
 ```
@@ -351,6 +358,19 @@ void invokeAndKeepAlive(Object data);
 - `invoke`调用javascript回调方法，此方法将在调用后被销毁。
 - `invokeAndKeepAlive` 调用javascript回调方法并保持回调活动以备以后使用。
 
+**示例：**
+
+```JAVA
+@JSMethod(uiThread = true)
+public void testAsyncFunc(JSONObject options, JSCallback callback) {
+    Log.e(TAG, "testAsyncFunc--"+options);
+    if(callback != null) {
+        JSONObject data = new JSONObject();
+        data.put("code", "success");
+        callback.invoke(data);
+    }
+}
+```
 
 **注意**
 	
