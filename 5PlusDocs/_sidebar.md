@@ -25,7 +25,9 @@
 	* Android
 		* [正式版](/5PlusDocs/download/android.md)
 		* [Alpha版](/5PlusDocs/download/android-alpha.md)
-	* [iOS](https://ask.dcloud.net.cn/article/35968)
+    * iOS
+    * [正式版](/5PlusDocs/download/ios.md)
+    * [Alpha版](/5PlusDocs/download/ios-alpha.md)
 * 注意事项
 	* [Android](/5PlusDocs/FAQ/android.md)
 <div class="contact-box">
