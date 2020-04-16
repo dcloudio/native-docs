@@ -15,16 +15,18 @@
 		* [语音识别插件配置](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
 		* [uni-AD广告联盟配置](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
 	* [iOS](/5PlusDocs/usemodule/ios.md)
-* [导入App打包资源](/5PlusDocs/importfeproject/ios.md)
+* 导入App打包资源
 	* [Android](/5PlusDocs/importfeproject/android.md)
 	* [iOS](/5PlusDocs/importfeproject/ios.md)
 * 生成安装包
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
+* 扩展原生能力
+ 	* [Android](/5PlusDocs/extends/android.md)
 * SDK 下载
 	* Android
-		* [正式版](/5PlusDocs/download/android.md)
-		* [Alpha版](/5PlusDocs/download/android-alpha.md)
+	* [正式版](/5PlusDocs/download/android.md)
+	* [Alpha版](/5PlusDocs/download/android-alpha.md)
     * iOS
     * [正式版](/5PlusDocs/download/ios.md)
     * [Alpha版](/5PlusDocs/download/ios-alpha.md)
