@@ -13,7 +13,7 @@
 
 2.打开Info.plist文件找到umeng项，如果没有按图片中的格式添加该项，在下图中的红色区域输入申请的Appkey
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/statistic/28764.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/statistic/2117.png)
 
 
 ## 注意：

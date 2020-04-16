@@ -34,8 +34,8 @@
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
 * 扩展原生能力
- 	* [Android](/5PlusDocs/extends/android.md)
-        * [iOS](/5PlusDocs/extends/iOS.md)
+	* [Android](/5PlusDocs/extends/android.md)
+    * [iOS](/5PlusDocs/extends/iOS.md)
 * SDK 下载
     * Android
         * [正式版](/5PlusDocs/download/android.md)
