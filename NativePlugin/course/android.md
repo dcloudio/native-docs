@@ -4,11 +4,11 @@
 ## 开发环境 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 5+SDK下载：[最新android平台SDK下载](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)
+- 5+SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
 
 ## 导入uni插件原生项目
 
-- UniPlugin-Hello-AS工程请在[5+SDK](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)中查找
+- UniPlugin-Hello-AS工程请在[5+SDK](/5PlusDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png)
@@ -450,7 +450,7 @@ dcRichAlert.show({
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_14.png)
 - 在控制台会输出编译日志，编译成功会给出App资源路径
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png)
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](https://ask.dcloud.net.cn/article/508)。
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](/5PlusDocs/usesdk/android.md)。
 - appid注意 一定要统一否则会导致应用无法正常运行！
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png)
 - 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
@@ -466,27 +466,29 @@ implementation project(':uniplugin_richalert')
 **注意：新版本Android studio将assembleRelease放入other中了**
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_17.png)
 + 将编译依赖库文件或仓储代码放入libs目录下或配置到package.json中
-+ 在[package.json](https://ask.dcloud.net.cn/article/35414)填写必要的信息
++ 在[package.json](/NativePlugin/course/package.md)填写必要的信息
 + 完整的android 插件包包含：
 	- android文件 里面存放XXX.aar 、libs文件夹。
 		- .aar文件 插件包
 		- libs文件夹 存放插件包依赖的第三方 .jar文件和.so文件 
 	- package.json 插件信息
-		- [点击查看具体说明](https://ask.dcloud.net.cn/article/35414) 
-+ 生成提交插件市场的.ZIP包
-	- 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
-	![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
-	- 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
-    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
-- **注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
-+ [本地uni-app原生插件提交云端打包](https://ask.dcloud.net.cn/article/35844)
-
+		- [点击查看具体说明](/NativePlugin/course/package.md) 
 
 ## 如果想要共享给其他开发者，把这个插件提交插件市场
 
-+ [提交插件到DCloud插件市场](https://ask.dcloud.net.cn/article/35426)
+**1. 生成提交插件市场的.ZIP包**
+
+- 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
+- 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
+
+**注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
+
+**2. 登录注册**[DCloud插件市场](http://ext.dcloud.net.cn/) 按提示步骤提交插件（需要编写对应插件的说明文档，md（markdown） 格式）
 
 不提交插件市场，也可以在HBuilderX里提交云端打包。
++ [本地uni-app原生插件提交云端打包](/NativePlugin/use/use_local_plugin.md)
 
 ## 插件注意事项
 

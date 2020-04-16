@@ -9,7 +9,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 下载uni小程序 SDK [详情](https://ask.dcloud.net.cn/article/36939)；
+- 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 
 ## 注意事项

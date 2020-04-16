@@ -7,6 +7,9 @@
 	* [启动小程序](UniMPDocs/Sample/start.md)
 	* [关闭小程序](UniMPDocs/Sample/close.md) 
 	* [宿主-小程序通讯](UniMPDocs/Sample/event.md) 
+* API 参考手册
+	* [Android](UniMPDocs/API/android.md)
+	* [iOS](UniMPDocs/API/ios.md)
 * 内置功能模块集成
 	* [Android](UniMPDocs/UseModule/android.md)
 	* [iOS](UniMPDocs/UseModule/ios.md)
