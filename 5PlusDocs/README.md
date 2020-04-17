@@ -3,7 +3,7 @@
 HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为原生SDK，可作为以下用途：
 
 1. 使用5+ SDK实现本地（离线）打包。
-2. 通过原生开发扩展5+runtime的能力，uni-app项目推荐开发[uni-app原生插件](https://ask.dcloud.net.cn/article/35428)，5+APP项目开发[5+插件](/5PlusDocs/README.md?id=开发html5-功能扩展)。
+2. 通过原生开发扩展5+runtime的能力，uni-app项目推荐开发[uni-app原生插件](/NativePlugin/README.md)，5+APP项目开发[5+插件](/5PlusDocs/README.md?id=开发html5-功能扩展)。
 3. 在现有原生项目中使用HTML5+ SDK替换原有的webview，以获得更强的web增强表现。
 
 **uni-app项目发行为APP时也可以使用5+SDK本地（离线）打包**

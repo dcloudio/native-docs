@@ -1,19 +1,17 @@
-## FAQ
-
-### Q：iOS 原生工程弹窗提示 “HTML5 + Rumtime D”
+## Q：原生工程弹窗提示 “HTML5 + Rumtime D”
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200226/b761ed2d441819a7a369fbffc9ee7586.png)
 
 A：请参考解决方法 [点击查看详情](https://ask.dcloud.net.cn/article/35963)
 
-### Q：提示 打包时未添加  xxx 模块 ... 
+## Q：提示 打包时未添加  xxx 模块 ... 
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200320/71334000758150ffe0b3440e4f29e3e0.png)
 
 A： 请参考这个 [教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36942) 将相关模块的依赖文件集成到原生工程中即可；
 
 <a id="duplicatesymbol"></a>
-### Q：三方库冲突
+## Q：三方库冲突
 A：如果您原生工程依赖的三方库与SDK依赖的三方库冲突
 
 - 源码开源的三方库比如 SDWebImage、ZXing等，这类库SDK内部大多数已经做过源码修改，为了保证功能的完整性所以请您使用SDK内置的三方库，移除您之前依赖的三方库，这些库的 .h 头文件存放在 UNMPSDK/Features/inc 路径中的，将对应库的头文件引入到您的工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
