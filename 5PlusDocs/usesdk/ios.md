@@ -15,6 +15,8 @@
 - HBuilder-Hello工程：包含所有模块的离线打包演示工程.
 - Feature-iOS.xls文件：包含iOS平台各扩展模块和核心模块的库配置关系.
 - SDK文件：包含打包工程需要的库文件，.h头文件，配置文件，资源文件等
+- 详细说明:[iOS平台-离线包内各个文件夹的作用](/5PlusDocs/usesdk/iOSReadMe.md)
+
 **注意：HBuilderX运行环境相关库文件已全部包含在HBuilder-Hello演示工程中**
 
 ## 准备工程

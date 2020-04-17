@@ -1,4 +1,4 @@
-## 配置应用需要用的功能模块
+## 模块配置
 ### 比如配置蓝牙模块
 1、打开“Feature-iOS.xls”文件，查看模块的配置要求，如下图：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx1.png)
@@ -25,25 +25,17 @@
 
 运行时如果提示“打包时未添加XXX模块”，（非中文提示时需要配置国际化），请参考SDK/Feature-ios.xls文件，查找对应插件名需要引入的5+库文件和系统库文件，添加到工程即可
 
-## 其他功能模块的配置文章
-[iOS离线打包 - 模块通用配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/168)
 
-[iOS离线打包 - 语音识别(Speech)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/35358)
+## 其他模块配置
 
-[iOS离线打包 - 直播推流(LivePusher)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/35376)
-
-[iOS离线打包 - 消息推送(Push)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/171)
-
-[iOS离线打包 - 分享(Share)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/170)
-
-[iOS离线打包 - 地图(Maps)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/169)
-
-[iOS离线打包 - 统计(Statistic)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/229)
-
-[iOS离线打包 - 支付(Payment)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/246)
-
-[iOS离线打包 - 登录鉴权(Oauth)插件配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/309)
-
-[iOS离线打包 - uni-AD广告联盟配置](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36807)
-
-[iOS离线打包 - UIWebview模块](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36348)
+* [模块通用配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+* [推送插件配置](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
+* [分享插件配置](/5PlusDocs/usemodule/iOSModuleConfig/share.md)
+* [登陆鉴权插件配置](/5PlusDocs/usemodule/iOSModuleConfig/oauth.md)
+* [地图插件配置](/5PlusDocs/usemodule/iOSModuleConfig/map.md)
+* [支付插件配置](/5PlusDocs/usemodule/iOSModuleConfig/pay.md)
+* [语音识别插件配置](/5PlusDocs/usemodule/iOSModuleConfig/speech.md)
+* [直播推流插件配置](/5PlusDocs/usemodule/iOSModuleConfig/livepusher.md)
+* [统计插件配置](/5PlusDocs/usemodule/iOSModuleConfig/statistic.md)
+* [uni-AD广告联盟配置](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
+* [UIWebview模块配置](/5PlusDocs/usemodule/iOSModuleConfig/uiwebview.md)

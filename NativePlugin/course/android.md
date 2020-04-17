@@ -4,11 +4,11 @@
 ## 开发环境 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 5+SDK下载：[最新android平台SDK下载](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)
+- 5+SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
 
 ## 导入uni插件原生项目
 
-- UniPlugin-Hello-AS工程请在[5+SDK](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)中查找
+- UniPlugin-Hello-AS工程请在[5+SDK](/5PlusDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png)
@@ -147,7 +147,10 @@ public void setTel(String telNumber) {
     getHostView().setText("tel: " + telNumber);
 }
 ```
-- Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+- Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
+```
+-keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+```
 - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
 - Component定义组件方法.
 
@@ -244,7 +247,7 @@ public void testAsyncFunc(JSONObject options, JSCallback callback) {
 	
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
-### RichAlert插件
+### 插件示例--RichAlert
 
 封装了一个 RichAlertWXModule, 富文本alert弹窗Module
 
@@ -252,13 +255,33 @@ public void testAsyncFunc(JSONObject options, JSCallback callback) {
 
 ```JAVA
 public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
-    public String CONTENT = "content";
-    public String CONTENT_COLOR  = "contentColor";
-    public String CONTENT_ALIGN  = "contentAlign";
-    public String POSITION = "position";
-    public String BUTTONS = "buttons";
-    public String CHECKBOX = "checkBox";
-    public String TITLE_ALIGN = "titleAlign";
+	...
+	@JSMethod(uiThread = true)
+    public void show(JSONObject options, JSCallback jsCallback) {
+        if (mWXSDKInstance.getContext() instanceof Activity) {
+			...
+			RichAlert richAlert = new RichAlert(mWXSDKInstance.getContext());
+			...
+			richAlert.show();
+			...
+		}
+	}
+	...
+	...
+	@JSMethod(uiThread = true)
+    public void dismiss() {
+        destroy();
+    }
+
+    @Override
+    public void destroy() {
+        if (alert != null && alert.isShowing()) {
+            WXLogUtils.w("Dismiss the active dialog");
+            alert.dismiss();
+        }
+    }
+	
+}
 ```
 
 #### HBuilderX 项目中使用RichAlert示例
@@ -306,33 +329,7 @@ dcRichAlert.show({
    }  
 });
 ```
-
-### 插件注意事项
-
-#### 目前对weex支持的问题
-+ Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
-+ .vue暂时只能使用module形式。component还不支持在.vue下使用
-+ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法
-
-|文件类型|是否支持js同步函数|是否支持component
-|:----|:----|:----
-|.vue|暂不支持|不支持
-|.nvue|支持|支持
-
-+ component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityResume 、onActivityPause、onActivityResult其他暂时不支持
-
-#### 第三方依赖库
-+ 均要使用compileOnly依赖方式，打包时需要配置或挪动文件到相关文件夹中。 打包插件介绍时会有相关的具体描述！
-+ 请参考[android平台所有依赖库列表](http://ask.dcloud.net.cn/article/35419), 编写自己插件时需要查看是否与编译的程序依赖有冲突，防止审核失败或编译失败等问题。
-+ 对有些插件需要引用到.so文件，需要特殊配置一下.请参考[Android studio添加第三方库和so](https://blog.csdn.net/anhenzhufeng/article/details/78913341)
-+ 代码中用到的JSONObject、JSONArray 要使用com.alibaba.fastjson.JSONArray;com.alibaba.fastjson.JSONObject; 不要使用org.json.JSONObject;org.json.JSONArray 否则造成参数无法正常传递使用等问题。
-
-#### 插件编写命名规范
-+ 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
-如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！
-+ Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
-如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
-			
+	
 ## 插件调试
 
 ### 本地注册插件
@@ -453,7 +450,7 @@ dcRichAlert.show({
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_14.png)
 - 在控制台会输出编译日志，编译成功会给出App资源路径
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png)
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](https://ask.dcloud.net.cn/article/508)。
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](/5PlusDocs/usesdk/android.md)。
 - appid注意 一定要统一否则会导致应用无法正常运行！
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png)
 - 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
@@ -469,44 +466,61 @@ implementation project(':uniplugin_richalert')
 **注意：新版本Android studio将assembleRelease放入other中了**
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_17.png)
 + 将编译依赖库文件或仓储代码放入libs目录下或配置到package.json中
-+ 在[package.json](https://ask.dcloud.net.cn/article/35414)填写必要的信息
++ 在[package.json](/NativePlugin/course/package.md)填写必要的信息
 + 完整的android 插件包包含：
 	- android文件 里面存放XXX.aar 、libs文件夹。
 		- .aar文件 插件包
 		- libs文件夹 存放插件包依赖的第三方 .jar文件和.so文件 
 	- package.json 插件信息
-		- [点击查看具体说明](https://ask.dcloud.net.cn/article/35414) 
-+ 生成提交插件市场的.ZIP包
-	- 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
-	![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
-	- 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
-    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
-- **注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
-+ [本地uni-app原生插件提交云端打包](https://ask.dcloud.net.cn/article/35844)
-
+		- [点击查看具体说明](/NativePlugin/course/package.md) 
 
 ## 如果想要共享给其他开发者，把这个插件提交插件市场
 
-+ [提交插件到DCloud插件市场](https://ask.dcloud.net.cn/article/35426)
+**1. 生成提交插件市场的.ZIP包**
+
+- 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
+- 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
+
+**注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
+
+**2. 登录注册**[DCloud插件市场](http://ext.dcloud.net.cn/) 按提示步骤提交插件（需要编写对应插件的说明文档，md（markdown） 格式）
 
 不提交插件市场，也可以在HBuilderX里提交云端打包。
++ [本地uni-app原生插件提交云端打包](/NativePlugin/use/use_local_plugin.md)
 
-## 关于第三方库引用问题：
+## 插件注意事项
+
+#### 目前对weex支持的问题
++ Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
++ .vue暂时只能使用module形式。component还不支持在.vue下使用
++ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法
+
+|文件类型|是否支持js同步函数|是否支持component
+|:----|:----|:----
+|.vue|暂不支持|不支持
+|.nvue|支持|支持
+
++ component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityResume 、onActivityPause、onActivityResult其他暂时不支持
+
+#### 第三方依赖库
++ 均要使用compileOnly依赖方式，打包时需要配置或挪动文件到相关文件夹中。 打包插件介绍时会有相关的具体描述！
++ 请参考[android平台所有依赖库列表](http://ask.dcloud.net.cn/article/35419), 编写自己插件时需要查看是否与编译的程序依赖有冲突，防止审核失败或编译失败等问题。
++ 对有些插件需要引用到.so文件，需要特殊配置一下.请参考[Android studio添加第三方库和so](https://blog.csdn.net/anhenzhufeng/article/details/78913341)
++ 代码中用到的JSONObject、JSONArray 要使用com.alibaba.fastjson.JSONArray;com.alibaba.fastjson.JSONObject; 不要使用org.json.JSONObject;org.json.JSONArray 否则造成参数无法正常传递使用等问题。
 + 尽量去下载相关的aar或jar，然后配置到插件包相应文件夹下。aar放到android目录下。jar放到libs目录下。如果不下载也可以。可使用compileOnly修饰，然后将相应的依赖库名称配置到package.json中的dependencies节点下。
-
 + 第三方库依赖冲突。一种是主app已完整集成相关第三方库。可使用用compileOnly修饰即可。如果主app仅集成了部分第三方库。可参考https://blog.csdn.net/wapchief/article/details/80514880
-
 + .os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！
-
 + 插件中包含FileProvider云打包冲突，可通过http://ask.dcloud.net.cn/article/36105此贴配置绕过。
-
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
-
 + 关于androidx暂时不支持。请使用v4、v7实现插件。
 
-## uni-app原生插件使用常见问题
-[原生插件使用常见问题](https://ask.dcloud.net.cn/article/35427)
+#### 插件编写命名规范
++ 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
+如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！
++ Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
+如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
 
 
-**iOS原生插件开发参考：[https://ask.dcloud.net.cn/article/35415](https://ask.dcloud.net.cn/article/35415)**
-更多uni-app原生插件文档参考：[uni-app原生插件开发指南](https://ask.dcloud.net.cn/article/35428)
+
