@@ -514,13 +514,76 @@ implementation project(':uniplugin_richalert')
 + .os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！
 + 插件中包含FileProvider云打包冲突，可通过http://ask.dcloud.net.cn/article/36105此贴配置绕过。
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
-+ 关于androidx暂时不支持。请使用v4、v7实现插件。
++ sandroidx暂时不支持。请使用v4、v7实现插件。
 
 #### 插件编写命名规范
 + 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
 如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！
 + Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
 如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
+
+## 常见问题
+
+Q:云打包后提示"XXX"插件不存在？
+A:先确认打包时是否勾选了"XXX"插件。如果勾选了依然报错提示"XXX"插件不存在请联系客服沟通。
+
+Q:插件中怎么跳转原生Activity页面
+A:获取WXSDKInstance对象。该对象中可以获取到上下文.通过startActivity跳转
+
+**示例**
+
+```
+@JSMethod (uiThread = true)
+public void gotoNativePage(){
+    if(mWXSDKInstance != null) {
+        Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
+        mWXSDKInstance.getContext().startActivity(intent);
+    }
+}
+```
+
+Q:插件跳转Activity页面后。Activity页面关闭后有数据需要返回。怎么能实现？
+A:可以按以下步骤操作实现：
+   * 在插件的WXModule/WXComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
+   
+   **示例**
+   
+   ```JAVA
+   public static int REQUEST_CODE = 1000; //数据返回标识code 
+   @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
+            Log.e("TestModule", "原生页面返回----"+data.getStringExtra("respond"));
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+   ```
+   * 通过startActivityForResult加上返回标识code跳转其他Activity页面。
+   
+   **示例**
+   
+   ```JAVA
+   @JSMethod (uiThread = true)
+    public void gotoNativePage(){
+        if(mWXSDKInstance != null && mWXSDKInstance.getContext() instanceof Activity) {
+            Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
+            ((Activity)mWXSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
+        }
+    }
+   ```
+   * Activity页面在关闭前调用setResult设置标识code将要返回的参数放进Intent中。
+   
+   **示例**
+   
+   ```JAVA
+   Intent intent = new Intent();
+   intent.putExtra("respond", "我是原生页面");
+   setResult(TestModule.REQUEST_CODE, intent);
+   finish();
+   ```
+
+
 
 
 
