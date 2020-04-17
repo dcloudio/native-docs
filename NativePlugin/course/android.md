@@ -6,19 +6,42 @@
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - 5+SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
 
+## 项目创建
+
+**Tips:**如果已经创建了项目可以跳过创建步骤
+
+打开Android studio新建一个空白项目
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_9.png" width=700>
+	
+选择 Empty Activity 点击 Next。
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_10.png" width=700>
+
+Minimum API Level 建议选19及以上
+
+package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
+	
+点击 Finish 完成创建。
+
+**注意：暂时不支持Kotlin**
+
 ## 导入uni插件原生项目
 
 - UniPlugin-Hello-AS工程请在[5+SDK](/5PlusDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png)
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png" width=700>
+
 - 导入选择UniPlugin-Hello-AS工程，点击OK! 等待工程导入完毕。
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_2.png)
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_2.png" width=700>
+
 - 如果出现Android SDK路径不对问题，请在Android Studio中鼠标右键UniPlugin-Hello-AS选择Open Module Settings, 在SDK Location 中设置相关环境路径
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3.png)
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_4.png)
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3.png" width=700>
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_4.png" width=700>
 
 **Tips**
 
@@ -32,6 +55,7 @@
 - 特别注意uni-app插件目前仅支持Module扩展和Component扩展，暂时不支持Adapter扩展！！！
 
 ### 扩展 module
+
 下面以TestModule为例，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_module`模块；
 
 #### 创建Android Studio的Module模块
@@ -184,6 +208,7 @@ public void setTel(String telNumber) {
 ### component 自定义发送事件
 
 向JS环境发送一些事件，比如click事件
+
 ```
 void fireEvent(elementRef,type)
 void fireEvent(elementRef,type, data)
@@ -289,7 +314,6 @@ public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
 ```JS
 // require插件名称  
 const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');              
-
 // 使用插件  
 dcRichAlert.show({  
     position: 'bottom',  
@@ -338,6 +362,7 @@ dcRichAlert.show({
 
 + 第一种方式
  - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件。 在moudles节点下 添加你要注册的Module 或 Component
+
 + 第二种方式
  - 创建一个实体类并实现AppHookProxy接口，在onCreate函数中添加weex注册相关参数 或 填写插件需要在启动时初始化的逻辑。
  - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现AppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成AppHookProxy接口)
@@ -350,14 +375,14 @@ dcRichAlert.show({
   	}
   }
   ```
-		
 
 #### 关于dcloud_uniplugins.json说明:
-- nativePlugins： 插件跟节点 可存放多个插件 
-- hooksClass： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
-- name : 注册名称， 
-- class : module 或 component 实体类完整名称  
-- type : module 或 component类型。
+
+- `nativePlugins`： 插件跟节点 可存放多个插件 
+- `hooksClass`： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
+- `name` : 注册名称， 
+- `class` : module 或 component 实体类完整名称  
+- `type` : module 或 component类型。
 	   
 ```JSON
 {
@@ -378,81 +403,28 @@ dcRichAlert.show({
 			
 ### 集成uni-app项目测试插件
 
-- 安装最新[HbuilderX](http://www.dcloud.io/hbuilderx.html) 大于等于1.4.0.xxxxxx
-- 创建uni-app工程或在已有的uni-app工程编写相关的.nvue 和.vue文件。使用uni-app插件中的module 或 component。
-- xxx.vue 示例代码（RichAlert为示例）
+- 安装最新[HbuilderX](http://www.dcloud.io/hbuilderx.html) 大于等于1.4.0+
 
-```JS
-<template>
-	<view class="button-sp-area">
-		<button type="primary" plain="true" @click="showRichAlert()">点击显示弹窗</button>
-	</view>
-</template>
-<script>
-	const modal = uni.requireNativePlugin('modal');
-	const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');
-	export default {
-		data() {
-			return {
-				title: ''
-			}
-		},
-		methods: {
-			showRichAlert() {
-				dcRichAlert.show({
-					position: 'bottom',
-					title: "提示信息",
-					titleColor: '#FF0000',
-					content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",
-					contentAlign: 'left',
-					checkBox: {
-						title: '不再提示',
-						isSelected: true
-					},
-					buttons: [{
-							title: '取消'
-						},
-						{
-							title: '否'
-						},
-						{
-							title: '确认',
-							titleColor: '#3F51B5'
-						}
-					]
-				}, result => {
-					const msg = JSON.stringify(result);
-					modal.toast({
-						message: msg,
-						duration: 1.5
-					});
-					switch (result.type) {
-						case 'button':
-							console.log("callback---button--" + result.index);
-							break;
-						case 'checkBox':
-							console.log("callback---checkBox--" + result.isSelected);
-							break;
-						case 'a':
-							console.log("callback---a--" + JSON.stringify(result));
-							break;
-						case 'backCancel':
-							console.log("callback---backCancel--");
-							break;
-					}
-				});
-			}
-		}
-	}
-</script>
-```
+- 创建uni-app工程或在已有的uni-app工程编写相关的.nvue 和.vue文件。使用uni-app插件中的module 或 component。
+
+- xxx.vue 示例代码（源码请参考UniPlugin-Hello-AS项目中`uniapp示例工程源码`文件夹的`unipluginDemo`工程）
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_5.png" width=700>
+
 - 选择 发行--->原生APP-本地打包--->生成本地打包App资源 等待资源生成！
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_14.png)
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_14.png" width=700>
+
 - 在控制台会输出编译日志，编译成功会给出App资源路径
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png)
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 “app” Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](/5PlusDocs/usesdk/android.md)。
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png" width=700>
+
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](/5PlusDocs/usesdk/android.md)。
+
 - appid注意 一定要统一否则会导致应用无法正常运行！
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png)
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png" width=700>
+
 - 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
 	
 ```
@@ -461,34 +433,60 @@ implementation project(':uniplugin_richalert')
 ```
 - 运行测试。测试运行时一切要以真机运行为主。
 
-## 生产uni-app插件
-+ 选择Gradle--->插件module--->Tasks--->build--->assembleRelease编译module的aar文件
-**注意：新版本Android studio将assembleRelease放入other中了**
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_17.png)
-+ 将编译依赖库文件或仓储代码放入libs目录下或配置到package.json中
-+ 在[package.json](/NativePlugin/course/package.md)填写必要的信息
-+ 完整的android 插件包包含：
+## 生成uni-app插件
+
++ 完整的android 插件包.ZIP包含：
 	- android文件 里面存放XXX.aar 、libs文件夹。
 		- .aar文件 插件包
 		- libs文件夹 存放插件包依赖的第三方 .jar文件和.so文件 
 	- package.json 插件信息
 		- [点击查看具体说明](/NativePlugin/course/package.md) 
 
-## 如果想要共享给其他开发者，把这个插件提交插件市场
+#### 准备相关文件
 
-**1. 生成提交插件市场的.ZIP包**
++ 创建已插件id命名的文件夹
++ 创建android文件夹。并将该文件夹放入到新建的插件id命名的文件夹中
+
+**示例:**
+
+```
+|-- DCloud-RichAlert --->插件id命名的文件夹
+   |-- android       --->安卓插件目录
+```
+
++ 生成插件的aar并放入到android目录下
+	+ 选择Gradle--->插件module--->Tasks--->build--->assembleRelease编译module的aar文件
+
+	**注意：新版本Android studio将assembleRelease放入other中了**
+
+	<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_17-2.png" width=650>
+
++ 创建[package.json](/NativePlugin/course/package.md)文件并填写必要的信息。放入到android目录下
++ 创建libs文件夹。并放入到android目录下
+	+ 将插件依赖的jar文件放入到libs文件夹中
+	+ 将插件依赖的.so文件放入到libs文件夹中
++ 将插件依赖的aar文件放入到插件android目录下
+
+#### 生成uni插件压缩包
+
+压缩插件id命名的文件夹为zip即可。具体目录机构如下：
 
 - 一级目录以插件id命名，对应package.json中的id字段！ 存放android文件夹和package.json文件。
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png)
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_18.png" width=700>
+
 - 二级目录 android 存放安卓插件 .aar 文件 .jar .so放入到libs下
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png)
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png" width=700>
 
 **注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
 
-**2. 登录注册**[DCloud插件市场](http://ext.dcloud.net.cn/) 按提示步骤提交插件（需要编写对应插件的说明文档，md（markdown） 格式）
 
-不提交插件市场，也可以在HBuilderX里提交云端打包。
-+ [本地uni-app原生插件提交云端打包](/NativePlugin/use/use_local_plugin.md)
+## 提交插件市场
+
+** 登录注册**[DCloud插件市场](http://ext.dcloud.net.cn/) 按提示步骤提交插件（需要编写对应插件的说明文档，md（markdown） 格式）
+
+## [本地插件提交云端打包](/NativePlugin/use/use_local_plugin.md)
 
 ## 插件注意事项
 
@@ -502,7 +500,23 @@ implementation project(':uniplugin_richalert')
 |.vue|暂不支持|不支持
 |.nvue|支持|支持
 
-+ component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityResume 、onActivityPause、onActivityResult其他暂时不支持
++ component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityPause、onActivityResult其他暂时不支持
+
+**Tips** onActivityResume事件存在缺陷。应用第一次启动无法正常收到onActivityResume事件，后台切换到前台是可以收到的。
+
+**示例:**
+
+```
+@Override
+public void onActivityPause() {
+    WXLogUtils.e(TAG, "onActivityPause");
+}
+
+@Override
+public void onActivityResume() {
+	WXLogUtils.e(TAG, "onActivityResume");
+}
+```
 
 #### 第三方依赖库
 + 均要使用compileOnly依赖方式，打包时需要配置或挪动文件到相关文件夹中。 打包插件介绍时会有相关的具体描述！

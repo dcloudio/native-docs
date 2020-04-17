@@ -18,7 +18,7 @@ uni小程序SDK入口句柄,该类为工厂模式。通过`getInstance()`获取�
 |:----|:----
 |class|DCUniMPSDK对象
 
-#### DCUniMPSDK.getInstance().initialize(context, config)
+#### DCUniMPSDK.getInstance().initialize(context, config, callback)
 
 sdk初始化
 
@@ -28,6 +28,7 @@ sdk初始化
 |:----|:----|:----|:----
 |Context|Context|是|上下文
 |config|DCSDKInitConfig|否|初始化配置信息类
+|callback|IDCUNIMPPreInitCallback|否|初始化完毕回调接口 2.6.14+增加
 
 **返回值**
 
@@ -45,7 +46,12 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 	.setMenuDefFontWeight("normal")
 	.setMenuActionSheetItems(sheetItems)
 	.build();
-DCUniMPSDK.getInstance().initialize(this, config);
+DCUniMPSDK.getInstance().initialize(this, config, new DCUniMPSDK.IDCUNIMPPreInitCallback() {
+    @Override
+    public void onInitFinished(boolean isSuccess) {
+        Log.e("unimp", "onInitFinished-----------"+isSuccess);
+    }
+});
 ```
 
 #### DCUniMPSDK.getInstance().isInitialize()
