@@ -3379,7 +3379,7 @@
 				var sidebarUl = sidebarDocument.querySelector(".sidebar-nav-ul");
 				var sidebarLis = sidebarDocument.querySelectorAll(".sidebar-nav-ul>li");
 
-				var navLists = ["", "collocation", "component", "api", "uniCloud"],
+				var navLists = ["", "5PlusDocs", "NativePlugin"],
 					navList = location.pathname.split("/"),
 					mdName = navList[navList.length - 1];
 				var navIndex = ~navLists.indexOf(navList[1]) ? navLists.indexOf(navList[1]) : 0;
@@ -3437,7 +3437,6 @@
 		var ref = this;
 		var cacheTree = ref.cacheTree;
 		var toc = ref.toc;
-
 		/**
 		 * fixed by hxy
 		 * 处理侧边栏的索引会指向其它页面锚点的情况
@@ -3564,8 +3563,8 @@
 	 * @return {element}
 	 */
 	function getAndActive(router, el, isParent, autoTitle) {
+		var homepage = $docsify.homepage.split('.').slice(0,-1).join('.')
 		el = getNode(el);
-
 		var links = findAll(el, 'a');
 		var hash = decodeURI(router.toURL(router.getCurrentPath()));
 		var target;
@@ -3576,7 +3575,7 @@
 			var href = a.getAttribute('href');
 			var node = isParent ? a.parentNode : a;
 
-			if (hash.indexOf(href) === 0 && !target) {
+			if ((hash.indexOf(href) === 0 || (hash + homepage).indexOf(href) === 0) && !target) {
 				target = a;
 				toggleClass(node, 'add', 'active');
 			} else {
@@ -4099,7 +4098,7 @@
 				activeEl.parentNode.innerHTML += this.compiler.subSidebar(subMaxLevel, activeEl) || '';
 			} else {
 				// Reset toc
-				this.compiler.subSidebar();
+				this.compiler.subSidebar(subMaxLevel, activeEl);
 			}
 			// Bind event
 			this._bindEventOnRendered(activeEl);
