@@ -1,44 +1,36 @@
-* [概述](/5PlusDocs/README.md)
-* 集成教程
+* [简介](/5PlusDocs/README.md)
+* 原生工程配置
 	* [Android 集成教程](/5PlusDocs/usesdk/android.md)
 	* [iOS 集成教程](/5PlusDocs/usesdk/ios.md)
-* App SDK/模块配置
+* 模块及三方SDK配置
 	* [Android 模块配置](/5PlusDocs/usemodule/android.md)
-		* [推送插件配置](/5PlusDocs/usemodule/androidModuleConfig/push.md)
-		* [分享插件配置](/5PlusDocs/usemodule/androidModuleConfig/share.md)
-		* [登陆鉴权插件配置](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
-		* [地图插件配置](/5PlusDocs/usemodule/androidModuleConfig/map.md)
-		* [支付插件配置](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
-		* [定位插件配置](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
-		* [语音识别插件配置](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
-		* [uni-AD广告联盟配置](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
+		* [Push（消息推送）](/5PlusDocs/usemodule/androidModuleConfig/push.md)
+		* [Share（分享）](/5PlusDocs/usemodule/androidModuleConfig/share.md)
+		* [Oauth（登录鉴权）](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
+		* [Map（地图）](/5PlusDocs/usemodule/androidModuleConfig/map.md)
+		* [Payment（支付）](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
+		* [Speech（语音输入）](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
+		* [uni-AD](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
 	* [iOS 模块配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-        * [推送配置](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
-        * [分享配置](/5PlusDocs/usemodule/iOSModuleConfig/share.md)
-        * [登陆鉴权配置](/5PlusDocs/usemodule/iOSModuleConfig/oauth.md)
-        * [地图配置](/5PlusDocs/usemodule/iOSModuleConfig/map.md)
-        * [支付配置](/5PlusDocs/usemodule/iOSModuleConfig/pay.md)
-        * [语音识别配置](/5PlusDocs/usemodule/iOSModuleConfig/speech.md)
-        * [直播推流配置](/5PlusDocs/usemodule/iOSModuleConfig/livepusher.md)
-        * [统计配置](/5PlusDocs/usemodule/iOSModuleConfig/statistic.md)
-        * [uni-AD广告联盟配置](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
-        * [UIWebview配置](/5PlusDocs/usemodule/iOSModuleConfig/uiwebview.md)
-* 导入App打包资源
+        * [Push（消息推送）](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
+        * [Share（分享）](/5PlusDocs/usemodule/iOSModuleConfig/share.md)
+        * [Oauth（登录鉴权）](/5PlusDocs/usemodule/iOSModuleConfig/oauth.md)
+        * [Map（地图）](/5PlusDocs/usemodule/iOSModuleConfig/map.md)
+        * [Payment（支付）](/5PlusDocs/usemodule/iOSModuleConfig/pay.md)
+        * [Speech（语音输入）](/5PlusDocs/usemodule/iOSModuleConfig/speech.md)
+        * [LivePusher（直播推流）](/5PlusDocs/usemodule/iOSModuleConfig/livepusher.md)
+        * [Statistic（统计）](/5PlusDocs/usemodule/iOSModuleConfig/statistic.md)
+        * [uni-AD](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
+        * [iOS UIWebview](/5PlusDocs/usemodule/iOSModuleConfig/uiwebview.md)
+* 导入App资源
 	* [Android](/5PlusDocs/importfeproject/android.md)
 	* [iOS](/5PlusDocs/importfeproject/ios.md)
-* 生成安装包
+* 打包发行
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
-* 扩展原生能力
-	* [Android 扩展原生能力](/5PlusDocs/extends/android.md)
-	* [iOS 扩展原生能力](/5PlusDocs/extends/iOS.md)
 * SDK 下载
-	* Android
-        * [正式版](/5PlusDocs/download/android.md)
-        * [Alpha版](/5PlusDocs/download/android-alpha.md)
-	* iOS
-        * [正式版](/5PlusDocs/download/ios.md)
-        * [Alpha版](/5PlusDocs/download/ios-alpha.md)
+	* [Android SDK下载](/5PlusDocs/download/android.md)
+	* [iOS SDK下载](/5PlusDocs/download/ios.md)
 * 注意事项
 	* [Android](/5PlusDocs/FAQ/android.md)
 <div class="contact-box">

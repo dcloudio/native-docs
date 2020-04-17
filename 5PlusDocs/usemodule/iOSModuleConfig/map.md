@@ -1,4 +1,5 @@
-### 百度地图配置
+## 百度地图配置
+
 LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
 1.添加下列Linker Flags:  -llibMap、-lBaiduKeyVerify、-lbmapimp
@@ -37,7 +38,8 @@ LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodu
 
 在XCode控制台搜索baidu maponGetPermissionState 查看错误码是多少,对比百度开发平台错误信息
 
-### 高德地图配置
+## 高德地图配置
+
 Linker Flags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
 1.添加下列Linker Flags:  -llibMap、-lAMapImp
@@ -54,7 +56,5 @@ Linker Flags、framework等添加方法请参考这个[文档](/5PlusDocs/usemod
 5.打开Info.plist文件找到amap项，如果没有按图片中的格式添加该项，在下图中输入申请的appkey
    
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/28806.png)
-
-
 
 **注意：工程里只能有一个地图，其他的地图功能，要删除info.plist里的key，和对应的库文件,请详细根据Feature-iOS.xml文件的内容配置**
