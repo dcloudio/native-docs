@@ -17,6 +17,7 @@
 		* [支付（Payment）](UniMPDocs/UseModule/android/payment.md)
 		* [授权登录（Oauth）](UniMPDocs/UseModule/android/oauth.md)
 		* [地图（Map）](UniMPDocs/UseModule/android/map.md)
+		* [友盟统计（Statistic）](UniMPDocs/UseModule/android/umstatistic.md)
 	* [iOS 功能模块说明](UniMPDocs/UseModule/ios/ios.md)
 		* [语音识别（Speech）](UniMPDocs/UseModule/ios/speech.md)
 		* [直播推流（LivePusher）](UniMPDocs/UseModule/ios/livepusher.md)
