@@ -14,15 +14,10 @@ uni小程序SDK，是一个用于原生App中集成的SDK，它可以帮助原�
 
 ## 集成流程
 1. 宿主开发者下载uni小程序sdk，根据文档集成到宿主App中
-2. 小程序开发者使用uni-app框架开发，通过运行到手机App进行测试，开发完毕后在发行菜单导出wgt包
-3. 宿主开发者将wgt集成到宿主App中，可离线集成直接打包进去，也可以在线下载wgt
-4. 通过uni小程序sdk的api，可以调起wgt，执行为一个小程序
-5. uni小程序支持wgt升级，可在线更新wgt应用，即热更新
-
-原生工程集成 uni小程序sdk 文档
-
- - [iOS 原生工程集成 uni小程序SDK 教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36940)
- - [Android 原生工程集成 uni小程序SDK 教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36958)
+2. 小程序开发者使用 HBuilderX 创建 uni-app 项目并开发功能，开发阶段可以直接在 HBuilderX 内置基座进行测试，开发完毕后在发行菜单导出wgt包
+3. 宿主开发者将 wgt 集成到宿主App中，可离线集成直接打包进去，也可以在线下载wgt
+4. 通过 uni小程序sdk 的 api 将 wgt 资源部署到运行路径，然后即可跳转到该资源对应的小程序页面中
+5. uni小程序支持 wgt升级，可以在小程序中直接调用 api 在线更新 wgt 资源，即热更新[参考文档](https://ask.dcloud.net.cn/article/35667)
 
 ## 特色
 uni-app在app端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。包括webview渲染在Android上也同时支持系统webview渲染和x5渲染。
@@ -40,7 +35,7 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 3. 原生App中部分功能使用uni-app实现，降低开发成本、提升发布效率
 
 ## 注意
-- 目前uni小程序sdk仅支持同时运行一个小程序实例，启动下一个小程序会关闭上一个小程序
+- 目前uni小程序sdk仅支持同时运行一个小程序实例，启动下一个小程序需关闭上一个小程序
 - uni小程序sdk无法使用插件市场中付费的原生插件，需自己开发
 
 ## FAQ

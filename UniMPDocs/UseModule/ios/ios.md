@@ -17,7 +17,7 @@ uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用�
 请参考 Feature-iOS.xls 配置表，添加模块所需依赖库及资源文件即可；
 
 
-## 集成方式
+### 集成方式
 
 
 #### 下面以 Gallery 模块为例
@@ -38,7 +38,7 @@ uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用�
 然后即可调用 Gallery 相关功能；
 
 
-## 功能模块与 API 对应关系
+### 功能模块与 API 对应关系
 | 功能模块   | 5+ API             | uni-app API              |
 | :-------     | :-------                | :-------                |
 | Accelerometer(加速度传感器)      | [plus.accelerometer](https://www.html5plus.org/doc/zh_cn/accelerometer.html) | [https://uniapp.dcloud.io/api/system/compass](https://uniapp.dcloud.io/api/system/compass) |
