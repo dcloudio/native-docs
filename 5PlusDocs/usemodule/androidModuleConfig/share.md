@@ -101,6 +101,7 @@ properties.xml文件在assets/data目录下
 <feature name="Share" value="io.dcloud.share.ShareFeatureImpl"><module name="QQ" value="io.dcloud.share.qq.QQApiManager"/></feature>
 ~~~
 
+<!--
 ## 腾讯微博
 
 [腾讯微博appkey申请方法](http://ask.dcloud.net.cn/article/207)
@@ -131,8 +132,6 @@ properties.xml文件在assets/data目录下
 **<application>节点下配置如下代码**
 
 ~~~
-<!-- Share - 腾讯微博分享 -->
-        <!-- 官方网站：http://dev.t.qq.com/ -->
         <meta-data
             android:name="TENCENT_APPKEY"
             android:value="_%腾讯微博开放平台申请应用的Appkey，注意前面要添加下划线%" />
@@ -159,6 +158,7 @@ properties.xml文件在ADT工程assets/data目录下
 
 **提示：**androidmanifest.xml文件中声明的包名必须与申请腾讯微博appkey使用的包名一致，否则分享插件会调用失败
 
+-->
 ## 新浪微博
 
 [新浪微博appkey申请步骤](http://ask.dcloud.net.cn/article/209)

@@ -1,3 +1,118 @@
+## UniPush平台配置
+
+### 需要拷贝的文件
+
+**需要引入工程的jar/aar文件**
+
+需要将以下jar/aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | aps-release.aar, aps-unipush-release.aar |
+
+### gradle配置
+
+打开build.gradle，在defaultConfig添加manifestPlaceholders节点，如下图所示，将io.dcloud.HBuilder替换成自己的应用包名，将appid等信息替换成申请之后的appid等。
+
+~~~
+android {
+    defaultConfig {
+        manifestPlaceholders = [
+                "plus.unipush.appid" : "pPyZWvH3Fa6PXba19ID0091",
+                "plus.unipush.appkey" : "b7dOGlNPHR7pqwUxcXPVi44",
+                "plus.unipush.appsecret": "IxVYAT9qws8dlNElacmSg12",
+                "apk.applicationId":"io.dcloud.HBuilder"
+        ]
+    }
+}
+~~~
+
+### 厂商配置
+
+添加下列内容到androidmanifest.xml中（未申请平台无需添加）
+
+~~~
+        <meta-data
+            android:name="MIPUSH_APPID"
+            android:value="XM_${XIAOMI_APP_ID}" />
+        <meta-data
+            android:name="MIPUSH_APPKEY"
+            android:value="XM_${XIAOMI_APP_KEY}" />
+        <meta-data
+            android:name="MEIZUPUSH_APPID"
+            android:value="MZ_${MEIZU_APP_ID}" />
+        <meta-data
+            android:name="MEIZUPUSH_APPKEY"
+            android:value="MZ_${MEIZU_APP_KEY}" />
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="${HUAWEI_APP_ID}" />
+        <meta-data
+            android:name="OPPOPUSH_APPKEY"
+            android:value="OP_${OPPO_APP_KEY}" />
+        <meta-data
+            android:name="OPPOPUSH_APPSECRET"
+            android:value="OP_${OPPO_APP_SECRET}" />
+        <meta-data
+            android:name="com.vivo.push.app_id"
+            android:value="${VIVO_APP_ID}" />
+        <meta-data
+            android:name="com.vivo.push.api_key"
+            android:value="${VIVO_APP_KEY}" />
+~~~
+
+修改build.gradle，添加对应平台申请的appkey或appid（键名必须统一，如XIAOMI_APP_ID比如同时存在于build.gradle文件和Androidmanifest.xml文件中），如下所示:
+
+~~~
+android {
+    defaultConfig {
+        manifestPlaceholders = [
+                "plus.unipush.appid" : "pPyZWvH3Fa6PXba19ID0091",
+                "plus.unipush.appkey" : "b7dOGlNPHR7pqwUxcXPVi45",
+                "plus.unipush.appsecret": "IxVYAT9qws8dlNElacmSg12",
+                "apk.applicationId":"io.dcloud.HBuilder",
+				"XIAOMI_APP_ID":"ccccccccc"
+        ]
+    }
+}
+~~~
+
+### dcloud_properties.xml配置
+
+在properties中添加如下配置，features节点与services节点必须同时配置！
+
+~~~
+<properties>
+	<features>
+		<feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl">
+			<module name="unipush" value="io.dcloud.feature.unipush.GTPushService"/>
+		</feature>
+	</features>	
+	<services>
+		<service name="push" value="io.dcloud.feature.aps.APSFeatureImpl"/>
+	</services>
+</properties>
+~~~
+### 其余配置
+
+oppo集成UniPush时需在Androidmanifest.xml的入口activity中添加如下配置：
+
+~~~
+<activity
+            android:name="io.dcloud.PandoraEntry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			/*oppo配置开始*/
+            <intent-filter>
+                <action android:name="android.intent.action.oppopush" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+			/*oppo配置结束*/
+        </activity>
+~~~
+
 ## 个推推送平台配置
 
 ### 需要拷贝的文件
@@ -103,6 +218,40 @@ services节点下添加
             value="io.dcloud.feature.aps.APSFeatureImpl" />
 ~~~
 
+## 上传google play配置
+
+### aar 引用
+
+SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用上传google play时，替换原aps-igexin-release.aar或aps-unipush-release.aar。注意，google play版SDK与原版SDK存在冲突，所以使用时只能保留其中一个。
+
+### AndroidManifest.xml配置
+
+* google play版UniPush配置
+
+在AndroidManifest.xml中添加如下配置。
+
+~~~
+        <activity
+            android:name="com.igexin.sdk.PrivacyActivity"
+            android:exported="false"/>
+~~~
+
+* google play版个推配置
+
+在原个推离线配置基础上将如下配置添加到AndroidManifest.xml中。
+
+~~~
+		<service
+            android:name="io.dcloud.feature.apsGt.GTPushDevService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <activity
+            android:name="com.igexin.sdk.PrivacyActivity"
+            android:exported="false"/>
+~~~
+
+<!--
 ## 小米推送
 
 ### 需要拷贝的文件
@@ -189,3 +338,5 @@ services节点下添加
 ~~~
 <service name="push" value="io.dcloud.feature.aps.APSFeatureImpl"/>
 ~~~
+
+-->
