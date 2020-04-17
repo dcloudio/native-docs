@@ -1,7 +1,7 @@
 * [简介](/5PlusDocs/README.md)
 * 原生工程配置
-	* [Android 集成教程](/5PlusDocs/usesdk/android.md)
-	* [iOS 集成教程](/5PlusDocs/usesdk/ios.md)
+	* [Android 原生工程配置](/5PlusDocs/usesdk/android.md)
+	* [iOS 原生工程配置](/5PlusDocs/usesdk/ios.md)
 * 模块及三方SDK配置
 	* [Android 模块配置](/5PlusDocs/usemodule/android.md)
 		* [Push（消息推送）](/5PlusDocs/usemodule/androidModuleConfig/push.md)
@@ -23,16 +23,16 @@
         * [uni-AD](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
         * [iOS UIWebview](/5PlusDocs/usemodule/iOSModuleConfig/uiwebview.md)
 * 导入App资源
-	* [Android](/5PlusDocs/importfeproject/android.md)
-	* [iOS](/5PlusDocs/importfeproject/ios.md)
+	* [Android 导入App资源](/5PlusDocs/importfeproject/android.md)
+	* [iOS 导入App资源](/5PlusDocs/importfeproject/ios.md)
 * 打包发行
-	* [Android](/5PlusDocs/package/android.md)
-	* [iOS](/5PlusDocs/package/ios.md)
+	* [Android 打包发行](/5PlusDocs/package/android.md)
+	* [iOS 打包发行](/5PlusDocs/package/ios.md)
 * SDK 下载
 	* [Android SDK下载](/5PlusDocs/download/android.md)
 	* [iOS SDK下载](/5PlusDocs/download/ios.md)
 * 注意事项
-	* [Android](/5PlusDocs/FAQ/android.md)
+	* [Android 注意事项](/5PlusDocs/FAQ/android.md)
 <div class="contact-box">
 	<div class="contact-item">
 	  <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
