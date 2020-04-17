@@ -2,7 +2,7 @@
 登录插件首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/36)
 注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
-### 新浪登录插件配置
+## 新浪登录配置
 1.添加以下Linker Flags: -llibOauth、-lSinaWBOauth、-lWeiboSDK
 
 2.添加下列文件:WeiboSDK.bundle
@@ -37,7 +37,7 @@
 }
 ```
 
-### QQ登录插件配置
+## QQ登录配置
 
 1.添加以下Linker Flags: -llibOauth、-lQQOauth
 
@@ -85,7 +85,7 @@
 }
 ```
 
-### 微信登录插件配置
+## 微信登录配置
 
 1.添加以下Linker Flags: -llibOauth、 -lWXOauth、-lWeChatSDK
 
@@ -123,7 +123,7 @@
 }
 ```
 
-<a id="ulink"/>
+
 
 7.HBuilderX2.3.4+版本需要配置 Universal Link
 
@@ -143,5 +143,6 @@
     return YES;
 }
 
-### 苹果登录插件配置
+## 苹果登录配置
+## 
 [点击查看](/5PlusDocs/usemodule/iOSModuleConfig/otherModule/appleOauth.md)

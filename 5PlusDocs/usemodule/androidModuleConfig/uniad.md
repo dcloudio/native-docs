@@ -15,11 +15,10 @@ AndroidManifest.xml文件中添加如下节点到节点中，并配置替换其�
 * 广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可
 * 渠道：[渠道包制作指南](https://ask.dcloud.net.cn/article/35974)
 
-## 平台配置
 
-### 360聚合广告
+## 360广告联盟
 
-#### 库文件配置
+### 库文件配置
 
 将以下文件放入工程的libs目录下
 
@@ -29,7 +28,7 @@ SDK/libs| ads-release.aar、ads-360-release.aar、torch-adcore-5.12.3140.aar | o
 
 **如果没有在360聚合平台申请穿山甲和广点通的广告，则对应的aar不需要添加**
 
-#### dcloud_properties.xml配置
+### dcloud_properties.xml配置
 
 features 节点添加
 
@@ -39,9 +38,9 @@ features 节点添加
         </feature>
 ~~~
 
-### 穿山甲广告
+## 今日头条穿山甲广告联盟
 
-#### 库文件配置
+### 库文件配置
 
 将以下文件放入工程的libs目录下
 
@@ -49,7 +48,7 @@ features 节点添加
 -|-
 SDK/libs| ads-release.aar、ads-csj-release.aar、open_ad_sdk.aar
 
-#### Androidmanifest.xml配置
+### Androidmanifest.xml配置
 
 application节点下添加
 
@@ -73,7 +72,7 @@ application节点下添加
             android:exported="false" />
 ~~~
 
-#### dcloud_properties.xml配置
+### dcloud_properties.xml配置
 
 features 节点添加
 
@@ -83,9 +82,9 @@ features 节点添加
         </feature>
 ~~~
 
-### 广点通广告
+## 腾讯广点通广告联盟
 
-#### 库文件配置
+### 库文件配置
 
 将以下文件放入工程的libs目录下
 
@@ -93,7 +92,7 @@ features 节点添加
 -|-
 SDK/libs| ads-release.aar、ads-gdt-release.aar、GDTSDK.unionNormal.4.110.980.aar
 
-#### Androidmanifest.xml配置
+### Androidmanifest.xml配置
 
 application节点下添加
 
@@ -112,7 +111,7 @@ application节点下添加
         </provider>
 ~~~
 
-#### dcloud_properties.xml配置
+### dcloud_properties.xml配置
 
 features 节点添加
 
@@ -124,9 +123,9 @@ features 节点添加
 
 [uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
 
-### 注意事项
+## 注意事项
 
-如果出现uni-AD业务状态提醒，如下图：
+如果出现uni-AD业务状态提醒如下提醒：
 
 ![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/7-5.png)
 

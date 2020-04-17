@@ -24,8 +24,8 @@
 				},
 				name: 'uni-native',
 				// TODO 如需提交,必须改为 history 模式
-				// routerMode: 'history',
-				routerMode: 'hash',
+				routerMode: 'history',
+				//routerMode: 'hash',
 				repo: false,
 				coverpage: false,
 				loadSidebar: true,
@@ -45,7 +45,7 @@
 				plugins: [
 					function(hook, vm) {
 						hook.afterEach(function(html) {
-							var url = '//github.com/dcloudio/native-docs/tree/master' + vm.route.file
+							var url = '//github.com/dcloudio/native-docs/tree/master/' + vm.route.file
 							return html + '<hr align=center color=#987cb9 size=1>发现错误？想参与编辑？<a href=' + url + ' target=_blank>在 GitHub 上编辑此页面！</a>'
 						})
 					}

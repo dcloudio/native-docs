@@ -1,9 +1,39 @@
-## 个推和UniPush配置
-### 添加push插件
+## 个推配置
+
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-1. 依次添加下列Linker Flags: -lGeTuiPush,    ** 注意：如果是UniPush 则把-lGeTuiPush 换成 -lUniPush。**
+
+1.依次添加下列Linker Flags: -lGeTuiPush,
    -lGeTuiSdk,
    -llibPush
+
+2.添加下列framework:"GTSDK.framework",
+      "CoreTelephony.framework",
+      "AVFoundation.framework",
+      "CoreLocation.framework",
+      "SystemConfiguration.framework",
+      "MobileCoreServices.framework",
+      "Security.framework",
+      "libresolv.tbd",
+      "libz.tbd",
+      "libsqlite3.tbd",
+      "libc++.tbd",
+      "UserNotifications.framework"
+	  
+
+3.到个推申请appkey等信息,查看该[文档](http://ask.dcloud.net.cn/article/34)
+  
+4.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
+
+
+## uniPush配置
+
+注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+1. 依次添加下列Linker Flags:  -lUniPush,
+   -lGeTuiSdk,
+   -llibPush
+   s
 2. 添加下列framework:"GTSDK.framework",
       "CoreTelephony.framework",
       "AVFoundation.framework",
@@ -17,13 +47,10 @@
       "libc++.tbd",
       "UserNotifications.framework"
 	  
-### 帐号配置
-1.首先到个推申请appkey等信息,查看该[文档](http://ask.dcloud.net.cn/article/34)
 
-**注意：如果是UniPush 去这个[链接](https://dev.dcloud.net.cn/uni/push)申请**
-
+3.到uniPush网站申请appkey等信息,查看该[链接](https://dev.dcloud.net.cn/uni/push)
   
-2.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+4.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 
 <!-- 

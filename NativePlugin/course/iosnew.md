@@ -1,14 +1,11 @@
-## 文档概述
-本文档主要介绍如何在uni-app中基于WeexSDK 开发iOS原生插件。
+## 概述
+本文档主要介绍如何在 iOS 平台开发 uni-app 原生插件。
 
-### 阅读对象
+在您阅读此文档时，您需要具备 iOS 应用开发经验，对 HTML、JavaScript、CSS 等前端开发有一定的了解，并且熟悉在JavaScript 和 Objective-C 环境下的 JSON 格式数据操作等。
 
-在您阅读此文档时，首先要知道uni-app支持weex插件，同时我们假定您已经具备了相应iOS应用开发经验，学习过 weex 知识并能够理解相关概念。此外,您也应该对HTML,JavaScript,CSS等有一定的了解,并且熟悉在JavaScript和Objective-C环境下的JSON格式数据操作等。
+## 开发环境
 
-### 开发前准备
-
-- OS X 10.14.0+
-- Xcode 11.0+
+- iOS开发环境，Xcode 11.0+
 - 学习weex 0.26.0版本框架API，[weex扩展API for iOS](https://weex.apache.org/zh/docs/api/ios-apis.html)
 - 下载开发插件需要的SDK包 [最新版本的SDK包](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)，找到里面的HBuilder-uniPluginDemo文件夹，里面包含HBuilder-uniPlugin插件开发工程，后面会用到。
 - 下载开发插件时会用到的js代码的开发工具HBuilderX（[下载地址](http://www.dcloud.io/hbuilderx.html)），下载哪个版本的HBuilderX需要注意下，保持和上条中提到的SDK包（在下载SDK包的下载界面中有版本相关的文字描述如下图），它提到的版本号一致。
