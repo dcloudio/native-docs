@@ -7,12 +7,12 @@
 ## 离线SDK目录说明
 
 ~~~
-|-- HBuilder-Hello				离线打包演示应用
-|-- HBuilder-Integrate			5+ SDK 集成和插件开发示例
-|-- libs						SDK库文件目录
-|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
-|-- Readme.txt					版本说明文件及注意事项
-|-- UniPlugin-Hello-AS			uni-app 插件开发示例
+	|-- HBuilder-Hello				离线打包演示应用
+	|-- HBuilder-Integrate			5+ SDK 集成和插件开发示例
+	|-- libs						SDK库文件目录
+	|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
+	|-- Readme.txt					版本说明文件及注意事项
+	|-- UniPlugin-Hello-AS			uni-app 插件开发示例
 ~~~
 
 
@@ -27,7 +27,7 @@
 
 Minimum API Level 建议选19及以上
 
-package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
+Package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
 	
 点击 Finish 完成创建。
 
