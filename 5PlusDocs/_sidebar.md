@@ -1,10 +1,9 @@
-* 简介
-	* [概述](/5PlusDocs/README.md)
+* [概述](/5PlusDocs/README.md)
 * 集成教程
-	* [Android](/5PlusDocs/usesdk/android.md)
-	* [iOS](/5PlusDocs/usesdk/ios.md)
+	* [Android 集成教程](/5PlusDocs/usesdk/android.md)
+	* [iOS 集成教程](/5PlusDocs/usesdk/ios.md)
 * App SDK/模块配置
-	* [Android](/5PlusDocs/usemodule/android.md)
+	* [Android 模块配置](/5PlusDocs/usemodule/android.md)
 		* [推送插件配置](/5PlusDocs/usemodule/androidModuleConfig/push.md)
 		* [分享插件配置](/5PlusDocs/usemodule/androidModuleConfig/share.md)
 		* [登陆鉴权插件配置](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
@@ -32,13 +31,13 @@
 	* [Android](/5PlusDocs/package/android.md)
 	* [iOS](/5PlusDocs/package/ios.md)
 * 扩展原生能力
-	* [Android](/5PlusDocs/extends/android.md)
-    * [iOS](/5PlusDocs/extends/iOS.md)
+	* [Android 扩展原生能力](/5PlusDocs/extends/android.md)
+	* [iOS 扩展原生能力](/5PlusDocs/extends/iOS.md)
 * SDK 下载
-    * Android
+	* Android
         * [正式版](/5PlusDocs/download/android.md)
         * [Alpha版](/5PlusDocs/download/android-alpha.md)
-    * iOS
+	* iOS
         * [正式版](/5PlusDocs/download/ios.md)
         * [Alpha版](/5PlusDocs/download/ios-alpha.md)
 * 注意事项
