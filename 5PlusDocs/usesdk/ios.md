@@ -1,7 +1,7 @@
 ## 预备环境
 
 -  OS X 10.14.0+、Xcode 11.0+ ；
-- 下载离线打包iOS版SDK（[5+ SDK下载](http://ask.dcloud.net.cn/article/103)）。
+- 下载离线打包iOS版SDK（[5+ SDK下载](/5PlusDocs/download/ios.md)）。
 - 确保版本一致,请确保从HBuilderX导出的资源文件 的HBuilderX的版本和离线SDK发布的版本号一致，如下2张图里的版本：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny1.png)

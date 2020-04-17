@@ -1,5 +1,5 @@
 
-## iOS 平台 HTML5+ SDK ——正式版更新日志
+## iOS 平台 HTML5+ SDK ——Alpha版更新日志
 
 ### 2020年4月15日发布
 [点击下载SDK](http://download.dcloud.net.cn/iOSSDK@2.6.13.80117_20200414.zip)
