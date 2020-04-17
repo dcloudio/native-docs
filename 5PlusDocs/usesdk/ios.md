@@ -73,28 +73,10 @@ iOSSDK/SDK/Libs/liblibUI.a
 
 |  系统库 |
 | :------: |
-| JavaScriptCore.framework |
-| WebKit.framework |
-| CoreTelephony.framework |
-| MobileCoreServices.framework |
-| SystemConfiguration.framework |
-| MediaPlayer.framework |
-| AudioToolbox.framework |
-| Security.framework |
-| QuartzCore.framework |
-| CFNetwork.framework |
-| Foundation.framework |
-| CoreFoundation.framework |
-| CoreGraphics.framework |
-| UIKit.framework |
-| QuickLook.framework |
-| libc++.tbd |
-| libxml2.tbd |
-| libz.tbd |
-| libsqlite3.0.tbd |
-| ImageIO.framework |
-| CoreText.framework |
-|UserNotifications   并设置为Optianal  |
+| JavaScriptCore.framework,WebKit.framework,CoreTelephony.framework,MobileCoreServices.framework,SystemConfiguration.framework|
+| MediaPlayer.framework, AudioToolbox.framework,Security.framework,QuartzCore.framework,CFNetwork.framework|
+|Foundation.framework,CoreFoundation.framework,CoreGraphics.framework,UIKit.framework,QuickLook.framework,libc++.tbd|
+|libxml2.tbd,libz.tbd,libsqlite3.0.tbd ,ImageIO.framework,CoreText.framework,UserNotifications(设置为Optianal)|
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/creatextk.jpg)
 
@@ -135,6 +117,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongmc2.png)
 
 2、配置国际化，有2部分：
+
 第一部分：内容相关的国际化，离线打包时如果弹出提示框且内容为：“HTML5+ Rumtime D”时，需要在打包的原生工程里配置国际化[如何配置]( https://ask.dcloud.net.cn/article/35963)
 
 第二部分：Info.plist的国际化，新建一个 .strings文件，叫做InfoPlist.strings（文件名必须是这个）然后点击右侧的 localized，
@@ -168,6 +151,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 #### 第一种Launch Images Source方式
 1、按下图所示，在配置的地方设置为空，这样配置之后启动界面就会是splash目录里配置的图了，就不会是LaunchScreen.storyboard 作为启动界面了。
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongqdtu1.png)
 
 2、拷贝HBuider-Hello工程的info.plist文件的UILaunchImages节点到新工程info.plist文件，同时拷贝HBuilder-Hello工程下的splash目录到新工程目录下并将其添加到新工程中
@@ -180,7 +164,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/launchSrreen1.png)
 
 2、制作LaunchScreen.storyboard(这个storyboard的名称是可以自定义的)，如果想自定义LaunchScreen.storyboard，这需要你会原生知识，知道怎样创建Launch Screen File，知道怎样在storyboard中布局视图，设置约束等。如果不想自定义，可以使用官方已经制作好的storyboard，官方提供了2个storyboard，一个是图标、名称在上方的；另外一个是图标、名称在下方的。
-注意：在使用Launch Screen File方式作为启动界面时，需要把一张或几张清晰的图标拷贝到工程的根文件夹下并引入到工程中，用来给启动界面加载图标。如果拷贝过去的图标不清晰会导致启动界面上的图标不清晰、模糊的现象出现。
+注意：在使用Launch Screen File方式作为启动界面时，需要把一张或几张清晰的图标拷贝到工程的根文件夹下并引入到工程中，用来给启动界面加载图标。如果拷贝过去的图标不清晰，会导致启动界面上出现图标不清晰、模糊的现象。
 
 
 <a id="channel"></a>
@@ -198,6 +182,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 **注意：**如果要配置广告，需要2个步骤：
 1.在info.plist文件里加DCLOUD_AD_ID节点，内容 为自己申请的广告adid
 2.把marketChannel节点的广告标识换成申请的广告标识。如下图所示：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
 
 ### 如何关闭广告
@@ -254,4 +239,4 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 
 ### 如何配置iOS平台的某些较特殊的功能
-[平台功能配置](https://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/173)
+[平台功能配置](https://ask.dcloud.net.cn/article/173)
