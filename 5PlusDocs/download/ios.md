@@ -1,4 +1,4 @@
-## iOS 平台 HTML5+ SDK ——正式版更新日志
+## 正式版
 ### 2020年4月10日发布
 [点击下载SDK](http://download.dcloud.net.cn/iOSSDK@2.6.11.80106_20200409.zip)
   + 更新uni-app离线打包支持，需使用HBuilderX（2.6.11.20200409）版本生成本地打包App资源。
@@ -17,13 +17,13 @@
   + App-iOS平台 修复 v3版本 uni.canvasToTempFilePath 在 ios 9.3.4 报错的Bug [详情](https://ask.dcloud.net.cn/question/92189)
 
 
-[历史版本]()
+[百度网盘下载历史版本，提取码: xpo2](https://pan.baidu.com/s/1RJ3IAJiPC9HMdHN9vxVABw)
 
 
 
 
 
-## iOS 平台 HTML5+ SDK ——Alpha版更新日志
+## Alpha版
 
 ### 2020年4月15日发布
 [点击下载SDK](http://download.dcloud.net.cn/iOSSDK@2.6.13.80117_20200414.zip)
@@ -33,4 +33,4 @@
   + iOS平台 修复 uni-AD 腾讯广点通部分视频激励广告点击关闭按钮触发 onClose 事件参数中 isEnded 属性可能为 false 的Bug
 
 
-[历史版本]()
+[百度网盘下载历史版本，提取码: 4p3a](https://pan.baidu.com/s/1C0H4DhfI-wXG0NaR2AiE7g)
