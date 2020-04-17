@@ -2,7 +2,7 @@
 
 1. Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
-3. [5+ SDK]()
+3. [5+ SDK](/5PlusDocs/download/android.md)
 
 ## 离线SDK目录说明
 
@@ -14,7 +14,6 @@
 	|-- Readme.txt					版本说明文件及注意事项
 	|-- UniPlugin-Hello-AS			uni-app 插件开发示例
 ~~~
-
 
 ## 准备工程
 打开Android studio新建一个空白项目
@@ -35,7 +34,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 ## 配置工程
 
-2. 基础库配置
+1. 基础库配置
 
 	+ 将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
 
@@ -50,7 +49,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	implementation 'com.alibaba:fastjson:1.1.46.android'
 	~~~
 	
-3. 应用配置
+2. 应用配置
 
 	+ 配置应用版本号
 
@@ -158,7 +157,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	注意：splash.png在不同设备上显示效果不一样，为防止出现拉伸的状况，建议使用Android studio生成.9.png类型图片，可参考[文档](https://ask.dcloud.net.cn/article/35527)
 	
-4. 资源配置
+3. 资源配置
 
 	Android studio默认项目没有assets文件夹，需手动创建，创建位置与java目录同级。
 		
@@ -223,7 +222,9 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 ## 运行
 
-连接手机，点击运行即可。
+连接手机，点击按钮，运行即可。
+
+![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/7-6.png)
 	
 
 	
