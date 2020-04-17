@@ -51,6 +51,37 @@
 	
 	5+SDK minSdkVersion最低支持19，小于19在部分4.4以下机型上将无法正常使用。
 	
+	完整版build.gradle可参考如下内容。
+	
+	~~~
+	apply plugin: 'com.android.application'
+
+	android {
+		compileSdkVersion 28
+		defaultConfig {
+			applicationId "com.example.myapplication"
+			minSdkVersion 19
+			targetSdkVersion 28
+			versionCode 1
+			versionName "1.0"
+			multiDexEnabled true
+		}
+		buildTypes {
+			release {
+				minifyEnabled false
+				proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+			}
+		}
+	}
+
+	dependencies {
+		implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+		implementation 'com.github.bumptech.glide:glide:4.9.0' // 基座依赖
+		implementation 'com.android.support:support-v4:28.0.0'
+		implementation 'com.alibaba:fastjson:1.1.46.android'
+	}
+	~~~
+	
 	+ 配置应用名称
 
 	打开app->res -> main -> values -> strings.xml文件，修改“app_name”字段值，该值为安装到手机上桌面显示的应用名称，建议与manifest.json中name（基础配置中的应用名称）对应。
@@ -94,19 +125,21 @@
 
 	+ 配置应用图标和启动界面
 
-		+ 图标名称及配置
+		+ 图标名称
 
-			icon.png为应用的图标，修改Androidmanifest.xml中application节点的icon属性为@drawable/icon。如下图：
-			
-			![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-15.png)
+			icon.png为应用的图标。
 	
 			push.png为推送消息的图标。
 	
 			splash.png为应用启动页的图标。
 
-	将icon.png、push.png、splash.png放置到drawable,drawalbe-ldpi,drawable-mdpi,drawable-hdpi,drawable-xhdpi,drawable-xxhdpi文件夹下，不同文件夹下对应不同图片尺寸，可参考[文档](https://blog.csdn.net/xuaho0907/article/details/72848520)
+	将icon.png、push.png、splash.png放置到drawable，drawalbe-ldpi，drawable-mdpi，drawable-hdpi，drawable-xhdpi，drawable-xxhdpi文件夹下，不同文件夹下对应不同图片尺寸，可参考[文档](https://blog.csdn.net/xuaho0907/article/details/72848520)
 	
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-6.png)
+	
+	修改Androidmanifest.xml中application节点的icon属性为@drawable/icon。如下图：
+	
+	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-15.png)
 	
 	注意：splash.png在不同设备上显示效果不一样，为防止出现拉伸的状况，建议使用Android studio生成.9.png类型图片，可参考[文档](https://ask.dcloud.net.cn/article/35527)
 	
@@ -120,7 +153,7 @@
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-7.png)
 
-	注：dcloud1.dat、dcloud2.dat为uni-app所需资源，5+ app可将这两个文件删除
+	注：dcloud1.dat、dcloud2.dat为uni-app所需资源，5+APP可将这两个文件删除。
 		
 	* 创建apps文件夹并拷贝资源
 
@@ -132,7 +165,7 @@
 		
 	* 修改dcloud_control.xml文件
 
-	修改dcloud_control.xml中的appid为5+ app的id，确保dcloud_control.xml中的appid与manifest.json中的id与文件夹名一致，如下图所示：
+	修改dcloud_control.xml中的appid为拷贝过来的5+APP的id，确保dcloud_control.xml中的appid与manifest.json中的id与文件夹名一致，如下图所示：
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-9.png)
 
