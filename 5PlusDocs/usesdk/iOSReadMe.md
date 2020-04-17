@@ -12,13 +12,17 @@
 
 	
 ## SDK/Libs 目录下主要库的作用
+
   其他库的用途在离线包中Feature-iOS.xls文件里有详细描述
   
-    |  主要库 |作用｜
+    |  主要库 |  作用  ｜
     | :------: | :------: |
     | AlipaySDK.framework | 支付宝支付|
-    | AMapFoundationKit.framework，AMapFoundationKit.framework，AMapLocationKit.framework，AMapSearchKit.framework，MAMapKit.framework | 高德地图和定位|
-    | BaiduMapAPI_Base.framework，BaiduMapAPI_Cloud.framework，BaiduMapAPI_Location.framework，BaiduMapAPI_Map.framework，BaiduMapAPI_Search.framework，BaiduMapAPI_Utils.framework |百度地图和定位|
+    | AMapFoundationKit.framework，AMapFoundationKit.framework，
+	AMapLocationKit.framework，AMapSearchKit.framework，MAMapKit.framework | 高德地图和定位|
+    | BaiduMapAPI_Base.framework，BaiduMapAPI_Cloud.framework，
+	BaiduMapAPI_Location.framework，BaiduMapAPI_Map.framework，BaiduMapAPI_Search.framework，
+	BaiduMapAPI_Utils.framework |百度地图和定位|
     | BUAdSDK.framework，BUFoundation.framework |穿山甲广告|
     | DCUniVideoPublic.framework |video组件和videoPlayer控件的公共库|
     | GTSDK.framework |个推消息推送|
