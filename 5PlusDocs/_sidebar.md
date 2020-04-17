@@ -4,8 +4,7 @@
 	* [Android](/5PlusDocs/usesdk/android.md)
 	* [iOS](/5PlusDocs/usesdk/ios.md)
 * App SDK/模块配置
-	* Android
-		* [模块集成模板](/5PlusDocs/usemodule/android.md)
+	* [Android](/5PlusDocs/usemodule/android.md)
 		* [推送插件配置](/5PlusDocs/usemodule/androidModuleConfig/push.md)
 		* [分享插件配置](/5PlusDocs/usemodule/androidModuleConfig/share.md)
 		* [登陆鉴权插件配置](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
