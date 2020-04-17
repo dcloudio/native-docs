@@ -9,7 +9,6 @@
 		* [Oauth（登录鉴权）](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
 		* [Map（地图）](/5PlusDocs/usemodule/androidModuleConfig/map.md)
 		* [Payment（支付）](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
-		* [定位插件配置](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
 		* [Speech（语音输入）](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
 		* [uni-AD](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
 	* [iOS 模块配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
