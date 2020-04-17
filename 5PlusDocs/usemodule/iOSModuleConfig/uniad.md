@@ -1,5 +1,7 @@
 此功能需要 HBuilderX 2.5.4-20200108-alpha 之后发布的离线包才能用。
 
+配置离线广告之前，需先在dcloud广告联盟申请账号。
+
 ## 360广告配置
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
@@ -48,5 +50,6 @@
 
  ***注意：如果是uni项目 必须配置上libUniADWeex.a  这个库***
 
-<!--  [uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
-[uni-AD广告联盟使用指南](https://ask.dcloud.net.cn/article/36718)-->
+[uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
+
+[uni-AD广告联盟使用指南](https://ask.dcloud.net.cn/article/36718)

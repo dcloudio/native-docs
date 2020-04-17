@@ -1,4 +1,4 @@
-## 预备环境
+## 开发环境
 
 -  OS X 10.14.0+、Xcode 11.0+ ；
 - 下载离线打包iOS版SDK（[5+ SDK下载](/5PlusDocs/download/ios.md)）。
@@ -92,7 +92,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createinfo.jpg)
 
-9、编译运行，看看是否有错，没有错进入下面的配置步骤。
+
 
 
 ### 配置应用标识(Boundle Identifier)
@@ -240,3 +240,8 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 ### 如何配置iOS平台的某些较特殊的功能
 [平台功能配置](https://ask.dcloud.net.cn/article/173)
+
+
+## 运行
+
+连接手机，编译运行，没有错说明原生工程配置完成。
