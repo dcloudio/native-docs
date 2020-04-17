@@ -1,4 +1,4 @@
-## UniPush平台配置
+## uniPush平台配置
 
 ### 需要拷贝的文件
 
@@ -95,7 +95,7 @@ android {
 ~~~
 ### 其余配置
 
-oppo集成UniPush时需在Androidmanifest.xml的入口activity中添加如下配置：
+oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配置：
 
 ~~~
 <activity
@@ -226,7 +226,7 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
 
 ### AndroidManifest.xml配置
 
-* google play版UniPush配置
+* google play版uniPush配置
 
 在AndroidManifest.xml中添加如下配置。
 

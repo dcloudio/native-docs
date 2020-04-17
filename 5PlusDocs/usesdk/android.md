@@ -1,28 +1,39 @@
-## 准备
+## 开发环境
 
-	1. Android studio
-	2. HBuilderX
-	3. 5+ SDK
+1. Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
+2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
+3. [5+ SDK]()
 
-## 集成
+## 离线SDK目录说明
 
-1. 项目创建（如果已经创建了项目可以跳过创建步骤）
+~~~
+|-- HBuilder-Hello				离线打包演示应用
+|-- HBuilder-Integrate			5+ SDK 集成和插件开发示例
+|-- libs						SDK库文件目录
+|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
+|-- Readme.txt					版本说明文件及注意事项
+|-- UniPlugin-Hello-AS			uni-app 插件开发示例
+~~~
 
-	打开Android studio新建一个空白项目
 
-	![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-1.png)
+## 准备工程
+打开Android studio新建一个空白项目
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-1.png)
 	
-	选择 Empty Activity 点击 Next。
+选择 Empty Activity 点击 Next。
 
-	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-2.png)
+![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-2.png)
 
-	Minimum API Level 建议选19及以上
+Minimum API Level 建议选19及以上
 
-	package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
+package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
 	
-	点击 Finish 完成创建。
+点击 Finish 完成创建。
 
-	**注意：5+ SDK不支持Kotlin**
+**注意：5+ SDK不支持Kotlin**
+	
+## 配置工程
 
 2. 基础库配置
 
