@@ -1,3 +1,5 @@
+## 友盟统计插件配置
+
 #### 添加友盟统计插件
 注:Linker Flags的添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
@@ -16,7 +18,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/statistic/2117.png)
 
 
-## 注意：
+### 注意：
 ### IDFA说明
 
 从HBuilderX2.2.5版本之后（含2.2.5），基座里集成了友盟v6.0.5统计SDK，因友盟官方，从组件化产品开始，【友盟+】SDK默认采集idfa标识，用来更准确的分析核对数据。对于应用本身没有获取idfa的情况，建议将应用提交至AppStore时按如下方式配置：（以避免被苹果以“应用不含广告功能，但获取了广告标示符IDFA”的而拒绝其上架。）

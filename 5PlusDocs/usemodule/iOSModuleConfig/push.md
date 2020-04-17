@@ -1,4 +1,4 @@
-## 个推push和UniPush配置
+## 个推和UniPush配置
 ### 添加push插件
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 1. 依次添加下列Linker Flags: -lGeTuiPush,    ** 注意：如果是UniPush 则把-lGeTuiPush 换成 -lUniPush。**
@@ -26,8 +26,8 @@
 2.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 
-
-## 小米推送配置
+<!-- 
+ ## 小米推送配置
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 1. 依次添加下列Linker Flags:-lXiaomiPush,-lMiPushSDK
 2. 添加下列framework:libresolv.dylib, libxml2.dylib,libz.dylib,SystemConfiguration.framework,MobileCoreServices.framework,CFNetwork.framework,CoreTelephony.framework,
@@ -98,3 +98,4 @@
 保存p12文件时，需为其设置密码，上传到个推平台
 
 **UniPush使用指南：http://ask.dcloud.net.cn/article/35622**
+ -->

@@ -4,7 +4,7 @@
 
  注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
-### 新浪微博分享插件配置
+## 新浪微博分享插件配置
 1.添加以下Linker Flags: -llibShare、-lSinaShare、-lWeiboSDK
 
 2.添加以下framwork:  QuartzCore.framework、ImageIO.framework、SystemConfiguration.framework、Security.framwork、CoreTelephny。framwork、CoreText.framework、libz.dylib、libsqlite3.dylib
@@ -25,7 +25,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/4827.png)
 
 
-### QQ分享插件配置
+## QQ分享插件配置
 1.添加以下Linker Flags: -llibShare、-lQQShare
 
 2.添加以下framwork:  TencentOpenAPI.framework
@@ -40,7 +40,7 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/3728.png)
 
-### 微信分享插件配置
+## 微信分享插件配置
 1.添加以下Linker Flags: -llibShare、 -lweixinShare、-lWeChatSDK
 
 2.添加以下framwork: Social.framework、Accounts.framework

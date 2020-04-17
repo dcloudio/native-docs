@@ -38,22 +38,32 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createdeCo.jpg)
 
 2、拷贝以下文件到新创建工程目录下
+
 iOSSDK/SDK/Bundles/PandoraApi.bundle
+
 iOSSDK/SDK/control.xml
+
 iOSSDK/SDK/Libs/liblibPDRCore.a
+
 iOSSDK/SDK/Libs/libcoreSupport.a
+
 iOSSDK/SDK/Libs/liblibUI.a
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createkaobei.jpg)
 
 注意：如果是uni-app项目，必须参考这遍[文章](https://ask.dcloud.net.cn/article/35871)
 
 
 3、添加刚才拷贝的文件到工程内
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/creattjia.jpg)
 
 4、拷贝IOS-SDK/SDK/inc目录到新创建工程目录下，并添加到工程内
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/creatotherlink.jpg)
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createinc1.jpg)
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createinc2.jpg)
 
 5、点击Project->TARGETS->Build Settings搜索“Other Linker Flags”，双击搜索到的项双击，在弹出框内添加想“-ObjC”
@@ -85,6 +95,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 | ImageIO.framework |
 | CoreText.framework |
 |UserNotifications   并设置为Optianal  |
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/creatextk.jpg)
 
 7、 修改BitCode
@@ -102,7 +113,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 9、编译运行，看看是否有错，没有错进入下面的配置步骤。
 
 
-### - 配置应用标识(Boundle Identifier)
+### 配置应用标识(Boundle Identifier)
 
 选择左侧应用工程根目录，选中TARGETS下的HBuilder打开工程属性界面，在General下修改Identity的值：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongboundleID.png)
@@ -114,7 +125,8 @@ Version为应用版本号，在App Store中显示的版本号，推荐与manifes
 Build为编译版本号，App Store判断升级使用，推荐与manifest.json中version下的code值一致。
 
 <a id="name"></a>
-###  - 配置应用名称 
+
+###  配置应用名称 
 
 1、在打开的原生工程中，点击工程的targets和点开manifest文件，然后将manifest文件里的“name”字段的内容 和原生工程里的Display Name 的写成一样。
 
@@ -132,27 +144,29 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gonggj2.png)
 
 <a id="versionname"></a>
-### - 配置应用版本名称 
+
+###  配置应用版本名称 
 在打开的原生工程中，点击工程的targets和点开manifest文件，然后将manifest文件里的“version”字段里的“name”的内容 和原生工程里的Version 的写成一样。注意，manifest文件里的“version”字段里的“name” 对应的是HBuilderX打开的工程里的“基础配置”里的应用版本名称。如下图红色框所示：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbmc1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbmc2.png)
 
 <a id="versioncode"></a>
-### - 配置应用版本号 
+
+###  配置应用版本号 
 在打开的原生工程中，点击工程的targets和点开工程里的manifest文件，然后将manifest文件里的“version”字段里的“code”的内容 和原生工程里的Build 的写成一样。注意，manifest文件里的“version”字段里的“code” 对应的是HBuilderX打开的工程里的“基础配置”里的应用版本号。如下图红色框所示：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbh1.png)
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbh2.png)
 
-### -配置应用的图标
+### 配置应用的图标
 点击project->target->General->App Icons and Launch Images->App Icons Source项右侧小箭头
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongicon1.jpg)
 在新开页面根据提示将对应尺寸的应用图标拖入到虚线框中即可
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongicon2.jpg)
 
-### -配置应用启动界面
+### 配置应用启动界面
 
-####第一种Launch Images Source方式
+#### 第一种Launch Images Source方式
 1、按下图所示，在配置的地方设置为空，这样配置之后启动界面就会是splash目录里配置的图了，就不会是LaunchScreen.storyboard 作为启动界面了。
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongqdtu1.png)
 
@@ -161,7 +175,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongqdtu2.jpg)
 
-####第二种Launch Screen File方式
+#### 第二种Launch Screen File方式
 1、按下图方法配置Launch Screen File，这样配置之后启动界面就会是设置的LaunchScreen.storyboard。
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/launchSrreen1.png)
 
@@ -170,6 +184,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 
 <a id="channel"></a>
+
 ### 如何配置多渠道
 在需要的打包的原生工程中找到工程的配置文件-Info.plist ，然后添加marketChannel节点，节点内容格式为：包名|应用标识|广告标识|渠道 如io.dcloud.HB|appid|adid|apple
 

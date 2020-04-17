@@ -493,6 +493,4 @@ PDRPluginResult *result = [PDRPluginResult resultWithStatus:PDRCommandStatusOK m
 
 **插件类别名：**JS层字符串，用来声明JS方法和Native层插件的对应关系
 
-## Android平台开发第三方插件请参考
-[Android平台第三方插件开发指导](/5PlusDocs/extends/android.md)
 

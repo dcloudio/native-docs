@@ -1,5 +1,5 @@
 ## LivePusher直播推流配置
-### 添加LivePusher直播推流插件
+#### 添加LivePusher直播推流插件
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 1. 依次添加下列Linker Flags: -llibLivePush。 
 2. 添加下列库:   

@@ -28,7 +28,9 @@ HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为
 
 **离线打包的配置方法可参考文档：**
 
+- [iOS离线包内文件夹的作用](/5PlusDocs/usesdk/iOSReadMe.md)
 - [iOS离线打包教程](/5PlusDocs/usesdk/ios.md)
+
 <!--- [安卓离线打包](http://ask.dcloud.net.cn/article/38)-->
 <!--- - [uni-app离线打包注意事项及配置](http://ask.dcloud.net.cn/article/35139)-->
 

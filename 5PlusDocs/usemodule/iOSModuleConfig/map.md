@@ -3,29 +3,14 @@ LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodu
 
 1.添加下列Linker Flags:  -llibMap、-lBaiduKeyVerify、-lbmapimp
 
-2.添加下列framework: 
+2.添加下列库: 
 
-| 添加下列framework | 
+| | 
 | :-------: | 
-| libstdc++.tbd |
-| libsqlite3.0.dylib |
-| QuartzCore.framework |
-| CoreGraphics.framework |
-| CoreTelephony.framework |
-| SystemConfiguration.framework |
-| Security.framework |
-| MapKit.framework |
-| OpenGLES.framework |
-| CoreLocation.framework |
-| BaiduMapAPI_Utils.framework |
-| BaiduMapAPI_Base.framework |
-| BaiduMapAPI_Search.framework |
-| BaiduMapAPI_Map.framework |
-| BaiduMapAPI_Location.framework |
-| libbmapimp.a |
-| libBaiduKeyVerify.a |
-| libssl.a |
-| libcrypto.a | 
+| libstdc++.tbd , libsqlite3.0.dylib , QuartzCore.framework , CoreGraphics.framework ,CoreTelephony.framework,| 
+|SystemConfiguration.framework , Security.framework , MapKit.framework , OpenGLES.framework, CoreLocation.framework,|
+|BaiduMapAPI_Utils.framework , BaiduMapAPI_Base.framework, BaiduMapAPI_Search.framework, BaiduMapAPI_Map.framework,|
+|BaiduMapAPI_Location.framework,libbmapimp.a,libBaiduKeyVerify.a,libssl.a , libcrypto.a| 
 
 3.添加下列文件: mapapi.bundle
 
@@ -40,7 +25,7 @@ LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodu
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/2460.png)
 
 
-### 常见问题解决
+#### 常见问题解决
 1.如下图只能看见栅格图可能的原因appkey配置不对、Bundle identifier和安全码不一致、百度地图缓存导致的可以删除app重新安装
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/2461.png)
