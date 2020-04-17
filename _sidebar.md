@@ -9,7 +9,16 @@
 	* [宿主-小程序通讯](UniMPDocs/Sample/event.md) 
 * 内置功能模块集成
 	* [Android](UniMPDocs/UseModule/android.md)
-	* [iOS](UniMPDocs/UseModule/ios.md)
+	* iOS
+		* [功能模块说明](UniMPDocs/UseModule/ios/ios.md)
+		* [语音识别（Speech）](UniMPDocs/UseModule/ios/speech.md)
+		* [直播推流（LivePusher）](UniMPDocs/UseModule/ios/livepusher.md)
+		* [推送（Push）](UniMPDocs/UseModule/ios/push.md)
+		* [分享（Share）](UniMPDocs/UseModule/ios/share.md)
+		* [支付（Payment）](UniMPDocs/UseModule/ios/payment.md)
+		* [授权登录（Oauth）](UniMPDocs/UseModule/ios/oauth.md)
+		* [地图（Map）](UniMPDocs/UseModule/ios/map.md)
+		* [友盟统计（Statistic）](UniMPDocs/UseModule/ios/umstatistic.md)
 * 扩展原生能力
 	* [Android](UniMPDocs/Extension/android.md)
 	* [iOS](UniMPDocs/Extension/ios.md)
