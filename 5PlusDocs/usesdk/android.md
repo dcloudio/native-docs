@@ -36,7 +36,9 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 1. 基础库配置
 
-	+ 将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
+	+ 5+APP
+	
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-3.png)
 
@@ -48,6 +50,36 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation 'com.android.support:support-v4:28.0.0'
 	implementation 'com.alibaba:fastjson:1.1.46.android'
 	~~~
+	
+	+ uni-app
+
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
+
+	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-10.png)
+	
+	在build.gradle中添加资源引用
+	
+	~~~
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
+    implementation "com.android.support:support-v4:28.0.0"
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.facebook.fresco:fresco:1.13.0'
+    implementation "com.facebook.fresco:animated-gif:1.13.0"
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.46.android'
+	~~~
+	
+	uni-app配置时需要在build.gradle中添加aaptOptions配置
+	
+	~~~
+	aaptOptions {  
+	    additionalParameters '--auto-add-overlay'  
+	    ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"  
+	}  
+	~~~
+	
+		**注意：更新SDK时需要同时更新aar/jar文件和build.gradle配置**
 	
 2. 应用配置
 
@@ -167,7 +199,9 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-7.png)
 
-	注：dcloud1.dat、dcloud2.dat为uni-app所需资源，5+APP可将这两个文件删除。
+	注意：dcloud1.dat、dcloud2.dat为uni-app所需资源，5+APP可将这两个文件删除。
+	
+	注意：SDK升级时，data下资源需要同时更新。。
 		
 	* 创建apps文件夹并拷贝资源
 

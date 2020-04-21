@@ -103,6 +103,8 @@ properties.xml文件在assets/data目录下
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
 ~~~
 
+
+<!--
 ## 百度定位
 
 ### 需要拷贝的文件
@@ -182,3 +184,5 @@ properties.xml文件在assets/data目录下
 <uses-permission android:name="android.permission.READ_LOGS"/>
 <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
 ~~~
+
+-->

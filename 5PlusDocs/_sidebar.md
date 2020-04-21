@@ -11,6 +11,8 @@
     * [Payment（支付）](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
     * [Speech（语音输入）](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
     * [uni-AD](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
+	* [定位](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
+	* [Android X5 Webview（腾讯TBS）](/5PlusDocs/usemodule/androidModuleConfig/x5.md)
   * [iOS 模块配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
     * [Push（消息推送）](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
     * [Share（分享）](/5PlusDocs/usemodule/iOSModuleConfig/share.md)
