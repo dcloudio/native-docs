@@ -110,11 +110,7 @@
 
 				window.addEventListener("click", function(e) {
 					var target = e.target;
-					if (target.id === "zhizhang") { //点击开发者的感谢信--弹窗多的话，可以封成一个组件
-						var preview = new $docsify.Preview('https://img-cdn-qiniu.dcloud.net.cn/uniapp/doc/gnaxie.png');
-						preview.show();
-						return
-					}
+
 					if (target.className === "chapter") { //左侧导航的折叠
 						var chapterParent = target.parentElement;
 						var summary = localStorage.getItem("summary") ? JSON.parse(localStorage.getItem(
