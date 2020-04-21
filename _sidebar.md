@@ -1,4 +1,4 @@
-* [简介](README.md)
+* [概述](README.md)
 * 集成教程
   * [Android 集成教程](UniMPDocs/UseSdk/android.md)
   * [iOS 集成教程](UniMPDocs/UseSdk/ios.md)
