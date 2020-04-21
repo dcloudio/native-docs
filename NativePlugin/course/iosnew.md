@@ -1,4 +1,4 @@
-## 概述
+## 简介
 本文档主要介绍如何在 iOS 平台开发 uni-app 原生插件。
 
 在您阅读此文档时，您需要具备 iOS 应用开发经验，对 HTML、JavaScript、CSS 等前端开发有一定的了解，并且熟悉在JavaScript 和 Objective-C 环境下的 JSON 格式数据操作等。
@@ -6,10 +6,172 @@
 ## 开发环境
 
 - iOS开发环境，Xcode 11.0+
-- 学习weex 0.26.0版本框架API，[weex扩展API for iOS](https://weex.apache.org/zh/docs/api/ios-apis.html)
-- 下载开发插件需要的SDK包 [最新版本的SDK包](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)，找到里面的HBuilder-uniPluginDemo文件夹，里面包含HBuilder-uniPlugin插件开发工程，后面会用到。
-- 下载开发插件时会用到的js代码的开发工具HBuilderX（[下载地址](http://www.dcloud.io/hbuilderx.html)），下载哪个版本的HBuilderX需要注意下，保持和上条中提到的SDK包（在下载SDK包的下载界面中有版本相关的文字描述如下图），它提到的版本号一致。
-- 确定SDK包里的Xcode工程HBuilder-uniPlugin内是否引用了SDK包里的liblibWeex.a库和weex-main-jsfm.js文件
+- 下载开发插件需要的 [SDK包](5PlusDocs/download/ios.md) 并解压
+- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) （请与 SDK 包的版本保持一致）
+
+### SDK 包结构说明
+
+```
+|--iOSSDK
+	|-- 5+app-uniplugin-demo		// 在 uni-app 中按照 5+ App 规范开发插件工程		
+	|-- HBuilder-Hello				// uni-app 或 5+ App 离线打包工程
+	|-- HBuilder-Integrate			// 5+ App 插件开发工程
+	|-- HBuilder-uniPluginDemo		// uni-app 插件开发主工程 （本文档需要使用的工程）
+	|-- SDK							// 依赖库及依赖资源文件
+	|-- Feature-iOS.xls				// 功能模块与依赖库对应关系说明表格
+	|-- readme.txt					// 目录说明
+```
+
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 5+SDK [相关文档](5PlusDocs/README.md)
+
+## 创建插件工程
+
+打开 Xcode，创建一个新的工程，template 选择 `Framework` 或 `Static Library`（示例工程选择的是 Framework），然后点击 `Next`
+
+![](img/upi1.png)
+
+
+在 Product Name 中输入插件工程名称（建议使用一个性化的前缀，避免与其他人的插件包名冲突），其他项不需要修改保持工程默认填充的即可，然后点击`Next`
+
+![](img/upi2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+然后选择工程存放路径，建议直接存放在 iOSSDK目录中的 `HBuilder-uniPluginDemo` 插件开发主工程目录下，如下图所示，然后点击 `Create`
+> 强烈建议将插件工程存放在 `HBuilder-uniPluginDemo` 插件开发主工程目录中，因为插件工程需要根据插件开发主工程相对路径引用一些文件，之后您升级SDK的时候只需要将您的插件工程 Copy 到新的 SDK 的相同位置下即可
+
+![](img/upi2-1.png)
+
+可以删除工程自动创建的 .h 文件，这个文件用不到
+
+![](img/upi3.png)
+
+
+
+
+
+
+
+
+
+然后选中工程名，在`TARGETS->Build Settings`中，将 `Mach-O Type` 设置为 `Static Library` 如下图所示
+
+![](img/upi3-1.png)
+
+然后将插件工程关闭，接下来需要将插件工程导入到插件开发主工程中
+
+
+## 导入插件工程
+
+打开 `iOSSDK/HBuilder-uniPluginDemo`工程目录，双击目录中的`HBuilder-uniPlugin.xcodeproj` 文件运行插件开发主工程
+
+![](img/upi3-2.png)
+
+在 Xcode 项目左侧目录选中**主工程名**，然后点击右键选择`Add Files to “HBuilder-uniPlugin” ...`
+
+![](img/upi4.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+然后选择您刚刚创建的插件工程路径中，选中插件工程文件，勾选 `Create folder references` 和 `Add to targets` 两项，然后点击`Add`
+
+![](img/upi5.png)
+
+这时在 Xcode 左侧目录中可以看到插件工程已经添加到了主工程中，如下图所示
+
+![](img/upi6.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
 
 ## 插件开发（以RichAlert插件为例）
 

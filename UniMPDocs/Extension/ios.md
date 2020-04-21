@@ -6,7 +6,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 ## 开发环境
 - iOS开发环境，请使用 Xcode 11.0 及以上版本；
-- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36940)
+- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](UniMPDocs/UseSdk/ios.md)
 - 安装 uni小程序开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) （注：版本需与您使用的 uni小程序SDK 版本保持一致）
 
 ## 扩展 module
