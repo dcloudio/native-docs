@@ -1,9 +1,7 @@
-uni小程序SDK原生开发者交流QQ群： 892918401
-
 ## 开发环境
 	
 - iOS开发环境，请使用 Xcode 11 及以上版本；
-- [下载 uni小程序SDK](../UniMPSDK/SDKDownload/ios)；
+- [下载 uni小程序SDK](UniMPDocs/SDKDownload/ios)；
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
 
 ## 集成方式
@@ -76,7 +74,7 @@ UniMPSDK/Core 目录结构说明
 <img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/f1c5691f8ac4d9b42ba16ea7ecc07756.png" width="50%">
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包 
-（注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包” ，2.6.2 版本近期会发布，只是修改了描述功能是一样的）
+（注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包”）
 
 <img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/9fea6e3877e029ef03f4fed4db434dea.png" width="50%">
 
