@@ -1,7 +1,6 @@
 ## 简介
 App离线打包SDK，也称之为 HTML5 Plus SDK，简称 5+ SDK，是把HTML5 Plus运行环境（5+ runtime）封装为原生开发调用接口，开发者可以在自己的 Android 及 iOS 原生开发环境配置工程使用 5+ 的能力，包括 Android离线打包SDK 及 iOS离线打包SDK。
 
-
 ## 功能
 5+ SDK 主要功能包括 App本地离线打包 及 扩展原生能力。
 

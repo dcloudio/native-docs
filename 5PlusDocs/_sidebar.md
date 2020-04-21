@@ -28,9 +28,9 @@
 * 打包发行
   * [Android 打包发行](/5PlusDocs/package/android.md)
   * [iOS 打包发行](/5PlusDocs/package/ios.md)
-* 离线打包SDK下载
-  * [Android 离线打包SDK下载](/5PlusDocs/download/android.md)
-  * [iOS 离线打包SDK下载](/5PlusDocs/download/ios.md)
+* 下载
+  * [Android SDK 下载](/5PlusDocs/download/android.md)
+  * [iOS SDK 下载](/5PlusDocs/download/ios.md)
 * 注意事项
   * [Android 注意事项](/5PlusDocs/FAQ/android.md)
 <div class="contact-box">
