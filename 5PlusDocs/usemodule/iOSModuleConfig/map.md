@@ -1,4 +1,4 @@
-## 百度地图配置
+## 百度地图
 
 LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
@@ -38,7 +38,8 @@ LinkerFlags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodu
 
 在XCode控制台搜索baidu maponGetPermissionState 查看错误码是多少,对比百度开发平台错误信息
 
-## 高德地图配置
+
+## 高德地图
 
 Linker Flags、framework等添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 

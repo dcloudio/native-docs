@@ -1,4 +1,4 @@
-## 微信登陆
+## 微信登录
 
 ### 需要拷贝的文件
 
@@ -44,7 +44,9 @@ properties.xml文件在assets/data目录下
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Weixin" value="io.dcloud.feature.oauth.weixin.WeiXinOAuthService"/></feature>
 ~~~
-## QQ登陆
+
+
+## QQ登录
 
 ### 需要拷贝的文件
 
@@ -88,7 +90,9 @@ properties.xml文件在assets/data目录下
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-QQ" value="io.dcloud.feature.oauth.qq.QQOAuthService"/></feature>
 ~~~
-## 新浪微博登陆
+
+
+## 新浪微博登录
 
 ### 需要拷贝的文件
 
@@ -122,7 +126,8 @@ properties.xml文件在assets/data目录下
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Sina" value="io.dcloud.feature.oauth.sina.SinaOAuthService"/></feature>
 ~~~
 
-## 小米登陆
+
+## 小米登录
 
 ### 需要拷贝的文件
 

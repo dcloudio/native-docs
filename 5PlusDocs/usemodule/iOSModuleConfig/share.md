@@ -2,47 +2,7 @@
 
 分享插件首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/36)
 
-## 新浪微博分享配置
-注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-
-1.添加以下Linker Flags: -llibShare、-lSinaShare、-lWeiboSDK
-
-2.添加以下framwork:  QuartzCore.framework、ImageIO.framework、SystemConfiguration.framework、Security.framwork、CoreTelephny。framwork、CoreText.framework、libz.dylib、libsqlite3.dylib
-
-3.添加下列文件:WeiboSDK.bundle
-
-4.打开info.plist，找到sinweibo项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/1161.png)
-
-
-5.找到URL types ，打开URL identifier为com.weibo的项目，修改item0值为wb[这个是你的appkey] ,如果没有该项按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/1162.png)
-
-6.iOS9.0以上版本需要在info.plist增加以下配置
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/4827.png)
-
-
-## QQ分享配置
-注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-
-1.添加以下Linker Flags: -llibShare、-lQQShare
-
-2.添加以下framwork:  TencentOpenAPI.framework
-
-3.添加下列文件: TencentOpenApi_IOS_Bundle.bundle
-
-4.找到URL types,打开URL identifier为tencentopenapi的项目， 修改item0值为tencent[这个是你的appId] ,如果没有该项按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/2363.png)
-
-5.iOS9.0以上版本需要在info.plist增加以下配置
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/3728.png)
-
-## 微信分享配置
+## 微信分享
 
 注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
@@ -73,6 +33,47 @@
     return YES;
 }
 
+
+## QQ分享
+注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+
+1.添加以下Linker Flags: -llibShare、-lQQShare
+
+2.添加以下framwork:  TencentOpenAPI.framework
+
+3.添加下列文件: TencentOpenApi_IOS_Bundle.bundle
+
+4.找到URL types,打开URL identifier为tencentopenapi的项目， 修改item0值为tencent[这个是你的appId] ,如果没有该项按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/2363.png)
+
+5.iOS9.0以上版本需要在info.plist增加以下配置
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/3728.png)
+
+
+
+## 新浪微博分享
+注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+
+1.添加以下Linker Flags: -llibShare、-lSinaShare、-lWeiboSDK
+
+2.添加以下framwork:  QuartzCore.framework、ImageIO.framework、SystemConfiguration.framework、Security.framwork、CoreTelephny。framwork、CoreText.framework、libz.dylib、libsqlite3.dylib
+
+3.添加下列文件:WeiboSDK.bundle
+
+4.打开info.plist，找到sinweibo项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/1161.png)
+
+
+5.找到URL types ，打开URL identifier为com.weibo的项目，修改item0值为wb[这个是你的appkey] ,如果没有该项按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/1162.png)
+
+6.iOS9.0以上版本需要在info.plist增加以下配置
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/4827.png)
 <!-- ### 腾讯微博分享分享插件配置
 1.添加以下Linker Flags: -llibShare、-lTCWeiboSDK
 

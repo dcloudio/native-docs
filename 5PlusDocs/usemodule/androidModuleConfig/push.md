@@ -1,4 +1,4 @@
-## uniPush平台配置
+## uniPush
 
 ### 需要拷贝的文件
 
@@ -113,7 +113,8 @@ oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配
         </activity>
 ~~~
 
-## 个推推送平台配置
+
+## 个推推送
 
 ### 需要拷贝的文件
 
@@ -218,7 +219,8 @@ services节点下添加
             value="io.dcloud.feature.aps.APSFeatureImpl" />
 ~~~
 
-## 上传google play配置
+
+## GooglePlay渠道配置
 
 ### aar 引用
 

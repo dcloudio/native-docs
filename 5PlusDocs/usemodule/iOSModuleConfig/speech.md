@@ -1,4 +1,4 @@
-## 百度语音配置
+## 百度语音
 ### 将百度语音模块依赖库及资源添加到工程
 
 |依赖库|系统库|依赖资源|
@@ -19,7 +19,8 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/speech/29526.png)
 
-## 讯飞语音配置
+
+## 讯飞语音
 ### 添加讯飞语音插件
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 

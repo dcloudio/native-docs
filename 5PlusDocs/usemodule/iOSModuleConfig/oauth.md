@@ -2,90 +2,8 @@
 登录插件首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/36)
 注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
-## 新浪登录配置
-1.添加以下Linker Flags: -llibOauth、-lSinaWBOauth、-lWeiboSDK
 
-2.添加下列文件:WeiboSDK.bundle
-
-3.打开info.plist，找到sinweibo项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
-
-4.找到URL types ，打开URL identifier为com.weibo的项目，修改item0值为wb[这个是你的appkey] ,如果没有该项按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
-
-5.iOS9.0以上版本需要在info.plist增加以下配置
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
-
-6.UIApplicationDelegate实现类中增加下列实现
-
-```javascript
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-   [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
-    return YES;
-}
-```
-
-## QQ登录配置
-
-1.添加以下Linker Flags: -llibOauth、-lQQOauth
-
-2.添加以下framwork:  TencentOpenAPI.framework
-
-3.添加下列文件: TencentOpenApi_IOS_Bundle.bundle
-
-4.找到URL types,打开URL identifier为tencentopenapi的项目， 修改item0值为tencent[这个是你的appkey] ,如果没有该项按照图中的格式创建
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
-
-5.iOS9.0以上版本需要在info.plist增加以下配置
-
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
-
-或者直接拷贝以下内容:
-<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>mqq</string>
-		<string>mqqapi</string>
-		<string>mqzone</string>
-		<string>wtloginmqq2</string>
-		<string>mqqopensdkapiV3</string>
-		<string>mqqwpa</string>
-		<string>mqqopensdkapiV2</string>
-		<string>mqqOpensdkSSoLogin</string>
-	</array>
-
-6.UIApplicationDelegate实现类中增加下列实现
-
-```javascript
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-  sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-   [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
-    return YES;
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
-    return YES;
-}
-```
-
-## 微信登录配置
+## 微信登录
 
 1.添加以下Linker Flags: -llibOauth、 -lWXOauth、-lWeChatSDK
 
@@ -142,6 +60,89 @@
     restorationHandler(nil);
     return YES;
 }
+## QQ登录
+
+1.添加以下Linker Flags: -llibOauth、-lQQOauth
+
+2.添加以下framwork:  TencentOpenAPI.framework
+
+3.添加下列文件: TencentOpenApi_IOS_Bundle.bundle
+
+4.找到URL types,打开URL identifier为tencentopenapi的项目， 修改item0值为tencent[这个是你的appkey] ,如果没有该项按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
+
+5.iOS9.0以上版本需要在info.plist增加以下配置
+
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
+
+或者直接拷贝以下内容:
+<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mqq</string>
+		<string>mqqapi</string>
+		<string>mqzone</string>
+		<string>wtloginmqq2</string>
+		<string>mqqopensdkapiV3</string>
+		<string>mqqwpa</string>
+		<string>mqqopensdkapiV2</string>
+		<string>mqqOpensdkSSoLogin</string>
+	</array>
+
+6.UIApplicationDelegate实现类中增加下列实现
+
+```javascript
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+   [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+```
+
+
+## 新浪登录
+1.添加以下Linker Flags: -llibOauth、-lSinaWBOauth、-lWeiboSDK
+
+2.添加下列文件:WeiboSDK.bundle
+
+3.打开info.plist，找到sinweibo项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
+
+4.找到URL types ，打开URL identifier为com.weibo的项目，修改item0值为wb[这个是你的appkey] ,如果没有该项按照图中的格式创建
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
+
+5.iOS9.0以上版本需要在info.plist增加以下配置
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/1161.png)
+
+6.UIApplicationDelegate实现类中增加下列实现
+
+```javascript
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+   [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+```
 
 ## 苹果登录配置
 ## 

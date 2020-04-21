@@ -1,4 +1,4 @@
-## 友盟统计配置
+## 友盟统计
 
 注:Linker Flags的添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 

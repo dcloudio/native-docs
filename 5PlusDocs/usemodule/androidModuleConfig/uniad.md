@@ -1,5 +1,3 @@
-## 配置离线打包广告支持
-
 配置离线广告之前，需先在dcloud广告联盟申请账号。
 
 AndroidManifest.xml文件中添加如下节点到节点中，并配置替换其中5+应用appid和广告联盟会员adid的值，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为5+应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现。**
@@ -16,7 +14,7 @@ AndroidManifest.xml文件中添加如下节点到节点中，并配置替换其�
 * 渠道：[渠道包制作指南](https://ask.dcloud.net.cn/article/35974)
 
 
-## 360广告联盟
+## 360广告
 
 ### 库文件配置
 
@@ -38,7 +36,8 @@ features 节点添加
         </feature>
 ~~~
 
-## 今日头条穿山甲广告联盟
+
+## 今日头条穿山甲
 
 ### 库文件配置
 
@@ -82,7 +81,8 @@ features 节点添加
         </feature>
 ~~~
 
-## 腾讯广点通广告联盟
+
+## 腾讯广点通
 
 ### 库文件配置
 

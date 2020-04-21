@@ -159,7 +159,8 @@ properties.xml文件在ADT工程assets/data目录下
 **提示：**androidmanifest.xml文件中声明的包名必须与申请腾讯微博appkey使用的包名一致，否则分享插件会调用失败
 
 -->
-## 新浪微博
+
+## 新浪微博分享
 
 [新浪微博appkey申请步骤](http://ask.dcloud.net.cn/article/209)
 

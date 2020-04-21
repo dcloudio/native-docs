@@ -1,4 +1,4 @@
-## 支付宝配置
+## 支付宝
 
 ### 需要拷贝的文件
 
@@ -47,7 +47,8 @@ properties.xml文件在assets/data目录下
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/></feature>
 ~~~
 
-## 微信支付配置
+
+## 微信支付
 
 [微信appkey申请方法](http://ask.dcloud.net.cn/article/208)
 

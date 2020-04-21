@@ -2,7 +2,8 @@
 
 支付模块首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/71)
 
-## 支付宝支付配置
+
+## 支付宝支付
 
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
  
@@ -29,7 +30,7 @@ iOS9.0以上版本需要在info.plist增加以下配置
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/pay/52443.png)
 
 
-## 微信支付配置
+## 微信支付
 注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
 
 1.配置库和资源文件

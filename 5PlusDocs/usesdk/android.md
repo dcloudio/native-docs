@@ -4,7 +4,7 @@
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 3. [5+ SDK](/5PlusDocs/download/android.md)
 
-## 离线SDK目录说明
+## SDK目录说明
 
 ~~~
 	|-- HBuilder-Hello				离线打包演示应用
