@@ -1,74 +1,31 @@
-## HTML5+ SDK 概述##
-
-HTML5 Plus SDK，简称5+SDK，是把HTML5+运行环境（5+ runtime）封装为原生SDK，可作为以下用途：
-
-1. 使用5+ SDK实现本地（离线）打包。
-2. 通过原生开发扩展5+runtime的能力，uni-app项目推荐开发[uni-app原生插件](/NativePlugin/README.md)，5+APP项目开发[5+插件](/5PlusDocs/README.md?id=开发html5-功能扩展)。
-3. 在现有原生项目中使用HTML5+ SDK替换原有的webview，以获得更强的web增强表现。
-
-**uni-app项目发行为APP时也可以使用5+SDK本地（离线）打包**
-
-## HTML5+ 本地（离线）打包
-
-> HBuilder的云端打包虽然方便，但不能打超过40M的包。通过HTML5+SDK的本地打包方案可以解决打包大小限制的问题。
-
-**Android平台：**
-
-- [Android平台本地（离线）打包教程，导入5+SDK中自带的示例工程](/5PlusDocs/usesdk/useHBuilderHello.md)
-- [Android平台本地（离线）打包教程，创建最简打包工程](/5PlusDocs/usesdk/android.md)
+## 简介
+App离线打包SDK，也称之为 HTML5 Plus SDK，简称 5+ SDK，是把HTML5 Plus运行环境（5+ runtime）封装为原生开发调用接口，开发者可以在自己的 Android 及 iOS 原生开发环境配置工程使用 5+ 的能力，包括 Android离线打包SDK 及 iOS离线打包SDK。
 
 
-<!--
-- [Android平台本地（离线）打包，配置开通广告](https://ask.dcloud.net.cn/article/13141)
-- [Android平台本地（离线）打包，常见问题](https://ask.dcloud.net.cn/article/39)
-- [Android平台uni-app本地（离线）打包注意事项](https://ask.dcloud.net.cn/article/35139)
--->
+## 功能
+5+ SDK 主要功能包括 App本地离线打包 及 扩展原生能力。
 
-**iOS平台：**
+- App本地离线打包：
+对应HBuilderX的云端打包功能，`uni-app`、`5+ App`、`Wap2App`等项目发行为原生App时可在开发者本地配置的原生开发环境中生成发行安装包apk/ipa。
 
-**离线打包的配置方法可参考文档：**
+- 扩展原生能力：
+当HBuilderX中提供的能力无法满足App功能需求，需要通过使用Andorid/iOS原生开发实现时，可使用 5+ SDK 开发原生插件来扩展原生能力。
+  + `uni-app`项目扩展原生能力需开发[uni原生插件](/NativePlugin/README.md)，支持云端打包，有完善的开发者生态[插件市场](https://ext.dcloud.net.cn/?cat1=5&cat2=51)
+  + `5+ App`、`Wap2App`项目扩展原生能力需开发`5+原生插件`
 
-- [iOS离线包内文件夹的作用](/5PlusDocs/usesdk/iOSReadMe.md)
-- [iOS离线打包教程](/5PlusDocs/usesdk/ios.md)
-
-<!--- [安卓离线打包](http://ask.dcloud.net.cn/article/38)-->
-<!--- - [uni-app离线打包注意事项及配置](http://ask.dcloud.net.cn/article/35139)-->
-
-## 开发HTML5+ 功能扩展
-
-> 开发者可以使用原生语言调用HTML5+ SDK，扩展HTML5+ runtime的功能，并打包成手机应用进行发布。
-开发者还可以将开发完成的新功能编译成静态库或者jar包分享给其他开发者，让HTML5+获得更丰富的能力。
-
-**开发方法和步骤请参考文档：**
-
-[IOS平台第三方插件开发指导](/5PlusDocs/extends/iOS.md)
-
-[Android平台第三方插件开发指导](/5PlusDocs/extends/android.md)
+> `5+原生插件`将不再继续维护，建议开发者升级应用为`uni-app`项目并使用`uni原生插件`。如需继续使用5+原生插件，请参考以下文档：
+- [Android平台5+原生插件开发](http://ask.dcloud.net.cn/article/66)
+- [iOS平台5+原生插件开发](http://ask.dcloud.net.cn/article/67)
 
 
-<!--
-## HTML5+SDK 集成
-> 开发者可以在现有的项目中集成 HTML5+SDK，使自己开发中的项目能够使用HTLM5+扩展功能。
-HTML5+集成方式有两种，Widget应用方式集成和Webview方式集成。
-如果想在原生应用中启动一个完整的HTML5+ App，应该使用widget方式；
-如果只是某个页面的webview想换成HTML5+ runtime的webview，应该使用webview方式。
 
+## 注意
+原 `5+ SDK` 的 `Widget方式集成` 和 `WebView方式集成` 将不再继续维护支持，相关功能已迁移到[uni小程序 SDK](/README.md)，因此建议开发者尽快将应用升级到`uni-app`项目。
 
-#### Widget插件集成方式####
-> 如果开发者需要在现有开发中应用的基础上使用HTML5+SDK显示一个手机端的HTML5+ APP，可以使用Widget应用的方式集成HTML5+SDK。
-使用Widget集成方式，开发者可快速的实现在手机端管理一个或多个支持HTML5+能力的移动WebAPP。
+`5+ App`、`Wap2App`项目如需继续使用Widget/Webview方式集成，请参考以下文档：
+- [Android平台Widget方式集成5+SDK](http://ask.dcloud.net.cn/article/81)
+- [Android平台WebView方式集成5+SDK](http://ask.dcloud.net.cn/article/80)
+- [iOS平台Widget方式集成5+SDK](http://ask.dcloud.net.cn/article/84)
+- [iOS平台WebView方式集成5+SDK](http://ask.dcloud.net.cn/article/83)
 
-##### 集成方式可参考文档
-
-- [Android平台以Widget方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/81)
-- [iOS平台以Widget方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/84)
-
-#### Webview集成方式####
-> 开发者在项目开发的过程中，如需在某些流程下需要显示一个支持HTML5+扩展能力的WebView。开发者可以选择使用Webview的方式集成HTML5+SDK。
-使用Webview方式集成HTML5+SDK，可以指定显示本地的HTML页面，也可以指定一个网络地址。开发者可在打开的Webview中调用全部HTML5+ 的JS API。
-
-##### 集成方式可参考文档
-
-- [Android平台以WebView方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/80)
-- [iOS平台以WebView方式集成HTML5+SDK方法](http://ask.dcloud.net.cn/article/83)
--->
+>  Widget/Webview方式集成已废弃，请不要在新项目使用此集成方式，推荐使用`uni小程序SDK`

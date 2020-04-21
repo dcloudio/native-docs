@@ -1,4 +1,4 @@
-* [简介](/5PlusDocs/README.md)
+* [概述](/5PlusDocs/README.md)
 * 原生工程配置
   * [Android 原生工程配置](/5PlusDocs/usesdk/android.md)
   * [iOS 原生工程配置](/5PlusDocs/usesdk/ios.md)
