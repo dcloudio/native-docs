@@ -21,6 +21,7 @@
 				alias: {
 					'/.*/_navbar.md': '/_navbar.md',
 					'/(.*)/.*/_sidebar.md': '/$1/_sidebar.md',
+					'/UniMPDocs/_sidebar.md': '/_sidebar.md',
 				},
 				name: 'uni-native',
 				// TODO 如需提交,必须改为 history 模式
@@ -44,11 +45,27 @@
 				banner: ['/case'],
 				plugins: [
 					function(hook, vm) {
+						hook.doneEach(function() {
+							switch (vm.route.path.split('/')[1]) {
+								case '5PlusDocs':
+									console.log('match-5PlusDocs');
+									document.title = '离线打包SDK'
+									break;
+								case 'NativePlugin':
+									console.log('match-NativePlugin');
+									document.title = '原生插件开发'
+									break;
+								default:
+									console.log('match-default');
+									document.title = 'uni小程序SDK'
+									break;
+							}
+						})
 						hook.afterEach(function(html) {
 							var url = '//github.com/dcloudio/native-docs/tree/master/' + vm.route.file
 							return html + '<hr align=center color=#987cb9 size=1>发现错误？想参与编辑？<a href=' + url + ' target=_blank>在 GitHub 上编辑此页面！</a>'
 						})
-					}
+					},
 				]
 			}
 			// docsify config end
