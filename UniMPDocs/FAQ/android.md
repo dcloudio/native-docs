@@ -36,7 +36,7 @@ A: 如果排除视频、地图、分享、支付、登录、直播pusher等功�
 
 ## Q: 集成Android uni小程序支持androidX吗？
 
-A：参考谷歌官网说明，在 gradle.properties 里将android.useAndroidX 和 android.enableJetifier 都设置为 true，然后使用 Android studio 里的工具 Migrate to AndroidX 即可。
+A：SDK目前基于support来开发的。如果你一定要基于androidx开发可参考谷歌官网说明，在 gradle.properties 里将android.useAndroidX 和 android.enableJetifier 都设置为 true，然后使用 Android studio 里的工具 Migrate to AndroidX 即可。（慎用不确保所有功能都可以正常运行。建议使用androidx1.0.0版本）
 两个参数的含义说明如下：
 android.useAndroidX：当设为 true 时，此标记表示您想立即开始使用 AndroidX。如果缺少此标记，则 Android Studio 会假定此标记已设为 false。
 android.enableJetifier：当设为 true 时，此标记表示您想要获得相关的工具支持（通过 Android Gradle 插件），以便将现有第三方库当作针对 AndroidX 编写的库进行自动转化。如果缺少此标记，则 Android Studio 会假定此标记已设为 false。
