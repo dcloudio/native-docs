@@ -12,8 +12,10 @@
 | :-------: | :-------: |
 | SDK\libs |baidu-libs-release.aar，map-baidu-release.aar|
 
+百度地图暂时不支持 nvue map 标签
+
 ### Androidmainfest.xml文件需要修改的项 
-### 
+
 ** 需要在application节点前添加权限 **
 
 ~~~
@@ -56,13 +58,19 @@ services节点下添加:
 
 ### 需要拷贝的文件 
 
-**需要引入工程的jar文件**
+需要将以下aar文件放到工程的libs目录下
 
-需要将以下jar文件放到工程的libs目录下
+#### 5+ APP、Wab2App项目
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
 | SDK\libs | amap-libs-release.aar，map-amap-release.aar |
+
+#### uni-app项目
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | amap-libs-release.aar，weex_amap-release.aar |
 
 ### Androidmainfest.xml文件需要修改的项
 

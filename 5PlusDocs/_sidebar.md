@@ -4,6 +4,7 @@
   * [iOS 原生工程配置](/5PlusDocs/usesdk/ios.md)
 * 模块及三方SDK配置
   * [Android 模块配置](/5PlusDocs/usemodule/android.md)
+	* [Geolocation（定位）](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
     * [Push（消息推送）](/5PlusDocs/usemodule/androidModuleConfig/push.md)
     * [Share（分享）](/5PlusDocs/usemodule/androidModuleConfig/share.md)
     * [Oauth（登录鉴权）](/5PlusDocs/usemodule/androidModuleConfig/oauth.md)
@@ -11,7 +12,6 @@
     * [Payment（支付）](/5PlusDocs/usemodule/androidModuleConfig/pay.md)
     * [Speech（语音输入）](/5PlusDocs/usemodule/androidModuleConfig/speech.md)
     * [uni-AD](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
-	* [定位](/5PlusDocs/usemodule/androidModuleConfig/geolocation.md)
 	* [Android X5 Webview（腾讯TBS）](/5PlusDocs/usemodule/androidModuleConfig/x5.md)
   * [iOS 模块配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
     * [Push（消息推送）](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
