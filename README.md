@@ -1,4 +1,4 @@
-## 概述 
+## 简介 
 uni小程序SDK，是一个用于原生App中集成的SDK，它可以帮助原生App快速实现小程序的能力，效果如下：
 
 <img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/17968bd5afe1e15f1b0b4965a194726f.gif" width=230>
