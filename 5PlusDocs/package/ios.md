@@ -1,5 +1,5 @@
 ## 预备资料
-准备好Xcode打包需要的，bundleid和生产环境的证书。
+准备好Xcode打包需要的bundleid和生产环境的证书。
 
 ## 应用配置
 ###  配置应用标识(Boundle Identifier)
@@ -25,9 +25,9 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 	按下图红框内的提示配置生产证书
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/PackagingIssue/dbfx1.png)
 
-## ipa打包
+## 生成ipa
 	按下图所示 点击Archive，等打包结束后，会弹出一个界面，然后按界面提示生成ipa包
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/PackagingIssue/dbfx2.png)
 
-## ipa包上传
-   使用Applicaton Loader工具上传ipa包。
+## 上传ipa
+   使用Transporter工具上传ipa包。

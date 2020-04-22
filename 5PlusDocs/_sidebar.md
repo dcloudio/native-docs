@@ -14,6 +14,7 @@
     * [uni-AD](/5PlusDocs/usemodule/androidModuleConfig/uniad.md)
 	* [Android X5 Webview（腾讯TBS）](/5PlusDocs/usemodule/androidModuleConfig/x5.md)
   * [iOS 模块配置](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+    * [Geolocation（定位）](/5PlusDocs/usemodule/iOSModuleConfig/geolocation.md)
     * [Push（消息推送）](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
     * [Share（分享）](/5PlusDocs/usemodule/iOSModuleConfig/share.md)
     * [Oauth（登录鉴权）](/5PlusDocs/usemodule/iOSModuleConfig/oauth.md)

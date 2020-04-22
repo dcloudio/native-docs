@@ -74,6 +74,7 @@
 6.iOS9.0以上版本需要在info.plist增加以下配置
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/4827.png)
+
 <!-- ### 腾讯微博分享分享插件配置
 1.添加以下Linker Flags: -llibShare、-lTCWeiboSDK
 

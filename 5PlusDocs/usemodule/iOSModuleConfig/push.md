@@ -1,55 +1,32 @@
 ## uniPush
+### 将uniPush模块依赖库及资源添加到工程
 
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-1. 依次添加下列Linker Flags:  -lUniPush,
-   -lGeTuiSdk,
-   -llibPush
-   s
-2. 添加下列framework:"GTSDK.framework",
-      "CoreTelephony.framework",
-      "AVFoundation.framework",
-      "CoreLocation.framework",
-      "SystemConfiguration.framework",
-      "MobileCoreServices.framework",
-      "Security.framework",
-      "libresolv.tbd",
-      "libz.tbd",
-      "libsqlite3.tbd",
-      "libc++.tbd",
-      "UserNotifications.framework"
-	  
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniPush.a、liblibPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
-3.到uniPush网站申请appkey等信息,查看该[链接](https://dev.dcloud.net.cn/uni/push)
-  
-4.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+**注意： UserNotifications.framework 需要设置为Optional **
+
+### 帐号配置
+1. 在 [UniPush官网](https://dev.dcloud.net.cn/uni/push) 申请App，获取appid 等信息
+2. 在工程的 info.plist 中添加 "getui" 字段，并填写如下信息
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 
 
 ## 个推推送
 
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+### 将个推推送模块依赖库及资源添加到工程
 
-1.依次添加下列Linker Flags: -lGeTuiPush,
-   -lGeTuiSdk,
-   -llibPush
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniPush.a、liblibPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
-2.添加下列framework:"GTSDK.framework",
-      "CoreTelephony.framework",
-      "AVFoundation.framework",
-      "CoreLocation.framework",
-      "SystemConfiguration.framework",
-      "MobileCoreServices.framework",
-      "Security.framework",
-      "libresolv.tbd",
-      "libz.tbd",
-      "libsqlite3.tbd",
-      "libc++.tbd",
-      "UserNotifications.framework"
-	  
+**注意： UserNotifications.framework 需要设置为Optional **
 
-3.到个推申请appkey等信息,查看该[文档](http://ask.dcloud.net.cn/article/34)
-  
-4.打开info.plist，找到getui项，填入自己帐号的信息，如果没有该项，按照图中的格式创建
+### 帐号配置
+1. 在 [个推官网](https://dev.getui.com/) 申请App，获取appid 等信息
+2. 在工程的 info.plist 中添加 "getui" 字段，并填写如下信息
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 

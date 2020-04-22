@@ -1,18 +1,14 @@
 ## 友盟统计
+### 将友盟统计模块依赖库及资源添加到工程
 
-注:Linker Flags的添加方法请参考这个[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|liblibStatistic.a、UMAnalytics.framework、UMCommon.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
-1.添加以下静态库：liblibStatistic.a
+### 帐号配置
+1.到[友盟开放平台](http://www.umeng.com/analytics)申请Appkey
 
-2.添加以下framework： "UMAnalytics.framework",
-      "UMCommon.framework",
-
-3.添加以下系统库：SystemConfiguration.framework,CoreTelephony.framework, libz.tbd, libsqlite3.tbd
-
-
-4.到[友盟开放平台](http://www.umeng.com/analytics)申请Appkey
-
-5.打开Info.plist文件找到umeng项，如果没有按图片中的格式添加该项，在下图中的红色区域输入申请的Appkey
+2.打开Info.plist文件找到umeng项，如果没有按图片中的格式添加该项，在下图中的红色区域输入申请的Appkey
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/statistic/2117.png)
 
