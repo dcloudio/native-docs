@@ -1,8 +1,8 @@
 ## 开发环境
 
-- OS X 10.14.0+、Xcode 11.0+ 
-- App离线SDK下载：[最新iOS平台SDK下载](/5PlusDocs/download/ios.md)
-- 确保版本一致,请确保从HBuilderX导出的资源文件 的HBuilderX的版本和离线SDK发布的版本号一致，如下2张图里的版本
+-  OS X 10.14.0+、Xcode 11.0+ ；
+- 下载iOS版App离线SDK（[5+ SDK下载](/5PlusDocs/download/ios.md)）。
+- 确保版本一致,请确保从HBuilderX导出的打包资源的HBuilderX的版本号和App离线SDK发布的版本号是一致的，如下2张图里的版本号：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny2.png)
@@ -12,26 +12,38 @@
 
 ## SDK目录说明
 
-- HBuilder-Hello工程：包含所有模块的离线打包演示工程.
-- Feature-iOS.xls文件：包含iOS平台各扩展模块和核心模块的库配置关系.
-- SDK文件：包含打包工程需要的库文件，.h头文件，配置文件，资源文件等
-- 详细说明:[iOS平台-离线包内各个文件夹的作用](/5PlusDocs/usesdk/iOSReadMe.md)
+~~~
+    |-- HBuilder-Hello       给用户打5+app、uni-app项目的离线打包工程
+    |-- Feature-iOS.xls      配置表（依赖的库、资源文件、参数配置等）
+    |-- SDK                  工程需要的库文件，.h头文件，配置文件，资源文件
+~~~
 
-**注意：HBuilderX运行环境相关库文件已全部包含在HBuilder-Hello演示工程中**
+- 详细说明:[App离线SDK内不同文件的作用](/5PlusDocs/usesdk/iOSReadMe.md)
 
-## 准备工程
+<!--  ## 准备工程
 ### 新建一个Xcode工程，步骤如下：
 1、打开Xcode，创建新工程，选择“Single View Application”
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createxcode.jpg)
 
 2、添加创建工程的名称（注意：最好不要填中文或特殊字符）
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createPname.jpg)
-
+ -->
 
 
 ## 配置工程 
+      找到App离线SDK压缩包，并解压，再进入目录；找到HBuilder-Hello文件夹，并打开原生工程，然后准备配置工程。
+### uni-app项目
+      App离线SDK中的HBuilder-Hello文件夹下的打包工程 是按照uni-app项目来配置的，所以基础配置不需要动。
+### 5+app项目
+	如果您是5+app项目，为了减少ipa包的大小，可以相应的删除一些配置，可删除的配置如下：
+	    
+|库|js文件|其他|
+|:--|:--|:--|
+|liblibWeex.a|weex-main-jsfm.js、weex-main-jsfm-nvue-uni.js、weex-main-jsfm-nvue.js、weex-main-jsfm-uni.js、weex-polyfill.js、uni-jsframework.js、uni-app-service.js、weexUniJs.js、__uniappes6.js | unincomponents.ttf|
+
+
+<!-- 
 ### 基础模块配置
- 找到离线SDK包，并解压SDK包，进入目录，准备配置基础模块。
  
 1、从离线包中的HBuilder-Hello工程里找到AppDelegate和ViewController的.h和.m文件,
 然后覆盖掉刚创建的工程里的相应文件
@@ -85,14 +97,13 @@ iOSSDK/SDK/Libs/liblibUI.a
 将Enable Bitcode项的值改成 ‘NO’
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createbitcode.jpg)
 
-<!-- 8、点击Project->TARGETS->Build Settings搜索“ARC”，修改"Objective-C Automatic Reference Counting"项的值为"NO", 如果希望使用ARC则需要修改相应的内存管理代码。
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createARC.jpg) -->
+ 8、点击Project->TARGETS->Build Settings搜索“ARC”，修改"Objective-C Automatic Reference Counting"项的值为"NO", 如果希望使用ARC则需要修改相应的内存管理代码。
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createARC.jpg)
 
 8、 修改info.plist文件，添加App Transport Security Settings类型为Dictionary，在该项下添加Allow Arbitrary Loads项类型为Boolean，值为YES
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createinfo.jpg)
-
-
+ -->
 
 
 ### 配置应用标识(Boundle Identifier)
@@ -100,7 +111,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 选择左侧应用工程根目录，选中TARGETS下的HBuilder打开工程属性界面，在General下修改Identity的值：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongboundleID.png)
 
-其中,Bundle Identifier为苹果的AppID，必须与应用发布是配置的Profile关联的AppID一致；
+其中,Bundle Identifier为苹果的AppID，必须与应用发布时配置的Profile关联的AppID一致；
 
 Version为应用版本号，在App Store中显示的版本号，推荐与manifest.json中version下的name值一致；
 
@@ -244,4 +255,4 @@ App离线SDK默认打开了开屏广告，用户如果不需要开屏广告可�
 
 ## 运行
 
-连接手机，编译运行，没有错说明原生工程配置完成。
+连接手机，编译运行，如果App成功跑起来了，说明原生工程配置完成。

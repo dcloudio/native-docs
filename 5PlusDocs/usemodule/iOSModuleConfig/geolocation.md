@@ -40,3 +40,15 @@
 打开Info.plist文件，然后正确添加下方图片中要求的配置
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/geolocation/geolocation.png)
+
+## 系统定位
+### 将系统定位模块依赖库及资源添加到工程
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|liblibGeolocation.a|Foundation.framework、CoreLocation.framework|无|
+
+### 隐私权限配置
+打开Info.plist文件，然后正确添加下方图片中要求的配置
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/geolocation/geolocation.png)
