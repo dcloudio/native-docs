@@ -1,4 +1,4 @@
-## 模块/三方SDK配置介绍
+### 模块/三方SDK配置介绍
 1、配置离线打包工程时，可以根据需要进行 模块/三方SDK 的增删，这个过程需要对工程做出修改。
 
 2、目前插件需要修改的项目包含Library、Framework、资源文件、info.plist、宏定义、LinkerFlags文件几项。
@@ -35,7 +35,7 @@
    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1218.png)
 
 
-## 如何配置模块/三方SDK
+### 如何配置模块/三方SDK
 1、打开“Feature-iOS.xls”文件，查看配置要求，如下图：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx1.png)
@@ -63,7 +63,7 @@
 
 
 
-## 其他模块/三方SDK配置
+### 其他模块/三方SDK配置
 
 * [定位配置](/5PlusDocs/usemodule/iOSModuleConfig/geolocation.md)
 * [推送配置](/5PlusDocs/usemodule/iOSModuleConfig/push.md)
