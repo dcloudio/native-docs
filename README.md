@@ -39,14 +39,14 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 - uni小程序sdk无法使用插件市场中付费的原生插件，需自己开发
 
 ## FAQ
-Q：uni小程序sdk与5+ sdk的差别是什么？
-A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App时使用5+ SDK本地离线打包发布为原生App，或者替换你已有的原生App，支持5+ App、wap2app、uni-app等。虽然5+ sdk也可以集成到已有原生App中，但后续会逐步迁移放到uni小程序sdk中。
+Q：uni小程序sdk与App离线sdk的差别是什么？
+A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App，用DCloud的工具来开发App，又不想使用云打包，则可以使用App离线sdk打包发布为原生App，App离线sdk支持5+ App、uni-app，不支持wap2app。虽然App离线sdk也可以集成到已有原生App中，但自从uni小程序sdk推出后，将不再推荐这种用法。
 
 Q：想了解uni小程序sdk都有哪些js api，和微信小程序相比如何？
-A：uni小程序sdk的js api比微信小程序的多，不同于微信小程序的“小”的限制，uni小程序sdk的功能更接近于正常的app，没有包体积限制，并且提供了更多丰富的api，以支持正常app的开发。文档和演示demo见：[https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
+A：uni小程序sdk的js api比微信小程序更多，不同于微信小程序的“小”的限制，uni小程序sdk的功能更接近于正常的app，没有包体积限制，并且提供了更丰富的api，以支持完整app的开发。文档和演示demo见：[https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
 
 Q: uni小程序不需要集成分享、支付等第三方的功能。集成到我的Android项目中APK的体积会增加多少？
-A: 如果排除视频、地图、分享、支付、登录、直播pusher等功只集成[基础模块](https://ask.dcloud.net.cn/article/36958#baseaar)。占用APK体积大小如下：
+A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk，只集成[基础模块](https://ask.dcloud.net.cn/article/36958#baseaar)。占用APK体积大小如下：
 
   |cpu型号.so选择|apk占用大小   
   |:---|:---
