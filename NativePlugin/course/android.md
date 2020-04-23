@@ -1,10 +1,10 @@
 ## 开发者须知
-在您阅读此文档时，我们假定您已经具备了相应Android应用开发经验，使用Android Studio开发过Android原生。学习过 weex 知识并能够理解相关概念。您也应该对HTML,JavaScript,CSS等有一定的了解, 并且熟悉在JavaScript和JAVA环境下的JSON格式数据操作等。
+在您阅读此文档时，我们假定您已经具备了相应Android应用开发经验，使用Android Studio开发过Android原生。学习过 weex 知识并能够理解相关概念，也应该对HTML,JavaScript,CSS等有一定的了解, 并且熟悉在JavaScript和JAVA环境下的JSON格式数据操作等。
 
 ## 开发环境 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 5+SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
+- App离线SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
 
 ## 项目创建
 
@@ -28,7 +28,7 @@ package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 ## 导入uni插件原生项目
 
-- UniPlugin-Hello-AS工程请在[5+SDK](/5PlusDocs/download/android.md)中查找
+- UniPlugin-Hello-AS工程请在[App离线SDK](/5PlusDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png" width=700>
@@ -276,7 +276,7 @@ public void testAsyncFunc(JSONObject options, JSCallback callback) {
 
 封装了一个 RichAlertWXModule, 富文本alert弹窗Module
 
-#### 代码可参考UniPlugin-Hello-AS工程中的uniplugin_richalert模块。（UniPlugin-Hello-AS工程请在5+SDK中查找）
+#### 代码可参考UniPlugin-Hello-AS工程中的uniplugin_richalert模块。（UniPlugin-Hello-AS工程请在App离线SDK中查找）
 
 ```JAVA
 public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
@@ -419,7 +419,7 @@ dcRichAlert.show({
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png" width=700>
 
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[离线打包](/5PlusDocs/usesdk/android.md)。
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[App离线打包](/5PlusDocs/usesdk/android.md)。
 
 - appid注意 一定要统一否则会导致应用无法正常运行！
 
