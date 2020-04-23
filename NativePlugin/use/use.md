@@ -3,7 +3,7 @@
 - 使用前需先登录[uni原生插件市场](http://ext.dcloud.net.cn/?cat1=5&cat2=51)，在插件详情页中购买，免费插件也可以在插件市场0元购。购买后才能够云端打包使用插件
 **购买插件时请选择正确的appid，以及绑定正确包名**
 - 对于免费的uni原生插件，也可以先下载到本地再提交云端打包（不推荐）
-详情参考：[HBuilderX使用本地原生插件](/NativePlugin/use/use_local_plugin.md)
+详情参考：[HBuilderX中使用本地插件](/NativePlugin/use/use_local_plugin.md)
 
 ## 第二步：使用自定义基座打包uni原生插件 （注：请使用真机运行自定义基座）
 使用uni原生插件必须先提交云端打包才能生效，购买插件后在应用的manifest.json页面的“App原生插件配置”项下点击“选择云端插件”，选择需要打包的插件：
