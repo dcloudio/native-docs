@@ -1,7 +1,4 @@
-目前登录插件支持新浪微博登录、QQ登录、微信登录
-登录插件首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/36)
-注: Linker Flags、framework等添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
-
+目前登录支持新浪微博登录、QQ登录、微信登录，登录功能首先需要到各开放平台申请帐号,参考[文档](http://ask.dcloud.net.cn/article/36)
 
 ## 微信登录
 
