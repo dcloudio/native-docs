@@ -9,8 +9,7 @@
 
 - OS X 10.14.0+
 - Xcode 11.0+
-- 学习weex 0.26.0版本框架API，[weex扩展API for iOS](https://weex.apache.org/zh/docs/api/ios-apis.html)
-- 下载开发插件需要的SDK包 [最新版本的SDK包](http://ask.dcloud.net.cn/docs/#//ask.dcloud.net.cn/article/103)，找到里面的HBuilder-uniPluginDemo文件夹，里面包含HBuilder-uniPlugin插件开发工程，后面会用到。
+- App离线SDK下载 [最新iOS平台SDK下载](/5PlusDocs/download/ios.md)，找到里面的HBuilder-uniPluginDemo文件夹，里面包含HBuilder-uniPlugin插件开发工程，后面会用到。
 - 下载开发插件时会用到的js代码的开发工具HBuilderX（[下载地址](http://www.dcloud.io/hbuilderx.html)），下载哪个版本的HBuilderX需要注意下，保持和上条中提到的SDK包（在下载SDK包的下载界面中有版本相关的文字描述如下图），它提到的版本号一致。
 - 确定SDK包里的Xcode工程HBuilder-uniPlugin内是否引用了SDK包里的liblibWeex.a库和weex-main-jsfm.js文件
 

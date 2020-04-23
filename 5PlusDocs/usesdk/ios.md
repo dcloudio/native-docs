@@ -1,8 +1,8 @@
 ## 开发环境
 
--  OS X 10.14.0+、Xcode 11.0+ ；
-- 下载离线打包iOS版SDK（[5+ SDK下载](/5PlusDocs/download/ios.md)）。
-- 确保版本一致,请确保从HBuilderX导出的资源文件 的HBuilderX的版本和离线SDK发布的版本号一致，如下2张图里的版本：
+- OS X 10.14.0+、Xcode 11.0+ 
+- App离线SDK下载：[最新iOS平台SDK下载](/5PlusDocs/download/ios.md)
+- 确保版本一致,请确保从HBuilderX导出的资源文件 的HBuilderX的版本和离线SDK发布的版本号一致，如下2张图里的版本
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny2.png)
@@ -186,7 +186,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
 
 ### 如何关闭广告
-5+SDK里默认打开了开屏广告，用户如果不需要开屏广告可在Appdelegate.m文件中注释如下部分，并删除liblibAdSuppor.a库文件,即可关闭广告
+App离线SDK默认打开了开屏广告，用户如果不需要开屏广告可在Appdelegate.m文件中注释如下部分，并删除liblibAdSuppor.a库文件,即可关闭广告
 
 ```
 // 示例默认带开屏广告，如果不需要广告，可注释下面一行,

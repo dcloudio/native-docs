@@ -2,17 +2,17 @@
 
 1. Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
-3. [5+ SDK](/5PlusDocs/download/android.md)
+3. App离线SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
 
 ## SDK目录说明
 
 ~~~
-	|-- HBuilder-Hello				离线打包演示应用
-	|-- HBuilder-Integrate			5+ SDK 集成和插件开发示例
-	|-- libs						SDK库文件目录
+	|-- HBuilder-Hello				App离线打包演示应用
+	|-- HBuilder-Integrate			5+ App集成和插件开发示例
+	|-- libs						        SDK库文件目录
 	|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
 	|-- Readme.txt					版本说明文件及注意事项
-	|-- UniPlugin-Hello-AS			uni-app 插件开发示例
+	|-- UniPlugin-Hello-AS			uni原生插件开发示例
 ~~~
 
 ## 准备工程
@@ -30,7 +30,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 点击 Finish 完成创建。
 
-**注意：5+ SDK不支持Kotlin**
+**注意：App离线SDK不支持Kotlin**
 	
 ## 配置工程
 
@@ -95,7 +95,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	建议将targetSdkVersion设置为25或以上。
 	
-	5+SDK minSdkVersion最低支持19，小于19在部分4.4以下机型上将无法正常使用。
+	App离线SDK minSdkVersion最低支持19，小于19在部分4.4以下机型上将无法正常使用。
 	
 	完整版build.gradle可参考如下内容。
 	
