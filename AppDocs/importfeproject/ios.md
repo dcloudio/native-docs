@@ -1,6 +1,9 @@
 ## 导入资源
+将本地打包App资源拷贝到项目目录下的 `Pandora -> apps` 路径下
 
-蓝色的Pandora目录为folder references引入方式，App 首次启动后会将资源拷贝到应用沙盒路径中，然后从沙盒中读取资源，所以如果重新导入了资源直接运行读取的还是老的资源文件，需要在模拟器或设备删除应用后再重新运行即可更新资源；
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ImportResources/dao1.png)
+
+**注意：蓝色的Pandora目录为folder references引入方式，App 首次启动后会将资源拷贝到应用沙盒路径中，然后从沙盒中读取资源，所以如果重新导入了资源直接运行读取的还是老的资源文件，需要在模拟器或设备删除应用后再重新运行即可更新资源**
 
 ## 配置应用信息
 
