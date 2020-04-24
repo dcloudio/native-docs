@@ -56,7 +56,7 @@ package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 ### 扩展 module
 
-下面以TestModule为例，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_module`模块；
+下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_module`模块；
 
 #### 创建Android Studio的Module模块
 
@@ -132,7 +132,7 @@ public JSONObject testSyncFunc(){
 
 ### 扩展组件 component 
 
-下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_component`模块；
+下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_component`模块；
 
 #### 创建Android Studio的Module模块
 
