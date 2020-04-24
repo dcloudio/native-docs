@@ -26,8 +26,9 @@
     * [uni-AD](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
     * [iOS UIWebview](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)
 * 导入App资源
-  * [Android 导入App资源](/AppDocs/importfeproject/android.md)
-  * [iOS 导入App资源](/AppDocs/importfeproject/ios.md)
+	* [导出App资源](/AppDocs/importfeproject/export.md)
+	* [Android 导入App资源](/AppDocs/importfeproject/android.md)
+	* [iOS 导入App资源](/AppDocs/importfeproject/ios.md)
 * 打包发行
   * [Android 打包发行](/AppDocs/package/android.md)
   * [iOS 打包发行](/AppDocs/package/ios.md)
