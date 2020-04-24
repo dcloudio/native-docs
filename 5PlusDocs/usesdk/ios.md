@@ -1,13 +1,14 @@
 ## 开发环境
 
--  OS X 10.14.0+、Xcode 11.0+ ；
-- App离线SDK下载：[最新iOS平台SDK下载](/5PlusDocs/download/ios.md)）。
+-  OS X 10.14.0+、Xcode 11.0+ 
+-  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
+- App离线SDK下载：[最新iOS平台SDK下载](/5PlusDocs/download/ios.md)
 - 确保版本一致,请确保从HBuilderX导出的打包资源的HBuilderX的版本号和App离线SDK发布的版本号是一致的，如下2张图里的版本号：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny2.png)
 
-**注意：如果版本不一致，app启动时会弹出版本不一致的提示框**
+**注意：如果版本不一致，app启动时会弹出版本不一致的提示框，并且可能导致功能异常**
 
 
 ## SDK目录说明
