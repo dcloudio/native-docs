@@ -35,7 +35,7 @@
 				mdCache: 7200000,
 				search: {
 					maxAge: 7200000,
-					paths: ['/5PlusDocs/README','/5PlusDocs/download/android','/5PlusDocs/download/ios','/5PlusDocs/importfeproject/android','/5PlusDocs/importfeproject/ios','/5PlusDocs/package/android','/5PlusDocs/package/ios','/5PlusDocs/usemodule/android','/5PlusDocs/usemodule/ios','/5PlusDocs/usesdk/android','/5PlusDocs/usesdk/ios','/','/UniMPDocs/Extension/android','/UniMPDocs/Extension/ios','/UniMPDocs/FAQ/android','/UniMPDocs/FAQ/ios','/UniMPDocs/README','/UniMPDocs/SDKDownload/android','/UniMPDocs/SDKDownload/ios','/UniMPDocs/SDKDownload/opensource','/UniMPDocs/Sample/close','/UniMPDocs/Sample/event','/UniMPDocs/Sample/menubutton','/UniMPDocs/Sample/start','/UniMPDocs/UseModule/android','/UniMPDocs/UseModule/ios','/UniMPDocs/UseSdk/android','/UniMPDocs/UseSdk/ios','/zh-cn/guide'],
+					paths: ['/AppDocs/README','/AppDocs/download/android','/AppDocs/download/ios','/AppDocs/importfeproject/android','/AppDocs/importfeproject/ios','/AppDocs/package/android','/AppDocs/package/ios','/AppDocs/usemodule/android','/AppDocs/usemodule/ios','/AppDocs/usesdk/android','/AppDocs/usesdk/ios','/','/UniMPDocs/Extension/android','/UniMPDocs/Extension/ios','/UniMPDocs/FAQ/android','/UniMPDocs/FAQ/ios','/UniMPDocs/README','/UniMPDocs/SDKDownload/android','/UniMPDocs/SDKDownload/ios','/UniMPDocs/SDKDownload/opensource','/UniMPDocs/Sample/close','/UniMPDocs/Sample/event','/UniMPDocs/Sample/menubutton','/UniMPDocs/Sample/start','/UniMPDocs/UseModule/android','/UniMPDocs/UseModule/ios','/UniMPDocs/UseSdk/android','/UniMPDocs/UseSdk/ios','/zh-cn/guide'],
 					placeholder: '搜索',
 					noData: '没有结果',
 					depth: 6
@@ -47,8 +47,8 @@
 					function(hook, vm) {
 						hook.doneEach(function() {
 							switch (vm.route.path.split('/')[1]) {
-								case '5PlusDocs':
-									console.log('match-5PlusDocs');
+								case 'AppDocs':
+									console.log('match-AppDocs');
 									document.title = 'App离线打包SDK'
 									break;
 								case 'NativePlugin':

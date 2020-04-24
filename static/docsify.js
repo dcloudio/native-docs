@@ -3379,7 +3379,7 @@
 				var sidebarUl = sidebarDocument.querySelector(".sidebar-nav-ul");
 				var sidebarLis = sidebarDocument.querySelectorAll(".sidebar-nav-ul>li");
 
-				var navLists = ["", "5PlusDocs", "NativePlugin"],
+				var navLists = ["", "AppDocs", "NativePlugin"],
 					navList = location.pathname.split("/"),
 					mdName = navList[navList.length - 1];
 				var navIndex = ~navLists.indexOf(navList[1]) ? navLists.indexOf(navList[1]) : 0;

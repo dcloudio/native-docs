@@ -29,8 +29,8 @@ weex的插件也可以拿到`uni-app`生态中使用。
 
 #### uni原生插件上线步骤
 - 下载App离线SDK
-  + [Android平台App离线SDK下载](/5PlusDocs/download/android.md)
-  + [iOS平台App离线SDK下载](/5PlusDocs/download/ios.md)
+  + [Android平台App离线SDK下载](/AppDocs/download/android.md)
+  + [iOS平台App离线SDK下载](/AppDocs/download/ios.md)
 - 配置原生开发环境，在原生环境中开发调试插件业务逻辑
   + Android平台需使用AndroidStudio
   + iOS平台需XCode11+（需Mac环境）

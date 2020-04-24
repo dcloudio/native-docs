@@ -4,7 +4,7 @@
 ## 开发环境 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- App离线SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
+- App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
 ## 项目创建
 
@@ -28,7 +28,7 @@ package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 ## 导入uni插件原生项目
 
-- UniPlugin-Hello-AS工程请在[App离线SDK](/5PlusDocs/download/android.md)中查找
+- UniPlugin-Hello-AS工程请在[App离线SDK](/AppDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png" width=700>
@@ -56,7 +56,7 @@ package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 ### 扩展 module
 
-下面以TestModule为例，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_module`模块；
+下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_module`模块；
 
 #### 创建Android Studio的Module模块
 
@@ -132,7 +132,7 @@ public JSONObject testSyncFunc(){
 
 ### 扩展组件 component 
 
-下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS工程中的`uniplugin_component`模块；
+下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_component`模块；
 
 #### 创建Android Studio的Module模块
 
@@ -419,7 +419,7 @@ dcRichAlert.show({
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png" width=700>
 
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[App离线打包](/5PlusDocs/usesdk/android.md)。
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[App离线打包](/AppDocs/usesdk/android.md)。
 
 - appid注意 一定要统一否则会导致应用无法正常运行！
 
@@ -493,13 +493,6 @@ implementation project(':uniplugin_richalert')
 #### 目前对weex支持的问题
 + Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
 + .vue暂时只能使用module形式。component还不支持在.vue下使用
-+ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法
-
-|文件类型|是否支持js同步函数|是否支持component
-|:----|:----|:----
-|.vue|暂不支持|不支持
-|.nvue|支持|支持
-
 + component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityPause、onActivityResult其他暂时不支持
 
 **Tips** onActivityResume事件存在缺陷。应用第一次启动无法正常收到onActivityResume事件，后台切换到前台是可以收到的。

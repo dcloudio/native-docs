@@ -174,7 +174,7 @@ document.addEventListener( "plusready",  function()
 ## IOS平台第三方插件开发指导
 ### 准备：
 
-首先需要下载H5+ 的IOS平台离线打包SDK（[下载地址](/5PlusDocs/download/ios.md)）
+首先需要下载H5+ 的IOS平台离线打包SDK（[下载地址](/AppDocs/download/ios.md)）
 在MAC平台解压后打开HBuilder-plugin工程。
 
  开发步骤

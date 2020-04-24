@@ -2,7 +2,7 @@
 
 -  OS X 10.14.0+、Xcode 11.0+ 
 -  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
-- App离线SDK下载：[最新iOS平台SDK下载](/5PlusDocs/download/ios.md)
+- App离线SDK下载：[最新iOS平台SDK下载](/AppDocs/download/ios.md)
 - 确保版本一致,请确保从HBuilderX导出的打包资源的HBuilderX的版本号和App离线SDK发布的版本号是一致的，如下2张图里的版本号：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny1.png)
@@ -19,7 +19,7 @@
     |-- SDK                  工程需要的库文件，.h头文件，配置文件，资源文件
 ~~~
 
-- 详细说明:[App离线SDK内不同文件的作用](/5PlusDocs/usesdk/iOSReadMe.md)
+- 详细说明:[App离线SDK内不同文件的作用](/AppDocs/usesdk/iOSReadMe.md)
 
 <!--  ## 准备工程
 ### 新建一个Xcode工程，步骤如下：
