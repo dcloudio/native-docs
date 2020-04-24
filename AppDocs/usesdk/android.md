@@ -2,7 +2,7 @@
 
 1. Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
-3. App离线SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
+3. App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
 ## SDK目录说明
 
@@ -209,7 +209,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-8.png)
 		
-	[导入app资源](/5PlusDocs/importfeproject/android.md)
+	[导入app资源](/AppDocs/importfeproject/android.md)
 		
 	* 修改dcloud_control.xml文件
 

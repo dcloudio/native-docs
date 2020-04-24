@@ -220,7 +220,7 @@ uni-app 中无需主动监听 plusready，可以直接调用 plus 相关的 API�
 
 ### 准备
 
-首先要下载HTML5+基座的Android版SDK[点击下载](/5PlusDocs/download/android.md)解压后将HBuilder-Integrate工程导入到ADT中。
+首先要下载HTML5+基座的Android版SDK[点击下载](/AppDocs/download/android.md)解压后将HBuilder-Integrate工程导入到ADT中。
 
 ### uni-app插件开发
 

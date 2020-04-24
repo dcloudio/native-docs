@@ -1,5 +1,5 @@
 * [uni小程序 SDK](README.md)
-* [App离线打包](5PlusDocs/README.md)
+* [App离线打包](AppDocs/README.md)
 * [原生插件开发](NativePlugin/README.md)
 
 <ul class="nav-href">

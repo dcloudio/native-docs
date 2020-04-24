@@ -33,7 +33,7 @@
 
 <!-- 
  ## 小米推送配置
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+注: Linker Flags、framework添加方法参考该[文档](/AppDocs/usemodule/iOSModuleConfig/common.md)
 1. 依次添加下列Linker Flags:-lXiaomiPush,-lMiPushSDK
 2. 添加下列framework:libresolv.dylib, libxml2.dylib,libz.dylib,SystemConfiguration.framework,MobileCoreServices.framework,CFNetwork.framework,CoreTelephony.framework,
 

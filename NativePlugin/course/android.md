@@ -4,7 +4,7 @@
 ## 开发环境 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- App离线SDK下载：[最新android平台SDK下载](/5PlusDocs/download/android.md)
+- App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
 ## 项目创建
 
@@ -28,7 +28,7 @@ package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 ## 导入uni插件原生项目
 
-- UniPlugin-Hello-AS工程请在[App离线SDK](/5PlusDocs/download/android.md)中查找
+- UniPlugin-Hello-AS工程请在[App离线SDK](/AppDocs/download/android.md)中查找
 - 点击Android Studio菜单选项File--->New--->Import Project。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_1.png" width=700>
@@ -419,7 +419,7 @@ dcRichAlert.show({
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_15.png" width=700>
 
-- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[App离线打包](/5PlusDocs/usesdk/android.md)。
+- 把APP资源文件放入到UniPlugin-Hello-AS工程下 `app` Module根目录assets/apps/测试工程appid/www对应目录下,再修改assets/data/dcloud_control.xml!修改其中appid=“测试工程appid”!,测试工程UniPlugin-Hello-AS 已有相关配置可参考。具体可查看[App离线打包](/AppDocs/usesdk/android.md)。
 
 - appid注意 一定要统一否则会导致应用无法正常运行！
 

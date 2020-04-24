@@ -9,7 +9,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_21.png)
 
 
-#### 2. 下载最新版SDK，[最新版SDK下载地址](/5PlusDocs/download/android.md)
+#### 2. 下载最新版SDK，[最新版SDK下载地址](/AppDocs/download/android.md)
 
 将下载目录/SDK/libs下的lib.5plus.base-release.aar和uniapp-release.aar放入到libs文件夹下（如果需要使用其他功能，可参考SDK中的Feature-Android.xls进行配置）。
 

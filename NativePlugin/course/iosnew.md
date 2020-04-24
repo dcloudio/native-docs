@@ -6,7 +6,7 @@
 ## 开发环境
 
 - iOS开发环境，Xcode 11.0+
-- 下载开发插件需要的 [SDK包](5PlusDocs/download/ios.md) 并解压
+- 下载开发插件需要的 [SDK包](/AppDocs/download/ios.md) 并解压
 - 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) （请与 SDK 包的版本保持一致）
 
 ### SDK 包结构说明
@@ -22,7 +22,7 @@
 	|-- readme.txt					// 目录说明
 ```
 
-SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 5+SDK [相关文档](5PlusDocs/README.md)
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 5+SDK [相关文档](/AppDocs/README.md)
 
 ## 创建插件工程
 

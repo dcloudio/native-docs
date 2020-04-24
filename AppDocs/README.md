@@ -6,8 +6,8 @@ App离线SDK主要用于`App本地离线打包`及`扩展原生能力`
 
 - App本地离线打包：
 对应HBuilderX的云端打包功能，`uni-app`、`5+ App`、`Wap2App`等项目发行为原生App时，无需将App资源及打包要使用的签名证书等提交到云端打包服务器，在开发者本地配置的原生开发环境中生成安装包apk/ipa。
-  + [Android平台App本地离线打包](/5PlusDocs/usesdk/android.md)
-  + [iOS平台App本地离线打包](/5PlusDocs/usesdk/ios.md)
+  + [Android平台App本地离线打包](/AppDocs/usesdk/android.md)
+  + [iOS平台App本地离线打包](/AppDocs/usesdk/ios.md)
 
 - 扩展原生能力：
 当HBuilderX中提供的能力无法满足App功能需求，需要通过使用Andorid/iOS原生开发实现时，可使用App离线SDK开发原生插件来扩展原生能力。
