@@ -15,9 +15,9 @@ UniMPSDK/Core 目录结构说明
 
 ```
 |-- UniMPSDK/Core
-	|-- Headers			// .h 头文件
-	|-- Libs				// 基础依赖库
-	|-- Resources			// 资源文件
+	|-- Headers  		// .h 头文件
+	|-- Libs     		// 基础依赖库
+	|-- Resources		// 资源文件
 ```
 
 #### 添加基础依赖库

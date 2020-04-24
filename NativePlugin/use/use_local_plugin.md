@@ -13,8 +13,7 @@
 
 ### 开发者自己开发uni-app原生插件
 
-原生插件开发完成后按指定格式压缩为zip包，参考[uni-app原生插件格式说明文档](https://ask.dcloud.net.cn/article/35414)。
-按上图的格式配置到uni-app项目下的“nativeplugins”目录。
+原生插件开发完成，按上图的格式配置到uni-app项目下的“nativeplugins”目录。
 
 ## uni-app原生插件本地配置
 将原生插件配置到uni-app项目的“nativeplugins”下，还需要在manifest.json文件的“App原生插件配置”项下点击“选择本地插件”，在列表中选择需要打包生效的插件：

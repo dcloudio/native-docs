@@ -1,4 +1,13 @@
 ## 更新日志
+#### 2020年04月21日发布
+[点击下载SDK UniMP_iOS_SDK@2.6.15.20200421](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.15.20200421.zip)
++ 需使用HBuilderX（2.6.15）版本生成 小程序App 资源
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.15.20200421.html)
+
+
+## 历史版本
+<details>
+<summary>展开查看</summary>
 #### 2020年04月19日发布
 [点击下载SDK UniMP_iOS_SDK@2.6.14.20200419](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.14.20200419.zip)
 + 需使用HBuilderX（2.6.14）版本生成 小程序App 资源
@@ -6,10 +15,6 @@
 + iOS平台 修复 小程序内 wgt 热更新资源后启动会显示一下 LaunchScreen.storyboard 页面的Bug
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.14.20200419-alpha.html)
 
-
-## 历史版本
-<details>
-<summary>展开查看</summary>
 #### 2020年04月15日发布
 [点击下载SDK UniMP_iOS_SDK@2.6.13.20200414](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.13.20200414.zip)
 + 需使用HBuilderX（2.6.13）版本生成 小程序App 资源。

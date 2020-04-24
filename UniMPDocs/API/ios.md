@@ -1,34 +1,17 @@
-## DCUniMPSDKEngine 类
+iOS 端所有 API 都在 DCUniMPSDKEngine 类中定义，您也可以直接查看`DCUniMPSDKEngine.h`头文件的方法定义
 
-### 初始化 SDK 全局环境
-
+### 初始化 sdk 全局环境
 ```objective-c
-/// @param options 初始化参数
+/// 初始化 sdk 全局环境
+/// @param options 启动参数
 + (void)initSDKEnvironmentWihtLaunchOptions:(NSDictionary *)options;
 ```
 
 初始化 sdk engine，并设置启动参数，建议在 application:didFinishLaunchingWithOptions 方法中添加
 
-**示例**
-
-```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {  
-    // Override point for customization after application launch.  
-
-    // 配置参数  
-    NSMutableDictionary *options = [NSMutableDictionary dictionaryWithDictionary:launchOptions];  
-    // 设置 debug YES 会在控制台输出 js log，默认不输出 log，注：需要引入 liblibLog.a 库  
-    [options setObject:[NSNumber numberWithBool:YES] forKey:@"debug"];  
-    // 初始化引擎  
-    [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];  
-
-    return YES;  
-}
-```
-
 ### App系统生命周期事件方法
 
-App 系统生命周期方法中调用 SDK 相关方法
+需要在 App 系统生命周期方法中调用 SDK 相关方法
 
 **示例**
 
@@ -52,13 +35,12 @@ App 系统生命周期方法中调用 SDK 相关方法
 - (void)applicationWillTerminate:(UIApplication *)application {  
     [DCUniMPSDKEngine destory];  
 }
+
 ```
 
 ### App系统事件回调方法
 
 可根据项目需求，选择实现以下方法
-
-**示例**
 
 ```objective-c
 #pragma mark - 如果需要使用 URL Scheme 或 通用链接相关功能，请实现以下方法  
@@ -96,87 +78,156 @@ App 系统生命周期方法中调用 SDK 相关方法
     // 收到本地推送消息  
     [DCUniMPSDKEngine application:application didReceiveLocalNotification:notification];  
 }
+
+```
+
+
+### 获取uni小程序应用资源部署路径
+
+```objective-c
+/// 获取 App 运行路径，注：需要将应用资源放到此路径下
+/// @param appid appid
++ (NSString *)getAppRunPathWithAppid:(NSString *)appid;
 ```
 
 ### 判断应用资源是否已经部署
 
 ```objective-c
+/// 运行目录中是否已经存在 App
+/// @param appid appid
 + (BOOL)isExistsApp:(NSString *)appid;
 ```
 
 ### 将wgt应用资源包部署到运行路径中
 
 ```objective-c
+/// 将wgt应用资源包部署到运行路径中
 /// @param appid appid
 /// @param wgtPath wgt应用资源包路径
 + (BOOL)releaseAppResourceToRunPathWithAppid:(NSString *)appid
                             resourceFilePath:(NSString *)wgtPath;
 ```
 
-**示例**
+### 启动小程序应用
 
 ```objective-c
-if (![DCUniMPSDKEngine isExistsApp:k_AppId]) {
-        // 读取导入到工程中的wgt应用资源
-        NSString *appResourcePath = [[NSBundle mainBundle] pathForResource:k_AppId ofType:@"wgt"];
-        if (!appResourcePath) {
-            NSLog(@"资源路径不正确，请检查");
-            return;
-        }
-        // 将应用资源部署到运行路径中
-        if ([DCUniMPSDKEngine releaseAppResourceToRunPathWithAppid:k_AppId resourceFilePath:appResourcePath]) {
-            NSLog(@"应用资源文件部署成功");
-        }
-}
-```
+/// 启动 App
+/// @param appid appid
+/// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
++ (void)openApp:(NSString *)appid
+      arguments:(NSDictionary * __nullable)arguments;
 
-### 打开小程序应用
 
-```objective-c
+/// 启动 App
 /// @param appid appid
 /// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
 /// @param redirectPath 启动后直接打开的页面路径 例："pages/component/view/view?a=1&b=2"
 + (void)openApp:(NSString *)appid
       arguments:(NSDictionary * _Nullable)arguments
    redirectPath:(NSString * _Nullable)redirectPath;
-
-```
-
-### 获取应用资源运行路径
-
-```objective-c
-+ (NSString *)getAppRunPathWithAppid:(NSString *)appid;
-```
-
-<a id="getUniMPVersionInfo"></a>
-### 获取已经部署的小程序应用资源版本信息
-
-```objective-c
-+ (NSDictionary *)getUniMPVersionInfoWithAppid:(NSString *)appid;
-
-注：返回数据如下对应小程序应用中 manifest.json 配置的信息
-{
-     "name": "1.0.0",     // 应用版本名称
-     "code": 100          // 应用版本号
-}
 ```
 
 ### 关闭当前小程序应用
 
 ```objective-c
+/// 关闭当前小程序应用
 + (void)closeUniMP;
 ```
 
 ### 获取当前运行的小程序appid
 
 ```objective-c
+/// 获取当前运行的小程序appid
 + (NSString *)getActiveUniMPAppid;
 ```
 
-<a id="getCurrentPageUrl"></a>
-### 获取当前显示小程序页面的直达链接url 
-用于打开小程序直达二级页面
+### 获取当前小程序页面的直达链接url
 
 ```objective-c
+/// 获取当前小程序页面的直达链接url
 + (NSString *)getCurrentPageUrl;
+```
+
+### 获取已经部署的小程序应用资源版本信息
+
+```objective-c
+/// 获取已经部署的小程序应用资源版本信息
+/// @param appid appid
+/// 返回数据为 manifest 中的配置信息
+/// {
+///     "name": "1.0.0",     // 应用版本名称
+///     "code": 100          // 应用版本号
+/// }
++ (NSDictionary *__nullable)getUniMPVersionInfoWithAppid:(NSString *)appid;
+```
+
+### 向小程序发送事件
+
+```objective-c
+/// 向小程序发送事件
+/// @param event 事件名称
+/// @param data 数据：NSString 或 NSDictionary 类型
++ (void)sendUniMPEvent:(NSString *)event data:(id)data;
+```
+
+### 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
+
+```objective-c
+/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
+/// @param menuButtonHidden Bool 是否隐藏胶囊按钮
++ (void)setMenuButtonHidden:(BOOL)menuButtonHidden;
+```objective-c
+
+### 配置点击菜单按钮弹出 ActionSheet 视图的样式
+
+```objective-c
+/// 配置点击菜单按钮弹出 ActionSheet 视图的样式
+/// @param menuActionSheetStyle DCUniMPMenuActionSheetStyle
++ (void)configMenuActionSheetStyle:(DCUniMPMenuActionSheetStyle *)menuActionSheetStyle;
+```
+
+### 配置胶囊按钮菜单 ActionSheet 全局项
+
+```objective-c
+/// 配置胶囊按钮菜单 ActionSheet 全局项
+/// @param items DCUniMPMenuActionSheetItem 数组
++ (void)setDefaultMenuItems:(NSArray<DCUniMPMenuActionSheetItem *> *)items;
+```
+
+### 设置 DCUniMPSDKEngineDelegate
+
+```objective-c
+/// 设置 DCUniMPSDKEngineDelegate
+/// @param delegate 代理对象
++ (void)setDelegate:(id<DCUniMPSDKEngineDelegate>)delegate;
+```
+
+
+### DCUniMPSDKEngineDelegate 相关方法
+
+```objective-c
+/// 回调数据给小程序
+/// result：回调参数支持 NSString 或 NSDictionary 类型
+/// keepAlive：如果 keepAlive 为 YES，则可以多次回调数据给小程序，反之触发一次后回调方法即被移除
+typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
+
+@optional
+/// 胶囊按钮菜单 ActionSheetItem 点击回调方法
+/// @param identifier item 项的标识
+- (void)defaultMenuItemClicked:(NSString *)identifier;
+
+/// 返回打开小程序时的闪屏视图
+/// @param appid appid
+- (UIView *)splashViewForApp:(NSString *)appid;
+
+/// 关闭小程序的回调方法
+/// @param appid appid
+- (void)uniMPOnClose:(NSString *)appid;
+
+
+/// 小程序向原生发送事件回调方法
+/// @param event 事件名称
+/// @param data 数据：NSString 或 NSDictionary 类型
+/// @param callback 回调数据给小程序
+- (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback;
 ```

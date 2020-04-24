@@ -24,7 +24,7 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 	|-- readme.txt					// 目录说明
 ```
 
-SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`libWeexDCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
 
 ## 创建插件工程
 
@@ -604,7 +604,7 @@ WX_EXPORT_METHOD(@selector(focus:))
 
 ### 放到 HBuilderX 的 uni-app 项目中直接使用
 
-插件包开发完后，可以直接放到 HX 的 uni-app 项目中使用，具体请参考文档 [HBuilderX 中使用本地插件](https://nativesupport.dcloud.net.cn/NativePlugin/use/use_local_plugin?id=%e5%bc%80%e5%8f%91%e8%80%85%e8%87%aa%e5%b7%b1%e5%bc%80%e5%8f%91uni-app%e5%8e%9f%e7%94%9f%e6%8f%92%e4%bb%b6)
+插件包开发完后，可以直接放到 HX 的 uni-app 项目中使用，具体请参考文档 [HBuilderX 中使用本地插件](/NativePlugin/use/use_local_plugin?id=开发者自己开发uni-app原生插件)
 
 ### 提交插件市场
 
