@@ -343,7 +343,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 至此，已经完成了一个简单 component 的实现
 
-然后我们需要在`info.plist` 中添加 component 的配置信息，和 module 配置格式一样具体请参考 [配置插件信息](添加一个锚点)
+然后我们需要在`info.plist` 中添加 component 的配置信息，和 module 配置格式一样具体请参考 [配置插件信息](/NativePlugin/course/ios?id=配置插件信息)
 
 - class：填写`TestComponent`
 - name：填写`dc-testmap` **(在页面中使用时的组件名称，添加一个个性化的前缀，避免与其他组件冲突)**
@@ -368,7 +368,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 </template>
 ```
 
-然后生成本地打包资源，导入到插件开发工程中进行测试，具体操作参考文档上方的教程 [导入 uni-app 资源](添加一个锚点)
+然后生成本地打包资源，导入到插件开发工程中进行测试，具体操作参考文档上方的教程 [导入 uni-app 资源](/NativePlugin/course/ios?id=导入-uni-app-资源)
 
 然后运行测试，效果如下图：
 
