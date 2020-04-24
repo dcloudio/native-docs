@@ -493,13 +493,6 @@ implementation project(':uniplugin_richalert')
 #### 目前对weex支持的问题
 + Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
 + .vue暂时只能使用module形式。component还不支持在.vue下使用
-+ .vue下暂时不支持调用JS同步方法，.nvue可以使用。component的使用可参考weex写法
-
-|文件类型|是否支持js同步函数|是否支持component
-|:----|:----|:----
-|.vue|暂不支持|不支持
-|.nvue|支持|支持
-
 + component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityPause、onActivityResult其他暂时不支持
 
 **Tips** onActivityResume事件存在缺陷。应用第一次启动无法正常收到onActivityResume事件，后台切换到前台是可以收到的。
