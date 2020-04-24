@@ -46,7 +46,7 @@ Q：想了解uni小程序sdk都有哪些js api，和微信小程序相比如何�
 A：uni小程序sdk的js api比微信小程序更多，不同于微信小程序的“小”的限制，uni小程序sdk的功能更接近于正常的app，没有包体积限制，并且提供了更丰富的api，以支持完整app的开发。文档和演示demo见：[https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
 
 Q: uni小程序不需要集成分享、支付等第三方的功能。集成到我的Android项目中APK的体积会增加多少？
-A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk，只集成[基础模块](https://ask.dcloud.net.cn/article/36958#baseaar)。占用APK体积大小如下：
+A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk，只集成[基础模块](UniMPDocs/UseSdk/android?id=unimpsdksdklibs-依赖库说明)。占用APK体积大小如下：
 
   |cpu型号.so选择|apk占用大小   
   |:---|:---
