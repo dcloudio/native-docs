@@ -2,55 +2,31 @@
 
 配置离线广告之前，需先在dcloud广告联盟申请账号。
 
-
 ## 360广告
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+### 添加依赖资源及文件
 
-1.依次添加下列Linker Flags: -lUniAD，-lUniAd-360
-
-2.添加下列framework:"libz.tbd","QHADSDK.framework","CoreLocation.framework",  "CoreTelephony.framework", "WebKit.framework",  "Security.framework",  "SystemConfiguration.framework",  "AdSupport.framework"
-
-3.把离线包里Bundles文件夹里的 QHADVideoPlayer.bundle 引入到工程中
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libSDWebImage.a、libUniAd-360.a|QHADSDK.framework、CoreLocation.framework、CoreTelephony.framework、WebKit.framework、Security.framework、libz.tbd、SystemConfiguration.framework、AdSupport.framework|QHADVideoPlayer.bundle|
 
 
 ## 今日头条穿山甲
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+### 添加依赖资源及文件
 
-1.依次添加下列Linker Flags: -lUniAD， -lUniAd-Csj， -lSDWebImage
-
-2.添加下列framework:"BUAdSDK.framework","BUFoundation.framework","StoreKit.framework",  "MobileCoreServices.framework", "WebKit.framework",  "MediaPlayer.framework",  "CoreMedia.framework", "CoreLocation.framework",
-      "AVFoundation.framework",
-      "CoreTelephony.framework",
-      "SystemConfiguration.framework",
-      "AdSupport.framework",
-      "CoreMotion.framework",
-      "Accelerate.framework",
-      "libresolv.9.tbd",
-      "libc++.tbd",
-      "libz.tbd",
-      "libsqlite3.tbd"
-	  
-3.把离线包里Bundles文件夹里的 BUAdSDK.bundle 引入到工程中
-
- ***注意：如果是uni项目 必须配置上libUniADWeex.a  这个库***
-
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libSDWebImage.a、libUniAd-Csj.a|BUAdSDK.framework、BUFoundation.framework、StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、
+SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、libresolv.9.tbd、libc++.tbd、libz.tbd、libsqlite3.tbd、|BUAdSDK.bundle|
 
 ## 腾讯广点通
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+### 添加依赖资源及文件
 
-1.依次添加下列Linker Flags: -lUniAD， -lUniAd-Gdt ， -lGDTMobSDK
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libSDWebImage.a、libUniAd-Gdt.a、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
 
-2.添加下列framework:"AdSupport.framework",
-      "CoreLocation.framework",
-      "QuartzCore.framework",
-      "SystemConfiguration.framework",
-      "CoreTelephony.framework",
-      "Security.framework",
-      "StoreKit.framework",
-      "AVFoundation.framework",
-      "WebKit.framework",
-      "libz.tbd",
-      "libxml2.tbd"
+
+***注意：如果是uni项目 必须配置上libUniADWeex.a  这个库***
 
 [uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
 

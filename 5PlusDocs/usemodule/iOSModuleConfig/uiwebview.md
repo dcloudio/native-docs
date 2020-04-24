@@ -10,10 +10,8 @@ iOS有UIWebview和WKWebview两种webview。从iOS13开始苹果将UIWebview列�
 ## iOS UIWebview模块配置 
  如果开发者需要在离线打包工程中使用UIWebview功能，需要在自己的离线工程中配置UIWebview模块。
  
-注: Linker Flags、framework添加方法参考该[文档](/5PlusDocs/usemodule/iOSModuleConfig/common.md)
+ ### 添加依赖资源及文件
 
-1.依次添加下列Linker Flags: -lH5WEUIWebview  
- 
-2.添加下列依赖库:"JavaScriptCore.framework",
- "Foundation.framework",
- "UIKit.framework",
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libH5WEUIWebview.a|JavaScriptCore.framework、Foundation.framework、UIKit.framework|无|
