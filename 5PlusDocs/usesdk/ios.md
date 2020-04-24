@@ -191,41 +191,12 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可。
 渠道：可以填apple。
 
-**注意：**如果要配置广告，需要2个步骤：
-1.在info.plist文件里加DCLOUD_AD_ID节点，内容 为自己申请的广告adid
-2.把marketChannel节点的广告标识换成申请的广告标识。如下图所示：
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
-
-### 如何关闭广告
-App离线SDK默认打开了开屏广告，用户如果不需要开屏广告可在Appdelegate.m文件中注释如下部分，并删除liblibAdSuppor.a库文件,即可关闭广告
-
-```
-// 示例默认带开屏广告，如果不需要广告，可注释下面一行,
-#define ENABLEAD
-```
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongggao1.png)
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongggao2.png)
-
-
-如果需要关闭其他类型的广告可在应用的manifest.json文件中增加如下配置
-
-```
-    "plus": {
-        "ads": {
-            "push":"false",     
-            "splash":"false",   
-            "rp":"false",        
-            "spot":"false",     
-        }
-    }
-```
-
-说明可参考文档 [Manifest.json文档说明 manifest配置](http://ask.dcloud.net.cn/article/94)ads部分
+### 如何配置广告
+[如何配置广告](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
 
 ### 如何配置3D Touch
-[配置3D Touch](http://ask.dcloud.net.cn/article/425)
+[配置3D Touch](/5PlusDocs/usesdk/iosOther/3DTouch.md)
 
 <a id="advertisingIdentifier"></a>
 ### 如何配置IDFA
@@ -233,7 +204,7 @@ App离线SDK默认打开了开屏广告，用户如果不需要开屏广告可�
 如何知道项目中是否使用广告标示符，其实就是查看framework中是否有个叫AdSupport.framework的框架，如果检查工程中没有AdSupport.framework,可能是接入的第三方库里面有,用以下方法检查第三方中是否包含有IDFA版本：
 
 (1)打开终端cd到要检查的文件的目录;
-(2)执行命令:grep -r advertisingIdentifier .    (注意别少了点);
+(2)执行命令:grep -r advertisingIdentifier .  (注意别少了点);
 
 [iOS平台配置应用使用广告标识（IDFA）](https://ask.dcloud.net.cn/article/36107)
 
@@ -251,8 +222,10 @@ App离线SDK默认打开了开屏广告，用户如果不需要开屏广告可�
 
 
 ### 如何配置iOS平台的某些较特殊的功能
-[平台功能配置](https://ask.dcloud.net.cn/article/173)
+[平台功能配置](/5PlusDocs/usesdk/iosOther/project.md)
 
+### 如何处理提交审核时提示有其他支付并隐藏功能被拒的问题
+[点击处理办法](https://ask.dcloud.net.cn/article/36447)
 
 ## 运行
 

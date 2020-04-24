@@ -79,7 +79,7 @@
 |:--|:--|:--|
 |liblibOauth.a、libAppleOauth.a|AuthenticationServices.framework|无|
 
-苹果授权登录使用 [文档](https://ask.dcloud.net.cn/article/36651)
+苹果授权登录使用 [文档](/5PlusDocs/usemodule/iOSModuleConfig/otherModule/appleOauth.md)
 
 **注意 :除苹果授权登录外，都需要实现如下方法**
 

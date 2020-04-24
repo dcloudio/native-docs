@@ -1,6 +1,27 @@
-此功能需要 HBuilderX 2.5.4-20200108-alpha 之后发布的离线包才能用。
+## uni-AD概述
+	uni-AD聚合目前国内流行的广告平台广点通（腾讯）、穿山甲（今日头条）、360广告等，支持开屏广告和信息流、Banner广告。
+## 如何配置广告 
+  
+### 先去dcloud广告联盟[申请账号](https://uniad.dcloud.net.cn)
+  
+### 然后配置多渠道
+在打包原生工程中找到工程的配置文件-Info.plist ，然后添加marketChannel节点，节点内容格式为：包名|应用标识|广告标识|渠道 如io.dcloud.HB|appid|adid|apple
 
-配置离线广告之前，需先在dcloud广告联盟申请账号。
+包名：对应xcode里的bundleid，如io.dcloud.HBuilder。
+
+应用标识：对应5+或uni-app项目manifest.json中appid。
+
+广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取。
+渠道：可以填apple。
+
+### 再按下面2个步骤配置参数：
+
+1.在info.plist文件里加DCLOUD_AD_ID节点，内容 为自己申请的广告adid
+
+2.把marketChannel节点的广告标识换成申请的广告标识。如下图所示：
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
+
 
 ## 360广告
 ### 添加依赖资源及文件
@@ -26,7 +47,7 @@ SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、lib
 |libUniAD.a、libSDWebImage.a、libUniAd-Gdt.a、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
 
 
-***注意：如果是uni项目 必须配置上libUniADWeex.a  这个库***
+**注意：如果是uni项目 必须配置上libUniADWeex.a  这个库**
 
 [uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
 
