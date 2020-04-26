@@ -29,11 +29,13 @@ uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用�
 ##### 添加依赖库
 
 将 UniMPSDK/Features/Lib 中的 `liblibCamera.a`库及`AssetsLibrary.framework` 系统库，添加到工程的 `TARGETS->Build Phases-> Link Binary With Libaries` 中；
-[attach]48083[/attach]
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/20de01b699d8a9e7d5e3d9b4325bdf67.png)
 
 ##### 添加依赖资源文件
 然后将 UniMPSDK/Features/Resources 中的`TZImagePickerController.bundle` 资源文件添加到工程中
-[attach]48084[/attach]
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/ce1ae758767ffe692adf2d60c98a0689.png)
 
 然后即可调用 Gallery 相关功能；
 
