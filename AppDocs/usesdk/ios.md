@@ -160,8 +160,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongicon2.jpg)
 
 ### 配置应用启动界面
-
-#### 第一种Launch Images Source方式
+<!-- #### 第一种Launch Images Source方式
 1、按下图所示，在配置的地方设置为空，这样配置之后启动界面就会是splash目录里配置的图了，就不会是LaunchScreen.storyboard 作为启动界面了。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongqdtu1.png)
@@ -170,14 +169,25 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 根据图片的尺寸逐个替换splash图片，注意文件名不能修改
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongqdtu2.jpg)
-
 #### 第二种Launch Screen File方式
+ -->
+
 1、按下图方法配置Launch Screen File，这样配置之后启动界面就会是设置的LaunchScreen.storyboard。
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/launchSrreen1.png)
 
-2、制作LaunchScreen.storyboard(这个storyboard的名称是可以自定义的)，如果想自定义LaunchScreen.storyboard，这需要你会原生知识，知道怎样创建Launch Screen File，知道怎样在storyboard中布局视图，设置约束等。如果不想自定义，可以使用官方已经制作好的storyboard，官方提供了2个storyboard，一个是图标、名称在上方的；另外一个是图标、名称在下方的。
-注意：在使用Launch Screen File方式作为启动界面时，需要把一张或几张清晰的图标拷贝到工程的根文件夹下并引入到工程中，用来给启动界面加载图标。如果拷贝过去的图标不清晰，会导致启动界面上出现图标不清晰、模糊的现象。
+2、使用官方已经制作好的storyboard，官方提供了2个storyboard，一个是图标、名称在上方的；另外一个是图标、名称在下方的(这种的LaunchScreen.storyboard主要是适配用户配置广告后，使其启动时不会有视觉上的跳跃感，增加用户体验)。
+注意：在使用Launch Screen File方式作为启动界面时，需要把一张或几张清晰的图标拷贝到工程的根文件夹下并引入到工程中，
+用来给启动界面加载图标。如果拷贝过去的图标不清晰，会导致启动界面上出现图标不清晰、模糊的现象。
 
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/other/launcher1.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/other/launcher2.png)
+
+
+3、制作LaunchScreen.storyboard(这个storyboard的名称是可以自定义的)，如果想自定义LaunchScreen.storyboard，
+这需要你会原生知识，知道怎样创建Launch Screen File，知道怎样在storyboard中布局视图，设置约束等。
+
+     注意，这里的storyboard，不是普通的storyboard；
+	 注意，配置了广告之后，如果自定义的LaunchScreen.storyboard约束没设置好，会有启动页到广告页跳跃的视觉效果。
 
 <a id="channel"></a>
 
