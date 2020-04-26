@@ -1,5 +1,5 @@
 ## 更新日志
-#### 2020年04月21日发布
+#### 2020年04月24日发布
 [点击下载SDK UniMP_iOS_SDK@2.6.16.20200424](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.16.20200424.zip)
 + 需使用HBuilderX（2.6.16）版本生成 小程序App 资源
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.16.20200424.html)
