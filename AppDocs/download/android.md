@@ -1,7 +1,7 @@
 ## Android 离线SDK - 正式版
 
 ### 2020年04月26日发布
-[点击下载SDK](http://download.dcloud.net.cn/Android-SDK@2.6.16.80137_20200426.zip)
+[点击下载SDK，提取码: 7rfu](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)
 
 + 更新uni-app离线打包支持，需使用HBuilderX（2.6.16.20200424）版本生成本地打包App资源。	
 + 修复 使用 X5 Webview 内核渲染 plus.navigator.getUserAgent 获取 UA 不正确的Bug
@@ -14,7 +14,7 @@
 ## Android 离线SDK - Alpha版
 
 ### 2020年04月26日发布
-[点击下载SDK](http://download.dcloud.net.cn/Android-SDK@2.6.16.80137_20200426.zip)
+[点击下载SDK，提取码: 5vgk](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg)
 
 + 更新uni-app离线打包支持，需使用HBuilderX（2.6.16.20200426-alpha）版本生成本地打包App资源。	
 + 修复 使用 X5 Webview 内核渲染 plus.navigator.getUserAgent 获取 UA 不正确的Bug
