@@ -13,11 +13,11 @@ SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块�
 #### 下面以 map 模块为例
 首先查看`Feature 依赖库说明.xls` 表格说明需要添加amap-libs-release.aar,map-amap-release.aar两个库文件 及其AndroidManifest.xml等配置！
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/0b2c9628f51b29d688618aaf47c9c184.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_3.png)
 
 将amap-libs-release.aar,map-amap-release.aar两个库文件拷贝到项目中。主Module中的libs下。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/d8d4ac2339d1643def4c8dee1567102a.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
 地图依赖库文件拷贝完毕后。需要在build.gradle配置导入你引用的两个库文件。
 ```
@@ -46,7 +46,7 @@ SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块�
 
  - 修改dcloud_properties.xml配置
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/ac1dc92cb78eaf4ee9ede9b37d92aa5f.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_2.png)
 
 在dcloud_properties.xml添加以下信息
 

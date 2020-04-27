@@ -10,7 +10,7 @@ uni小程序中目前仅支持高德地图
 
 将表格中的文件拷贝至主Module中的libs下。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/d8d4ac2339d1643def4c8dee1567102a.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
 ### Androidmainfest.xml文件需要修改的项
 
@@ -45,7 +45,7 @@ application节点下配置如下代码:
 
 dcloud_properties.xml文件在assets/data目录下 
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/ac1dc92cb78eaf4ee9ede9b37d92aa5f.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_2.png)
 
 在dcloud_properties.xml添加以下信息
 
@@ -71,7 +71,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 将表格中的文件拷贝至主Module中的libs下。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/d8d4ac2339d1643def4c8dee1567102a.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
 ### Androidmainfest.xml文件需要修改的项
 
@@ -106,7 +106,7 @@ application节点下配置如下代码:
 
 dcloud_properties.xml文件在assets/data目录下 
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/ac1dc92cb78eaf4ee9ede9b37d92aa5f.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_2.png)
 
 在dcloud_properties.xml添加以下信息
 
