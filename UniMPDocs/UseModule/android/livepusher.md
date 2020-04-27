@@ -2,7 +2,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | media-livepusher-release.aar |
+| uniMPSDK\Features\libs | media-livepusher-release.aar，weex_livepusher-release.aar|
 
 将表格中的文件拷贝至主Module中的libs下。
 

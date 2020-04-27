@@ -19,6 +19,7 @@
     * [LivePusher（直播推流）](UniMPDocs/UseModule/android/livepusher.md)
     * [Statistic（友盟统计）](UniMPDocs/UseModule/android/umstatistic.md)
 	* [X5（腾讯x5内核）](UniMPDocs/UseModule/android/x5.md)
+	* [Geolocation（定位）](UniMPDocs/UseModule/android/geolocation.md)
   * [iOS 集成教程](UniMPDocs/UseModule/ios/ios.md)
     * [Push（消息推送）](UniMPDocs/UseModule/ios/push.md)
     * [Share（分享）](UniMPDocs/UseModule/ios/share.md)

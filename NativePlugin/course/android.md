@@ -136,7 +136,7 @@ public JSONObject testSyncFunc(){
 
 #### 创建Android Studio的Module模块
 
-请参考 扩展 Module
+请参考 [扩展 Module](/NativePlugin/course/android?id=创建android-studio的module模块)
 
 #### 创建TestComponent类
 
@@ -246,7 +246,7 @@ methods: {
 ```
 ### JSCallback结果回调
 
-JS调用时，有的场景需要返回一些数，比如以下例子，返回x、y坐标
+JS调用时，有的场景需要返回一些数据，比如以下例子，返回x、y坐标
 ```
 void invoke(Object data);
 void invokeAndKeepAlive(Object data);
@@ -528,6 +528,9 @@ public void onActivityResume() {
 如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！
 + Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
 如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
+
+#### 广告插件说明
++ 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
 
 ## 常见问题
 

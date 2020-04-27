@@ -174,7 +174,7 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
 
 #### 1.创建Android Studio的Module模块
 
-请参考 扩展 Module
+请参考 [扩展 Module](/UniMPDocs/Extension/android?id=_1创建android-studio的module模块)
 
 #### 2.创建TestComponent类
 
@@ -350,7 +350,7 @@ methods: {
 
 ## JSCallback结果回调
 
-JS调用时，有的场景需要返回一些数，比如以下例子，返回x、y坐标
+JS调用时，有的场景需要返回一些数据，比如以下例子，返回x、y坐标
 ```
 void invoke(Object data);
 void invokeAndKeepAlive(Object data);
