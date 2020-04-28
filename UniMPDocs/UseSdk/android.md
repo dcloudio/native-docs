@@ -76,6 +76,7 @@ def mfph = [
 ]
 android {
 	defaultConfig {
+		targetSdkVersion 26 //最高28最优26 设置值域超过28可能在android10以上手机出现白屏问题。
 		ndk {
             abiFilters 'x86','armeabi-v7a',"arm64-v8a" //不支持armeabi
         }
@@ -109,6 +110,9 @@ dependencies {
 	implementation 'com.github.bumptech.glide:glide:4.9.0'
 }
 ```
+
+**注意！！！！ targetSdkVersion 取值范围最高28 最优26 设置值域超过28可能在android10以上手机出现白屏问题。**
+
 
 ### uni小程序集成的第三方依赖库与宿主发生冲突
 

@@ -44,3 +44,7 @@ android.enableJetifier：当设为 true 时，此标记表示您想要获得相�
 ## Q: 如何查看小程序 console日志
 
 A：修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  修改后查看io.dcloud.unimp进程查看log。TAG为console
+
+## Q: android10的设备运行白屏。其他android版本手机没有问题。
+
+A：请查件targetSdkVersion赋值是否超过28。如果超过28请修改。最优26！
