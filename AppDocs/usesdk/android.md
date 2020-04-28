@@ -209,7 +209,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-8.png)
 		
-	[导入app资源](/AppDocs/importfeproject/android.md)
+	[导出app资源](/AppDocs/importfeproject/export.md)
 		
 	* 修改dcloud_control.xml文件
 
