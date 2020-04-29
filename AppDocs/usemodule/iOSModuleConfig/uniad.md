@@ -1,5 +1,5 @@
 ## uni-AD概述
-	uni-AD聚合目前国内流行的广告平台广点通（腾讯）、穿山甲（今日头条）、360广告等，支持开屏广告和信息流、Banner广告。
+	uni-AD聚合目前国内流行的广告平台广点通（腾讯）、穿山甲（今日头条）等，支持开屏广告和信息流、Banner广告。
 ## 如何配置广告 
   
 ### 先去dcloud广告联盟[申请账号](https://uniad.dcloud.net.cn)
@@ -23,13 +23,13 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
 
 
-## 360广告
+<!-- ## 360广告
 ### 添加依赖资源及文件
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
 |libUniAD.a、libSDWebImage.a、libUniAd-360.a|QHADSDK.framework、CoreLocation.framework、CoreTelephony.framework、WebKit.framework、Security.framework、libz.tbd、SystemConfiguration.framework、AdSupport.framework|QHADVideoPlayer.bundle|
-
+ -->
 
 ## 今日头条穿山甲
 ### 添加依赖资源及文件
