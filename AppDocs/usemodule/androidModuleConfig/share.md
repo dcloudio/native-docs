@@ -172,7 +172,7 @@ properties.xml文件在ADT工程assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | sina-libs-release.aar，share-sina-release.aar|
+| SDK\libs | openDefault-4.4.1.aar，share-sina-release.aar|
 
 ### Androidmainfest.xml文件需要修改的项
 
