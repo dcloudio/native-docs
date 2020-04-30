@@ -1,5 +1,3 @@
-# 胶囊按钮
-
 ## 概念
 
 胶囊按钮即小程序页面导航栏右侧的按钮，包含`···`菜单按钮和`X`关闭按钮，如下图所示：
@@ -111,17 +109,17 @@ onNavigationBarButtonTap(e) {
 }
 ```
 
-### 隐藏胶囊按钮
+## 隐藏胶囊按钮
 
 uni小程序默认会显示胶囊按钮，您可以将其隐藏（目前只支持全局隐藏，不支持单个页面隐藏）
 
-#### iOS 隐藏胶囊按钮
+### iOS 隐藏胶囊按钮
 
 ```objective-c
 [DCUniMPSDKEngine setMenuButtonHidden:YES];
 ```
 
-#### Android 隐藏胶囊按钮
+### Android 隐藏胶囊按钮
 
 DCSDKInitConfig设置[setCapsule](/UniMPDocs/API/android?id=setcapsule)实现隐藏
 
