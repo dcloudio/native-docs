@@ -53,7 +53,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	+ uni-app
 
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-release.aar和miit_mdid_1.0.10.aar拷贝到libs目录下
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-10.png)
 	
