@@ -43,8 +43,32 @@ DCUniMPMenuActionSheetItem *item2 = [[DCUniMPMenuActionSheetItem alloc] initWith
 
 #### Android 添加方法
 
+DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置. 
+
+```JAVA
+MenuActionSheetItem item = new MenuActionSheetItem("关于", "gy");
+List<MenuActionSheetItem> sheetItems = new ArrayList<>();
+sheetItems.add(item);
+DCSDKInitConfig config = new DCSDKInitConfig.Builder()
+	// 添加到全局配置
+    .setMenuActionSheetItems(sheetItems)
+    .build();
 ```
-待补充...
+
+设置全局菜单按钮点击事件监听
+
+```JAVA
+DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButtonClickCallBack() {
+    @Override
+    public void onClick(String appid, String id) {
+        switch (id) {
+            case "gy":{
+                Log.e("unimp", "点击了关于" + appid);
+                break;
+            }
+        }
+    }
+});
 ```
 
 ### 小程序中添加菜单按钮
@@ -99,8 +123,11 @@ uni小程序默认会显示胶囊按钮，您可以将其隐藏（目前只支�
 
 #### Android 隐藏胶囊按钮
 
-```
-待补充
+DCSDKInitConfig设置[setCapsule](/UniMPDocs/API/android?id=setcapsule)实现隐藏
+
+```JAVA
+DCSDKInitConfig config = new DCSDKInitConfig.Builder()
+    .setCapsule(false).build();
 ```
 
 需要注意，如果您隐藏了胶囊按钮，原生中添加的菜单按钮就会无效，小程序中添加的菜单按钮会显示到页面导航栏上并且显示的是`text`字段配置信息（和在HX内置基座运行效果一样）如下图所示
