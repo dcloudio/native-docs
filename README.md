@@ -20,10 +20,10 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 - wgt：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
 - HBuilderX：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
 
-	注意：
+**注意**
 	
-	1. uni小程序SDK 仅支持使用 uni-app 开发的小程序，不支持纯 wxml 微信小程序运行。但 uni-app 支持使用 wxml 格式的小程序组件。
-	2. uni小程序SDK 仅支持 uni-app 的 v3 编译器。使用老版的开发者，需首先保障应用可以运行在 v3 编译模式下。
+1. uni小程序SDK 仅支持使用 uni-app 开发的小程序，不支持纯 wxml 微信小程序运行。但 uni-app 支持使用 wxml 格式的小程序组件。
+2. uni小程序SDK 仅支持 uni-app 的 v3 编译器。使用老版的开发者，需首先保障应用可以运行在 v3 编译模式下。
 
 ## 特色
 uni-app 在 app 端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。其中 webview 渲染在 Android 上也同时支持系统webview渲染和x5渲染。
