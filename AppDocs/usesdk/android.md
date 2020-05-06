@@ -8,14 +8,16 @@
 
 ~~~
 	|-- HBuilder-Hello				App离线打包演示应用
-	|-- HBuilder-Integrate			5+ App集成和插件开发示例
-	|-- libs						        SDK库文件目录
+	|-- HBuilder-Integrate-AS		集成uni-app或5+ app的最简示例
+	|-- SDK							SDK库文件目录
 	|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
 	|-- Readme.txt					版本说明文件及注意事项
 	|-- UniPlugin-Hello-AS			uni原生插件开发示例
 ~~~
 
 ## 准备工程
+
+### 方式一：新建工程
 打开Android studio新建一个空白项目
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-1.png)
@@ -31,6 +33,10 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 点击 Finish 完成创建。
 
 **注意：App离线SDK不支持Kotlin**
+
+### 方式二：导入工程
+
+2.7.0之后提供HBuilder-Integrate-AS工程，可以直接导入HBuilder-Integrate-AS工程，直接运行simpleDemo项目即可。
 	
 ## 配置工程
 
@@ -199,9 +205,9 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-7.png)
 
-	注意：dcloud1.dat、dcloud2.dat为uni-app所需资源，5+APP可将这两个文件删除。
+	注意：dcloud1.dat、dcloud2.dat为uni-app所需资源**（2.7.0之后已不在需要，升级时需要删除，可以减少apk大小）**，5+APP可将这两个文件删除。
 	
-	注意：SDK升级时，data下资源需要同时更新。。
+	注意：SDK升级时，data下资源需要同时更新。
 		
 	* 创建apps文件夹并拷贝资源
 
