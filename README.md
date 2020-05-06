@@ -18,7 +18,7 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 - 宿主：想要构建小程序的原生App，集成uni小程序SDK的宿主
 - 小程序：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
 - wgt：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
-- [HBuilderX](https://www.dcloud.io/hbuilderx.html)：开发 uni-app 的 IDE 工具
+- HBuilderX：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
 
 	注意：
 	
