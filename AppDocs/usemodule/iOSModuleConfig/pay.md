@@ -48,9 +48,9 @@
 4.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
 ```
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    // 通过通用链接唤起 App
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
+    restorationHandler(nil);
     return YES;
 }
 ```
@@ -66,6 +66,24 @@
 
  **注意：以上支付方式都需要配置支付平台参数**
 
-在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
+1、在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200415/4fb6270ceaedb5244ae8da70a4e9782a.png)
+
+
+2、除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
+
+```
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURLWithOptions withObject:@[url,options]];
+    return YES;
+}
+
+```

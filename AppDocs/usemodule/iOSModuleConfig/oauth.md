@@ -70,6 +70,16 @@
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
+4.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
+
+```
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
+    restorationHandler(nil);
+    return YES;
+}
+```
+
 
 ## 苹果登录
 
@@ -86,14 +96,17 @@
 在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
 
 ```
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-    [DCUniMPSDKEngine application:app openURL:url options:options];
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler 
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURLWithOptions withObject:@[url,options]];
     return YES;
 }
+
 ```
 

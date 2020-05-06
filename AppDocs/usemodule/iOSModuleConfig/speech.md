@@ -23,9 +23,9 @@
 ## 讯飞语音
 ### 将讯飞语音模块依赖库及资源添加到工程
 
-依赖库|系统库|依赖资源|
+|依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibSpeech.a、libiflySpeech.a、iflyMSC.framework|AVFoundation.framework、AddressBook.framework、Contacts.framework|无|
+|liblibSpeech.a、libiflySpeech.a、iflyMSC.framework|AVFoundation.framework、AddressBook.framework、Contacts.framework| 无|
 
 **注意：iflyMSC.framework 库需要开发者在[讯飞语音官方网站](https://console.xfyun.cn/)自行生成，因为需要跟您的AppId绑定，SDK内的库无法在您的App中使用；**
 

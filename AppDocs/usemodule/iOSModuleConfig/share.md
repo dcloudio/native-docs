@@ -72,10 +72,30 @@
 4.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
 ```
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    // 通过通用链接唤起 App
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
+    restorationHandler(nil);
     return YES;
 }
+```
+
+
+**注意 :所有分享都需要实现如下方法**
+
+在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
+
+```
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURL withObject:url];
+    return YES;
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    [PDRCore handleSysEvent:PDRCoreSysEventOpenURLWithOptions withObject:@[url,options]];
+    return YES;
+}
+
 ```
 
