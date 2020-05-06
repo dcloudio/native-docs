@@ -26,7 +26,7 @@
 
 dcloud_properties.xml文件在assets/data目录下 
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200217/ac1dc92cb78eaf4ee9ede9b37d92aa5f.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_2.png)
 
 在dcloud_properties.xml添加以下信息
 
