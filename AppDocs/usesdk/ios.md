@@ -203,10 +203,10 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 
 ### 如何配置广告
-[如何配置广告](/5PlusDocs/usemodule/iOSModuleConfig/uniad.md)
+[如何配置广告](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
 
 ### 如何配置3D Touch
-[配置3D Touch](/5PlusDocs/usesdk/iosOther/3DTouch.md)
+[配置3D Touch](/AppDocs/usesdk/iosOther/3DTouch.md)
 
 <a id="advertisingIdentifier"></a>
 ### 如何配置IDFA
@@ -232,7 +232,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 
 ### 如何配置iOS平台的某些较特殊的功能
-[平台功能配置](/5PlusDocs/usesdk/iosOther/project.md)
+[平台功能配置](/AppDocs/usesdk/iosOther/project.md)
 
 ### 如何处理提交审核时提示有其他支付并隐藏功能被拒的问题
 [点击处理办法](https://ask.dcloud.net.cn/article/36447)
