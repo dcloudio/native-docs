@@ -380,7 +380,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 ##### 对于每个组件默认提供了一些事件能力，如点击等。假如想给我们的地图组件提供 `mapLoaded` 事件。
 
-uni-app 中是通过 `@事件名="方法名"` 添加事件，如下方代码所示在`nvue`中，给他地图组件添加`mapLoaded` 事件
+uni-app 中是通过 `@事件名="方法名"` 添加事件，如下方代码所示在`nvue`中，给地图组件添加`mapLoaded` 事件
 
 ```Javascript
 <template>
@@ -428,7 +428,7 @@ export default {
 ```Objective-C
 - (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
     if (_mapLoadedEvent) {
-        // 想前端发送事件 params：传给前端的数据
+        // 向前端发送事件 (params：为传给前端的数据 支持 NSDictionary 或 NSString 类型)
         [self fireEvent:@"mapLoaded" params:@{@"customKey":@"customValue"} domChanges:nil];
     }
 }
@@ -462,7 +462,7 @@ export default {
 }
 ```
 
-在生命期事件中记得将属性值同步给地图控件
+在生命周期方法中记得将属性值同步给地图控件
 
 ```Objective-C
 - (void)viewDidLoad {
@@ -514,8 +514,8 @@ export default {
 // 通过 WX_EXPORT_METHOD 将方法暴露给前端
 WX_EXPORT_METHOD(@selector(focus:))
 
+// options 为前端传递的参数，支持 NSDictionary 或 NSString 类型
 - (void)focus:(NSDictionary *)options {
-    // options 为前端传递的参数
     NSLog(@"%@",options);
 }
 @end
@@ -531,7 +531,8 @@ WX_EXPORT_METHOD(@selector(focus:))
   module.exports = {
     created: function() {
       // 通过 this.$refs.mycomponent 获取地图组件
-      this.$refs.mycomponent.focus("Hello");
+      // 调用组件 focus 方法
+      this.$refs.mycomponent.focus({'value':'Hello'});
     }
   }
 </script>

@@ -9,8 +9,7 @@
 <details>
 <summary>展开查看</summary>
 #### 2020年04月24日发布
-下载SDK UniMP_iOS_SDK@2.6.16.20200424 
-链接：链接:[https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg](https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg)  密码:pva3
+下载SDK UniMP_iOS_SDK@2.6.16.20200424 链接:[https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg](https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg)  密码:pva3
 
 + 需使用HBuilderX（2.6.16）版本生成 小程序App 资源
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.16.20200424.html)
