@@ -1,6 +1,6 @@
 ## 更新日志
 #### 2020年05月01日发布
-[点击下载SDK UniMP_iOS_SDK@2.7.0.20200501](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.0.20200501)
+[点击下载SDK UniMP_iOS_SDK@2.7.0.20200501](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.0.20200501.zip)
 + 需使用HBuilderX（2.7.0）版本生成 小程序App 资源
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.0.20200501-alpha.html)
 
@@ -9,17 +9,21 @@
 <details>
 <summary>展开查看</summary>
 #### 2020年04月24日发布
-[点击下载SDK UniMP_iOS_SDK@2.6.16.20200424](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.16.20200424.zip)
+下载SDK UniMP_iOS_SDK@2.6.16.20200424 
+链接：链接:[https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg](https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg)  密码:pva3
+
 + 需使用HBuilderX（2.6.16）版本生成 小程序App 资源
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.16.20200424.html)
 
 #### 2020年04月21日发布
-[点击下载SDK UniMP_iOS_SDK@2.6.15.20200421](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.15.20200421.zip)
+下载SDK UniMP_iOS_SDK@2.6.15.20200421 链接:[https://pan.baidu.com/s/1x5athws_6fgFF1yg_PcLOg](https://pan.baidu.com/s/1x5athws_6fgFF1yg_PcLOg)  密码:vrpo
+
 + 需使用HBuilderX（2.6.15）版本生成 小程序App 资源
 + 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.6.15.20200421.html)
 
 #### 2020年04月19日发布
-[点击下载SDK UniMP_iOS_SDK@2.6.14.20200419](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.6.14.20200419.zip)
+下载SDK UniMP_iOS_SDK@2.6.14.20200419 链接:[https://pan.baidu.com/s/1mQy0lf8uqA_mAu1VCGFwLw](https://pan.baidu.com/s/1mQy0lf8uqA_mAu1VCGFwLw)  密码:wrbz
+
 + 需使用HBuilderX（2.6.14）版本生成 小程序App 资源
 + iOS平台 补齐 wgt 编译版本与js框架版本校验，不一致会弹窗提示 详情
 + iOS平台 修复 小程序内 wgt 热更新资源后启动会显示一下 LaunchScreen.storyboard 页面的Bug
