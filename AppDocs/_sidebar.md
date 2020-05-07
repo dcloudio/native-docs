@@ -37,6 +37,7 @@
   * [iOS 离线SDK](/AppDocs/download/ios.md)
 * 注意事项
   * [Android 注意事项](/AppDocs/FAQ/android.md)
+  * [iOS 注意事项](/AppDocs/FAQ/ios.md)
 <div class="contact-box">
   <div class="contact-item">
     <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
