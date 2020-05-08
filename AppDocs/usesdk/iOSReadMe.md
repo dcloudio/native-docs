@@ -7,12 +7,12 @@
     |-- HBuilder-uniPluginDemo    uni-app规范的、基于weex扩展的原生插件开发工程，,注意这个里面的工程不是打包工程
     |-- HBuilder-Integrate-Swift.zip     和上面的3一样，只不过是swift版
     |-- Feature-iOS.xls            配置表（依赖的库、资源文件、参数配置等）
-    |-- Resources            工程需要的库文件，.h头文件，配置文件，资源文件
+    |-- SDK            工程需要的库文件，.h头文件，配置文件，资源文件
     |-- HBuilder-Hello    给用户打5+app、uni-app项目的离线打包工程。
 ~~~
 
 	
-## SDK/Resources/Libs 目录下主要库的作用
+## SDK/SDK/Libs 目录下主要库的作用
 
   其他库的用途在离线包中Feature-iOS.xls文件里有详细描述
   

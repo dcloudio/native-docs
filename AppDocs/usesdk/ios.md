@@ -16,7 +16,7 @@
 ~~~
     |-- HBuilder-Hello       给用户打5+app、uni-app项目的离线打包工程
     |-- Feature-iOS.xls      配置表（依赖的库、资源文件、参数配置等）
-    |-- SDK                  工程需要的库文件，.h头文件，配置文件，资源文件
+    |-- SDK            工程需要的库文件，.h头文件，配置文件，资源文件
 ~~~
 
 - 详细说明:[App离线SDK内不同文件的作用](/AppDocs/usesdk/iOSReadMe.md)
