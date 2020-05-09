@@ -221,12 +221,12 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 <a id="pushRegister"> </a>
 
 ###  如何配置启动时是否注册Push
-(1)如果希望在应用启动时不弹出"发送通知"系统授权框，可以不向系统注册要使用消息推送功能，配置方法如下：
+1、如果希望在应用启动时不弹出"发送通知"系统授权框，可以不向系统注册要使用消息推送功能，配置方法如下：
     找到工程里的info.plist文件，然后配置pushRegisterMode字段，值为manual。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/pushRegister.png)
 
-(2)如果希望在应用启动时弹出"发送通知"系统授权框，不需要做任何配置。
+2、如果希望在应用启动时弹出"发送通知"系统授权框，不需要做任何配置。
 
 [iOS平台隐私与政策提示框实现注意问题](https://ask.dcloud.net.cn/article/36955)
 
@@ -236,6 +236,31 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 ### 如何处理提交审核时提示有其他支付并隐藏功能被拒的问题
 [点击处理办法](https://ask.dcloud.net.cn/article/36447)
+
+### 如何用离线打包工程制作自定义基座
+1、在打包原生工程里找到 control.xml文件，在HBuilder节点里查看是否有这2个： debug="true"  syncDebug="true" 配置，没有的话增加上，然后保存。
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/a0f6ee9a9eb0536f7a0e3cd42b4cb133.png)
+
+2、 确保Xcode工程的Bundle identifier不为 io.dcloud.HBuidler。
+
+3、在原生工程里找到info.plist文件并增加一项，如下图：
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/bd9b12b4d150001d5bb4b38d3e636e7f.jpg)
+
+4、确保原生工程里Pandora文件夹下的apps文件夹里只有一个文件夹（文件夹的名称和里面的manifest的id值相同）
+
+5、确保control.xml文件里的appid的值和apps目录下的第一个文件夹的名称一致
+
+6、确保HBuilderX里要调试的代码的appid和control.xml的appid值一致
+
+7、使用Xcode的Product下的archive 打包，然后生成ipa，并把ipa名称命名为：iOS_debug.ipa
+
+8、在js工程里主目录下新建一个名称为unpackage的文件夹（如果有不用新建），再在unpackage文件夹下新建一个名称为debug文件夹，并把生成的iOS_debug.ipa包放入debug文件夹。
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/unimpimgs/debug.png)
+
+9、在HBuildX里，找到之前appid相同的js工程准备调试，点击“运行” --“运行到手机或模拟器“--“使用自定义基座运行（iOS）”，等待连接成功之后就可以了。
 
 ## 运行
 
