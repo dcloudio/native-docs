@@ -222,6 +222,12 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	修改dcloud_control.xml中的appid为拷贝过来的5+APP的id，确保dcloud_control.xml中的appid与manifest.json中的id与文件夹名一致，如下图所示：
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-9.png)
+	
+	生成自定义基座，需要在根节点下添加debug="true"和syncDebug="true"，如下图：
+	
+	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-20.png)
+	
+	[详细步骤可参考链接](https://ask.dcloud.net.cn/article/35482)
 
 <!--5. 模块配置
 
