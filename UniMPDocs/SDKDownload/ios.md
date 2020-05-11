@@ -1,13 +1,20 @@
+不想总是更新 SDK 的用户，如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK； 
+
 ## 更新日志
-#### 2020年05月01日发布
-[点击下载SDK UniMP_iOS_SDK@2.7.0.20200501](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.0.20200501.zip)
-+ 需使用HBuilderX（2.7.0）版本生成 小程序App 资源
-+ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.0.20200501-alpha.html)
+#### 2020年05月10日发布
+[点击下载SDK UniMP_iOS_SDK@2.7.1.20200510](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.1.20200510.zip)
++ 需使用HBuilderX（2.7.1）版本生成 小程序App 资源
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.1.20200510-alpha.html)
 
 
 ## 历史版本
 <details>
 <summary>展开查看</summary>
+#### 2020年05月01日发布
+[点击下载SDK UniMP_iOS_SDK@2.7.0.20200501](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.0.20200501.zip)
++ 需使用HBuilderX（2.7.0）版本生成 小程序App 资源
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.0.20200501-alpha.html)
+
 #### 2020年04月24日发布
 下载SDK UniMP_iOS_SDK@2.6.16.20200424 链接:[https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg](https://pan.baidu.com/s/1IauWekJ6LrJugFWBAQlfeg)  密码:pva3
 
