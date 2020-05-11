@@ -16,7 +16,7 @@
 ~~~
     |-- HBuilder-Hello       给用户打5+app、uni-app项目的离线打包工程
     |-- Feature-iOS.xls      配置表（依赖的库、资源文件、参数配置等）
-    |-- SDK            工程需要的库文件，.h头文件，配置文件，资源文件
+    |-- SDK                 工程需要的库文件，.h头文件，配置文件，资源文件
 ~~~
 
 - 详细说明:[App离线SDK内不同文件的作用](/AppDocs/usesdk/iOSReadMe.md)
@@ -118,7 +118,6 @@ Version为应用版本号，在App Store中显示的版本号，推荐与manifes
 
 Build为编译版本号，App Store判断升级使用，推荐与manifest.json中version下的code值一致。
 
-<a id="name"></a>
 
 ###  配置应用名称 
 
@@ -128,24 +127,12 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongmc1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongmc2.png)
 
-2、配置国际化，有2部分：
-
-第一部分：内容相关的国际化，离线打包时如果弹出提示框且内容为：“HTML5+ Rumtime D”时，需要在打包的原生工程里配置国际化[如何配置]( https://ask.dcloud.net.cn/article/35963)
-
-第二部分：Info.plist的国际化，新建一个 .strings文件，叫做InfoPlist.strings（文件名必须是这个）然后点击右侧的 localized，
-再在工程导航界面，选择InfoPlist.strings文件，比如添加key为CFBundleDisplayName，值为应用名字（HBuilder你好），InfoPlist.strings(English)为英文系统,Simplified为中文简体系统
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gonggj1.png)
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gonggj2.png)
-
-<a id="versionname"></a>
-
 ###  配置应用版本名称 
 在打开的原生工程中，点击工程的targets和点开manifest文件，然后将manifest文件里的“version”字段里的“name”的内容 和原生工程里的Version 的写成一样。注意，manifest文件里的“version”字段里的“name” 对应的是HBuilderX打开的工程里的“基础配置”里的应用版本名称。如下图红色框所示：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbmc1.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbmc2.png)
 
-<a id="versioncode"></a>
+
 
 ###  配置应用版本号 
 在打开的原生工程中，点击工程的targets和点开工程里的manifest文件，然后将manifest文件里的“version”字段里的“code”的内容 和原生工程里的Build 的写成一样。注意，manifest文件里的“version”字段里的“code” 对应的是HBuilderX打开的工程里的“基础配置”里的应用版本号。如下图红色框所示：
@@ -189,7 +176,33 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
      注意，这里的storyboard，不是普通的storyboard；
 	 注意，配置了广告之后，如果自定义的LaunchScreen.storyboard约束没设置好，会有启动页到广告页跳跃的视觉效果。
 
-<a id="channel"></a>
+### 配置国际化，有2部分：
+
+第一部分：内容相关的国际化，离线打包时如果弹出提示框且内容为：“HTML5+ Rumtime D”时，需要在打包的原生工程里配置国际化[如何配置]( https://ask.dcloud.net.cn/article/35963)
+
+第二部分：Info.plist的国际化，新建一个 .strings文件，叫做InfoPlist.strings（文件名必须是这个）然后点击右侧的 localized，
+再在工程导航界面，选择InfoPlist.strings文件，比如添加key为CFBundleDisplayName，值为应用名字（HBuilder你好），InfoPlist.strings(English)为英文系统,Simplified为中文简体系统
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/bundledisplay2.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/bundledisplay1.png)
+
+另外，对HBuilderX，manifest.json文件里，“模块权限配置”项中的“iOS隐私信息访问的许可描述”栏下的隐私权限描述国际化，可以这样配置，如下：
+
+1、将manifest.json页面切换到“模块权限配置”项，在“iOS隐私信息访问的许可描述”栏下配置应用需要使用到的隐私描述信息：
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190420/a19ff51f22c97f0af9add83788878684.png)
+
+2、输入完成后切换到代码视图，uni-app项目在"app-plus"->"distribute"->"ios"->"privacyDescription"节点，5+ APP项目在"plus"->"distribute"->"apple"->"privacyDescription"节点下可看到输入的内容：
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190420/8f37db8f8bf2ada8d86612f1f93c4229.png)
+
+3、将"privacyDescription"节点下的key（NSPhotoLibraryUsageDescription）和值按下图的方式拷贝到InfoPlist.strings下对应的语言文件里去。
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/unimpimgs/infokey1.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/unimpimgs/infokey2.png)
+
+完整可配置的隐私项可参考[苹果官网](https://developer.apple.com/documentation/bundleresources/information_property_list)中以“NS”开头、“Description”结尾的项。
+
 
 ### 如何配置多渠道
 在需要的打包的原生工程中找到工程的配置文件-Info.plist ，然后添加marketChannel节点，节点内容格式为：包名|应用标识|广告标识|渠道 如io.dcloud.HB|appid|adid|apple
@@ -208,17 +221,18 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ### 如何配置3D Touch
 [配置3D Touch](/AppDocs/usesdk/iosOther/3DTouch.md)
 
-<a id="advertisingIdentifier"></a>
+
 ### 如何配置IDFA
 首先要知道：打开IDFA不影响AppStore审核
 如何知道项目中是否使用广告标示符，其实就是查看framework中是否有个叫AdSupport.framework的框架，如果检查工程中没有AdSupport.framework,可能是接入的第三方库里面有,用以下方法检查第三方中是否包含有IDFA版本：
 
-(1)打开终端cd到要检查的文件的目录;
-(2)执行命令:grep -r advertisingIdentifier .  (注意别少了点);
+1、打开终端cd到要检查的文件的目录;
+
+2、执行命令:grep -r advertisingIdentifier .  (注意别少了点);
 
 [iOS平台配置应用使用广告标识（IDFA）](https://ask.dcloud.net.cn/article/36107)
 
-<a id="pushRegister"> </a>
+
 
 ###  如何配置启动时是否注册Push
 1、如果希望在应用启动时不弹出"发送通知"系统授权框，可以不向系统注册要使用消息推送功能，配置方法如下：
@@ -237,7 +251,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ### 如何处理提交审核时提示有其他支付并隐藏功能被拒的问题
 [点击处理办法](https://ask.dcloud.net.cn/article/36447)
 
-### 如何用离线打包工程制作自定义基座
+### 如何用离线打包工程制作自定义调试基座
 1、在打包原生工程里找到 control.xml文件，在HBuilder节点里查看是否有这2个： debug="true"  syncDebug="true" 配置，没有的话增加上，然后保存。
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/a0f6ee9a9eb0536f7a0e3cd42b4cb133.png)
