@@ -32,46 +32,53 @@ android {
 添加下列内容到androidmanifest.xml中（未申请平台无需添加）
 
 ~~~
+		<!--小米厂商配置——开始-->
         <meta-data
             android:name="MIPUSH_APPID"
             android:value="XM_${XIAOMI_APP_ID}" />
         <meta-data
             android:name="MIPUSH_APPKEY"
             android:value="XM_${XIAOMI_APP_KEY}" />
+		<!--小米厂商配置——结束-->
+		<!--魅族厂商配置——开始-->
         <meta-data
             android:name="MEIZUPUSH_APPID"
             android:value="MZ_${MEIZU_APP_ID}" />
         <meta-data
             android:name="MEIZUPUSH_APPKEY"
             android:value="MZ_${MEIZU_APP_KEY}" />
+		<!--魅族厂商配置——结束-->
+		<!--华为厂商配置——开始-->
         <meta-data
             android:name="com.huawei.hms.client.appid"
             android:value="${HUAWEI_APP_ID}" />
+		<!--华为厂商配置——结束-->
+		<!--OPPO厂商配置——开始-->
         <meta-data
             android:name="OPPOPUSH_APPKEY"
             android:value="OP_${OPPO_APP_KEY}" />
         <meta-data
             android:name="OPPOPUSH_APPSECRET"
             android:value="OP_${OPPO_APP_SECRET}" />
+		<!--OPPO厂商配置——结束-->
+		<!--VIVO厂商配置——开始-->
         <meta-data
             android:name="com.vivo.push.app_id"
             android:value="${VIVO_APP_ID}" />
         <meta-data
             android:name="com.vivo.push.api_key"
             android:value="${VIVO_APP_KEY}" />
+		<!--VIVO厂商配置——结束-->
 ~~~
 
-修改build.gradle，添加对应平台申请的appkey或appid（键名必须统一，如XIAOMI_APP_ID比如同时存在于build.gradle文件和Androidmanifest.xml文件中），如下所示:
+修改build.gradle，添加对应平台申请的appkey或appid（键名必须统一，如XIAOMI_APP_ID必须同时存在于build.gradle文件和Androidmanifest.xml文件中），如下所示:
 
 ~~~
 android {
     defaultConfig {
         manifestPlaceholders = [
-                "plus.unipush.appid" : "pPyZWvH3Fa6PXba19ID0091",
-                "plus.unipush.appkey" : "b7dOGlNPHR7pqwUxcXPVi45",
-                "plus.unipush.appsecret": "IxVYAT9qws8dlNElacmSg12",
-                "apk.applicationId":"io.dcloud.HBuilder",
-				"XIAOMI_APP_ID":"ccccccccc"
+				"XIAOMI_APP_ID":"ccccccccc",
+				"XIAOMI_APP_KEY":"aaaaaaaaaaaaaa"
         ]
     }
 }
