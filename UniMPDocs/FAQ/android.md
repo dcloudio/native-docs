@@ -48,3 +48,12 @@ A：修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改
 ## Q: android10的设备运行白屏。其他android版本手机没有问题。
 
 A：请查件targetSdkVersion赋值是否超过28。如果超过28请修改。最优26！
+
+## Q: 开启混淆打包后小程序运行白屏或UI显示异常？
+
+A：请检查混淆配置文件。如果未包含以下配置请添加到你的引用混淆配置文件中:
+
+```
+-keep class com.taobao.weex.** { *; }
+-keep class io.dcloud.feature.** { *; }
+```

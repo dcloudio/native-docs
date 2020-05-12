@@ -402,3 +402,49 @@ public void gotoNativePage(){
     }
 }
 ```
+
+## 集成插件市场的uni原生插件
+
+[uni-app插件市场](https://ext.dcloud.net.cn/)有大量丰富的插件。
+
+1.插件市场下载uni-app插件（此处以[RichAlert](https://ext.dcloud.net.cn/plugin?id=36)为例）
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_4.png)
+
+2.解压插件包得到`package.json`和`android`文件夹
+
+3.将插件中`android`目录下的aar/jar文件放入libs下，其余文件参考项目目录放入指定文件夹中。
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_5.png)
+
+4.在assets目录下创建`dcloud_uniplugins.json`文件
++ **说明 [dcloud_uniplugins.json](/NativePlugin/course/android?id=dcloud_unipluginsjson%E8%AF%B4%E6%98%8E)**
++ **说明 [package.json](/NativePlugin/course/package?id=packagejson)**
++ 阅读`package.json`读取android配置信息。编写`dcloud_uniplugins.json`内容
+
+**示例：**
+
+~~~
+{  
+  "nativePlugins": [  
+    {
+      "plugins": [  
+        {  
+          "type": "module",  
+          "name": "DCloud-RichAlert",  
+          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertWXModule"  
+        }  
+      ]  
+    }  
+  ]  
+}
+~~~
+
+5.阅读`package.json`读取dependencies、minSdkVersion、permissions配置信息。配置gradle文件和AndroidManifest.xml。
+
+6.阅读`package.json`读取parameters节点信息配置AndroidManifest.xml。填写插件需要的meta-data信息。
+
+到此原生插件已集成到宿主APP中
+
+**Tips：**
++ uni小程序sdk无法使用插件市场中付费的原生插件.
