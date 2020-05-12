@@ -376,7 +376,7 @@ dcRichAlert.show({
   }
   ```
 
-#### 关于dcloud_uniplugins.json说明:
+#### dcloud_uniplugins.json说明
 
 - `nativePlugins`： 插件跟节点 可存放多个插件 
 - `hooksClass`： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)

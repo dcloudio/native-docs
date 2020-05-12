@@ -28,7 +28,7 @@
 
 #### 5. 在assets目录下创建dcloud_uniplugins.json文件
 插件配置信息请参考插件配置文档或插件配置文件package.json
-关于package.json请参考：**[Android uni-app原生插件开发文档](/NativePlugin/course/android.md)**
+关于package.json请参考：**[Android uni-app原生插件开发文档](/NativePlugin/course/android?id=插件调试)**
 ~~~
 {  
   "nativePlugins": [  
