@@ -340,6 +340,25 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCal
 });
 ```
 
+#### DCUniMPSDK.getInstance().isExistsApp(appid)
+
+> 2.7.1 开始支持此功能
+
+检查当前appid小程序是否已释放wgt资源 可用来检查当前appid资源是否存在
+
+**参数说明**
+
+|参数|类型|必填|说明
+|:----|:----|:----|:----
+|appid|String|是|小程序appid
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean| true表示存在 false表示不存在
+
+
 <a id="getAppVersionInfo"></a>
 #### DCUniMPSDK.getInstance().getAppVersionInfo(appid)
 
