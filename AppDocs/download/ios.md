@@ -11,8 +11,8 @@
 ## iOS 离线SDK - Alpha版
 
 ### 2020年5月15日发布   
-[点击下载SDK，提取码: 1ef9](https://pan.baidu.com/s/1_-PpgnPbmqV6jUCebWgxcg)
-  + 更新uni-app离线打包支持，需使用HBuilderX（2.7.3.20200514）版本生成本地打包App资源。
+[点击下载SDK，提取码: g6bj](https://pan.baidu.com/s/1Jtj3qfL4IsMKK--iWe-sJQ)
+  + 更新uni-app离线打包支持，需使用HBuilderX（2.7.4.20200515）版本生成本地打包App资源。
   + iOS平台 更新 uni-AD 腾讯广点通SDK版本为4.11.8，解决在部分设备可能出现启动时崩溃的Bug
   + App-iOS平台 修复 HBuilderX2.7.0 引出的配置底部安全区原生占位后，tabbar 动态更新 backgroundColor、backgroundImage 不生效的Bug
   + iOS平台 修复 音频 audio 播放网络音频资源缓冲时间过长的Bug [详情](https://ask.dcloud.net.cn/question/93427)
