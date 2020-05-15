@@ -1,17 +1,16 @@
 ## iOS 离线SDK - 正式版
 
-### 2020年4月26日发布
-[点击下载SDK，提取码: pp2c](https://pan.baidu.com/s/18dMa701yxWUxrpBtetvagQ)
+### 2020年4月26日发布 
+[点击下载SDK，提取码: ur8u](https://pan.baidu.com/s/17qORx_M3oXRZAGNqOKfepA)
   + 更新uni-app离线打包支持，需使用HBuilderX（2.6.16.20200424）版本生成本地打包App资源。
 
-[百度网盘下载历史版本，提取码: xpo2](https://pan.baidu.com/s/1RJ3IAJiPC9HMdHN9vxVABw)
+[百度网盘下载历史版本，提取码: w35k](https://pan.baidu.com/s/1gZGJMaSqZQftqgEVtadvEg)
 
 
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年5月11日发布
-
+### 2020年5月11日发布   
 [点击下载SDK，提取码: hhpk](https://pan.baidu.com/s/1muhxrmN8SZrx_I8b29xrgQ)
   + 更新uni-app离线打包支持，需使用HBuilderX（2.7.1.202005010）版本生成本地打包App资源。
   + 新增 Webview窗口标题栏 titleNView 的 titleIcon 支持 GIF 格式动图
