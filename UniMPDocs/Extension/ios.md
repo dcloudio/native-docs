@@ -222,7 +222,8 @@ module 支持在 vue 和 nvue 中使用
 export default {
     methods: {
         onMapLoaded:function(e) {
-            console.log("map loaded"+JSON.stringify(e))
+        	  // 原生端传递的数据保存在 e.detail 中
+            console.log("map loaded: "+JSON.stringify(e.detail))
         }
     }
 }
@@ -256,8 +257,8 @@ export default {
 ```Objective-C
 - (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
     if (_mapLoadedEvent) {
-        // 想前端发送事件 params：传给前端的数据
-        [self fireEvent:@"mapLoaded" params:@{@"customKey":@"customValue"} domChanges:nil];
+        // 向前端发送事件，params 为传给前端的数据 注：数据为 NSDictionary 格式，需要以 "detail" 作为 key 值
+        [self fireEvent:@"mapLoaded" params:@{@"detail":@{@"mapLoaded":@"success"}} domChanges:nil];
     }
 }
 ```
