@@ -1,10 +1,11 @@
 如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK； 
 
 ## 更新日志
-#### 2020年05月15日发布
-[点击下载SDK UniMP_iOS_SDK@2.7.4.20200515](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.4.20200515.zip)
-+ 需使用HBuilderX（2.7.4）版本生成 小程序App 资源
-+ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.4.20200515-alpha.html)
+#### 2020年05月19日发布
+[点击下载SDK UniMP_iOS_SDK@2.7.5.20200519](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.5.20200519.zip)
++ 需使用HBuilderX（2.7.5）版本生成 小程序App 资源
++ 修复 video 组件在开启屏幕自动旋转时，切换全屏播放，屏幕旋转后布局错乱的Bug
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.5.20200519.html)
 
 
 ## 历史版本
@@ -13,6 +14,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w](https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w)   密码:hvsk
+
+#### 2020年05月15日发布
+
++ 需使用HBuilderX（2.7.4）版本生成 小程序App 资源
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.4.20200515-alpha.html)
 
 #### 2020年05月13日发布
 
