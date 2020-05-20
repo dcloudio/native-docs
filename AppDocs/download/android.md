@@ -3,7 +3,7 @@
 ### 2020年05月19日发布
 [点击下载SDK，提取码: 7rfu](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.7.5.20200518-alpha）版本生成本地打包App资源。	
++ 更新uni-app离线打包支持，需使用HBuilderX（2.7.5.20200519）版本生成本地打包App资源。	
 + 调整 云端打包时默认不再包含 x86 CPU类型库，减少apk包体积
 + 新增 Webview窗口标题栏 titleNView 的 titleIcon 支持 GIF 格式动图
 + 修复 Webview窗口标题栏 titleNView 调用 setTitleNViewButtonStyle 动态更新按钮属性可能不生效的Bug
