@@ -1,7 +1,7 @@
 ## iOS 离线SDK - 正式版
 
 ### 2020年5月19日发布 
-[点击下载SDK，提取码: ur8u](https://pan.baidu.com/s/17qORx_M3oXRZAGNqOKfepA)
+[点击下载SDK，提取码: mcil](https://pan.baidu.com/s/1N63S589h-1T8zPRRWbOlwA)
   + 更新uni-app离线打包支持，需使用HBuilderX（2.7.5.20200519）版本生成本地打包App资源。
   + 【重要】 调整 App平台 自定义组件编译模式下线，应用默认以v3编译模式运行。并在manifest去除相关概念。包体积减少3M [详情](https://ask.dcloud.net.cn/article/36988)
   + 【重要】 调整 uni统计默认不再自动开启，需要此服务请手动在manifest中打开 [详情](https://ask.dcloud.net.cn/article/37234)
