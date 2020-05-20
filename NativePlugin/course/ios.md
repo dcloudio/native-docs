@@ -393,7 +393,8 @@ uni-app 中是通过 `@事件名="方法名"` 添加事件，如下方代码所�
 export default {
     methods: {
         onMapLoaded:function(e) {
-            console.log("map loaded"+JSON.stringify(e))
+            // 原生端传递的数据保存在 e.detail 中
+            console.log("map loaded: "+JSON.stringify(e.detail))
         }
     }
 }
@@ -428,8 +429,8 @@ export default {
 ```Objective-C
 - (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
     if (_mapLoadedEvent) {
-        // 向前端发送事件 (params：为传给前端的数据 支持 NSDictionary 或 NSString 类型)
-        [self fireEvent:@"mapLoaded" params:@{@"customKey":@"customValue"} domChanges:nil];
+        // 向前端发送事件，params 为传给前端的数据 注：数据最外层为 NSDictionary 格式，需要以 "detail" 作为 key 值
+        [self fireEvent:@"mapLoaded" params:@{@"detail":@{@"mapLoaded":@"success"}} domChanges:nil];
     }
 }
 ```
