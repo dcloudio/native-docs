@@ -272,6 +272,29 @@ public void testAsyncFunc(JSONObject options, JSCallback callback) {
 	
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
+### globalEvent 事件
+
+用于页面监听持久性事件，例如定位信息，陀螺仪等的变化。
+
+**示例：**
+
+页面监听event事件
+
+```JS
+var globalEvent = uni.requireNativePlugin('globalEvent');
+globalEvent.addEventListener('myEvent', function(e) {
+  console.log('myEvent'+JSON.stringify(e));
+});
+```
+
+插件 原生代码发出`myEvent`事件
+
+```JAVA
+Map<String,Object> params=new HashMap<>();
+params.put("key","value");
+mWXSDKInstance.fireGlobalEventCallback("myEvent", params);
+```
+
 ### 插件示例--RichAlert
 
 封装了一个 RichAlertWXModule, 富文本alert弹窗Module
