@@ -295,6 +295,10 @@ params.put("key","value");
 mWXSDKInstance.fireGlobalEventCallback("myEvent", params);
 ```
 
+**注意**
+globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
+
+
 ### 插件示例--RichAlert
 
 封装了一个 RichAlertWXModule, 富文本alert弹窗Module
