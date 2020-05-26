@@ -1,8 +1,8 @@
 ## 更新日志
-#### 2020年5月19日发布
-[点击下载SDK UniMPSDK_Android@2.7.5.20200519.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.7.5.20200519.zip)
-+ 需使用HBuilderX（2.7.5）版本生成 小程序App 资源。
-+ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.5.20200519.html)
+#### 2020年5月25日发布
+[点击下载SDK UniMPSDK_Android@2.7.8.20200525.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.7.8.20200525.zip)
++ 需使用HBuilderX（2.7.8）版本生成 小程序App 资源。
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.8.20200525-alpha.html)
 
 
 ## 历史版本
