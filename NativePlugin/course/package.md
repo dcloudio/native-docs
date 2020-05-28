@@ -355,6 +355,28 @@ HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 不配置此值则认为支持上面所有类型。
 云端打包时将会使用所有插件支持类型的交集。
 
+### capabilities
+
+#### entitlements
+
+如果您的插件需要使用到`capabilities`中的相关服务，以获取 `WiFi` 信息服务为例，首先需要点击`+Capability` 然后双击 `Access WiFi information` 添加服务，如下图所示
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/cap01.png)
+
+这里添加的服务会在工程的`xxx.entiflements`文件中添加配置信息，然后选中`xxx.entiflements`文件，右键 `Open As -> Source Code`，如下图所示
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/cap02.png)
+
+其中 "key=com.apple.developer.networking.wifi-info" 和对应的 "value=true" 就是 WiFi 服务的配置信息，然后我们将信息配置到 package.json 的 `capabilities -> entitlements` 节点中即可，如下
+
+```json
+"capabilities": {   
+	"entitlements": {   
+		"com.apple.developer.networking.wifi-info":"true"
+	}            
+}
+```
+
 
 ### parameters
 如果插件使用时需配置参数，如appid、appkey时，可配置parameters字段进行定义，提交云端打包后将会根据配置把数据放到Info.plist中。
