@@ -240,9 +240,9 @@ services节点下添加
 
 **注意：要想使用谷歌推送必须使用aps-unipush-gp-release.aar**
 
-### 账号申请
+### 配置指南
 
-[账号申请](https://ask.dcloud.net.cn/article/37356)
+[UniPush支持谷歌推送FCM配置指南](https://ask.dcloud.net.cn/article/37356)
 
 ### gradle配置
 
