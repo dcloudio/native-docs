@@ -226,6 +226,69 @@ services节点下添加
             value="io.dcloud.feature.aps.APSFeatureImpl" />
 ~~~
 
+## 谷歌推送
+
+### 需要拷贝的文件
+
+**需要引入工程的jar/aar文件**
+
+需要将以下jar/aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | aps-release.aar, aps-unipush-gp-release.aar, aps-igexin-fcm-release.aar |
+
+**注意：要想使用谷歌推送必须使用aps-unipush-gp-release.aar**
+
+### 账号申请
+
+[账号申请](https://ask.dcloud.net.cn/article/37356)
+
+### gradle配置
+
+#### project级的build.gradle配置
+
+在project级的build.gradle的buildscript->dependencies添加下面内容
+
+~~~
+buildscript { 
+	dependencies {
+		classpath 'com.google.gms：google-services：4.2.0'
+	}
+}
+~~~
+
+如下图：
+
+![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-21.png)
+
+#### app级的build.gradle配置
+
++ 在build.gradle最前面添加下面内容
+
+~~~
+apply plugin： 'com.google.gms.google-services'
+~~~
+
++ 在dependencies节点下添加下面内容
+
+~~~
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+~~~
+
+如下图
+
+![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-22.png)
+
++ 添加google-services.json
+
+在创建好Firebase应用时，会有自动弹框指引下载googie-services.json，请根据指引下载google-services.json文件，并根据官网指引将google-services.json文件放在对应的文件夹下, 然后点击continue.
+
+### uniPush配置
+
+[uniPush](/AppDocs/usemodule/androidModuleConfig/push?id=GooglePlay渠道配置)
+
 
 ## GooglePlay渠道配置
 
@@ -259,6 +322,12 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
             android:name="com.igexin.sdk.PrivacyActivity"
             android:exported="false"/>
 ~~~
+
+### 其余配置
+
+[uniPush](/AppDocs/usemodule/androidModuleConfig/push?id=unipush)
+
+[个推](/AppDocs/usemodule/androidModuleConfig/push?id=个推推送)
 
 <!--
 ## 小米推送
