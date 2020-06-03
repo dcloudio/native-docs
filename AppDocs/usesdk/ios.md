@@ -40,7 +40,7 @@
 	    
 |库|js文件|其他|
 |:--|:--|:--|
-|liblibWeex.a|weex-main-jsfm.js、weex-main-jsfm-nvue-uni.js、weex-main-jsfm-nvue.js、weex-main-jsfm-uni.js、weex-polyfill.js、uni-jsframework.js、uni-app-service.js、weexUniJs.js、__uniappes6.js | unincomponents.ttf|
+|liblibWeex.a|weex-polyfill.js、uni-jsframework.js、weexUniJs.js、__uniappes6.js | unincomponents.ttf|
 
 
 <!-- 
