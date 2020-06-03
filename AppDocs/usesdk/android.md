@@ -141,6 +141,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	+ 配置应用启动页
 
 	将下述内容添加到Androidmanifest.xml的application节点中
+	
+	**注意：新建的项目默认会有一个MainActivity的节点，必须删掉！**
 
 	~~~
 		<activity
