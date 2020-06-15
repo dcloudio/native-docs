@@ -50,6 +50,18 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  Bluetooth-release.aar
  android-gif-drawable-release@1.2.17.aar //必须集成
  ```
+ 
+```
+dependencies {
+	implementation 'com.android.support:recyclerview-v7:27.1.0' //必须集成
+    implementation 'com.android.support:support-v4:27.1.0' //必须集成
+    implementation 'com.android.support:appcompat-v7:27.1.0' //必须集成
+    implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
+    implementation 'com.facebook.fresco:fresco:1.13.0'//必须集成
+    implementation 'com.facebook.fresco:animated-gif:1.13.0'//必须集成
+	implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
+}
+```
 **标注`必须集成`的依赖库一定要集成。否则会导致小程序无法正常运行**
 
 **注意**
