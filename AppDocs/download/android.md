@@ -28,19 +28,10 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年06月15日发布
+### 2020年06月16日发布
 [点击下载SDK，提取码: 5vgk](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg)
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.7.12.20200613-alpha）版本生成本地打包App资源。	
-+ 修复 map 组件可能无法正常显示的Bug
-+ 修复 nvue map 组件 markers 上的气泡 callout 会跟随旋转的Bug
-+ 修复 nvue web-view 组件中 input 标签设置 type 为 file 时选择拍照后可能无法返回图片路径的Bug
-+ 修复 uni-AD 腾讯广点通开屏广告可能出现填充率过低的Bug
-+ 修复 uni-AD 创建多个激励视频广告引起 onLoad onClose onError 事件回调错乱的Bug
-+ 修复 选择按钮框 actionSheet 设置 title 并且 buttons 设置过多可能显示不正常的Bug
-+ 修复 原生导航标题栏 titleNView 的 searchInput 搜索框动态更新后可能触发多次输入内容更新事件的Bug
-+ 修复 音频 audio 的 seek 操作不触发 seeked 事件的Bug
-+ 修复 图片预览 previewImage 无法显示bmp格式图片文件的Bug
-+ 修复 HBuilderX2.6.11 引出的 Webview窗口设置 background 为 transparent 不生效的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（2.7.13.20200615-alpha）版本生成本地打包App资源。	
++ 修复 nvue web-view 组件 schemes 无法跳转打开其它应用的Bug
 
 [百度网盘下载历史版本，提取码: 6msp](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)
