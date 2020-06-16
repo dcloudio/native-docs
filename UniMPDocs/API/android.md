@@ -100,7 +100,7 @@ SDK是否初始化成功
 "/xxx/xxx/宿主包名/files/apps/__UNI__04E3A11/www/__UNI__04E3A11.wgt包中的资源"
 ```
 
-#### DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath(wgtPath, callBack)
+#### DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath(appid, wgtPath, callBack)
 
 将wgt包中的资源文件释放到uni小程序运行时路径下。
 
@@ -108,6 +108,7 @@ SDK是否初始化成功
 
 |参数|类型|必填|说明
 |:----|:----|:----|:----
+|appid|String|是|uni小程序引用的id 新增 2.7.13+
 |wgtPath|String|是|uni小程序应用资源包路径
 |callback|ICallBack|否|拷贝状态回调
 
@@ -115,12 +116,9 @@ SDK是否初始化成功
 
 uni小程序应用资源包路径。例如 "xxx/xxx/xxx/__UNI__04E3A11.wgt".
 
-**wgt文件命名**
-
-appid为wgt文件命名！！！ 如果.wgt的文件名不是已appid命名。releaseWgtToRunPathFromePath将无法正常释放资源。
-
 #### Tips：
-注意使用releaseWgtToRunPathFromePath方法需要申请存储权限：android.permission.WRITE_EXTERNAL_STORAGE
+- 将不再强校验wgt文件名称。确保appid参数与实际wgt包相符即可。
+- 注意使用releaseWgtToRunPathFromePath方法需要申请存储权限：android.permission.WRITE_EXTERNAL_STORAGE
 
 **callback返回参数说明**
 
