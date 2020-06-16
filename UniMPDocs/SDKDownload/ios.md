@@ -2,9 +2,9 @@
 
 ## 更新日志
 #### 2020年06月02日发布
-[点击下载SDK UniMP_iOS_SDK@2.7.11.20200602](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.11.20200602.zip)
-+ 需使用HBuilderX（2.7.11）版本生成 小程序App 资源
-+ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.11.20200602-alpha.html)
+[点击下载SDK UniMP_iOS_SDK@2.7.13.20200615](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.7.13.20200615.zip)
++ 需使用HBuilderX（2.7.13）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.7.13.20200615-alpha.html)
 
 
 ## 历史版本
@@ -13,6 +13,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w](https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w)   密码:hvsk
+
+#### 2020年06月02日发布
+
++ 需使用HBuilderX（2.7.11）版本生成 小程序App 资源
++ 其他更新 [详情](https://update.dcloud.net.cn/hbuilderx/changelog/2.7.11.20200602-alpha.html)
 
 #### 2020年05月27日发布
 
