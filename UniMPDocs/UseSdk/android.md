@@ -24,7 +24,6 @@ uniMPSDK文件夹目录结构说明:
 	|-- src			//微信分享支付需要的activity
 	|-- AndroidManifest.xml //模块配置信息
 	|-- proguard.cfg  //混淆配置
-	|-- Feature-Android //libs 依赖库的说明及权限配置信息
 /-- uniMPSDK/DEMO	//uni小程序SDK示例DEMO
 /-- uniMPSDK\Features // 框架已有的原生功能依赖库
 	|-- Features 依赖库说明.xls
