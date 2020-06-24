@@ -1,7 +1,7 @@
 ## 预备环境
 
 - iOS 开发环境；
-- 已有 [离线打包](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios) 原生工程，或集成了 [uni小程序SDK](https://nativesupport.dcloud.net.cn/UniMPDocs/UseSdk/ios) 的原生功能；
+- 已有 [离线打包](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios) 原生工程，或集成了 [uni小程序SDK](https://nativesupport.dcloud.net.cn/UniMPDocs/UseSdk/ios) 的原生工程；
 - 从插件市场下载原生插件（付费插件不支持下载） [插件市场](http://ext.dcloud.net.cn/?cat1=5&cat2=51)。
 
 ## 预备知识
@@ -203,7 +203,8 @@ info.plist 中添加
 ```
 
 将ios目录下的.a库添加到工程中
-[attach]32864[/attach]
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/352795d6da1d8c47bc219e81fb29b3a2.png)
 
 至此本插件集成配置已完成
 
