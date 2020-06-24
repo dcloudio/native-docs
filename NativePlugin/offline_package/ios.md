@@ -1,7 +1,7 @@
 ## 预备环境
 
-- iOS 开发环境。
-- 下载离线打包iOS版SDK（[5+ SDK下载](http://ask.dcloud.net.cn/article/103)）。
+- iOS 开发环境；
+- 已有 [离线打包](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios) 原生工程，或集成了 [uni小程序SDK](https://nativesupport.dcloud.net.cn/UniMPDocs/UseSdk/ios) 的原生功能；
 - 从插件市场下载原生插件（付费插件不支持下载） [插件市场](http://ext.dcloud.net.cn/?cat1=5&cat2=51)。
 
 ## 预备知识
@@ -14,7 +14,7 @@
 	|-- package.json				// 插件配置文件
 ```
 
-原生插件目录结构都是固定的，其中 android 路径中放的是 android 端插件，ios 路径中放的是 ios 端插件，package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等，**离线集成需要开发者根据 package.json 手动配置离线工程**（通过 HBuilderX 云端打包插件打包机会自动完成配置）。
+原生插件目录结构都是固定的，其中 android 路径中放的是 android 端插件，ios 路径中放的是 ios 端插件，package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等，**原生工程集成需要开发者根据 package.json 手动配置工程**（通过 HBuilderX 云端打包插件打包机会自动完成配置）。
 
 下面我们学习一下 package.json 配置的每个节点的含义以及如何手动将插件集成到离线工程中并添加相关配置项；
 
@@ -65,7 +65,7 @@
 
 **plugins**  **hooksClass**
 
-插件信息，及插件事件钩子注册类名，找到离线工程的 info.plist 文件右键选择 Open As -> Source Code 源码查看，添加如下节点信息，并根据 package.json 中配置的信息修改对应项的值 hooksClass、type、name、class
+插件信息，及插件事件钩子注册类名，找到原生工程的 `info.plist` 文件右键选择 `Open As -> Source Code` 源码查看，添加如下节点信息，并根据 package.json 中配置的信息修改对应项的值 hooksClass、type、name、class
 > 注：工程中只能包含一个`dcloud_uniplugins`节点，如果配置多个插件只需在`dcloud_uniplugins`节点下配置多个`dict`节点即可
 	
 ```

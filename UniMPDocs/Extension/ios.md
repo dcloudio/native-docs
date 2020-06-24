@@ -1,6 +1,9 @@
 ## 概述
 扩展原生能力指的是将您原生开发的功能通过一定规范暴露给 uni小程序环境，然后即可在 uni小程序应用中调用您的原生功能。
 
+### TIPS
+[插件市场](https://ext.dcloud.net.cn/?cat1=5&cat2=51&orderBy=UpdatedDate) 上的所有原生插件都支持在 uni小程序SDK 中集成使用，集成方式请 [参考文档](https://nativesupport.dcloud.net.cn/NativePlugin/offline_package/ios)（注：需要将插件包下载到本地集成，由于付费插件不提供下载，所有目前只能使用免费的插件）；
+
 ### 扩展方式
 uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力有两种方式：一种是不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，这种情况可通过扩展`module`的方式来实现；另一种是需要参与页面布局，比如：map、image，这种情况需要通过扩展`component`即组件的方法来实现；
 
