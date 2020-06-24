@@ -3,6 +3,7 @@
   * [Android 集成教程](UniMPDocs/UseSdk/android.md)
   * [iOS 集成教程](UniMPDocs/UseSdk/ios.md)
 * 功能示例
+  * [iOS 平台](UniMPDocs/Sample/ios.md)
   * [启动小程序](UniMPDocs/Sample/start.md)
   * [关闭小程序](UniMPDocs/Sample/close.md) 
   * [宿主-小程序通讯](UniMPDocs/Sample/event.md) 
