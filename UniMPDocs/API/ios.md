@@ -138,6 +138,15 @@
    redirectPath:(NSString * _Nullable)redirectPath __attribute__((deprecated("deprecated, Use -openUniMP:configuration:completed:")));
 ```
 
+**DCUniMPCompletionBlock**
+
+```
+/// 加载小程序 block 回调
+/// uniMPInstance: 加载成功返回小程序实例，失败则为 nil
+/// error：失败信息
+typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, NSError *_Nullable error);
+```
+
 ### 预加载小程序
 > 2.7.15+ 支持
 
