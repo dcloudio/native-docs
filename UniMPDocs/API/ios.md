@@ -1,4 +1,4 @@
-## DCUniMPSDKEngine 类
+## DCUniMPSDKEngine
 
 ### 初始化 sdk 全局环境
 ```objective-c
@@ -256,7 +256,7 @@ typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
 - (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback;
 ```
 
-## DCUniMPConfiguration 类
+## DCUniMPConfiguration
 > 2.7.15+ 支持
 
 DCUniMPConfiguration 类为小程序提供配置信息
@@ -271,7 +271,7 @@ DCUniMPConfiguration 类为小程序提供配置信息
 @property (nonatomic, assign) BOOL hideAnimated;    /**< 是否开启 hide 时的动画效果 默认：YES*/
 ```
 
-## DCUniMPConfiguration 类
+## DCUniMPConfiguration
 > 2.7.15+ 支持
  
 ### DCUniMPResultBlock
