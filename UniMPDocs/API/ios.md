@@ -280,7 +280,7 @@ DCUniMPConfiguration 类为小程序提供配置信息
 @property (nonatomic, assign) BOOL hideAnimated;    /**< 是否开启 hide 时的动画效果 默认：YES*/
 ```
 
-## DCUniMPConfiguration
+## DCUniMPInstance
 > 2.7.15+ 支持
  
 ### DCUniMPResultBlock
