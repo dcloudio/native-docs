@@ -41,7 +41,7 @@ Class DCUniMPSDKEngine
 
 #### DCUniMPConfiguration 类说明
 
-`DCUniMPConfiguration` 为小程序配置信息类，启动小程序时可传入 DCUniMPConfiguration 实例对象设置小程序的`启动参数`、`直达页面路径`、`是否开启打开关闭动画`、`是否支持后台运行`等信息，DCUniMPConfiguration 类的详细定义请参考 [API文档]()；
+`DCUniMPConfiguration` 为小程序配置信息类，启动小程序时可传入 DCUniMPConfiguration 实例对象设置小程序的`启动参数`、`直达页面路径`、`是否开启打开关闭动画`、`是否支持后台运行`等信息，DCUniMPConfiguration 类的详细定义请参考 [API文档](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=dcunimpconfiguration)；
 
 #### DCUniMPCompletionBlock 说明
 
@@ -51,7 +51,7 @@ Class DCUniMPSDKEngine
 /// error：失败信息
 typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, NSError *_Nullable error);
 ```
-启动方法执行完会回调 `completionBlock`，成功则返回 `DCUniMPInstance`类型的小程序实例对象`uniMPInstance`，用于管理小程序，`DCUniMPInstance` 类的详细定义请参考 [API文档]()；
+启动方法执行完会回调 `completionBlock`，成功则返回 `DCUniMPInstance`类型的小程序实例对象`uniMPInstance`，用于管理小程序，`DCUniMPInstance` 类的详细定义请参考 [API文档](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=dcunimpinstance)；
 
 注意：应使用`weak`弱引用类型指针引用`uniMPInstance`对象，框架内部会在小程序销毁时将其置为`nil`，如果使用强类型引用，应在小程序关闭的回调中将其置为`nil`；
 
