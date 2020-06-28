@@ -6,24 +6,6 @@
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
-## 项目创建
-
-**Tips:**如果已经创建了项目可以跳过创建步骤
-
-打开Android studio新建一个空白项目
-
-<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_9.png" width=700>
-	
-选择 Empty Activity 点击 Next。
-
-<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_10.png" width=700>
-
-Minimum API Level 建议选19及以上
-
-package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
-	
-点击 Finish 完成创建。
-
 **注意：暂时不支持Kotlin**
 
 ## 导入uni插件原生项目
