@@ -16,7 +16,8 @@
 **注意：从 2.7.15+ 版本开始老版本API不在推荐使用，请使用新的API**
 
 ```
-/// 启动 App
+此方法已经标识弃用，请使用下面的方法
+/// 启动 App 
 /// @param appid appid
 /// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
 /// @param redirectPath 启动后直接打开的页面路径 例："pages/component/view/view?a=1&b=2"

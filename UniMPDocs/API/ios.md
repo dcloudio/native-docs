@@ -1,4 +1,4 @@
-iOS 端所有 API 都在 DCUniMPSDKEngine 类中定义，您也可以直接查看`DCUniMPSDKEngine.h`头文件的方法定义
+## DCUniMPSDKEngine 类
 
 ### 初始化 sdk 全局环境
 ```objective-c
@@ -111,20 +111,44 @@ iOS 端所有 API 都在 DCUniMPSDKEngine 类中定义，您也可以直接查�
 ### 启动小程序应用
 
 ```objective-c
-/// 启动 App
+/// 启动小程序 2.7.15+ 支持
+/// @param appid appid
+/// @param configuration 小程序的配置信息
+/// @param completionBlock 方法执行回调
++ (void)openUniMP:(NSString *)appid
+    configuration:(DCUniMPConfiguration *)configuration
+        completed:(DCUniMPCompletionBlock)completionBlock;
+```
+
+
+```objective-c
+/// 启动 App 已废弃
 /// @param appid appid
 /// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
 + (void)openApp:(NSString *)appid
-      arguments:(NSDictionary * __nullable)arguments;
+      arguments:(NSDictionary * __nullable)arguments __attribute__((deprecated("deprecated, Use -openUniMP:configuration:completed:")));
 
 
-/// 启动 App
+/// 启动 App 已废弃
 /// @param appid appid
 /// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
 /// @param redirectPath 启动后直接打开的页面路径 例："pages/component/view/view?a=1&b=2"
 + (void)openApp:(NSString *)appid
       arguments:(NSDictionary * _Nullable)arguments
-   redirectPath:(NSString * _Nullable)redirectPath;
+   redirectPath:(NSString * _Nullable)redirectPath __attribute__((deprecated("deprecated, Use -openUniMP:configuration:completed:")));
+```
+
+### 预加载小程序
+> 2.7.15+ 支持
+
+```objective-c
+/// 预加载小程序
+/// @param appid appid
+/// @param configuration 小程序的配置信息
+/// @param completionBlock 方法执行回调
++ (void)preloadUniMP:(NSString *)appid
+       configuration:(DCUniMPConfiguration * __nullable)configuration
+           completed:(DCUniMPCompletionBlock)completionBlock;
 ```
 
 ### 关闭当前小程序应用
@@ -230,4 +254,45 @@ typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
 /// @param data 数据：NSString 或 NSDictionary 类型
 /// @param callback 回调数据给小程序
 - (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback;
+```
+
+## DCUniMPConfiguration 类
+> 2.7.15+ 支持
+
+DCUniMPConfiguration 类为小程序提供配置信息
+
+### 支持的属性
+
+```
+@property (nonatomic, strong, nullable) NSDictionary *arguments; /**< 启动参数（在小程序中通过 plus.runtime.arguments 获取此参数）默认：nil*/
+@property (nonatomic, copy, nullable) NSString *redirectPath;   /**< 启动后直接打开的页面路径 例："pages/component/view/view?a=1&b=2" 默认：nil*/
+@property (nonatomic, assign) BOOL enableBackground;    /**< 是否开启后台运行（退出小程序时隐藏到后台不销毁小程序应用） 默认：NO*/
+@property (nonatomic, assign) BOOL showAnimated;    /**< 是否开启 show 小程序时的动画效果 默认：YES */
+@property (nonatomic, assign) BOOL hideAnimated;    /**< 是否开启 hide 时的动画效果 默认：YES*/
+```
+
+## DCUniMPConfiguration 类
+> 2.7.15+ 支持
+ 
+### DCUniMPResultBlock
+```
+/// 方法执行回调block
+/// @param success 是否执行成功
+/// @param error 失败信息
+typedef void(^DCUniMPResultBlock)(BOOL success, NSError *_Nullable error);
+```
+
+### 将小程序显示到前台
+```
+- (void)showWithCompletion:(DCUniMPResultBlock)completion;
+```
+
+### 将小程序隐藏到后台
+```
+- (void)hideWithCompletion:(DCUniMPResultBlock)completion;
+```
+
+### 关闭小程序
+```
+- (void)closeWithCompletion:(DCUniMPResultBlock)completion;
 ```
