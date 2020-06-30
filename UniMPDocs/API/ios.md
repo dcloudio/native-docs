@@ -13,7 +13,7 @@
 
 需要在 App 系统生命周期方法中调用 SDK 相关方法
 
-**示例**
+**示例**2.8.0
 
 ```objective-c
 - (void)applicationDidBecomeActive:(UIApplication *)application {  
@@ -111,7 +111,7 @@
 ### 启动小程序应用
 
 ```objective-c
-/// 启动小程序 2.7.15+ 支持
+/// 启动小程序 2.8.0+ 支持
 /// @param appid appid
 /// @param configuration 小程序的配置信息
 /// @param completionBlock 方法执行回调
@@ -148,7 +148,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ```
 
 ### 预加载小程序
-> 2.7.15+ 支持
+> 2.8.0+ 支持
 
 ```objective-c
 /// 预加载小程序
@@ -266,7 +266,7 @@ typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
 ```
 
 ## DCUniMPConfiguration
-> 2.7.15+ 支持
+> 2.8.0+ 支持
 
 DCUniMPConfiguration 类为小程序提供配置信息
 
@@ -281,7 +281,7 @@ DCUniMPConfiguration 类为小程序提供配置信息
 ```
 
 ## DCUniMPInstance
-> 2.7.15+ 支持
+> 2.8.0+ 支持
  
 ### DCUniMPResultBlock
 ```

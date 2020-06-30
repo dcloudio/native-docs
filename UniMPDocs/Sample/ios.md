@@ -8,12 +8,12 @@
 
 - 支持传入启动参数到小程序环境
 - 支持启动后直接打开指定页面
-- 支持设置是否需要启动或关闭动画效果 （2.7.15+ 版本支持）
-- 支持开启后台运行模式（2.7.15+ 版本支持）
+- 支持设置是否需要启动或关闭动画效果 （2.8.0+ 版本支持）
+- 支持开启后台运行模式（2.8.0+ 版本支持）
 
 ### API
 
-**注意：从 2.7.15+ 版本开始老版本API不在推荐使用，请使用新的API**
+**注意：从 2.8.0+ 版本开始老版本API不在推荐使用，请使用新的API**
 
 ```
 此方法已经标识弃用，请使用下面的方法
@@ -26,7 +26,7 @@
    redirectPath:(NSString * _Nullable)redirectPath __attribute__((deprecated("deprecated, Use -openUniMP:configuration:completed:")));
 ```
 
-**2.7.15+ 版本支持**
+**2.8.0+ 版本支持**
 
 ```objective-c
 Class DCUniMPSDKEngine
@@ -149,7 +149,7 @@ configuration.redirectPath = @"pages/component/view/view?action=redirect";
 ``` 
 
 ### 启动动画效果 
-> 2.7.15+ 版本支持
+> 2.8.0+ 版本支持
 
 通过 DCUniMPConfiguration 配置是否需要启动或关闭小程序时的动画效果
 
@@ -193,7 +193,7 @@ plus.runtime.quit()
 [DCUniMPSDKEngine closeUniMP];
 ```
 
- 2. 通过 DCUniMPInstance 实例对象关闭自己**（2.7.15+版本支持）**
+ 2. 通过 DCUniMPInstance 实例对象关闭自己**（2.8.0+版本支持）**
 
 ```
 [self.currentUniMP closeWithCompletion:^(BOOL success, NSError * _Nullable error) {
@@ -406,7 +406,7 @@ uni小程序默认会显示胶囊按钮，您可以将其隐藏（目前只支�
 
 
 ## 开启后台运行
-> 2.7.15+ 版本支持
+> 2.8.0+ 版本支持
 
 通过 DCUniMPConfiguration 可配置小程序是否支持后台运行，默认点击胶囊按钮的`x`或者在小程序中调用`plus.runtime.quit()`方法会直接关闭小程序，当开启后台运行时会只是将小程序隐藏到后台，下次打开时直接显示之前的状态；
 
@@ -470,7 +470,7 @@ configuration.enableBackground = YES;
 
 
 ## 预加载小程序
-> 2.7.15+ 版本支持
+> 2.8.0+ 版本支持
 
 宿主调用预加载方法在后台提前将小程序渲染出来，在需要显示的时候在`show`出来，提升用户体验
 
