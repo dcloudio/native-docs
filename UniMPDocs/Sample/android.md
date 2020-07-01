@@ -357,7 +357,28 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
     .setEnableBackground(true).build();
 ```
 
+### 打开小程序
+
+第一次打开小程序 还是将小程序后台激活到前台。都是调用`DCUniMPSDK.getInstance().startApp`打开小程序
+
+**示例**
+
+```
+DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11");
+```
+
 **Tips**
 
+注意：已启动的小程序并进入后台运行，再次启动直达参数将会失效。请注意！！！
+
+### 关闭小程序
+
 开启后台运行。如果需要强制关闭小程序，可调用`DCUniMPSDK.getInstance().closeCurrentApp()`关闭当前小程序
+
+**示例**
+
+```
+DCUniMPSDK.getInstance().closeCurrentApp()
+```
+
 
