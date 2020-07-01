@@ -656,7 +656,7 @@ public class MySplashView implements IDCUniMPAppSplashView {
 
 小程序权限申请工具
 
-#### requestPermissions(activity, String[] permissions, int requestCode)
+#### requestPermissions(activity, permissions, requestCode)
 
 权限申请
 
