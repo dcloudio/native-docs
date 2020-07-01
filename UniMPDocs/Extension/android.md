@@ -18,6 +18,10 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。
 
+### 权限申请 重要！
+
+关于扩展模块需要某些权限申请时。请使用[DCUniMPPermissionUtil.requestPermissions](/UniMPDocs/API/android?id=requestpermissions)申请权限。方便日后权限统一申请处理！！！
+
 ## 扩展 module
 
 下面以`TestModule`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；

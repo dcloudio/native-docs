@@ -362,7 +362,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCal
 
 > 2.6.6开始支持此功能
 
-获取已运行过得小程序应用版本信息,内置应用为运行过无法正常获取。返回值需要判空处理!!!
+获取已运行过的小程序应用版本信息,没有运行过的小程序是无法正常获取到版本信息的。返回值需要判空处理!!!
 
 **参数说明**
 
@@ -492,6 +492,18 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 |参数|类型|默认值|说明
 |:----|:----|:----|:----
 |isCapsule|boolean|true|true使用胶囊按钮 false不使用
+
+#### setEnableBackground(isEnableBackground)
+
+> 2.8.0 版本开始支持此功能
+
+设置小程序退出时是否进入后台
+
+**参数说明**
+
+|参数|类型|默认值|说明
+|:----|:----|:----|:----
+|isEnableBackground|boolean|false|true表示小程序退出时进入后台 false表示直接退出
 
 #### setMenuDefFontColor(menuDefFontColor)
 
@@ -638,3 +650,24 @@ public class MySplashView implements IDCUniMPAppSplashView {
 
 无
 
+### DCUniMPPermissionUtil 
+
+> 2.8.0 开始支持
+
+小程序权限申请工具
+
+#### requestPermissions(activity, String[] permissions, int requestCode)
+
+权限申请
+
+**参数说明**
+
+|参数|类型|说明
+|:----|:----|:----
+|activity|Activity|加载小程序的Activity对象
+|permissions|String[]|要申请的权限字符串数组
+|requestCode|int|请求码
+
+**返回值**
+
+无
