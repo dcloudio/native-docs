@@ -46,8 +46,8 @@ Class DCUniMPSDKEngine
 #### DCUniMPCompletionBlock 说明
 
 ```objective-c
-/// 预加载小程序 block 回调
-/// uniMPInstance: 预加载成功返回小程序实例，失败则为 nil
+/// 加载小程序 block 回调
+/// uniMPInstance: 加载成功返回小程序实例，失败则为 nil
 /// error：失败信息
 typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, NSError *_Nullable error);
 ```
