@@ -19,6 +19,10 @@ A：一般是因为wgt资源中的versionCode为空或小于内置应用的版�
 ## Q: Android uni小程序启动白屏？
 
 A：一般是SDK拷贝资源时部分资源没有正确拷贝到你的项目中，请认真阅读文旦参考demo示例检查你的项目！
+ - 检查targetSdkVersion  取值范围26~28
+ - 检查minSdkVersion  取值范围 19~22
+ - 检查androidX版本 选择1.0.0版本
+ - 查看宿主集成的三方依赖库。可能与小程序SDK不兼容导致的初始化失败
 
 ## Q: 集成Android uni小程序SDK包变大了50M？
 
