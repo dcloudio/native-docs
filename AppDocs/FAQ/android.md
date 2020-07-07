@@ -1,6 +1,14 @@
 * 离线打包无法调起应用安装界面
 	
-	如果离线打包调用plus.runtime.install无法调起安装界面，需要在Androidmanifest.xml的application节点中添加如下内容
+	如果离线打包调用plus.runtime.install无法调起安装界面，需要在Androidmanifest.xml中添加如下内容
+	
+	在manifest节点下添加安装应用的权限
+	
+	~~~
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	~~~
+	
+	在application节点下添加provider节点
 	
 	~~~
 		<provider
