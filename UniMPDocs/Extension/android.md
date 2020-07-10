@@ -97,7 +97,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
  ```
  -keep public class * extends com.taobao.weex.common.WXModule{*;}
  ```
- - Module 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
+ - Module 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数类型的参数
 
 #### 3.注册TestModule
 
@@ -221,7 +221,7 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
  -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
  ```
  
- - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
+ - Component 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数
  - Component定义组件方法.
 
  **示例:**
