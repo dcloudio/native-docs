@@ -18,6 +18,8 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。
 
+扩展的`Module`或`Component`参数中有用到`JSONObject`或`JSONArray`,不要使用`org.json.JSONObject`。请使用`com.alibaba.fastjson.JSONObject`. 依赖库`com.alibaba:fastjson:1.1.46.android`
+
 ### 权限申请 重要！
 
 关于扩展模块需要某些权限申请时。请使用[DCUniMPPermissionUtil.requestPermissions](/UniMPDocs/API/android?id=requestpermissions)申请权限。方便日后权限统一申请处理！！！
