@@ -252,7 +252,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 [点击处理办法](https://ask.dcloud.net.cn/article/36447)
 
 ### 如何用离线打包工程制作自定义调试基座
-1、在打包原生工程里找到 control.xml文件，在HBuilder节点里查看是否有这2个： debug="true"  syncDebug="true" 配置，没有的话增加上，然后保存。
+1、在打包原生工程里找到 control.xml文件，在HBuilder节点里查看是否有这2个： debug="true"  syncDebug="true" 配置(注意-打AppStore包的时候，这个配置需要去掉，否则会导致热更新失败！)，没有的话增加上，然后保存。
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/a0f6ee9a9eb0536f7a0e3cd42b4cb133.png)
 
