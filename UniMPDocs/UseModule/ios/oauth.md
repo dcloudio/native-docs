@@ -69,10 +69,13 @@
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20191203/7bc7afb901b0c2a7b8f057be5cc81a89.png)
 
-3.在info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：
+3.在 info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
+4.在 info.plist 添加 `weixinoauth` 项，填写微信 `appid` 及 `appSecret`
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20150817/fe4930ae149b7393e9ce828662550d9b.png)
 
 ## 苹果授权登录
 

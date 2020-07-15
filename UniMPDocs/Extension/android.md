@@ -18,6 +18,8 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。
 
+扩展的`Module`或`Component`参数中有用到`JSONObject`或`JSONArray`,不要使用`org.json.JSONObject`。请使用`com.alibaba.fastjson.JSONObject`. 依赖库`com.alibaba:fastjson:1.1.46.android`
+
 ### 权限申请 重要！
 
 关于扩展模块需要某些权限申请时。请使用[DCUniMPPermissionUtil.requestPermissions](/UniMPDocs/API/android?id=requestpermissions)申请权限。方便日后权限统一申请处理！！！
@@ -95,7 +97,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
  ```
  -keep public class * extends com.taobao.weex.common.WXModule{*;}
  ```
- - Module 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
+ - Module 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数类型的参数
 
 #### 3.注册TestModule
 
@@ -219,7 +221,7 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
  -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
  ```
  
- - Component 扩展的方法可以使用 int, double, float, String, Map, List 类型的参数
+ - Component 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数
  - Component定义组件方法.
 
  **示例:**
