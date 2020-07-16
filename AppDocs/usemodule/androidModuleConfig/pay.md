@@ -8,7 +8,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | payment-alipay-release.aar, alipayutdid.jar |
+| SDK\libs | payment-alipay-release.aar, alipayutdid.jar, alipaySdk-15.6.5-20190718211159-noUtdid.aar |
 
 ### Androidmainfest.xml文件需要修改的项
 
