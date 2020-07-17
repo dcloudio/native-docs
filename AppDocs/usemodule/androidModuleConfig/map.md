@@ -1,4 +1,4 @@
-**开发者需要修改使用的地图插件时，需要修改properties.xml文件的features节点下Maps节点value属性的配置，高德地图和百度地图的配置只能保留一个**
+**开发者需要修改使用的地图插件时，需要修改dcloud_properties.xml文件的features节点下Maps节点value属性的配置，高德地图和百度地图的配置只能保留一个**
 
 ## 百度地图 
 
@@ -39,9 +39,9 @@
 <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
 ~~~
 
-### properties.xml文件需要修改的项
+### dcloud_properties.xml文件需要修改的项
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 features节点下添加: 
 ~~~
@@ -101,11 +101,11 @@ application节点下配置如下代码:
 
 高德地图使用的appkey和打包使用的包名及签名文件存在对应关系，填写时请注意。填写错误会导致地图无法正常使用。
 
-### properties.xml文件需要修改的项
+### dcloud_properties.xml文件需要修改的项
 
 **features节点下添加** 
 
-properties.xml文件在assets/data目录下 
+dcloud_properties.xml文件在assets/data目录下 
 
 ~~~
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>

@@ -37,9 +37,9 @@
 </activity>
 ~~~
 
-**properties.xml需要添加如下代码**
+**dcloud_properties.xml需要添加如下代码**
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Weixin" value="io.dcloud.feature.oauth.weixin.WeiXinOAuthService"/></feature>
@@ -83,9 +83,9 @@ properties.xml文件在assets/data目录下
         <!-- Oauth QQ end -->
 ~~~
 
-**properties.xml需要添加如下代码**
+**dcloud_properties.xml需要添加如下代码**
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-QQ" value="io.dcloud.feature.oauth.qq.QQOAuthService"/></feature>
@@ -118,9 +118,9 @@ properties.xml文件在assets/data目录下
         <!-- Oauth Sina end -->
 ~~~
 
-**properties.xml需要添加如下代码**
+**dcloud_properties.xml需要添加如下代码**
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Sina" value="io.dcloud.feature.oauth.sina.SinaOAuthService"/></feature>
@@ -154,9 +154,9 @@ properties.xml文件在assets/data目录下
 <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity"/>
 ~~~
 
-### properties.xml需要添加如下代码
+### dcloud_properties.xml需要添加如下代码
 
-**properties.xml文件在ADT工程assets/data目录下**
+**dcloud_properties.xml文件在ADT工程assets/data目录下**
 
 **Features节点下添加**
 

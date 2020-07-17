@@ -39,9 +39,9 @@
 </activity>
 ~~~
 
-**properties.xml需要添加如下代码**
+**dcloud_properties.xml需要添加如下代码**
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 ~~~
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/></feature>
@@ -88,9 +88,9 @@ properties.xml文件在assets/data目录下
             android:launchMode="singleTop" />
 ~~~
 
-**properties.xml需要添加如下代码**
+**dcloud_properties.xml需要添加如下代码**
 
-properties.xml文件在assets/data目录下
+dcloud_properties.xml文件在assets/data目录下
 
 ~~~
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="Payment-Weixin" value="io.dcloud.feature.payment.weixin.WeiXinPay"/></feature>
