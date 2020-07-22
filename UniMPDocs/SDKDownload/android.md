@@ -1,11 +1,12 @@
 ## 更新日志
-#### 2020年7月1日发布
-[点击下载SDK UniMPSDK_Android@2.8.0.20200701.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.8.0.20200701.zip)
-+ 需使用HBuilderX（2.8.0）版本生成 小程序App 资源
-+ 修复微信分享失败问题
-+ 修复开启调试模式后getAppVersionInfo无法获取数据问题
-+ 小程序支持后台运行功能，可提升二次启动速度[详情](/UniMPDocs/Sample/android?id=开启后台运行)
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.0.20200701-alpha.html)
+#### 2020年7月21日发布
+[点击下载SDK UniMPSDK_Android@2.8.1.20200721.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.8.1.20200721.zip)
++ 需使用HBuilderX（2.8.1）版本生成 小程序App 资源
++ Android平台 优化 小程序进程为应用私有进程，名称调整为`宿主包名:io.dcloud.unimp`，防止其他APP调用
++ Android平台 修复 小程序启动界面可能出现闪屏的Bug
++ Android平台 支持非Activity启动小程序
++ Android平台 修复getCurrentPageUrl可能无法获取地址问题
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.1.20200721-alpha.html)
 
 
 ## 历史版本

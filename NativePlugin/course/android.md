@@ -604,6 +604,8 @@ A:可以按以下步骤操作实现：
 Q:插件开发支持Androidx吗?
 A:目前插件开发还不支持Androidx.请使用请使用v4、v7实现相关开发。
 
+Q:component、module的生命周回调 不支持OnActivityCreate()，某些注册服务需要该事件注册怎么办。
+A:可以在component、module的构造函数中调用相关注册初始化服务等操作
 
 
 
