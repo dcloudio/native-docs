@@ -268,7 +268,7 @@ UniMPSDK/Core 目录结构说明
 
 #### uni小程序应用资源升级
 
-1. **宿触发更新：**宿主下载新的 wgt 资源包或者主App升级时内置新的 wgt 包，然后在此调用 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入wgt资源路径即可将wgt资源部署到运行路径，直接替换原有应用资源。
+1. **宿主触发更新：**宿主下载新的 wgt 资源包或者主App升级时内置新的 wgt 包，然后在此调用 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入wgt资源路径即可将wgt资源部署到运行路径，直接替换原有应用资源。
  
 2. **小程序触发更新：**小程序内下载新的wgt包，然后调用更新api应用新的wgt资源，具体请参考 [wgt 资源在线升级/热更新](https://ask.dcloud.net.cn/article/35667)
 
