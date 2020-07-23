@@ -138,7 +138,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	+ 配置应用名称
 
-	打开app->res -> main -> values -> strings.xml文件，修改“app_name”字段值，该值为安装到手机上桌面显示的应用名称，建议与manifest.json中name（基础配置中的应用名称）对应。
+	打开app-> src-> main -> res -> values -> strings.xml文件，修改“app_name”字段值，该值为安装到手机上桌面显示的应用名称，建议与manifest.json中name（基础配置中的应用名称）对应。
 
 	+ 配置应用启动页
 
