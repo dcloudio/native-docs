@@ -41,7 +41,7 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  uniMPSDK-release.aar  //必须集成
  uniapp-release.aar //必须集成
  sqlite-release.aar
- miit_mdid_1.0.10.aar //必须集成
+ msa_mdid_1.0.13.aar //必须集成 2.8.1+ 注意(2.8.0SDK几以下版本请集成miit_mdid_1.0.10.aar)
  messaging-release.aar
  iBeacon-release.aar
  fingerprint-release.aar
