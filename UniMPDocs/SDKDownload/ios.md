@@ -1,12 +1,10 @@
 如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK； 
 
 ## 更新日志
-#### 2020年07月21日发布
-[点击下载SDK UniMP_iOS_SDK@2.8.1.20200721](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.1.20200721.zip)
-+ 需使用HBuilderX（2.8.1）版本生成 小程序App 资源
-+ iOS平台 优化 小程序启动流程，Hello uni-app 示例应用启动速度提升2倍，在iPhone11设备实测400ms内打开应用首页
-+ iOS平台 修复 发送短信 sendMessage API无效的Bug
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.1.20200721-alpha.html)
+#### 2020年07月26日发布
+[点击下载SDK UniMP_iOS_SDK@2.8.2.20200726](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.2.20200726.zip)
++ 需使用HBuilderX（2.8.2）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.2.20200726.html)
 
 
 ## 历史版本
@@ -15,6 +13,13 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w](https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w)   密码:hvsk
+
+#### 2020年07月21日发布
+
++ 需使用HBuilderX（2.8.1）版本生成 小程序App 资源
++ iOS平台 优化 小程序启动流程，Hello uni-app 示例应用启动速度提升2倍，在iPhone11设备实测400ms内打开应用首页
++ iOS平台 修复 发送短信 sendMessage API无效的Bug
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.1.20200721-alpha.html)
 
 #### 2020年07月01日发布
 
