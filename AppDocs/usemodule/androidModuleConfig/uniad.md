@@ -10,7 +10,7 @@ AndroidManifest.xml文件中添加如下节点到节点中，并配置替换其�
 
 * 包名：对应Android项目中build.gradle中的applicationId，如io.dcloud.HBuilder
 * 应用标识：对应5+ APP或uni-app项目manifest.json中appid，当前应用必须开通广告并且必须与dcloud_control.xml中的appid保持一致。
-* 广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可
+* 广告标识：联盟ID，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可
 * 渠道：[渠道包制作指南](https://ask.dcloud.net.cn/article/35974)
 
 
