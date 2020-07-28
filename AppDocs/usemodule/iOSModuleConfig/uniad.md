@@ -11,12 +11,12 @@
 
 应用标识：对应5+或uni-app项目manifest.json中appid。
 
-广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取。
+广告标识：联盟ID，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可。
 渠道：可以填apple。
 
 ### 再按下面2个步骤配置参数：
 
-1.在info.plist文件里加DCLOUD_AD_ID节点，内容 为自己申请的广告adid
+1.在info.plist文件里加DCLOUD_AD_ID节点，内容为自己申请的广告标识adid
 
 2.把marketChannel节点的广告标识换成申请的广告标识。如下图所示：
 
