@@ -23,22 +23,6 @@
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 ~~~
 
-**application节点下配置如下代码**
-
-~~~
-<activity android:name="com.alipay.sdk.app.H5PayActivity" 
-    android:configChanges="orientation|keyboardHidden|navigation" 
-    android:exported="false" 
-    android:screenOrientation="behind" 
-    android:windowSoftInputMode="adjustResize|stateHidden" > 
-</activity> 
-<activity android:name="com.alipay.sdk.auth.AuthActivity" 
-    android:configChanges="orientation|keyboardHidden|navigation" 
-    android:exported="false" 
-    android:screenOrientation="behind" >
-</activity>
-~~~
-
 ### 修改dcloud_properties.xml配置
 
 dcloud_properties.xml文件在assets/data目录下 
