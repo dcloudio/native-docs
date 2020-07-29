@@ -166,7 +166,7 @@ configuration.hideAnimated = NO;
 
 #### 自定义动画
 
-小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义动画效果，群共享文件中有其他开发者共享的源码--`PresentCustomAnimation`，有需要的开发者可以直接使用；
+小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式从页面下方打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义打开动画效果，您可以参考 [DCUniMPPresentCustomAnimation](https://github.com/xiaohuapunk/DCUniMPPresentCustomAnimation) 的实现，从页面右侧打开，有需要的开发者可以直接使用；
 
 
 ## 关闭小程序
