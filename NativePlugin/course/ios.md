@@ -614,7 +614,7 @@ WX_EXPORT_METHOD(@selector(focus:))
 
 ## 常见问题
 
-###Q:广告插件说明
+### Q:集成广告SDK说明
 
 A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
 
@@ -625,7 +625,7 @@ A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK�
 
 具体请参考开源项目[ 百度OCR识别插件源码](https://github.com/xiaohuapunk/DC-CardRecognize)，对应插件市场的 [插件](https://ext.dcloud.net.cn/plugin?id=135)
 
-###Q: 如何跳转原生 UIViewController
+### Q: 如何跳转原生 UIViewController
 
 >A: 因为 uni 框架机制，module 的 weexInstance 没有绑定 viewController，故 `weexInstance.viewController` 值为 nil，如果想通过 UIViewController 来跳转页面可使用下面的方法获取 UIViewController**
 
