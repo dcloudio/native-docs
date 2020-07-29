@@ -614,20 +614,20 @@ WX_EXPORT_METHOD(@selector(focus:))
 
 ## 常见问题
 
-### 广告插件说明
+###Q:广告插件说明
 
-由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
+A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
 
-### 插件开发需要依赖第三方SDK，或需要依赖资源文件
+### Q: 插件开发需要依赖第三方SDK，或需要依赖资源文件
 
 - 如果您的插件需要依赖第三方的SDK，开发阶段将第三方SDK引入到开发工程中进行正常开发，然后在构建插件包的时候，需要将依赖的三方SDK库文件放到ios路径下，然后编辑 `package.json`；
 - 如果需要依赖资源文件比如图片等，建议把资源文件放到 .bundle 包中使用，然后把 bundle 包放到 ios 路径下，然后配置 `package.json`
 
 具体请参考开源项目[ 百度OCR识别插件源码](https://github.com/xiaohuapunk/DC-CardRecognize)，对应插件市场的 [插件](https://ext.dcloud.net.cn/plugin?id=135)
 
-### 获取 UIViewController
+###Q: 如何跳转原生 UIViewController
 
-> 因为 uni 框架机制，module 的 weexInstance 没有绑定 viewController，故 `weexInstance.viewController` 值为 nil，如果想通过 UIViewController 来跳转页面可使用下面的方法获取 UIViewController**
+>A: 因为 uni 框架机制，module 的 weexInstance 没有绑定 viewController，故 `weexInstance.viewController` 值为 nil，如果想通过 UIViewController 来跳转页面可使用下面的方法获取 UIViewController**
 
 ```javascript
 // 获取当前显示的 UIViewController
@@ -665,9 +665,9 @@ WX_EXPORT_METHOD(@selector(focus:))
 }
 ```
 
-### 获取页面可访问图片资源存储路径 （vue页面需要注意，nvue页面不存这个问题）
+### Q: 如何获取页面可访问图片资源存储路径 （vue页面需要注意，nvue页面不存这个问题）
 
-> 有些插件可能需要返回本地的图片路径给页面来显示，如果页面是`vue`的话是使用 WKWebview 渲染，访问本地图片资源可能会存在跨域问题访问不到图片资源，所以需要将图片存放到指定路径下，按照下面的方法获取图片存储路径即可
+> A: 有些插件可能需要返回本地的图片路径给页面来显示，如果页面是`vue`的话是使用 WKWebview 渲染，访问本地图片资源可能会存在跨域问题访问不到图片资源，所以需要将图片存放到指定路径下，按照下面的方法获取图片存储路径即可
 
 **原生端实现**
 
@@ -694,3 +694,7 @@ var relativePath = "_doc/test.png"
 var docPath = plus.io.convertLocalFileSystemURL("_doc/");
 var absolutePath = docPath + 'test.png'
 ```
+
+### Q: 打包报错 “Undefined symbols for architecture”
+
+A: 这类错误基本都是缺少依赖库导致的，仔细看报错信息，查看未定义的符号属于哪个库（有可能是系统库，也有可能是第三方库）然后将缺少的库放到插件包或修改package.json 配置文件后重新提交打包;
