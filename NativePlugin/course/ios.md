@@ -698,3 +698,20 @@ var absolutePath = docPath + 'test.png'
 ### Q: 打包报错 “Undefined symbols for architecture”
 
 A: 这类错误基本都是缺少依赖库导致的，仔细看报错信息，查看未定义的符号属于哪个库（有可能是系统库，也有可能是第三方库）然后将缺少的库放到插件包或修改package.json 配置文件后重新提交打包;
+
+### Q: 依赖库冲突 “duplicate symbols for ...”
+
+A：如果您依赖的三方库与SDK依赖的三方库冲突
+
+- 对于源码开源的三方库比如 SDWebImage、ZXing等，为了保证SDK功能的完整性所以请您使用SDK内置的三方库，移除您依赖的三方库，这些库的 .h 头文件存放在 SDK/inc 路径中的，将对应库的头文件引入到插件工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
+- 如果引入的是 .a 或 .framework 库导致某个符号定义冲突，可根据 [这篇文档](https://www.jianshu.com/p/274f93ef6c1c) 移除对应库的符号，然后测试一下功能是否正常；
+
+|SDK依赖的三方库|
+|:--|
+|IJKPlayer|
+|SDWebImage|
+|TZImagePickerController|
+|SVProgressHUD|
+|Masonry|
+|SocketRoket|
+
