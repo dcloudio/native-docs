@@ -241,7 +241,7 @@ try {
 
 ```
 String wgtPath = context.getExternalCacheDir().getPath()+"/__UNI__04E3A11.wgt";
-DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath(wgtPath, new ICallBack() {
+DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath, new ICallBack() {
 	@Override
 	public Object onCallBack(int code, Object pArgs) {
 		if(code ==1) {//释放wgt完成
