@@ -61,7 +61,7 @@ dependencies {
 	implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
 }
 ```
-**标注`必须集成`的依赖库一定要集成。否则会导致小程序无法正常运行**
+**标注`必须集成`的依赖库一定要集成。版本号尽量一致。如果依赖库不一致或未集成可能会出现页面显示异常等现象**
 
 **注意**
 
@@ -192,6 +192,18 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
                 .setMenuActionSheetItems(sheetItems)
                 .build();
 DCuniMPSDK.getInstance().initialize(this, config);
+```
+
+**Tips**
+
+为了防止其他三方SDK可能印象小程序的运行 请禁止在小程序进程初始化其他三方SDK
+
+```
+// 非小程序进程
+if(!RuningAcitvityUtil.getAppName(getBaseContext()).contains("io.dcloud.unimp")) {
+	//请在此处初始化其他三方SDK
+	... ...
+}
 ```
 
 #### 设置DefaultMenuButton监听事件
