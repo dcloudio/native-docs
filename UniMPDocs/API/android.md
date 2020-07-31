@@ -134,7 +134,7 @@ uni小程序应用资源包路径。例如 "xxx/xxx/xxx/__UNI__04E3A11.wgt".
 **示例**
 ```
 String wgtPath = context.getExternalCacheDir().getPath()+"/__UNI__04E3A11.wgt";
-DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath(wgtPath, new ICallBack() {
+DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath, new ICallBack() {
 	@Override
 	public Object onCallBack(int code, Object pArgs) {
 		if(code ==1) {//释放wgt完成
