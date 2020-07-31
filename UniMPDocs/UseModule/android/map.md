@@ -6,7 +6,7 @@ uni小程序中目前仅支持高德地图
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | amap-libs-release.aar，map-amap-release.aar |
+| uniMPSDK\Features\libs | amap-libs-release.aar，map-amap-release.aar，weex_amap-release.aar|
 
 将表格中的文件拷贝至主Module中的libs下。
 
