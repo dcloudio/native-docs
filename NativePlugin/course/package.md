@@ -46,7 +46,7 @@ uni原生插件描述文件，完整格式如下
 			"parameters": {
 				"插件需要配置的参数名称, 如appid": {
 					"des": "参数描述",
-					"key": "AndroidManifest.xml中添加meta-data节点的android:name属性值, 如GETUI_APPID",
+					"key": "AndroidManifest.xml中添加meta-data节点！对应android:name属性值, 如GETUI_APPID",
 					"placeholder": "build.gradle中添加到manifestPlaceholders中的字段名"
 				}
 			}
@@ -256,7 +256,7 @@ parameters下每个节点定义一个要配置的参数，参数名称为键名�
 可选，在HBuilderX中manifest.json的可视化界面中显示，用于提示插件使用者配置此参数的作用。
 - key 云端打包时原生层使用的键名称
 可选，与placeholder二选一配置。
-此值为AndroidManifest.xml中添加meta-data节点的android:name属性值，推荐使用“插件标识_键名”格式，如"DC-RichAlert_appid"。
+此值为AndroidManifest.xml中添加meta-data节点！对应android:name属性值，推荐使用“插件标识_键名”格式，如"DC-RichAlert_appid"。
 - placeholder **HBuilderX2.5.6+版本支持**
 可选，与key二选一配置。
 此值为在build.gradle中添加manifestPlaceholders的键名，为了避免与其它插件冲突推荐使用“插件标识_键名”格式，如"DC-RichAlert_appid"；
