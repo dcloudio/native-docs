@@ -686,11 +686,13 @@ NSString *imgPath = [appinfo.documentPath stringByAppendingPathComponent:@"test.
 
 **js 端获取图片路径有两种方式**
 
+说明：`"_doc"` 是一个特殊字符，和原生端的 `appinfo.documentPath`对应
+
 ```				
-// 1.使用相对路径
+// 1.使用相对路径（直接使用 "_doc/" 拼接图片路径）
 var relativePath = "_doc/test.png"
 				
-// 2.使用平台的绝对路径
+// 2.使用平台的绝对路径（先将 "_doc/" 转换成原生绝对路径在拼接图片路径）
 var docPath = plus.io.convertLocalFileSystemURL("_doc/");
 var absolutePath = docPath + 'test.png'
 ```
