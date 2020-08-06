@@ -505,6 +505,15 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 |:----|:----|:----|:----
 |isEnableBackground|boolean|false|true表示小程序退出时进入后台 false表示直接退出
 
+**注意事项**
+
+开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
+后台模式与多任务窗口两者功能目前是相辅相成。不可分割。
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
+
+**2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
+
 #### setMenuDefFontColor(menuDefFontColor)
 
 设置菜单默认按钮文字有颜色
