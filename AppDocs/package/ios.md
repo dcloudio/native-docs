@@ -2,7 +2,7 @@
     准备好Xcode打包需要的bundleid和生产环境的证书。
 
 ## 应用配置
-###  配置应用标识(Boundle Identifier)
+###  配置应用标识(Bundle Identifier)
 
     选择左侧应用工程根目录，选中TARGETS下的HBuilder打开工程属性界面，在General下修改Identity的值：
     
