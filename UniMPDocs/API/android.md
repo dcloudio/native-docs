@@ -214,9 +214,9 @@ DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButto
 |:----|:----|:----|:-----
 |context|Context|是|上下文
 |appid|String|是|uni小程序应用id
-|splashClass|IDCUniMPAppSplashView|否|自定义splashView接口类
-|redirectPath|String|否|uni小程序页面直达地址
-|arguments|JSONObject|否|uni小程序启动参数 应用启动后通过plus.runtime.arguments取值
+|splashClass|IDCUniMPAppSplashView|否|自定义splashView接口类，**再次启动已启动的小程序该参数失效**
+|redirectPath|String|否|uni小程序页面直达地址，**再次启动已启动的小程序该参数失效**
+|arguments|JSONObject|否|uni小程序启动参数 应用启动后通过plus.runtime.arguments取值。**再次启动已启动的小程序该参数失效**
 
 **redirectPath参数说明**
 
