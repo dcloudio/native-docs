@@ -26,11 +26,12 @@
 	
 ### 其他模块配置
 
-* [推送插件配置](/AppDocs/usemodule/androidModuleConfig/push.md)
-* [分享插件配置](/AppDocs/usemodule/androidModuleConfig/share.md)
-* [登陆鉴权插件配置](/AppDocs/usemodule/androidModuleConfig/oauth.md)
-* [地图插件配置](/AppDocs/usemodule/androidModuleConfig/map.md)
-* [支付插件配置](/AppDocs/usemodule/androidModuleConfig/pay.md)
-* [定位插件配置](/AppDocs/usemodule/androidModuleConfig/geolocation.md)
-* [语音识别插件配置](/AppDocs/usemodule/androidModuleConfig/speech.md)
+* [推送模块配置](/AppDocs/usemodule/androidModuleConfig/push.md)
+* [分享模块配置](/AppDocs/usemodule/androidModuleConfig/share.md)
+* [登陆鉴权模块配置](/AppDocs/usemodule/androidModuleConfig/oauth.md)
+* [地图模块配置](/AppDocs/usemodule/androidModuleConfig/map.md)
+* [支付模块配置](/AppDocs/usemodule/androidModuleConfig/pay.md)
+* [定位模块配置](/AppDocs/usemodule/androidModuleConfig/geolocation.md)
+* [语音识别模块配置](/AppDocs/usemodule/androidModuleConfig/speech.md)
+* [其他模块及国际化配置](/AppDocs/usemodule/androidModuleConfig/others.md)
 	
