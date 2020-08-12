@@ -11,7 +11,7 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年8月6日发布 链接: https://pan.baidu.com/s/1S8BhHw8L7JAFG48uIoA3pg  密码: iq44
+### 2020年8月6日发布 
 [点击下载SDK，提取码: iq44](https://pan.baidu.com/s/1S8BhHw8L7JAFG48uIoA3pg)
 + 更新uni-app离线打包支持，需使用HBuilderX（2.8.4.20200806-alpha）版本生成本地打包App资源。
 + 新增 蓝牙设置最大传输单元 setBLEMTU，获取设备信号强度 getBLEDeviceRSSI 等功能 [文档](https://www.html5plus.org/doc/zh_cn/bluetooth.html#plus.bluetooth.setBLEMTU)
