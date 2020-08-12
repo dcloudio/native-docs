@@ -14,6 +14,10 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 ## 注意事项
 
+- Module 扩展 非 UI 的特定功能.
+
+- Component 扩展 实现特别功能的 Native 控件.
+
 如果你扩展的`Module`或`Component`要与宿主进行数据交互需要注意。宿主与小程序不在同一进程，内存不共享。所以需要开发者自己实现跨进程通信。后续会完善此交互问题。
 
 关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。

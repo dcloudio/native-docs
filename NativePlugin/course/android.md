@@ -36,7 +36,9 @@
 - 学习Weex扩展 Android 知识。目前集成了Weex 0.26.0版本！！！ 如果你之前开发的是老版本代码需要作升级代码操作。 [weex扩展API for android](http://weex.apache.org/cn/guide/extend-android.html)
 - 特别注意uni-app插件目前仅支持Module扩展和Component扩展，暂时不支持Adapter扩展！！！
 
-### 扩展 module
+### 扩展 Module
+ 
+- Module 扩展 非 UI 的特定功能
 
 下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_module`模块；
 
@@ -112,7 +114,9 @@ public JSONObject testSyncFunc(){
 ```
 - Module 扩展的方法可以使用 int, double, float, String, Map, List ,com.alibaba.fastjson.JSONObject 类型的参数
 
-### 扩展组件 component 
+### 扩展组件 Component
+
+- Component 扩展 实现特别功能的 Native 控件
 
 下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_component`模块；
 
