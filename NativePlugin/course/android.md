@@ -162,7 +162,7 @@ public void setTel(String telNumber) {
 -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
 ```
 - Component 扩展的方法可以使用 int, double, float, String, Map, List , com.alibaba.fastjson.JSONObject类型的参数, 
-- Component定义组件方法.
+- Component 定义组件方法.
 
  **示例:**
  + 在组件中如下声明一个组件方法
@@ -393,7 +393,8 @@ dcRichAlert.show({
 
 - `nativePlugins`： 插件跟节点 可存放多个插件 
 - `hooksClass`： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
-- `name` : 注册名称， 
+- `plugins`: 插件数组
+- `name` : 注册名称
 - `class` : module 或 component 实体类完整名称  
 - `type` : module 或 component类型。
 	   
@@ -480,6 +481,47 @@ implementation project(':uniplugin_richalert')
 	+ 将插件依赖的.so文件放入到libs文件夹中
 + 将插件依赖的aar文件放入到插件android目录下
 
+## 插件编写命名规范
++ 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
+
+	**如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！**
+
++ Module的注册命名首先必须要使用[id](NativePlugin/course/package?id=id)为前缀。与[id](NativePlugin/course/package?id=id)完全相同也可以！如果你的插件中可能存在多个Module就需要注意[id](NativePlugin/course/package?id=id)为前缀的重要性。
++ Component的注册命名还没有严格要求。但开发者尽量使用[id](NativePlugin/course/package?id=id)`前缀。减少与其他插件的命名冲突导致插件无法正常运行。
+
+**Tips**
+
+`id` 请阅读[package.json](NativePlugin/course/package.md)
+
+**示例**
+```
+{
+    "name": "插件名称",
+    "id": "DCloud-RichAlert", // 插件标识
+    "version": "插件版本号",
+    "description": "插件描述信息",
+    "_dp_type":"nativeplugin",
+    "_dp_nativeplugin":{
+        "android": {
+            "plugins": [
+                {
+                    "type": "module",
+                    "name": "DCloud-RichAlert_TestModule", //id为前缀
+                    "class": "uni.dcloud.io.uniplugin_richalert.TestModule"
+                },
+				{
+				    "type": "component",
+				    "name": "DCloud-RichAlert_TestComponent",
+				    "class": "uni.dcloud.io.uniplugin_richalert.TestComponent"
+				}
+            ]
+		}
+	}
+	...
+	...
+```
+
+
 #### 生成uni插件压缩包
 
 压缩插件id命名的文件夹为zip即可。具体目录机构如下：
@@ -536,11 +578,6 @@ public void onActivityResume() {
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
 + androidx暂时不支持。请使用v4、v7实现插件。
 
-#### 插件编写命名规范
-+ 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
-如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！
-+ Module扩展和Component扩展在引用中的name， 需要前缀加入你自己的标识，防止与其他插件名称冲突。 
-如示例中的插件“DCloud-RichAlert”！“DCloud”就是标识！
 
 #### 广告插件说明
 + 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
