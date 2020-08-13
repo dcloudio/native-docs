@@ -14,7 +14,7 @@ uni原生插件描述文件，完整格式如下
 ```json
 {
 	"name": "插件名称",
-	"id": "插件标识需要保证唯一性",
+	"id": "插件标识，需要保证唯一性",
 	"version": "插件版本号",
 	"description": "插件描述信息",
 	"_dp_type":"nativeplugin",
