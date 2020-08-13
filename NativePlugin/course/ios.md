@@ -9,7 +9,7 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 
 - iOS开发环境，Xcode 11.0+
 - 下载开发插件需要的 [SDK包](AppDocs/download/ios.md) 并解压
-- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) （请与 SDK 包的版本保持一致）
+- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) 
 
 ### SDK 包结构说明
 
@@ -205,14 +205,14 @@ TestModule.m 文件截图：
 
 配置说明
 
-- hooksClass：App系统方法钩子类，值是类名，是给有些插件需要在 app 启动时做初始化或者获取系统事件用的，如果没有可以不填为空（示例中不需要所以置空，后面章节会详细说明 hooksClass 的使用）
+- hooksClass：App系统方法钩子类，值是类名，是给有些插件需要在 app 启动时做初始化或者获取系统事件用的，如果没有可以不填为空
 - class：module 或 component 对应的原生类名（示例中为 `TestModule`）
-- name：暴露给js端使用的 module 或 component 对应的名称（示例为`DC-TestModule`，**一定要使用一个个性化的前缀，避免与其他插件冲突**）
+- name：暴露给js端使用的 module 或 component 对应的名称（注意：module 的 name 必须以**插件id为前缀或和插件id相同**，示例为`DCTestUniPlugin-TestModule`，**其中 DCTestUniPlugin 为插件的id，需要保证唯一性，避免与其他插件冲突**，component 的name 没有强制要求，但是也要保证唯一比如 `dc-map`）
 - type：module 或 component （示例为`module`）
 
 配置完如下图所示**（必须严格按照格式配置）**：
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi13.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi13-1.png)
 
 
 到此，我们已经完成了一个简单的 module 扩展，接下来讲解如何在 uni-app 项目中调用刚刚扩展的 module 方法
@@ -230,7 +230,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 <script>
 	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module 
-	var testModule = uni.requireNativePlugin("DC-TestModule")
+	var testModule = uni.requireNativePlugin("DCTestUniPlugin-TestModule")
 	export default {
 		methods: {
 			testAsyncFunc() {
@@ -351,7 +351,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 配置完后如下图所示
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi20.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi20-1.png)
 
 接下来可以在 uni-app 中使用组件
 
@@ -592,9 +592,34 @@ WX_EXPORT_METHOD(@selector(focus:))
 ### 编写 package.json 配置文件
 > package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等信息
 
-新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下图所示
+新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下所示
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi28.png)
+```json
+{
+	"name": "TestUniPlugin",
+	"id": "DCTestUniPlugin",
+	"version": "1.0.0",
+	"description": "uni示例插件",
+	"_dp_type": "nativeplugin",
+	"_dp_nativeplugin": {
+		"ios": {
+			"plugins": [{
+				"type": "module",
+				"name": "DCTestUniPlugin-TestModule",
+				"class": "TestModule"
+			}, {
+				"type": "component",
+				"name": "dc-testmap",
+				"class": "TestComponent"
+			}],
+			"frameworks": ["MapKit.framework"],
+			"integrateType": "framework",
+			"deploymentTarget": "9.0"
+		}
+	}
+}
+
+```
 
 然后以`插件id`为名新建一个文件夹，将编辑好的 `package.json` 放进去，然后在文件夹中在新建一个 `ios` 文件夹，将刚刚生成的依赖库（DCTestUniPlugin.framework）copy 到 `ios` 根目录，这样我们的插件包就构建完成了，如下图所示
 

@@ -14,7 +14,7 @@ uni原生插件描述文件，完整格式如下
 ```json
 {
 	"name": "插件名称",
-	"id": "插件标识",
+	"id": "插件标识需要保证唯一性",
 	"version": "插件版本号",
 	"description": "插件描述信息",
 	"_dp_type":"nativeplugin",
@@ -23,7 +23,7 @@ uni原生插件描述文件，完整格式如下
 			"plugins": [
 				{
 					"type": "module|component, 必填, 根据插件类型选择",
-					"name": "必填, 注册插件的名称, 通常与插件标识一致",
+					"name": "必填, 注册插件的名称, 注意：module 的 name 必须以插件id为前缀或和插件id相同，比如 `DCTestUniPlugin-TestModule`，其中 DCTestUniPlugin 为插件的id，避免与其他插件冲突，component 的 name 没有强制要求，但是也要保证唯一比如 `dc-map`",
 					"class": "必填, 注册插件的类名"
 				}
 			],
