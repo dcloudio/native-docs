@@ -487,7 +487,7 @@ implementation project(':uniplugin_richalert')
 	**如示例中插件类的“package uni.dcloud.io.uniplugin_richalert;” “dcloud”就是作者标识！**
 
 + Module的注册命名首先必须要使用[id](/NativePlugin/course/package?id=id)为前缀。与[id](/NativePlugin/course/package?id=id)完全相同也可以！如果你的插件中可能存在多个Module就需要注意[id](/NativePlugin/course/package?id=id)为前缀的重要性。
-+ Component的注册命名还没有严格要求。但开发者尽量使用[id](/NativePlugin/course/package?id=id)`前缀。减少与其他插件的命名冲突导致插件无法正常运行。
++ Component的注册命名还没有严格要求。但开发者尽量使用[id](/NativePlugin/course/package?id=id)前缀。减少与其他插件的命名冲突导致插件无法正常运行。
 
 **Tips：**
 
