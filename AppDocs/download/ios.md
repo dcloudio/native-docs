@@ -1,13 +1,11 @@
+如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK； 如果要升级可以更新离线sdk包下Bundles、inc、Libs目录下的文件。
+
 ## iOS 离线SDK - 正式版
 
-### 2020年8月13日发布 
-[点击下载SDK，提取码: urow](https://pan.baidu.com/s/1mhzcCUjuRDooRqppKUjaNQ)
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.8.5.20200812）版本生成本地打包App资源。
-+ 新增 蓝牙设置最大传输单元 setBLEMTU，获取设备信号强度 getBLEDeviceRSSI 等功能 [文档](https://www.html5plus.org/doc/zh_cn/bluetooth.html#plus.bluetooth.setBLEMTU)
-+ App-iOS平台 修复 nvue 页面 在 iOS9 系统白屏的Bug
-+ iOS平台 修复 Webview窗口标题栏 titleNView 设置为透明样式时按钮的背景区域无法自适应的Bug
-+ iOS平台 修复 直播推流 LivePusher 设置 whiteness 美白属性值不生效的Bug [详情](https://ask.dcloud.net.cn/question/102761)
-+ iOS平台 修复 状态栏样式设置为非沉浸式在 iPad 设备上横屏时状态栏显示不正常的Bug
+### 2020年8月17日发布 
+[点击下载SDK，提取码: 9fkj](https://pan.baidu.com/s/14IPeHLyxGQI7SPGqWfWu7Q)
++ 更新uni-app离线打包支持，需使用HBuilderX（2.8.6.20200814）版本生成本地打包App资源。
++ iOS平台 更新 UniPush 使用的个推SDK版本为2.4.5.1，解决在部分设备上获取唯一标识可能重复的问题
 
 [百度网盘下载历史版本，提取码: w35k](https://pan.baidu.com/s/1gZGJMaSqZQftqgEVtadvEg)
 
