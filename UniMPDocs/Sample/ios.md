@@ -2,7 +2,8 @@
 从宿主应用页面跳转到小程序应用
 
 ### 实现原理
-获取当前宿主显示的 `ViewController`，通过`present`的方式打开小程序对应的 `DCUniMPViewController`
+获取当前宿主显示的 `ViewController`，通过`present`的方式打开小程序对应的 `DCUniMPViewController` 
+> 注：您可以通过自定义专场动画的方式自定义打开小程序时的动画，详情请看 <a href="#自定义专场动画" >自定义专场动画</a>
 
 ### 特性
 
@@ -163,10 +164,10 @@ configuration.showAnimated = YES;
 // 关闭动画
 configuration.hideAnimated = NO;
 ```
+<a name="自定义专场动画"></a>
+#### 自定义专场动画
 
-#### 自定义动画
-
-小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式从页面下方打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义打开动画效果，您可以参考 [DCUniMPPresentCustomAnimation](https://github.com/xiaohuapunk/DCUniMPPresentCustomAnimation) 的实现，从页面右侧打开，有需要的开发者可以直接使用；
+小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式从页面下方打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义打开动画效果，您可以参考 [DCUniMPPresentCustomAnimation](https://github.com/xiaohuapunk/DCUniMPPresentCustomAnimation) 的实现，从页面右侧打开小程序类似 push 的效果；
 
 
 ## 关闭小程序
