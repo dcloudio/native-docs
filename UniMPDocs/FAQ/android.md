@@ -62,3 +62,11 @@ A：请检查混淆配置文件。如果未包含以下配置请添加到混淆�
 -keep class com.taobao.weex.** { *; }
 -keep class io.dcloud.feature.** { *; }
 ```
+
+## Q: 集成SDK后打包运行后。会弹出"xxx模块没有集成"的弹窗?
+
+A：遇到该问题请按一下步骤进行操作
+
+1、检测UniMPSDK中的资源dcloud_properties.xml是否集成，相关模块是否按照`Feature 依赖库说明.xls`配置[详情](UniMPDocs/UseModule/android/android)
+
+2、检测项目的混淆配置是否集成了UniMPSDK中的`proguard.cfg`，没有请集成
