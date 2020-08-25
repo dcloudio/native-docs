@@ -118,7 +118,7 @@ UniMPSDK/Core 目录结构说明
     // 设置 debug YES 会在控制台输出 js log，默认不输出 log，注：需要引入 liblibLog.a 库
     [options setObject:[NSNumber numberWithBool:YES] forKey:@"debug"];
     // 初始化引擎
-    [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];
+    [DCUniMPSDKEngine initSDKEnvironmentWithLaunchOptions:options];
     
     return YES;
 }

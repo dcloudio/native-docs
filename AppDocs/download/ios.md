@@ -2,10 +2,11 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2020年8月17日发布 
-[点击下载SDK，提取码: 9fkj](https://pan.baidu.com/s/14IPeHLyxGQI7SPGqWfWu7Q)
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.8.6.20200814）版本生成本地打包App资源。
-+ iOS平台 更新 UniPush 使用的个推SDK版本为2.4.5.1，解决在部分设备上获取唯一标识可能重复的问题
+### 2020年8月21日发布 
+[点击下载SDK，提取码: r1fj](https://pan.baidu.com/s/1k8Qg6EXwVjeYUA-BVFVbWQ)
++ 更新uni-app离线打包支持，需使用HBuilderX（2.8.8.20200820）版本生成本地打包App资源。
++ iOS平台 更新 uni-AD 腾讯广点通SDK版本为4.11.10，今日头条穿山甲SDK版本为3.1.0.5
++ iOS平台 修复 直播推流 LivePusher 监听事件后不触发回调的Bug
 
 [百度网盘下载历史版本，提取码: w35k](https://pan.baidu.com/s/1gZGJMaSqZQftqgEVtadvEg)
 
