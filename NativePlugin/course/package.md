@@ -303,9 +303,9 @@ HBuilderX 中可视化配置效果：
 
 目前有部分三方SDK可能会用到授权配置文件，通常是在打包时需要将授权文件添加到assert目录。
 以下用授权文件 license-android.dat 为例来说明：
-使用插件时需要将授权配置文件license-android.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/android/assert/license-ios.dat 路径
+使用插件云端打包时需要将授权配置文件license-android.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/android/assert/license-ios.dat 路径
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-resourcess.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-resource2.png)
 
 注意：此操作务必在插件使用说明中描述清楚（如何获取授权文件，如何放置授权文件等），其中DCloud-HelloPlugin为使用的插件标识，需根据自己的插件标识进行修改
 
@@ -471,7 +471,7 @@ HBuilderX 中可视化配置效果：
    ]
 }
 ```
-2. 使用插件时需要将授权配置文件license-ios.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/ios/license-ios.dat 路径
+2. 使用插件云端打包时需要将授权配置文件license-ios.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/ios/license-ios.dat 路径
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/ios-resources.png)
 
 注意：此操作务必在插件使用说明中描述清楚（如何获取授权文件，如何放置授权文件等），其中DCloud-HelloPlugin为使用的插件标识，需根据自己的插件标识进行修改
