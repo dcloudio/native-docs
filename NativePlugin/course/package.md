@@ -239,6 +239,7 @@ Android平台支持的CPU类型，当插件中包含so库时需要配置插件�
 
 ### parameters
 如果插件需配置参数，如appid、appkey时，可通过配置`parameters`字段进行定义，在HBuilderX中使用此插件时将会出现可视配置项：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-parameters.png)
 
 提交云端打包时将会根据配置规则将用户输入的参数添加到AndroidManifest.xml的meta-data节点中。
@@ -284,15 +285,18 @@ parameters下每个节点（josn）定义一个要配置的参数，参数名称
 ```
 
 HBuilderX 中可视化配置效果：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-parameters-hx.png)
 
 提交云打包后将会在 AndroidManifest.xml 中添加 meta-data 节点，插件开发时可以通过代码获取 android:value属性值：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-parameters-xml.png)
 
 **使用placeholder方式时需开发者在插件aar中的AndroidManifest.xml根据定义使用placeholder**
 
 ### 其它资源文件
 插件如果需要使用 assert、res资源，可直接添加到插件的 android 目录下，如下图所示：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-resources.png)
 
 **不推荐这种方式来使用 assert、res资源，建议将需要使用的资源包含到aar文件中**
@@ -300,6 +304,7 @@ HBuilderX 中可视化配置效果：
 目前有部分三方SDK可能会用到授权配置文件，通常是在打包时需要将授权文件添加到assert目录。
 以下用授权文件 license-android.dat 为例来说明：
 使用插件时需要将授权配置文件license-android.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/android/assert/license-ios.dat 路径
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-resourcess.png)
 
 注意：此操作务必在插件使用说明中描述清楚（如何获取授权文件，如何放置授权文件等），其中DCloud-HelloPlugin为使用的插件标识，需根据自己的插件标识进行修改
@@ -396,6 +401,7 @@ HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 
 ### parameters
 如果插件需配置参数，如appid、appkey时，可通过配置`parameters`字段进行定义，在HBuilderX中使用此插件时将会出现可视配置项：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/ios-parameters.png)
 
 提交云端打包时将会根据配置规则将用户输入的参数添加到Info.plist中。
@@ -437,9 +443,11 @@ parameters下每个节点（josn）定义一个要配置的参数，参数名称
 ```
 
 HBuilderX 中可视化配置效果：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/ios-parameters-hx.png)
 
 提交云打包后将会在 info.plist 中添加 HelloPlugin 节点及数据，插件开发时可以通过代码获取 info.plist 中配置的参数：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/ios-parameters-plist.png)
 
 
