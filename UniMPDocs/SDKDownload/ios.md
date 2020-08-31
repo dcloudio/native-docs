@@ -1,6 +1,11 @@
 **如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK**
 
 ## 更新日志
+#### 2020年08月29日发布
+[点击下载SDK UniMP_iOS_SDK@2.8.9.20200829](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.9.20200829.zip)
++ 需使用HBuilderX（2.8.9）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.9.20200829-alpha.html)
+
 #### 2020年08月20日发布
 [点击下载SDK UniMP_iOS_SDK@2.8.8.20200820](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.8.20200820.zip)
 + 需使用HBuilderX（2.8.8）版本生成 小程序App 资源
