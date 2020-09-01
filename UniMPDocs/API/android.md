@@ -68,6 +68,20 @@ SDK是否初始化成功
 |:----|:----
 |boolean| true表示初始化成功 false表示失败
 
+#### DCUniMPSDK.getInstance().recovery()
+
+> 2.8.9 开始支持
+
+SDK垃圾回收函数，当宿主退出时主动调用recovery，回收小程序SDK相关初始化遗留的注册信息等。
+
+**参数说明**
+
+无
+
+**返回值**
+
+无
+
 #### DCUniMPSDK.getInstance().getAppBasePath(context)
 
 获取uni小程序运行路径
