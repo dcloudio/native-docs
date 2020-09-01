@@ -90,7 +90,7 @@ features 节点添加
 
 路径 | 文件名
 -|-
-SDK/libs| ads-release.aar、ads-gdt-release.aar、GDTSDK.unionNormal.4.110.980.aar
+SDK/libs| ads-release.aar、ads-gdt-release.aar、GDTSDK.unionNormal.aar
 
 ### Androidmanifest.xml配置
 
@@ -120,6 +120,43 @@ features 节点添加
             <module name="gdt" value="io.dcloud.feature.ad.gdt.ADGdtModule"/>
         </feature>
 ~~~
+
+## 快手
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+-|-
+SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad-3.3.0-publishRelease.aar
+
+### Androidmanifest.xml配置
+
+manifest节点下添加
+
+将“${applicationId}”替换成应用的包名
+
+~~~
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <permission
+        android:name="${applicationId}.permission.KW_SDK_BROADCAST"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.permission.KW_SDK_BROADCAST" />    
+~~~
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~ 
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+            <module name="ks" value="io.dcloud.feature.ad.ks.ADKsModule"/>
+        </feature>
+~~~
+
 
 [uni-AD广告联盟开通指南](https://ask.dcloud.net.cn/article/36769)
 
