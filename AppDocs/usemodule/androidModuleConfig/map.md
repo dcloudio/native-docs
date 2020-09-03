@@ -93,7 +93,7 @@ services节点下添加:
 application节点下配置如下代码:
 
 ~~~
-<meta-data android:name="com.amap.api.v2.apikey\" android:value="%appkey_android%\">
+<meta-data android:name="com.amap.api.v2.apikey\" android:value="%appkey_android%\"/>
 <service android:name="com.amap.api.location.APSService"></service>
 ~~~
 
