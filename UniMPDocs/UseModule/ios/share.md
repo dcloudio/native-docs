@@ -34,7 +34,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibShare.a、libQQShare.a、TencentOpenAPI.framework|无|`无`|
+|liblibShare.a、libQQShare.a、TencentOpenAPI.framework|无|无|
 
 ### 工程配置
 

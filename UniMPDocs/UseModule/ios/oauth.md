@@ -33,7 +33,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibOauth.a、libQQOauth.a、TencentOpenAPI.framework|无|`无`|
+|liblibOauth.a、libQQOauth.a、TencentOpenAPI.framework|无|无|
 
 ### 工程配置
 
