@@ -40,6 +40,7 @@ uni原生插件描述文件，完整格式如下
 				"可选, 支持的abi类型, 可取值armeabi-v7a|arm64-v8a|x86"
 			],
 			"minSdkVersion": "可选，支持的Android最低版本，如21",
+			"useAndroidX": false,   //可选，是否兼容使用AndroidX
 			"permissions": [
 				"可选, 要使用的Android权限列表"
 			],
@@ -81,7 +82,7 @@ uni原生插件描述文件，完整格式如下
 			"privacies": [
 				"可选, 插件使用到的隐私列表，如NSPhotoLibraryUsageDescription"
 			],
-			"embedSwift": true,   // 开启 swift 编译支持，如果插件使用了 swift 需要配置此项
+			"embedSwift": false,   // 开启 swift 编译支持，如果插件使用了 swift 需要配置此项
 			"deploymentTarget": "8.0, 可选，支持的iOS最低版本",
 			"validArchitectures": [    // 可选，支持的CPU架构类型
 			 	"arm64"    //支持多个值，可取值：arm64 arm64e armv7 armv7s x86_64
@@ -163,7 +164,7 @@ dependencies {
 package.json的dependencies节点就需要配置如下信息
 
 ```
-dependencies [
+"dependencies": [
     "com.android.support:recyclerview-v7:25.3.1",
     "com.android.support:support-v4:25.3.1",
     "com.android.support:appcompat-v7:25.3.1",
@@ -178,7 +179,7 @@ dependencies [
 dependencies中的值支持json对象，如下：
 
 ```
-dependencies [//内容支持字符串或json格式，支持混写
+"dependencies": [//内容支持字符串或json格式，支持混写
     {
         "id": "com.android.support.test.espresso:espresso-contrib",  //可选，String类型，依赖库标识
         "source": "implementation('com.android.support.test.espresso:espresso-contrib:2.2.2', {\r\nexclude group: 'com.android.support', module: 'support-v4'\r\n})"   //必选，String类型，依赖库源码
@@ -237,6 +238,20 @@ Android平台支持的CPU类型，当插件中包含so库时需要配置插件�
 为了兼容更多的设备和应用市场要求，推荐支持"armeabi-v7a"、"arm64-v8a"、"x86"三种类型。
 
 `将aar文件作为zip解压，jni目录下包含的子目录就是其支持的CPU类型`
+
+### useAndroidX
+uni原生插件运行环境依赖Android support，暂时没有升级使用AndroidX。
+HBuilderX2.8.11+开始兼容使用AndroidX，如果插件自身或者使用的三方库依赖AndroidX，可以添加以下配置说明插件需要兼容使用AndroidX：
+```
+"useAndroidX": true
+```
+云端打包时将会在gradle.properties中添加以下配置：
+```
+android.useAndroidX=true
+android.enableJetifier=true
+```
+
+**注意：兼容模式不确保所有功能都可以正常运行，建议开发者使用时仔细测试。由于不同AndroidX版本可能兼容性存在差异，推荐使用Androidx1.0.0版本**
 
 ### parameters
 如果插件需配置参数，如appid、appkey时，可通过配置`parameters`字段进行定义，在HBuilderX中使用此插件时将会出现可视配置项：
@@ -365,6 +380,14 @@ HBuilderX2.3.4+开始支持配置插件的图片资源文件（xcassets）。
   + "video_ic_muteoff.imageset"
   + "video_ic_muteon.imageset"
   + "video_volume.imageset"
+
+### embedSwift
+开启 swift 编译支持，如果插件使用了 swift 语言开发的需要配置此值
+```
+"embedSwift": true
+```
+
+**注意：插件没有使用 swift 开发则不用配置此字段，默认值为 false**
 
 ### validArchitectures
 HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
