@@ -164,29 +164,6 @@ UniMPSDK/Core 目录结构说明
     [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
     return YES;
 }
-
-#pragma mark - 如需使用远程推送相关功能，请实现以下方法
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // 远程通知注册成功，收到 deviceToken 调用sdk方法，传入 deviceToken
-    [DCUniMPSDKEngine application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    // 远程通知注册失败
-    [DCUniMPEngine application:application didFailToRegisterForRemoteNotificationsWithError:error];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
-    // 收到远程推送消息
-    [DCUniMPSDKEngine application:application didReceiveRemoteNotification:userInfo];
-    completionHandler(UIBackgroundFetchResultNewData);
-}
-
-#pragma mark - 如需使用本地推送通知功能，请实现以下方法
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    // 收到本地推送消息
-    [DCUniMPSDKEngine application:application didReceiveLocalNotification:notification];
-}
 ```
 
 在您需要打开小程序的文件中添加以下逻辑（参考示例工程 ViewController.m ）
