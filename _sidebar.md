@@ -20,7 +20,6 @@
     * [X5（腾讯x5内核）](UniMPDocs/UseModule/android/x5.md)
     * [Geolocation（定位）](UniMPDocs/UseModule/android/geolocation.md)
   * [iOS 集成教程](UniMPDocs/UseModule/ios/ios.md)
-    * [Push（消息推送）](UniMPDocs/UseModule/ios/push.md)
     * [Share（分享）](UniMPDocs/UseModule/ios/share.md)
     * [Oauth（登录鉴权）](UniMPDocs/UseModule/ios/oauth.md)
     * [Map（地图）](UniMPDocs/UseModule/ios/map.md)
