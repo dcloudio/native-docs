@@ -13,7 +13,7 @@
 ### gradle配置
 
 打开build.gradle，在defaultConfig添加manifestPlaceholders节点，如下图所示，将io.dcloud.HBuilder替换成自己的应用包名，将appid等信息替换成申请之后的appid等。
-
+***应用的app id/app key等信息，从开发者后台->unipush->配置管理->应用管理 界面查看***
 ~~~
 android {
     defaultConfig {
