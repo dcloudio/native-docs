@@ -1,5 +1,5 @@
 ## uni-AD概述
-	uni-AD聚合目前国内流行的广告平台广点通（腾讯）、穿山甲（今日头条）等，支持开屏广告和信息流、Banner广告。
+	uni-AD聚合目前国内流行的广告平台广点通（腾讯）、快手等，支持开屏广告和信息流、激励视频广告。
 ## 如何配置广告 
   
 ### 先去dcloud广告联盟[申请账号](https://uniad.dcloud.net.cn)
@@ -12,6 +12,7 @@
 应用标识：对应5+或uni-app项目manifest.json中appid。
 
 广告标识：联盟ID，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可。
+
 渠道：可以填apple。
 
 ### 再按下面2个步骤配置参数：
@@ -45,6 +46,12 @@
 |:--|:--|:--|
 |libUniAD.a、libSDWebImage.a、libUniAd-Gdt.a、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
 
+## 快手
+### 添加依赖资源及文件
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libUniAd-Ks.a、`KSAdSDK.framework(动态库)`|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
 
 **注意：以上增强广告配置，如果是uni项目 必须配置上libUniADWeex.a  这个库**
 
