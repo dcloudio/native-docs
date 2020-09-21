@@ -200,6 +200,7 @@ uni.sendNativeEvent(event,callback)
 |属性|类型|说明
 |:--|:--|:--
 |event|String|事件名称
+|data|String / JsonObject|事件携带参数
 |callback|Function|宿主App回调方法。参数可以是 String 或 JsonObject。取决于宿主的实现
 
 **示例**
