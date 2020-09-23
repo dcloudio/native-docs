@@ -58,9 +58,9 @@ repositories {
 }
 dependencies {
 	//必须添加的依赖
-	compileOnly 'com.android.support:recyclerview-v7:27.1.0'
-	compileOnly 'com.android.support:support-v4:27.1.0'
-	compileOnly 'com.android.support:appcompat-v7:27.1.0'
+	compileOnly 'com.android.support:recyclerview-v7:28.0.0'
+	compileOnly 'com.android.support:support-v4:28.0.0'
+	compileOnly 'com.android.support:appcompat-v7:28.0.0'
 	compileOnly 'com.alibaba:fastjson:1.1.46.android'
 
 	compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')

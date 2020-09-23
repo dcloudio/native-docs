@@ -52,9 +52,9 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  
 ```
 dependencies {
-	implementation 'com.android.support:recyclerview-v7:27.1.0' //必须集成
-    implementation 'com.android.support:support-v4:27.1.0' //必须集成
-    implementation 'com.android.support:appcompat-v7:27.1.0' //必须集成
+	implementation 'com.android.support:recyclerview-v7:28.0.0' //必须集成
+    implementation 'com.android.support:support-v4:28.0.0' //必须集成
+    implementation 'com.android.support:appcompat-v7:28.0.0' //必须集成
     implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
     implementation 'com.facebook.fresco:fresco:1.13.0'//必须集成
     implementation 'com.facebook.fresco:animated-gif:1.13.0'//必须集成
@@ -87,7 +87,7 @@ def mfph = [
 ]
 android {
 	defaultConfig {
-		targetSdkVersion 26 //最高28最优26 设置值域超过28可能在android10以上手机出现白屏问题。
+		targetSdkVersion 26 //最优26 2.8.11开始支持29~30
 		ndk {
             abiFilters 'x86','armeabi-v7a',"arm64-v8a" //不支持armeabi
         }
@@ -112,9 +112,9 @@ dependencies {
 	implementation fileTree(include: ['*.jar'], dir: 'libs')
 	implementation fileTree(include: ['*.aar'], dir: 'libs')
 	//必须添加的依赖
-	implementation 'com.android.support:recyclerview-v7:27.1.0'
-    implementation 'com.android.support:support-v4:27.1.0'
-    implementation 'com.android.support:appcompat-v7:27.1.0'
+	implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.alibaba:fastjson:1.1.46.android'
     implementation 'com.facebook.fresco:fresco:1.13.0'
     implementation 'com.facebook.fresco:animated-gif:1.13.0'
