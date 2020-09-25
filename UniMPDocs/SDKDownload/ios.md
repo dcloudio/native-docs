@@ -9,6 +9,11 @@
 + 修复 安装App后，偶现首次无法正常启动小程序的Bug;
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.0.20200925-alpha.html)
 
+#### 2020年09月25日发布
+[点击下载SDK UniMP_iOS_SDK@2.8.12.20200925](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.12.20200925.zip)
++ 需使用HBuilderX（2.8.12）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.12.20200925.html)
+
 ## 历史版本
 <details>
 <summary>展开查看</summary>
