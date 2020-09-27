@@ -2,14 +2,15 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2020年9月8日发布 
-[点击下载SDK，提取码: 6ouw](https://pan.baidu.com/s/1n_kjucY8LrI7BP7Zqpc_8g)
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.8.11.20200907）版本生成本地打包App资源。
-+ App-iOS平台 修复 scroll-view 组件在 iOS13 触摸交互卡顿的Bug [详情](https://ask.dcloud.net.cn/question/98881)
-+ App-iOS平台 修复 nvue map 组件 controltap 事件返回数据参数名不正确的Bug [详情](https://ask.dcloud.net.cn/question/99769)
-+ iOS平台 更新 QQ 分享、登录SDK版本为3.3.9-Lite，解决分享到 QQ 显示未授权应用的问题
-+ iOS平台 修复 设置页面横屏 landscape 显示时，在 iPad 设备上不显示状态栏的Bug [详情](https://ask.dcloud.net.cn/question/103386)
-+ iOS平台 修复 视频播放控件 VideoPlayer 动态修改 objectFit 属性不生效的Bug
+### 2020年9月27日发布 
+[点击下载SDK，提取码: jtht](https://pan.baidu.com/s/1TTTUk35W3enw0Qmci9tg9g)
++ 更新uni-app离线打包支持，需使用HBuilderX（2.8.12.20200926）版本生成本地打包App资源。
++ 【重要】iOS平台 适配 iOS14 解决应用启动时申请 `连接到本地网络上的设备` 权限导致无法通过AppStore审核的问题 [详情](https://ask.dcloud.net.cn/question/107530)
++ iOS平台 适配 iOS14 下拉刷新的雪花样式调整问题
++ iOS平台 更新 支付宝Alipay SDK版本为15.7.9，解决 iOS14 上应用启动时提示读取剪切板的问题
++ iOS平台 修复 从本地相册选择图片在 iOS14 上可能显示不正常的Bug [详情](https://ask.dcloud.net.cn/question/107745)
++ App-iOS平台 修复 离线打包使用 XCode12 编译运行到 iOS14 上 nvue 页面图片无法显示的Bug [详情](https://ask.dcloud.net.cn/question/107320)
++ App-iOS平台 修复 uni原生插件可能与内部方法名称冲突导致部分功能异常的Bug
 
 [百度网盘下载历史版本，提取码: w35k](https://pan.baidu.com/s/1gZGJMaSqZQftqgEVtadvEg)
 
