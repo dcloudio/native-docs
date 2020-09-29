@@ -1,18 +1,21 @@
 **如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK**
 
 ## 更新日志
-#### 2020年09月25日发布
-[点击下载SDK UniMP_iOS_SDK@2.9.0.20200925](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.0.20200925.zip)
-+ 需使用HBuilderX（2.9.0）版本生成 小程序App 资源
-+ 适配 iOS14；
-+ 修复 小程序前后台切换或跳转其他原生页面在返回小程序页面时，对应的应用生命周期 onShow、onHide 没有触发的Bug;
-+ 修复 安装App后，偶现首次无法正常启动小程序的Bug;
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.0.20200925-alpha.html)
+#### 2020年09月27日发布
+[点击下载SDK UniMP_iOS_SDK@2.9.1.20200927](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.1.20200927.zip)
++ 需使用HBuilderX（2.9.1）版本生成 小程序App 资源
++ 修复 2.9.0 版引出的 nvue image 组件动态设置样式在 iOS14 以下设备图片不显示的Bug;
++ 修复 tabbar 中的文本在 iOS14 上无法完整显示的Bug;
++ 修复 获取通讯录 plus.contacts.getAddressBook 在 iOS14 上导致应用闪退的Bug;
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.1.20200927-alpha.html)
 
-#### 2020年09月25日发布
-[点击下载SDK UniMP_iOS_SDK@2.8.12.20200925](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.12.20200925.zip)
-+ 需使用HBuilderX（2.8.12）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.12.20200925.html)
+#### 2020年09月27日发布
+[点击下载SDK UniMP_iOS_SDK@2.8.13.20200927](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.13.20200927.zip)
++ 需使用HBuilderX（2.8.13）版本生成 小程序App 资源
++ 修复 2.8.12版引出的 nvue image 组件动态设置样式在 iOS14 以下设备图片不显示的Bug;
++ 修复 tabbar 中的文本在 iOS14 上无法完整显示的Bug;
++ 修复 获取通讯录 plus.contacts.getAddressBook 在 iOS14 上导致应用闪退的Bug;
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.13.20200927.html)
 
 ## 历史版本
 <details>
@@ -21,8 +24,21 @@
 #### 下载地址
 链接: [https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w](https://pan.baidu.com/s/1Jdpzti4rfRWVHVV-Yva-7w)   密码:hvsk
 
+#### 2020年09月25日发布
+
++ 需使用HBuilderX（2.9.0）版本生成 小程序App 资源
++ 适配 iOS14；
++ 修复 小程序前后台切换或跳转其他原生页面在返回小程序页面时，对应的应用生命周期 onShow、onHide 没有触发的Bug;
++ 修复 安装App后，偶现首次无法正常启动小程序的Bug;
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.0.20200925-alpha.html)
+
+#### 2020年09月25日发布
+
++ 需使用HBuilderX（2.8.12）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.12.20200925.html)
+
 #### 2020年09月04日发布
-[点击下载SDK UniMP_iOS_SDK@2.8.11.20200904](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.8.11.20200904.zip)
+
 + 需使用HBuilderX（2.8.11）版本生成 小程序App 资源
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.8.11.20200904-alpha.html)
 
