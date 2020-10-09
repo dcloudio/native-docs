@@ -415,6 +415,26 @@ mWXSDKInstance.fireGlobalEventCallback("myEvent", params);
 globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
 
 
+### uniapp中常见路径说明
+
++ [PRIVATE_WWW](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PRIVATE_WWW) 对应相对路径URL为"_www"开头的地址
++ [PRIVATE_DOC](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PRIVATE_DOC) 对应相对路径URL为"_doc"开头的地址
++ [PUBLIC_DOCUMENTS](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PUBLIC_DOCUMENTS) 对应相对路径URL为"_documents"开头的地址
++ [PUBLIC_DOWNLOADS](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PUBLIC_DOWNLOADS) 对应相对路径URL为"_downloads"开头的地址
+
+#### 问题：
++ Q1: 原生插件拿到`_doc/a.png`、`static/test.js`等路径参数如何转换原生开发的地址？
++ Q2: 我想操作DOC目录下的文件如何获取路径地址？
+
+可通过WXSDKInstance.rewriteUri转换app中的路径参数。
+
+**示例**
+
+```JAVA
+Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
+Log.e(TAG, uri.toString())
+```
+
 ## Android 扩展开发小提示
 
 #### 查看Android原生日志
