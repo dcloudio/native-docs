@@ -424,16 +424,26 @@ globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送gl
 
 #### 问题：
 + Q1: 原生插件拿到`_doc/a.png`、`static/test.js`等路径参数如何转换原生开发的地址？
+
+	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
+
+	**示例：**
+
+	```JAVA
+	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
+	Log.e(TAG, uri.toString())
+	```
+
 + Q2: 我想操作DOC目录下的文件如何获取路径地址？
 
-可通过WXSDKInstance.rewriteUri转换app中的路径参数。
+	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
 
-**示例**
+	**示例：**
 
-```JAVA
-Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
-Log.e(TAG, uri.toString())
-```
+	```JAVA
+	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/"), URIAdapter.FILE);
+	Log.e(TAG, uri.toString())
+	```
 
 ## Android 扩展开发小提示
 
