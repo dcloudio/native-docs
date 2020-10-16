@@ -231,6 +231,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-20.png)
 	
+	自定义基座支持热更新需要将debug-server-release.aar打入apk中，生成正式包时可以删除。
+	
 	[详细步骤可参考链接](https://ask.dcloud.net.cn/article/35482)
 
 <!--5. 模块配置
