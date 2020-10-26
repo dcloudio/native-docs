@@ -210,6 +210,6 @@ info.plist 中添加
 
 ##### 4.运行	
 - 在HBuilderX中创建uni-app项目并按照插件文档编写相应测试代码
-- 导出uni-app资源并运行，导出方式请参考：**[HBilderX生成本地打包App资源](http://ask.dcloud.net.cn/question/60254)**
+- 导出uni-app资源并运行，导出方式请参考：**[HBuilderX生成本地打包App资源](http://ask.dcloud.net.cn/question/60254)**
 
 示例工程 GitHub 地址: [https://github.com/dcloudio/UniPluginPackage](https://github.com/dcloudio/UniPluginPackage)

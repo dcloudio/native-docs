@@ -71,7 +71,7 @@ dependencies {
 	1. 自定义基座方式运行
 打包自定义基座请参考：**[什么是自定义基座及使用说明](http://ask.dcloud.net.cn/article/35115)**
 	2. 导出uni-app资源并运行
-导出方式请参考：**[HBilderX生成本地打包App资源](http://ask.dcloud.net.cn/question/60254)**
+导出方式请参考：**[HBuilderX生成本地打包App资源](http://ask.dcloud.net.cn/question/60254)**
 
 示例Github地址：https://github.com/dcloudio/UniPluginPackage
 
