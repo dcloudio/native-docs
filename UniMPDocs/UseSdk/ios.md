@@ -5,6 +5,8 @@
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
 
 ## 集成方式
+> 下载的SDK中包含对应的示例工程，供大家参考
+
 首先您需要一个 iOS 项目，已有项目或 新建一个 `Single View Application` 的项目，解压 SDK 包，将目录中的 UniMPSDK 文件夹 copy 到工程目录中， 然后按照以下步骤配置您的项目。
 
 ### 添加基础依赖库及资源文件
@@ -24,8 +26,8 @@ UniMPSDK/Core 目录结构说明
 
 在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Phases-> Link Binary With Libaries` 中点击“+”按钮，在弹出的窗口中点击 `Add Other -> Add Files...`，然后打开 UniMPSDK/Core/Libs 基础依赖库目录，选中目录中的 .a 库以及 .framework 库单击 `open` 按钮将依赖库添加到工程中
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/edd12a8e2f38a9ec8887780f5da55765.png" width="50%">
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/30ba4060cd50628e0a33995ecb4f244a.png" width="50%">
+<img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp01.png" width="50%">
+<img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp02.png" width="50%">
 
 #### 添加系统依赖库
 
@@ -47,13 +49,13 @@ UniMPSDK/Core 目录结构说明
 接下来需要添加依赖资源文件，建议在项目中新建一个 `Group`，来管理资源文件，如示例在工程目录中创建的 UniMP 文件夹，然后按功能模块创建不同的目录存放资源文件；
 添加资源文件方法：在左侧目录中选中导入资源文件的位置（示例中是 UniMP/Core），在右键菜单中选择Add Files to “工程名...”，然后打开 UniMPSDK/Core 目录，选择 Resources 文件夹，然后点击“Add”，将资源文件添加到工程中
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/6a037b32c1db4baa344f4fcca8c44d72.png" width="50%">
+<img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp03.png" width="50%">
 
 #### 添加 .h 头文件
 
 在左侧目录中选中导入头文件的位置（示例中是 UniMP/Core），在右键菜单中选择Add Files to “工程名...”，然后打开 UniMPSDK/Core 目录，选择 Headers 文件夹，然后点击“Add”，将头文件资源添加到工程中
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/9d94926d59357b9bd97fdc5e2a35ace9.png" width="50%">
+<img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp04.png" width="50%">
 
 #### 配置工程
 
@@ -201,22 +203,17 @@ UniMPSDK/Core 目录结构说明
 打开小程序应用
 
 ```objective-c
-/// 打开 App
+/// 打开 uni 小程序
 - (IBAction)openUniMP:(id)sender {
-    
-    // 配置胶囊按钮菜单 ActionSheet 全局项（点击胶囊按钮 ··· ActionSheet弹窗中的项）
-    DCUniMPMenuActionSheetItem *item1 = [[DCUniMPMenuActionSheetItem alloc] initWithTitle:@"Item 1" identifier:@"item1"];
-    DCUniMPMenuActionSheetItem *item2 = [[DCUniMPMenuActionSheetItem alloc] initWithTitle:@"Item 2" identifier:@"item2"];
-    // 添加到全局配置
-    [DCUniMPSDKEngine setDefaultMenuItems:@[item1,item2]];
-        
-    // 设置 delegate
-    [DCUniMPSDKEngine setDelegate:self];
-    
-    // 启动 uni小程序，（参数可以在小程序中通过 plus.runtime.arguments 获取此参数）
-    NSDictionary *arguments = @{ @"value":@"Hello uni microprogram" };
-    [DCUniMPSDKEngine openApp:k_AppId
-                    arguments:arguments];
+    // 初始化小程序的配置信息对象
+    DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
+    [DCUniMPSDKEngine openUniMP:k_AppId configuration:configuration completed:^(DCUniMPInstance * _Nullable uniMPInstance, NSError * _Nullable error) {
+        if (uniMPInstance) {
+            // success
+        } else {
+            // error
+        }
+    }];
 }
 ```
 
@@ -236,7 +233,7 @@ UniMPSDK/Core 目录结构说明
 }
 ```
 
-至此代码部分已完成，可以运行查看效果
+至此示例代码部分已完成，可以运行查看效果，更多 API 请参考 [功能示例](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f)
 
 ### 应用资源管理
 
@@ -246,7 +243,7 @@ UniMPSDK/Core 目录结构说明
 
 #### uni小程序应用资源升级
 
-1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在主App升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
+1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在 App 升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
  
 2. **小程序触发更新：**小程序内下载新的wgt包，然后调用更新api应用新的wgt资源，具体请参考 [wgt 资源在线升级/热更新](https://ask.dcloud.net.cn/article/35667)
 
