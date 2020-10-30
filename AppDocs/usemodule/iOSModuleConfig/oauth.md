@@ -10,7 +10,7 @@
 
 ### 工程配置
 
-1.在 info.plist 中添加 sinweibo 字段，填入自己帐号的信息，如下图
+1.在 info.plist 中添加 sinaweibo 字段，填入自己帐号的信息，如下图
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20150203/02e43567316bd7b11b7228a5c29121cf.png)
 
