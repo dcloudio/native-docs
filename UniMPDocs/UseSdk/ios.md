@@ -65,15 +65,9 @@ UniMPSDK/Core 目录结构说明
 
 ## 生成小程序应用资源
 
-**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！**
-
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
 <img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/b57287eaf2e63b0076bf36b943fc486a.png" width="50%">
-
-有一点需要注意，项目的编译模式必须选择 v3 编译器（新建uni-app项目默认是v3编译模式），点击页面中的“详情”可了解更多关于 v3 模式的注意事项，如下图，查看编译模式
-
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/f1c5691f8ac4d9b42ba16ea7ecc07756.png" width="50%">
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包 
 （注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包”）
