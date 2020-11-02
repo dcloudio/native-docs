@@ -133,14 +133,11 @@ dependencies {
 
 ## 生成小程序应用资源
 
-**注意！！！！ uni小程序仅支持v3模式编译的uni应用！！！ 确保你的uniapp在HX基座可以正常运行 暂时不支持weex编译的nvue页面**
+**注意！！！！ uni小程序仅支持uni应用！！！ 确保你的uniapp在HX基座可以正常运行 暂时不支持weex编译的nvue页面**
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
 ![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200215/1943ed21ceedcd85c9ba0bc74d4cd0f5.png)
-
-项目的编译模式必须选择 v3 编译器（新建uni-app项目默认是v3编译模式），点击页面中的“详情”可了解更多关于 v3 模式的注意事项，如果你的项目已勾选`纯nvue项目`请去掉该项勾选改为非`纯nvue项目`！！如下图，查看编译模式		
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200215/db284e39250c9a57f7331610c1ca12c7.png)
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包
 
