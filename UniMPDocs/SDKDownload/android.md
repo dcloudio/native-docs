@@ -2,10 +2,9 @@
 
 ## 更新日志
 #### 2020年10月24日发布
-[点击下载SDK UniMPSDK_Android@2.9.5.20201024.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.9.5.20201024.zip)
-+ 需使用HBuilderX（2.9.5）版本生成 小程序App 资源
-+ 修复宿主任务列表名称被修改成小程序name的问题
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.5.20201024-alpha.html)
+[点击下载SDK UniMPSDK_Android@2.9.6.20201031.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.9.6.20201031.zip)
++ 需使用HBuilderX（2.9.6）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.6.20201031-alpha.html)
 
 
 ## 历史版本
