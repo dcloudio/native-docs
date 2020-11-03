@@ -24,6 +24,24 @@
 
 	${apk.applicationId}须替换成应用的包名。
 	
+* 离线打包Android 10上无法启动相机
+
+	在application节点下添加provider节点
+	
+	~~~
+		<provider
+            android:name="io.dcloud.common.util.DCloud_FileProvider"
+            android:authorities="${apk.applicationId}.dc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcloud_file_provider" />
+        </provider>
+	~~~
+
+	${apk.applicationId}须替换成应用的包名。
+	
 * uni-AD业务状态异常
 
 	如果出现uni-AD业务状态异常提醒，如下图：
