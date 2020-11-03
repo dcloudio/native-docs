@@ -140,7 +140,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	打开app->res -> main -> values -> strings.xml文件，修改“app_name”字段值，该值为安装到手机上桌面显示的应用名称，建议与manifest.json中name（基础配置中的应用名称）对应。
 
-	+ 配置应用启动页
+	+ 配置应用启动页及provider节点
 
 	将下述内容添加到Androidmanifest.xml的application节点中
 	
@@ -177,7 +177,19 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
                 <data android:scheme="h56131bcf" />
             </intent-filter>
         </activity>
+		<!--provider节点必须添加-->
+		<provider
+            android:name="io.dcloud.common.util.DCloud_FileProvider"
+            android:authorities="${apk.applicationId}.dc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcloud_file_provider" />
+        </provider>
 	~~~
+
+	**注意：${apk.applicationId} 必须替换成当前应用的包名**
 
 	+ 配置应用图标和启动界面
 
