@@ -1,7 +1,7 @@
 ## Android 离线SDK - 正式版
 
 ### 2020年10月15日发布
-[点击下载SDK，提取码: 7rfu](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)
+[点击下载SDK](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 + 更新uni-app离线打包支持，需使用HBuilderX（2.9.3.20201014）版本生成本地打包App资源。
 + 新增 uni-AD 支持应用从后台切换到前台显示开屏广告，并默认启用
@@ -26,15 +26,15 @@
 + 修复 压缩图片 plus.zip.compressImage 在Android10上报传入参数错误的Bug
 + 修复 蓝牙订阅特征值 notifyBLECharacteristicValueChange 方法设置 state 属性不生效的Bug
 
-[百度网盘下载历史版本，提取码: neqx](https://pan.baidu.com/s/1Gpbnq3wLvvnRO6W-SlvVpA)
+[百度网盘下载历史版本](https://pan.baidu.com/s/1Gpbnq3wLvvnRO6W-SlvVpA)，提取码: neqx
 
 
 
 ## Android 离线SDK - Alpha版
 
 ### 2020年11月03日发布
-[点击下载SDK，提取码: 5vgk](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) 
+[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 + 更新uni-app离线打包支持，需使用HBuilderX（2.9.7.20201103-alpha）版本生成本地打包App资源。
 
-[百度网盘下载历史版本，提取码: 6msp](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)
+[百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
