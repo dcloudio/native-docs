@@ -32,14 +32,9 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年11月2日发布 
-[点击下载SDK，提取码: qm48](https://pan.baidu.com/s/15JP1z8K4-6Ftd7isDm74zA)
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.9.6.20201031-alpha）版本生成本地打包App资源。
-+ App-iOS平台 修复 iOS14 上新页面自动获取焦点导致页面变形的Bug [详情](https://ask.dcloud.net.cn/question/107820)
-+ App-iOS平台 修复 nvue web-view 组件加载 html 页面中 js 调用 alert 不显示提示框的Bug [详情](https://ask.dcloud.net.cn/question/109791)
-+ iOS平台 新增 二维码扫码支持 autoDecodeCharset 参数，解决非UTF-8编码数据出现乱码的问题 [详情](https://ask.dcloud.net.cn/question/66886)
-+ iOS平台 修复 微信登录用户选择拒绝授权可能不触发失败回调的Bug [详情](https://ask.dcloud.net.cn/question/109305)
-+ iOS平台 修复 无法保存文件路径包含中文的图片到系统相册的Bug [详情](https://ask.dcloud.net.cn/question/109168)
+### 2020年11月3日发布 
+[点击下载SDK，提取码: 31qt](https://pan.baidu.com/s/1xiH-bJR2NIP7UuvjWk5x3w)
++ 更新uni-app离线打包支持，需使用HBuilderX（2.9.7.20201103-alpha）版本生成本地打包App资源。
 
 
   
