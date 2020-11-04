@@ -1,10 +1,11 @@
 **如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK**
 
 ## 更新日志
-#### 2020年10月24日发布
-[点击下载SDK UniMPSDK_Android@2.9.6.20201031.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.9.6.20201031.zip)
-+ 需使用HBuilderX（2.9.6）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.6.20201031-alpha.html)
+#### 2020年11月03日发布
+[点击下载SDK UniMPSDK_Android@2.9.7.20201103.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@2.9.7.20201103.zip)
++ 修复小程序运行时手机系统切换`深色模式`状态。切回小程序导致弹窗提示appid为null的问题。
++ 需使用HBuilderX（2.9.7）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.7.20201103-alpha.html)
 
 
 ## 历史版本
