@@ -20,7 +20,7 @@ A：一般是因为wgt资源中的versionCode为空或小于内置应用的版�
 
 A：请认真阅读文旦参考demo示例检查你的项目！
  - 检查SDK拷贝资源时部分资源有没有正确拷贝到你的项目中，
- - 检查targetSdkVersion  取值范围26~28
+ - 检查targetSdkVersion  取值范围26~30
  - 检查minSdkVersion  取值范围 19~22
  - 检查androidX版本 选择1.0.0版本
  - 查看宿主集成的三方依赖库。可能与小程序SDK不兼容导致的初始化失败
@@ -49,10 +49,6 @@ android.enableJetifier：当设为 true 时，此标记表示您想要获得相�
 ## Q: 如何查看小程序 console日志
 
 A：修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  修改后查看io.dcloud.unimp进程查看log。TAG为console
-
-## Q: android10的设备运行白屏。其他android版本手机没有问题。
-
-A：请查件targetSdkVersion赋值是否超过28。如果超过28请修改。最优26！
 
 ## Q: 开启混淆打包后小程序运行白屏或UI显示异常？
 
