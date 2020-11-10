@@ -8,7 +8,7 @@
 + 新增 uni-AD 支持全屏视频广告 [详情](https://ask.dcloud.net.cn/article/36718#fullscreenvideo)
 + 新增 二维码扫码支持 autoDecodeCharset 参数，解决非UTF-8编码数据出现乱码的问题 [详情](https://ask.dcloud.net.cn/question/66886)
 	
-	`注意升级SDK的时候，barcode模块需要引用libuchardet.a库`
+	`注意：升级SDK的时候，Barcode模块需要引入libuchardet.a库，否则可能编译报错`
 	
 + App平台 新增 全屏视频 uni.createFullScreenVideoAd [详情](https://uniapp.dcloud.net.cn/api/a-d/full-screen-video)
 + App平台 优化 uni.connectSocket 支持配置 header
