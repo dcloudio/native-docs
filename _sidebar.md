@@ -27,6 +27,7 @@
     * [Speech（语音输入）](UniMPDocs/UseModule/ios/speech.md)
     * [LivePusher（直播推流）](UniMPDocs/UseModule/ios/livepusher.md)
     * [Statistic（友盟统计）](UniMPDocs/UseModule/ios/umstatistic.md)
+    * [Geolocation（定位）](UniMPDocs/UseModule/ios/geolocation.md)
 * 扩展原生能力
   * [Android 扩展教程](UniMPDocs/Extension/android.md)
   * [iOS 扩展教程](UniMPDocs/Extension/ios.md)
