@@ -32,7 +32,6 @@ UniMP_iOS_SDK@2.9.5.20201024
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.5.20201024-alpha.html)
 
 #### 2020年10月14日发布
-[点击下载SDK UniMP_iOS_SDK@2.9.3.20201014](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.3.20201014.zip)
 
 + 需使用HBuilderX（2.9.3）版本生成 小程序App 资源
 + 修复 nvue image 组件 mode 设置 widthFix、heightFix 不生效的Bug [详情](https://ask.dcloud.net.cn/question/98827);
