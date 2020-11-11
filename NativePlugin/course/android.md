@@ -1,12 +1,15 @@
 ## 开发者须知
-在您阅读此文档时，我们假定您已经具备了相应Android应用开发经验，使用Android Studio开发过Android原生。学习过 weex 知识并能够理解相关概念，也应该对HTML,JavaScript,CSS等有一定的了解, 并且熟悉在JavaScript和JAVA环境下的JSON格式数据操作等。
+在您阅读此文档时，我们假定您已经具备了相应Android应用开发经验，使用Android Studio开发过Android原生。也应该对HTML,JavaScript,CSS等有一定的了解, 并且熟悉在JavaScript和JAVA环境下的JSON格式数据操作等。
+
+**为了插件开发者更方便快捷的开发uni原生插件！2.9.8版本起修改了uni插件开发API及规范。当然还会继续兼容老的插件运行及开发。推荐插件开发者按新版规范实现开发插件。方便日后更高效的更新迭代uni原生插件！**
 
 ## 开发环境 
-- JAVA环境 jdk1.7+(最优1.8)
+- JAVA环境 jdk1.8
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
+- App离线SDK下载：请下载2.9.8+版本的[android平台SDK](/AppDocs/download/android.md)
 
-**注意：暂时不支持Kotlin**
+## 注意
+- 插件目前暂时不支持Kotlin。
 
 ## 导入uni插件原生项目
 
@@ -33,7 +36,6 @@
 
 **Tips**
 
-- 学习Weex扩展 Android 知识。目前集成了Weex 0.26.0版本！！！ 如果你之前开发的是老版本代码需要作升级代码操作。 [weex扩展API for android](http://weex.apache.org/cn/guide/extend-android.html)
 - 特别注意uni-app插件目前仅支持Module扩展和Component扩展，暂时不支持Adapter扩展！！！
 
 ### 扩展 Module
@@ -73,23 +75,23 @@ uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	
 #### 创建TestModule类
 
-- Module 扩展必须继承 WXModule 类
+- Module 扩展必须继承 UniModule 类
  
 **示例:**
 
 ```JAVA
-public class TestModule extends WXModule
+public class TestModule extends UniModule
 ```
 
-- 扩展方法必须加上@JSMethod (uiThread = false or true) 注解。Weex 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
-- Weex是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
+- 扩展方法必须加上@UniJSMethod (uiThread = false or true) 注解。UniApp 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
+- UniApp是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
 	
 **示例:**
 	
 ```JAVA
 //run ui thread
-@JSMethod(uiThread = true)
-public void testAsyncFunc(JSONObject options, JSCallback callback) {
+@UniJSMethod(uiThread = true)
+public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
     Log.e(TAG, "testAsyncFunc--"+options);
     if(callback != null) {
         JSONObject data = new JSONObject();
@@ -99,7 +101,7 @@ public void testAsyncFunc(JSONObject options, JSCallback callback) {
 }
 
 //run JS thread
-@JSMethod (uiThread = false)
+@UniJSMethod (uiThread = false)
 public JSONObject testSyncFunc(){
     JSONObject data = new JSONObject();
     data.put("code", "success");
@@ -110,8 +112,9 @@ public JSONObject testSyncFunc(){
 - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
 
 ```
--keep public class * extends com.taobao.weex.common.WXModule{*;}
+-keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
 ```
+
 - Module 扩展的方法可以使用 int, double, float, String, Map, List ,com.alibaba.fastjson.JSONObject 类型的参数
 
 ### 扩展组件 Component
@@ -126,14 +129,14 @@ public JSONObject testSyncFunc(){
 
 #### 创建TestComponent类
 
-- Component 扩展类必须继承 WXComponent
+- Component 扩展类必须继承 UniComponent
 
 **示例:**
 	
 ```JAVA
-public class TestText extends WXComponent<TextView>
+public class TestText extends UniComponent<TextView>
 ```
-- WXComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
+- UniComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
 	
 **示例:**
 	
@@ -147,19 +150,19 @@ protected TextView initComponentHostView(@NonNull Context context) {
 }
 ```
 	
-- Component 对应的设置属性的方法必须添加注解 @WXComponentProp(name=value(value is attr or style of dsl))
+- Component 对应的设置属性的方法必须添加注解 @UniComponentProp(name=value(value is attr or style of dsl))
 	
 **示例:**
 	
 ```JAVA
-@WXComponentProp(name = "tel")
+@UniComponentProp(name = "tel")
 public void setTel(String telNumber) {
     getHostView().setText("tel: " + telNumber);
 }
 ```
-- Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
+- UniApp sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
 ```
--keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+-keep public class * extends io.dcloud.feature.uniapp.ui.component.UniComponent{*;}
 ```
 - Component 扩展的方法可以使用 int, double, float, String, Map, List , com.alibaba.fastjson.JSONObject类型的参数, 
 - Component 定义组件方法.
@@ -167,12 +170,12 @@ public void setTel(String telNumber) {
  **示例:**
  + 在组件中如下声明一个组件方法
  ```JAVA
- @JSMethod
+ @UniJSMethod
  public void clearTel() {
     getHostView().setText("");
  }
  ```
- + 注册组之后，你可以在weex 文件中调用
+ + 注册组之后，你可以在nvue 文件中调用
  
  ```JS
  <template>
@@ -202,7 +205,7 @@ void fireEvent(elementRef,type,data,domChanges)
 ```
 
 - `elementRef`(String)：产生事件的组件id
-- `type`(String): 事件名称，weex默认事件名称格式为"onXXX",比如`OnPullDown`
+- `type`(String): 事件名称，UniApp默认事件名称格式为"onXXX",比如`OnPullDown`
 - `data`(Map<String, Object>): 需要发送的一些额外数据，比如`click`时，view大小，点击坐标等等。
 - `domChanges`(Map<String, Object>): 目标组件的属性和样式发生的修改内容
 
@@ -230,7 +233,7 @@ methods: {
 	}
 }  
 ```
-### JSCallback结果回调
+### UniJSCallback结果回调
 
 JS调用时，有的场景需要返回一些数据，比如以下例子，返回x、y坐标
 ```
@@ -243,8 +246,8 @@ void invokeAndKeepAlive(Object data);
 **示例：**
 
 ```JAVA
-@JSMethod(uiThread = true)
-public void testAsyncFunc(JSONObject options, JSCallback callback) {
+@UniJSMethod(uiThread = true)
+public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
     Log.e(TAG, "testAsyncFunc--"+options);
     if(callback != null) {
         JSONObject data = new JSONObject();
@@ -278,56 +281,27 @@ globalEvent.addEventListener('myEvent', function(e) {
 ```JAVA
 Map<String,Object> params=new HashMap<>();
 params.put("key","value");
-mWXSDKInstance.fireGlobalEventCallback("myEvent", params);
+mUniSDKInstance.fireGlobalEventCallback("myEvent", params);
 ```
 
 **注意**
-globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
+globalEvent事件只能通过页面的UniSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
 
-### uniapp中常见路径说明
-
-+ [PRIVATE_WWW](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PRIVATE_WWW) 对应相对路径URL为"_www"开头的地址
-+ [PRIVATE_DOC](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PRIVATE_DOC) 对应相对路径URL为"_doc"开头的地址
-+ [PUBLIC_DOCUMENTS](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PUBLIC_DOCUMENTS) 对应相对路径URL为"_documents"开头的地址
-+ [PUBLIC_DOWNLOADS](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.PUBLIC_DOWNLOADS) 对应相对路径URL为"_downloads"开头的地址
-
-#### 问题：
-+ Q1: 原生插件拿到`_doc/a.png`、`static/test.js`等路径参数如何转换原生开发的地址？
-
-	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
-
-	**示例：**
-
-	```JAVA
-	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
-	Log.e(TAG, uri.toString())
-	```
-
-+ Q2: 我想操作DOC目录下的文件如何获取路径地址？
-
-	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
-
-	**示例：**
-
-	```JAVA
-	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/"), URIAdapter.FILE);
-	Log.e(TAG, uri.toString())
-	```
 
 ### 插件示例--RichAlert
 
-封装了一个 RichAlertWXModule, 富文本alert弹窗Module
+封装了一个 RichAlertModule, 富文本alert弹窗Module
 
 #### 代码可参考UniPlugin-Hello-AS工程中的uniplugin_richalert模块。（UniPlugin-Hello-AS工程请在App离线SDK中查找）
 
 ```JAVA
-public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
+public class RichAlertModule extends UniDestroyableModule {
 	...
-	@JSMethod(uiThread = true)
-    public void show(JSONObject options, JSCallback jsCallback) {
-        if (mWXSDKInstance.getContext() instanceof Activity) {
+	@UniJSMethod(uiThread = true)
+    public void show(JSONObject options, UniJSCallback jsCallback) {
+        if (mUniSDKInstance.getContext() instanceof Activity) {
 			...
-			RichAlert richAlert = new RichAlert(mWXSDKInstance.getContext());
+			RichAlert richAlert = new RichAlert(mUniSDKInstance.getContext());
 			...
 			richAlert.show();
 			...
@@ -335,7 +309,7 @@ public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
 	}
 	...
 	...
-	@JSMethod(uiThread = true)
+	@UniJSMethod(uiThread = true)
     public void dismiss() {
         destroy();
     }
@@ -343,7 +317,7 @@ public class RichAlertWXModule extends WXSDKEngine.DestroyableModule {
     @Override
     public void destroy() {
         if (alert != null && alert.isShowing()) {
-            WXLogUtils.w("Dismiss the active dialog");
+            UniLogUtils.w("Dismiss the active dialog");
             alert.dismiss();
         }
     }
@@ -406,11 +380,11 @@ dcRichAlert.show({
  - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件。 在moudles节点下 添加你要注册的Module 或 Component
 
 + 第二种方式
- - 创建一个实体类并实现AppHookProxy接口，在onCreate函数中添加weex注册相关参数 或 填写插件需要在启动时初始化的逻辑。
- - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现AppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成AppHookProxy接口)
+ - 创建一个实体类并实现UniAppHookProxy接口，在onCreate函数中添加组件注册相关参数 或 填写插件需要在启动时初始化的逻辑。
+ - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现UniAppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成UniAppHookProxy接口)
  
  ```JAVA
-  public class RichAlert_AppProxy implements AppHookProxy {
+  public class RichAlert_AppProxy implements UniAppHookProxy {
   	@Override
   	public void onCreate(Application application) {
   		//可写初始化触发逻辑
@@ -436,7 +410,7 @@ dcRichAlert.show({
 		    {
 		        "type": "module",
 		        "name": "DCloud-RichAlert",
-		        "class": "uni.dcloud.io.uniplugin_richalert.RichAlertWXModule"
+		        "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"
 		    }
 		    ]
 		}
@@ -574,8 +548,8 @@ implementation project(':uniplugin_richalert')
 
 ## 插件注意事项
 
-#### 目前对weex支持的问题
-+ Activity的获取方式。通过mWXSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
+#### 目前对UniApp支持的问题
++ Activity的获取方式。通过mUniSDKInstance.getContext()强转Activity。建议先instanceof Activity判断一下再强转
 + .vue暂时只能使用module形式。component还不支持在.vue下使用
 + component、module的生命周回调，暂时只支持onActivityDestroy 、onActivityPause、onActivityResult其他暂时不支持
 
@@ -586,12 +560,12 @@ implementation project(':uniplugin_richalert')
 ```
 @Override
 public void onActivityPause() {
-    WXLogUtils.e(TAG, "onActivityPause");
+    UniLogUtils.e(TAG, "onActivityPause");
 }
 
 @Override
 public void onActivityResume() {
-	WXLogUtils.e(TAG, "onActivityResume");
+	UniLogUtils.e(TAG, "onActivityResume");
 }
 ```
 
@@ -622,23 +596,23 @@ A:按一下步骤检测自己项目:
 4、以上都不能解决你的问题，请@客服
 
 Q:插件中怎么跳转原生Activity页面
-A:获取WXSDKInstance对象。该对象中可以获取到上下文.通过startActivity跳转
+A:获取UniSDKInstance对象。该对象中可以获取到上下文.通过startActivity跳转
 
 **示例**
 
 ```
-@JSMethod (uiThread = true)
+@UniJSMethod (uiThread = true)
 public void gotoNativePage(){
-    if(mWXSDKInstance != null) {
-        Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
-        mWXSDKInstance.getContext().startActivity(intent);
+    if(mUniSDKInstance != null) {
+        Intent intent = new Intent(mUniSDKInstance.getContext(), NativePageActivity.class);
+        mUniSDKInstance.getContext().startActivity(intent);
     }
 }
 ```
 
 Q:插件跳转Activity页面后。Activity页面关闭后有数据需要返回。怎么能实现？
 A:可以按以下步骤操作实现：
-   * 在插件的WXModule/WXComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
+   * 在插件的UniModule/UniComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
    
    **示例**
    
@@ -658,11 +632,11 @@ A:可以按以下步骤操作实现：
    **示例**
    
    ```JAVA
-   @JSMethod (uiThread = true)
+   @UniJSMethod (uiThread = true)
     public void gotoNativePage(){
-        if(mWXSDKInstance != null && mWXSDKInstance.getContext() instanceof Activity) {
-            Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
-            ((Activity)mWXSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
+        if(mUniSDKInstance != null && mUniSDKInstance.getContext() instanceof Activity) {
+            Intent intent = new Intent(mUniSDKInstance.getContext(), NativePageActivity.class);
+            ((Activity)mUniSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
         }
     }
    ```

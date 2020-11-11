@@ -3,14 +3,14 @@
 
 ## 扩展方式
 
-uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力有两种方式：一种是不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，这种情况可通过扩展`module`的方式来实现；另一种是需要参与页面布局，比如：map、image，这种情况需要通过扩展`component`即组件的方法来实现；
+uni 扩展原生能力有两种方式：一种是不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，这种情况可通过扩展`module`的方式来实现；另一种是需要参与页面布局，比如：map、image，这种情况需要通过扩展`component`即组件的方法来实现；
 
 ## 开发环境
 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
-- [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
+- 下载uni小程序 2.9.8+SDK [详情](UniMPDocs/SDKDownload/android.md)；
+- [HBuilderX-2.9.8+](https://www.dcloud.io/hbuilderx.html)
 
 ## 注意事项
 
@@ -65,23 +65,23 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 	
 #### 2.创建TestModule类
 
- - Module 扩展必须继承 WXModule 类
+ - Module 扩展必须继承 UniModule 类
  
 	**示例:**
 	
 	```JAVA
-	public class TestModule extends WXModule
+	public class TestModule extends UniModule
 	```
 	
- - 扩展方法必须加上@JSMethod (uiThread = false or true) 注解。Weex 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
- - Weex是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
+ - 扩展方法必须加上@UniJSMethod (uiThread = false or true) 注解。UniApp 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
+ - UniApp是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
 	
 	**示例:**
 	
 	```JAVA
 	//run ui thread
-    @JSMethod(uiThread = true)
-    public void testAsyncFunc(JSONObject options, JSCallback callback) {
+    @UniJSMethod(uiThread = true)
+    public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
         Log.e(TAG, "testAsyncFunc--"+options);
         if(callback != null) {
             JSONObject data = new JSONObject();
@@ -91,7 +91,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
     }
 	
 	//run JS thread
-    @JSMethod (uiThread = false)
+    @UniJSMethod (uiThread = false)
     public JSONObject testSyncFunc(){
         JSONObject data = new JSONObject();
         data.put("code", "success");
@@ -101,7 +101,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 	
  - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
  ```
- -keep public class * extends com.taobao.weex.common.WXModule{*;}
+ -keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
  ```
  - Module 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数类型的参数
 
@@ -122,8 +122,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         try {
-            WXSDKEngine.registerModule("TestModule", TestModule.class);
-        } catch (WXException e) {
+            UniSDKEngine.registerModule("TestModule", TestModule.class);
+        } catch (UniException e) {
             e.printStackTrace();
         }
 	}
@@ -177,7 +177,7 @@ module 支持在 vue 和 nvue 中使用
 
 **Tips** 
 
-uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持该方法！
+uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持该方法！
 
 
 ## 扩展组件 component 
@@ -190,14 +190,14 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
 
 #### 2.创建TestComponent类
 
- - Component 扩展类必须继承 WXComponent
+ - Component 扩展类必须继承 UniComponent
 
 	**示例:**
 	
 	```JAVA
-	public class TestText extends WXComponent<TextView>
+	public class TestText extends UniComponent<TextView>
 	```
- - WXComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
+ - UniComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
 	
 	**示例:**
 	
@@ -211,20 +211,20 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
     }
 	```
 	
- - Component 对应的设置属性的方法必须添加注解 @WXComponentProp(name=value(value is attr or style of dsl))
+ - Component 对应的设置属性的方法必须添加注解 @UniComponentProp(name=value(value is attr or style of dsl))
 	
 	**示例:**
 	
 	```JAVA
-	@WXComponentProp(name = "tel")
+	@UniComponentProp(name = "tel")
     public void setTel(String telNumber) {
         getHostView().setText("tel: " + telNumber);
     }
 	```
 	
- - Weex sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
+ - UniApp 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
  ```
- -keep public class * extends com.taobao.weex.ui.component.WXComponent{*;}
+ -keep public class * extends io.dcloud.feature.uniapp.common.UniComponent{*;}
  ```
  
  - Component 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数
@@ -233,12 +233,12 @@ uni.requireNativePlugin仅用于获取WXModule的对象。WXComponent不支持�
  **示例:**
  + 在组件中如下声明一个组件方法
  ```JAVA
- @JSMethod
+ @UniJSMethod
  public void clearTel() {
     getHostView().setText("");
  }
  ```
- + 注册组之后，你可以在weex 文件中调用
+ + 注册组之后，你可以在UniApp 文件中调用
  
  ```JS
  <template>
@@ -276,8 +276,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         try {
-            WXSDKEngine.registerComponent("myText", TestText.class);
-        } catch (WXException e) {
+            UniSDKEngine.registerComponent("myText", TestText.class);
+        } catch (UniException e) {
             e.printStackTrace();
         }
         super.onCreate();
@@ -327,7 +327,7 @@ void fireEvent(elementRef,type,data,domChanges)
 ```
 
 - `elementRef`(String)：产生事件的组件id
-- `type`(String): 事件名称，weex默认事件名称格式为"onXXX",比如`OnPullDown`
+- `type`(String): 事件名称，默认事件名称格式为"onXXX",比如`OnPullDown`
 - `data`(Map<String, Object>): 需要发送的一些额外数据，比如`click`时，view大小，点击坐标等等。
 - `domChanges`(Map<String, Object>): 目标组件的属性和样式发生的修改内容
 
@@ -373,8 +373,8 @@ void invokeAndKeepAlive(Object data);
 **示例：**
 
 ```JAVA
-@JSMethod(uiThread = true)
-public void testAsyncFunc(JSONObject options, JSCallback callback) {
+@UniJSMethod(uiThread = true)
+public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
     Log.e(TAG, "testAsyncFunc--"+options);
     if(callback != null) {
         JSONObject data = new JSONObject();
@@ -408,11 +408,11 @@ globalEvent.addEventListener('myEvent', function(e) {
 ```JAVA
 Map<String,Object> params=new HashMap<>();
 params.put("key","value");
-mWXSDKInstance.fireGlobalEventCallback("myEvent", params);
+mUniSDKInstance.fireGlobalEventCallback("myEvent", params);
 ```
 
 **注意**
-globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
+globalEvent事件只能通过页面的UniSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
 
 
 ### uniapp中常见路径说明
@@ -425,23 +425,23 @@ globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送gl
 #### 问题：
 + Q1: 原生插件拿到`_doc/a.png`、`static/test.js`等路径参数如何转换原生开发的地址？
 
-	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
+	可通过UniSDKInstance.rewriteUri转换app中的路径参数。
 
 	**示例：**
 
 	```JAVA
-	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
+	Uri uri = mUniSDKInstance.rewriteUri(Uri.parse("_doc/a.png"), URIAdapter.FILE);
 	Log.e(TAG, uri.toString())
 	```
 
 + Q2: 我想操作DOC目录下的文件如何获取路径地址？
 
-	可通过WXSDKInstance.rewriteUri转换app中的路径参数。
+	可通过UniSDKInstance.rewriteUri转换app中的路径参数。
 
 	**示例：**
 
 	```JAVA
-	Uri uri = mWXSDKInstance.rewriteUri(Uri.parse("_doc/"), URIAdapter.FILE);
+	Uri uri = mUniSDKInstance.rewriteUri(Uri.parse("_doc/"), URIAdapter.FILE);
 	Log.e(TAG, uri.toString())
 	```
 
@@ -456,18 +456,18 @@ globalEvent事件只能通过页面的WXSDKInstance实例给当前页面发送gl
 修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!
 修改后查看`io.dcloud.unimp`进程查看log。TAG为`console`
 
-#### 在WXModule、WXComponent中跳转原生页面
+#### 在UniModule、UniComponent中跳转原生页面
 
-获取WXSDKInstance对象。该对象中可以获取到上下文。
+获取UniSDKInstance对象。该对象中可以获取到上下文。
 
 **示例**
 
 ```
-@JSMethod (uiThread = true)
+@UniJSMethod (uiThread = true)
 public void gotoNativePage(){
-    if(mWXSDKInstance != null) {
-        Intent intent = new Intent(mWXSDKInstance.getContext(), NativePageActivity.class);
-        mWXSDKInstance.getContext().startActivity(intent);
+    if(mUniSDKInstance != null) {
+        Intent intent = new Intent(mUniSDKInstance.getContext(), NativePageActivity.class);
+        mUniSDKInstance.getContext().startActivity(intent);
     }
 }
 ```
@@ -501,7 +501,7 @@ public void gotoNativePage(){
         {  
           "type": "module",  
           "name": "DCloud-RichAlert",  
-          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertWXModule"  
+          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"  
         }  
       ]  
     }  
