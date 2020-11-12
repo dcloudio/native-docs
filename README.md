@@ -52,6 +52,10 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 - 目前 uni小程序sdk 仅支持同时运行一个小程序实例，启动下一个小程序需关闭上一个小程序
 - uni 小程序 sdk 无法使用插件市场中付费的原生插件
 
+## 案例
+- **CSDN App：** Appstore新闻类榜单前十。App内部众多栏目做成小程序形式。[App下载](https://www.csdn.net/apps/download)
+- **中国移动咪咕爱看App：** App内部部分栏目做成小程序形式。[App下载](https://android.myapp.com/myapp/detail.htm?apkName=com.wondertek.miguaikan)
+
 ## FAQ
 Q：uni小程序sdk 与 App离线sdk 的差别是什么？
 A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App，用DCloud的工具来开发App，又不想使用云打包，则可以使用App离线sdk打包发布为原生App，App离线sdk支持5+ App、uni-app，不支持wap2app。虽然App离线sdk也可以集成到已有原生App中，但自从uni小程序sdk推出后，将不再推荐这种用法。
