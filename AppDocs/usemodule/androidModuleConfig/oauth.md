@@ -1,3 +1,36 @@
+<!--
+## 一键登录
+
+### 需要拷贝的文件
+
+**需要引入工程的aar文件**
+
+|路径|文件|
+| :-------: | :-------: |
+| SDK\libs | elogin-1.2.0.1.aar |
+| SDK\libs | gtc-2.1.4.aar |
+| SDK\libs | gysdk-2.0.0.8.aar |
+
+
+### Androidmainfest.xml文件需要修改的项
+
+**需要在application节点前添加权限**
+
+~~~
+<meta-data android:value="%用户申请的gy_appid%" android:name="GY_APP_ID"/> 
+<meta-data android:value="HBuilder" android:name="GT_INSTALL_CHANNEL"/>  
+~~~
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-IGETui" value="io.dcloud.feature.igetui.GeTuiOAuthService"/></feature>
+~~~
+
+-->
+
 ## 微信登录
 
 ### 需要拷贝的文件
