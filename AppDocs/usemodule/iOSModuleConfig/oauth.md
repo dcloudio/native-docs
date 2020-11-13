@@ -1,4 +1,23 @@
-支持新浪微博登录、QQ登录、微信登录、及苹果授权登录,然后需要到各开放平台申请帐号,查看该[文档](http://ask.dcloud.net.cn/article/36)
+支持新浪微博登录、QQ登录、微信登录、及苹果授权登录
+
+需要到各开放平台申请帐号
+
+## 一键登录（univerify）
+> 手机号一键登录，支持移动、联调、电信
+
+### 添加依赖库及资源
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|UniVerify.framework、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
+
+### 工程配置
+
+1.在 info.plist 中添加 `DCloudConfig` 节点类型为 Dictionary，然后添加`univerify`子节点类型为 Dictionary，然后在添加`appid`节点类型为 String，值填写您在 [DCloud开发者中心](https://dev.dcloud.net.cn/) 申请一键登录对应的 appid，如下图所示
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/univerify01.png)
+
+2.使用方法请参考 [一键登录 使用指南](https://ask.dcloud.net.cn/article/38009)
 
 ## 新浪微博登录
 
