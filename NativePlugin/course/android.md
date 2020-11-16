@@ -387,8 +387,13 @@ dcRichAlert.show({
   public class RichAlert_AppProxy implements UniAppHookProxy {
   	@Override
   	public void onCreate(Application application) {
-  		//可写初始化触发逻辑
+  		//当前uni应用进程回调 仅触发一次 多进程不会触发
   	}
+	
+	@Override
+	public void onSubProcessCreate(Application application) {
+		//其他子进程初始化回调 可用于初始化需要子进程初始化需要的逻辑
+	}
   }
   ```
 
