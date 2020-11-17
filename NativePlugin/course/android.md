@@ -42,7 +42,7 @@
  
 - Module 扩展 非 UI 的特定功能
 
-下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_module`模块；
+下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.9.8+)工程中的`uniplugin_module`模块；
 
 #### 创建Android Studio的Module模块
 
@@ -121,7 +121,7 @@ public JSONObject testSyncFunc(){
 
 - Component 扩展 实现特别功能的 Native 控件
 
-下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.6.16+)工程中的`uniplugin_component`模块；
+下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.9.8+)工程中的`uniplugin_component`模块；
 
 #### 创建Android Studio的Module模块
 
