@@ -388,6 +388,7 @@ dcRichAlert.show({
   	@Override
   	public void onCreate(Application application) {
   		//当前uni应用进程回调 仅触发一次 多进程不会触发
+		//可通过UniSDKEngine注册UniModule或者UniComponent
   	}
 	
 	@Override
