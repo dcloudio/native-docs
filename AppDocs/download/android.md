@@ -7,6 +7,7 @@
 + 修复 nvue ad 组件频繁打开、关闭页面操作可能引起崩溃的Bug 
 + 新增 视频播放控件 VideoPlayer 支持 show-mute-btn 属性设置是否显示静音按钮
 + 修复 Android11 上调用相机录像后无法播放视频文件的Bug
+
 [百度网盘下载历史版本](https://pan.baidu.com/s/1Gpbnq3wLvvnRO6W-SlvVpA)，提取码: neqx
 
 
