@@ -4,17 +4,20 @@
 
 ## 更新日志
 
+##### SDK 2.9.10
+[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.10.zip)
+
++ 需使用HBuilderX（2.9.10）版本生成 小程序App 资源
++ iOS平台 修复 窗口标题栏 titleNView 设置 type 为 transparent 时，在 ActionSheet 上显示的按钮样式异常的Bug
++ iOS平台 修复 从相册选择视频后调用 uni.navigateBack() 关闭页面时会退出小程序的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.10.20201117-alpha.html)
+
 ##### SDK 2.9.8
 [点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.8.zip)
 
 + 需使用HBuilderX（2.9.8）版本生成 小程序App 资源
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.8.20201110.html)
 
-##### SDK 2.9.7
-[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.7.20201103.zip)
-
-+ 需使用HBuilderX（2.9.7）版本生成 小程序App 资源
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.7.20201103-alpha.html)
 
 ## 历史版本
 > 历史版本仅提供上个正式版本的 SDK 下载
@@ -26,6 +29,12 @@
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
 
 #### 2020年10月24日发布
+
+##### SDK 2.9.7
+
++ 需使用HBuilderX（2.9.7）版本生成 小程序App 资源
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.7.20201103-alpha.html)
+
 UniMP_iOS_SDK@2.9.5.20201024
 
 + 需使用HBuilderX（2.9.5）版本生成 小程序App 资源
