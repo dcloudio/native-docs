@@ -352,6 +352,64 @@ dip转px
 
 
 
+## UniSDKEngine
+
+### io.dcloud.feature.uniapp.UniSDKEngine
+
+#### registerUniModule(String moduleName, Class<? extends UniModule> moduleClass)
+
+注册模块 UniModule
+
+**参数说明**
+
+|参数|类型|说明
+|:----|:----|:----
+|moduleName|String|模块名称
+|moduleClass|Class<? extends UniModule>|模块对象
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean|注册是否成功 true表示成功
+
+#### registerUniComponent(String type, Class<? extends UniComponent> clazz)
+
+注册组件 UniComponent
+
+**参数说明**
+
+|参数|类型|说明
+|:----|:----|:----
+|type|String|组件名称
+|clazz|Class<? extends UniComponent>|组件对象
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean|注册是否成功 true表示成功
+
+#### registerUniVContainer(String type, Class<? extends UniVContainer> clazz)
+
+注册父容器组件 UniVContainer
+
+**参数说明**
+
+|参数|类型|说明
+|:----|:----|:----
+|type|String|组件名称
+|clazz|Class<? extends UniVContainer>|组件对象
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean|注册是否成功 true表示成功
+
+
+
+
 ## UniLogUtils
 
 ### io.dcloud.feature.uniapp.utils.UniLogUtils

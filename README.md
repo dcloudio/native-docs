@@ -54,7 +54,7 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 
 ## 案例
 - **CSDN App：** Appstore新闻类榜单前十。App内部众多栏目做成小程序形式。[App下载](https://www.csdn.net/apps/download)
-- **中国移动咪咕爱看App：** App内部部分栏目做成小程序形式。[Android](https://android.myapp.com/myapp/detail.htm?apkName=com.wondertek.miguaikan)、[iOS](https://apps.apple.com/cn/app/id1168490851)
+
 
 ## FAQ
 Q：uni小程序sdk 与 App离线sdk 的差别是什么？
