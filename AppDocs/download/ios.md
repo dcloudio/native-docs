@@ -17,18 +17,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年11月16日发布 
-[点击下载SDK，提取码: a6m5](https://pan.baidu.com/s/1a9giLzjNlUVXvTHLZtsefA)
-+ 更新uni-app离线打包支持，需使用HBuilderX（2.9.9.20201114-alpha）版本生成本地打包App资源。
-+ 新增 QQ分享支持 type 为 web 类型分享网页链接
-+ iOS平台 修复 2.9.1版本引出的 高德定位设置 geocode 为 true 无法返回地址信息的Bug [详情](https://ask.dcloud.net.cn/question/110474)
-+ iOS平台 修复 关闭页面窗口时底部区域可能出现闪动的Bug [详情](https://ask.dcloud.net.cn/question/110153)
-+ iOS平台 修复 打开系统内置地图导航时，传入的位置和名称与地图实际显示不一致的Bug [详情](https://ask.dcloud.net.cn/question/109998)
-+ iOS平台 修复 native.js 使用 plus.ios.invoke 调用方法时传入参数为 jsonObject 不执行的Bug
-+ App-iOS平台 修复 input 组件在点击时取消禁用无法弹出软键盘的Bug [详情](https://ask.dcloud.net.cn/question/110491)
-+ App-iOS平台 修复 canvas 组件绘制字体部分属性未生效的Bug [详情](https://ask.dcloud.net.cn/question/110227)
-+ App-iOS平台 修复 nvue video 组件的子组件点击事件会透传到 video 组件上的Bug [详情](https://ask.dcloud.net.cn/question/110601)
-+ App-iOS平台 修复 uni.openLocation 页面使用 Apple 地图导航目的地错误的Bug
+### 2020年11月19日发布 
+[点击下载SDK，提取码: e2dw](https://pan.baidu.com/s/1fiuqld5FEzNbjXOgRGYDTQ)
++ 更新uni-app离线打包支持，需使用HBuilderX（2.9.10.20201117-alpha）版本生成本地打包App资源。
++ iOS平台 修复 扫描部分二维码无法识别的Bug [详情](https://ask.dcloud.net.cn/question/110878)
++ iOS平台 修复 窗口标题栏 titleNView 设置 type 为 transparent 时，在 ActionSheet 上显示的按钮样式异常的Bug
++ App-iOS平台 修复 2.9.9版本引出的 nvue swiper 组件中嵌套 video 后页面无法滑动的Bug [详情](https://ask.dcloud.net.cn/question/111145)
++ App-iOS平台 修复 nvue input 组件设置 focus 为 true 时频繁打开、关闭页面操作可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/110809)
++ App平台 修复 atob 解码 base64 字符串返回结果可能不正确的Bug [详情](https://ask.dcloud.net.cn/question/110758)
 
   
 [百度网盘下载历史版本，提取码: 4p3a](https://pan.baidu.com/s/1C0H4DhfI-wXG0NaR2AiE7g)
