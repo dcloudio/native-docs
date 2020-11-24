@@ -236,7 +236,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 ###  如何配置启动时是否注册Push
 1、如果希望在应用启动时不弹出"发送通知"系统授权框，可以不向系统注册要使用消息推送功能，配置方法如下：
-    找到工程里的info.plist文件，然后配置pushRegisterMode字段，值为manual。
+    找到工程里的info.plist文件，然后配置dcloud_push_register_mode字段，值为manual。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/pushRegister.png)
 
