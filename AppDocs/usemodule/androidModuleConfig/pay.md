@@ -44,7 +44,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | payment-weixin-release.aar, wechat-sdk-android-with-mta-5.1.4.jar |
+| SDK\libs | payment-weixin-release.aar, wechat-sdk-android-with-mta-5.4.3.jar |
 
 需要将以下代码文件引入到工程，包名为”$你的包名.wxapi”
 

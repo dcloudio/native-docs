@@ -4,7 +4,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | oauth-weixin-release.aar，wechat-sdk-android-with-mta-5.1.4.jar |
+| uniMPSDK\Features\libs | oauth-weixin-release.aar，wechat-sdk-android-with-mta-5.4.3.jar |
 
 将表格中的文件拷贝至主Module中的libs下。
 
