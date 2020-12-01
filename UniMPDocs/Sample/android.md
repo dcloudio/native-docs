@@ -51,6 +51,8 @@ var arguments = plus.runtime.arguments;
 
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
 
+**注意：如果直达的页面为首页并且是 vue 页面参数无效** 应使用启动传参的方式
+
 ```
 pages/component/view/view?action=redirect
 ```
@@ -61,7 +63,7 @@ pages/component/view/view?action=redirect
 DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
 ```
 
-**屏蔽返回**
+#### 屏蔽返回
 
 直达二级页面如果您想屏蔽返回按钮及返回手势，可以在小程序页面的 `onLoad()` 方法中获取当前页面调用 `setStyle()` 方法实现，代码如下
 

@@ -424,6 +424,11 @@ HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 }
 ```
 
+### Background Modes
+
+![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190927/a5af6858c1c3535419aff6d3ef7ca8f9.png)
+
+如果插件需要申请后台运行权限，需要插件使用者在项目的 manifest.json 中添加权限配置，请查看 [添加后台权限教程](https://ask.dcloud.net.cn/article/36430)，插件开发者应在插件使用教程中说明；
 
 ### parameters
 如果插件需配置参数，如appid、appkey时，可通过配置`parameters`字段进行定义，在HBuilderX中使用此插件时将会出现可视配置项：
