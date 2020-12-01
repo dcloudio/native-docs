@@ -1,6 +1,6 @@
 ## 开发环境
 
--  OS X 10.14.0+、Xcode 11.0+ 
+-  安装 Xcode 12.1 及以上版本 
 -  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
 - App离线SDK下载：[最新iOS平台SDK下载](/AppDocs/download/ios.md)
 - 确保版本一致,请确保从HBuilderX导出的打包资源的HBuilderX的版本号和App离线SDK发布的版本号是一致的，如下2张图里的版本号：

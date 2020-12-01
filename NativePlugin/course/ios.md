@@ -7,7 +7,7 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 
 ## 开发环境
 
-- iOS开发环境，Xcode 11.0+
+- iOS开发环境，Xcode 12.1 及以上版本
 - 下载开发插件需要的 [SDK包](AppDocs/download/ios.md) 并解压
 - 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) 
 
