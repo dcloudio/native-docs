@@ -25,3 +25,10 @@ A：插件作者需注意保持好版本质量和向下兼容。一旦提交市�
 **步骤：**在 Uni 项目的 `nativeplugins/插件A/`目录中创建 `ios-exclude.txt`文件（如果使用的是云端插件请手动创建目录），在 ios-exclude.txt 中填写 xxx.a，（每行填写一个文件名）如下图所示：
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/ios-exclude.png)
+
+## Q: Android端插件的依赖库与宿主应用某模块的依赖库存在冲突？
+
+A：这种情况多数是插件本身的依赖库与宿主应用的某些功能模块集成依赖库出现了重复导致的。可以按以下方式处理兼容：
++ 依赖库版本不一致的情况。请优先适配宿主应用模块集成的依赖库版本做插件适配。如果插件中的依赖库无法剥离可以尝试使用[exclude group](/NativePlugin/course/package?id=dependencies)剥离相关冲突库。在插件文档中告知你的插件使用者在HX中勾选某`XXX`模块才可以正常使用。宿主模块目前集成的[依赖库版本](https://ask.dcloud.net.cn/article/35419)
++ 如果你的插件依赖库不能适配宿主应用的依赖库。那请在插件文档中明确告知插件使用者`XXX`模块与该插件不兼容。避免插件使用者勾选了相关模块导致了依赖库冲突。
++ 如果还是不能解决冲突问题 请联系客服
