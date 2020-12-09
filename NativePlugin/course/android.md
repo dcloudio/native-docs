@@ -490,6 +490,9 @@ implementation project(':uniplugin_richalert')
 	+ 将插件依赖的.so文件放入到libs文件夹中
 + 将插件依赖的aar文件放入到插件android目录下
 
+**注意**
+目前发现部分同学将开发插件的uniapp-v8-release.aar、uniapp-release.aar放到了插件包libs中。导致冲突。切记不要放进libs里去！！！
+
 ## 插件编写命名规范
 + 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
 
