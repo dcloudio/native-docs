@@ -1,4 +1,3 @@
-<!--
 ## 一键登录
 
 ### 需要拷贝的文件
@@ -28,8 +27,6 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-IGETui" value="io.dcloud.feature.igetui.GeTuiOAuthService"/></feature>
 ~~~
-
--->
 
 ## 微信登录
 
