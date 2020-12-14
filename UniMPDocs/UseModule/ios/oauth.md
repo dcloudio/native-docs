@@ -23,7 +23,7 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/univerify01.png)
 
-2.使用方法请参考 [一键登录 使用指南](https://ask.dcloud.net.cn/article/38009)
+2.使用方法请参考 [一键登录 使用指南](https://uniapp.dcloud.io/univerify)
 ## 微博授权登录
 
 ### 添加依赖库及资源
