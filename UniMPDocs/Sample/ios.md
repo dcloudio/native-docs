@@ -1,9 +1,9 @@
 ## 启动小程序
 从宿主应用页面跳转到小程序应用
 
-### 实现原理
+<!--### 实现原理
 获取当前宿主显示的 `ViewController`，通过`present`的方式打开小程序对应的 `DCUniMPViewController` 
-> 注：您可以通过自定义转场动画的方式自定义打开小程序时的动画，详情请看 [自定义专场动画](/UniMPDocs/Sample/ios?id=自定义转场动画)
+> 注：您可以通过自定义转场动画的方式自定义打开小程序时的动画，详情请看 [自定义专场动画](/UniMPDocs/Sample/ios?id=自定义转场动画)-->
 
 ### 特性
 
@@ -11,6 +11,8 @@
 - 支持启动后直接打开指定页面
 - 支持设置是否需要启动或关闭动画效果 （2.8.0+ 版本支持）
 - 支持开启后台运行模式（2.8.0+ 版本支持）
+- 支持设置启动模式‘`present`’或‘`push`’ （2.9.13+ 版本支持）
+- 支持侧滑手势关闭小程序 （2.9.13+ 版本支持）
 
 ### API
 
@@ -151,10 +153,10 @@ configuration.redirectPath = @"pages/component/view/view?action=redirect";
 </script>
 ``` 
 
-### 启动动画效果 
+### 转场动画
 > 2.8.0+ 版本支持
 
-通过 DCUniMPConfiguration 配置是否需要启动或关闭小程序时的动画效果
+可通过 DCUniMPConfiguration 配置开启或关闭小程序时的动画效果，默认开启动画效果
 
 **示例**
 
@@ -167,9 +169,38 @@ configuration.showAnimated = YES;
 configuration.hideAnimated = NO;
 ```
 
-#### 自定义转场动画
+### 启动方式
+> 2.9.13+ 版本支持
+ 
+可通过 DCUniMPConfiguration 配置小程序的打开方式，支持`DCUniMPOpenModePresent `、和`DCUniMPOpenModePush `两种方式，默认为：`DCUniMPOpenModePresent`方式
 
-小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式从页面下方打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义打开动画效果，您可以参考 [DCUniMPPresentCustomAnimation](https://github.com/xiaohuapunk/DCUniMPPresentCustomAnimation) 的实现，从页面右侧打开小程序类似 push 的效果；
+**说明**
+
+-  `DCUniMPOpenModePresent`：获取宿主当前显示的 ViewController 调用 presentViewController:animated:completion: 方法打开小程序页面对应的  DCUniMPViewController
+-  `DCUniMPOpenModePush`：获取宿主当前显示的 ViewController 对应的 navigationController 调用 pushViewController:animated: 方法打开小程序页面对应的 DCUniMPViewController，注意：如果 navigationController 不存在则使用 `DCUniMPOpenModePresent` 的方式打开
+
+**示例**
+
+```
+DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
+configuration.openMode = DCUniMPOpenModePush;  // 使用push方式打开小程序
+```
+
+### 侧滑手势关闭小程序
+> 2.9.13+ 版本支持
+ 
+可通过 DCUniMPConfiguration 配置开启侧滑手势关闭小程序功能，默认不开启
+
+**示例**
+
+```
+DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
+configuration.enableGestureClose = YES; // 开启侧滑手势关闭小程序
+```
+
+<!--#### 自定义转场动画
+
+小程序的打开方式是：获取当前宿主显示的 `ViewController`，通过`present`的方式从页面下方打开小程序对应的 `DCUniMPViewController`，可以通过自定义专场动画的方式自定义打开动画效果，您可以参考 [DCUniMPPresentCustomAnimation](https://github.com/xiaohuapunk/DCUniMPPresentCustomAnimation) 的实现，从页面右侧打开小程序类似 push 的效果；-->
 
 
 ## 关闭小程序
