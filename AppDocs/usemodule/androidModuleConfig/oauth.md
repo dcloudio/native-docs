@@ -1,4 +1,5 @@
 ## 一键登录
+>2.9.12+ 版本新增支持
 
 ### 需要拷贝的文件
 
@@ -27,6 +28,10 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-IGETui" value="io.dcloud.feature.igetui.GeTuiOAuthService"/></feature>
 ~~~
+
+应用中使用一键登录功能请参考 [一键登录 使用指南](https://uniapp.dcloud.io/univerify)
+
+
 
 ## 微信登录
 
