@@ -468,7 +468,7 @@ parameters下每个节点（josn）定义一个要配置的参数，参数名称
     "key": "HelloPlugin:appid"
   },
   "appkey_ios": {
-    "des": "iOS平台的appkey",，
+    "des": "iOS平台的appkey",
     "key": "HelloPlugin:appkey"
   }
 }
