@@ -164,7 +164,7 @@ dependencies {
 
 package.json的dependencies节点就需要配置如下信息
 
-```
+```json
 "dependencies": [
     "com.android.support:recyclerview-v7:25.3.1",
     "com.android.support:support-v4:25.3.1",
@@ -179,7 +179,7 @@ package.json的dependencies节点就需要配置如下信息
 
 dependencies中的值支持json对象，如下：
 
-```
+```json
 "dependencies": [//内容支持字符串或json格式，支持混写
     {
         "id": "com.android.support.test.espresso:espresso-contrib",  //可选，String类型，依赖库标识
@@ -198,7 +198,7 @@ JSON格式支持以下字段：
 只支持写引用公共仓储上的库。
 如上示例，将会在云端打包时将以下内容添加到build.gradle文件的dependencies中：
 
-```
+```json
 implementation('com.android.support.test.espresso:espresso-contrib:2.2.2', {
     exclude group: 'com.android.support', module: 'support-v4'
 })
@@ -210,11 +210,11 @@ implementation('com.android.support.test.espresso:espresso-contrib:2.2.2', {
 HBuilderX2.3.8+开始支持配置云端打包java编译参数。
 格式如下：
 
-```
+```json
 "compileOptions": {  //可选，Java编译参数配置
 	"sourceCompatibility": "1.8",
 	"targetCompatibility": "1.8"
-},
+}
 ```
 
 云端打包使用的jdk版本为1.8，仅支持取值"1.6"、"1.7"、"1.8"。
@@ -222,11 +222,11 @@ HBuilderX2.3.8+开始支持配置云端打包java编译参数。
 ### abis
 Android平台支持的CPU类型，当插件中包含so库时需要配置插件支持的cpu类型。
 
-```
+```json
 "abis": [
 	"armeabi-v7a",
 	"x86"
-],
+]
 ```
 
 云端打包内置插件支持以下CPU类型：
@@ -288,7 +288,7 @@ parameters下每个节点（josn）定义一个要配置的参数，参数名称
 **插件使用时需在 HBuilderX 中打开项目 `manifest.json` 文件的 “App原生插件配置” 可视化界面进行配置**
 
 以下使用 "DCloud-HelloPlugin" 插件配置 appid_android、appkey_android 参数为示例：
-```
+```json
 "parameters": {
   "appid_android": {
     "des": "Android平台的appid",
@@ -360,7 +360,7 @@ uni原生插件如果支持iOS平台，则需在插件下添加`ios`目录，并
 HBuilderX2.3.4+开始支持配置插件的图片资源文件（xcassets）。
 格式如下：
 
-```
+```json
 "assets": [
  	"myimage.xcassets"      //使用的xcassets文件列表
 ]
@@ -393,7 +393,7 @@ HBuilderX2.3.4+开始支持配置插件的图片资源文件（xcassets）。
 ### validArchitectures
 HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 格式如下：
-```
+```json
 "validArchitectures": [
     "arm64", "arm64e"
 ]
@@ -461,7 +461,7 @@ parameters下每个节点（josn）定义一个要配置的参数，参数名称
 
 
 以下使用 "DCloud-HelloPlugin" 插件配置 appid_ios、appkey_ios 参数为示例：
-```
+```json
 "parameters": {
   "appid_ios": {
     "des": "iOS平台的appid",
