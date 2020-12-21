@@ -12,9 +12,9 @@
 | SDK\libs | gysdk-2.0.0.8.aar |
 
 
-### Androidmainfest.xml文件需要修改的项
+### 需要修改的配置选项
 
-**需要在manifestPlaceholders节点中的manifestPlaceholders 新增配置选项**
+**需要在build.gradle 中manifestPlaceholders节点中的manifestPlaceholders 新增配置选项**
 
 ~~~
 "GY_APP_ID"       : "%%",
