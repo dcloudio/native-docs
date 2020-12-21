@@ -7,12 +7,12 @@
 
 ### 特性
 
-- 支持传入启动参数到小程序环境
-- 支持启动后直接打开指定页面
-- 支持设置是否需要启动或关闭动画效果 （2.8.0+ 版本支持）
-- 支持开启后台运行模式（2.8.0+ 版本支持）
-- 支持设置启动模式‘`present`’或‘`push`’ （3.0.0+ 版本支持）
-- 支持侧滑手势关闭小程序 （3.0.0+ 版本支持）
+- [支持传入启动参数到小程序环境](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f%e5%b9%b6%e4%bc%a0%e5%8f%82)
+- [支持启动后直接打开指定页面](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e6%89%93%e5%bc%80%e6%8c%87%e5%ae%9a%e9%a1%b5%e9%9d%a2)
+- [支持设置是否需要启动或关闭动画效果 （2.8.0+ 版本支持）](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e8%bd%ac%e5%9c%ba%e5%8a%a8%e7%94%bb)
+- [支持开启后台运行模式（2.8.0+ 版本支持）](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%bc%80%e5%90%af%e5%90%8e%e5%8f%b0%e8%bf%90%e8%a1%8c)
+- [支持设置启动模式‘`present`’或‘`push`’ （3.0.0+ 版本支持）](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e6%96%b9%e5%bc%8f)
+- [支持侧滑手势关闭小程序 （3.0.0+ 版本支持）](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e4%be%a7%e6%bb%91%e6%89%8b%e5%8a%bf%e5%85%b3%e9%97%ad%e5%b0%8f%e7%a8%8b%e5%ba%8f)
 
 ### API
 
