@@ -195,7 +195,8 @@ oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配
             android:process=":pushservice"
             android:taskAffinity="com.igexin.sdk.PushActivityTask"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <receiver android:name="io.dcloud.feature.apsGt.GTNotificationReceiver">
+        <receiver android:name="io.dcloud.feature.apsGt.GTNotificationReceiver"
+		            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="填写APK的包名.__CREATE_NOTIFICATION"/>
