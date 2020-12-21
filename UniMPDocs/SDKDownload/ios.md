@@ -10,6 +10,8 @@
 + 需使用HBuilderX（3.0.0）版本生成 小程序App 资源
 + iOS平台 新增 小程序的打开方式支持原生 push 方式 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e6%96%b9%e5%bc%8f)
 + iOS平台 新增 支持开启侧滑手势关闭小程序 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e4%be%a7%e6%bb%91%e6%89%8b%e5%8a%bf%e5%85%b3%e9%97%ad%e5%b0%8f%e7%a8%8b%e5%ba%8f)
++ 升级 SDWebImage 5.10.0 版本，对应 libSDWebImage.a 库
++ 升级 ZipArchive 2.2.3 版本，对应 libcoreSupport.a 库
 + [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.0.20201219-alpha.html)
 
 #### SDK 2.9.8
