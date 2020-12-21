@@ -14,11 +14,11 @@
 
 ### Androidmainfest.xml文件需要修改的项
 
-**需要在application节点前添加权限**
+**需要在manifestPlaceholders节点中的manifestPlaceholders 新增配置选项**
 
 ~~~
-<meta-data android:value="%用户申请的gy_appid%" android:name="GY_APP_ID"/> 
-<meta-data android:value="HBuilder" android:name="GT_INSTALL_CHANNEL"/>  
+"GY_APP_ID"       : "%%",
+"GT_INSTALL_CHANNEL":"HBuilder",
 ~~~
 
 **dcloud_properties.xml需要添加如下代码**
