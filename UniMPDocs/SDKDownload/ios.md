@@ -4,15 +4,15 @@
 
 ## 更新日志
 
-##### SDK 2.9.10
-[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.10.zip)
+#### SDK 3.0.0
+[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.0.0.zip)
 
-+ 需使用HBuilderX（2.9.10）版本生成 小程序App 资源
-+ iOS平台 修复 窗口标题栏 titleNView 设置 type 为 transparent 时，在 ActionSheet 上显示的按钮样式异常的Bug
-+ iOS平台 修复 从相册选择视频后调用 uni.navigateBack() 关闭页面时会退出小程序的Bug
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.10.20201117-alpha.html)
++ 需使用HBuilderX（3.0.0）版本生成 小程序App 资源
++ iOS平台 新增 小程序的打开方式支持原生 push 方式 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e6%96%b9%e5%bc%8f)
++ iOS平台 新增 支持开启侧滑手势关闭小程序 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e4%be%a7%e6%bb%91%e6%89%8b%e5%8a%bf%e5%85%b3%e9%97%ad%e5%b0%8f%e7%a8%8b%e5%ba%8f)
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.0.20201219-alpha.html)
 
-##### SDK 2.9.8
+#### SDK 2.9.8
 [点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@2.9.8.zip)
 
 + 需使用HBuilderX（2.9.8）版本生成 小程序App 资源
@@ -27,6 +27,13 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 2.9.10
+
++ 需使用HBuilderX（2.9.10）版本生成 小程序App 资源
++ iOS平台 修复 窗口标题栏 titleNView 设置 type 为 transparent 时，在 ActionSheet 上显示的按钮样式异常的Bug
++ iOS平台 修复 从相册选择视频后调用 uni.navigateBack() 关闭页面时会退出小程序的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/2.9.10.20201117-alpha.html)
 
 #### 2020年10月24日发布
 
