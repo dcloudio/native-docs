@@ -11,8 +11,8 @@
 - 支持启动后直接打开指定页面
 - 支持设置是否需要启动或关闭动画效果 （2.8.0+ 版本支持）
 - 支持开启后台运行模式（2.8.0+ 版本支持）
-- 支持设置启动模式‘`present`’或‘`push`’ （2.9.12+ 版本支持）
-- 支持侧滑手势关闭小程序 （2.9.12+ 版本支持）
+- 支持设置启动模式‘`present`’或‘`push`’ （3.0.0+ 版本支持）
+- 支持侧滑手势关闭小程序 （3.0.0+ 版本支持）
 
 ### API
 
@@ -170,7 +170,7 @@ configuration.hideAnimated = NO;
 ```
 
 ### 启动方式
-> 2.9.12+ 版本支持
+> 3.0.0+ 版本支持
  
 可通过 DCUniMPConfiguration 配置小程序的打开方式，支持`DCUniMPOpenModePresent `、和`DCUniMPOpenModePush `两种方式，默认为：`DCUniMPOpenModePresent`方式
 
@@ -187,7 +187,7 @@ configuration.openMode = DCUniMPOpenModePush;  // 使用push方式打开小程�
 ```
 
 ### 侧滑手势关闭小程序
-> 2.9.12+ 版本支持
+> 3.0.0+ 版本支持
  
 可通过 DCUniMPConfiguration 配置开启侧滑手势关闭小程序功能，默认不开启
 

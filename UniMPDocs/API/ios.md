@@ -195,7 +195,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ```
 
 ### 获取小程序对应的 ViewController 实例
-> 2.9.12+ 版本支持
+> 3.0.0+ 版本支持
 
 ```
 /// 小程序打开状态，调用此方法可获取小程序对应的 ViewController 实例
@@ -286,8 +286,8 @@ DCUniMPConfiguration 类为小程序提供配置信息
 @property (nonatomic, assign) BOOL enableBackground;    /**< 是否开启后台运行（退出小程序时隐藏到后台不销毁小程序应用） 默认：NO*/
 @property (nonatomic, assign) BOOL showAnimated;    /**< 是否开启 show 小程序时的动画效果 默认：YES */
 @property (nonatomic, assign) BOOL hideAnimated;    /**< 是否开启 hide 时的动画效果 默认：YES*/
-@property (nonatomic, assign) DCUniMPOpenMode openMode;  /**<（2.9.12+支持） 打开小程序的方式 默认： DCUniMPOpenModePresent*/
-@property(nonatomic, assign) BOOL enableGestureClose;   /**<（2.9.12+支持）是否开启手势关闭小程序 默认：NO */
+@property (nonatomic, assign) DCUniMPOpenMode openMode;  /**<（3.0.0+支持） 打开小程序的方式 默认： DCUniMPOpenModePresent*/
+@property(nonatomic, assign) BOOL enableGestureClose;   /**<（3.0.0+支持）是否开启手势关闭小程序 默认：NO */
 ```
 
 ## DCUniMPInstance
