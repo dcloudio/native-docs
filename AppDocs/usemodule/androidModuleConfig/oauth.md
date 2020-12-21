@@ -10,6 +10,7 @@
 | SDK\libs | elogin-1.2.0.1.aar |
 | SDK\libs | gtc-2.1.4.aar |
 | SDK\libs | gysdk-2.0.0.8.aar |
+| SDK\libs | oauth-univerify-release.aar |
 
 
 ### 需要修改的配置选项
