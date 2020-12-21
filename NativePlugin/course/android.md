@@ -8,7 +8,7 @@
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - App离线SDK下载：请下载2.9.8+版本的[android平台SDK](/AppDocs/download/android.md)
 
-## 注意
+#### 注意
 - 插件目前暂时不支持Kotlin。
 
 ## 导入uni插件原生项目
@@ -30,7 +30,8 @@
 
 **Tips**
 
-工程gradle配置的gradle-4.6-all版本！使用的是新版本的依赖方式，如果您使用的是老版本的gradle。可根据以下链接进行修改依赖方式.[gradle新依赖方式与旧依赖方式的不同](https://blog.csdn.net/wangliblog/article/details/81366095)
+工程gradle配置的gradle-4.6-all版本，tools.build版本为3.2.1。
+从3.0.0版本开始gradle版本升为6.6.all，tools.build版本为4.1.1。
 
 ## 插件开发
 
