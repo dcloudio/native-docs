@@ -24,7 +24,7 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 	|-- readme.txt					// 目录说明
 ```
 
-SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`libWeexDCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`DCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
 
 ## 创建插件工程
 
@@ -95,26 +95,33 @@ SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**�
 ## 代码实现
 
 ### 插件扩展方式
-原生插件是基于 WeexSDK 规范来实现，扩展原生功能有两种方式：
+原生插件是基于 DCUniPlugin 规范来实现，扩展原生功能有两种方式：
 
 - module：不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，通过扩展`module`的方式来实现；
-- component：需要参与页面布局，比如：map、image等需要显示UI的功能，通过扩展`component`即组件的方法来实现；
+- component：需要参与页面布局，比如：`map`、`image`等需要显示`UI`的功能，通过扩展`component`即组件的方法来实现；
   
-您需要根据实际的情况选择扩展方式，当然插件中可以同时存在 module 和 component，也可以是多个 module 和 多个 component；
+您需要根据实际的情况选择扩展方式，当然插件中可以同时存在 `module` 和 `component`，也可以是多个 `module` 和 多个 `component`；
+
+**特别注意**
+如果需要扩展自定义的 `module` 或者 `component` ，一定注意不要将 `oc` 的 `runtime` 暴露给 `JS` ，不要将一些诸如 `dlopen()`， `dlsym()`， `respondsToSelector:`，`performSelector:`，`method_exchangeImplementations()` 的动态和不可控的方法暴露给JS，也不要将系统的私有API暴露给JS。否则将可能面临苹果上架审核问题。
+
 
 ### 扩展 module
 > 以`TestModule`为例，源码请查看 `iOSSDK/HBuilder-uniPluginDemo/DCTestUniPlugin` 插件工程；
 
-新建`TestModule`类，继承 `NSObject`，引入 `WeexSDK.h` 头文件，让该类遵循 `WXModuleProtocol` 的协议。
+新建`TestModule`类，继承 `DCUniModule`，引入 `DCUniModule.h` 头文件。
+
+
+
 
 TestModule.h 文件
 
 ```Objective-C
 #import <Foundation/Foundation.h>
-// 引入 WeexSDK.h 头文件
-#import "WeexSDK.h"
+// 引入 DCUniModule.h 头文件
+#import "DCUniModule.h"
 
-@interface TestModule : NSObject <WXModuleProtocol>
+@interface TestModule : DCUniModule
 
 @end
 
@@ -122,65 +129,112 @@ TestModule.h 文件
 
 TestModule.h 文件截图：
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi11-1.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/testModuleH.jpg)
 
 然后在 TestModule.m 文件中添加实现方法
 
 **异步方法实现**
 
-```Objective-C
+``` Objective-C
 /// 异步方法（注：异步方法会在主线程（UI线程）执行）
 /// @param options js 端调用方法时传递的参数
 /// @param callback 回调方法，回传参数给 js 端
-- (void)testAsyncFunc:(NSDictionary *)options callback:(WXModuleKeepAliveCallback)callback {
-    // options 为 js 端调用此方法时传递的参数
-    NSLog(@"%@",options);
+- (void)testAsyncFunc:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback { 
     
-    // 可以在该方法中实现原生能力，然后通过 callback 回调到 js
-    
+    // options 为 js 端调用此方法时传递的参数 NSLog(@"%@",options); // 可以在该方法中实现原生能力，然后通过 callback 回调到 js 
     // 回调方法，传递参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
-    if (callback) {
-        // 第一个参数为回传给js端的数据，第二个参数为标识，表示该回调方法是否支持多次调用，如果原生端需要多次回调js端则第二个参数传 YES;
+
+ 
+   if (callback) {
+       // 第一个参数为回传给js端的数据，第二个参数为标识，表示该回调方法是否支持多次调用，如果原生端需要多次回调js端则第二个参数传 YES;
         callback(@"success",NO);
+
     }
 }
 ```
 
-通过宏 `WX_EXPORT_METHOD` 将异步方法暴露给 js 端，只有通过`WX_EXPORT_METHOD`暴露的原生方法才能被 js 端识别到
+通过宏 `UNI_EXPORT_METHOD` 将异步方法暴露给 js 端，只有通过`UNI_EXPORT_METHOD`暴露的原生方法才能被 js 端识别到
 
-```Objective-C
-// 通过宏 WX_EXPORT_METHOD 将异步方法暴露给 js 端
-WX_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
+``` Objective-C
+// 通过宏 UNI_EXPORT_METHOD 将异步方法暴露给 js 端
+UNI_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
 ```
 
 **同步方法实现**
 
-```Objective-C
+``` Objective-C
 /// 同步方法（注：同步方法会在 js 线程执行）
 /// @param options js 端调用方法时传递的参数
 - (NSString *)testSyncFunc:(NSDictionary *)options {
     // options 为 js 端调用此方法时传递的参数
     NSLog(@"%@",options);
-    
+
     /*
      可以在该方法中实现原生功能，然后直接通过 return 返回参数给 js
      */
-    
+
     // 同步返回参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
     return @"success";
 }
 ```
 
-通过宏 `WX_EXPORT_METHOD_SYNC` 将同步方法暴露给 js 端
+通过宏 `UNI_EXPORT_METHOD_SYNC` 将同步方法暴露给 js 端
 
-```Objective-C
-// 通过宏 WX_EXPORT_METHOD_SYNC 将同步方法暴露给 js 端
-WX_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
+``` Objective-C
+// 通过宏 UNI_EXPORT_METHOD_SYNC 将同步方法暴露给 js 端
+UNI_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
 ```
 
 TestModule.m 文件截图：
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi12.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/testModuleM.png)
+
+
+**Module 进阶**
+
+关于 `Module` 和 `Module` 方法的执行特性（同步、异步；执行线程），需要了解：
+
+`uniExecuteThread`
+
+`Module` 方法默认会在 `UI` 线程（`iOS` 主线程）中被调用，建议不要在这做太多耗时的任务。
+
+如果你的任务不需要在 `UI` 线程执行或需要在特定线程执行，需要实现 `DCUniModule` 中的 `uniExecuteThread` 的属性，并返回你希望方法执行所在的线程。
+
+
+**Module 自定义队列和线程**
+
+在 `DCUniModule` 中可以通过 `uniExecuteQueue`来实现自定义 `queue`，通过`uniExecuteThread` 来实现自定义的 `thread`
+
+**特别注意**
+如果同时指定了 `uniExecuteQueue` 和 `uniExecuteThread`, 只会执行 `uniExecuteQueue`, `uniExecuteThread`将会被忽略。
+
+如果只实现了 `uniExecuteThread`, 代码中注意 要线程保活
+
+参考示例代码
+
+```
+    -(NSThread*)uniExecuteThread
+{
+    if ( nil == _uniExecuteThread) {
+        _uniExecuteThread = [[NSThread alloc] initWithTarget:self selector:@selector(uniNewThread) object:nil];
+        [_uniExecuteThread setName:@"TestUniModule"];
+        [_uniExecuteThread start];
+    }
+
+    return _uniExecuteThread;
+}
+
+-(void)uniNewThread
+{
+    @autoreleasepool {
+        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+        [runLoop addPort:[NSMachPort port] forMode:NSRunLoopCommonModes];
+        [runLoop run];
+
+    }
+}
+```
+
 
 #### 配置插件信息
 选中工程中的`HBuilder-uniPlugin-Info.plist`文件`右键->Open As->Source Code`找到`dcloud_uniplugins`节点，copy下面的内容添加到`dcloud_uniplugins`节点下，按您插件的实际信息填写对应的项
@@ -304,18 +358,18 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 ### 扩展组件 component 
 > 以`TestComponent`为例，源码请查看 `iOSSDK/HBuilder-uniPluginDemo/DCTestUniPlugin` 插件工程；
 
-新建`TestComponent`类，继承`WXComponent`类（如果这个类里什么代码也不写，它和默认的的 `<view>` 组件能力是一致的）
+新建`TestComponent`类，继承`DCUniComponent`类（如果这个类里什么代码也不写，它和默认的的 `<view>` 组件能力是一致的）
 
 ```Objective-C
-#import "WXComponent.h"
+#import "DCUniComponent.h"
 
-@interface TestComponent : WXComponent
+@interface TestComponent : DCUniComponent
 
 @end
 
 ```
  
-#### 复写 `WXComponent` 中的生命周期方法
+#### 复写 `DCUniComponent` 中的生命周期方法
 
 **- `loadView` 方法**
 
@@ -449,17 +503,15 @@ export default {
 
 ##### 对应的原生端实现
 
-覆盖组件初始化方法 `initWithRef...`
+覆盖组件方法 `onCreateComponentWithRef...`
 给组件添加一个成员变量记录 `showTraffic` 属性的值，并在 init 方法中初始化
 
 ```Objective-C
-- (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance {
-    if(self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance]) {
-        if (attributes[@"showsTraffic"]) {
-            _showsTraffic = [WXConvert BOOL: attributes[@"showsTraffic"]];
-        }
+-(void)onCreateComponentWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events uniInstance:(DCUniSDKInstance *)uniInstance
+{
+    if (attributes[@"showsTraffic"]) {
+        _showsTraffic = [DCUniConvert BOOL: attributes[@"showsTraffic"]];
     }
-    return self;
 }
 ```
 
@@ -479,7 +531,7 @@ export default {
 - (void)updateAttributes:(NSDictionary *)attributes {
     // 解析属性
     if (attributes[@"showsTraffic"]) {
-        _showsTraffic = [WXConvert BOOL: attributes[@"showsTraffic"]];
+        _showsTraffic = [DCUniConvert BOOL: attributes[@"showsTraffic"]];
         ((MKMapView*)self.view).showsTraffic = _showsTraffic;
     }
 }
@@ -491,7 +543,7 @@ export default {
 
 | 方法 | 描述 |
 | ---------- | --------- |
-| `initWithRef:type:...`| 用给定的属性初始化一个component. |
+| onCreateComponentWithRef:type:...| 用给定的属性初始化一个component后会调用 |
 | layoutDidFinish | 在component完成布局时候会调用. |
 | loadView | 创建component管理的view. |
 | viewWillLoad | 在component的view加载之前会调用. |
@@ -507,13 +559,13 @@ export default {
 
 **原生端实现**
 
-在组件代码中使用宏 `WX_EXPORT_METHOD` 暴露原生方法供前端调用
+在组件代码中使用宏 `UNI_EXPORT_METHOD` 暴露原生方法供前端调用
 
 ```Objective-C
 @implementation TestMapComponent
 
-// 通过 WX_EXPORT_METHOD 将方法暴露给前端
-WX_EXPORT_METHOD(@selector(focus:))
+// 通过 UNI_EXPORT_METHOD 将方法暴露给前端
+UNI_EXPORT_METHOD(@selector(focus:))
 
 // options 为前端传递的参数，支持 NSDictionary 或 NSString 类型
 - (void)focus:(NSDictionary *)options {
@@ -652,7 +704,7 @@ A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK�
 
 ### Q: 如何跳转原生 UIViewController
 
->A: 因为 uni 框架机制，module 的 weexInstance 没有绑定 viewController，故 `weexInstance.viewController` 值为 nil，如果想通过 UIViewController 来跳转页面可使用下面的方法获取 UIViewController**
+>A: 因为 uni 框架机制，module 的 uniInstance 没有绑定 viewController，故 `uniInstance.viewController` 值为 nil，如果想通过 UIViewController 来跳转页面可使用下面的方法获取 UIViewController**
 
 ```javascript
 // 获取当前显示的 UIViewController
@@ -741,4 +793,3 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |SVProgressHUD|
 |Masonry|
 |SocketRoket|
-
