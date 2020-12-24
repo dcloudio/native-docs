@@ -420,7 +420,7 @@ HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 ```json
 "capabilities": {   
 	"entitlements": {   
-		"com.apple.developer.networking.wifi-info":"true"
+		"com.apple.developer.networking.wifi-info":true
 	}            
 }
 ```
