@@ -1,6 +1,6 @@
 # Oauth 模块
  
-- 手机号一键登录
+<!--- 手机号一键登录-->
 - 新浪微博登录
 - QQ登录
 - 微信登录
@@ -8,7 +8,7 @@
 
 需要到各开放平台申请帐号
 
-## 一键登录（univerify）
+<!--## 一键登录（univerify）
 >2.9.12+ 版本支持，手机号一键登录
 
 ### 添加依赖库及资源
@@ -24,6 +24,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/univerify01.png)
 
 2.使用方法请参考 [一键登录 使用指南](https://uniapp.dcloud.io/univerify)
+-->
 ## 微博授权登录
 
 ### 添加依赖库及资源
