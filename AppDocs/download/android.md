@@ -12,11 +12,11 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年12月24日发布
+### 2020年12月25日发布
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.0.1.20201223-alpha）版本生成本地打包App资源。
-+ 修复 nvue image 组件加载图片过多可能引起内存溢出导致页面滚动卡顿的Bug
-+ 修复 3.0.0版本引出的 native.js 获取 runtimeMainActivity 对象执行 registerReceiver 不生效的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.0.2.20201225-alpha）版本生成本地打包App资源。
++ 更新 支付宝SDK为15.8.00，解决提交 GooglePlay 审核报存在不安全的加密模式的Bug 
++ 修复 uni-AD 开屏广告在部分设备可能触发崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
