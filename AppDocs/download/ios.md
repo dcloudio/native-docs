@@ -17,15 +17,9 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年12月25日发布
-[点击下载SDK，提取码: b0vc](https://pan.baidu.com/s/1ozqFoLn6T0k8cZYtAlnmpQ)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.0.1.20201223-alpha）版本生成本地打包App资源。
-+ 【重要】新增 一键登录，运营商网关认证，免短信验证获取手机号、一键免密登录 [详情](https://uniapp.dcloud.net.cn/univerify)
-+ iOS平台 新增 mediaPlaybackRequiresUserAction 属性控制H5页面支持自动播放音频 [详情](https://ask.dcloud.net.cn/article/94)
-+ iOS平台 修复 3.0.0版本引出的 获取当前地理位置弹出系统授权框时，用户拒绝授权后没有触发失败回调的Bug [详情](https://ask.dcloud.net.cn/question/113696)
-+ iOS平台 修复 一键登录授权界面自定义样式不生效的Bug [详情](https://ask.dcloud.net.cn/question/113894)
-+ App-iOS平台 修复 3.0.0 版本引出的 nvue image 组件在iOS14以下系统 webp 格式图片无法正常显示的Bug [详情](https://ask.dcloud.net.cn/question/113840)
-+ App-iOS平台 修复 3.0.0 版本引出的 iOS13.7 设备上 canvas 组件绘制图像会导致应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/113820)
+### 2020年12月28日发布 
+[点击下载SDK，提取码: qaeh](https://pan.baidu.com/s/1YTp7cWHJTMpfSvTBf3z2Eg)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.0.2.20201225-alpha）版本生成本地打包App资源。
 
   
 [百度网盘下载历史版本，提取码: 4p3a](https://pan.baidu.com/s/1C0H4DhfI-wXG0NaR2AiE7g)
