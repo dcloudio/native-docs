@@ -68,9 +68,10 @@ services节点下添加:
 
 #### uni-app项目
 
-| 路径 | 文件 | 
-| :-------: | :-------: |
-| SDK\libs | amap-libs-release.aar，weex_amap-release.aar |
+| 页面 | 路径 | 文件 | 
+| :-------: | :-------: | :-------: |
+|nvue页面| SDK\libs | amap-libs-release.aar，weex_amap-release.aar |
+|vue页面 | SDK\libs | amap-libs-release.aar，map-amap-release.aar |
 
 ### Androidmainfest.xml文件需要修改的项
 
