@@ -3,12 +3,11 @@
 提供相对 HBuilderX 最新正式版、最新Alpha 版本及上个正式版本的 SDK 下载，如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK
 
 ## 更新日志
-#### SDK 3.0.2
-[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.0.2.zip)
+#### SDK 3.0.3
+[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.0.3.zip)
 
-+ 需使用 HBuilderX（3.0.2）版本生成 小程序App 资源
-+ iOS平台 修复 小程序跳转其他原生页面再返回小程序时，对应生命周期事件 onShow、onHide 没有触发的Bug
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.2.20201225-alpha.html)
++ 需使用 HBuilderX（3.0.3）版本生成 小程序App 资源
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.3.20201228-alpha.html)
 
 
 #### SDK 2.9.8
@@ -26,6 +25,12 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.0.2
+
++ 需使用 HBuilderX（3.0.2）版本生成 小程序App 资源
++ iOS平台 修复 小程序跳转其他原生页面再返回小程序时，对应生命周期事件 onShow、onHide 没有触发的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.2.20201225-alpha.html)
 
 #### SDK 3.0.0
 
