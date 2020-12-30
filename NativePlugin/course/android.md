@@ -9,7 +9,13 @@
 - App离线SDK下载：请下载2.9.8+版本的[android平台SDK](/AppDocs/download/android.md)
 
 #### 注意
-- 插件目前暂时不支持Kotlin。
+- 插件目前暂时不支持Kotlin
+- **gradle版本注意事项**
+	+ HX3.0.0+版本开始gradle版本4.6-all升级到6.6-all，tools.build:gradle版本3.2.1升级到4.1.1。
+		- 修复部分SDK集成后编译打包失败问题
+		- 适配android11的编译新特性。
+		- 修复tools.build:gradle:3.2.1版本编译检测是否需要AndroidX依赖库不准确问题。**如果您的插件在HX3.0.0+版本编译报错需要AndroidX依赖库。那证明您之前集成的SDK是需要AndroidX的。请配置useAndroidX。**具体可查看[package.json](NativePlugin/course/package)
+		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.6-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足时可主动配置原生项目根目录gradle.properties文件中的jvmargs内存即可。
 
 ## 导入uni插件原生项目
 
@@ -28,10 +34,6 @@
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_4.png" width=700>
 
-**Tips**
-
-工程gradle配置的gradle-4.6-all版本，tools.build版本为3.2.1。
-从3.0.0版本开始gradle版本升为6.6.all，tools.build版本为4.1.1。
 
 ## 插件开发
 
