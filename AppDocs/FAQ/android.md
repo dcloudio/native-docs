@@ -1,3 +1,36 @@
+* 离线打包编译报错
+	
+	如果离线打包编译时提示如下错误，请参考以下做法
+	~~~
+	Execution failed for task ':hbuilder:checkDebugDuplicateClasses'.
+	> 1 exception was raised by workers:
+	java.lang.IllegalStateException: java.lang.IllegalStateException: Worker finished without being first started
+	~~~
+	
+	将项目根目录下的build.gradle中的gradle插件版本升级到4.1.1
+	
+	~~~
+	buildscript {
+		repositories {
+			jcenter()
+			google()
+		}
+		dependencies {
+			classpath 'com.android.tools.build:gradle:4.1.1'
+		}
+	}
+	~~~
+	
+	修改项目根目录 gradle/gradle-wrapper.properties 下的gradle的版本到6.5
+	
+	~~~
+	distributionBase=GRADLE_USER_HOME
+	distributionPath=wrapper/dists
+	zipStoreBase=GRADLE_USER_HOME
+	zipStorePath=wrapper/dists
+	distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
+	~~~
+
 * 离线打包无法调起应用安装界面
 	
 	如果离线打包调用plus.runtime.install无法调起安装界面，需要在Androidmanifest.xml中添加如下内容
