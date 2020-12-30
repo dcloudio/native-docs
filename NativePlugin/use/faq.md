@@ -45,6 +45,7 @@ A: 同时集成多个原生插件时，如果 A插件 和 B插件 依赖同一�
 + 如果两个插件不是同一作者开发，可能会同时包含独立的三方库 jar/aar，如果三方库文件名称不同，可以告知你的插件使用者 `配置android-exclude.txt解决冲突`
 
 **A：配置android-exclude.txt解决冲突**
+
 如果插件中包含的 jar/aar 依赖库，与 其它插件 或 HBuilderX内置模块 存在冲突，可以配置插件中冲突的 jar/aar 库不参与编译打包来解决冲突。
 比如 插件A 中使用的 a_test.jar 与其它库冲突，可以在 uni-app项目的 `nativeplugins/插件A/` 目录（云端插件需要手动创建目录）中创建 `android-exclude.txt` 文件，文件内容如下：
 ```
