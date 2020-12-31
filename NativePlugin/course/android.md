@@ -591,7 +591,6 @@ public void onActivityResume() {
 + .os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！
 + 插件中包含FileProvider云打包冲突，可通过http://ask.dcloud.net.cn/article/36105此贴配置绕过。
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
-+ androidx暂时不支持。请使用v4、v7实现插件。
 
 
 #### 广告插件说明
