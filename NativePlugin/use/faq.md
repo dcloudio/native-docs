@@ -39,6 +39,7 @@ A：插件作者需注意保持好版本质量和向下兼容。一旦提交市�
 xxx.a
 ```
 每行写一个文件名，如下图所示：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/ios-exclude.png)
 
 
