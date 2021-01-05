@@ -669,7 +669,7 @@ A:可以按以下步骤操作实现：
    ```
 
 Q:插件开发支持Androidx吗?
-A:可以配置package.json 设置useAndroidX = true
+A:可以配置package.json 设置useAndroidX = true 目前已知讯飞语音无法支持androidx配置不能兼容需要注意并提醒插件使用者。
 
 Q:component、module的生命周回调 不支持OnActivityCreate()，某些注册服务需要该事件注册怎么办。
 A:component可以在的构造函数中调用相关注册初始化服务等操作， module的构造无法获取到上下文。可能需要换一个思路。通过js调用相关初始化的函数。
