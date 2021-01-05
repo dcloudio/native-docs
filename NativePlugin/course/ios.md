@@ -190,6 +190,37 @@ TestModule.m 文件截图：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/testModuleM.png)
 
 
+#### Hook系统事件
+如果需要在 `App` 启动时初始化或者需要获取系统的一些事件， 需要新建一个`XXXXProxy`类（注意命名加前缀防止冲突），继承 `NSObject`
+遵守`UniPluginProtocol`协议
+
+```
+-(void)onCreateUniPlugin;
+
+- (BOOL)application:(UIApplication *_Nullable)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
+- (void)application:(UIApplication *_Nullable)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *_Nullable)deviceToken;
+- (void)application:(UIApplication *_Nullable)application didFailToRegisterForRemoteNotificationsWithError:(NSError *_Nullable)err;
+- (void)application:(UIApplication *_Nullable)application didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo;
+- (void)application:(UIApplication *_Nullable)application didReceiveLocalNotification:(UILocalNotification *_Nullable)notification;
+- (BOOL)application:(UIApplication *_Nullable)application handleOpenURL:(NSURL *_Nullable)url;
+- (BOOL)application:(UIApplication *_Nullable)app openURL:(NSURL *_Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *_Nullable)options NS_AVAILABLE_IOS(9_0);
+
+- (void)applicationWillResignActive:(UIApplication *)application;
+- (void)applicationDidBecomeActive:(UIApplication *)application;
+- (void)applicationDidEnterBackground:(UIApplication *)application;
+- (void)applicationWillEnterForeground:(UIApplication *)application;
+
+- (BOOL)application:(UIApplication *_Nullable)application continueUserActivity:(NSUserActivity *_Nullable)userActivity restorationHandler:(void(^_Nullable)(NSArray * __nullable restorableObjects))restorationHandler API_AVAILABLE(ios(8.0));
+
+```
+
+具体示例请查看 [离线SDK包](AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
+
+
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_h.jpg)
+
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_m.jpg)
+
 **Module 进阶**
 
 关于 `Module` 和 `Module` 方法的执行特性（同步、异步；执行线程），需要了解：
@@ -688,6 +719,7 @@ UNI_EXPORT_METHOD(@selector(focus:))
 ### 提交插件市场
 
 按照上面的方式放到 HBuilderX 的 uni-app 项目中提交打包测试完插件后，可以将插件包压缩成 zip 格式，然后提交到插件市场共享给其他开发者使用，登录注册[DCloud插件市场](https://ext.dcloud.net.cn/)，然后按照提示步骤提交插件，（需要编写对应插件的使用说明文档，.md（markdown）格式）；
+
 
 ## 常见问题
 
