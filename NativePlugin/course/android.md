@@ -68,13 +68,13 @@ dependencies {
 	compileOnly 'com.android.support:appcompat-v7:28.0.0'
 	compileOnly 'com.alibaba:fastjson:1.1.46.android'
 
-	compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')
+	compileOnly fileTree(include: ['uniapp-v8-release.aar'], dir: '../app/libs')
 }
 ```
 
 **Tips:**
 	
-uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
+uniapp-v8-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	
 #### 创建TestModule类
 
