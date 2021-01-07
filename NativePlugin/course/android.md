@@ -15,7 +15,11 @@
 		- 修复部分SDK集成后编译打包失败问题
 		- 适配android11的编译新特性。
 		- 修复tools.build:gradle:3.2.1版本编译检测是否需要AndroidX依赖库不准确问题。**如果您的插件在HX3.0.0+版本编译报错需要AndroidX依赖库。那证明您之前集成的SDK是需要AndroidX的。请配置useAndroidX。**具体可查看[package.json](NativePlugin/course/package)
-		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.5-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足时可主动配置原生项目根目录gradle.properties文件中的jvmargs内存即可。
+		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.5-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足时可主动配置原生项目根目录gradle.properties文件中的jvmargs内存即可。、
+- **Activity变更为FragmentActivity注意事项**
+	+ HX3.0.7版本云打包及相应版本SDK开始将`Activity`变更为`FragmentActivity`.解决部分插件开发者需要加载Fragment的需求。但也带来了一些代码与之前不同的修改。需要注意以下问题：
+		- requestPermissions需要限制requestCode的值域，之前`Activity`没有限制requestCode的值域。`FragmentActivity`的权限申请限制requestCode的值域不能为负值,也不能大于16位bit值65536。否则报异常或崩溃`Can only use lower 16 bits for requestCode`
+	
 
 ## 导入uni插件原生项目
 
@@ -68,13 +72,13 @@ dependencies {
 	compileOnly 'com.android.support:appcompat-v7:28.0.0'
 	compileOnly 'com.alibaba:fastjson:1.1.46.android'
 
-	compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')
+	compileOnly fileTree(include: ['uniapp-v8-release.aar'], dir: '../app/libs')
 }
 ```
 
 **Tips:**
 	
-uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
+uniapp-v8-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	
 #### 创建TestModule类
 
@@ -591,7 +595,6 @@ public void onActivityResume() {
 + .os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！
 + 插件中包含FileProvider云打包冲突，可通过http://ask.dcloud.net.cn/article/36105此贴配置绕过。
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
-+ androidx暂时不支持。请使用v4、v7实现插件。
 
 
 #### 广告插件说明
@@ -670,7 +673,7 @@ A:可以按以下步骤操作实现：
    ```
 
 Q:插件开发支持Androidx吗?
-A:可以配置package.json 设置useAndroidX = true
+A:可以配置package.json 设置useAndroidX = true 目前已知讯飞语音无法支持androidx配置不能兼容需要注意并提醒插件使用者。
 
 Q:component、module的生命周回调 不支持OnActivityCreate()，某些注册服务需要该事件注册怎么办。
 A:component可以在的构造函数中调用相关注册初始化服务等操作， module的构造无法获取到上下文。可能需要换一个思路。通过js调用相关初始化的函数。

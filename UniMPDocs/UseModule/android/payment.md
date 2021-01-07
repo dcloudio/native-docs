@@ -57,6 +57,20 @@ dcloud_properties.xml文件在assets/data目录下
 | :-------: | :-------: |
 | $你的包名\wxapi | WXPayEntryActivity.java |
 
+### WXPayEntryActivity
+
+继承AbsWXPayCallbackActivity即可。
+
+~~~
+package 应用包名.wxapi;
+
+import io.dcloud.feature.payment.weixin.AbsWXPayCallbackActivity;
+
+public class WXPayEntryActivity extends AbsWXPayCallbackActivity{
+
+}
+~~~
+
 ### Androidmainfest.xml文件需要修改的项
 
 **需要在application节点前添加权限**

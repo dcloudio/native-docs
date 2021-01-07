@@ -39,6 +39,7 @@ A：插件作者需注意保持好版本质量和向下兼容。一旦提交市�
 xxx.a
 ```
 每行写一个文件名，如下图所示：
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/ios-exclude.png)
 
 
@@ -48,7 +49,7 @@ xxx.a
 + 首先配置依赖库使用 [json格式dependencies](/NativePlugin/course/package?id=dependencies)，并设置标识 id 属性避免重复引用依赖库, 减少多个插件配置相同依赖库产生冲突
 + 如果插件依赖的云端仓储中特定库与 HBuilderX内置模块 存在冲突，可以尝试使用[exclude group](/NativePlugin/course/package?id=dependencies)剥离相关冲突库。并在插件文档中告知你的插件使用者在HBuilderX中配置使用 `XXX模块` 才可以正常使用。
 
-**A： 插件 与 HBuilderX内置模块 包含的依赖库冲突，这种情况多数是两者出现了重复类导致，可以按以下方式解决**
+**A：插件 与 HBuilderX内置模块 包含的依赖库冲突，这种情况多数是两者出现了重复类导致，可以按以下方式解决**
 + 首先选择适配 HBuilderX内置模块 使用的依赖库版本（参考[HBuilderX依赖库列表](https://ask.dcloud.net.cn/article/35419)）：
   - 插件中去掉冲突的依赖库，在插件文档中告知你的插件使用者在HBuilderX中配置使用 `XXX模块` 才可以正常使用
   - 插件中包含冲突的依赖库，在插件文档中告知你的插件使用者冲突时 `配置android-exclude.txt解决冲突`

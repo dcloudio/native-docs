@@ -16,6 +16,19 @@
 | :-------: | :-------: |
 | %用户包名%\wxapi | WXEntryActivity.java |
 
+### WXPayEntryActivity 
+
+继承AbsWXCallbackActivity即可
+
+~~~
+package 应用包名.wxapi;
+
+import io.dcloud.feature.oauth.weixin.AbsWXCallbackActivity;
+
+public class WXEntryActivity extends AbsWXCallbackActivity{
+
+}
+~~~
 
 ### Androidmainfest.xml文件需要修改的项
 
