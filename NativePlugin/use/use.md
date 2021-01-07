@@ -8,7 +8,7 @@
 ## 第二步：使用自定义基座打包uni原生插件 （注：请使用真机运行自定义基座）
 使用uni原生插件必须先提交云端打包才能生效，购买插件后在应用的manifest.json页面的“App原生插件配置”项下点击“选择云端插件”，选择需要打包的插件：
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190416/1b5297e695ad1536ddafe3c834e9c297.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190416/1b5297e695ad1536ddafe3c834e9c297.png)
 
 **如果插件已下载到本地，点击“选择本地插件”，选择需要打包的插件**
 

@@ -45,7 +45,7 @@
 
 2.在工程的 info.plist 添加 `amap`节点，添加 appkey 信息，如下图
    
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
 
 
 ### uni项目的nvue页面中使用地图组件，目前只支持高德地图
@@ -63,7 +63,7 @@
 
 2.在工程的 info.plist 添加 `amap`节点，添加 appkey 信息，如下图
    
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
 
 
 **注意：工程里只能有一个地图，其他的地图功能，要删除info.plist里的key，和对应的库文件,请详细根据Feature-iOS.xml文件的内容配置**

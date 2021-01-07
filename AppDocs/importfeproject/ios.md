@@ -6,7 +6,7 @@
 ## 配置应用信息
 
 打开 Xcode 工程目录下的control.xml文件，修改appid值：
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190424/f16ec2cf192ebd5a8fa653b444771841.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190424/f16ec2cf192ebd5a8fa653b444771841.png)
 
 - appid：值为`HBuilderX`应用的`appid`，必须与5+应用`manifest.json`中的`id`字段值（`uni-app`项目为`manifest.json`中的`appid`字段值）完全一致；
 

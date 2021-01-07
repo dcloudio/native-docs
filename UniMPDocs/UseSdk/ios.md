@@ -33,7 +33,7 @@ UniMPSDK/Core 目录结构说明
 
 接下来需要添加系统依赖库，在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Phases-> Link Binary With Libaries` 中点击“+”按钮，在弹出的窗口中查找并选择所需的库（见下表），单击 “Add” 按钮，将库文件添加到工程中。
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/ce0186518a6ea354826d200f70aea8f9.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200211/ce0186518a6ea354826d200f70aea8f9.png" width="50%">
 
 |依赖的系统库|   |   |
 |:-:|:-:|:-:|
@@ -61,28 +61,28 @@ UniMPSDK/Core 目录结构说明
 
 在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Settings->Other Linker Flags` 中添加 `-ObjC` 如下图
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200211/112a127235e7922473555ca79d3c017d.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200211/112a127235e7922473555ca79d3c017d.png" width="50%">
 
 ## 生成小程序应用资源
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200208/b57287eaf2e63b0076bf36b943fc486a.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200208/b57287eaf2e63b0076bf36b943fc486a.png" width="50%">
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包 
 （注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包”）
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/9fea6e3877e029ef03f4fed4db434dea.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/9fea6e3877e029ef03f4fed4db434dea.png" width="50%">
 
 然后点击“浏览” 选择wgt包导出路径，点击 “生成wgt”
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/ef2b2185095d906a6ea347c02a5bf6cf.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/ef2b2185095d906a6ea347c02a5bf6cf.png" width="50%">
 
 项目编译完成后会在控制台输出wgt包的路径，点击路径打开 wgt 资源包所在目录
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/d64ae362a05b3a52bae197060cebe5b6.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/d64ae362a05b3a52bae197060cebe5b6.png" width="50%">
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/273b1f21d65d4e59a823e32adde0b772.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/273b1f21d65d4e59a823e32adde0b772.png" width="50%">
 
 
 如图，`__UNI__11E9B73.wgt`就是应用资源包，（`__UNI__11E9B73` 为小程序的 appid）
@@ -93,11 +93,11 @@ UniMPSDK/Core 目录结构说明
 
 打开原生工程目录在 UniMP 路径中创建名称为`Apps`的文件夹，将之前导出的wgt包拷贝到`Apps `文件夹中，如下图
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/dc8fdeb59004c6cf2ec1cf3c62138b9b.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/dc8fdeb59004c6cf2ec1cf3c62138b9b.png" width="50%">
 
 然后在原生工程中左侧目录中选中导资源文件的位置（示例中是 UniMP/），在右键菜单中选择Add Files to “工程名...”，然后打开工程目录，选择 Apps 文件夹，然后点击“Add”，将应用资源包添加到工程中，如下图所示；
 
-<img src="https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200225/fc55a6d3f596ceb570bba82b82d83fdf.png" width="50%">
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/fc55a6d3f596ceb570bba82b82d83fdf.png" width="50%">
 
 ## 代码实现
 

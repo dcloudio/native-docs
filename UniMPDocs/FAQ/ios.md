@@ -1,12 +1,12 @@
 ## Q：原生工程弹窗提示 “HTML5 + Rumtime D”
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200226/b761ed2d441819a7a369fbffc9ee7586.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200226/b761ed2d441819a7a369fbffc9ee7586.png)
 
 A：请参考解决方法 [点击查看详情](https://ask.dcloud.net.cn/article/35963)
 
 ## Q：提示 打包时未添加  xxx 模块 ... 
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200320/71334000758150ffe0b3440e4f29e3e0.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200320/71334000758150ffe0b3440e4f29e3e0.png)
 
 A： 请参考这个 [教程](https://ask.dcloud.net.cn/docs/#https://ask.dcloud.net.cn/article/36942) 将相关模块的依赖文件集成到原生工程中即可；
 
