@@ -1,6 +1,6 @@
 uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用了相关模块的 API 但是原生工程没有添加相关依赖的时候会出现如下提示
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200320/3c5d9ebaddef0ffb3f20c7d49f2daeea.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200320/3c5d9ebaddef0ffb3f20c7d49f2daeea.png)
 
 按照下面的教程将依赖库添加到原生工程中即可
 您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件，在`UniMPSDK/Features`目录中
@@ -24,18 +24,18 @@ uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用�
 
 首先查看配置文件，需要添加 `liblibCamera.a`、`AssetsLibrary.framework` 依赖库，及 `TZImagePickerController.bundle` 资源文件
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200208/28f00fe28c66f0f662fa9a0a00194bde.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200208/28f00fe28c66f0f662fa9a0a00194bde.png)
 
 ##### 添加依赖库
 
 将 UniMPSDK/Features/Lib 中的 `liblibCamera.a`库及`AssetsLibrary.framework` 系统库，添加到工程的 `TARGETS->Build Phases-> Link Binary With Libaries` 中；
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200208/20de01b699d8a9e7d5e3d9b4325bdf67.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200208/20de01b699d8a9e7d5e3d9b4325bdf67.png)
 
 ##### 添加依赖资源文件
 然后将 UniMPSDK/Features/Resources 中的`TZImagePickerController.bundle` 资源文件添加到工程中
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200208/ce1ae758767ffe692adf2d60c98a0689.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200208/ce1ae758767ffe692adf2d60c98a0689.png)
 
 然后即可调用 Gallery 相关功能；
 

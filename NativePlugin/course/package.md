@@ -1,10 +1,10 @@
 uni原生插件（native plugin）提交[DCloud插件市场](https://ext.dcloud.net.cn/)需按以下目录格式配置：
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20181226/d07abb0bd2edf0723f9d59d6e6380c50.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181226/d07abb0bd2edf0723f9d59d6e6380c50.png)
 
 上传时压缩为zip格式文件，压缩文件中必须包含目录名称，如下：
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190222/61dbe1fbce40aef55ed549f418956405.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190222/61dbe1fbce40aef55ed549f418956405.png)
 
 
 ## package.json
@@ -427,7 +427,7 @@ HBuilderX2.6.0+开始支持配置插件支持的CPU架构类型
 
 ### Background Modes
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190927/a5af6858c1c3535419aff6d3ef7ca8f9.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190927/a5af6858c1c3535419aff6d3ef7ca8f9.png)
 
 如果插件需要申请后台运行权限，需要插件使用者在项目的 manifest.json 中添加权限配置，请查看 [添加后台权限教程](https://ask.dcloud.net.cn/article/36430)，插件开发者应在插件使用教程中说明；
 

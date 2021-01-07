@@ -13,11 +13,11 @@
 ### 工程配置
 1.在URL Types 中添加配置： identifier 填写 `alixpay` ，URL Schemes 填写 `alix[后面是您在支付宝平台申请的appid]` ,如果没有该项按照图中的格式创建
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200415/e99c7479d3ff7ebbd6063e5687bcaeac.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200415/e99c7479d3ff7ebbd6063e5687bcaeac.png)
 
 2.在 info.plist 添加 Schemes 白名单配置
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200415/2547027bea852aa761c90363aed36688.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200415/2547027bea852aa761c90363aed36688.png)
 
 ## 微信支付
 
@@ -35,15 +35,15 @@
 ### 工程配置
 1.在URL Types 中添加配置： identifier 填写 `weixin` ，URL Schemes 填写`wx[后面是您在微信平台申请的appkey]` ,如果没有该项按照图中的格式创建
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200415/c12811edad437d8ce204cbdc8ac72803.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200415/c12811edad437d8ce204cbdc8ac72803.png)
 
 2.在 info.plist 添加 Schemes 白名单配置
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20191203/7bc7afb901b0c2a7b8f057be5cc81a89.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191203/7bc7afb901b0c2a7b8f057be5cc81a89.png)
 
 3.在 info.plist root 节点添加`UniversalLinks`字段，值和微信开放平台配置的一致，参考如下：
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
 4.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
@@ -68,7 +68,7 @@
 
 1、在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200415/4fb6270ceaedb5244ae8da70a4e9782a.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200415/4fb6270ceaedb5244ae8da70a4e9782a.png)
 
 
 2、除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下

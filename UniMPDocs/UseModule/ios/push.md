@@ -12,7 +12,7 @@
 1. 在 [UniPush官网](https://dev.dcloud.net.cn/uni/push) 申请App，获取appid 等信息
 2. 在工程的 info.plist 中添加 "getui" 字段，并填写如下信息
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20181213/4688577602fe1429ecfa585eaca0c31b.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181213/4688577602fe1429ecfa585eaca0c31b.png)
 
 ## 个推推送
 > 基于个推官方标准SDK实现
@@ -28,4 +28,4 @@
 1. 在 [个推官网](https://dev.getui.com/) 申请App，获取appid 等信息
 2. 在工程的 info.plist 中添加 "getui" 字段，并填写如下信息
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20181213/4688577602fe1429ecfa585eaca0c31b.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181213/4688577602fe1429ecfa585eaca0c31b.png)

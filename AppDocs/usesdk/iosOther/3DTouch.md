@@ -1,11 +1,11 @@
 Apple最新发布的iPhone 6s (plus) 设备支持3D touch功能，用户可通过重按屏幕上的图标，打开设置的菜单。H5+ SDK已经支持添加应用的快捷菜单，显示效果如下：
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20151029/108bbd09e1614af36bdb14976f09b586.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20151029/108bbd09e1614af36bdb14976f09b586.png)
 
 ### 离线工程配置的方法
 打开离线打包工程的info.plist文件，在文件中添加UIApplicationShortcutItems节点，并在节点下添加item。
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20151029/b266f27aa4a93d13d1c02bc8e4daa252.jpg)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20151029/b266f27aa4a93d13d1c02bc8e4daa252.jpg)
 
 **各字段值规范如下表**
 

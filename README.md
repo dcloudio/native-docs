@@ -1,7 +1,7 @@
 ## 简介 
 uni小程序SDK，是为原生App打造的可运行基于 [uni-app](https://uniapp.dcloud.io/) 开发的小程序前端项目的框架，从而帮助原生App快速获取小程序的能力，效果如下：
 
-<img src="https://img-cdn-tc.dcloud.net.cnuploads/article/20200208/17968bd5afe1e15f1b0b4965a194726f.gif" width=230>
+<img src="https://img-cdn-tc.dcloud.net.cn/uploads/article/20200208/17968bd5afe1e15f1b0b4965a194726f.gif" width=230>
 
 ## 基本概念
 

@@ -32,10 +32,10 @@
 ### 帐号配置
 1.首先到[讯飞语音官方网站](https://console.xfyun.cn/app/myapp)创建App，获取 appid 信息。
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200416/a36252c51d38d37446f96794025ddcbd.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200416/a36252c51d38d37446f96794025ddcbd.png)
 
 2.在 info.plist 中创建 iFly 节点，填入自己帐号的信息，按照下图中的格式创建
 
-![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200409/98a2e2ae9cb110890e51c8bf769f87a7.png)
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200409/98a2e2ae9cb110890e51c8bf769f87a7.png)
 
 **注意：语言识别功能百度模块或讯飞模块只能选一个**
