@@ -15,7 +15,11 @@
 		- 修复部分SDK集成后编译打包失败问题
 		- 适配android11的编译新特性。
 		- 修复tools.build:gradle:3.2.1版本编译检测是否需要AndroidX依赖库不准确问题。**如果您的插件在HX3.0.0+版本编译报错需要AndroidX依赖库。那证明您之前集成的SDK是需要AndroidX的。请配置useAndroidX。**具体可查看[package.json](NativePlugin/course/package)
-		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.5-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足时可主动配置原生项目根目录gradle.properties文件中的jvmargs内存即可。
+		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.5-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足时可主动配置原生项目根目录gradle.properties文件中的jvmargs内存即可。、
+- **Activity变更为FragmentActivity注意事项**
+	+ HX3.0.7版本云打包及相应版本SDK开始将`Activity`变更为`FragmentActivity`.解决部分插件开发者需要加载Fragment的需求。但也带来了一些代码与之前不同的修改。需要注意以下问题：
+		- requestPermissions需要限制requestCode的值域，之前`Activity`没有限制requestCode的值域。`FragmentActivity`的权限申请限制requestCode的值域不能为负值,也不能大于16位bit值65536。否则报异常或崩溃`Can only use lower 16 bits for requestCode`
+	
 
 ## 导入uni插件原生项目
 
