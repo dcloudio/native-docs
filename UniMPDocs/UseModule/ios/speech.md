@@ -10,11 +10,11 @@
 ### 帐号配置
 首先到[百度语音官方网站](https://ai.baidu.com/tech/speech/asr) 创建应用获取 AppID、APIKey 等信息。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200416/d7c44c0e43904b5a05f6f438c89c31b3.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200416/d7c44c0e43904b5a05f6f438c89c31b3.png)
 
 然后在 info.plist 中创建 baiduspeech 节点，填入自己帐号的信息，按照下图中的格式创建
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20181217/42ccf61d3d132f7698201124e0ee2ff8.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20181217/42ccf61d3d132f7698201124e0ee2ff8.png)
 
 
 ## 讯飞语音配置
@@ -30,10 +30,10 @@
 ### 帐号配置
 首先到[讯飞语音官方网站](https://console.xfyun.cn/app/myapp)创建App，获取 appid 信息。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200416/a36252c51d38d37446f96794025ddcbd.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200416/a36252c51d38d37446f96794025ddcbd.png)
 
 然后在 info.plist 中创建 iFly 节点，填入自己帐号的信息，按照下图中的格式创建
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20200409/98a2e2ae9cb110890e51c8bf769f87a7.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20200409/98a2e2ae9cb110890e51c8bf769f87a7.png)
 
 **注意：语言识别功能百度模块或讯飞模块只能选一个**

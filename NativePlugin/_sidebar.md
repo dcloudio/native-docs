@@ -14,7 +14,7 @@
   * [iOS 离线打包使用插件](/NativePlugin/offline_package/ios.md) 
 <div class="contact-box">
   <div class="contact-item">
-    <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/qq@2x.png" width="20" height="20"/>
+    <img src="//img-cdn-tc.dcloud.net.cnuniapp/doc/qq@2x.png" width="20" height="20"/>
     <div class="contact-smg">
       <div>原生开发官方QQ交流群</div>
     <div>群1：256775471 &nbsp;<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e9a0a98c947bf555cf61cae9c63263561b7424924e0dbb9acb6e8c7c02a8054e">点此加入</a></div>
@@ -23,10 +23,10 @@
     </div>
   </div>
   <div class="contact-item">
-    <img src="//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/weixin@2x.png" width="20" height="20"/>
+    <img src="//img-cdn-tc.dcloud.net.cnuniapp/doc/weixin@2x.png" width="20" height="20"/>
     <div class="contact-smg">
       <div>关注微信公众号</div>
-      <img src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/doc/weixin.jpg" width="90" height="90"/>
+      <img src="https://img-cdn-tc.dcloud.net.cnuniapp/doc/weixin.jpg" width="90" height="90"/>
     </div>
   </div>
 </div>

@@ -93,18 +93,18 @@
 
 frameworks 为插件依赖的系统 framework 库，在工程的 `Link Binary With Libraries` 中点击下面的 + 号将插件所需的系统库添加进来即可
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/b866d7b2ebcd877471f8e22110991839.png)
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/2eabff8064866c67fb58a6f3b0bfaf9b.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/b866d7b2ebcd877471f8e22110991839.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/2eabff8064866c67fb58a6f3b0bfaf9b.png)
 
 **embedFrameworks**
 
 embedFrameworks 为插件依赖的动态 framework 库，需要以动态库的方式引入工程一定不要弄错，在工程的 `Embed Frameworks` 中点击下面的 + 号，在插件ios目录中将 embedFrameworks 中所配置的动态库添加进来
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/fde851c922cfdf8dd2ee15465ccd671a.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/fde851c922cfdf8dd2ee15465ccd671a.png)
 
 在弹窗中选择 Add Other 然后找到插件ios目录下面的动态 framework 库
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/42a0054775dfbddede798d37437328f1.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/42a0054775dfbddede798d37437328f1.png)
 
 **其他 .a 静态库及 frameworks 静态库**
 
@@ -114,8 +114,8 @@ embedFrameworks 为插件依赖的动态 framework 库，需要以动态库的�
 
 resources 节点配置的是插件所需的资源文件，在工程的 `Copy Bundle Resources` 中点击下面的 + 号将插件所有资源文件添加到工程中
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/0bd77e3d4a84ffba2e5e832c752c4071.png)
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/a94e2414a5a5b51cc6b4268f4fdcefe7.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/0bd77e3d4a84ffba2e5e832c752c4071.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/a94e2414a5a5b51cc6b4268f4fdcefe7.png)
 
 **headers**
 
@@ -125,7 +125,7 @@ headers 为插件所暴露的头文件，只需将这些文件直接拖入到工
 
 privacies 为插件所需要到的系统权限，需要在 info.plist 中添加相应权限描述 如
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/cef6439f0089a243d264d2c381832a9b.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/cef6439f0089a243d264d2c381832a9b.png)
 
 **parameters**
 
@@ -151,7 +151,7 @@ info.plist 中添加
 
 ### 2.将下载的插件解压，将插件拷贝到离线工程根目录中
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/1396bd122c25c5c87d62a1843c58454e.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/1396bd122c25c5c87d62a1843c58454e.png)
 
 ### 3.查看 package.json 文件并配置工程
 这个插件配置信息比较简单只有 plugins 节点
@@ -204,7 +204,7 @@ info.plist 中添加
 
 将ios目录下的.a库添加到工程中
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190404/352795d6da1d8c47bc219e81fb29b3a2.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190404/352795d6da1d8c47bc219e81fb29b3a2.png)
 
 至此本插件集成配置已完成
 

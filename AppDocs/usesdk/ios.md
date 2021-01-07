@@ -190,11 +190,11 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 1、将manifest.json页面切换到“模块权限配置”项，在“iOS隐私信息访问的许可描述”栏下配置应用需要使用到的隐私描述信息：
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190420/a19ff51f22c97f0af9add83788878684.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190420/a19ff51f22c97f0af9add83788878684.png)
 
 2、输入完成后切换到代码视图，uni-app项目在"app-plus"->"distribute"->"ios"->"privacyDescription"节点，5+ APP项目在"plus"->"distribute"->"apple"->"privacyDescription"节点下可看到输入的内容：
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190420/8f37db8f8bf2ada8d86612f1f93c4229.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190420/8f37db8f8bf2ada8d86612f1f93c4229.png)
 
 3、将"privacyDescription"节点下的key（NSPhotoLibraryUsageDescription）和值按下图的方式拷贝到InfoPlist.strings下对应的语言文件里去。
 
@@ -254,13 +254,13 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 ### 如何用离线打包工程制作自定义调试基座
 1、在打包原生工程里找到 control.xml文件，在HBuilder节点里查看是否有这2个： debug="true"  syncDebug="true" 配置(注意-打AppStore包的时候，这个配置需要去掉，否则会导致热更新失败！)，没有的话增加上，然后保存。
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/a0f6ee9a9eb0536f7a0e3cd42b4cb133.png)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190115/a0f6ee9a9eb0536f7a0e3cd42b4cb133.png)
 
 2、 确保Xcode工程的Bundle identifier不为 io.dcloud.HBuidler。
 
 3、在原生工程里找到info.plist文件并增加一项，如下图：
 
-![](https://img-cdn-qiniu.dcloud.net.cn/uploads/article/20190115/bd9b12b4d150001d5bb4b38d3e636e7f.jpg)
+![](https://img-cdn-tc.dcloud.net.cnuploads/article/20190115/bd9b12b4d150001d5bb4b38d3e636e7f.jpg)
 
 4、确保原生工程里Pandora文件夹下的apps文件夹里只有一个文件夹（文件夹的名称和里面的manifest的id值相同）
 

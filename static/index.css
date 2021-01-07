@@ -4,10 +4,10 @@
   font-family: uniicons;
   font-weight: normal;
   font-style: normal;
-  src: url('https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.eot');
-  src: url('https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.eot?#iefix') format('embedded-opentype'),
-    url('https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.woff') format('woff'),
-    url('https://img-cdn-qiniu.dcloud.net.cn/fonts/uni.ttf') format('truetype');
+  src: url('https://img-cdn-tc.dcloud.net.cnfonts/uni.eot');
+  src: url('https://img-cdn-tc.dcloud.net.cnfonts/uni.eot?#iefix') format('embedded-opentype'),
+    url('https://img-cdn-tc.dcloud.net.cnfonts/uni.woff') format('woff'),
+    url('https://img-cdn-tc.dcloud.net.cnfonts/uni.ttf') format('truetype');
 }
 
 main {
@@ -716,7 +716,7 @@ a.contact-item {
   height: 30px;
   background-repeat: no-repeat;
   background-size: 91px 30px;
-  background-image: url(//img-cdn-qiniu.dcloud.net.cn/uniapp/doc/logo2@2x.png);
+  background-image: url(//img-cdn-tc.dcloud.net.cnuniapp/doc/logo2@2x.png);
 }
 
 .uniapp-logo {
@@ -771,7 +771,7 @@ a.contact-item {
 }
 
 .icon_img_preview_close {
-  background: transparent url(https://img-cdn-qiniu.dcloud.net.cn/uniapp/doc/icon-close.png) no-repeat 0 0;
+  background: transparent url(https://img-cdn-tc.dcloud.net.cnuniapp/doc/icon-close.png) no-repeat 0 0;
   width: 16px;
   height: 16px;
   vertical-align: middle;
@@ -781,7 +781,7 @@ a.contact-item {
 }
 
 .img_preview_close:hover .icon_img_preview_close {
-  background: transparent url(https://img-cdn-qiniu.dcloud.net.cn/uniapp/doc/icon-close-hover.png) no-repeat 0 0;
+  background: transparent url(https://img-cdn-tc.dcloud.net.cnuniapp/doc/icon-close-hover.png) no-repeat 0 0;
 }
 
 .img_preview_wrp img {
@@ -848,7 +848,7 @@ a.contact-item {
   -webkit-transform: translateY(-50%);
   z-index: 20;
   display: none;
-  background-image: url(//img-cdn-qiniu.dcloud.net.cn/new-page/arrow.png);
+  background-image: url(//img-cdn-tc.dcloud.net.cnnew-page/arrow.png);
 }
 
 .slider-btn.slider-btn-left {
