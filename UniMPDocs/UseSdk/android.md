@@ -193,7 +193,7 @@ DCuniMPSDK.getInstance().initialize(this, config);
 
 **Tips**
 
-为了防止其他三方SDK可能印象小程序的运行 请禁止在小程序进程初始化其他三方SDK
+为了防止其他三方SDK可能影响小程序的运行 请禁止在小程序进程初始化其他三方SDK
 
 ```
 // 非小程序进程
