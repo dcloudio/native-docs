@@ -13,7 +13,7 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年12月31日发布
+### 2020年01月11日发布
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.0.7.20210109-alpha）版本生成本地打包App资源。
