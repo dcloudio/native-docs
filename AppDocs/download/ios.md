@@ -16,7 +16,7 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2020年12月29日发布 
+### 2021年1月11日发布 
 [点击下载SDK，提取码: folm](https://pan.baidu.com/s/1pU-DVkT_IXrRa2ro2wobPg)
 + 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.0.7.20210109）版本生成本地打包App资源。
 + iOS平台 修复 previewImage 预览网络图片地址中包含query参数过多可能无法显示的Bug [详情](https://ask.dcloud.net.cn/question/98259)
