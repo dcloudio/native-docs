@@ -17,9 +17,13 @@
 ## iOS 离线SDK - Alpha版
 
 ### 2020年12月29日发布 
-[点击下载SDK，提取码: g8re](https://pan.baidu.com/s/1U1XJseW24KePTxMMSYyiaQ)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.0.4.20201230-alpha）版本生成本地打包App资源。
-+ 【重要】新增 一键登录，运营商网关认证，免短信验证获取手机号、一键免密登录 [详情](https://uniapp.dcloud.net.cn/univerify)
-+ iOS平台 修复 uni-AD 快手联盟 激励视频广告的奖励倒计时完成后关闭广告事件 onClose 的 isEnded 属性值可能为 false 的Bug
+[点击下载SDK，提取码: folm](https://pan.baidu.com/s/1pU-DVkT_IXrRa2ro2wobPg)
++ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.0.7.20210109）版本生成本地打包App资源。
++ iOS平台 修复 previewImage 预览网络图片地址中包含query参数过多可能无法显示的Bug [详情](https://ask.dcloud.net.cn/question/98259)
++ iOS平台 修复 audio 音频资源地址中包含中文字符时无法正常播放的Bug [详情](https://ask.dcloud.net.cn/question/103421)
++ iOS平台 修复 video 动态更新 src 属性值域名相同时无法正常切换视频的Bug [详情](https://ask.dcloud.net.cn/question/110386)
++ iOS平台 修复 video 视频资源地址中包含中文字符时无法正常播放的Bug
++ iOS平台 修复 titleNView 标题文字在隐藏软键盘时可能出现抖动的Bug
++ App-iOS平台 修复 nvue refresh 组件处于刷新状态时显示位置向下偏移0.5像素的Bug
   
 [百度网盘下载历史版本，提取码: 4p3a](https://pan.baidu.com/s/1C0H4DhfI-wXG0NaR2AiE7g)
