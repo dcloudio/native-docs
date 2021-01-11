@@ -814,14 +814,26 @@ A: 这类错误基本都是缺少依赖库导致的，仔细看报错信息，�
 
 A：如果您依赖的三方库与SDK依赖的三方库冲突
 
-- 对于源码开源的三方库比如 SDWebImage、ZXing等，为了保证SDK功能的完整性所以请您使用SDK内置的三方库，移除您依赖的三方库，这些库的 .h 头文件存放在 SDK/inc 路径中的，将对应库的头文件引入到插件工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
-- 如果引入的是 .a 或 .framework 库导致某个符号定义冲突，可根据 [这篇文档](https://www.jianshu.com/p/274f93ef6c1c) 移除对应库的符号，然后测试一下功能是否正常；
+- 为了保证SDK功能的完整性所以请您使用SDK内置的三方库，移除您依赖的三方库，对于源码开源的三方库比如 SDWebImage、ZXing等，这些库的 .h 头文件存放在 SDK/inc 路径中的，将对应库的头文件引入到插件工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
+- 如果引入的是 .a 或 .framework 库里面包含某个三方库导致符号定义冲突，可根据 [这篇文档](https://www.jianshu.com/p/274f93ef6c1c) 移除对应库的符号，然后测试一下功能是否正常；
 
-|SDK依赖的三方库|
-|:--|
-|IJKPlayer|
-|SDWebImage|
-|TZImagePickerController|
-|SVProgressHUD|
-|Masonry|
-|SocketRoket|
+|SDK名称|版本|备注|
+|:--|:--|:--|
+|百度定位|v4.1.1| |
+|百度地图|v4.1.1| |
+|高德定位|v2.6.3| |
+|高德地图|v6.9.0| |
+|微信SDK|v1.8.6.2| |
+|AlipaySDK|v15.7.4| |
+|QQSDK|v3.3.6_lite| |
+|新浪微博SDK|v003233010| |
+|又拍云|v4.1.7| |
+|友盟|v6.1.0| |
+|IJKPlayer|--| |
+|SDWebImage|v5.10.0| 对应的库 libSDWebImage.a |
+|TZImagePickerController| -- | 包含在 liblibCamera.a 中  源码已修改|
+|SVProgressHUD|--|包含在 DCUniVideoPublic.framework 中|
+|Masonry|--|包含在 DCUniVideoPublic.framework 中|
+|SocketRoket|--|包含在 liblibWeex.a 中|
+|SSZipArchive|2.2.3|对应的库 libcoreSupport.a|
+| ZXing ||对应的库 libDCUniZXing.a 源码已修改|
