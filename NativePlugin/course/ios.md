@@ -831,9 +831,9 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |友盟|v6.1.0| |
 |IJKPlayer|--| |
 |SDWebImage|v5.10.0| 对应的库 libSDWebImage.a |
-|TZImagePickerController| -- | 包含在 liblibCamera.a 中  源码已修改|
-|SVProgressHUD|--|包含在 DCUniVideoPublic.framework 中|
+|TZImagePickerController| -- | 包含在 liblibCamera.a 中  源码已修改, 从3.0.7版本开始,通过重命名实现私有化|
+|SVProgressHUD|--|包含在 DCUniVideoPublic.framework 中, 从3.0.7版本开始,通过重命名实现私有化|
 |Masonry|--|包含在 DCUniVideoPublic.framework 中|
-|SocketRoket|--|包含在 liblibWeex.a 中|
+|SocketRoket|--|包含在 liblibWeex.a 中, 从3.0.7版本开始,通过重命名实现私有化|
 |SSZipArchive|2.2.3|对应的库 libcoreSupport.a|
 | ZXing ||对应的库 libDCUniZXing.a 源码已修改|
