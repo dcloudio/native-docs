@@ -135,27 +135,27 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	需要在项目根目录下的build.gradle下添加华为推送的仓库地址，如下：
 	
 	~~~
-buildscript {
-    repositories {
-        jcenter()
-        google()
-        // 配置HMS Core SDK的Maven仓地址。
-        maven {url 'https://developer.huawei.com/repo/'}
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
-        // 增加agcp配置。
-        classpath 'com.huawei.agconnect:agcp:1.4.1.300'
-    }
-}
-allprojects {
-    repositories {
-        jcenter()
-        google()
-        // 配置HMS Core SDK的Maven仓地址。
-        maven {url 'https://developer.huawei.com/repo/'}
-    }
-}
+	buildscript {
+		repositories {
+			jcenter()
+			google()
+			// 配置HMS Core SDK的Maven仓地址。
+			maven {url 'https://developer.huawei.com/repo/'}
+		}
+		dependencies {
+			classpath 'com.android.tools.build:gradle:3.4.1'
+			// 增加agcp配置。
+			classpath 'com.huawei.agconnect:agcp:1.4.1.300'
+		}
+	}
+	allprojects {
+		repositories {
+			jcenter()
+			google()
+			// 配置HMS Core SDK的Maven仓地址。
+			maven {url 'https://developer.huawei.com/repo/'}
+		}
+	}
 	~~~
 	
 - 项目应用下的build.gradle
