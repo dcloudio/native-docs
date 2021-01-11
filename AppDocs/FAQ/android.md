@@ -1,3 +1,7 @@
+* gallery 冲突问题
+	
+	HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加入到lib.5plus.base-release.aar，使用时请删除gallery-dmcBig-release.aar库。
+
 * 离线打包编译报错
 	
 	如果离线打包编译时提示如下错误，请参考以下做法

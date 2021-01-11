@@ -103,6 +103,7 @@ android {
 ~~~
 ### 其余配置
 
+#### OPPO推送
 oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配置：
 
 ~~~
@@ -121,6 +122,65 @@ oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配
         </activity>
 ~~~
 
+#### 华为推送
+
+HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添加如下配置
+
+- 项目根目录下的build.gradle
+
+	打开项目根目录下的build.gradle
+
+	![avatar](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20201225172814.15570060749712294515475466948851:50511225100302:2800:6E7604FEEA68031778F7F629F52108A0B07123E5F7C4617549E92907DB567642.png?needInitFileName=true?needInitFileName=true)
+
+	需要在项目根目录下的build.gradle下添加华为推送的仓库地址，如下：
+	
+	~~~
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        // 配置HMS Core SDK的Maven仓地址。
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        // 增加agcp配置。
+        classpath 'com.huawei.agconnect:agcp:1.4.1.300'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        // 配置HMS Core SDK的Maven仓地址。
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+	~~~
+	
+- 项目应用下的build.gradle
+
+	打开需要集成华为推送的项目的build.gradle
+	
+	![avatar](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20201225172814.41687838999666418387886670427888:50511225100302:2800:ED0C3E00BB9307BF58A033D5989CEA74EB30C29FD2682524E6052A4676E996F5.png?needInitFileName=true?needInitFileName=true)
+	
+	在文件头apply plugin: 'com.android.application'下一行添加如下配置。
+	
+	~~~
+	apply plugin: 'com.android.application'
+	apply plugin: 'com.huawei.agconnect'
+	~~~
+	
+- 添加添加华为推送的配置文件
+
+	登录华为的AppGallery Connect网站，找到需要集成华为推送的应用，在“项目设置 > 常规”页面的“应用”区域，点击“agconnect-services.json”下载配置文件。
+	
+	![avatar](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20201225172814.82122974639602019523080676568491:50511225100302:2800:421C682B60A30B40C29A5B24B80F9DBF66FACFADCDBCC915CF78D8F9A339A2B6.png?needInitFileName=true?needInitFileName=true)
+
+	将“agconnect-services.json”文件拷贝到应用级根目录下。
+	
+	![avatar](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20201225172814.66644716722512700517693766220612:50511225100302:2800:AACC86D24121BBDD807B4A8508EFF7E1A8CC34DF3C31B2D7F687FC6FCA0F2915.png?needInitFileName=true?needInitFileName=true)
+	
 
 ## 个推推送
 

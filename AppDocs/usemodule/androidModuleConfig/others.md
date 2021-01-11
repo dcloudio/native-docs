@@ -282,11 +282,11 @@
 	
 	使用时将aar拷贝到libs文件夹下即可，不需要额外配置。
 
-+ gallery-dmcBig-release.aar
+<!--+ gallery-dmcBig-release.aar
 
 	为plus.gallery.*的拓展模块，支持图片预览等功能。
 	
-	使用时将aar拷贝到libs文件夹下即可，不需要额外配置。
+	使用时将aar拷贝到libs文件夹下即可，不需要额外配置。 -->
 
 ## 国际化配置
 
