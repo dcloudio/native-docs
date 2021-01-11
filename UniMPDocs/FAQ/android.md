@@ -66,3 +66,7 @@ A：遇到该问题请按一下步骤进行操作
 1、检测UniMPSDK中的资源dcloud_properties.xml是否集成，相关模块是否按照`Feature 依赖库说明.xls`配置[详情](UniMPDocs/UseModule/android/android)
 
 2、检测项目的混淆配置是否集成了UniMPSDK中的`proguard.cfg`，没有请集成
+
+## Q: gallery-dmcBig-release冲突
+
+A: 3.0.7版本开始gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中。如果项目集成请删除否则会编译冲突
