@@ -221,13 +221,13 @@ plus.runtime.quit()
 
 **iOS 示例**
 
-1. 关闭当前运行显示的小程序
+1.关闭当前运行显示的小程序
 
 ```Objective-C
 [DCUniMPSDKEngine closeUniMP];
 ```
 
- 2. 通过 DCUniMPInstance 实例对象关闭自己**（2.8.0+版本支持）**
+2.通过 DCUniMPInstance 实例对象关闭自己**（2.8.0+版本支持）**
 
 ```
 [self.currentUniMP closeWithCompletion:^(BOOL success, NSError * _Nullable error) {
@@ -245,6 +245,8 @@ plus.runtime.quit()
     NSLog(@"小程序 %@ 被关闭了",appid);
 }
 ```
+
+**注：当开启后台运行时，点击胶囊按钮的`x`，或小程序中调用`plus.runtime.quit()`，原生调用`[DCUniMPSDKEngine closeUniMP]` 会将小程序隐藏到后台并不会销毁，如果想真正关闭并销毁请使用 方法2 通过 DCUniMPInstance 实例对象执行关闭**
 
 ## 宿主与小程序通讯
 > 注：2.6.10 版本开始支持此功能
@@ -465,7 +467,7 @@ configuration.enableBackground = YES;
 
 ### 将小程序隐藏到后台
 
-宿主可调用 DCUniMPInstance 实例对象方法隐藏对应的小程序
+宿主可调用 DCUniMPInstance 实例对象方法隐藏对应的小程序，**注意：如果未开启后台运行执行此方法会直接关闭并销毁小程序相当于下面的 close 方法**
 
 ```
 [self.currentUniMP hideWithCompletion:^(BOOL success, NSError * _Nullable error) {
@@ -498,11 +500,6 @@ configuration.enableBackground = YES;
 	}
 }];
 ```
-
-##### 注意
-
-- 当开启后台运行时点击胶囊按钮的`x`，或者在小程序中调用`plus.runtime.quit()`方法只会将小程序隐藏到后台，并不会销毁，如需销毁小程序只能通过原生调用关闭小程序的方法；
-
 
 ## 预加载小程序
 > 2.8.0+ 版本支持
