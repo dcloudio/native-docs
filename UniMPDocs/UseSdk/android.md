@@ -173,7 +173,7 @@ dependencies {
 
 #### 初始化uniMPSDK
 
-调用uni小程序SDK的DCuniMPSDK.getInstance().initialize 进行初始化。
+调用uni小程序SDK的DCUniMPSDK.getInstance().initialize 进行初始化。
 
 **示例：**
 
@@ -188,7 +188,7 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
                 .setMenuDefFontWeight("normal")
                 .setMenuActionSheetItems(sheetItems)
                 .build();
-DCuniMPSDK.getInstance().initialize(this, config);
+DCUniMPSDK.getInstance().initialize(this, config);
 ```
 
 **Tips**
@@ -210,7 +210,7 @@ if(!RuningAcitvityUtil.getAppName(getBaseContext()).contains("io.dcloud.unimp"))
 **示例：**
 
 ```
-DCuniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCuniMPSDK.IMenuButtonClickCallBack() {
+DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButtonClickCallBack() {
             @Override
             public void onClick(String id) {
                 switch (id) {
@@ -229,13 +229,13 @@ uni小程序运行在独立进程中。所以小程序中的内存与宿主是�
 
 #### 启动内置uni小程序
 
-通过DCuniMPSDK.getInstance().startApp启动小程序
+通过DCUniMPSDK.getInstance().startApp启动小程序
 
 **示例：**
 
 ```
 try {
-	DCuniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", MySplashView.class);
+	DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", MySplashView.class);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -244,7 +244,7 @@ try {
 #### 启动非内置uni小程序
 
  - 通过调用DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath释放wgt资源包到运行时目录下。
- - 调用DCuniMPSDK.getInstance().startApp启动小程序
+ - 调用DCUniMPSDK.getInstance().startApp启动小程序
 
 **示例：**
 

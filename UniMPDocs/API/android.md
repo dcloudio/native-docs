@@ -241,7 +241,7 @@ pages/component/scroll-view/scroll-view?a=1&b=2&c=3
 ```
 // 启动小程序
 try {
-	DCuniMPSDK.getInstance().startApp(context,"__UNI__04E3A11")
+	DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11")
 } catch (Exception e) {
 	e.printStackTrace();
 }
