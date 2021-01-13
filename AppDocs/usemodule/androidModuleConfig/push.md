@@ -164,11 +164,21 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	
 	![avatar](https://communityfile-drcn.op.hicloud.com/FileServer/getFile/cmtyPub/011/111/111/0000000000011111111.20201225172814.41687838999666418387886670427888:50511225100302:2800:ED0C3E00BB9307BF58A033D5989CEA74EB30C29FD2682524E6052A4676E996F5.png?needInitFileName=true?needInitFileName=true)
 	
-	在文件头apply plugin: 'com.android.application'下一行添加如下配置。
+	在文件头**apply plugin: 'com.android.application'**下一行添加如下配置。
 	
 	~~~
 	apply plugin: 'com.android.application'
 	apply plugin: 'com.huawei.agconnect'
+	~~~
+	
+	在**“dependencies”**中添加如下编译依赖
+	
+	**注意：推送库版本号与uniPush对应，不能随便修改。**
+	
+	~~~
+	dependencies {
+		implementation 'com.huawei.hms:push:5.0.2.300'
+	}
 	~~~
 	
 - 添加添加华为推送的配置文件
