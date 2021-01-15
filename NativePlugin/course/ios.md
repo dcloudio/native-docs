@@ -836,9 +836,58 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |友盟|v6.1.0| |
 |IJKPlayer|--| |
 |SDWebImage|v5.10.0| 对应的库 libSDWebImage.a |
-|TZImagePickerController| -- | 包含在 liblibCamera.a 中  源码已修改, 从3.0.7版本开始,通过重命名实现私有化|
-|SVProgressHUD|--|包含在 DCUniVideoPublic.framework 中, 从3.0.7版本开始,通过重命名实现私有化|
 |Masonry|--|包含在 DCUniVideoPublic.framework 中|
-|SocketRoket|--|包含在 liblibWeex.a 中, 从3.0.7版本开始,通过重命名实现私有化|
 |SSZipArchive|2.2.3|对应的库 libcoreSupport.a|
 | ZXing ||对应的库 libDCUniZXing.a 源码已修改|
+
+
+### Q: 之前引用的头文件和资源 现在找不到了
+
+A：为了解决部分功能库引用了一些第三方库 可能与开发者项目的第三方库重复引用
+我们从`3.0.7`后 对于部分库和资源进行了调整。
+
+如果开发者原来工程对资源文件有引用,现在找不到资源文件,请参考下边列表(文件路径去离线SDK下的 `SDK/Bundles/`下寻找)
+
+|旧资源|新资源|
+|:--|:--|:--|
+|TZImagePickerController.bundle|DCTZImagePickerController.bundle|
+|SVProgressHUD.bundle|DCSVProgressHUD.bundle|
+
+
+如果开发者原来工程对库的头文件有引用,现在找不到头文件,请参考下边列表(文件路径去离线SDK下的 `SDK/inc/`下寻找)
+
+`TZImagePickerController` -> `DCTZImagePickerController`
+
+|旧头文件|新头文件|
+|:--|:--|:--|
+|TZAssetCell.h|DCTZAssetCell.h|
+|TZAssetModel.h|DCTZAssetModel.h|
+|TZGifPhotoPreviewController.h|DCTZGifPhotoPreviewController.h|
+|TZImageCropManager.h|DCTZImageCropManager.h|
+|TZImageManager.h|DCTZImageManager.h|
+|TZImagePickerController.h|DCTZImagePickerController.h|
+|TZLocationManager.h|DCTZLocationManager.h|
+|TZPhotoPickerController.h|DCTZPhotoPickerController.h|
+|TZPhotoPreviewCell.h|DCTZPhotoPreviewCell.h|
+|TZPhotoPreviewController.h|DCTZPhotoPreviewController.h|
+|TZProgressView.h|DCTZProgressView.h|
+|TZVideoPlayerController.h|DCTZVideoPlayerController.h|
+|UIViewControllerHUD.h|DCUIViewControllerHUD.h|
+|NSBundle+TZImagePicker.h|NSBundle+DCTZImagePicker.h|
+|UIView+Layout.h|UIView+DCLayout.h|
+
+
+`SVProgressHUD` -> `DCSVProgressHUD`
+
+|旧头文件|新头文件|
+|:--|:--|:--|
+|SVIndefiniteAnimatedView.h|DCSVIndefiniteAnimatedView.h|
+|SVProgressAnimatedView.h|DCSVProgressAnimatedView.h|
+|SVProgressHUD.h|DCSVProgressHUD.h|
+|SVRadialGradientLayer.h|DCSVRadialGradientLayer.h|
+
+`SocketRoket` -> `DCSocketRoket`
+
+|旧头文件|新头文件|
+|:--|:--|:--|
+|SRWebSocket.h|DCSRWebSocket.h|
