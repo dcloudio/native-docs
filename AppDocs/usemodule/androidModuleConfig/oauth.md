@@ -17,10 +17,11 @@
 
 **需要在build.gradle 中manifestPlaceholders节点中的manifestPlaceholders 新增配置选项**
 
-（GT_INSTALL_CHANNEL 固定值 "HBuilder"）
+
 ~~~
 "GY_APP_ID"       : "%GY_APP_ID%",
 "GT_INSTALL_CHANNEL":"HBuilder",
+（GT_INSTALL_CHANNEL 固定值 "HBuilder"）
 ~~~
 
 
