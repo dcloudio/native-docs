@@ -86,7 +86,7 @@ configuration.arguments = @{ @"arguments":@"Hello uni microprogram" };
 **小程序中获取参数**
 
 ```JavaScript
-var arguments = plus.runtime.arguments;
+var info = plus.runtime.arguments;
 ```
 
 ### 启动打开指定页面
