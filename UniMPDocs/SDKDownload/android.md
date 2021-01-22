@@ -7,6 +7,10 @@
 + gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中。如果项目集成请删除否则会编译冲突。
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.7.20210109-alpha.html)
 
+#### 2020年01月07日发布
+[点击下载SDK UniMPSDK_Android@3.0.5.20210107.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.0.5.20210107.zip)
++ 需使用HBuilderX（3.0.5）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.5.20210107.html)
 
 ## 历史稳定版本
 <details>
