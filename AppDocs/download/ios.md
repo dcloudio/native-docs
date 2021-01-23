@@ -2,10 +2,15 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年1月8日发布 
-[点击下载SDK，提取码: upkm](https://pan.baidu.com/s/1QPGox7ZtRr3fGUNgkUvBuw)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.0.5.20210107）版本生成本地打包App资源。
-+ 一键登录 优化 错误回调返回数据格式，添加 appid、metadata、uid 属性，便于排查错误 [规范](https://www.html5plus.org/doc/zh_cn/oauth.html#plus.oauth.ErrorCallback)
+### 2021年1月23日发布 
+[点击下载SDK，提取码: 9439](https://pan.baidu.com/s/1HeagKisNNMeJzffASWimtA)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.0.7.20210123）版本生成本地打包App资源。
++ iOS平台 修复 previewImage 预览网络图片地址中包含query参数过多可能无法显示的Bug [详情](https://ask.dcloud.net.cn/question/98259)
++ iOS平台 修复 audio 音频资源地址中包含中文字符时无法正常播放的Bug [详情](https://ask.dcloud.net.cn/question/103421)
++ iOS平台 修复 video 动态更新 src 属性值域名相同时无法正常切换视频的Bug [详情](https://ask.dcloud.net.cn/question/110386)
++ iOS平台 修复 video 视频资源地址中包含中文字符时无法正常播放的Bug
++ iOS平台 修复 titleNView 标题文字在隐藏软键盘时可能出现抖动的Bug
++ App-iOS平台 修复 nvue refresh 组件处于刷新状态时显示位置向下偏移0.5像素的Bug
    `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
