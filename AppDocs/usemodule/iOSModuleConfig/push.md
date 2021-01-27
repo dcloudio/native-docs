@@ -31,6 +31,8 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 
 
+
+
 <!-- 
  ## 小米推送配置
 注: Linker Flags、framework添加方法参考该[文档](/AppDocs/usemodule/iOSModuleConfig/common.md)
@@ -46,7 +48,7 @@
 3 小米推送调试/发布时需要设置不同的MiSDKRun值 调试证书对应值设置为“debug”，生产证书对应值设置为“online”，可参考[小米推送文档](https://dev.mi.com/console/doc/detail?pId=98#_1_1)
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28604.jpeg)
-
+ -->
 ### 申请带APNS功能的profile文件(缺少该项将导致后台收不到推送)
 1.创建应用程序ID
 登陆iOS Dev Center选择进入iOS Provisioning Portal。
@@ -69,7 +71,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28605.png)
 
 
-### 生成APNS证书并上传到个推平台(缺少该项将导致后台收不到推送)
+### 生成APNS证书并上传到uniPush或个推平台(缺少该项将导致后台收不到推送)
  如果你之前没有创建过Push证书或者是要重新创建一个新的，请在证书列表下面新建。 
 新建证书需要注意选择证书种类（开发证书用于开发和调试使用，生产证书用于App Store发布）
 
@@ -100,7 +102,14 @@
 注意：务必选择证书然后再导出。
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28613.png)
 
-保存p12文件时，需为其设置密码，上传到个推平台
+保存p12文件时，需为其设置密码，上传到uniPush或个推平台
 
-**UniPush使用指南：http://ask.dcloud.net.cn/article/35622**
- -->
+### Xcode配置
+在 “Signing&Capabilities” 配置项中，点击左上角的“Capability”按钮，添加“Push Notifications”项
+
+
+<!-- 
+**UniPush使用指南：http://ask.dcloud.net.cn/article/35622** 
+-->
+
+
