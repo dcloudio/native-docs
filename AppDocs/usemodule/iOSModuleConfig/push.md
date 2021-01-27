@@ -3,7 +3,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniPush.a、liblibPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
+|liblibPush.a、libUniPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
 **注意： UserNotifications.framework 需要设置为Optional **
 
@@ -20,7 +20,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniPush.a、liblibPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
+|liblibPush.a、libGeTuiPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
 **注意： UserNotifications.framework 需要设置为Optional **
 
@@ -109,7 +109,7 @@
 
 
 <!-- 
-**UniPush使用指南：http://ask.dcloud.net.cn/article/35622** 
+**uniPush使用指南：http://ask.dcloud.net.cn/article/35622** 
 -->
 
 
