@@ -554,7 +554,7 @@ implementation project(':uniplugin_richalert')
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_19.png" width=700>
 
-**注意：.os文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
+**注意：.so文件需要注意 armeabi-v7a、x86 、arm64-v8a以上三种类型的.so必须要有，如果没有无法正常使用！！**
 
 
 ## 提交插件市场
@@ -681,7 +681,7 @@ A:component可以在的构造函数中调用相关注册初始化服务等操作
 
 Q:打包发现集成的三方库与主APP集成的三方库有冲突。导致无法打包成功？
 
-*A:*
-
- 1、请尽量使用主APP集成的三方库去实现你的插件依赖集成。请告知使用该插件需要‘XXX’模块才可正常运行。版本号可[查看](https://ask.dcloud.net.cn/article/35419)
+A:  
+ 1、请尽量使用主APP集成的三方库去实现你的插件依赖集成。请告知使用该插件需要‘XXX’模块才可正常运行。版本号可[查看](https://ask.dcloud.net.cn/article/35419) 
+ 
  2、如果集成的三方库无法使用主APP集成的三方库。请告知插件使用者不要集成‘XXX’模块。防止打包失败。
