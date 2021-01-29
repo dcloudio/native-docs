@@ -487,6 +487,10 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 设置是否使用胶囊按钮
 
+**注意**
+
+uniapp页面没有配置navigationBar或titleNView则不会显示胶囊按钮 两者是绑定关系
+
 **参数说明**
 
 |参数|类型|默认值|说明
