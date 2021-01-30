@@ -202,6 +202,18 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 + (UIViewController *)getUniMPViewController;
 ```
 
+### 小程序页面关闭时设置原生导航栏的显隐
+> 3.1.0+ 版本支持
+
+**说明：**当小程序是通过 DCUniMPOpenModePush 方式打开（即通过原生导航控制器push方式打开小程序页面）如果系统导航栏是显示状态，进入小程序时会隐藏系统导航栏并在小程序页面关闭或从小程序页面在 push 到宿主其他原生页面时会将系统导航栏恢复之前的显隐状态；如果您想控制导航栏的显隐可通过此方法来实现 <br>
+**场景：**在显示系统导航栏的页面 push 进入小程序页面，从小程序页面 push 到其他原生页面时需要隐藏系统导航栏，则可以在跳转页面前调用此方法来处理；
+
+```
+/// 注意：只有通过 push 的方式打开小程序才生效
+/// @param hidden 是否隐藏
++ (void)whenUniMPCloseSetNavigationBarHidden:(BOOL)hidden;
+```
+
 ### 向小程序发送事件
 
 ```objective-c
