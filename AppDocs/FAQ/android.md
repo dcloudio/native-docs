@@ -1,3 +1,11 @@
+* 移动安全联盟
+	
+	HBuilder X 3.1.0升级移动安全联盟SDK到1.0.25版本，集成时需将minSdkVersion调整为21。
+	
+	1.0.13版本可在 SDK目录/SDK/libs/ 中找到。
+	
+	**注意：1.0.13与1.0.25不能同时使用。**
+
 * gallery 冲突问题
 	
 	HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加入到lib.5plus.base-release.aar，使用时请删除gallery-dmcBig-release.aar库。
