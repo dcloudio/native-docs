@@ -26,7 +26,7 @@
 
 ![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-2.png)
 
-Minimum API Level 建议选19及以上
+Minimum API Level 建议选21及以上
 
 Package name作为应用标志，涉及申请第三方平台账号，一般情况下不建议修改，包名一般设置反向域名，如：io.dcloud.HBuilder
 	
@@ -44,7 +44,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	+ 5+APP
 	
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和miit_mdid_1.0.10.aar（HBuilderX2.8.1之后更新到msa_mdid_1.0.13.aar）拷贝到libs目录下
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-3.png)
 
@@ -59,7 +59,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	+ uni-app
 
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-release.aar和miit_mdid_1.0.10.aar（HBuilderX2.8.1之后更新到msa_mdid_1.0.13.aar）拷贝到libs目录下
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-release.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
 	
 	**注意：自HBuilderX2.8.0开始，JS引擎默认从jscore改为V8，提升运算性能，离线sdk自HBuilderX2.8.1也将默认JS引擎切换到V8，新增uniapp-v8-release.aar（uniapp-v8-release.aar和uniapp-release.aar不能同时使用。）。**
 
@@ -103,7 +103,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	建议将targetSdkVersion设置为25或以上。
 	
-	App离线SDK minSdkVersion最低支持19，小于19在部分4.4以下机型上将无法正常使用。
+	App离线SDK minSdkVersion最低支持21，小于21在部分5.0以下机型上将无法正常使用。
 	
 	完整版build.gradle可参考如下内容。
 	
@@ -114,7 +114,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		compileSdkVersion 28
 		defaultConfig {
 			applicationId "com.example.myapplication"
-			minSdkVersion 19
+			minSdkVersion 21
 			targetSdkVersion 28
 			versionCode 1
 			versionName "1.0"
