@@ -41,7 +41,7 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  uniMPSDK-release.aar  //必须集成
  uniapp-release.aar //必须集成
  sqlite-release.aar
- msa_mdid_1.0.13.aar //必须集成 注意(2.8.0版本的SDK及以下版本请集成miit_mdid_1.0.10.aar)
+ oaid_sdk_1.0.25.aar //必须集成 注意(3.0.7版本的SDK及以下版本请集成msa_mdid_1.0.13.aar)
  messaging-release.aar
  iBeacon-release.aar
  fingerprint-release.aar
@@ -66,6 +66,8 @@ dependencies {
 **注意**
 
 不要只拷贝`依赖库`(aar资源)。SDK根目录下的其他资源（非Libs）必须要拷贝到项目中的。
+
+**3.1.0版本开始 unimpSDK的minSdkVersion从19调整到21**
 
 #### 复制SDK资源到android项目目录
 
