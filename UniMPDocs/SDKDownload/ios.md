@@ -4,13 +4,11 @@
 
 ## 更新日志
 
-#### SDK 3.1.0
-[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.0.zip)
+#### SDK 3.1.1
+[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.1.zip)
 
-+ 需使用 HBuilderX（3.1.0）版本生成 小程序App 资源
-+ iOS平台 修复 关闭当前小程序立刻打开另一个小程序后，小程序可能无法关闭的Bug [详情](https://ask.dcloud.net.cn/question/115243)
-+ iOS平台 新增 小程序页面关闭时支持动态设置原生导航栏的显隐方法 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=SetNavigationBarHidden)
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.0.20210202-alpha.html)
++ 需使用 HBuilderX（3.1.1）版本生成 小程序App 资源
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.1.20210204-alpha.html)
 
 #### SDK 3.0.7
 [点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.0.7.zip)
@@ -28,6 +26,13 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.1.0
+
++ 需使用 HBuilderX（3.1.0）版本生成 小程序App 资源
++ iOS平台 修复 关闭当前小程序立刻打开另一个小程序后，小程序可能无法关闭的Bug [详情](https://ask.dcloud.net.cn/question/115243)
++ iOS平台 新增 小程序页面关闭时支持动态设置原生导航栏的显隐方法 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=SetNavigationBarHidden)
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.0.20210202-alpha.html)
 
 #### SDK 3.0.5
 
