@@ -141,3 +141,18 @@ A: 宿主打开小程序实现方式是：获取当前宿主显示的 `UIViewCon
 }
 
 ```
+
+## Q：如何隐藏宿主的 TabBar
+
+A: 如果宿主底层是 `TabBar` 从首页以 `push` 方式打开小程序页面时想隐藏 TabBar，应该在自定义的 `UINavigationController` 类中复写下面的方法来实现 （如果您没有自定义的`UINavigationController` 那么应该新建一个便于统一管理导航栏的逻辑）
+
+```
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+	 // 如果非首页就隐藏TabBar，或可判断 viewController 类名来决定是否隐藏 TabBar
+    if (self.childViewControllers.count >= 1){
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+```
