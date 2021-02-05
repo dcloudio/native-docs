@@ -2,16 +2,16 @@
 
 ## 更新日志
 
+#### 2020年02月04日发布
+[点击下载SDK UniMPSDK_Android@3.1.1.20210204.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.1.20210204.zip)
++ 需使用HBuilderX（3.1.1）版本生成 小程序App 资源
++ gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中。如果项目集成请删除否则会编译冲突。
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.1.20210204-alpha.html)
+
 #### 2020年02月02日发布
 [点击下载SDK UniMPSDK_Android@3.1.0.20210202.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.0.20210202.zip)
 + 需使用HBuilderX（3.1.0）版本生成 小程序App 资源
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.0.20210202-alpha.html)
-
-#### 2020年01月09日发布
-[点击下载SDK UniMPSDK_Android@3.0.7.20210109.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.0.7.20210109.zip)
-+ 需使用HBuilderX（3.0.7）版本生成 小程序App 资源
-+ gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中。如果项目集成请删除否则会编译冲突。
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.7.20210109-alpha.html)
 
 ## 历史稳定版本
 <details>
