@@ -30,9 +30,12 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年02月18日发布
+### 2020年02月20日发布
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.2.20210206-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.3.20210219-alpha）版本生成本地打包App资源。
++ 修复 3.1.0 版本引出的 nvue input 组件设置 ajust-position 为 false 后，keyboardheightchange 事件返回软键盘高度为0的Bug
++ 修复 nvue input 组件 focus 事件可能触发两次的Bug
++ 修复 3.1.0 版本引出的 wap2app 项目真机运行页面标题栏无法正常显示的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
