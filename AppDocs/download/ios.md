@@ -32,9 +32,9 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年2月18日发布 
+### 2021年2月19日发布 
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.2.20210206）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.3.20210219）版本生成本地打包App资源。
 
   
   `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
