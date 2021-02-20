@@ -4,18 +4,19 @@
 
 ## 更新日志
 
+#### SDK 3.1.3
+[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.3.zip)
+
++ 需使用 HBuilderX（3.1.3）版本生成 小程序App 资源
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.3.20210219-alpha.html)
+
+
 #### SDK 3.1.2
 [点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.2.zip)
 
 + 需使用 HBuilderX（3.1.2）版本生成 小程序App 资源
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.2.20210205-alpha.html)
 
-#### SDK 3.0.7
-[点击下载 UniMP_iOS_SDK](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.0.7.zip)
-
-+ 需使用 HBuilderX（3.0.7）版本生成 小程序App 资源
-+ 将 TZImagePickerController，SVProgressHUD，SocketRoket 三方库通过重命名的方式以完全私有化，如果您之前使用过SDK内置的这三个库请重新倒入相关头文件和资源文件
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.7.20210109-alpha.html)
 
 
 ## 历史版本
@@ -38,6 +39,12 @@
 + iOS平台 修复 关闭当前小程序立刻打开另一个小程序后，小程序可能无法关闭的Bug [详情](https://ask.dcloud.net.cn/question/115243)
 + iOS平台 新增 小程序页面关闭时支持动态设置原生导航栏的显隐方法 [详情](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=SetNavigationBarHidden)
 + [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.0.20210202-alpha.html)
+
+#### SDK 3.0.7
+
++ 需使用 HBuilderX（3.0.7）版本生成 小程序App 资源
++ 将 TZImagePickerController，SVProgressHUD，SocketRoket 三方库通过重命名的方式以完全私有化，如果您之前使用过SDK内置的这三个库请重新倒入相关头文件和资源文件
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.0.7.20210109-alpha.html)
 
 #### SDK 3.0.5
 
