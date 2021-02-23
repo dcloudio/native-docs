@@ -65,7 +65,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-10.png)
 	
-	在build.gradle中添加资源引用
+	在build.gradle中添加资源引用，注意28.0.0只是作为参考值，具体根据自己环境版本进行修改
 	
 	~~~
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
@@ -118,7 +118,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 			targetSdkVersion 28
 			versionCode 1
 			versionName "1.0"
-			multiDexEnabled true
+			multiDexEnabled true //最好是加上这一项
 		}
 		buildTypes {
 			release {
