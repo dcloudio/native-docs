@@ -4,7 +4,7 @@
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 3. App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
-** 3.1.5版本起需要申请Appkey，具体请点击[链接](appkey.md))**
+**3.1.5版本起需要申请Appkey，具体请点击[链接](appkey.md))**
 
 ## SDK目录说明
 
