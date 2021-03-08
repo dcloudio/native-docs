@@ -11,7 +11,7 @@
     
     ![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/applist-config.png)
 ### 配置
-请点击下面链接参考对应平台的对应章节
+请点击下面链接参考对应平台的配置Appkey章节
 
 [Android](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/android?id=%e9%85%8d%e7%bd%ae%e5%b7%a5%e7%a8%8b)
 
