@@ -9,6 +9,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny2.png)
 
 **注意：如果版本不一致，app启动时会弹出版本不一致的提示框，并且可能导致功能异常**
+
 **注意：3.1.5版本起需要申请Appkey，具体请点击[链接](appkey.md)**
 
 ## SDK目录说明
