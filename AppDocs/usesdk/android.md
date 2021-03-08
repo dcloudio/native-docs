@@ -4,7 +4,7 @@
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 3. App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
-**3.1.5版本起需要申请Appkey，具体请点击[链接](appkey.md))**
+**3.1.5版本起需要申请Appkey，具体请点击[链接](appkey.md)**
 
 ## SDK目录说明
 
@@ -93,6 +93,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 2. 应用配置
  	+ 配置Appkey
+ 	
 	**3.1.5版本起需要申请 Appkey，申请请[参考]()**
 	打开Androidmanifest.xml， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
 	···
