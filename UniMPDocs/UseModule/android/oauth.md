@@ -10,15 +10,13 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
-需要将以下代码文件引入到工程，包名为**”%用户包名%.wxapi”**
-
-| 路径 | 文件 | 
-| :-------: | :-------: |
-| %用户包名%\wxapi | WXEntryActivity.java |
-
 ### WXPayEntryActivity 
 
-继承AbsWXCallbackActivity即可
+需要自主创建`WXPayEntryActivity.java`代码文件并引入到工程
+
+**`WXPayEntryActivity`的实现只需继承AbsWXCallbackActivity即可 package路径规范：`应用包名.wxapi`**
+
+**示例：**
 
 ~~~
 package 应用包名.wxapi;
