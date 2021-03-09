@@ -49,13 +49,13 @@ dcloud_properties.xml文件在assets/data目录下
 | :-------: | :-------: |
 | SDK\libs | oauth-weixin-release.aar，wechat-sdk-android-with-mta-5.4.3.jar |
 
-需要将以下代码文件引入到工程，包名为**”%用户包名%.wxapi”**
+需要将`WXEntryActivity.java`代码文件引入到工程
 
 **注意：文件位于离线sdk的/SDK/src/wxapi下，可直接拷贝并将文件内的包名替换成自己的包名。**
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| %用户包名%\wxapi | WXEntryActivity.java |
+| %应用包名%\wxapi | WXEntryActivity.java |
 
 
 ### Androidmainfest.xml文件需要修改的项
