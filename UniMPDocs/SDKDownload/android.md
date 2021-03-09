@@ -13,7 +13,5 @@
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.3.20210219-alpha.html)
 
 ## 历史稳定版本
-<details>
-<summary>展开查看</summary>
 
 百度网盘链接: [https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q](https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q) 提取码: hnug
