@@ -70,3 +70,7 @@ A：遇到该问题请按一下步骤进行操作
 ## Q: gallery-dmcBig-release冲突
 
 A: 3.0.7版本开始gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中。如果项目集成请删除否则会编译冲突
+
+## Q: 关闭前一个小程序紧接着打开另一个小程序会白屏
+
+A: 目前仅支持同时打开一个uniapp小程序。当要打开另一个uniapp小程序时。需要清理前一个小程序的资源数据。不同小程序的清理时间可能不太一样。需要开发者监听setUniMPOnCloseCallBack事件。再延迟300毫秒左右执行startApp基本上可以解决问题。
