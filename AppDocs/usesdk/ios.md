@@ -110,9 +110,9 @@ iOSSDK/SDK/Libs/liblibUI.a
 
 ### 配置Appkey
 
-**3.1.5版本起需要申请 Appkey，申请请[参考](appke.md)**
+**3.1.5版本起需要申请 Appkey，申请请[参考](appkey.md)**
 
-打开info.plist，创建key为dcloud_appkey，Value选择String类型内容为申请的AppKey如下：
+打开info.plist，创建key为dcloud_appkey，Value选择String类型，内容为申请的AppKey如下：
 ![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
 
 ### 配置应用标识(Boundle Identifier)
