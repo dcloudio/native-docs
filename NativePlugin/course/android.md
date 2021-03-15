@@ -681,16 +681,18 @@ A:component可以在的构造函数中调用相关注册初始化服务等操作
 
 Q:打包发现集成的三方库与主APP集成的三方库有冲突。导致无法打包成功？
 
-#### *A:*
+A:
 
  + 请尽量使用主APP集成的三方库去实现你的插件依赖集成。请告知使用该插件需要‘XXX’模块才可正常运行。版本号可[查看](https://ask.dcloud.net.cn/article/35419)
  + 如果集成的三方库无法使用主APP集成的三方库。请告知插件使用者不要集成‘XXX’模块。防止打包失败。
  
- Q：HX3.0.0+版本云打包编译之前插件无法编译通过。HX2.9.8版本云打包是可以的。
+Q：HX3.0.0+版本云打包编译之前插件无法编译通过。HX2.9.8版本云打包是可以的。
  
-#### *A:*
+A:
+
  + 请检查一下之前编译插件的配置`build.gradle`文件。检测是否使用`api files(xxx.aar)`引入某些依赖库aar文件。如果有这样的配置请改为使用compileOnly 修饰。否则无法在3.0.0+编译通过。主要原因就是资源冲突。 `api files(xxx.aar)`这种玩法是错误的。
  + 检查一下自己插件aar中的`classes.jar`文件。使用压缩工具查看一下`classes.jar`里的文件是否存在资源文件。如`AndroidManifest.xml`、`res`等资源文件需要删除。否则无法在3.0.0+编译通过。
 
-#### Q：插件SDK部分需要在Application初始化。目前在AppHookProxy中onCreate初始化无效
-#### *A:* 请使用UniAppHookProxy接口 有onSubProcessCreate子进程初始化回调。将SDK需要在Application初始化的代码onCreate和onSubProcessCreate都放一份就可以了。
+Q：插件SDK部分需要在Application初始化。目前在AppHookProxy中onCreate初始化无效
+
+A: 请使用UniAppHookProxy接口 有onSubProcessCreate子进程初始化回调。将SDK需要在Application初始化的代码onCreate和onSubProcessCreate都放一份就可以了。
