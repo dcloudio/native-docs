@@ -511,3 +511,51 @@ HBuilderX 中可视化配置效果：
 提交到云端打包后将会把 license-ios.dat 文件添加到安装包ipa的根目录（最外层目录）下。
 
 注意：此操作务必在插件使用说明中描述清楚（如何获取授权文件，如何放置授权文件等），其中DCloud-HelloPlugin为使用的插件标识，需根据自己的插件标识进行修改
+
+
+### iOS Extension
+**HBuilderX3.1.5+版本uni原生插件支持iOS Extension（扩展）**
+
+#### 插件作者配置
+首先在XCode环境中编译出ipa，将ipa解压后在Payload/XXX.app/PlugIns/ 下可以找到.appex文件
+将.appex添加到uni原生插件下的 ios/Plugins/ 目录中即可
+
+#### 插件使用者配置
+默认情况下云端打包不会包含uni原生插件中的iOS扩展，需要在nativeplugins/XX-XXX插件目录下添加ios-extension.json文件配置使用iOS扩展。
+插件的目录结构如下:
+```
+-- HelloUniApp项目目录
+  |-- nativeplugins
+    |-- DCloud-RichAlert(实际包含iOS Extension的uni原生插件标识)
+      |-- ios-extension.json
+      |-- package.json
+      |-- ios-XXXExt.mobileprovision
+```
+
+**需要插件作者在使用说明中详细描述告诉插件使用者如何配置ios-extension.json文件**
+ios-extension.json文件格式如下：
+```json
+{
+  "XXX.appex": {      //必填，多个iOS Extension需使用多个节点
+    "identifier": "uni.XXX.ext",                //必填，Bundle identifier
+    "profile": "ios-XXXExt.mobileprovision",    //必填，Provisioning Profile，相对于插件目录的路径
+    "plists": {      //可选，合并到iOS Extension的Info.plist中的数据（json格式）
+      
+    },
+    "entitlements": { //可选，覆盖iOS Extension的entitlements.plist中的数据（json格式）
+      
+    }
+  }
+}
+```
+- XXX.appex
+  iOS Extension插件名称，与ios/Plugins目录中的appex名称一致
+- identifier
+  必填，String类型，iOS Extension插件使用Bundle Identifier，与profile字段配置的profile文件要匹配
+- profile
+  必填，String类型，iOS Extension插件使用的profile文件，相对于插件目录，注意：在插件目录中文件必须以ios开头，否则HX不会提交云端打包（后续版本会修复此Bug）
+- plists
+  可选，JSON类型，需要合并到iOS Extension插件Info.plist文件中的数据
+- entitlements
+  可选，JSON类型，需要覆盖到iOS Extension插件entitlements.plist中的数据
+
