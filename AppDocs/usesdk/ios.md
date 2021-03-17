@@ -15,7 +15,7 @@
 ## SDK目录说明
 
 ~~~
-    |-- HBuilder-Hello       给用户打5+app、uni-app项目的离线打包工程
+    |-- HBuilder-Hello       给用户打uni-app项目的离线打包工程
     |-- Feature-iOS.xls      配置表（依赖的库、资源文件、参数配置等）
     |-- SDK                 工程需要的库文件，.h头文件，配置文件，资源文件
 ~~~
@@ -36,13 +36,16 @@
       找到App离线SDK压缩包，并解压，再进入目录；找到HBuilder-Hello文件夹，并打开原生工程，然后准备配置工程。
 ### uni-app项目
       App离线SDK中的HBuilder-Hello文件夹下的打包工程 是按照uni-app项目来配置的，所以基础配置不需要动。
+      
+<!-- 
 ### 5+app项目
 	如果您是5+app项目，为了减少ipa包的大小，可以相应的删除一些配置，可删除的配置如下：
-	    
+   
+    
 |库|js文件|其他|
 |:--|:--|:--|
 |liblibWeex.a|weex-polyfill.js、uni-jsframework.js、weexUniJs.js、__uniappes6.js | unincomponents.ttf|
-
+-->
 
 <!-- 
 ### 基础模块配置
@@ -200,7 +203,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190420/a19ff51f22c97f0af9add83788878684.png)
 
-2、输入完成后切换到代码视图，uni-app项目在"app-plus"->"distribute"->"ios"->"privacyDescription"节点，5+ APP项目在"plus"->"distribute"->"apple"->"privacyDescription"节点下可看到输入的内容：
+2、输入完成后切换到代码视图，uni-app项目在"app-plus"->"distribute"->"ios"->"privacyDescription"节点下可看到输入的内容：
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190420/8f37db8f8bf2ada8d86612f1f93c4229.png)
 
@@ -217,7 +220,7 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 包名：对应xcode里的bundleid，如io.dcloud.HBuilder。
 
-应用标识：对应5+或uni-app项目manifest.json中appid。
+应用标识：对应uni-app项目manifest.json中appid。
 
 广告标识：DCloud的广告标识，开通广告后可在dev.dcloud.net.cn获取，如果没有开通广告，设置值为空即可。
 渠道：可以填apple。
