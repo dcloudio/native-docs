@@ -14,10 +14,8 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 ### SDK 包结构说明
 
 ```
-|--iOSSDK
-	|-- 5+app-uniplugin-demo		// 在 uni-app 中按照 5+ App 规范开发插件工程		
-	|-- HBuilder-Hello				// uni-app 或 5+ App 离线打包工程
-	|-- HBuilder-Integrate			// 5+ App 插件开发工程
+|--iOSSDK	
+	|-- HBuilder-Hello				// uni-app 离线打包工程
 	|-- HBuilder-uniPluginDemo		// uni-app 插件开发主工程 （本文档需要使用的工程）
 	|-- SDK							// 依赖库及依赖资源文件
 	|-- Feature-iOS.xls				// 功能模块与依赖库对应关系说明表格
