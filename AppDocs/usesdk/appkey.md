@@ -7,7 +7,7 @@
  
     SHA1的获取请参考该[文章](https://ask.dcloud.net.cn/article/35777)
     
-    **AppKey不区分debug和release模式如需要调试需要使用和申请AppKey对应的证书**
+    **AppKey不区分debug和release模式，如需要调试需要使用申请AppKey时的证书**
     
     ![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/applist-config.png)
 ### 配置
