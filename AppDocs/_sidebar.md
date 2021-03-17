@@ -3,7 +3,7 @@
   * [Android 原生工程配置](/AppDocs/usesdk/android.md)
   * [iOS 原生工程配置](/AppDocs/usesdk/ios.md)
 * 模块及三方SDK配置
-  * [Android 模块配置](/AppDocs/usemodule/android.md)
+  * Android 模块配置
 	* [Geolocation（定位）](/AppDocs/usemodule/androidModuleConfig/geolocation.md)
     * [Push（消息推送）](/AppDocs/usemodule/androidModuleConfig/push.md)
     * [Share（分享）](/AppDocs/usemodule/androidModuleConfig/share.md)

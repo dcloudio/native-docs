@@ -5,12 +5,11 @@
 3. App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
 
 **3.1.5版本起需要申请Appkey，具体请点击[链接](/AppDocs/usesdk/appkey.md)**
-
 ## SDK目录说明
 
 ~~~
 	|-- HBuilder-Hello				App离线打包演示应用
-	|-- HBuilder-Integrate-AS		集成uni-app或5+ app的最简示例
+	|-- HBuilder-Integrate-AS		集成uni-app的最简示例
 	|-- SDK							SDK库文件目录
 	|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
 	|-- Readme.txt					版本说明文件及注意事项
@@ -44,26 +43,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 1. 基础库配置
 
-	+ 5+APP
-	
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
-
-	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-3.png)
-
-	在build.gradle中添加资源引用
-
-	~~~
-	implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation 'com.github.bumptech.glide:glide:4.9.0' // 基座依赖
-    implementation 'com.android.support:support-v4:28.0.0'
-	implementation 'com.alibaba:fastjson:1.1.46.android'
-	~~~
-	
-	+ uni-app
-
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-release.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
-	
-	**注意：自HBuilderX2.8.0开始，JS引擎默认从jscore改为V8，提升运算性能，离线sdk自HBuilderX2.8.1也将默认JS引擎切换到V8，新增uniapp-v8-release.aar（uniapp-v8-release.aar和uniapp-release.aar不能同时使用。）。**
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-v8-release.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-10.png)
 	
@@ -92,7 +72,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		**注意：更新SDK时需要同时更新aar/jar文件和build.gradle配置**
 	
 2. 应用配置
- 	+ 配置Appkey
+
+	+ 配置Appkey
  	
 	**3.1.5版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
 	
@@ -106,6 +87,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
             android:value="替换为自己申请的Appkey" />
 	~~~
 	
+
 	+ 配置应用版本号
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-4.png)
@@ -235,8 +217,6 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	将SDK->assets->data文件夹拷贝到刚刚创建的assets文件夹下，如下图：
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-7.png)
-
-	注意：dcloud1.dat、dcloud2.dat为uni-app所需资源**（2.7.0之后已不在需要，升级时需要删除，可以减少apk大小）**，5+APP可将这两个文件删除。
 	
 	注意：SDK升级时，data下资源需要同时更新。
 		
@@ -250,7 +230,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	* 修改dcloud_control.xml文件
 
-	修改dcloud_control.xml中的appid为拷贝过来的5+APP的id，确保dcloud_control.xml中的appid与manifest.json中的id与文件夹名一致，如下图所示：
+	修改dcloud_control.xml中的appid为拷贝过来的uni-app的id，确保dcloud_control.xml中的appid与manifest.json中的id与文件夹名一致，如下图所示：
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-9.png)
 	

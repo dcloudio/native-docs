@@ -60,14 +60,6 @@ services节点下添加:
 
 需要将以下aar文件放到工程的libs目录下
 
-#### 5+ APP项目
-
-| 路径 | 文件 | 
-| :-------: | :-------: |
-| SDK\libs | amap-libs-release.aar，map-amap-release.aar |
-
-#### uni-app项目
-
 | 页面 | 路径 | 文件 | 
 | :-------: | :-------: | :-------: |
 |nvue页面| SDK\libs | amap-libs-release.aar，weex_amap-release.aar |

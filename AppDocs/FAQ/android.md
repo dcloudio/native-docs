@@ -1,3 +1,7 @@
+### 5+App 卡在Splash页面，无法运行
+
+3.1.5之后离线打包将不再支持5+App，云打包不受影响。
+
 ### 编译报错 style attribute 'android:attr/forceDarkAllowed' not found.
 
 当运行原生SDK的时候提示 style attribute 'android:attr/forceDarkAllowed' not found. 需要将 compileSdkVersion 设置为 29 或以上
