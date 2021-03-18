@@ -2,7 +2,7 @@ uni原生插件（native plugin）提交[DCloud插件市场](https://ext.dcloud.
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181226/d07abb0bd2edf0723f9d59d6e6380c50.png)
 
-** 注意：android和ios目录必须全部为小写**
+**注意：android和ios目录必须全部为小写**
 
 上传时压缩为zip格式文件，压缩文件中必须包含目录名称，如下：
 
