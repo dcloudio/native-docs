@@ -523,6 +523,37 @@ export default {
 }
 ```
 
+##### globalEvent 事件
+
+用于页面监听持久性事件，例如定位信息，陀螺仪等的变化。
+
+**示例：**
+
+页面监听event事件
+
+```JS
+var globalEvent = uni.requireNativePlugin('globalEvent');
+globalEvent.addEventListener('myEvent', function(e) {
+  console.log('myEvent'+JSON.stringify(e));
+});
+```
+
+插件 原生代码发出`myEvent`事件
+
+```Objective-C
+NSDictionary * dict = [NSDictionary dictionaryWithObjectsAndKeys:@"value",@"key",nil];
+NSString * eventName = @"myEvent";
+
+DCUniSDKInstance * instance = 
+
+[instance fireGlobalEvent:eventName params:params];
+```
+
+**注意**
+globalEvent事件只能通过页面的DCUniSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
+
+
+
 #### 自定义属性
 
 给我们的地图组件添加一个新的属性`showTraffic`，在前端代码里可以控制组件是否显示路况信息

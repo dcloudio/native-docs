@@ -4,7 +4,7 @@
 
 ## 更新日志
 
-#### 2020年03月05日发布
+#### 2021年03月05日发布
 #### SDK 3.1.4
 [点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.4.zip)
 
