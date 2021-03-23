@@ -17,13 +17,21 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年3月19日发布 
+### 2021年3月4日发布 
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
++ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.4.20210303）版本生成本地打包App资源。
+
+<!--
 + 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.6.20210318）版本生成本地打包App资源。
 + App-iOS平台 修复 nvue web-view 组件在应用设置 allowsInlineMediaPlayback 为 true 时不生效的Bug [详情](https://ask.dcloud.net.cn/question/106864)
 + App-iOS平台 修复 nvue map 组件 polyline 设置 arrowIconPath 为自定义箭头图标无效的Bug [详情](https://ask.dcloud.net.cn/question/118538)
 
+
 `注意:从3.1.5版本开始，iOS离线SDK不支持5+ App打包，如需打包5+ App请使用云打包；离线打包uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
+-->
+
+
+
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
   
