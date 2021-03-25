@@ -14,11 +14,11 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年03月04日发布
+### 2020年03月18日发布
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.4.20210303-alpha）版本生成本地打包App资源。
-+ 修复 微信分享本地图片在部分 Android11 设备可能失败的Bug
-+ 修复 页面中 input 标签 type 为 tel/email 时，弹出软键盘上方的辅助输入栏内容可能显示不正常的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.6.20210318-alpha）版本生成本地打包App资源。
++ 修复 3.1.0 版本引出的 wap2app 应用无法正常运行的Bug
++ 修复 一键登录 在部分双卡设备可能无法调起授权页面的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
