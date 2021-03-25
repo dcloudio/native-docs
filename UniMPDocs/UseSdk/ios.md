@@ -42,7 +42,7 @@ UniMPSDK/Core 目录结构说明
 |OpenGLES.framework|CoreText.framework|QuartzCore.framework|
 |CoreGraphics.framework|libc++.tbd|QuickLook.framework|
 |CoreTelephony.framework|AssetsLibrary.framework|CoreLocation.framework|
-|AddressBook.framework|
+|AddressBook.framework|libiconv.tbd|
 
 #### 添加依赖资源文件
 
