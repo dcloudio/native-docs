@@ -64,7 +64,7 @@
 
 当前运行线程是否为UI线程。
 
-#### getFloatByViewport(Object value, int viewport)
+#### getFloatByViewport(Object value, float viewport)
 
 根据'视口'值域转换value值域
 
@@ -73,7 +73,7 @@
 |参数|类型|说明
 |:----|:----|:----
 |value|Object|被转换参数
-|viewport|int|视口值域、 视口值域的大小与设备是相关，通过
+|viewport|float|视口值域、 视口值域的大小与设备是相关，通过
 
 **返回值**
 
@@ -283,7 +283,7 @@ int 页面宽度
 |:----|:----
 |int|状态栏高度
 
-#### getRealPxByWidth(float pxValue,int customViewport)
+#### getRealPxByWidth(float pxValue,float customViewport)
 
 将JS、CSS的数据px值域转换为native数据值  
 
@@ -292,7 +292,7 @@ int 页面宽度
 |参数|类型|说明
 |:----|:----|:----
 |pxValue|float|js、css获取到px值域
-|customViewport|int|'视口'值域  customViewport通过mUniSDKInstance.getInstanceViewPortWidth()获取
+|customViewport|float|'视口'值域  customViewport通过mUniSDKInstance.getInstanceViewPortWidth()获取
 
 **返回值**
 
@@ -300,7 +300,7 @@ int 页面宽度
 |:----|:----
 |float|native数据值
 
-#### getWebPxByWidth(float pxValue,int customViewport)
+#### getWebPxByWidth(float pxValue,float customViewport)
 
 将native数据值转换为JS、CSS的数据px值域
 
@@ -309,7 +309,7 @@ int 页面宽度
 |参数|类型|说明
 |:----|:----|:----
 |pxValue|float|native数据值
-|customViewport|int|'视口'值域  customViewport通过mUniSDKInstance.getInstanceViewPortWidth()获取
+|customViewport|float|'视口'值域  customViewport通过mUniSDKInstance.getInstanceViewPortWidth()获取
 
 **返回值**
 
