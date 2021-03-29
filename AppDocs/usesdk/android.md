@@ -87,7 +87,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
             android:name="dcloud_appkey"
             android:value="替换为自己申请的Appkey" />
 	~~~
-	-->
+-->
 
 	+ 配置应用版本号
 
