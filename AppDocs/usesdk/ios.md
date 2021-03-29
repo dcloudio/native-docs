@@ -9,8 +9,8 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongbanbeny2.png)
 
 **注意：如果版本不一致，app启动时会弹出版本不一致的提示框，并且可能导致功能异常**
-
-**注意：3.1.5版本起需要申请Appkey，具体请点击[链接](/AppDocs/usesdk/appkey.md)**
+<!--
+**注意：3.1.5版本起需要申请Appkey，具体请点击[链接](/AppDocs/usesdk/appkey.md)**-->
 
 ## SDK目录说明
 
@@ -110,10 +110,11 @@ iOSSDK/SDK/Libs/liblibUI.a
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/createinfo.jpg)
  -->
 
-
+<!--
 ### 配置Appkey
 
 **3.1.5版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
+-->
 
 打开info.plist，创建key为dcloud_appkey，Value选择String类型，内容为申请的AppKey如下：
 ![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
