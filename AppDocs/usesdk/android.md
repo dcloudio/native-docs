@@ -109,7 +109,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	apply plugin: 'com.android.application'
 
 	android {
-		compileSdkVersion 28
+		compileSdkVersion 29
 		defaultConfig {
 			applicationId "com.example.myapplication"
 			minSdkVersion 21
