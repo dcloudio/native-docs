@@ -62,6 +62,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 	**Tips:**
 	
 	uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
+	HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+
 	
 #### 2.创建TestModule类
 
