@@ -19,7 +19,8 @@
 
 
 ~~~
-"GY_APP_ID"       : "%GY_APP_ID%",
+"GETUI_APPID"     : "%GY_APP_ID%",(3.1.6版本后)
+"GY_APP_ID"       : "%GY_APP_ID%",(3.1.6版本之前)
 "GT_INSTALL_CHANNEL":"HBuilder",
 （GT_INSTALL_CHANNEL 固定值 "HBuilder"）
 ~~~
