@@ -103,48 +103,17 @@ A: 这个警告是 Xcode 的线程检查机制，由于 SDK 内部在子线程�
 
 ## Q：小程序如何跳转原生页面
 
-A: 宿主打开小程序实现方式是：获取当前宿主显示的 `UIViewController`，通过`present`的方式打开小程序对应的 `DCUniMPViewController`，在小程序打开的情况下如果想跳转到原生其他`UIViewController`可以通过下面的方法获取到`DCUniMPViewController`，然后在`present`到原生的`UIViewController`，注意`DCUniMPViewController`为普通的`UIViewController`所以不支持`push`，如果想实现`push`的效果可以参考 [自定义专场动画](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e8%87%aa%e5%ae%9a%e4%b9%89%e8%bd%ac%e5%9c%ba%e5%8a%a8%e7%94%bb) 实现
+A: 宿主打开小程序实现方式是：获取当前宿主显示的 `UIViewController`，通过`present`或`push`的方式打开小程序对应的 `DCUniMPViewController`，在小程序打开的情况下如果想跳转到原生其他`UIViewController`可以通过下面的方法获取到`DCUniMPViewController`，然后在跳转其他`UIViewController`页面
 
 ```
-// 获取当前显示的 UIViewController
-+ (UIViewController *)dc_findCurrentShowingViewController {
-    //获得当前活动窗口的根视图
-    UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
-    UIViewController *currentShowingVC = [self findCurrentShowingViewControllerFrom:vc];
-    return currentShowingVC;
-}
-+ (UIViewController *)findCurrentShowingViewControllerFrom:(UIViewController *)vc
-{
-    // 递归方法 Recursive method
-    UIViewController *currentShowingVC;
-    if ([vc presentedViewController]) {
-        // 当前视图是被presented出来的
-        UIViewController *nextRootVC = [vc presentedViewController];
-        currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-
-    } else if ([vc isKindOfClass:[UITabBarController class]]) {
-        // 根视图为UITabBarController
-        UIViewController *nextRootVC = [(UITabBarController *)vc selectedViewController];
-        currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-
-    } else if ([vc isKindOfClass:[UINavigationController class]]){
-        // 根视图为UINavigationController
-        UIViewController *nextRootVC = [(UINavigationController *)vc visibleViewController];
-        currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-
-    } else {
-        // 根视图为非导航类
-        currentShowingVC = vc;
-    }
-
-    return currentShowingVC;
-}
+/// 小程序打开状态，调用此方法可获取小程序对应的 DCUniMPViewController 实例
+UIViewController *uniMPVC = [DCUniMPSDKEngine getUniMPViewController];
 
 ```
 
 ## Q：如何隐藏宿主的 TabBar
 
-A: 如果宿主底层是 `TabBar` 从首页以 `push` 方式打开小程序页面时想隐藏 TabBar，应该在自定义的 `UINavigationController` 类中复写下面的方法来实现 （如果您没有自定义的`UINavigationController` 那么应该新建一个便于统一管理导航栏的逻辑）
+A: 如果宿主底层是 `TabBar` 从首页以 `push` 方式打开小程序页面时想隐藏 TabBar，可以通过自定义 `UINavigationController` 类中复写下面的方法来实现 （如果您没有自定义的`UINavigationController` 可以新建一个便于统一管理导航栏的逻辑）
 
 ```
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -156,3 +125,8 @@ A: 如果宿主底层是 `TabBar` 从首页以 `push` 方式打开小程序页�
     [super pushViewController:viewController animated:animated];
 }
 ```
+
+## Q：wgt资源释放失败
+
+A：调用`releaseAppResourceToRunPathWithAppid:` 释放wgt资源是通过调用 SSZipArchive 库（编译在 libcoreSupport.a 库中）的方法将 wgt 资源解压到运行路径中，如果您的项目按照文档集成 UniMPSDK 基础库后 wgt 资源释放失败可以尝试将 libcoreSupport.a 库移除，然后将 [SSZipArchive](https://github.com/ZipArchive/ZipArchive) 库的源码添加到工程，注意 SSZipArchive 库需要在工程的 `Build Settings -> Preprocessor Macros -> Debug 和 Release`中分别添加 `HAVE_INTTYPES_H`，`HAVE_PKCRYPT`，`HAVE_STDINT_H`，`HAVE_WZAES`，`HAVE_ZLIB` 这5个宏定义，如下图所示，然后重新编译运行
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/unimpimgs/sszipmacros.png)
