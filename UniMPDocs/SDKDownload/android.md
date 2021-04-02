@@ -2,16 +2,15 @@
 
 ## 更新日志
 
+#### 2021年03月30日发布
+[点击下载SDK UniMPSDK_Android@3.1.7.20210330.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.7.20210330.zip)
++ 需使用HBuilderX（3.1.7）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.7.20210330.html)
+
 #### 2021年03月26日发布
 [点击下载SDK UniMPSDK_Android@3.1.6.20210326.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.6.20210326.zip)
 + 需使用HBuilderX（3.1.6）版本生成 小程序App 资源
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.6.20210326.html)
-
-
-#### 2021年03月03日发布
-[点击下载SDK UniMPSDK_Android@3.1.4.20210303.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.4.20210303.zip)
-+ 需使用HBuilderX（3.1.4）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.4.20210305.html)
 
 ## 历史稳定版本
 
