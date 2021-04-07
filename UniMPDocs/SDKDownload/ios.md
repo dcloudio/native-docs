@@ -4,12 +4,11 @@
 
 ## 更新日志
 
-#### 2021年03月05日发布
-#### SDK 3.1.4
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.4.zip)
+#### SDK 3.1.8
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.8.zip)
 
-+ 需使用 HBuilderX（3.1.4）版本生成 小程序App 资源
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.4.20210305.html)
++ 需使用 HBuilderX（3.1.8）版本生成 小程序App 资源
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.8.20210406.html)
 
 
 
