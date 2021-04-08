@@ -2,11 +2,10 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年3月31日发布 
+### 2021年4月6日发布 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.7.20210330）版本生成本地打包App资源。
-+ iOS 平台 修复 一键登录 授权登录界面使用浅色背景可能看到 loading 显示效果的Bug
-+ App-iOS平台 修复 picker 组件部分情况下显示异常的Bug [详情](https://ask.dcloud.net.cn/question/119591)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.8.20210406）版本生成本地打包App资源。
+
   
   `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
@@ -18,11 +17,11 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年3月18日发布 
+### 2021年4月7日发布 
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.6.20210318）版本生成本地打包App资源。
-+ App-iOS平台 修复 nvue web-view 组件在应用设置 allowsInlineMediaPlayback 为 true 时不生效的Bug [详情](https://ask.dcloud.net.cn/question/106864)
-+ App-iOS平台 修复 nvue map 组件 polyline 设置 arrowIconPath 为自定义箭头图标无效的Bug [详情](https://ask.dcloud.net.cn/question/118538)
++ 更新uni-app离线打包支持，需使用HBuilderX -alpha（3.1.8.20210407）版本生成本地打包App资源。
++ iOS平台 修复 一键登录 授权登录界面使用浅色背景可能看不到 loading 显示效果的Bug
++ App-iOS平台 修复 picker 组件部分情况下显示异常的Bug [详情](https://ask.dcloud.net.cn/question/119591)
 
 <!--
 `注意:从3.1.5版本开始，iOS离线SDK不支持5+ App打包，如需打包5+ App请使用云打包；离线打包uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
