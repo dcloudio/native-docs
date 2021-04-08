@@ -3,7 +3,7 @@
 ### 2021年04月07日发布
 [点击下载SDK](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.8.20210407）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.8.20210406）版本生成本地打包App资源。
 + 修复 uni-AD 激励视频播放超过30秒的穿山甲广告点击跳过按钮 onClose 回调中 isEnd 属性值为 false 的Bug
 
 
