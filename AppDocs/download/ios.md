@@ -23,6 +23,8 @@
 + iOS平台 修复 一键登录 授权登录界面使用浅色背景可能看不到 loading 显示效果的Bug
 + App-iOS平台 修复 picker 组件部分情况下显示异常的Bug [详情](https://ask.dcloud.net.cn/question/119591)
 
+`注意：HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"库`
+
 <!--
 `注意:从3.1.5版本开始，iOS离线SDK不支持5+ App打包，如需打包5+ App请使用云打包；离线打包uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
 -->
