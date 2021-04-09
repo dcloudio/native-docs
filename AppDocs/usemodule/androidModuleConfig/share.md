@@ -67,7 +67,7 @@ properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | share-qq-release.aar，qq_mta-sdk-1.6.2.jar，qq_sdk_v3.1.0.jar |
+| SDK\libs | share-qq-release.aar，qq_mta-sdk-1.6.2.jar，qq_sdk_v3.5.2.152.jar |
 
 ### Androidmainfest.xml文件需要修改的项
 
