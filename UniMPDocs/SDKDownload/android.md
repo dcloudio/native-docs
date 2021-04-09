@@ -2,9 +2,10 @@
 
 ## 更新日志
 
-#### 2021年04月06日发布
-[点击下载SDK UniMPSDK_Android@3.1.8.20210406.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.8.20210406.zip)
+#### 2021年04月09日发布
+[点击下载SDK UniMPSDK_Android@3.1.8.20210409.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.8.20210409.zip)
 + 需使用HBuilderX（3.1.8）版本生成 小程序App 资源
++ 修复上一个0406版本QQ无法正常分享登录问题
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.8.20210406.html)
 
 #### 2021年03月30日发布
