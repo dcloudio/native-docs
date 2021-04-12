@@ -23,6 +23,7 @@ A：请认真阅读文档参考demo示例检查你的项目！
  - 检查targetSdkVersion  取值范围26~30
  - 检查minSdkVersion  取值范围 19~22
  - 检查androidX版本 选择1.0.0版本
+ - 检查application节点配置信息 android:extractNativeLibs="true" 一定要配置为true
  - 查看宿主集成的三方依赖库。可能与小程序SDK不兼容导致的初始化失败
 
 ## Q: 集成Android uni小程序SDK包变大了50M？
