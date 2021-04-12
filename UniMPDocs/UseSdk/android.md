@@ -61,6 +61,13 @@ dependencies {
 	implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
 }
 ```
+
+**res资源：**
+
+3.1.6版本开始增加values-zh中文资源。默认values目录资源存放英文资源。只修改values下的数据在中文系统手机上运行无法正常显示改后数据。需要添加values-zh资源一并修改。
+
+
+
 **标注`必须集成`的依赖库一定要集成。版本号尽量一致。如果依赖库不一致或未集成可能会出现页面显示异常等现象**
 
 **注意**
