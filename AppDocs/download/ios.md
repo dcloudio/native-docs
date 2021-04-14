@@ -2,10 +2,11 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年4月6日发布 
+### 2021年4月14日发布 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.8.20210406）版本生成本地打包App资源。
-
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.9.20210413）版本生成本地打包App资源。
++ iOS平台 修复 uni-AD 仅开通增强开屏广告可能出现无法关闭spalsh页面的Bug
++ iOS平台 修复 应用覆盖安装后可能出现启动白屏的Bug
   
   `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
@@ -23,7 +24,7 @@
 + iOS平台 修复 一键登录 授权登录界面使用浅色背景可能看不到 loading 显示效果的Bug
 + App-iOS平台 修复 picker 组件部分情况下显示异常的Bug [详情](https://ask.dcloud.net.cn/question/119591)
 
-`注意：HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"库`
+`注意：HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
 
 <!--
 `注意:从3.1.5版本开始，iOS离线SDK不支持5+ App打包，如需打包5+ App请使用云打包；离线打包uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
