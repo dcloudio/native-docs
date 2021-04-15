@@ -3,7 +3,7 @@
 1. 登录[开发者中心](https://dev.dcloud.net.cn)
 2. 在左侧菜单中选择我创建的应用，点击需要申请的应用，如下图：
  ![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/appkey_applist-1.png)
-4. 在应用管理界面选择离线打包AppKey管理，根据需要选择对应平台，输入包名和SHA1，确认无误点击保存，即可获取到对应平台的App ，如下图：
+4. 在应用管理界面选择离线打包Key管理，根据需要选择对应平台，输入包名和SHA1，确认无误点击保存，即可获取到对应平台的App ，如下图：
  
     **SHA1的获取请参考该[文章](https://ask.dcloud.net.cn/article/35777)**
     
