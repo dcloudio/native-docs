@@ -3,9 +3,9 @@
 1. Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 2. [HBuilderX](https://www.dcloud.io/hbuilderx.html)
 3. App离线SDK下载：[最新android平台SDK下载](/AppDocs/download/android.md)
-<!--
-**3.1.5版本起需要申请Appkey，具体请点击[链接](/AppDocs/usesdk/appkey.md)**
--->
+
+**3.1.10版本起需要申请Appkey，具体请点击[链接](/AppDocs/usesdk/appkey.md)**
+
 ## SDK目录说明
 
 ~~~
@@ -73,10 +73,10 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		**注意：更新SDK时需要同时更新aar/jar文件和build.gradle配置**
 	
 2. 应用配置
-<!--
+
 	+ 配置Appkey
  	
-	**3.1.5版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
+	**3.1.10版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
 	
 	打开Androidmanifest.xml， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
 	
@@ -87,7 +87,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
             android:name="dcloud_appkey"
             android:value="替换为自己申请的Appkey" />
 	~~~
--->
+
 
 	+ 配置应用版本号
 
