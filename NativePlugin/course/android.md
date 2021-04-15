@@ -137,7 +137,7 @@ public JSONObject testSyncFunc(){
 
 #### 创建TestComponent类
 
-- Component 扩展类必须继承 UniComponent
+- Component 扩展类必须继承 UniComponent  容器Component(例如view组件)则需要继承UniVContainer
 
 **示例:**
 	
