@@ -19,6 +19,7 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/speech/29526.png)
 
+<!--
 
 ## 讯飞语音
 ### 将讯飞语音模块依赖库及资源添加到工程
@@ -39,3 +40,4 @@
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200409/98a2e2ae9cb110890e51c8bf769f87a7.png)
 
 **注意：语言识别功能百度模块或讯飞模块只能选一个**
+-->
