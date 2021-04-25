@@ -194,7 +194,7 @@ uni.onNativeEventReceive((event,data)=>{
 向宿主App发送事件
 
 ```
-uni.sendNativeEvent(event,callback)
+uni.sendNativeEvent(event, data, callback)
 ```
 
 **参数说明**
