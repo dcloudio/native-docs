@@ -9,13 +9,16 @@
     **AppKey不区分debug和release模式，Andorid如需要调试需要使用申请AppKey时的证书**
     
     ![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/applist-config.png)
+	
+	**点击保存得到`Appkey`**
+	
+	![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/applist-config-key.png)
 
 ### 配置
 
-请点击下面链接参考对应平台的配置Appkey章节
-
 #### Android
-打开Android项目 配置主APP的Androidmanifest.xml文件， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
+
+获取到android平台的AppKey后！打开Android项目 配置主APP的Androidmanifest.xml文件， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
 
 ```
 	<application
@@ -25,5 +28,29 @@
             android:value="替换为自己申请的Appkey" />
 ```
 
+#### IOS
+
+请点击下面链接参考IOS平台的配置Appkey章节
+
 [iOS](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios)
+
+
+### 常见问题
+
+#### 项目配置都正确怎么还是提示"未配置AppKey或配置错误"？
+
+这种情况不用怀疑。还是安装包的信息与你在申请Appkey填写信息不符导致的。
+
+#### android平台打包完的apk文件我怎么查看签名信息对比sha1呢？
+
++ 首先使用解压工具解开apk。
+
++ 进入meta-inf文件夹，进入命令行模式 输入如下命令 [参考文章](https://www.jianshu.com/p/d141cbcf2476)
+```
+keytool -printcert -file CERT.RSA
+```
+
+
+
+
    
