@@ -80,14 +80,13 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	打开Androidmanifest.xml， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
 	
-	~~~
+	```
 	<application
         ...>
         <meta-data
             android:name="dcloud_appkey"
             android:value="替换为自己申请的Appkey" />
-	~~~
-
+	```
 
 	+ 配置应用版本号
 

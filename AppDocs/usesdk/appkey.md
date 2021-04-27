@@ -1,4 +1,3 @@
-从3.1.10版本起，离线打包需要申请AppKey, 如果不配置AppKey, 应用将不会运行，本文档描述了离线打包AppKey 申请和配置步骤。
 ### 申请
 1. 登录[开发者中心](https://dev.dcloud.net.cn)
 2. 在左侧菜单中选择我创建的应用，点击需要申请的应用，如下图：
@@ -10,10 +9,21 @@
     **AppKey不区分debug和release模式，Andorid如需要调试需要使用申请AppKey时的证书**
     
     ![avatar](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/APPKEY/applist-config.png)
+
 ### 配置
+
 请点击下面链接参考对应平台的配置Appkey章节
 
-[Android](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/android?id=%e9%85%8d%e7%bd%ae%e5%b7%a5%e7%a8%8b)
+#### Android
+打开Android项目 配置主APP的Androidmanifest.xml文件， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
+
+```
+	<application
+        ...>
+        <meta-data
+            android:name="dcloud_appkey"
+            android:value="替换为自己申请的Appkey" />
+```
 
 [iOS](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/ios)
    
