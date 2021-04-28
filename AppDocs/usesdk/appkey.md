@@ -41,6 +41,36 @@
 
 这种情况不用怀疑。还是安装包的信息与你在申请Appkey填写信息不符导致的。 appid+应用包名+签名sha1三者必须与申请填写的信息一致才可以的。
 
+**android平台 可以按一下步骤检查一下离线项目配置:**
+
+1、查看签名文件是否配置到了主APP的build.gradle。
+
+2、查看离线项目中dcloud_control.xml文件中的appid是否与申请AppKey时的appid一致。
+
+3、检测离线项目的包名是否申请AppKey时的包名是否一致。
+
+4、编译完通过apk解压获取一下签名信息与申请AppKey时填写的SHA1一致。
+
+#### android平台 怎么创建签名文件？怎么获取签名文件的SHA1？
+
+请查看文档[Android平台签名证书(.keystore)生成指南](https://ask.dcloud.net.cn/article/35777)
+
+#### android平台 怎么配置签名文件打包编译？
+
+主APP的build.gradle文件的android节点下配置如下:
+```
+signingConfigs {
+        config {
+            keyAlias '签名别名'
+            keyPassword '密码'
+            storeFile file('xxx.keystore或xxx.jks')
+            storePassword '密码'
+            v1SigningEnabled true //兼容v1
+            v2SigningEnabled true //兼容v2
+        }
+}
+```
+
 #### android平台打包完的apk文件我怎么查看签名信息对比sha1呢？
 
 + 首先使用解压工具解开apk。
@@ -49,8 +79,5 @@
 ```
 keytool -printcert -file CERT.RSA
 ```
-
-
-
 
    
