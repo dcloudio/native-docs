@@ -14,32 +14,23 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年04月16日发布
+### 2020年04月30日发布
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.10.20210415-alpha）版本生成本地打包App资源。
-+ 新增 uni-AD支持插屏广告
-+ 更新 uni-AD 穿山甲 SDK 为 3.5.5.0 版；快手联盟SDK 3.3.8 版
-+ 修复 3.1.6 版本引出的 nvue scroll-view组件设置 scroll-x 为 true 时可能引起闪退的Bug
-+ 修复 部分设备 input 组件设置 focus 属性为 true 时键盘收回的Bug
-+ 修复 nvue onLoad 事件调用 plus.navigator.hideSystemNavigation 可能出现页面高度异常的Bug
-+ 修复 nvue list 组件中加载大量图片上下滚动可能引起崩溃的Bug
-+ 修复 nvue map 组件中多个 marker 切换后 callout 可能显示不正常的Bug
-+ 修复 nvue map 组件与页面拖拽滚动手势冲突的Bug
-+ 修复 nvue picker-view 组件在部分设备可能显示不正常的Bug
-+ 新增 离线打包支持 AppKey 管理 [文档](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
-+ 新增 压缩视频支持 filename 属性设置压缩后文件保存路径功能
-+ 优化 一键登录 未通过审核时云端打包后调用API返回 -7 错误
-+ 修复 一键登录 授权界面显示后，调用原生模态窗口无法正常显示的Bug
-+ 修复 存在开屏广告时 splashclosed 事件可能在启动界面关闭前触发的Bug
-+ 更新 公共测试证书，解决某些检测机构报病毒的问题
-+ 更新 gif图片库 android-gif-drawable 为 1.2.23 版，解决安全检测报存在远程代码执行漏洞的问题
-+ 修复 申请权限被用户拒绝后可能无法再次正常申请权限的Bug
-+ 修复 UniPush个推模块过度申请权限的Bug
-+ 修复 视频播放控件 播放 http/https 地址视频的 cookie 与 X5 内核 webview 页面没有同步共享的Bug
-+ 修复 一键登录 在部分设备上服务协议文本字体显示过大的Bug
-+ 修复 一键登录 显示和关闭授权界面动画时间过长的Bug
-+ 修复 Downloader 下载较大文件时可能引起页面无法更新的Bug
-+ 修复 部分华为手机调用相机录像成功后无法找到视频文件的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.14.20210430-alpha）版本生成本地打包App资源。
++ 优化 uni.getVideoInfo 返回信息增加 orientation、type、bitrate 属性	
++ 修复 3.1.10 版本引出的 uni.chooseVideo 选取视频失败的Bug
++ 新增 uni.request 网络请求支持 TLS 双向认证
++ 修复 nvue map 组件 marker 执行移动动画时 callout 可能不会跟随的Bug
++ 修复 nvue video 组件在调用分享功能返回后，视频封面会消失的Bug
++ 新增 一键登录 全屏模式支持在登录界面添加自定义登录按钮
++ 新增 获取视频信息 getVideoInfo 支持获取画面方向 orientation、视频格式 type、视频码率 bitrate
++ 优化 原生模板隐私政策提示框逻辑，解决部分应用市场检测到弹出隐私政策框之前读取mac地址和应用列表的问题
++ 更新 新浪微博分享、授权登录 SDK 为 10.10.0 版，适配支持 Android11 设备
++ 更新 高德地图 SDK 为 7.9.1 版，高德定位 SDK 为 5.3.1 版，友盟统计 SDK 为 9.3.8 版
++ 修复 腾讯云等安全检测平台报的部分高风险漏洞
++ 修复 uni-AD 开通基础开屏广告在弱网状态可能引起崩溃的Bug
++ 修复 uni-AD 快手联盟的信息流广告可能返回高度不正确导致显示异常的Bug
++ 修复 uni原生插件在原生模板隐私政策提示框之前可能进行初始化违规读取用户数据的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
