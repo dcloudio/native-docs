@@ -268,6 +268,8 @@
 
 ## 国际化配置
 
+**注意：3.1.6支持了中英文多语言适配，如果需要修改默认字符串，需同时修改values、values-zh、values-en下的内容。**
+
 android 设置国际化可参考：[本地化您的应用](https://developer.android.com/guide/topics/resources/localization)
 
 #### html页面中input（type=file）打开的选择页面国际化字符串
