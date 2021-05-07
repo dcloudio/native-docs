@@ -69,6 +69,17 @@ signingConfigs {
             v2SigningEnabled true //兼容v2
         }
 }
+
+buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            ...
+        }
+        release {
+            signingConfig signingConfigs.config
+            ...
+        }
+}
 ```
 
 #### android平台打包完的apk文件我怎么查看签名信息对比sha1呢？
