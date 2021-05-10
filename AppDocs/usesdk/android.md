@@ -187,6 +187,19 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	~~~
 
 	**注意：${apk.applicationId} 必须替换成当前应用的包名**
+	
+	如果集成离线SDK时需要重写application，必须继承自DCloudApplication，否则会导致SDK中业务逻辑无法正常运行。
+		
+	将对应的application配置到Androidmanifest.xml中（如下），并添加tools:replace="android:name"以防出现冲突。
+		
+	~~~
+		<application  
+		    android:name="io.dcloud.test.TestApplication"  
+		    android:icon="@drawable/icon"  
+		    android:label="@string/app_name"  
+		    tools:replace="android:name">
+		</application>
+	~~~
 
 	+ 配置应用图标和启动界面
 
