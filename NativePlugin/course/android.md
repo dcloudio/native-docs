@@ -20,7 +20,8 @@
 - **Activity变更为FragmentActivity注意事项**
 	+ HX3.0.7版本云打包及相应版本SDK开始将`Activity`变更为`FragmentActivity`.解决部分插件开发者需要加载Fragment的需求。但也带来了一些代码与之前不同的修改。需要注意以下问题：
 		- requestPermissions需要限制requestCode的值域，之前`Activity`没有限制requestCode的值域。`FragmentActivity`的权限申请限制requestCode的值域不能为负值,也不能大于16位bit值65536。否则报异常或崩溃`Can only use lower 16 bits for requestCode`，强烈推荐使用0~60500之间取值。
-- **HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+**	
+- **HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+**
+- **3.1.10版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
 
 ## 导入uni插件原生项目
 
