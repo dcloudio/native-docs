@@ -265,6 +265,29 @@
 	如果录制音频时需要录制MP3格式，需添加此模块。
 	
 	使用时将aar拷贝到libs文件夹下即可，不需要额外配置。
+	
+## 隐私与政策提示框配置
+
+#### 一级弹窗
+
+|字符串键名|字符串键值|
+|:--:|:--:|
+|dcloud_privacy_prompt_title | 模板提示框上的标题，默认为“服务协议和隐私政策”|
+|dcloud_privacy_prompt_accept_button_text | 模板提示框上接受按钮的文本，默认值为“同意”|
+|dcloud_privacy_prompt_refuse_button_text | 模板提示框上拒绝按钮的文本，默认不显示此按钮|
+|dcloud_privacy_prompt_message | 模板提示框上的内容，支持richtext|
+
+#### 二级弹窗
+|字符串键名|字符串键值|
+|:--:|:--:|
+|dcloud_second_privacy_prompt_title | 二级弹窗标题，默认不显示 |
+|dcloud_second_privacy_prompt_accept_button_text | 二级弹窗确认按钮，默认为“确定” |
+|dcloud_second_privacy_prompt_refuse_button_text | 二级弹窗拒绝按钮，默认不显示此按钮 |
+|dcloud_second_privacy_prompt_message | 二级弹窗模板提示框上的内容，支持richtext |
+
+**注意：默认不显示二级弹窗，在配置上述二级弹窗属性之后，点击一级弹窗拒绝按钮的时候才会弹出二级弹窗。**
+	
+配置隐私与政策提示框参考：https://ask.dcloud.net.cn/article/36937
 
 ## 国际化配置
 
@@ -311,14 +334,3 @@ dcloud_permission_write_external_storage_message|引导用户开启“读写手�
 dcloud_permission_read_phone_state_message|引导用户开启“获取设备信息”权限提示语
 	
 配置应用启动时申请权限详细配置参考：[https://ask.dcloud.net.cn/article/36549](https://ask.dcloud.net.cn/article/36549)
-	
-#### 隐私与政策提示框国际化配置
-
-|字符串键名|字符串键值|
-|:--:|:--:|
-|dcloud_privacy_prompt_title | 模板提示框上的标题，默认为“服务协议和隐私政策”|
-|dcloud_privacy_prompt_accept_button_text | 模板提示框上接受按钮的文本，默认值为“我知道了”|
-|dcloud_privacy_prompt_refuse_button_text | 模板提示框上拒绝按钮的文本，默认不显示此按钮|
-|dcloud_privacy_prompt_message | 模板提示框上的内容，支持richtext|
-	
-配置隐私与政策提示框参考：https://ask.dcloud.net.cn/article/36937
