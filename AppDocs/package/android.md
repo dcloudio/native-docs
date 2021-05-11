@@ -10,15 +10,26 @@ versionCode为应用的版本号（整数值），用于各应用市场的升级
 versionName为应用的版本名称（字符串），在系统应用管理程序中显示的版本号，建议与manifest.json中version -> name值一致。
 	
 
-## 生成apk
+## 生成安装包
+
+**注意：如果需要生成aab安装包，需要在项目根目录下的gradle.properties文件中添加如下内容**
+~~~
+android.bundle.enableUncompressedNativeLibs = false
+~~~
 
 点击Build->Generate Signed Bundle/APK...，如下图：
 	
 ![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/6-2.png)
 	
-选择 APK 选项，点击Next
+- 生成apk
+
+	选择 APK 选项，点击Next
 	
-![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/6-3.png)
+	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/6-3.png)
+
+- 生成aab
+
+	选择Android App Bundle选项，点击Next
 	
 选择项目（Module），即当前需要打包的项目，注意：如果创建的项目是Library的话，不会显示在此列表里
 	
