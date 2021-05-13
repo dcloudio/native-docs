@@ -54,7 +54,7 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 
 ## 案例
 - **CSDN App：** Appstore新闻类榜单前十。App内部众多栏目做成小程序形式。[App下载](https://www.csdn.net/apps/download)
-
+- **网易藏宝阁:** 网易官方游戏交易平台。 [App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.netease.cbg)
 
 
 ## FAQ
