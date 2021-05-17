@@ -1,11 +1,10 @@
 ## Android 离线SDK - 正式版
 
-### 2021年04月29日发布
+### 2021年05月17日发布——HBuilderX（3.1.13.20210514）
 [点击下载SDK](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.12.20210428）版本生成本地打包App资源。
-+ 修复 3.1.11 版本引出的 nvue 页面在项目配置 nvueCompiler 为 weex 时显示不正常的Bug
-+ 修复 uni-AD 快手联盟的信息流广告可能返回高度不正确导致显示异常的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.13.20210514）版本生成本地打包App资源。
++ 更新 腾讯X5内核版本为 4.3.0.93，解决X5内核渲染页面时获取的UA中不包含 MQQBrowser 关键字的Bug
 
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1Gpbnq3wLvvnRO6W-SlvVpA)，提取码: neqx
@@ -14,7 +13,7 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2020年04月30日发布
+### 2020年04月30日发布——HBuilderX（3.1.14.20210430-alpha）
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.1.14.20210430-alpha）版本生成本地打包App资源。
