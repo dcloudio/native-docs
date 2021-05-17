@@ -15,7 +15,7 @@
 
 渠道：可以填apple。
 
-### 再按下面2个步骤配置参数：
+### 再按下面3个步骤配置参数：
 
 1.在info.plist文件里加DCLOUD_AD_ID节点，内容为自己申请的广告标识adid
 
@@ -23,6 +23,9 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongdqudao.png)
 
+3.在info.plist文件里配置NSUserTrackingUsageDescription隐私描述，详细配置可参考如下链接。
+
+ [参考:https://ask.dcloud.net.cn/article/36107](https://ask.dcloud.net.cn/article/36107)
 
 <!-- ## 360广告
 ### 添加依赖资源及文件

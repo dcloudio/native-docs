@@ -2,10 +2,13 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年4月29日发布 
+### 2021年5月17日发布（`HBuilderX（3.1.13.20210514）`） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.12.20210428）版本生成本地打包App资源。
-+ 新增 uni-AD支持插屏广告 [规范](https://www.html5plus.org/doc/zh_cn/ad.html#plus.ad.createInterstitialAd)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.13.20210514）版本生成本地打包App资源。
++ 【重要】iOS平台 优化 广告标识 IDFA 操作逻辑，适配从 iOS14.5 开始 AppStore 审核要求用户许可收集跟踪数据 [详情](https://ask.dcloud.net.cn/article/36107)
++ iOS平台 修复 3.1.11 版本引出的 横屏状态 toast 消息提示框 和 loading 提示框显示异常的Bug [详情](https://ask.dcloud.net.cn/question/121979)
++ iOS平台 修复 一键登录 登录和其它登录按钮的默认圆角值不一致的Bug [详情](https://ask.dcloud.net.cn/question/121572)
++ iOS平台 修复 微信授权登录调用 authorize 动态传入 appid 参数不生效的Bug [详情](https://ask.dcloud.net.cn/question/121292)
 
   `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
@@ -17,7 +20,7 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年4月30日发布 
+### 2021年4月30日发布（`HBuilderX-alpha（3.1.14.20210430）`）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
 + 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.14.20210430）版本生成本地打包App资源。
 + 【重要】iOS平台 优化 广告标识 IDFA 操作逻辑，适配从 iOS14.5 开始 App Store 审核要求用户许可收集跟踪数据 [详情](https://ask.dcloud.net.cn/article/36107)
