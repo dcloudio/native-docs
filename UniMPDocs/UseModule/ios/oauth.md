@@ -107,7 +107,10 @@
 |:--|:--|:--|
 |liblibOauth.a、libAppleOauth.a|AuthenticationServices.framework|无|
 
-苹果授权登录使用 [文档](https://ask.dcloud.net.cn/article/36651)
+### 开启 Sign in with Apple
+在原生工程 -> Signing&Capabilities-> + Capability 中添加 Sign in with Apple 服务
+
+证书配置及使用说明请参考 [文档](https://ask.dcloud.net.cn/article/36651)
 
 ## 添加代码
 

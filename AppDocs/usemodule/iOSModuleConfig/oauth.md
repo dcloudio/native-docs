@@ -120,7 +120,11 @@ Oauth 模块支持
 
 **注意：AuthenticationServices.framework Status 为 Optional**
 
-苹果授权登录使用 [文档](/AppDocs/usemodule/iOSModuleConfig/otherModule/appleOauth.md)
+### 开启 Sign in with Apple
+在原生工程 -> Signing&Capabilities-> + Capability 中添加 Sign in with Apple 服务
+
+证书配置及使用说明请参考 [文档](https://ask.dcloud.net.cn/article/36651)
+
 
 **注意 :除苹果授权登录外，都需要实现如下方法**
 
