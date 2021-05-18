@@ -6,22 +6,26 @@
 
 需要将以下jar/aar文件放到工程的libs目录下
 
+**注意：HBuilderX 3.1.15之后集成uniPush需要添加gtc-3.1.1.0.aar、gtsdk-3.2.0.0.aar、hwp-3.0.1.aar、mzp-3.0.2.aar、oppo-3.0.3.aar、vivo-3.0.3.aar、xmp-3.0.2.aar**
+
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-release.aar |
+| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc-3.1.1.0.aar, gtsdk-3.2.0.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar |
 
 ### gradle配置
 
 打开build.gradle，在defaultConfig添加manifestPlaceholders节点，如下图所示，将io.dcloud.HBuilder替换成自己的应用包名，将appid等信息替换成申请之后的appid等。
 
 ***应用的app id/app key等信息，从开发者后台->unipush->配置管理->应用管理 界面查看***
+** 注意：HBuilderX3.1.15之后需要添加GETUI_APPID属性 **
 ~~~
 android {
     defaultConfig {
         manifestPlaceholders = [
-                "plus.unipush.appid" : "pPyZWvH3Fa6PXba19ID0091",
-                "plus.unipush.appkey" : "b7dOGlNPHR7pqwUxcXPVi44",
-                "plus.unipush.appsecret": "IxVYAT9qws8dlNElacmSg12",
+				"GETUI_APPID": "unipush的appid",
+                "plus.unipush.appid" : "unipush的appid",
+                "plus.unipush.appkey" : "unipush的key",
+                "plus.unipush.appsecret": "unipush的secret",
                 "apk.applicationId":"io.dcloud.HBuilder"
         ]
     }
