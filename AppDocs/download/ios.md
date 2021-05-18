@@ -2,7 +2,7 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年5月17日发布（`HBuilderX（3.1.13.20210514）`） 
+### 2021年5月17日发布——HBuilderX（3.1.13.20210514） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
 + 更新uni-app离线打包支持，需使用HBuilderX（3.1.13.20210514）版本生成本地打包App资源。
 + 【重要】iOS平台 优化 广告标识 IDFA 操作逻辑，适配从 iOS14.5 开始 AppStore 审核要求用户许可收集跟踪数据 [详情](https://ask.dcloud.net.cn/article/36107)
@@ -20,7 +20,7 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年5月18日发布（`HBuilderX-alpha（3.1.15.20210518）`）
+### 2021年5月18日发布——HBuilderX（3.1.15.20210518-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
 + 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.15.20210518）版本生成本地打包App资源。
 + 新增 uni-AD 快手广告联盟支持插屏广告
