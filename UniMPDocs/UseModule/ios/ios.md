@@ -813,7 +813,7 @@ UniMPSDK/Feature目录结构
 	</tr>
 	<tr>
 	    <td>fingerprint(指纹识别)</td>
-	    <td><a href="plus.fingerprint](https://www.html5plus.org/doc/zh_cn/fingerprint.html"> plus.fingerprint </a></td>
+	    <td><a href="https://www.html5plus.org/doc/zh_cn/fingerprint.html"> plus.fingerprint </a></td>
 	    <td><a href="https://uniapp.dcloud.io/api/other/authentication"> authentication </a></td>
 	    <td>
 		LocalAuthentication.framework
