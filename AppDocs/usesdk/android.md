@@ -116,6 +116,9 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 			versionCode 1
 			versionName "1.0"
 			multiDexEnabled true
+			ndk {
+				abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a'
+			}
 		}
 		buildTypes {
 			release {
@@ -132,6 +135,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		implementation 'com.alibaba:fastjson:1.1.46.android'
 	}
 	~~~
+	
+	**注意：如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，否则会导致在部分手机上无法运行。**
 	
 	+ 配置应用名称
 
