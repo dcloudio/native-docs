@@ -54,7 +54,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libDCUniMap.a、libDCUniAmap.a 、DCUniVideoPublic.framework、AMapSearchKit.framework、MAMapKit.framework、AMapFoundationKit.framework|MapKit.framework、CoreLocation.framework、libc++.tbd、GLKit.framework|AMap.bundle、userPosition@2x.png|
+|libDCUniMap.a、libDCUniAmap.a 、Masonry.framework、AMapSearchKit.framework、MAMapKit.framework、AMapFoundationKit.framework|MapKit.framework、CoreLocation.framework、libc++.tbd、GLKit.framework|AMap.bundle、userPosition@2x.png|
 
 注：userPosition@2x.png 为显示带方向的用户位置的图标，可替换为自己的设计
 
