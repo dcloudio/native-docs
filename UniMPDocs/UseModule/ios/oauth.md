@@ -91,11 +91,19 @@
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191203/7bc7afb901b0c2a7b8f057be5cc81a89.png)
 
-3.在 info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：
+3.配置Associated Domains（域名）
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/2d348820422e3b02d8a65b8f6c6cd830.png)
+
+填写通用链接域名
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/0221225d811e93279784d3235a32d055.png)
+
+4.在 info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
-4.在 info.plist 添加 `weixinoauth` 项，填写微信 `appid` 及 `appSecret`
+5.在 info.plist 添加 `weixinoauth` 项，填写微信 `appid` 及 `appSecret`
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150817/fe4930ae149b7393e9ce828662550d9b.png)
 
