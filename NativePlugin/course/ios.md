@@ -866,7 +866,7 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |Masonry|--|VideoPlayer/包含在 DCUniVideoPublic.framework 中|
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
-
+|百度语音库|v3.0.10.0|Speech/百度语音识别模块|
 
 ### Q: 之前引用的头文件和资源 现在找不到了
 
