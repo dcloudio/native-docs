@@ -11,13 +11,4 @@
 
 
 
-## Android 离线SDK - Alpha版
-
-### 2020年05月26日发布——HBuilderX（3.1.16.20210525-alpha）
-[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
-
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.16.20210525-alpha）版本生成本地打包App资源。
-+ 修复 nvue swiper 组件动态加载数据时会跳到第一个 swiper-item 的bug
-+ 修复 3.1.15 版本引出的 云端打包同时勾选 UniPush 和 一键登录 模块会引起打包失败的Bug
-
-[百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
+## Android 离线SDK - Alpha版### 2020年06月04日发布——HBuilderX（3.1.17.20210603-alpha）[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.17.20210603-alpha）版本生成本地打包App资源。+ 新增 nvue ad-content-page组件支持页面内显示快手短视频内容联盟+ 修复 nvue map 组件 marker 上的 label 可能会被 marker 本身覆盖的Bug[百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
