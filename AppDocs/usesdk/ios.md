@@ -119,7 +119,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 ![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
 
 
-### 配置应用标识(Boundle Identifier)
+### 配置应用标识(Bundle Identifier)
 
 选择左侧应用工程根目录，选中TARGETS下的HBuilder打开工程属性界面，在General下修改Identity的值：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/gongboundleID.png)
