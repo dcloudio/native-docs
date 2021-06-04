@@ -227,7 +227,15 @@ UniMPSDK/Core 目录结构说明
 }
 ```
 
-至此示例代码部分已完成，可以运行查看效果，更多 API 请参考 [功能示例](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f)
+至此示例代码部分已完成，可以运行查看效果
+
+### tips
+
+- 集成遇到问题请先参考一下SDK目录中提供的dmeo工程，和查看一下 [常见问题](https://nativesupport.dcloud.net.cn/UniMPDocs/FAQ/ios)
+- 本篇示例只讲解了集成基础模块，其他功能模块集成请参考 [内置功能模块集成](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/ios/ios)
+- 小程序的一些使用技巧比如启动传参、启动直达二级页面等，更多 API 请参考 [功能示例](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f)
+- 内置功能如不满足您的需求可以通过扩展原生能力来自行实现参考文档 [iOS扩展原生能力](https://nativesupport.dcloud.net.cn/UniMPDocs/Extension/ios)
+- 欢迎加入 uni小程序SDK官方QQ 交流群：892918401
 
 ### 应用资源管理
 
