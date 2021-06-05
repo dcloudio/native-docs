@@ -136,3 +136,4 @@ uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目�
 ### 添加so库
 
 如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，如果添加其他文件夹会导致在部分手机上无法运行。
+
