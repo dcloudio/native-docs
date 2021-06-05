@@ -1,6 +1,10 @@
-### 5+App 卡在Splash页面，无法运行
+### 应用启动白屏或者提示打包时未添加ui模块
 
-3.1.5之后离线打包将不再支持5+App，云打包不受影响。
+出现白屏或者提示打包时未添加ui模块时，大多数是因为build.gradle中配置了混淆。
+
+如果您需要使用proguard混淆代码，需确保不要混淆SDK的代码。
+
+混淆配置和混淆文件可以参考SDK中的UniPlugin-Hello-AS项目。
 
 ### 编译报错 style attribute 'android:attr/forceDarkAllowed' not found.
 
@@ -140,3 +144,4 @@ uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目�
 ### 添加so库
 
 如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，如果添加其他文件夹会导致在部分手机上无法运行。
+
