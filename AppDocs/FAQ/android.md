@@ -1,3 +1,11 @@
+### 应用启动白屏或者提示打包时未添加ui模块
+
+出现白屏或者提示打包时未添加ui模块时，大多数是因为build.gradle中配置了混淆。
+
+如果您需要使用proguard混淆代码，需确保不要混淆SDK的代码。
+
+混淆配置和混淆文件可以参考SDK中的UniPlugin-Hello-AS项目。
+
 ### 编译报错 style attribute 'android:attr/forceDarkAllowed' not found.
 
 当运行原生SDK的时候提示 style attribute 'android:attr/forceDarkAllowed' not found. 需要将 compileSdkVersion 设置为 29 或以上
