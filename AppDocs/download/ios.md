@@ -20,11 +20,12 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年5月26日发布——HBuilderX（3.1.16.20210525-alpha）
+### 2021年5月26日发布——HBuilderX（3.1.18.20210604-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.16.20210525）版本生成本地打包App资源。
-+ iOS平台 更新 百度语音识别 SDK 为 3.0.10.0 版
-+ iOS平台 优化 相册目录选择操作界面
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.18.20210604）版本生成本地打包App资源。
++ iOS平台 修复 视频播放控件 VideoPlayer 调用 playbackRate 方法设置倍数播放值为 1.25、1.5 不生效的Bug [详情](https://ask.dcloud.net.cn/question/107802)
++ iOS平台 修复 扫码时息屏后再次打开引起扫描线动画停止的Bug [详情](https://ask.dcloud.net.cn/question/124001)
+
 
 `注意:HX3.1.16版本之后，更新video模块和nvue的高德地图模块，需要配置"Masonry.framework"库`
 
