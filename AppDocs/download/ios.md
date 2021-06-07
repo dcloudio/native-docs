@@ -20,7 +20,7 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年6月5日发布——HBuilderX（3.1.18.20210604-alpha）
+### 2021年6月4日发布——HBuilderX（3.1.17.20210603-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
 + 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.18.20210604）版本生成本地打包App资源。
 + iOS平台 修复 视频播放控件 VideoPlayer 调用 playbackRate 方法设置倍数播放值为 1.25、1.5 不生效的Bug [详情](https://ask.dcloud.net.cn/question/107802)
