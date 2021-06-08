@@ -2,7 +2,7 @@
 
 | 路径 | 文件名 |
 | :-------: | :-------: |
-|uniMPSDK\Features\libs|alipayutdid.jar、statistics-umeng-release.aar|
+|uniMPSDK\Features\libs|umeng-abtest-v1.0.0.aar, alipayutdid.jar、statistics-umeng-release.aar|
 
 将表格中的文件拷贝至主Module中的libs下。
 

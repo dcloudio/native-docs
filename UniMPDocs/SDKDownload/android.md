@@ -2,16 +2,17 @@
 
 ## 更新日志
 
+#### 2021年06月08日发布
+[点击下载SDK UniMPSDK_Android@3.1.17.20210608.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.17.20210608.zip)
++ 需使用HBuilderX（3.1.17）版本生成 小程序App 资源
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.17.20210608.html)
+
 #### 2021年05月14日发布
 [点击下载SDK UniMPSDK_Android@3.1.13.20210514-2.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.13.20210514-2.zip)
 + 需使用HBuilderX（3.1.13）版本生成 小程序App 资源
 + 修复百度语音无法正常使用的问题
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.13.20210514.html)
 
-#### 2021年04月28日发布
-[点击下载SDK UniMPSDK_Android@3.1.12.20210428.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.12.20210428.zip)
-+ 需使用HBuilderX（3.1.12）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.12.20210428.html)
 
 ## 历史稳定版本
 
