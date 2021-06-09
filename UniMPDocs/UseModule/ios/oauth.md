@@ -15,7 +15,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|UniVerify.framework、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
+|UniVerify.framework、libGTCommonSDK-1.2.2.0.a、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
 
 ### 工程配置
 
