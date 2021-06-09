@@ -2,13 +2,20 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年5月17日发布——HBuilderX（3.1.13.20210514） 
+### 2021年6月8日发布——HBuilderX（3.1.17.20210608） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.13.20210514）版本生成本地打包App资源。
-+ 【重要】iOS平台 优化 广告标识 IDFA 操作逻辑，适配从 iOS14.5 开始 AppStore 审核要求用户许可收集跟踪数据 [详情](https://ask.dcloud.net.cn/article/36107)
-+ iOS平台 修复 3.1.11 版本引出的 横屏状态 toast 消息提示框 和 loading 提示框显示异常的Bug [详情](https://ask.dcloud.net.cn/question/121979)
-+ iOS平台 修复 一键登录 登录和其它登录按钮的默认圆角值不一致的Bug [详情](https://ask.dcloud.net.cn/question/121572)
-+ iOS平台 修复 微信授权登录调用 authorize 动态传入 appid 参数不生效的Bug [详情](https://ask.dcloud.net.cn/question/121292)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.17.20210608）版本生成本地打包App资源。
++ 新增 uni-AD 快手广告联盟支持插屏广告
++ 新增 一键登录 全屏模式支持在登录界面添加自定义登录按钮 [详情](https://uniapp.dcloud.io/univerify)
++ 新增 获取视频信息 getVideoInfo 支持获取画面方向 orientation、视频格式 type、视频码率 bitrate [文档](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.VideoInfo)
++ 更新 uni-AD 快手广告联盟SDK 为3.3.9 版；快手内容联盟SDK 为3.3.16 版；腾讯优量汇SDK Android为4.360.1230版；穿山甲SDK Android为3.6.1.3版，iOS为3.6.1.2版
++ iOS平台 优化 相册目录选择操作界面
++ iOS平台 更新 高德地图 SDK 为 1.6.4无IDFA版，适配 iOS14.5 开始 AppStore 审核要求用户许可访问IDFA数据
++ iOS平台 更新 百度语音识别 SDK 为 3.0.10.0 版
++ iOS平台 修复 视频播放控件 VideoPlayer 调用 playbackRate 方法设置倍数播放值为 1.25、1.5 不生效的Bug [详情](https://ask.dcloud.net.cn/question/107802)
++ iOS平台 修复 扫码时息屏后再次打开引起扫描线动画停止的Bug [详情](https://ask.dcloud.net.cn/question/124001)
++ iOS平台 修复 保存文件名称中存在中文时报错的Bug 
++ iOS平台 修复 一键登录 授权登录时需要读取IDFA的Bug
 
   `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
