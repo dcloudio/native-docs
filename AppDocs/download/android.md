@@ -19,7 +19,7 @@
 + 修复 QQ登录获取用户信息 getUserInfo 返回的昵称可能出现乱码的Bug
 
 
-[百度网盘下载历史版本](https://pan.baidu.com/s/1Gpbnq3wLvvnRO6W-SlvVpA)，提取码: neqx
+[百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
 
 
