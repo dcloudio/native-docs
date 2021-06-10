@@ -2,9 +2,9 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年6月8日发布——HBuilderX（3.1.17.20210608） 
+### 2021年6月9日发布——HBuilderX（3.1.18.20210609） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.17.20210608）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.18.20210609）版本生成本地打包App资源。
 + 新增 uni-AD 快手广告联盟支持插屏广告
 + 新增 一键登录 全屏模式支持在登录界面添加自定义登录按钮 [详情](https://uniapp.dcloud.io/univerify)
 + 新增 获取视频信息 getVideoInfo 支持获取画面方向 orientation、视频格式 type、视频码率 bitrate [文档](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.VideoInfo)
