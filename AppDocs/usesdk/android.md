@@ -88,7 +88,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
             android:value="替换为自己申请的Appkey" />
 	```
 
-	+ 配置应用版本号
+	+ 配置应用版本号 <h3 id="versionCode"></h3>
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-4.png)
 	
@@ -138,7 +138,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	**注意：如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，否则会导致在部分手机上无法运行。**
 	
-	+ 配置应用名称
+	+ 配置应用名称 <h3 id="appName"></h3>
 
 	打开app-> src -> main -> res -> values -> strings.xml文件，修改“app_name”字段值，该值为安装到手机上桌面显示的应用名称，建议与manifest.json中name（基础配置中的应用名称）对应。
 
