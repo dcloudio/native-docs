@@ -3,7 +3,7 @@
 
 根据项目类型，可以通过以下方式扩展开发原生插件
 - uni原生插件：
-`uni-app`项目中使用，uni-app的js运行在独立的jscore里，而不是webview里，它的原生扩展是基于开源项目[weex](https://weex.apache.org/cn/guide/index.html)架构的扩展机制。
+`uni-app`项目中使用，uni-app的js运行在独立的jscore里，而不是webview里，它的原生扩展是基于开源项目[weex](http://doc.weex.io/zh/)架构的扩展机制。
   + [Android平台uni原生插件开发教程](/NativePlugin/course/android.md)
   + [iOS平台uni原生插件开发教程](/NativePlugin/course/ios.md)
 - 5+原生插件：
