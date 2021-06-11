@@ -769,7 +769,7 @@ UniMPSDK/Feature目录结构
 		<td>
 		liblibVideo.a<br/>
 		DCUniVideoPublic.framework<br/>
-		IJKMediaFramework.framework<br/>
+		IJKMediaFrameworkSSL.framework<br/>
 		Masonry.framework
 		</td>
 		<td>
@@ -801,7 +801,7 @@ UniMPSDK/Feature目录结构
 	    <td>
 		libDCUniVideo.a<br/>
 		DCUniVideoPublic.framework<br/>
-		IJKMediaFramework.framework<br/>
+		IJKMediaFrameworkSSL.framework<br/>
 		Masonry.framework
 	    </td>
 	    <td>
