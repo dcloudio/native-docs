@@ -17,6 +17,7 @@
 
 
 ### 具体修改方法：
+
 #### 如何配置Library
     library为模块/三方SDK对应的库文件和依赖库，按照下图找到配置位置，点击“+”可以添加，选中.a库点击“-”可以删除
   ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1156s.png)
@@ -40,7 +41,7 @@
 
 <h3 id="moduletable"></h3>
 
-### 如何配置模块/三方SDK
+#### 如何配置模块/三方SDK
 
 1、查看功能模块对照表中的配置要求，如下表：
 
