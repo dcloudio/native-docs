@@ -749,7 +749,7 @@
 		<td>
 		liblibVideo.a<br/>
 		DCUniVideoPublic.framework<br/>
-		IJKMediaFramework.framework<br/>
+		IJKMediaFrameworkWithSSL.framework<br/>
 		Masonry.framework
 		</td>
 		<td>
