@@ -167,6 +167,7 @@ dependencies {
 > 内置uni小程序集成方式
 
 打开android原生项目。在主Module模块的assets路径下创建apps/(内置uni小程序的appid)/www 路径。例如：`apps/__UNI__04E3A11/www `。将之前导出的应用资源包解压释放到`apps/__UNI__04E3A11/www `路径下。可参考DEMO示例工程。如下图:
+**(解压方法将资源包的扩展 .wgt 重命名为 .zip 然后使用解压软件打开)**
 
 注意：不少开发者对示例图片有些误解 是创建`apps/__UNI__04E3A11/www `目录，不是创建`apps.__UNI__04E3A11.www`文件夹。请注意是`apps/__UNI__04E3A11/www `目录。并将wgt资源包解压释放到www文件夹中！！！
 
