@@ -4,18 +4,16 @@
 
 ## 更新日志
 
-#### SDK 3.1.17
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.17.zip)
+#### SDK 3.1.18
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.18.zip)
 
-+ 需使用 HBuilderX（3.1.17）版本生成 小程序App 资源；
-+ 修复 关闭小程序时极低概率偶现崩溃的Bug；
-+ 优化 将 Masonry 从 DCUniVideoPublic.framework 中抽离出来单独打包为 Masonry.framework，解决原生已集成 Masonry 可能导致冲突的问题；
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.17.20210608.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.18.20210609.html)
 
 
-#### SDK 3.1.17 beta 版本（支持同时运行多个小程序）
-[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.17-beta.zip)
+#### SDK 3.1.18 beta 版本（支持同时运行多个小程序）
+[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.18-beta.zip)
 
++ 修复 iPhoneX 等刘海屏设备上，导航栏和状态栏重叠的Bug；
 + 此版本对底层框架做了大的改动，现已支持多个小程序同时运行，内部已完成了内测，欢迎尝鲜体验，如有任何问题请及时在群内反馈；
 
 ## 历史版本
