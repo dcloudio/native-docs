@@ -32,7 +32,7 @@ A：如果您原生工程依赖的三方库与SDK依赖的三方库冲突
 |友盟|v6.1.0|Statistic(友盟统计)|
 |IJKPlayer|--|VideoPlayer（视频播放）|
 |SDWebImage|v5.10.0|基础库/对应的库 libSDWebImage.a |
-|Masonry|--|VideoPlayer/包含在 DCUniVideoPublic.framework 中|
+|Masonry|1.1.0|VideoPlayer/对应的库 Masonry.framework|
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 
