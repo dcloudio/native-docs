@@ -28,17 +28,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年6月15日发布——HBuilderX（3.1.19.20210613-alpha）
+### 2021年6月25日发布——HBuilderX（3.1.21.20210624-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.19.20210613）版本生成本地打包App资源。
-+ 新增 拍照和本地相册选择 支持设置 crop 裁剪编辑图片 [规范](https://www.html5plus.org/doc/zh_cn/camera.html#plus.camera.CameraOptions)
-+ 新增 视频播放控件 VideoPlayer 播放http/https协议视频资源时支持设置请求的 header [规范](https://www.html5plus.org/doc/zh_cn/video.html#plus.video.VideoPlayerStyles)
-+ 新增 登录鉴权服务对象支持 nativeClient 属性标识依赖的客户端App是否已安装 [规范](https://www.html5plus.org/doc/zh_cn/oauth.html#plus.oauth.AuthService.nativeClient)
-+ iOS平台 更新 uni-AD 腾讯优量汇SDK 为4.12.71版
-+ iOS平台 更新 视频播放控件 VideoPlayer 使用的 FFmpeg 版本为 ff4.0--ijk0.8.8--20210426--001
-+ iOS平台 修复 uni-AD 应用从后台切换到前台开屏广告可能被其它界面覆盖的Bug
-+ iOS平台 修复 plus.sqlite.isOpenDatabase 不传入参数可能引起卡死或崩溃的Bug [详情](https://ask.dcloud.net.cn/question/114091)
-+ iOS平台 修复 Geolocation 定位模块在用户未授权或设备关闭定位功能时返回错误码与规范不一致的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.21.20210624）版本生成本地打包App资源。
++ 更新 uni-AD 快手广告联盟SDK Android为3.3.10.2版，iOS为3.3.10 版；快手内容联盟SDK Android为3.3.18.1版，iOS为3.3.19版
++ iOS平台 新增 安全区域配置 safearea 支持 backgroundDark 属性设置暗黑模式的背景颜色 [详情](https://ask.dcloud.net.cn/article/36995#safearea)
++ iOS平台 更新 云端打包环境为XCode12.5，解决在 iOS15 设备无法安装的Bug
++ App-iOS平台 修复 调用 uni.hideKeyboard 后点击页面任意位置 input 组件自动聚焦的Bug [详情](https://ask.dcloud.net.cn/question/125233)
++ App-iOS平台 修复 nvue textarea 组件不设置 padding 时 placeholder 显示位置不正常的Bug [详情](https://ask.dcloud.net.cn/question/122376)
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
