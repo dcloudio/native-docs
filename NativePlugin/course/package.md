@@ -35,6 +35,9 @@ uni原生插件描述文件，完整格式如下：
 			"dependencies": [
 				"可选, 依赖的库名称"
 			],
+      "excludeDependencies": [
+        "可选，需要排除的HX内置模块依赖库名称"  //仅在插件与HX内置模块依赖库存在冲突时可能需要，使用前请联系管理员确认
+      ],
 			"compileOptions": {  //可选，Java编译参数配置
 				"sourceCompatibility": "1.8",
 				"targetCompatibility": "1.8"
