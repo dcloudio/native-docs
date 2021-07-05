@@ -357,6 +357,67 @@ typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/mt1.png" width=35%>
 
+### 自定义胶囊按钮样式
+
+#### 宿主设置全局样式
+
+宿主可以设置胶囊按钮的全局样式，参考下面的示例
+
+```objective-c
+DCUniMPCapsuleButtonStyle *capsuleButtonStyle = [DCUniMPCapsuleButtonStyle new];
+// 胶囊按钮背景颜色
+capsuleButtonStyle.backgroundColor = @"rgba(169,169,169,0.2)";
+// 胶囊按钮 “···｜x” 的字体颜色
+capsuleButtonStyle.textColor = @"#FFFFFF";
+// 胶囊按钮按下状态背景颜色
+capsuleButtonStyle.highlightColor = @"rgb(203,204,205)";
+// 胶囊按钮边框颜色
+capsuleButtonStyle.borderColor = @"rgba(229,229,229,0.3)";
+// 设置样式
+[DCUniMPSDKEngine configCapsuleButtonStyle:capsuleButtonStyle];
+```
+
+#### 小程序中设置某个页面胶囊按钮的样式
+
+在小程序中可以单独为某个页面设置胶囊按钮的样式，**优先级高于宿主中设置的样式**，打开`pages.json`，在页面的 `style->app-plus->titleNView `节点下添加`capsuleButtonStyle`配置
+
+```
+{
+	"pages": [ 
+		{
+			"path": "pages/tabBar/component/component",
+			"style": {
+				"navigationBarTitleText": "内置组件",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"capsuleButtonStyle": [{
+							"backgroundColor": "rgba(169,169,169,0.2)",   // 胶囊按钮背景颜色
+							"textColor":""#FFFFFF",    // 胶囊按钮 “···｜x” 的字体颜色
+							"highlightColor": "rgb(203,204,205)",  // 胶囊按钮按下状态背景颜色
+							"borderColor": "rgba(229,229,229,0.3)" // 胶囊按钮边框颜色
+						}]
+					}
+				}
+			}
+		},
+		...
+	],
+	...
+}
+```
+
+### 监听`x`按钮的点击事件
+
+点击`x`按钮会回调 `DCUniMPSDKEngineDelegate`协议的 `closeButtonClicked:`方法
+
+```objective-c
+///  监听关闭按钮点击
+- (void)closeButtonClicked:(NSString *)appid {
+	
+}
+```
+
 ### 自定义菜单项
 点击胶囊按钮左侧的`···`按钮会弹出`ActionSheet`菜单，菜单中的按钮支持自定义，其中上部分的按钮是在小程序中定义，下部分的按钮在宿主中定义，取消按钮为框架默认添加，如下图所示：
 
