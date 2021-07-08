@@ -17,8 +17,9 @@
 + iOS平台 修复 保存文件名称中存在中文时报错的Bug 
 + iOS平台 修复 一键登录 授权登录时需要读取IDFA的Bug
 
-    `注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
-  `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
+`注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
+    
+`注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
 
@@ -38,9 +39,9 @@
 
 `注意:HX3.1.16版本之后，更新video模块和nvue的高德地图模块，需要配置"Masonry.framework"库`
 
-`注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
-
 `注意:HX3.1.10版本开始，iOS离线SDK打包5+ app或者uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
+  
+`注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
   
