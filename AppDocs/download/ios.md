@@ -28,14 +28,11 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年6月25日发布——HBuilderX（3.1.21.20210624-alpha）
+### 2021年7月7日发布——HBuilderX（3.1.22.20210707-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.21.20210624）版本生成本地打包App资源。
-+ 更新 uni-AD 快手广告联盟SDK Android为3.3.10.2版，iOS为3.3.10 版；快手内容联盟SDK Android为3.3.18.1版，iOS为3.3.19版
-+ iOS平台 新增 安全区域配置 safearea 支持 backgroundDark 属性设置暗黑模式的背景颜色 [详情](https://ask.dcloud.net.cn/article/36995#safearea)
-+ iOS平台 更新 云端打包环境为XCode12.5，解决在 iOS15 设备无法安装的Bug
-+ App-iOS平台 修复 调用 uni.hideKeyboard 后点击页面任意位置 input 组件自动聚焦的Bug [详情](https://ask.dcloud.net.cn/question/125233)
-+ App-iOS平台 修复 nvue textarea 组件不设置 padding 时 placeholder 显示位置不正常的Bug [详情](https://ask.dcloud.net.cn/question/122376)
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.22.20210707）版本生成本地打包App资源。
++ iOS平台 修复 uni-AD 开屏广告在部分应用中可能引起曝光率较低的Bug
++ iOS平台 修复 在部分情况下 WKWebView 同步共享 cookie 可能引起崩溃的Bug
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
