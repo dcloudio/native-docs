@@ -31,7 +31,7 @@ uni原生插件描述文件，完整格式如下：
 				}
 			],
 			"hooksClass": "可选, 事件钩子注册类名",
-			"integrateType": "可选, 可取值aar|jar",
+			"integrateType": "必填, 可取值aar|jar",
 			"dependencies": [
 				"可选, 依赖的库名称"
 			],
@@ -137,7 +137,7 @@ uni原生插件如果支持Android平台，则需在插件下添加`android`目�
 必填，注册插件的类名
 
 ### integrateType
-可选，插件集成类型，即原生导出的文件类型
+必填，插件集成类型，即原生导出的文件类型
 - aar
 原生导出aar包时配置为此类型
 - jar
@@ -353,7 +353,7 @@ uni原生插件如果支持iOS平台，则需在插件下添加`ios`目录，并
 必填，注册插件的类名
 
 ### integrateType
-可选，插件集成类型，即原生导出的文件类型
+必填，插件集成类型，即原生导出的文件类型
 - framework
 原生导出framework包时配置为此类型
 - library
