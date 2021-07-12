@@ -1,3 +1,7 @@
+# unimp小程序多开版
+
+需要注意 多开版本还处于bate版本 [SDK下载](UniMPDocs/SDKDownload/android)
+
 ## 启动小程序
 
 从宿主应用页面跳转到小程序应用
@@ -6,7 +10,7 @@
 
 ```JAVA
 // 启动小程序
-DCUniMPSDK.getInstance().startApp(context, appid, splashClass, redirectPath, arguments)
+IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, splashClass, redirectPath, arguments)
 ```
 
 |参数|类型|必填|说明|
@@ -17,9 +21,16 @@ DCUniMPSDK.getInstance().startApp(context, appid, splashClass, redirectPath, arg
 |redirectPath|String|否|指定启动应用后直接打开的页面路径|
 |arguments|JSONObject|否|启动小程序传入的参数|
 
+**返回值**
+
+|类型|说明
+|:----|:----
+|IUniMP| unimp小程序实例化接口对象
+
 **Tips**
 
-Android startApp详细说明可参考[uni小程序SDK API参考手册](UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
+获取到IUniMP接口对象，可对向程序管理注册监听事件等等。具体参考API文档
+
 
 ### 启动小程序并传参
 
@@ -31,7 +42,7 @@ Android startApp详细说明可参考[uni小程序SDK API参考手册](UniMPDocs
 try {
 	JSONObject arguments = new JSONObject();
 	arguments.put("MSG","Hello uni microprogram");
-	DCUniMPSDK.getInstance().startApp(context, "__UNI__04E3A11", arguments);
+	IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, "__UNI__04E3A11", arguments);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -60,7 +71,7 @@ pages/component/view/view?action=redirect
 
 ```JAVA
 // 启动直达页面
-DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
+DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
 ```
 
 #### 屏蔽返回
@@ -96,9 +107,8 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/vie
 
 ## 关闭小程序
 
-> 2.6.3开始支持此功能
-
 ### 小程序环境中关闭方法
+
 > 注：需要在集成SDK的原生工程中使用，在 HBuilderX 内置基座运行无效果；
 
 小程序中可调用`plus.runtime.quit()`方法关闭自己，返回宿主App
@@ -111,16 +121,18 @@ plus.runtime.quit()
 
 宿主可以直接调用 sdk 的方法，关闭当前运行的小程序
 
+> 注：需要先获取IUniMP接口对象 通过openUniMP获取
+
 关闭当前运行的小程序
 
 ```JAVA
-DCUniMPSDK.getInstance().closeCurrentApp()
+IUniMP.closeUniMP()
 ```
 
 监听小程序关闭触发事件
 
 ```JAVA
-DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCallBack() {
+DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 	@Override
 	public void onClose(String appid) {
 		Log.e("unimp", appid+"被关闭了");
@@ -131,16 +143,16 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCal
 
 ## 宿主与小程序通讯
 
-> 2.6.10 版本开始支持此功能
-
 ### 宿主 App 向小程序发送事件
+
+> 注：需要先获取IUniMP接口对象 通过openUniMP获取
 
 #### 宿主发送事件
 
 **API**
 
 ```java
-DCUniMPSDK.getInstance().sendUniMPEvent(event, data)
+IUniMP.sendUniMPEvent(event, data)
 ```
 
 **参数说明**
@@ -161,7 +173,7 @@ DCUniMPSDK.getInstance().sendUniMPEvent(event, data)
 ```JAVA
 JSONObject data = new JSONObject();
 data.put("sj", "点击了关于");
-DCUniMPSDK.getInstance().sendUniMPEvent("gy", data);
+IUniMP.sendUniMPEvent("gy", data);
 ```
 
 
@@ -221,6 +233,7 @@ uni.sendNativeEvent('unimp-event', {
 **API**
 
 DCUniMPSDK.getInstance().setOnUniMPEventCallBack(callBack)
+
 设置监听小程序发送给宿主的事件
 
 
@@ -237,9 +250,9 @@ DCUniMPSDK.getInstance().setOnUniMPEventCallBack(callBack)
 **示例**
 
 ```JAVA
-DCUniMPSDK.getInstance().setOnUniMPEventCallBack(new DCUniMPSDK.IOnUniMPEventCallBack() {
+DCUniMPSDK.getInstance().setOnUniMPEventCallBack(new IOnUniMPEventCallBack() {
 	@Override
-	public void onUniMPEventReceive(String event, Object data, DCUniMPJSCallback callback) {
+	public void onUniMPEventReceive(String appid, String event, Object data, DCUniMPJSCallback callback) {
 		Log.d("cs", "onUniMPEventReceive    event="+event);
         //回传数据给小程序
 		callback.invoke( "收到消息");
@@ -349,34 +362,16 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 ## 开启后台运行
 
-> 2.8.0 版本开始支持此功能
-
-通过 DCSDKInitConfig配置[setEnableBackground](/UniMPDocs/API/android?id=setEnableBackground)小程序是否支持后台运行，默认点击胶囊按钮的`x`或者在小程序中调用`plus.runtime.quit()`方法会直接关闭小程序，当开启后台运行时会只是将小程序隐藏到后台，下次打开时直接显示之前的状态；
-
-**示例**
-
-```JAVA
-DCSDKInitConfig config = new DCSDKInitConfig.Builder()
-    .setEnableBackground(true).build();
-```
-
-**注意事项**
-
-开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
-后台模式与多任务窗口两者功能目前是相辅相成。不可分割。
-
-<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
-
-**2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
+`默认后台模式 无需要设置，暂时不支持非后台模式`
 
 ### 打开小程序
 
-第一次打开小程序 还是将小程序后台激活到前台。都是调用`DCUniMPSDK.getInstance().startApp`打开小程序
+第一次打开小程序 还是将小程序后台激活到前台。都是调用`DCUniMPSDK.getInstance().openUniMP`打开小程序
 
 **示例**
 
 ```
-DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11");
+DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11");
 ```
 
 **Tips**
@@ -385,12 +380,14 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11");
 
 ### 关闭小程序
 
-开启后台运行。如果需要强制关闭小程序，可调用`DCUniMPSDK.getInstance().closeCurrentApp()`关闭当前小程序
+> 注：需要先获取IUniMP接口对象 通过openUniMP获取
+
+开启后台运行。如果需要强制关闭小程序，可调用`IUniMP.closeUniMP()`关闭当前小程序
 
 **示例**
 
 ```
-DCUniMPSDK.getInstance().closeCurrentApp()
+IUniMP.closeUniMP()
 ```
 
 

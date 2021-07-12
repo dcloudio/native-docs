@@ -2,15 +2,22 @@
 
 ## 更新日志
 
-#### 2021年06月9日发布
-[点击下载SDK UniMPSDK_Android@3.1.18.20210609.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.18.20210609.zip)
-+ 需使用HBuilderX（3.1.18）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.18.20210609.html)
+### 2021年07月09日发布
 
-#### 2021年06月08日发布
-[点击下载SDK UniMPSDK_Android@3.1.17.20210608.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.17.20210608.zip)
-+ 需使用HBuilderX（3.1.17）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.17.20210608.html)
+#### SDK 3.1.22 版本
+[点击下载SDK UniMPSDK_Android@3.1.22.20210709.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.22.20210709.zip)
++ 需使用HBuilderX（3.1.22）版本生成 小程序App 资源
++ SDK中unimp-release.aar改为unimp-v8-release.aar更新SDK的同学需要注意
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.22.20210709.html)
+
+#### SDK 3.1.22 beta 版本（支持同时运行多个小程序）
+
+[点击下载SDK UniMPSDK_Android@3.1.22-beta-20210712.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.1.22-beta-20210712.zip)
++ 此版本对底层框架做了大的改动，现已支持多个小程序同时运行，欢迎尝鲜体验，如有任何问题请及时在群内反馈；
++ 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
++ SDK部分类名及API均有调整需参考API文档及示例进行修改! [小程序多开功能示例](UniMPDocs/Sample/android-v2)、[小程序多开API文档](UniMPDocs/API/android-v2);
++ unimp小程序默认开启后台模式，不支持非后台模式需知！
+
 
 ## 历史稳定版本
 
