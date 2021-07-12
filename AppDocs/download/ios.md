@@ -2,20 +2,18 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年6月9日发布——HBuilderX（3.1.18.20210609） 
+### 2021年7月12日发布——HBuilderX（3.1.22.20210709） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.1.18.20210609）版本生成本地打包App资源。
-+ 新增 uni-AD 快手广告联盟支持插屏广告
-+ 新增 一键登录 全屏模式支持在登录界面添加自定义登录按钮 [详情](https://uniapp.dcloud.io/univerify)
-+ 新增 获取视频信息 getVideoInfo 支持获取画面方向 orientation、视频格式 type、视频码率 bitrate [文档](https://www.html5plus.org/doc/zh_cn/io.html#plus.io.VideoInfo)
-+ 更新 uni-AD 快手广告联盟SDK 为3.3.9 版；快手内容联盟SDK 为3.3.16 版；腾讯优量汇SDK Android为4.360.1230版；穿山甲SDK Android为3.6.1.3版，iOS为3.6.1.2版
-+ iOS平台 优化 相册目录选择操作界面
-+ iOS平台 更新 高德地图 SDK 为 1.6.4无IDFA版，适配 iOS14.5 开始 AppStore 审核要求用户许可访问IDFA数据
-+ iOS平台 更新 百度语音识别 SDK 为 3.0.10.0 版
-+ iOS平台 修复 视频播放控件 VideoPlayer 调用 playbackRate 方法设置倍数播放值为 1.25、1.5 不生效的Bug [详情](https://ask.dcloud.net.cn/question/107802)
-+ iOS平台 修复 扫码时息屏后再次打开引起扫描线动画停止的Bug [详情](https://ask.dcloud.net.cn/question/124001)
-+ iOS平台 修复 保存文件名称中存在中文时报错的Bug 
-+ iOS平台 修复 一键登录 授权登录时需要读取IDFA的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.22.20210709）版本生成本地打包App资源。
++ iOS平台 新增 安全区域配置 safearea 支持 backgroundDark 属性设置暗黑模式的背景颜色 [详情](https://ask.dcloud.net.cn/article/36995#safearea)
++ iOS平台 更新 云端打包环境为XCode12.5.1，解决在 iOS15 设备无法安装的Bug
++ iOS平台 更新 视频播放控件 VideoPlayer 使用的 FFmpeg 版本为 ff4.0--ijk0.8.8--20210426--001
++ iOS平台 修复 uni-AD 开屏广告在部分应用中可能引起曝光率较低的Bug
++ iOS平台 修复 uni-AD 应用从后台切换到前台开屏广告可能被其它界面覆盖的Bug
++ iOS平台 修复 uni-AD 显示穿山甲开屏广告时在部分手机上可能`跳过`按钮无法点击的Bug
++ iOS平台 修复 plus.sqlite.isOpenDatabase 不传入参数可能引起卡死或崩溃的Bug [详情](https://ask.dcloud.net.cn/question/114091)
++ iOS平台 修复 Geolocation 定位模块在用户未授权或设备关闭定位功能时返回错误码与规范不一致的Bug
++ iOS平台 修复 在部分情况下 WKWebView 同步共享 cookie 可能引起崩溃的Bug
 
 `注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
     
