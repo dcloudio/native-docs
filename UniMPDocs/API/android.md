@@ -109,7 +109,7 @@ SDK是否初始化成功
 |参数|类型|必填|说明
 |:----|:----|:----|:----
 |appid|String|是|uni小程序的id 新增 2.7.13+
-|wgtPath|String|是|uni小程序应用资源包路径
+|wgtPath|String|是|uni小程序应用资源包路径 仅支持SD路径 不支持assets
 |callback|ICallBack|否|拷贝状态回调
 
 **wgtPath参数说明**
