@@ -4,16 +4,16 @@
 
 ## 更新日志
 
-#### SDK 3.1.18
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.18.zip)
+#### SDK 3.1.22
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.22.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.18.20210609.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.22.20210709.html)
 
 
-#### SDK 3.1.18 beta 版本（支持同时运行多个小程序）
-[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.18-beta.zip)
+#### SDK 3.1.22 beta 版本（支持同时运行多个小程序）
+[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.22-beta.zip)
 
-+ 修复 iPhoneX 等刘海屏设备上，导航栏和状态栏重叠的Bug；
++ 修复 打开第二个小程序时直达二级页面无效的Bug；
 + 此版本对底层框架做了大的改动，现已支持多个小程序同时运行，内部已完成了内测，欢迎尝鲜体验，如有任何问题请及时在群内反馈；
 
 ## 历史版本
