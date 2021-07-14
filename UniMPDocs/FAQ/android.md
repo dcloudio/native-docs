@@ -75,3 +75,7 @@ A: 3.0.7版本开始gallery-dmcBig-release.aar合并到uniMPSDK-release.aar中�
 ## Q: 关闭前一个小程序紧接着打开另一个小程序会白屏
 
 A: 目前仅支持同时打开一个uniapp小程序。小程序关闭时SDK会自动清理前一个小程序的资源数据。不同小程序的清理时间可能不太一样。这时开启另一个小程序需要开发者监听setUniMPOnCloseCallBack事件。再延迟300毫秒左右执行startApp基本上可以解决问题。
+
+## Q: 内置小程序资源，更新小程序资源后运行app发现运行小程序是旧版本的小程序资源
+
+A：内置小程序每次更新资源需要修改小程序的版本号。如果版本号相同则不会更新。 注意versionName、versionCode都需要修改！
