@@ -169,13 +169,15 @@ dependencies {
 打开android原生项目。在主Module模块的assets路径下创建apps/(内置uni小程序的appid)/www 路径。例如：`apps/__UNI__04E3A11/www `。将之前导出的应用资源包解压释放到`apps/__UNI__04E3A11/www `路径下。可参考DEMO示例工程。如下图:
 **(解压方法将资源包的扩展 .wgt 重命名为 .zip 然后使用解压软件打开)**
 
+`内置uni小程序资源 更新资源时需要修改uniapp版本号（versionName、versionCode都需要修改）才会更新，如果版本号相同则不会更新需要注意！！！`
+
 注意：不少开发者对示例图片有些误解 是创建`apps/__UNI__04E3A11/www `目录，不是创建`apps.__UNI__04E3A11.www`文件夹。请注意是`apps/__UNI__04E3A11/www `目录。并将wgt资源包解压释放到www文件夹中！！！
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200305/f96b6f4e801b8c7cc3e89ed7f0242e42.png)
 
 > 非内置uni小程序集成方式
 
-应用资源包(.wgt)可以选择从云端获取或共享文件等方式。存放到手机SD卡中。宿主通过uni小程序SDK的API调用`releaseWgtToRunPathFromePath`实现释放资源包集成uni小程序。
+应用资源包(.wgt)可以选择从云端获取或共享文件等方式。存放到手机SD卡中。宿主通过uni小程序SDK的API调用`releaseWgtToRunPathFromePath`实现释放资源包集成uni小程序。 （暂时不支持assets路径下的资源）
 
 ## 代码实现
 
