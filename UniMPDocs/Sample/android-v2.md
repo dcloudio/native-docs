@@ -362,7 +362,23 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 ## 开启后台运行
 
-`默认后台模式 无需要设置，暂时不支持非后台模式`
+通过 DCSDKInitConfig配置[setEnableBackground](/UniMPDocs/API/android?id=setEnableBackground)小程序是否支持后台运行，默认点击胶囊按钮的`x`或者在小程序中调用`plus.runtime.quit()`方法会直接关闭小程序，当开启后台运行时会只是将小程序隐藏到后台，下次打开时直接显示之前的状态；
+
+**示例**
+
+```JAVA
+DCSDKInitConfig config = new DCSDKInitConfig.Builder()
+    .setEnableBackground(true).build();
+```
+
+**注意事项**
+
+开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
+后台模式与多任务窗口两者功能目前是相辅相成。不可分割。
+
+<img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
+
+**2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
 
 ### 打开小程序
 
