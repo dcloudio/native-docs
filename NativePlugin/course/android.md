@@ -697,3 +697,7 @@ A:
 Q：插件SDK部分需要在Application初始化。目前在AppHookProxy中onCreate初始化无效
 
 A: 请使用UniAppHookProxy接口 有onSubProcessCreate子进程初始化回调。将SDK需要在Application初始化的代码onCreate和onSubProcessCreate都放一份就可以了。
+
+Q：插件可以重写Application吗？
+
+A：不支持。重写Application存在很多安全隐患。
