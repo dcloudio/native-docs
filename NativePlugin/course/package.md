@@ -325,7 +325,7 @@ HBuilderX 中可视化配置效果：
 
 目前有部分三方SDK可能会用到授权配置文件，通常是在打包时需要将授权文件添加到assets目录。
 以下用授权文件 license-android.dat 为例来说明：
-使用插件云端打包时需要将授权配置文件license-android.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/android/assets/license-ios.dat 路径
+使用插件云端打包时需要将授权配置文件license-android.dat添加到项目下的 nativeplugins/DCloud-HelloPlugin/android/assets/license-android.dat 路径
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/android-resource2.png)
 
