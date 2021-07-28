@@ -2,18 +2,18 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年7月28日发布——HBuilderX（3.2.0.20210728） 
+### 2021年7月12日发布——HBuilderX（3.1.22.20210709） 
 [点击下载SDK，提取码: a6ij](https://pan.baidu.com/s/1Y5V7ErqRWLg4CMrW-Ddjvg)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.0.20210728）版本生成本地打包App资源。
-+ iOS平台 更新 QQ 登录、分享SDK版本为V3.5.3；新浪微博 登录、分享SDK版本为3.3.1；微信 登录、分享、支付SDK版本为1.9.1
-+ iOS平台 更新 UniPush 使用的个推SDK为2.5.10.0无IDFA版
-+ iOS平台 修复 一键登录 设置服务协议复选框默认不勾选时授权按钮背景颜色显示不正确的Bug
-+ iOS平台 修复 Downloader 下载文件返回的请求头 Content-Range 数据为空时引起应用崩溃的Bug
-+ iOS平台 修复 百度语音识别在用户拒绝录音权限时没有返回错误回调的Bug
-+ iOS平台 修复 在 iOS14 设备使用 5G 网络可能引起崩溃的Bug
-+ 新增 一键登录 服务协议项样式支持设置复选框图标 [详情](https://uniapp.dcloud.io/univerify)
-+ 优化 新浪微博 登录、分享 模块配置，去掉appsecret参数
-+ 修复 一键登录 应用横屏显示时打开一键登录页面UI显示异常的Bug [详情](https://ask.dcloud.net.cn/question/126597)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.1.22.20210709）版本生成本地打包App资源。
++ iOS平台 新增 安全区域配置 safearea 支持 backgroundDark 属性设置暗黑模式的背景颜色 详情
++ iOS平台 更新 云端打包环境为XCode12.5.1，解决在 iOS15 设备无法安装的Bug
++ iOS平台 更新 视频播放控件 VideoPlayer 使用的 FFmpeg 版本为 ff4.0--ijk0.8.8--20210426--001
++ iOS平台 修复 uni-AD 开屏广告在部分应用中可能引起曝光率较低的Bug
++ iOS平台 修复 uni-AD 应用从后台切换到前台开屏广告可能被其它界面覆盖的Bug
++ iOS平台 修复 uni-AD 显示穿山甲开屏广告时在部分手机上可能跳过按钮无法点击的Bug
++ iOS平台 修复 plus.sqlite.isOpenDatabase 不传入参数可能引起卡死或崩溃的Bug 详情
++ iOS平台 修复 Geolocation 定位模块在用户未授权或设备关闭定位功能时返回错误码与规范不一致的Bug
++ iOS平台 修复 在部分情况下 WKWebView 同步共享 cookie 可能引起崩溃的Bug
 
 `注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
     
@@ -27,11 +27,18 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年7月7日发布——HBuilderX（3.1.22.20210707-alpha）
+### 2021年7月28日发布——HBuilderX（3.2.0.20210728-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.22.20210707）版本生成本地打包App资源。
-+ iOS平台 修复 uni-AD 开屏广告在部分应用中可能引起曝光率较低的Bug
-+ iOS平台 修复 在部分情况下 WKWebView 同步共享 cookie 可能引起崩溃的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.0.20210728）版本生成本地打包App资源。
++ iOS平台 更新 QQ 登录、分享SDK版本为V3.5.3；新浪微博 登录、分享SDK版本为3.3.1；微信 登录、分享、支付SDK版本为1.9.1
++ iOS平台 更新 UniPush 使用的个推SDK为2.5.10.0无IDFA版
++ iOS平台 修复 一键登录 设置服务协议复选框默认不勾选时授权按钮背景颜色显示不正确的Bug
++ iOS平台 修复 Downloader 下载文件返回的请求头 Content-Range 数据为空时引起应用崩溃的Bug
++ iOS平台 修复 百度语音识别在用户拒绝录音权限时没有返回错误回调的Bug
++ iOS平台 修复 在 iOS14 设备使用 5G 网络可能引起崩溃的Bug
++ 新增 一键登录 服务协议项样式支持设置复选框图标 [详情](https://uniapp.dcloud.io/univerify)
++ 优化 新浪微博 登录、分享 模块配置，去掉appsecret参数
++ 修复 一键登录 应用横屏显示时打开一键登录页面UI显示异常的Bug [详情](https://ask.dcloud.net.cn/question/126597)
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
