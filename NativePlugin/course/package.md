@@ -100,7 +100,7 @@ uni原生插件描述文件，完整格式如下：
 				}
 			},
 			"resources": [
-				"可选, 插件要使用的资源文件列表，相对于ios目录的路径 ，HX 3.1.23+ 版本不在推荐使用，请参考文档下面的 “依赖资源文件” 说明"
+				"可选, 插件要使用的资源文件列表，相对于ios目录的路径 ，HX 3.2.0+ 版本不在推荐使用，请参考文档下面的 “依赖资源文件” 说明"
 			]
 		}
 	}
@@ -488,7 +488,9 @@ HBuilderX 中可视化配置效果：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/package/ios-parameters-plist.png)
 
 
-### resources （HX3.1.23+ 不在推荐使用，推荐使用下面“依赖资源文件”的方式）
+### resources 
+> HBuilderX3.2.0+ 不在推荐使用，推荐使用下面“依赖资源文件”的方式
+
 插件如果需要使用 .bundle 资源目录，可通过配置 `resources` 字段进行定义，格式如下：
 
 ```json
@@ -519,11 +521,14 @@ HBuilderX 中可视化配置效果：
 
 
 ### 依赖资源文件
+> HBuilderX3.2.0+ 版本支持
 
-如果您的插件需要依赖资源文件，可以将资源文件放到插件包的 "ios/BundleResources" 路径下即可**不需要配置packagfe.json**，打包时会将 BundleResources 中的所有文件都添加到应用中；
+如果您的插件需要依赖资源文件，可以将资源文件放到插件包的 "ios/BundleResources" 路径下即可**（不需要配置packagfe.json）**，打包时会将 BundleResources 中的所有文件都添加到应用中；
+
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/bundleresources.png)
 
 ### iOS Extension
-**HBuilderX3.1.5+版本uni原生插件支持iOS Extension（扩展）**
+>HBuilderX3.1.5+版本uni原生插件支持iOS Extension（扩展）
 
 #### 插件作者配置
 首先在XCode环境中编译出ipa，将ipa解压后在Payload/XXX.app/PlugIns/ 下可以找到.appex文件

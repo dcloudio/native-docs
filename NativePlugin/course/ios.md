@@ -93,7 +93,7 @@ SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**�
 ## 代码实现
 
 ### 写法说明
-从`HBuilderX 3.0.5` 版本开始， 推荐使用新的插件写法。
+**从`HBuilderX 3.0.5` 版本开始， 推荐使用新的插件写法。**
 
 如果插件按照新写法，出现云打包报错， 请先确认`HBuilderX`版本在`3.0.5`或其以上。
 
@@ -218,9 +218,9 @@ TestModule.m 文件截图：
 具体示例请查看 [离线SDK包](AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
 
 
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_h.jpg)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_h.jpg)
 
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_m.jpg)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_m.jpg)
 
 **Module 进阶**
 
@@ -759,10 +759,10 @@ UNI_EXPORT_METHOD(@selector(focus:))
 
 A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
 
-### Q: 插件开发需要依赖第三方SDK，或需要依赖资源文件
+### Q:插件开发需要依赖第三方SDK，或需要依赖资源文件
 
 - 如果您的插件需要依赖第三方的SDK，**开发阶段引入三方SDK的时候要引入到主工程**，然后将三方SDK提供的 .h 头文件直接添加到插件工程中这样就可以正常调用三方SDK的 API 了，功能开发完毕后在构建插件包的时候，需要将依赖的三方SDK库文件放到ios路径下，然后按照规范编辑 `package.json`；
-- 如果需要依赖资源文件比如图片、xib资源等，建议把资源文件放到`.bundle`包中使用，**开发阶段资源文件也要添加到主工程中**，不然引用不到，功能开发完毕后在构建插件包的时候，把 bundle 包放到 "ios/BundleResources" 路径下即可**不需要配置packagfe.json**，打包时会将 BundleResources 中的所有文件都添加到应用中；
+- 如果需要依赖资源文件比如图片、xib资源等，建议把资源文件放到`.bundle`包中使用，**开发阶段资源文件也要添加到主工程中**，不然引用不到，功能开发完毕后在构建插件包的时候，把 bundle 包放到 "ios/BundleResources" 路径下即可，打包时会将 BundleResources 中的所有文件都添加到应用中；
 
 具体请参考开源项目[ 百度OCR识别插件源码](https://github.com/xiaohuapunk/DC-CardRecognize)，对应插件市场的 [插件](https://ext.dcloud.net.cn/plugin?id=135)
 

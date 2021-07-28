@@ -116,7 +116,7 @@ iOSSDK/SDK/Libs/liblibUI.a
 **3.1.10版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
 
 打开info.plist，创建key为dcloud_appkey，Value选择String类型，内容为申请的AppKey如下：
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
 
 
 ### 配置应用标识(Bundle Identifier)
