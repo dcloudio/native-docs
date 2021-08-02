@@ -861,7 +861,7 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |新浪微博SDK|v3.3.1|Oauth、Share/新浪微博|
 |又拍云|v4.1.7|LivePusher（直播推流）|
 |友盟|v6.1.0|Statistic(友盟统计)|
-|IJKPlayer|--|VideoPlayer（视频播放）|
+|IJKPlayer|https://gitee.com/dcloud/IJKMediaFramework 源码编译|VideoPlayer（视频播放）|
 |SDWebImage|v5.10.0|基础库/对应的库 libSDWebImage.a |
 |Masonry|--|VideoPlayer/包含在 DCUniVideoPublic.framework 中|
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
