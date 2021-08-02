@@ -27,9 +27,9 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年7月28日发布——HBuilderX（3.2.0.20210728-alpha）
+### 2021年8月2日发布——HBuilderX（3.2.0.20210801-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.0.20210728）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.0.20210801）版本生成本地打包App资源。
 + iOS平台 更新 QQ 登录、分享SDK版本为V3.5.3；新浪微博 登录、分享SDK版本为3.3.1；微信 登录、分享、支付SDK版本为1.9.1
 + iOS平台 更新 UniPush 使用的个推SDK为2.5.10.0无IDFA版
 + iOS平台 修复 一键登录 设置服务协议复选框默认不勾选时授权按钮背景颜色显示不正确的Bug
