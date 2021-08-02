@@ -39,13 +39,30 @@ Oauth 模块支持
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150203/02e43567316bd7b11b7228a5c29121cf.png)
 
+#### 注意 SDK 3.2.0+ 必须按照下图填写
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/sina_plist.jpg)
+
+
 2.在工程的 info -> URL types 中添加配置，identifier 填写`com.weibo`，URL Schemes 填写`wb[后面填写appkey]`,如下图所示
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/share/shareweibo1.png)
 
+
 3.在 info.plist 添加 Schemes 白名单
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20151222/9637d63385bc52fee7cdfd45ee3aee55.png)
+
+#### 注意 SDK 3.2.0+ 必须按照下图填写
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/weibo3_3.jpg)
+
+
+配置Associated Domains（域名）
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/2d348820422e3b02d8a65b8f6c6cd830.png)
+
+填写通用链接域名
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/0221225d811e93279784d3235a32d055.png)
 
 
 
@@ -66,6 +83,20 @@ Oauth 模块支持
 2.在 info.plist 添加 Schemes 白名单
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150929/9f59a997933e98849dad6289c83cce9d.png)
+
+
+#### 注意 SDK 3.2.0+ 必须按照下图填写
+1. 在 info.plist 中添加 qq 字段，填入自己帐号的信息
+
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/qq_plist.jpg)
+
+2. 配置Associated Domains（域名）
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/2d348820422e3b02d8a65b8f6c6cd830.png)
+
+填写通用链接域名
+
+![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/0221225d811e93279784d3235a32d055.png)
 
 ## 微信登录
 
@@ -99,13 +130,14 @@ Oauth 模块支持
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191024/0221225d811e93279784d3235a32d055.png)
 
-4.在info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：
+4.在info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：(SDK 3.2.0版本以后 此项已废弃，仅保留字段,配置参数已经位置如步骤5所示)
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
-5.在 info.plist 添加 `weixinoauth` 项，填写微信 `appid` 及 `appSecret`
+5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `appSecret`, `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150817/fe4930ae149b7393e9ce828662550d9b.png)
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/weixin_plist.jpg)
+
 
 6.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
