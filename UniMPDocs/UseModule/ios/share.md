@@ -24,7 +24,10 @@
 
 3.在 info.plist 添加微博的 Schemes 白名单
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20151222/9637d63385bc52fee7cdfd45ee3aee55.png)
+![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/weibo3_3.jpg)
+
+#### 注意
+从HBuilder 3.2.0 开始, 新浪微博使用SDK版本升级为V3.3.1 需要开发者配置去微博开放平台后台配置通用链接才可以正常使用,必须添加 weibosdk3.3 到工程白名单里，不然 ios14 的适配 bug 还会存在
 
 
 
