@@ -562,6 +562,8 @@ ios-extension.json文件格式如下：
   }
 }
 ```
+**注意：实际提交打包时不要包含注释信息**
+
 - XXX.appex
   iOS Extension插件名称，与ios/Plugins目录中的appex名称一致
 - identifier
