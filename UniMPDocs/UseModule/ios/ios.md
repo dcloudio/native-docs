@@ -350,7 +350,7 @@ UniMPSDK/Feature目录结构
 	    <td rowspan="2"><a href="https://www.html5plus.org/doc/zh_cn/barcode.html"> plus.barcode </a></td>
 	    <td rowspan="2"><a href="https://uniapp.dcloud.io/api/system/barcode"> barcode </a></td>
 	    <td> 
-		vue页面：<br/>
+		5+ App：<br/>
 		AVFoundation.framework<br/>
 		ImageIO.framework<br/>
 		CoreVideo.framework<br/>
@@ -370,7 +370,7 @@ UniMPSDK/Feature目录结构
 	</tr>
 	<tr>
 	    <td>
-	    nvue页面：<br/>
+	    uni-app：<br/>
 	    AVFoundation.framework<br/>
 	    ImageIO.framework<br/>
 	    CoreVideo.framework<br/>
@@ -379,6 +379,7 @@ UniMPSDK/Feature目录结构
 	    </td>
 	    <td> 
 	    libDCUniBarcode.a <br/>
+		liblibBarcode.a <br/>
 		libDCUniZXing.a<br/>
 	    libuchardet.a<br/>
 	    </td>

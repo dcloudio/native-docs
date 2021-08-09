@@ -331,7 +331,7 @@
 	    <td rowspan="2"><a href="https://www.html5plus.org/doc/zh_cn/barcode.html"> plus.barcode </a></td>
 	    <td rowspan="2"><a href="https://uniapp.dcloud.io/api/system/barcode"> barcode </a></td>
 	    <td> 
-		vue页面：<br/>
+		5+ App项目：<br/>
 		AVFoundation.framework<br/>
 		ImageIO.framework<br/>
 		CoreVideo.framework<br/>
@@ -341,7 +341,7 @@
 	    <td> 
 		liblibBarcode.a <br/>
 		libDCUniZXing.a<br/>
-		libuchardet.a 
+		libuchardet.a<br/>
 		</td>
 	    <td>
 	    </td>
@@ -351,7 +351,7 @@
 	</tr>
 	<tr>
 	    <td>
-	    nvue页面：<br/>
+	    uni-app项目：<br/>
 	    AVFoundation.framework<br/>
 	    ImageIO.framework<br/>
 	    CoreVideo.framework<br/>
@@ -360,6 +360,7 @@
 	    </td>
 	    <td> 
 	    libDCUniBarcode.a <br/>
+		liblibBarcode.a <br/>
 		libDCUniZXing.a<br/>
 	    libuchardet.a<br/>
 	    </td>
