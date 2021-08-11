@@ -29,7 +29,7 @@ IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, splashClass, r
 
 **Tips**
 
-获取到IUniMP接口对象，可对向程序管理注册监听事件等等。具体参考API文档
+获取到IUniMP接口对象，可控制小程序关闭返送event事件。具体参考API文档
 
 
 ### 启动小程序并传参
