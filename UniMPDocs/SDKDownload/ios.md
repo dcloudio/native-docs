@@ -10,9 +10,10 @@
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.1.22.20210709.html)
 
 
-#### SDK 3.1.22 beta 版本（支持同时运行多个小程序）
-[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.1.22-beta.zip)
+#### SDK 3.2.1 beta 版本（支持同时运行多个小程序）
+[点击下载 UniMP_iOS_SDK-beta](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.1-beta.zip)
 
++ 修复小程序内 wgt 热更新后白屏的Bug；
 + 修复 打开第二个小程序时直达二级页面无效的Bug；
 + 此版本对底层框架做了大的改动，现已支持多个小程序同时运行，内部已完成了内测，欢迎尝鲜体验，如有任何问题请及时在群内反馈；
 

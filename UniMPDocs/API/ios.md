@@ -215,7 +215,16 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 + (void)whenUniMPCloseSetNavigationBarHidden:(BOOL)hidden;
 ```
 
-### 向小程序发送事件
+### 设置 push 打开方式小程序内是否自动控制原生导航栏的显隐（默认控制）
+> 3.1.22+ 支持
+
+```
+/// 设置 push 打开方式小程序内是否自动控制原生导航栏的显隐（默认控制）
+/// @param isControl Bool
++ (void)setAutoControlNavigationBar:(BOOL)isControl;
+```
+
+### 向小程序发送事件（已废弃，使用 DCUniMPInstance 实例方法）
 
 ```objective-c
 /// 向小程序发送事件
@@ -226,11 +235,27 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 
 ### 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
 
+```
+/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示） 3.1.22+ 支持
+/// @param capsuleButtonHidden Bool 是否隐藏胶囊按钮
++ (void)setCapsuleButtonHidden:(BOOL)capsuleButtonHidden;
+```
+
+
 ```objective-c
-/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
+/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）(已废弃)
 /// @param menuButtonHidden Bool 是否隐藏胶囊按钮
 + (void)setMenuButtonHidden:(BOOL)menuButtonHidden;
-```objective-c
+```
+
+### 配置胶囊按钮样式
+> 3.1.22+ 版本支持
+
+```
+/// 配置胶囊按钮样式
+/// @param capsuleButtonStyle DCUniMPCapsuleButtonStyle
++ (void)configCapsuleButtonStyle:(DCUniMPCapsuleButtonStyle *)capsuleButtonStyle;
+```
 
 ### 配置点击菜单按钮弹出 ActionSheet 视图的样式
 
@@ -259,31 +284,45 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 
 ### DCUniMPSDKEngineDelegate 相关方法
 
-```objective-c
+```
+/// 胶囊按钮‘x’关闭按钮点击回调 3.1.22+ 支持
+/// @param appid appid
+- (void)closeButtonClicked:(NSString *)appid;
+```
+
+```
+/// 胶囊按钮菜单 ActionSheetItem 点击回调方法
+/// @param appid appid
+/// @param identifier item 项的标识
+- (void)defaultMenuItemClicked:(NSString *)appid identifier:(NSString *)identifier;
+```
+
+```
+/// 返回打开小程序时的闪屏视图
+/// @param appid appid
+- (UIView *)splashViewForApp:(NSString *)appid;
+```
+
+```
+/// 关闭小程序的回调方法
+/// @param appid appid
+- (void)uniMPOnClose:(NSString *)appid;
+```
+
+```
+/// 小程序向原生发送事件回调方法
+/// @param appid 对应小程序的appid
+/// @param event 事件名称
+/// @param data 数据：NSString 或 NSDictionary 类型
+/// @param callback 回调数据给小程序
+- (void)onUniMPEventReceive:(NSString *)appid event:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback;
+
+
 /// 回调数据给小程序
 /// result：回调参数支持 NSString 或 NSDictionary 类型
 /// keepAlive：如果 keepAlive 为 YES，则可以多次回调数据给小程序，反之触发一次后回调方法即被移除
 typedef void (^DCUniMPKeepAliveCallback)(id result, BOOL keepAlive);
 
-@optional
-/// 胶囊按钮菜单 ActionSheetItem 点击回调方法
-/// @param identifier item 项的标识
-- (void)defaultMenuItemClicked:(NSString *)identifier;
-
-/// 返回打开小程序时的闪屏视图
-/// @param appid appid
-- (UIView *)splashViewForApp:(NSString *)appid;
-
-/// 关闭小程序的回调方法
-/// @param appid appid
-- (void)uniMPOnClose:(NSString *)appid;
-
-
-/// 小程序向原生发送事件回调方法
-/// @param event 事件名称
-/// @param data 数据：NSString 或 NSDictionary 类型
-/// @param callback 回调数据给小程序
-- (void)onUniMPEventReceive:(NSString *)event data:(id)data callback:(DCUniMPKeepAliveCallback)callback;
 ```
 
 ## DCUniMPConfiguration
@@ -327,4 +366,14 @@ typedef void(^DCUniMPResultBlock)(BOOL success, NSError *_Nullable error);
 ### 关闭小程序
 ```
 - (void)closeWithCompletion:(DCUniMPResultBlock)completion;
+```
+
+<h3 id="sendUniMPEvent"></h3>
+### 向小程序发送事件
+> 3.2.1+ 支持
+
+```
+/// @param event 事件名称
+/// @param data 数据：NSString 或 NSDictionary 类型
+- (void)sendUniMPEvent:(NSString *)event data:(id __nullable)data;
 ```
