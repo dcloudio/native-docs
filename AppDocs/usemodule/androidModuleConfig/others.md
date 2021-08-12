@@ -108,7 +108,7 @@
 ### dcloud_properties.xml需要添加如下代码
 
 ~~~
-<feature name="Beacon" value="io.dcloud.feature.iBeacon.WxBluetoothFeatureImpl"/>
+<feature name="iBeacon" value="io.dcloud.feature.iBeacon.WxBluetoothFeatureImpl"/>
 ~~~
 
 ## Contact（通讯录）
