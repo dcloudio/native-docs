@@ -27,18 +27,11 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年8月2日发布——HBuilderX（3.2.0.20210801-alpha）
+### 2021年8月12日发布——HBuilderX（3.2.1.20210811-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.0.20210801）版本生成本地打包App资源。
-+ iOS平台 更新 QQ 登录、分享SDK版本为V3.5.3；新浪微博 登录、分享SDK版本为3.3.1；微信 登录、分享、支付SDK版本为1.9.1
-+ iOS平台 更新 UniPush 使用的个推SDK为2.5.10.0无IDFA版
-+ iOS平台 修复 一键登录 设置服务协议复选框默认不勾选时授权按钮背景颜色显示不正确的Bug
-+ iOS平台 修复 Downloader 下载文件返回的请求头 Content-Range 数据为空时引起应用崩溃的Bug
-+ iOS平台 修复 百度语音识别在用户拒绝录音权限时没有返回错误回调的Bug
-+ iOS平台 修复 在 iOS14 设备使用 5G 网络可能引起崩溃的Bug
-+ 新增 一键登录 服务协议项样式支持设置复选框图标 [详情](https://uniapp.dcloud.io/univerify)
-+ 优化 新浪微博 登录、分享 模块配置，去掉appsecret参数
-+ 修复 一键登录 应用横屏显示时打开一键登录页面UI显示异常的Bug [详情](https://ask.dcloud.net.cn/question/126597)
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.1.20210811）版本生成本地打包App资源。
++ iOS平台 修复 3.2.0 版本引出的 图片选择界面中部分按钮文字在系统语言为中文时依然显示英文的Bug [详情](https://ask.dcloud.net.cn/question/128285)
++ iOS平台 修复 Downloader 下载文件名称出现乱码或包含特殊字符，导致保存文件无法读取的Bug
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
