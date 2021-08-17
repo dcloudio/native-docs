@@ -121,7 +121,7 @@ plus.runtime.quit()
 
 宿主可以直接调用 sdk 的方法，关闭当前运行的小程序
 
-> 注：需要先获取IUniMP接口对象 通过openUniMP获取
+> 注：需要先获取IUniMP接口对象！可通过openUniMP获取IUniMP接口对象
 
 关闭当前运行的小程序
 
@@ -145,7 +145,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 
 ### 宿主 App 向小程序发送事件
 
-> 注：需要先获取IUniMP接口对象 通过openUniMP获取
+> 注：需要先获取IUniMP接口对象！可通过openUniMP获取IUniMP接口对象
 
 #### 宿主发送事件
 
@@ -359,6 +359,30 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 需要注意，如果您隐藏了胶囊按钮，原生中添加的菜单按钮就会无效，小程序中添加的菜单按钮会显示到页面导航栏上并且显示的是`text`字段配置信息（和在HX内置基座运行效果一样）如下图所示
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/mt3.png" width=35%>
+
+### 自定义默认胶囊按钮的全局样式
+
+宿主可以设置默认胶囊按钮的全局样式
+
+SDK初始化构建DCSDKInitConfig时可设置setCapsuleButtonStyle实现自定义默认胶囊按钮的全局样式。示例如下：
+
+```
+//首先构建 DCUniMPCapsuleButtonStyle胶囊按钮样式
+DCUniMPCapsuleButtonStyle style = new DCUniMPCapsuleButtonStyle();
+
+//设置胶囊按钮背景颜色
+style.setBackgroundColor("#990099");
+//设置胶囊按钮“···｜x” 的字体颜色
+style.setTextColor("#090909");
+//设置胶囊按钮边框颜色
+style.setBorderColor("#777777");
+//设置胶囊按钮按下状态背景颜色
+style.setHighlightColor("#888888");
+//**以上目前可设置的样式**
+
+
+DCSDKInitConfig config = new DCSDKInitConfig.Builder().setCapsuleButtonStyle(style).build();
+```
 
 ## 开启后台运行
 

@@ -50,6 +50,7 @@
 ### 扩展 Module
  
 - Module 扩展 非 UI 的特定功能
+- Module 不支持代码通过 new Module的方式创建对象。无法正常使用！
 
 下面以TestModule为例，源码请查看 UniPlugin-Hello-AS(2.9.8+)工程中的`uniplugin_module`模块；
 
@@ -129,6 +130,7 @@ public JSONObject testSyncFunc(){
 ### 扩展组件 Component
 
 - Component 扩展 实现特别功能的 Native 控件
+- Component 不支持代码中 new Component 创建对象。无法正常使用！
 
 下面以`TestComponent`为例，源码请查看 UniPlugin-Hello-AS(2.9.8+)工程中的`uniplugin_component`模块；
 
