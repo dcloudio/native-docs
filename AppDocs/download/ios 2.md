@@ -16,9 +16,7 @@
 + iOS平台 修复 百度语音识别在用户拒绝录音权限时没有返回错误回调的Bug
 + iOS平台 修复 在 iOS14 设备使用 5G 网络可能引起崩溃的Bug
 
-`注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
-    
-`注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
+  `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
 
@@ -28,19 +26,17 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年8月12日发布——HBuilderX（3.2.1.20210811-alpha）
+### 2021年5月26日发布——HBuilderX（3.1.16.20210525-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.1.20210811）版本生成本地打包App资源。
-+ iOS平台 修复 3.2.0 版本引出的 图片选择界面中部分按钮文字在系统语言为中文时依然显示英文的Bug [详情](https://ask.dcloud.net.cn/question/128285)
-+ iOS平台 修复 Downloader 下载文件名称出现乱码或包含特殊字符，导致保存文件无法读取的Bug
-
-`注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.1.16.20210525）版本生成本地打包App资源。
++ iOS平台 更新 百度语音识别 SDK 为 3.0.10.0 版
++ iOS平台 优化 相册目录选择操作界面
 
 `注意:HX3.1.16版本之后，更新video模块和nvue的高德地图模块，需要配置"Masonry.framework"库`
 
-`注意:HX3.1.10版本开始，iOS离线SDK打包5+ app或者uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
-  
 `注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
+
+`注意:HX3.1.10版本开始，iOS离线SDK打包5+ app或者uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
   
