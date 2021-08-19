@@ -1,6 +1,6 @@
 ## Android 离线SDK - 正式版
 
-### 2021年07月12日发布——HBuilderX（3.2.2.20210818）
+### 2021年08月18日发布——HBuilderX（3.2.2.20210818）
 [点击下载SDK](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.2.20210818）版本生成本地打包App资源。
