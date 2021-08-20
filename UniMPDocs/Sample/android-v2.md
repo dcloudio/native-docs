@@ -34,7 +34,7 @@ IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, splashClass, r
 
 ### 启动小程序并传参
 
-宿主启动小程序时支持传入参数到小程序环境，小程序中可以通过 `plus.runtime.arguments` 获取宿主传入的参数
+宿主启动小程序时支持传入参数到小程序环境，小程序中可以通过  [plus.runtime.arguments](https://www.html5plus.org/doc/zh_cn/runtime.html#plus.runtime.arguments) 获取宿主传入的参数
 
 
 ```JAVA
@@ -52,6 +52,7 @@ try {
 
 ```JavaScript
 var arguments = plus.runtime.arguments;
+//arguments 为字符串需要注意
 ```
 
 ### 启动打开指定页面
