@@ -473,6 +473,10 @@ public void gotoNativePage(){
 }
 ```
 
+**注意**
+
+如果小程序非后台运行模式 setEnableBackground = false ，不支持Activity设置launchMode="singleTask"，可能会引起小程序无法正常启动！！！
+
 ## 集成插件市场的uni原生插件
 
 [uni-app插件市场](https://ext.dcloud.net.cn/)有大量丰富的插件。
