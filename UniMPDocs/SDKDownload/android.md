@@ -21,6 +21,12 @@
 + SDK部分类名及API均有调整需参考API文档及示例进行修改! [小程序多开功能示例](UniMPDocs/Sample/android-v2)、[小程序多开API文档](UniMPDocs/API/android-v2);
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.1.20210811-alpha.html)
 
+## 升级SDK注意事项
+
++ 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换!
++ 更新proguard.cfg混淆配置
++ 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、oaid_sdk_1.0.xx.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
+
 ## 历史稳定版本
 
 百度网盘链接: [https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q](https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q) 提取码: hnug
