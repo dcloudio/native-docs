@@ -342,7 +342,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 });
 ```
 
-#### DCUniMPSDK.getInstance().setOnCapsuleCloseButtonClick(callBack)
+#### DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack(callBack)
 
 设置小程序胶囊按钮点击"X"事件监听
 
@@ -365,7 +365,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 **示例:**
 
 ```
-DCUniMPSDK.getInstance().setOnCapsuleCloseButtonClick(new IDCUniMPOnCapsuleCloseButtontCallBack() {
+DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack(new IDCUniMPOnCapsuleCloseButtontCallBack() {
 	@Override
 	public void closeButtonClicked(String appid) {
 		Log.e("unimp", appid+"胶囊点击了关闭按钮");

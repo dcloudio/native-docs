@@ -489,7 +489,7 @@ implementation project(':uniplugin_richalert')
 ```
 
 + 生成插件的aar并放入到android目录下
-	+ 选择Gradle--->插件module--->Tasks--->build--->assembleRelease编译module的aar文件
+	+ 选择Gradle--->插件module--->Tasks--->build或other--->assembleRelease编译module的aar文件
 
 	**注意：新版本Android studio将assembleRelease放入other中了**
 
