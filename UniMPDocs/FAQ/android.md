@@ -83,3 +83,13 @@ A：内置小程序每次更新资源需要修改小程序的版本号。如果�
 ## Q: 开启uni小程序白屏时间过程，启动过慢。
 
 A：尽量尽早初始化小程序SDK，页面尽量使用nvue！改造后会大幅度加快启动速度。
+
+## Q: 打包aab运行白屏
+
+A: 请按以下配置修改：
+
+1、原生项目主app的AndroidManifest.xml中。application节点配置android:extractNativeLibs="true"。
+
+2、原生项目根目录 gradle.properties 配置android.bundle.enableUncompressedNativeLibs=false
+
+重新编译打包

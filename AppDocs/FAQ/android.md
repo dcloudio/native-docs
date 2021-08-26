@@ -145,3 +145,12 @@ uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目�
 
 如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，如果添加其他文件夹会导致在部分手机上无法运行。
 
+### 打包aab运行白屏
+
+请按以下配置修改：
+
+1、原生项目主app的AndroidManifest.xml中。application节点配置android:extractNativeLibs="true"。
+
+2、原生项目根目录 gradle.properties 配置android.bundle.enableUncompressedNativeLibs=false
+
+重新编译打包
