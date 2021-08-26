@@ -2,13 +2,13 @@
 
 ## 更新日志
 
-### 2021年08月18日发布
+### 2021年08月26日发布
 
-#### SDK 3.2.2 版本
-[点击下载SDK UniMPSDK_Android@3.2.2.20210818.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.2.20210818.zip)
-+ 需使用HBuilderX（3.2.2）版本生成 小程序App 资源
+#### SDK 3.2.3 版本
+[点击下载SDK UniMPSDK_Android@3.2.3.20210826.zip](http://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.3.20210826.zip)
++ 需使用HBuilderX（3.2.3）版本生成 小程序App 资源
 + SDK中unimp-release.aar改为unimp-v8-release.aar更新SDK的同学需要注意
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.2.20210818.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.3.20210825.html)
 
 ### 2021年08月19日发布
 
