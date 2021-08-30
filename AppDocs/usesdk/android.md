@@ -44,11 +44,29 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 1. 基础库配置
 
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.17.aar、uniapp-v8-release.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.23.aar、uniapp-v8-release.aar和oaid_sdk_1.0.25.aar拷贝到libs目录下
 
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-10.png)
 	
 	在build.gradle中添加资源引用
+	
+	**注意：HBuilderX3.2.5版本之后适配了AndroidX。**
+	
+	AndroidX版本需添加如下资源
+	
+	~~~
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.facebook.fresco:fresco:2.5.0'
+    implementation "com.facebook.fresco:animated-gif:2.5.0"
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.alibaba:fastjson:1.1.46.android'
+	~~~
+	
+	support版本需添加如下资源
 	
 	~~~
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
@@ -60,6 +78,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.alibaba:fastjson:1.1.46.android'
 	~~~
+	
+	
 	
 	uni-app配置时需要在build.gradle中添加aaptOptions配置
 	
@@ -130,8 +150,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	dependencies {
 		implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-		implementation 'com.github.bumptech.glide:glide:4.9.0' // 基座依赖
-		implementation 'com.android.support:support-v4:28.0.0'
+		implementation 'androidx.appcompat:appcompat:1.0.0'
+		implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 		implementation 'com.alibaba:fastjson:1.1.46.android'
 	}
 	~~~
@@ -147,6 +167,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	将下述内容添加到Androidmanifest.xml的application节点中
 	
 	**注意：新建的项目默认会有一个MainActivity的节点，必须删掉！**
+	
+	**注意：为适配折叠屏，需要在PandoraEntryActivity的android:configChanges属性中追加“smallestScreenSize|screenLayout|screenSize”，参考如下配置。**
 
 	~~~
 		<activity
@@ -166,7 +188,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		<activity
             android:name="io.dcloud.PandoraEntryActivity"
             android:launchMode="singleTask"
-            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize"
             android:hardwareAccelerated="true"
             android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
             android:screenOrientation="user"

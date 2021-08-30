@@ -1,6 +1,6 @@
 配置离线广告之前，需先在dcloud广告联盟申请账号。
 
-AndroidManifest.xml文件中添加如下节点到节点中，并配置替换其中5+应用appid和广告联盟会员adid的值，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为5+应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现。**
+AndroidManifest.xml文件的application节点中添加如下节点到节点中，并配置替换其中uni-app或5+应用appid和广告联盟会员adid的值，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现。**
 
 ~~~
 <meta-data android:name="DCLOUD_AD_ID" android:value="广告标识"/>  
@@ -129,7 +129,9 @@ features 节点添加
 
 路径 | 文件名
 -|-
-SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad-3.3.0-publishRelease.aar
+SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad.aar
+
+如果接入了内容联盟的广告，需要将ks_adsdk-ad.aar替换为kssdk-allad-content.aar
 
 ### Androidmanifest.xml配置
 
@@ -154,6 +156,43 @@ features 节点添加
 ~~~ 
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="ks" value="io.dcloud.feature.ad.ks.ADKsModule"/>
+        </feature>
+~~~
+
+## Sigmob
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+-|-
+SDK/libs| ads-release.aar、ads-sigmob-release.aar、windAd.aar
+
+### Androidmanifest.xml配置
+
+manifest节点下添加
+
+~~~
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="replace"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+~~~
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~ 
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+            <module name="sgm" value="io.dcloud.feature.ad.sigmob.ADSMModule"/>
         </feature>
 ~~~
 
