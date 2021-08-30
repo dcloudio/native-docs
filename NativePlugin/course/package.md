@@ -46,7 +46,7 @@ uni原生插件描述文件，完整格式如下：
 				"可选, 支持的abi类型, 可取值armeabi-v7a|arm64-v8a|x86"
 			],
 			"minSdkVersion": "可选，支持的Android最低版本，如21",
-			"useAndroidX": false,   //可选，是否兼容使用AndroidX
+			"useAndroidX": false,   //可选，是否兼容使用AndroidX  3.2.5+版本后废弃该属性
 			"permissions": [
 				"可选, 要使用的Android权限列表"
 			],
@@ -246,6 +246,9 @@ Android平台支持的CPU类型，当插件中包含so库时需要配置插件�
 `将aar文件作为zip解压，jni目录下包含的子目录就是其支持的CPU类型`
 
 ### useAndroidX
+
+**注意 HX3.2.5+ 后废弃useAndroidX配合  默认为true 需注意！！**
+
 uni原生插件运行环境依赖Android support，暂时没有升级使用AndroidX。
 HBuilderX2.8.11+开始兼容使用AndroidX，如果插件自身或者使用的三方库依赖AndroidX，可以添加以下配置说明插件需要兼容使用AndroidX：
 ```

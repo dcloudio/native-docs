@@ -21,7 +21,8 @@
 	+ HX3.0.7版本云打包及相应版本SDK开始将`Activity`变更为`FragmentActivity`.解决部分插件开发者需要加载Fragment的需求。但也带来了一些代码与之前不同的修改。需要注意以下问题：
 		- requestPermissions需要限制requestCode的值域，之前`Activity`没有限制requestCode的值域。`FragmentActivity`的权限申请限制requestCode的值域不能为负值,也不能大于16位bit值65536。否则报异常或崩溃`Can only use lower 16 bits for requestCode`，强烈推荐使用0~60500之间取值。
 - **HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+**
-- **3.1.10版本起需要申请 Appkey(dcloud_appkey)，否则无法正常运行uniapp并调试插件,申请[参考](/AppDocs/usesdk/appkey.md)**
+- **HX3.1.10版本起需要申请 Appkey(dcloud_appkey)，否则无法正常运行uniapp并调试插件,申请[参考](/AppDocs/usesdk/appkey.md)**
+- **HX3.2.5+版本开始改为Androidx依赖库。需注意！！项目需要默认配置useAndroidX=true**
 
 ## 导入uni插件原生项目
 
@@ -677,7 +678,7 @@ A:可以按以下步骤操作实现：
    ```
 
 Q:插件开发支持Androidx吗?
-A:可以配置package.json 设置useAndroidX = true 目前已知讯飞语音无法支持androidx配置不能兼容需要注意并提醒插件使用者。
+A:设置useAndroidX = true 目前已知讯飞语音无法支持androidx配置不能兼容需要注意并提醒插件使用者。
 
 Q:component、module的生命周回调 不支持OnActivityCreate()，某些注册服务需要该事件注册怎么办。
 A:component可以在的构造函数中调用相关注册初始化服务等操作， module的构造无法获取到上下文。可能需要换一个思路。通过js调用相关初始化的函数。
