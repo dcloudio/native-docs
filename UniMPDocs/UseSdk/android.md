@@ -142,7 +142,7 @@ dependencies {
 
 ## 生成小程序应用资源
 
-**注意！！！！ uni小程序仅支持uni应用！！！ 确保你的uniapp在HX基座可以正常运行 暂时不支持weex编译的nvue页面**
+**注意！！！！ uni小程序仅支持uni应用！！！**
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
