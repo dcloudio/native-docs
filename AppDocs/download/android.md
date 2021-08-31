@@ -1,7 +1,5 @@
 ## Android 离线SDK - 正式版
 
-##
-
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
 ### 2021年08月18日发布——HBuilderX（3.2.3.20210825）
@@ -16,7 +14,7 @@
 
 
 
-## Android 离线SDK - Alpha版### 2021年08月12日发布——HBuilderX（3.2.5.20210827-alpha）[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.5.20210827-alpha）版本生成本地打包App资源。
+## Android 离线SDK - Alpha版### 2021年08月30日发布——HBuilderX（3.2.5.20210827-alpha）[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.5.20210827-alpha）版本生成本地打包App资源。
 + 新增 nvue 页面适配支持折叠屏手机
 + 修复 nvue 页面 text 组件 line-height 高度失真引起 picker-view 无法对齐的Bug
 + 修复 nvue 页面 list、swiper、waterfall 组件嵌套时，包含的 header 组件可能无法正常显示Bug
