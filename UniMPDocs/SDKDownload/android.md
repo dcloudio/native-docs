@@ -10,16 +10,16 @@
 + SDK中unimp-release.aar改为unimp-v8-release.aar更新SDK的同学需要注意
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.3.20210825.html)
 
-### 2021年08月19日发布
+### 2021年08月27日发布
 
-#### SDK 3.2.1 beta 版本（支持同时运行多个小程序）
+#### SDK 3.2.5 beta 版本（支持同时运行多个小程序）
 
-[点击下载SDK UniMPSDK_Android@3.2.1-beta-20210819.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.1-beta-20210819.zip)
-+ 需使用HBuilderX（3.2.1）版本生成 小程序App 资源
+[点击下载SDK UniMPSDK_Android@3.2.5-beta-20210827.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.5-beta-20210827.zip)
++ 需使用HBuilderX（3.2.5）版本生成 小程序App 资源
 + 此版本对底层框架做了大的改动，现已支持多个小程序同时运行，欢迎尝鲜体验，如有任何问题请及时在群内反馈；
 + 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
 + SDK部分类名及API均有调整需参考API文档及示例进行修改! [小程序多开功能示例](UniMPDocs/Sample/android-v2)、[小程序多开API文档](UniMPDocs/API/android-v2);
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.1.20210811-alpha.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.5.20210827-alpha.html)
 
 ## 升级SDK注意事项
 
