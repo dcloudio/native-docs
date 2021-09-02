@@ -385,6 +385,62 @@ style.setHighlightColor("#888888");
 DCSDKInitConfig config = new DCSDKInitConfig.Builder().setCapsuleButtonStyle(style).build();
 ```
 
+### 重写“X”关闭胶囊按钮点击事件
+
+宿主可通过DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack拦截原"X"胶囊按钮点击事件。
+
+示例如下：
+
+```java
+//unimp对象缓存
+HashMap<String, IUniMP> unimpCaches = new HashMap<>();
+...
+...
+
+DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack(new IDCUniMPOnCapsuleCloseButtontCallBack() {
+    @Override
+    public void closeButtonClicked(String appid) {
+        Log.e("unimp", "closeButtonClicked-------------"+appid);
+		//检测缓存中是否存在appid小程序实例
+		if(unimpCaches.containsKey(appid)) {
+            IUniMP uniMP = unimpCaches.get(appid);
+            if(uniMP.isRuning()) {//检测获取到的小程序实例是否运行中
+                //uniMP.hideUniMP();
+                uniMP.closeUniMP();
+            }
+        }
+    }
+});
+```
+
+### 重写“...”菜单胶囊按钮点击事件
+
+宿主可通过DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack拦截原"..."胶囊按钮点击事件。
+
+宿主可以自行事件点击菜单后的弹出内容。目前仅支持activity。不支持Dialog无法正显示。
+
+
+**`注意事项`**
+
+**触发菜单点击事件后只能弹出activity 并且需要使用DCUniMPSDK.getInstance().startActivityForUniMPTask启动才行。否则关闭activity会返回宿主达不到效果。**
+
+**activity配置要求。宿主注册当前activity时不可以配置launchMode，仅默认否则会无法正常实现跳转逻辑！！！ 切记**
+
+**想弹窗显示。如Dialog效果。可以设置activity主题theme。实现Dialog弹窗效果。可以参考SDK中demo**
+
+示例如下：
+
+```java
+DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack(new IDCUniMPOnCapsuleMenuButtontCallBack() {
+    @Override
+    public void menuButtonClicked(String appid) {
+        Intent intent = new Intent(context, MenuActivity.class);//跳转宿主构建的activity
+        DCUniMPSDK.getInstance().startActivityForUniMPTask(appid, intent);//通过startActivityForUniMPTask启动宿主activity。运行在小程序activity堆栈中
+    }
+});
+```
+
+
 ## 开启后台运行
 
 通过 DCSDKInitConfig配置[setEnableBackground](/UniMPDocs/API/android?id=setEnableBackground)小程序是否支持后台运行，默认点击胶囊按钮的`x`或者在小程序中调用`plus.runtime.quit()`方法会直接关闭小程序，当开启后台运行时会只是将小程序隐藏到后台，下次打开时直接显示之前的状态；
@@ -398,8 +454,7 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 **注意事项**
 
-开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
-后台模式与多任务窗口两者功能目前是相辅相成。不可分割。
+开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能 或设置setUniMPFromRecents（v3.2.6）关闭任务窗口显示。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
 

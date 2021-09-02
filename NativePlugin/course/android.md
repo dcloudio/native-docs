@@ -7,6 +7,7 @@
 - JAVA环境 jdk1.8
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - App离线SDK下载：请下载2.9.8+版本的[android平台SDK](/AppDocs/download/android.md)
+- HBuilderX 下载地址：[官方下载地址](https://www.dcloud.io/hbuilderx.html)
 
 #### 注意
 - 插件目前暂时不支持Kotlin

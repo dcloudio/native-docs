@@ -344,7 +344,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 
 #### DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack(callBack)
 
-设置小程序胶囊按钮点击"X"事件监听
+设置小程序胶囊按钮点击"X"关闭事件监听，设置后原关闭逻辑将不再执行！交由宿主实现相关逻辑。v3.2.6
 
 **参数说明**
 
@@ -369,6 +369,64 @@ DCUniMPSDK.getInstance().setCapsuleCloseButtonClickCallBack(new IDCUniMPOnCapsul
 	@Override
 	public void closeButtonClicked(String appid) {
 		Log.e("unimp", appid+"胶囊点击了关闭按钮");
+	}
+});
+```
+
+#### DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack(callBack)
+
+设置小程序胶囊按钮点击"..."菜单事件监听，设置后原菜单弹窗逻辑将不再执行！交由宿主实现相关逻辑。v3.2.6
+
+**参数说明**
+
+|参数|类型|必填|说明
+|:----|:----|:----|:----
+|callBack|IDCUniMPOnCapsuleMenuButtontCallBack|是|小程序胶囊按钮点击"..."事件
+
+**返回值**
+
+无
+
+**示例:**
+
+```
+DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack(new IDCUniMPOnCapsuleMenuButtontCallBack() {
+	@Override
+	public void menuButtonClicked(String appid) {
+		Log.e("unimp", appid+"胶囊点击了菜单按钮");
+		Intent intent = new Intent(context, MenuActivity.class);
+        DCUniMPSDK.getInstance().startActivityForUniMPTask(appid, intent);
+	}
+});
+```
+
+#### DCUniMPSDK.getInstance().startActivityForUniMPTask(appid, intent)
+
+启动一个Activity，当前Activity运行在小程序任务堆栈中。进程还是属于宿主进程。可正常使用宿主内存数据！关闭当前activity还会回到小程序。v3.2.6
+
+**参数说明**
+
+|参数|类型|必填|说明
+|:----|:----|:----|:----
+|appid|String|是|小程序appid
+|intent|android.content.Intent|是|安卓原生Intent 需要配置要启动的activity信息
+
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean| true表示初始化成功 false表示失败
+
+**示例:**
+
+```
+DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack(new IDCUniMPOnCapsuleMenuButtontCallBack() {
+	@Override
+	public void menuButtonClicked(String appid) {
+		Log.e("unimp", appid+"胶囊点击了菜单按钮");
+		Intent intent = new Intent(context, MenuActivity.class);
+        DCUniMPSDK.getInstance().startActivityForUniMPTask(appid, intent);
 	}
 });
 ```
@@ -488,9 +546,9 @@ uni.onNativeEventReceive(function(event, data){
 |:----|:----
 |boolean|true表示运行中 false表示已停止运行
 
-#### IUniMP.closeUniMP()
+#### IUniMP.showUniMP() 
 
-关闭当前小程序
+当前小程序显示到前台。仅开启后台模式生效！v3.2.6+
 
 **参数说明**
 
@@ -498,7 +556,37 @@ uni.onNativeEventReceive(function(event, data){
 
 **返回值**
 
+|类型|说明
+|:----|:----
+|boolean|true成功 false失败
+
+#### IUniMP.hideUniMP()
+
+当前小程序退到后台。仅开启后台模式生效! v3.2.6+
+
+**参数说明**
+
 无
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean|true成功 false失败
+
+#### IUniMP.closeUniMP()
+
+关闭当前小程序 v3.2.6+
+
+**参数说明**
+
+无
+
+**返回值**
+
+|类型|说明
+|:----|:----
+|boolean|true成功 false失败
 
 
 ## 类 DCSDKInitConfig
@@ -577,6 +665,19 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 **2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
 
+#### setUniMPFromRecents(isFromRecents)
+
+设置小程序任务窗口是否显示，仅在后台模式下生效 v3.2.6+
+
+**参数说明**
+
+|参数|类型|默认值|说明
+|:----|:----|:----|:----
+|isFromRecents|boolean|true|true显示任务窗口 false不显示 仅在后台模式下生效
+
+**注意事项**
+
+该api仅在后台模式下生效！
 
 #### DCSDKInitConfig.Builder.setMenuDefFontSize(menuDefFontSize)
 

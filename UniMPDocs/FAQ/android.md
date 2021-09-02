@@ -93,3 +93,22 @@ A: 请按以下配置修改：
 2、原生项目根目录 gradle.properties 配置android.bundle.enableUncompressedNativeLibs=false
 
 重新编译打包
+
+	
+## Q: 打包Android 10上无法启动相机
+
+A: 在application节点下添加provider节点
+	
+~~~
+		<provider
+            android:name="io.dcloud.common.util.DCloud_FileProvider"
+            android:authorities="${apk.applicationId}.dc.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/dcloud_file_provider" />
+        </provider>
+~~~
+
+${apk.applicationId}须替换成应用的包名。
