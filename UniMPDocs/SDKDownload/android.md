@@ -20,6 +20,7 @@
 + 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
 + SDK部分类名及API均有调整需参考API文档及示例进行修改! [小程序多开功能示例](UniMPDocs/Sample/android-v2)、[小程序多开API文档](UniMPDocs/API/android-v2);
 + 修复部分系统关闭小程序任务窗口后再次启动可能会白屏问题
++ 开启后台模式停止小程序时对应任务窗口也将会被清空。多任务窗口将看不到已停止运行的小程序
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.6.20210901-alpha.html)
 
 ## 升级SDK注意事项
