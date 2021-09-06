@@ -21,17 +21,11 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年8月30日发布——HBuilderX（3.2.5.20210827-alpha）
+### 2021年9月6日发布——HBuilderX（3.2.6.20210901-alpha）
 [点击下载SDK，提取码: 5c8e](https://pan.baidu.com/s/1IXXyK6Welkf-cD7Rq4N4JA)
-+ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.5.20210827）版本生成本地打包App资源。
-+ 新增 uni-AD Sigmob广告联盟支持激励视频广告 [文档](https://uniapp.dcloud.io/api/a-d/rewarded-video)
-+ 更新 uni-AD 腾讯优量汇SDK Android为4.400.1270版，iOS为4.13.02版；快手广告联盟SDK Android为3.3.13版， iOS为3.3.13版；快手内容联盟SDK Android为3.3.22版，iOS为3.3.22版
-+ 优化 uni-AD 基础开屏广告填充率
-+ iOS平台 修复 3.2.0 版本引出的 微信登录、分享、支付，QQ登录、分享在部分设备可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/129378)
-+ iOS平台 修复 视频播放控件 VideoPlayer 视频带有方向属性时 poster 封面图会被旋转的Bug [详情](https://ask.dcloud.net.cn/question/129090)
-+ iOS平台 修复 视频播放控件 VideoPlayer 设置 objectFit 为 cover 时封面显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/127991)
-+ iOS平台 修复 新浪分享模块在某些安全平台检测可能误报使用 UIWebview APIs 的Bug
-+ iOS平台 修复 二维码扫码部分图片可能无法识别的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX-alpha（3.2.6.20210901）版本生成本地打包App资源。
++ 【重要】新增 uni-app Vue3 版本 支持运行和发行到 App
++ iOS平台 修复 二维码扫码在应用横屏模式时预览画面被旋转了的Bug [详情](https://ask.dcloud.net.cn/question/116187)
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
