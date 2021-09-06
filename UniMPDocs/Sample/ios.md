@@ -391,12 +391,12 @@ capsuleButtonStyle.borderColor = @"rgba(229,229,229,0.3)";
 				"app-plus": {
 					"bounce": "vertical",
 					"titleNView": {
-						"capsuleButtonStyle": [{
+						"capsuleButtonStyle": {
 							"backgroundColor": "rgba(169,169,169,0.2)",   // 胶囊按钮背景颜色
 							"textColor":""#FFFFFF",    // 胶囊按钮 “···｜x” 的字体颜色
 							"highlightColor": "rgb(203,204,205)",  // 胶囊按钮按下状态背景颜色
 							"borderColor": "rgba(229,229,229,0.3)" // 胶囊按钮边框颜色
-						}]
+						}
 					}
 				}
 			}
