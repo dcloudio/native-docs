@@ -49,7 +49,7 @@ android.enableJetifier：当设为 true 时，此标记表示您想要获得相�
 
 ## Q: 如何查看小程序 console日志
 
-A：修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  修改后查看io.dcloud.unimp进程查看log。TAG为console
+A：修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  修改后查看`io.dcloud.unimp`进程查看log.多开版查看`宿主包名:unimp0~2`进程查看log.TAG为console
 
 ## Q: 开启混淆打包后小程序运行白屏或UI显示异常？
 
