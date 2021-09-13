@@ -23,6 +23,8 @@
 + 开启后台模式停止小程序时对应任务窗口也将会被清空。多任务窗口将看不到已停止运行的小程序
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.6.20210901-alpha.html)
 
+**注：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
+
 ## 升级SDK注意事项
 
 + 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换!

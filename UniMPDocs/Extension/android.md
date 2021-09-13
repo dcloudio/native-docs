@@ -477,6 +477,52 @@ public void gotoNativePage(){
 
 如果小程序非后台运行模式 setEnableBackground = false ，不支持Activity设置launchMode="singleTask"，可能会引起小程序无法正常启动！！！
 
+#### 插件跳转Activity页面后。Activity页面关闭后有数据需要返回。怎么能实现？
+
+可以按以下步骤操作实现：
+
+在插件的UniModule/UniComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
+   
+   **示例**
+   
+   ```JAVA
+   public static int REQUEST_CODE = 1000; //数据返回标识code 
+   @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
+            Log.e("TestModule", "原生页面返回----"+data.getStringExtra("respond"));
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+   ```
+
+通过startActivityForResult加上返回标识code跳转其他Activity页面。
+   
+   **示例**
+   
+   ```JAVA
+   @UniJSMethod (uiThread = true)
+    public void gotoNativePage(){
+        if(mUniSDKInstance != null && mUniSDKInstance.getContext() instanceof Activity) {
+            Intent intent = new Intent(mUniSDKInstance.getContext(), NativePageActivity.class);
+            ((Activity)mUniSDKInstance.getContext()).startActivityForResult(intent, REQUEST_CODE);
+        }
+    }
+   ```
+   
+Activity页面在关闭前调用setResult设置标识code将要返回的参数放进Intent中。
+   
+   **示例**
+   
+   ```JAVA
+   Intent intent = new Intent();
+   intent.putExtra("respond", "我是原生页面");
+   setResult(TestModule.REQUEST_CODE, intent);
+   finish();
+   ```
+
+
 ## 集成插件市场的uni原生插件
 
 [uni-app插件市场](https://ext.dcloud.net.cn/)有大量丰富的插件。
