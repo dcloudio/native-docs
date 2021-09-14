@@ -705,3 +705,10 @@ A: 请使用UniAppHookProxy接口 有onSubProcessCreate子进程初始化回调�
 Q：插件可以重写Application吗？
 
 A：不支持。重写Application存在很多安全隐患。
+
+Q：插件生产文件路径需要注意哪些？
+
+A:
+ 
++ 插件生成的路径尽量添加`file://`防止路径被转换导致无法正确获取文件
++ 尽量将文件放到`/storage/emulated/0/Android/data/$应用的包名$/apps/$uniapp的appid$/doc/`目录下
