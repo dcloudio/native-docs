@@ -229,3 +229,37 @@ dcloud_properties.xml文件在assets/data目录下
 <module name="OAuth-Google" value="io.dcloud.feature.google.GoogleOAuthService"/>
 ~~~
 
+
+## Facebook登录Android离线打包
+
+>3.2.7+ 版本新增支持
+
+### 需要拷贝的文件
+
+**需要引入工程的aar文件**
+
+|路径|文件|
+| :-------: | :-------: |
+| SDK\libs | oauth-facebook-release.aar |
+
+
+**应用目录  res/values/strings.xml 需要添加如下资源**
+<string name="facebook_app_id">你的fb_app_id</string>
+<string name="fb_login_protocol_scheme">fb+你的fb_app_id</string>
+
+
+下面是一个完整的示例
+~~~
+<string name="facebook_app_id">1966893263469923</string>
+<string name="fb_login_protocol_scheme">fb1966893263469923</string>
+~~~
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~
+<module name="OAuth-Facebook" value="io.dcloud.feature.facebook.FacebookOAuthService"/>
+~~~
+
+
