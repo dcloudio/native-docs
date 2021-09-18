@@ -207,3 +207,25 @@ dcloud_properties.xml文件在assets/data目录下
 <module name="OAuth-MiUi" value="io.dcloud.feature.oauth.miui.MiUiOAuthService"/>
 </feature>
 ~~~
+
+## Google登录Android离线打包
+
+>3.2.7+ 版本新增支持
+
+### 需要拷贝的文件
+
+**需要引入工程的aar文件**
+
+|路径|文件|
+| :-------: | :-------: |
+| SDK\libs | oauth-google-release.aar |
+
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~
+<module name="OAuth-Google" value="io.dcloud.feature.google.GoogleOAuthService"/>
+~~~
+
