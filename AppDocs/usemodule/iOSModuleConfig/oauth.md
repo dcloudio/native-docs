@@ -5,6 +5,8 @@ Oauth 模块支持
 - QQ登录
 - 微信登录
 - 苹果授权登录
+- Google登录
+- Facebook登录
 
 需要到各开放平台申请帐号
 
@@ -164,6 +166,40 @@ Oauth 模块支持
 在原生工程 -> Signing&Capabilities-> + Capability 中添加 Sign in with Apple 服务
 
 证书配置及使用说明请参考 [文档](https://ask.dcloud.net.cn/article/36651)
+
+
+## Google登录
+
+### 添加依赖库及资源
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|liblibOauth.a、libGoogleOauth.a、GoogleSignIn.framework、GoogleSignInDependencies.framework|AuthenticationServices.framework、CoreText.framework、CoreGraphics.framework、LocalAuthentication.framework、SafariServices.framework、Security.framework|GoogleSignIn.bundle|
+
+### 工程配置
+
+1.在 info.plist 添加 `google` 项，填写Google `clientid`，参考如下：
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/gg_clientid.png)
+
+2.在工程的 info -> URL types 中添加配置，identifier 填写`google_url`， 添加您的反向clientid作为URL Schemes，如下图所示
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/gg_urlschemes.png)
+
+## Facebook登录
+
+### 添加依赖库及资源
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|liblibOauth.a、libFBOauth.a、FBSDKCoreKit.framework、FBAEMKit.framework、FBSDKCoreKit_Basics.framework、FBSDKLoginKit.framework|libc++.tbd、Accelerate.framework、Accounts.framework、AdSupport.framework、AudioToolbox.framework、CoreGraphics.framework、QuartzCore.framework、Security.framework、Social.framework、StoreKit.framework、|无|
+
+### 工程配置
+
+1.在 info.plist 添加 `FacebookAppID` 项，填写Facebook `appid`，参考如下：
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_appid.png)
+2.在工程的 info -> URL types 中添加配置，identifier 填写`facebook `，URL Schemes 填写`fb[后面填写appid]`,如下图所示
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_urlschemes.png)
+3.在 info.plist 添加 Schemes 白名单
+![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_bmd.png)
 
 
 **注意 :除苹果授权登录外，都需要实现如下方法**
