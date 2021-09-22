@@ -244,8 +244,9 @@ dcloud_properties.xml文件在assets/data目录下
 
 
 **应用目录  res/values/strings.xml 需要添加如下资源**
-<string name="facebook_app_id">你的fb_app_id</string>
-<string name="fb_login_protocol_scheme">fb+你的fb_app_id</string>
+
+facebook_app_id 和  fb_login_protocol_scheme
+
 
 
 下面是一个完整的示例
