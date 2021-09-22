@@ -138,6 +138,10 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 				abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a'
 			}
 		}
+		compileOptions {
+			sourceCompatibility JavaVersion.VERSION_1_8
+			targetCompatibility JavaVersion.VERSION_1_8
+		}
 		buildTypes {
 			release {
 				minifyEnabled false
