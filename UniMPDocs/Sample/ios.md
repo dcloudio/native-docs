@@ -89,6 +89,9 @@ configuration.arguments = @{ @"arguments":@"Hello uni microprogram" };
 var info = plus.runtime.arguments;
 ```
 
+##### 注意事项：
+- 启动传入的参数只有冷启动小程序时才会生效，**开启后台运行**小程序从后台切换到前台时即使宿主更新了传入的 arguments 值小程序中调用` plus.runtime.arguments` 获取的依旧是之前的值；
+
 ### 启动打开指定页面
 
 宿主启动小程序时可通过传入页面路径来打开指定页面
@@ -96,8 +99,6 @@ var info = plus.runtime.arguments;
 **页面路径格式要求** 
 
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
-
-**注意：如果直达的页面为首页并且是 vue 的话页面参数无效** 应使用启动传参的方式
 
 ```
 pages/component/view/view?action=redirect
@@ -152,6 +153,10 @@ configuration.redirectPath = @"pages/component/view/view?action=redirect";
 	}
 </script>
 ``` 
+
+##### 注意事项：
+- **如果直达的页面为首页并且是 vue 的话页面参数无效** 应使用启动传参的方式；
+- 启动打开二级页面只有冷启动小程序时才会生效，**开启后台运行**小程序从后台切换到前台时即使宿主更新了传入的 redirectPath 值不会生效；
 
 ### 转场动画
 > 2.8.0+ 版本支持
