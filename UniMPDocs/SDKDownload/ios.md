@@ -9,10 +9,13 @@
 
 ## 更新日志
 
-#### SDK 3.2.3 (补丁版本1)
+#### SDK 3.2.3 (补丁版本2)
 [点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.3.zip)
 
-+ 紧急修复 3.2.3 引起的小程序内 wgt 热更新后白屏的Bug；
++ 修复 3.2.3 版本引起的小程序内 wgt 热更新后白屏的Bug；
++  修复 3.2.3 版本引起的频繁快速启动关闭小程序偶像崩溃的Bug；
++  修复 3.2.3 版本引起的未开启手势关闭并使用 push 方式打开小程序时原生导航栏没有正常隐藏的Bug；
++  修复 3.2.3 版本引起的未开启手势关闭并使用 push 方式第二次打开小程序后，手势还可以关闭的Bug；
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.3.20210825.html)
 
 
