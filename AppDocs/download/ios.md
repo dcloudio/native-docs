@@ -21,15 +21,13 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年9月19日发布——HBuilderX（3.2.7.20210919-alpha）
-[点击下载SDK，提取码: 35w2](https://pan.baidu.com/s/1yGGLYIONGwrW4zVHBy48dw)
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.7.20210919-alpha）版本生成本地打包App资源。
-+ App-iOS平台 修复 3.2.6 引出的 nvue 页面 css 伪类样式失效的Bug [详情](https://ask.dcloud.net.cn/question/130879)
-+ App-iOS平台 修复 tabbar 设置选中项图片为 gif 时动画速度太慢的Bug [详情](https://ask.dcloud.net.cn/question/125824)
-+ iOS平台 优化 compressVideo 视频压缩速度
-+ iOS平台 修复 一键登录 授权页面服务协议复选框不好点击的Bug [详情](https://ask.dcloud.net.cn/question/130881)
-+ iOS平台 修复 视频播放控件 VideoPlayer 播放直播视频无法触发 timeupdate 事件的Bug [详情](https://ask.dcloud.net.cn/question/129955)
-+ iOS平台 修复 视频播放控件 VideoPlayer 可能无法正常播放m3u8视频流的Bug [详情](https://ask.dcloud.net.cn/question/129884)
+### 2021年9月23日发布——HBuilderX（3.2.8.20210923-alpha）
+[点击下载SDK，提取码: xrbx](https://pan.baidu.com/s/1RUH4TIbR12h2-eaIvJkCmA) 
+  
+  + 更新uni-app离线打包支持，需使用HBuilderX（3.2.8.20210923-alpha）版本生成本地打包App资源。
+  + App平台 修复 生命周期 onLaunch、onShow 不触发的Bug [详情](https://ask.dcloud.net.cn/question/131152)
+  + App平台 修复 picker 组件按钮显示文本错误的Bug [详情](https://ask.dcloud.net.cn/question/131204)
+  + App-iOS平台 修复 search 类型的 input 组件在 iOS15 默认显示搜索图标的Bug [详情](https://ask.dcloud.net.cn/question/129259)
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
@@ -41,4 +39,4 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
     
-[百度网盘下载历史版本，提取码: niif](https://pan.baidu.com/s/19rTB0_hgbYCSl2di_NGkXA)
+[百度网盘下载历史版本，提取码: v6i5](https://pan.baidu.com/s/1ZlfrGZuk-6_a0pm07Rqc4g)
