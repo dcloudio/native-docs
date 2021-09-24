@@ -23,7 +23,7 @@
 
 ### 2021年9月19日发布——HBuilderX（3.2.7.20210919-alpha）
 [点击下载SDK，提取码: 35w2](https://pan.baidu.com/s/1yGGLYIONGwrW4zVHBy48dw)
-
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.7.20210919-alpha）版本生成本地打包App资源。
 + App-iOS平台 修复 3.2.6 引出的 nvue 页面 css 伪类样式失效的Bug [详情](https://ask.dcloud.net.cn/question/130879)
 + App-iOS平台 修复 tabbar 设置选中项图片为 gif 时动画速度太慢的Bug [详情](https://ask.dcloud.net.cn/question/125824)
 + iOS平台 优化 compressVideo 视频压缩速度
