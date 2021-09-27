@@ -181,7 +181,7 @@ dependencies {
 
 ## 代码实现
 
-阅读[uni小程序SDK API参考手册](https://ask.dcloud.net.cn/article/36984)
+阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)
 
 #### 初始化uniMPSDK
 
@@ -222,12 +222,12 @@ if(!RuningAcitvityUtil.getAppName(getBaseContext()).contains("io.dcloud.unimp"))
 **示例：**
 
 ```
-DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButtonClickCallBack() {
+DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new IMenuButtonClickCallBack() {
             @Override
-            public void onClick(String id) {
+            public void onClick(String appid, String id) {
                 switch (id) {
                     case "gy":{
-                        Logger.e("用户点击了关于");
+                        Logger.e(appid+"用户点击了关于");
                     }
                 }
             }
@@ -241,13 +241,13 @@ uni小程序运行在独立进程中。所以小程序中的内存与宿主是�
 
 #### 启动内置uni小程序
 
-通过DCUniMPSDK.getInstance().startApp启动小程序
+通过DCUniMPSDK.getInstance().openUniMP启动小程序
 
 **示例：**
 
 ```
 try {
-	DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", MySplashView.class);
+	DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", MySplashView.class);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -256,7 +256,7 @@ try {
 #### 启动非内置uni小程序
 
  - 通过调用DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath释放wgt资源包到运行时目录下。
- - 调用DCUniMPSDK.getInstance().startApp启动小程序
+ - 调用DCUniMPSDK.getInstance().openUniMP启动小程序
 
 **示例：**
 
@@ -267,7 +267,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 	public Object onCallBack(int code, Object pArgs) {
 		if(code ==1) {//释放wgt完成
 			try {
-				DCUniMPSDK.getInstance().startApp(context, "__UNI__04E3A11");
+				DCUniMPSDK.getInstance().openUniMP(context, "__UNI__04E3A11");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -281,7 +281,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 
 #### 启动uni小程序携带启动参数
 
-调用DCUniMPSDK.getInstance().startApp启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](https://ask.dcloud.net.cn/article/36984)中startApp方法相关说明。
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 
@@ -289,7 +289,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 try {
 	JSONObject arguments = new JSONObject();
 	arguments.put("a","1");
-	DCUniMPSDK.getInstance().startApp(context, "__UNI__04E3A11", arguments);
+	DCUniMPSDK.getInstance().openUniMP(context, "__UNI__04E3A11", arguments);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -297,13 +297,13 @@ try {
 
 #### 启动uni小程序直达二级页面
 
-调用DCUniMPSDK.getInstance().startApp启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](https://ask.dcloud.net.cn/article/36984)中startApp方法相关说明。
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 
 ```
 try {
-	DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/scroll-view/scroll-view");
+	DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/scroll-view/scroll-view");
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -323,8 +323,8 @@ try {
 
 #### uni小程序的应用资源集成方式
 
- - 放在项目assets目录下 属于内置应用。无需开发者拷贝应用资源，直接通过appid 调用SDK的startApp启动即可。
- - 开发者自行下载或其他方式获取到.wgt文件(uni小程序应用资源包)后。可通过SDK的getAppBasePath获取运行时路径。自行解压释放.wgt文件到运行时路径。.wgt文件生成请参考`第二步，生成小程序应用资源`。也可通过SDK的releaseWgtToRunPathFromePath方法释放wgt资源包。释放完毕后通过startApp启动uni小程序。
+ - 放在项目assets目录下 属于内置应用。无需开发者拷贝应用资源，直接通过appid 调用SDK的openUniMP启动即可。
+ - 开发者自行下载或其他方式获取到.wgt文件(uni小程序应用资源包)后。可通过SDK的getAppBasePath获取运行时路径。自行解压释放.wgt文件到运行时路径。.wgt文件生成请参考`第二步，生成小程序应用资源`。也可通过SDK的releaseWgtToRunPathFromePath方法释放wgt资源包。释放完毕后通过openUniMP启动uni小程序。
 
 #### uni小程序应用资源升级
 
