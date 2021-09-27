@@ -1,3 +1,5 @@
+# unimp小程序V1版 (不支持同时运行多个小程序)
+
 #### 类 DCUniMPSDK 
 
 uni小程序SDK入口句柄,该类为工厂模式。通过`getInstance()`获取对象实例！

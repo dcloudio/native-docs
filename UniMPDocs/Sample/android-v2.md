@@ -1,6 +1,6 @@
-# unimp小程序多开版
+# unimp小程序V2版 (支持同时运行多个小程序)
 
-需要注意 多开版本还处于bate版本 [SDK下载](UniMPDocs/SDKDownload/android)
+[SDK下载](UniMPDocs/SDKDownload/android)
 
 ## 启动小程序
 
