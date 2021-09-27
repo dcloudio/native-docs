@@ -7,7 +7,7 @@
   + [Android平台uni原生插件开发教程](/NativePlugin/course/android.md)
   + [iOS平台uni原生插件开发教程](/NativePlugin/course/ios.md)
 - 5+原生插件：
-`5+ App`、`Wap2App`项目中使用，基于Webview的原生扩展，是通过webview桥方式的扩展机制。
+`5+ App`、`Wap2App`项目中使用，基于Webview的原生扩展，是通过webview桥方式的扩展机制(3.1.5版本之后不支持)。
 
 从开发方式相比，uni原生插件开发模式更简单。webview桥方式需要在原生层和js层分别做很多工作，而uni原生插件开发主要在原生层做封装即可。
 从使用方式相比，5+原生插件需要本地离线打包，而uni原生插件不仅支持本地离线打包，还支持在线云端打包，同时插件市场还有很多优秀原生插件可拿来即用。
