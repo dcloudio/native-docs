@@ -285,6 +285,19 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### DCUniMPSDKEngineDelegate 相关方法
 
 ```
+/// 拦截胶囊`x`关闭按钮事件，注意：实现该方法后框架内不会执行关闭小程序的逻辑，需要宿主自行处理逻辑 3.2.9+ 支持
+/// @param appid appid
+- (void)hookCapsuleCloseButtonClicked:(NSString *)appid;
+```
+
+```
+/// 拦截胶囊`···`菜单按钮事件，注意：实现该方法后框架内不会弹出actionSheet弹窗，需宿主自行处理逻辑 3.2.9+ 支持
+/// @param appid appid
+- (void)hookCapsuleMenuButtonClicked:(NSString *)appid;
+```
+
+
+```
 /// 胶囊按钮‘x’关闭按钮点击回调 3.1.22+ 支持
 /// @param appid appid
 - (void)closeButtonClicked:(NSString *)appid;
