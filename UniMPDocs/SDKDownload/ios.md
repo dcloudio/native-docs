@@ -23,7 +23,6 @@
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
 
 #### SDK 3.2.3 (补丁版本2)
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.3.zip)
 
 + 修复 3.2.3 版本引起的小程序内 wgt 热更新后白屏的Bug；
 + 修复 3.2.3 版本引起的频繁快速启动关闭小程序偶像崩溃的Bug；
