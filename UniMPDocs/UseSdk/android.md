@@ -247,7 +247,7 @@ uni小程序运行在独立进程中。所以小程序中的内存与宿主是�
 
 ```
 try {
-	DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", MySplashView.class);
+	IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", MySplashView.class);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -289,7 +289,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 try {
 	JSONObject arguments = new JSONObject();
 	arguments.put("a","1");
-	DCUniMPSDK.getInstance().openUniMP(context, "__UNI__04E3A11", arguments);
+	IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, "__UNI__04E3A11", arguments);
 } catch (Exception e) {
 	e.printStackTrace();
 }
@@ -303,7 +303,7 @@ try {
 
 ```
 try {
-	DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/scroll-view/scroll-view");
+	IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/scroll-view/scroll-view");
 } catch (Exception e) {
 	e.printStackTrace();
 }

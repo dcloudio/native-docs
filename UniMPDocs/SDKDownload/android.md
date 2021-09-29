@@ -11,13 +11,17 @@
 
 + 老版本uni小程序SDK。不支持同时运行多个小程序。3.2.3之后不会再维护更新。
 
-## 更新日志
+## SDK下载
+
+**⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
 ### 2021年09月27日发布
 
 #### SDK 3.2.9 V2版本（支持同时运行多个小程序）
 
 [点击下载SDK UniMPSDK_Android@3.2.9-V2-20210927.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.9-V2-20210927.zip)
+
+#### 更新日志
 + 需使用HBuilderX（3.2.9）版本生成 小程序App 资源
 + 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
 + SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](UniMPDocs/API/android-v2);
@@ -27,8 +31,11 @@
 
 ### 2021年08月26日发布
 
-#### SDK 3.2.3 V1 版本（不支持小程序多开）
+#### SDK 3.2.3 V1 版本（不支持小程序多开，不再维护更新）
+
 [点击下载SDK UniMPSDK_Android@3.2.3.20210826.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.3.20210826.zip)
+
+#### 更新日志
 + 需使用HBuilderX（3.2.3）版本生成 小程序App 资源
 + SDK中unimp-release.aar改为unimp-v8-release.aar更新SDK的同学需要注意
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.3.20210825.html)
@@ -36,12 +43,10 @@
 + [小程序V1版本API文档](UniMPDocs/API/android)
 
 
-**⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
-
 ## 升级SDK注意事项
 
-+ 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换!
-+ 更新proguard.cfg混淆配置
++ 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
++ 更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
 + 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、oaid_sdk_1.0.xx.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
 
 ## 历史稳定版本
