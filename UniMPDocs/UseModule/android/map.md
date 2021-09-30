@@ -51,15 +51,11 @@ dcloud_properties.xml文件在assets/data目录下
 
 #### features节点下添加
 
-~~~
+```
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
-~~~
-
-#### services节点下添加
-
 ```
-<service name="Maps" value="io.dcloud.js.map.MapInitImpl"/>
-```
+
+
 
 ## 高德地图Google Play专版
 
@@ -115,9 +111,3 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
 ~~~
-
-#### services节点下添加
-
-```
-<service name="Maps" value="io.dcloud.js.map.MapInitImpl"/>
-```
