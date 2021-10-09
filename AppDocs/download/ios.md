@@ -18,6 +18,7 @@
 + App-iOS平台 修复 uni.openDocument 部分情况下回调错误的Bug
 + App-iOS平台 修复 tabbar 设置选中项图片为 gif 时动画速度太慢的Bug [详情](https://ask.dcloud.net.cn/question/125824)
 + App-iOS平台 修复 search 类型的 input 组件在 iOS15 默认显示搜索图标的Bug [详情](https://ask.dcloud.net.cn/question/129259)
++ App-iOS平台 修复nvue list 组件在 iOS15 设备上可能会出现空白内容的Bug [详情](https://ask.dcloud.net.cn/question/131714)
 + iOS平台 优化 compressVideo 视频压缩速度
 + iOS平台 修复 3.2.0 版本引出的 微信登录、分享、支付，QQ登录、分享在部分设备可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/129378)
 + iOS平台 修复 一键登录 授权页面服务协议复选框不好点击的Bug [详情](https://ask.dcloud.net.cn/question/130881)
