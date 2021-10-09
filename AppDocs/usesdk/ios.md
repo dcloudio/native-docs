@@ -113,11 +113,12 @@ iOSSDK/SDK/Libs/liblibUI.a
 
 ### 配置Appkey
 
-**3.1.10版本起需要申请 Appkey，申请请[参考](/AppDocs/usesdk/appkey.md)**
+**3.1.10版本起需要申请 Appkey，申请请 [参考](/AppDocs/usesdk/appkey.md)**
 
 打开info.plist，创建key为dcloud_appkey，Value选择String类型，内容为申请的AppKey如下：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/IntegrationProject/info-plist-appkey-config.png)
 
+**注意：**需要按照下面的教程将 **「应用标识」**以及 [导入资源教程](https://nativesupport.dcloud.net.cn/AppDocs/importfeproject/ios) 中**「control.xml 中对应的 appid」** 修改为正确的值，否则运行时会还是会提示 appkey 错误；
 
 ### 配置应用标识(Bundle Identifier)
 
