@@ -3,7 +3,9 @@
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
 ### 2021年09月27日发布——HBuilderX（3.2.9.20210927）
-[点击下载SDK](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
+[百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
+
+[和彩云](https://caiyun.139.com/m/i?115ConiDN7yT8)，提取码: FPkC
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.9.20210927）版本生成本地打包App资源。
 + 新增 nvue 页面适配支持折叠屏手机
@@ -29,12 +31,16 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CoThrJoOy4)，提取码: Wxgg
+
 
 
 ## Android 离线SDK - Alpha版
 
 ### 2021年10月13日发布——HBuilderX（3.2.10.20211013-alpha）
-[点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
+[百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
+
+[和彩云](https://caiyun.139.com/m/i?115CnVmSll4KU)，提取码: 2he1
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.10.20211013-alpha）版本生成本地打包App资源。
 + 修复 3.2.8 版本引出的 nvue 页面横屏时字体大小不正常的Bug
@@ -48,3 +54,5 @@
 + 修复 视频播放控件 VideoPlayer 在部分设备全屏显示可能引起崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
+
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CnVmQQQRee)，提取码: qCk0
