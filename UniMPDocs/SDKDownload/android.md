@@ -15,11 +15,11 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2021年09月27日发布
+### 2021年10月13日发布
 
 #### SDK 3.2.9 V2版本（支持同时运行多个小程序）
 
-[点击下载SDK UniMPSDK_Android@3.2.9-V2-20210927.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.9-V2-20210927.zip)
+[点击下载SDK UniMPSDK_Android@3.2.9-V2-20211013.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.9-V2-20211013.zip)
 
 #### 更新日志
 + 需使用HBuilderX（3.2.9）版本生成 小程序App 资源
@@ -27,6 +27,7 @@
 + SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](UniMPDocs/API/android-v2);
 + 修复部分系统关闭小程序任务窗口后再次启动可能会白屏问题
 + 开启后台模式停止小程序时对应任务窗口也将会被清空。多任务窗口将看不到已停止运行的小程序
++ 修复小程序启动默认语言为英文的问题
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.9.20210927.html)
 
 ### 2021年08月26日发布
