@@ -3,7 +3,9 @@
 ## iOS 离线SDK - 正式版
 
 ### 2021年9月27日发布——HBuilderX（3.2.9.20210927） 
-[点击下载SDK，提取码: hbve](https://pan.baidu.com/s/15BPM208r3lHx3O4Yzkim0Q)
+[百度云点击下载SDK，提取码: hbve](https://pan.baidu.com/s/15BPM208r3lHx3O4Yzkim0Q)
+
+[和彩云点击下载SDK，提取码: CJCE](https://caiyun.139.com/m/i?115CoThWDomAk) 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.9.20210927）版本生成本地打包App资源。
 + App平台、H5平台 修复 scroll-view 组件滚动过快时 scroll 事件回调返回信息不正确的Bug [详情](https://ask.dcloud.net.cn/question/128573)
@@ -32,6 +34,9 @@
 + iOS平台 修复 在 iOS15 设备配置使用广告标识 IDFA 首次启动可能不弹 AppTrackingTransparency 权限框的Bug
 + iOS平台 修复 在 iOS15 部分设备使用`标准运行基座`真机运行可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/131198)
 
+
+`注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
+
 `注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
     
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
@@ -41,13 +46,33 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年9月23日发布——HBuilderX（3.2.8.20210923-alpha）
-[点击下载SDK，提取码: xrbx](https://pan.baidu.com/s/1RUH4TIbR12h2-eaIvJkCmA) 
+### 2021年10月13日发布——HBuilderX（3.2.10.20211013-alpha）
+
+[百度云点击下载SDK，提取码: 7jiv](https://pan.baidu.com/s/1PqoAhhft89ZBJmbtc1mYaA) 
+
+[和彩云点击下载SDK，提取码: t3Az](https://caiyun.139.com/m/i?115Co9lCz5omK) 
   
-  + 更新uni-app离线打包支持，需使用HBuilderX（3.2.8.20210923-alpha）版本生成本地打包App资源。
-  + App平台 修复 生命周期 onLaunch、onShow 不触发的Bug [详情](https://ask.dcloud.net.cn/question/131152)
-  + App平台 修复 picker 组件按钮显示文本错误的Bug [详情](https://ask.dcloud.net.cn/question/131204)
-  + App-iOS平台 修复 search 类型的 input 组件在 iOS15 默认显示搜索图标的Bug [详情](https://ask.dcloud.net.cn/question/129259)
++ App平台、H5平台 新增 支持设置动态配置 tabBarItem 显示隐藏 [详情](https://uniapp.dcloud.io/api/ui/tabbar?id=settabbaritem)
++ App平台、H5平台 新增 uni.showModal 支持配置是否显示输入框 [详情](https://uniapp.dcloud.io/api/ui/prompt?id=showmodal)
++ App平台、H5平台 修复 3.2.8 版本引出的 scroll-view 组件内部元素部分样式失效的Bug [详情](https://ask.dcloud.net.cn/question/131736)
++ App平台 新增 nvue map 组件 API MapContext.on [详情](https://uniapp.dcloud.net.cn/api/location/map?id=createmapcontext)
++ APP-Android平台 修复 3.2.8 版本引出的 nvue 页面横屏时字体大小不正常的Bug [详情](https://ask.dcloud.net.cn/question/132200)
++ App-Android平台 修复 nvue scroll-view 组件设置 scroll-y 为 false 时引起横向滚动失效的Bug [详情](https://github.com/dcloudio/uni-app/issues/1487)
++ App-Android平台 修复 nvue textarea 组件设置 v-model 时使用手写输入法出现异常的Bug [详情](https://ask.dcloud.net.cn/question/122239)
++ App-iOS平台 修复 nvue list 组件在 iOS15 设备上可能出现空白内容的Bug [详情](https://ask.dcloud.net.cn/question/131714)
++ App-iOS平台 修复 nvue textarea 组件默认存在 padding 的Bug [详情](https://ask.dcloud.net.cn/question/131761)
++ App-iOS平台 修复 nvue map 组件 marker 的 label 属性值格式不正确时可能引起崩溃的Bug
+
++ iOS平台 更新 腾讯优量汇SDK为 4.13.11 版
++ iOS平台 修复 在 iOS15 设备配置使用广告标识 IDFA 首次启动可能不弹 AppTrackingTransparency 权限框的Bug
++ iOS平台 修复 在 iOS15 部分设备使用`标准运行基座`真机运行可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/131198)
++ iOS平台 修复 wgt热更新资源后再整包覆盖安装 App 导致获取不到之前 storage 保存的数据的Bug
++ iOS平台 修复 sqlite 在页面关闭时可能会自动关闭数据库的Bug [详情](https://ask.dcloud.net.cn/question/131917)
++ iOS平台 修复 视频播放控件 VideoPlayer 设置 poster 后点播放按钮封面消失后播放器可能出现黑屏的Bug [详情](https://ask.dcloud.net.cn/question/131740)     
+
+
+
+`注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
 
