@@ -33,19 +33,18 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2021年09月19日发布——HBuilderX（3.2.7.20210919-alpha）
+### 2021年10月13日发布——HBuilderX（3.2.10.20211013-alpha）
 [点击下载SDK](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.7.20210919-alpha）版本生成本地打包App资源。
-+ 新增 登录鉴权 支持Google登录和Facebook登录
-+ 新增 微信分享 支持打开微信客服功能
-+ 更新 uni-AD 今日头条穿山甲广告SDK为4.0.0.1版；腾讯优量汇SDK为4.410.1280版；快手广告SDK为3.3.14版
-+ 更新 微信SDK为6.7.9版
-+ 更新 友盟统计SDK为9.4.2版
-+ 优化 compressVideo 视频压缩性能，支持 resolution 参数
-+ 修复 系统相册中存在大量图片时图片选择界面操作卡顿的Bug
-+ 修复 视频播放控件 VideoPlayer 在 Android11 设备播放视频可能崩溃的Bug
-+ 修复 原生隐私政策提示框切换到横屏是显示异常的Bug
-+ 修复 Orientation 方向传感器在部分平板设备可能无法方向信息的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.10.20211013-alpha）版本生成本地打包App资源。
++ 修复 3.2.8 版本引出的 nvue 页面横屏时字体大小不正常的Bug
++ 修复 nvue scroll-view 组件设置 scroll-y 为 false 时引起横向滚动失效的Bug
++ 修复 nvue textarea 组件设置 v-model 时使用手写输入法出现异常的Bug
++ 更新 支付宝SDK为 15.8.03 版；高德地图SDK为 8.0.1 版，高德定位SDK为 5.5.0 版
++ 修复 previewImage 预览图片无法按照图片正确方向显示的Bug
++ 修复 3.2.8 版本引出的 视频播放控件 VideoPlayer 不能播放 AES-128 模式 m3u8 视频的Bug
++ 修复 视频播放控件 VideoPlayer 不能播放 rtsp 视频的Bug
++ 修复 视频播放控件 VideoPlayer 设置 objectFit 属性为 fill 时 poster 封面显示效果不正确的Bug
++ 修复 视频播放控件 VideoPlayer 在部分设备全屏显示可能引起崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
