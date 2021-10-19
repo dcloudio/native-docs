@@ -187,6 +187,7 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_urlschemes.png)
 
 3.在 info.plist 添加 Schemes 白名单
+
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_bmd.png)
 
 ## 添加代码
