@@ -182,8 +182,10 @@
 
 1.在 info.plist 添加 `FacebookAppID` 项，填写Facebook `appid`，参考如下：
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_appid.png)
+
 2.在工程的 info -> URL types 中添加配置，identifier 填写`facebook `，URL Schemes 填写`fb[后面填写appid]`,如下图所示
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_urlschemes.png)
+
 3.在 info.plist 添加 Schemes 白名单
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_bmd.png)
 
