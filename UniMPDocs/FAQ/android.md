@@ -21,7 +21,7 @@ A：一般是因为wgt资源中的versionCode为空或小于内置应用的版�
 A：请认真阅读文档参考demo示例检查你的项目！
  - 检查SDK拷贝资源时部分资源有没有正确拷贝到你的项目中，
  - 检查targetSdkVersion  取值范围26~30
- - 检查minSdkVersion  取值范围 19~22
+ - 检查minSdkVersion  取值范围 19~22 注意>=23 一定要配置android:extractNativeLibs="true"
  - 检查androidX版本 选择1.0.0版本
  - 检查application节点配置信息 android:extractNativeLibs="true" 一定要配置为true
  - 查看宿主集成的三方依赖库。可能与小程序SDK不兼容导致的初始化失败
