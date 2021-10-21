@@ -56,6 +56,13 @@
 |:--|:--|:--|
 |libUniAD.a、libUniAd-Ks.a、`KSAdSDK.framework(动态库)`|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
 
+## Sigmob
+### 添加依赖资源及文件
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libUniAd-Sgm.a、WindSDK.framework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|Sigmob.bundle|
+
 **注意：以上增强广告配置，如果是uni项目 必须配置上libUniADWeex.a  这个库**
 
 ## 注意事项
