@@ -3,9 +3,10 @@
   * [Android 插件开发教程](/NativePlugin/course/android.md) 
   * [iOS 插件开发教程](/NativePlugin/course/ios.md) 
   * [uni原生插件包格式](/NativePlugin/course/package.md) 
-* uni原生插件API参考手册
+* uni原生插件参考手册
   * [Android uni原生API参考手册](/NativePlugin/API/android.md)
-  * [iOS uni原生API参考手册](/NativePlugin/API/ios.md)  
+  * [iOS uni原生API参考手册](/NativePlugin/API/ios.md)
+  * [Android 集成的三方依赖库列表](/NativePlugin/use/android_library.md)
 * uni原生插件使用教程
   * [插件使用说明](/NativePlugin/use/use.md)
   * [HBuilderX中使用本地插件](/NativePlugin/use/use_local_plugin.md)
