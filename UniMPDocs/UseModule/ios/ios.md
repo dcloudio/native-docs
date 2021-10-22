@@ -676,9 +676,9 @@ UniMPSDK/Feature目录结构
 	    </td>
 	</tr>
 	<tr>
-		<td rowspan="3">Oauth（授权登陆）</td>
-		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/oauth.html"> plus.oauth </a></td>
-		<td rowspan="3"><a href="https://uniapp.dcloud.io/api/plugins/login"> login </a></td>
+		<td rowspan="5">Oauth（授权登陆）</td>
+		<td rowspan="5"><a href="https://www.html5plus.org/doc/zh_cn/oauth.html"> plus.oauth </a></td>
+		<td rowspan="5"><a href="https://uniapp.dcloud.io/api/plugins/login"> login </a></td>
 		<td>
 		新浪微博：<br/>
 		ImageIO.framework
@@ -743,6 +743,65 @@ UniMPSDK/Feature目录结构
 	    <b>[URL Types]</b><br/>
 	    Identifier=weixin<br/>
 	    URL Schemes=appid
+	    </td>
+	</tr>
+	<tr>
+	    <td>
+	    Google：<br/>
+		AuthenticationServices.framework
+		CoreText.framework
+		CoreGraphics.framework
+		LocalAuthentication.framework
+		SafariServices.framework
+		Security.framework
+	    </td>
+	    <td>
+		liblibOauth.a<br/>
+		libGoogleOauth.a<br/>
+		GoogleSignIn.framework
+		GoogleSignInDependencies.framework
+	    </td>
+	    <td>
+		GoogleSignIn.bundle
+	    </td>
+	    <td>
+	   <b>google:</b><br/>
+		clientid<br/>
+		<b>[URL Types]</b><br/>
+		Identifier=google_url<br/>
+		URL Schemes= 反向clientid
+	    </td>
+	</tr>
+	<tr>
+	    <td>
+	    Facebook：<br/>
+	    libc++.tbd
+	    Accelerate.framework
+	    Accounts.framework
+	    AdSupport.framework
+	    AudioToolbox.framework
+	    CoreGraphics.framework
+	    QuartzCore.framework
+	    Security.framework
+	    Social.framework
+	    StoreKit.framework
+	    </td>
+	    <td>
+	    liblibOauth.a<br/>
+	    libFBOauth.a<br/>
+	    FBSDKCoreKit.framework
+	    FBAEMKit.framework
+	    FBSDKCoreKit_Basics.framework
+	    FBSDKLoginKit.framework
+	    </td>
+	    <td>  
+	    </td>
+	    <td>
+		<b>FacebookAppID:</b><br/>
+		appid<br/>
+	    <b>[URL Types]</b><br/>
+	    Identifier=facebook<br/>
+	    URL Schemes=fb+appid
 	    </td>
 	</tr>
 	<tr>
