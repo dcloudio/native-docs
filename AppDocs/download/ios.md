@@ -1,5 +1,11 @@
 如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK； 如果要升级可以更新离线sdk包下Bundles、inc、Libs目录下的文件。
 
+## SDK 升级说明
+**⚠️注意：功能模块中的依赖库需要依赖基础模块的库，更新SDK版本时，需要将使用到的基础库和功能模块的依赖库及资源文件统一升级，如果仅升级部分库可能会导致版本不一致出现问题；**
+
+建议做法，将 SDK 整个放到工程路径下，添加依赖库或文件的时候通过 `选择本地文件的方式`添加，下次升级的时候直接整个覆盖SDK目录即可，避免每次都需要单独去挑选所依赖的库；
+
+
 ## iOS 离线SDK - 正式版
 
 ### 2021年9月27日发布——HBuilderX（3.2.9.20210927） 
@@ -46,30 +52,21 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年10月13日发布——HBuilderX（3.2.10.20211013-alpha）
+### 2021年10月22日发布——HBuilderX（3.2.11.20211022-alpha）
 
-[百度云点击下载SDK，提取码: 7jiv](https://pan.baidu.com/s/1PqoAhhft89ZBJmbtc1mYaA) 
+[百度云点击下载SDK，提取码: y4x9 ](https://pan.baidu.com/s/1W9Mo9BuFKaBOU5STMR0z4Q) 
 
-[和彩云点击下载SDK，提取码: t3Az](https://caiyun.139.com/m/i?115Co9lCz5omK) 
+[和彩云点击下载SDK，提取码: 8rwu](https://caiyun.139.com/m/i?115CoBM75B62G) 
   
-+ App平台、H5平台 新增 支持设置动态配置 tabBarItem 显示隐藏 [详情](https://uniapp.dcloud.io/api/ui/tabbar?id=settabbaritem)
-+ App平台、H5平台 新增 uni.showModal 支持配置是否显示输入框 [详情](https://uniapp.dcloud.io/api/ui/prompt?id=showmodal)
-+ App平台、H5平台 修复 3.2.8 版本引出的 scroll-view 组件内部元素部分样式失效的Bug [详情](https://ask.dcloud.net.cn/question/131736)
-+ App平台 新增 nvue map 组件 API MapContext.on [详情](https://uniapp.dcloud.net.cn/api/location/map?id=createmapcontext)
-+ APP-Android平台 修复 3.2.8 版本引出的 nvue 页面横屏时字体大小不正常的Bug [详情](https://ask.dcloud.net.cn/question/132200)
-+ App-Android平台 修复 nvue scroll-view 组件设置 scroll-y 为 false 时引起横向滚动失效的Bug [详情](https://github.com/dcloudio/uni-app/issues/1487)
-+ App-Android平台 修复 nvue textarea 组件设置 v-model 时使用手写输入法出现异常的Bug [详情](https://ask.dcloud.net.cn/question/122239)
-+ App-iOS平台 修复 nvue list 组件在 iOS15 设备上可能出现空白内容的Bug [详情](https://ask.dcloud.net.cn/question/131714)
-+ App-iOS平台 修复 nvue textarea 组件默认存在 padding 的Bug [详情](https://ask.dcloud.net.cn/question/131761)
-+ App-iOS平台 修复 nvue map 组件 marker 的 label 属性值格式不正确时可能引起崩溃的Bug
-
-+ iOS平台 更新 腾讯优量汇SDK为 4.13.11 版
-+ iOS平台 修复 在 iOS15 设备配置使用广告标识 IDFA 首次启动可能不弹 AppTrackingTransparency 权限框的Bug
-+ iOS平台 修复 在 iOS15 部分设备使用`标准运行基座`真机运行可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/131198)
-+ iOS平台 修复 wgt热更新资源后再整包覆盖安装 App 导致获取不到之前 storage 保存的数据的Bug
-+ iOS平台 修复 sqlite 在页面关闭时可能会自动关闭数据库的Bug [详情](https://ask.dcloud.net.cn/question/131917)
-+ iOS平台 修复 视频播放控件 VideoPlayer 设置 poster 后点播放按钮封面消失后播放器可能出现黑屏的Bug [详情](https://ask.dcloud.net.cn/question/131740)     
-
++ App平台、H5平台 修复 vue3 项目 picker-view 组件部分情况下 value 错误的Bug [详情](https://ask.dcloud.net.cn/question/132545)
++ App-iOS平台 修复 应用长时间后台运行再回到前台 tabbar 页面可能显示白屏的Bug
++ App-iOS平台 修复 nvue textarea 组件 padding 样式显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/131761)
++ App-iOS平台 修复 nvue list 中 header 组件在 iOS15 设备上存在默认 padding-top 的Bug [详情](https://ask.dcloud.net.cn/question/132524)
++ 更新 uni-AD Sigmob广告联盟SDK Android为3.4.1版，iOS为3.4.2版
++ 修复 geolocation 设置 timeout 参数时无法获取位置信息并且在控制报错的Bug
++ iOS平台 修复 显示模态弹窗如 actionSheet 引起系统状态栏文字颜色会自动变成黑色的Bug [详情](https://ask.dcloud.net.cn/question/132444)
++ iOS平台 修复 打开悬浮红包广告可能引起崩溃或无法关闭广告页面的Bug [详情](https://ask.dcloud.net.cn/question/132543)
++ iOS平台 修复 图片选择界面在 iOS15 设备上导航栏会显示白色的Bug [详情](https://ask.dcloud.net.cn/question/132528)
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -84,4 +81,5 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
     
-[百度网盘下载历史版本，提取码: v6i5](https://pan.baidu.com/s/1ZlfrGZuk-6_a0pm07Rqc4g)
+[百度网盘下载历史版本，提取码: uwj4](https://pan.baidu.com/s/1S2KI241NQTNFaM8RM56b2Q)
+
