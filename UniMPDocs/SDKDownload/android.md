@@ -34,7 +34,7 @@
 
 #### SDK 3.2.3 V1 版本（不支持小程序多开，不再维护更新）
 
-[点击下载SDK UniMPSDK_Android@3.2.3.20210826.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.3.20210826.zip)
+[点击下载SDK UniMPSDK_Android@3.2.3.20211022.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.2.3.20211022.zip)
 
 #### 更新日志
 + 需使用HBuilderX（3.2.3）版本生成 小程序App 资源
