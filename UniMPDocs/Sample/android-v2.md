@@ -148,6 +148,8 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 
 > 注：需要先获取IUniMP接口对象！可通过openUniMP获取IUniMP接口对象
 
+宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](UniMPDocs/Extension/android)实现!
+
 #### 宿主发送事件
 
 **API**
