@@ -52,21 +52,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年10月22日发布——HBuilderX（3.2.11.20211022-alpha）
+### 2021年10月28日发布——HBuilderX（3.2.12.20211028-alpha）
 
-[百度云点击下载SDK，提取码: y4x9 ](https://pan.baidu.com/s/1W9Mo9BuFKaBOU5STMR0z4Q) 
 
-[和彩云点击下载SDK，提取码: 8rwu](https://caiyun.139.com/m/i?115CoBM75B62G) 
+[百度云点击下载SDK，提取码: qieq](https://pan.baidu.com/s/1a0iaBbzMuFzsiQ6y7MXw2g) 
+
+[和彩云点击下载SDK，提取码: bYXh](https://caiyun.139.com/m/i?115CnqpTBlM1u) 
   
-+ App平台、H5平台 修复 vue3 项目 picker-view 组件部分情况下 value 错误的Bug [详情](https://ask.dcloud.net.cn/question/132545)
-+ App-iOS平台 修复 应用长时间后台运行再回到前台 tabbar 页面可能显示白屏的Bug
-+ App-iOS平台 修复 nvue textarea 组件 padding 样式显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/131761)
-+ App-iOS平台 修复 nvue list 中 header 组件在 iOS15 设备上存在默认 padding-top 的Bug [详情](https://ask.dcloud.net.cn/question/132524)
-+ 更新 uni-AD Sigmob广告联盟SDK Android为3.4.1版，iOS为3.4.2版
-+ 修复 geolocation 设置 timeout 参数时无法获取位置信息并且在控制报错的Bug
-+ iOS平台 修复 显示模态弹窗如 actionSheet 引起系统状态栏文字颜色会自动变成黑色的Bug [详情](https://ask.dcloud.net.cn/question/132444)
-+ iOS平台 修复 打开悬浮红包广告可能引起崩溃或无法关闭广告页面的Bug [详情](https://ask.dcloud.net.cn/question/132543)
-+ iOS平台 修复 图片选择界面在 iOS15 设备上导航栏会显示白色的Bug [详情](https://ask.dcloud.net.cn/question/132528)
++ iOS平台 更新 uni-AD 今日头条穿山甲广告SDK 为4.1.0.0版
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -81,5 +74,8 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
     
-[百度网盘下载历史版本，提取码: uwj4](https://pan.baidu.com/s/1S2KI241NQTNFaM8RM56b2Q)
+[百度网盘下载历史版本，提取码: ah7b](https://pan.baidu.com/s/1OvCAocQAVtZuagqTXzzlvQ)
+
+[和彩云点击下载SDK，提取码: muDv](https://caiyun.139.com/m/i?115CnWqMUQKHf) 
+
 
