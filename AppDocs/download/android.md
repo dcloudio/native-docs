@@ -37,18 +37,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2021年10月22日发布——HBuilderX（3.2.11.20211021-alpha）
+### 2021年10月29日发布——HBuilderX（3.2.12.20211028-alpha）
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CnVmSll4KU)，提取码: 2he1
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.11.20211021-alpha）版本生成本地打包App资源。
-+ 修复 uni.setLocale 设置应用语言后无法正确获取系统语言的Bug
-+ 修复 nvue image 组件无法显示 webp 动图的Bug
-+ 更新 uni-AD Sigmob广告联盟SDK为3.4.1版
-+ 修复 geolocation 设置 timeout 参数时无法获取位置信息并且在控制报错的Bug
-+ 新增 屏幕亮度参数值 -1 支持设置应用屏幕亮度与系统屏幕亮度保持一致
-+ 修复 3.2.2 版本引出的 toast 提示框设置图标后无法正常显示的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.12.20211028-alpha）版本生成本地打包App资源。
++ 修复 uni-AD 开通增强广告在部分设备首次启动可能误报`应用的uni-AD业务状态异常（-9001）`提示的Bug
++ 修复 上架某些应用市场审核检测可能误报存在收集安装列表行为的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
