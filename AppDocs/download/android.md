@@ -3,6 +3,7 @@
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
 ### 2021年11月01日发布——HBuilderX（3.2.12.20211029）
+
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 [和彩云](https://caiyun.139.com/m/i?115ConiDN7yT8)，提取码: FPkC
@@ -35,6 +36,7 @@
 ## Android 离线SDK - Alpha版
 
 ### 2021年10月29日发布——HBuilderX（3.2.12.20211028-alpha）
+
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CnVmSll4KU)，提取码: 2he1
