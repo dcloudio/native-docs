@@ -9,11 +9,10 @@
 
 ## 更新日志
 
-#### SDK 3.2.9
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.9.zip)
+#### SDK 3.2.12
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.12.zip)
 
-+ 新增 拦截胶囊按钮点击事件钩子方法，可自行处理胶囊按钮点击的逻辑，如自定义弹窗等 [API说明](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=dcunimpsdkenginedelegate-%e7%9b%b8%e5%85%b3%e6%96%b9%e6%b3%95)
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.9.20210927.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.12.20211029.html)
 
 
 ## 历史版本
@@ -21,6 +20,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.2.9
+
++ 新增 拦截胶囊按钮点击事件钩子方法，可自行处理胶囊按钮点击的逻辑，如自定义弹窗等 [API说明](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=dcunimpsdkenginedelegate-%e7%9b%b8%e5%85%b3%e6%96%b9%e6%b3%95)
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.9.20210927.html)
 
 #### SDK 3.2.3 (补丁版本2)
 
