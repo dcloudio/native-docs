@@ -8,37 +8,29 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年9月27日发布——HBuilderX（3.2.9.20210927） 
-[百度云点击下载SDK，提取码: hbve](https://pan.baidu.com/s/15BPM208r3lHx3O4Yzkim0Q)
+### 2021年10月29日发布——HBuilderX（3.2.12.20211029） 
+[百度云点击下载SDK，提取码: xhuj](https://pan.baidu.com/s/1-KAIXB0Fb0GowFTUlAYxig)
 
-[和彩云点击下载SDK，提取码: CJCE](https://caiyun.139.com/m/i?115CoThWDomAk) 
+[和彩云点击下载SDK，提取码: ttoi](https://caiyun.139.com/m/i?115CoobNNJRSd) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.9.20210927）版本生成本地打包App资源。
-+ App平台、H5平台 修复 scroll-view 组件滚动过快时 scroll 事件回调返回信息不正确的Bug [详情](https://ask.dcloud.net.cn/question/128573)
-+ App平台、H5平台 修复 canvas 组件 createPattern 方法无效的Bug [详情](https://ask.dcloud.net.cn/question/128793)
-+ App平台、H5平台 修复 canvas 组件 重复触发 resize 导致延迟绘图时 canvas 改变的Bug [详情](https://github.com/dcloudio/uni-app/issues/2847)
-+ App平台 新增 uni.configMTLS 支持 https 请求配置自签名证书 [详情](https://uniapp.dcloud.io/api/request/request?id=configmtls)
-+ App平台 优化 nvue 页面排版机制，解决横竖屏切换可能引起页面显示不正常的Bug
-+ App平台 修复 nvue 页面 rich-text 组件解析块元素出现多余换行的Bug [详情](https://ask.dcloud.net.cn/question/116518)
-+ App平台 修复 3.2.2 引出的 uni.chooseImage 无法压缩拍照图像的Bug [详情](https://ask.dcloud.net.cn/question/129238)
-+ App-iOS平台 修复 nvue 页面 textarea 组件的 blur 事件回调参数中缺少 cursor 属性数据的Bug [详情](https://ask.dcloud.net.cn/question/129023)
-+ App-iOS平台 修复 nvue 页面 video 组件上方存在其他组件时可能引起显示错乱的Bug [详情](https://ask.dcloud.net.cn/question/129662)
-+ App-iOS平台 修复 uni.openDocument 部分情况下回调错误的Bug
-+ App-iOS平台 修复 tabbar 设置选中项图片为 gif 时动画速度太慢的Bug [详情](https://ask.dcloud.net.cn/question/125824)
-+ App-iOS平台 修复 search 类型的 input 组件在 iOS15 默认显示搜索图标的Bug [详情](https://ask.dcloud.net.cn/question/129259)
-+ App-iOS平台 修复nvue list 组件在 iOS15 设备上可能会出现空白内容的Bug [详情](https://ask.dcloud.net.cn/question/131714)
-+ iOS平台 优化 compressVideo 视频压缩速度
-+ iOS平台 修复 3.2.0 版本引出的 微信登录、分享、支付，QQ登录、分享在部分设备可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/129378)
-+ iOS平台 修复 一键登录 授权页面服务协议复选框不好点击的Bug [详情](https://ask.dcloud.net.cn/question/130881)
-+ iOS平台 修复 二维码扫码在应用横屏模式时预览画面被旋转了的Bug [详情](https://ask.dcloud.net.cn/question/116187)
-+ iOS平台 修复 视频播放控件 VideoPlayer 播放直播视频无法触发 timeupdate 事件的Bug [详情](https://ask.dcloud.net.cn/question/129955)
-+ iOS平台 修复 视频播放控件 VideoPlayer 可能无法正常播放m3u8视频流的Bug [详情](https://ask.dcloud.net.cn/question/129884)
-+ iOS平台 修复 视频播放控件 VideoPlayer 视频带有方向属性时 poster 封面图会被旋转的Bug [详情](https://ask.dcloud.net.cn/question/129090)
-+ iOS平台 修复 视频播放控件 VideoPlayer 设置 objectFit 为 cover 时封面显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/127991)
-+ iOS平台 修复 新浪分享模块在某些安全平台检测可能误报使用 UIWebview APIs 的Bug
-+ iOS平台 修复 二维码扫码部分图片可能无法识别的Bug
-+ iOS平台 修复 在 iOS15 设备配置使用广告标识 IDFA 首次启动可能不弹 AppTrackingTransparency 权限框的Bug
-+ iOS平台 修复 在 iOS15 部分设备使用`标准运行基座`真机运行可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/131198)
++ App平台、H5平台 新增 支持设置动态配置 tabBarItem 显示隐藏 详情
++ App平台、H5平台 新增 uni.showModal 支持配置是否显示输入框 详情
++ App平台、H5平台 修复 vue3 项目 picker-view 组件部分情况下 value 错误的Bug 详情
++ App平台 新增 nvue map 组件 API MapContext.on 详情
++ App-iOS平台 修复 nvue list 组件在 iOS15 设备上可能出现空白内容的Bug 详情
++ App-iOS平台 修复 nvue map 组件 marker 的 label 属性值格式不正确时可能引起崩溃的Bug
++ App-iOS平台 修复 应用长时间后台运行再回到前台 tabbar 页面可能显示白屏的Bug
++ App-iOS平台 修复 nvue textarea 组件 padding 样式显示不正确的Bug 详情
++ App-iOS平台 修复 nvue list 中 header 组件在 iOS15 设备上存在默认 padding-top 的Bug 详情
+ 
++ 更新 uni-AD 今日头条穿山甲广告SDK iOS为4.1.0.0版；Sigmob广告联盟SDK Android为3.4.1版，iOS为3.4.2版
++ 修复 geolocation 设置 timeout 参数时无法获取位置信息并且在控制报错的Bug
++ iOS平台 修复 wgt热更新资源后再整包覆盖安装 App 导致获取不到之前 storage 保存的数据的Bug
++ iOS平台 修复 sqlite 在页面关闭时可能会自动关闭数据库的Bug 详情
++ iOS平台 修复 视频播放控件 VideoPlayer 设置 poster 后点播放按钮封面消失后播放器可能出现黑屏的Bug 详情
++ iOS平台 修复 显示模态弹窗如 actionSheet 引起系统状态栏文字颜色会自动变成黑色的Bug 详情
++ iOS平台 修复 打开悬浮红包广告可能引起崩溃或无法关闭广告页面的Bug 详情
++ iOS平台 修复 图片选择界面在 iOS15 设备上导航栏会显示白色的Bug 详情
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -47,8 +39,10 @@
     
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
-[百度网盘下载历史版本，提取码: a5fd](https://pan.baidu.com/s/1O0zZb58o_yxqVXZJlG4b8Q)
 
+[百度网盘下载历史版本，提取码: 1xf5](https://pan.baidu.com/s/1yumgw8Sif3RiyYFo_W1fSg)
+
+[和彩云点击下载SDK，提取码: eQVd](https://caiyun.139.com/m/i?115CepCFexTXS) 
 
 ## iOS 离线SDK - Alpha版
 
