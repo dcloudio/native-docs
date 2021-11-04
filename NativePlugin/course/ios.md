@@ -702,9 +702,11 @@ DCUniSDKInstance * instance = self.uniInstance;
 
 然后点击`运行按钮`或 `Command + B` 编译运行工程
 
-编译完成后，在插件工程 Products 下生成的库（`DCTestUniPlugin.framework`）即为插件所需要的依赖库文件，`右键->Show in Finder`，可打开库所在文件夹
+**Xcode12：** 编译完成后，在插件工程 Products 下生成的库（`DCTestUniPlugin.framework`）即为插件所需要的依赖库文件，`右键->Show in Finder`，可打开库所在文件夹
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi27.png)
+
+**xcode13+：** 工程目录中没有 products 路径了，点击顶部菜单 `Product > Show Build Folder in Finder` 打开编译后的路径，Release-iphoneos 中的库就是编译后的插件库文件；
 
 ### 编写 package.json 配置文件
 > package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等信息
