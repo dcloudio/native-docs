@@ -11,7 +11,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | share-weixin-release.aar，wechat-sdk-android-with-mta-5.4.3.jar |
+| SDK\libs | share-weixin-release.aar，wechat-sdk-android-without-mta-6.7.9.aar |
 
 ### Androidmainfest.xml文件需要修改的项
 

@@ -7,7 +7,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | share-weixin-release.aar，wechat-sdk-android-without-mta-6.6.5.aar |
+| uniMPSDK\Features\libs | share-weixin-release.aar，wechat-sdk-android-without-mta-6.7.9.aar |
 
 将表格中的文件拷贝至主Module中的libs下。
 
