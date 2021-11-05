@@ -1,3 +1,16 @@
+### 升级到3.2.5以上版本之后离线打包无法正常启动
+
+3.2.5及以上版本支持了Java 8，集成时需要在项目的build.gradle添加如下配置
+
+~~~
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }	
+}
+~~~
+
 ### 应用启动白屏或者提示打包时未添加ui模块
 
 出现白屏或者提示打包时未添加ui模块时，大多数是因为build.gradle中配置了混淆。
