@@ -35,15 +35,25 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2021年10月29日发布——HBuilderX（3.2.12.20211028-alpha）
+### 2021年11月11日发布——HBuilderX（3.2.13.20211110-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CnVmSll4KU)，提取码: 2he1
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.12.20211028-alpha）版本生成本地打包App资源。
-+ 修复 uni-AD 开通增强广告在部分设备首次启动可能误报`应用的uni-AD业务状态异常（-9001）`提示的Bug
-+ 修复 上架某些应用市场审核检测可能误报存在收集安装列表行为的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.13.20211110-alpha）版本生成本地打包App资源。
++ 修复 在 Android4.4 设备默认显示为英文的Bug
++ 修复 nvue web-view 组件网络请求与其它网络请求 user-agent 不一致的Bug
++ 修复 nvue list 组件中 cell 过多导致排版错误，可能抛出错误日志或引起崩溃的Bug
++ 修复 nvue map 组件中 Marker 标签 rotate 属性旋转方向不正确的Bug 详情
++ 修复 subNvue 原生子窗体 style 样式设置 top 属性值后可能出现排版不正确的Bug
++ 新增 一键登录 服务协议项样式支持 checkBoxSize 属性设置复选框大小
++ 新增 closePreviewImage 方法关闭预览图片界面
++ 更新 uni-AD 腾讯优量汇SDK为4.422.1292版；快手广告SDK为3.3.17版；快手内容联盟SDK为3.3.23版；Sigmob广告联盟SDK为3.5.1版
++ 更新 云端打包默认 targetSdkVersion 为 28
++ 修复 uploader 上传文件请求中 user-agent 不正确的Bug
++ 修复 plus.os.language 获取系统语言可能不正确的Bug
++ 修复 部分设备在静止情况下监听获取到的方向数据出现波动的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
