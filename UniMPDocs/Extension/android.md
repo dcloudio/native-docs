@@ -1,4 +1,5 @@
 ## 概述
+
 扩展原生能力指的是将您原生开发的功能通过一定规范暴露给 uni小程序环境，然后即可在 uni小程序应用中调用您的原生功能。
 
 ## 扩展方式
@@ -14,17 +15,45 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 
 ## 注意事项
 
-- Module 扩展 非 UI 的特定功能.
+### 小程序进程
 
-- Component 扩展 实现特别功能的 Native 控件.
+由于小程序运行独立进程与宿主进程不会内存共享。所以原生扩展的代码不能直接使用宿主的代码内存逻辑。三方SDK也是相同道理。正常情况三方SDK都会支持多进程同时实例化并实现逻辑。但部分SDK由于逻辑特殊性无法在多进程下实例化。导致无法正常调用需要注意！！！
 
-如果你扩展的`Module`或`Component`要与宿主进行数据交互需要注意。宿主与小程序不在同一进程，内存不共享。所以需要开发者自己实现跨进程通信。后续会完善此交互问题。
+#### 小程序为什么要运行到独立进程中？
 
-关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。
++ 小程序运行在一个独立的小程序进程中。独立进程中的内存与其他进程内存是不共享的。相对比较独立。如果小程序进程出现了异常情况发生崩溃，理论上是不会影响宿主的。
++ 同时运行多个小程序在一个进程中！内存会比较吃紧。而多进程模式下会得到更多的内存分配！得到更优的运行环境。
 
-扩展的`Module`或`Component`参数中有用到`JSONObject`或`JSONArray`,不要使用`org.json.JSONObject`。请使用`com.alibaba.fastjson.JSONObject`. 依赖库`com.alibaba:fastjson:1.1.46.android`
+#### 原生扩展逻辑需要与宿主交互
 
-原生扩展代码运行在小程序进程中。所以禁止调用`DCUniMPSDK`的API。`DCUniMPSDK`的API只可以在宿主进程调用。否则会触发Not initialized异常。
++ 可通过原生实现AIDL或者广播等等进行与宿主交互得到。玩法由开发者自行实现。
++ 可通过小程序与宿主通道进行交互数据。但缺点是仅支持小程序js层与宿主原生层交互。限制比较多。
+
+#### 集成的三方SDK不支持在小程序进程下运行
+
++ 宿主集成三方原生SDK。通过小程序与宿主通信接口实现简单的数据通信并调用宿主实现的相关功能。
++ 原生扩展将关于SDK的调用代码封装到activity中。当前activity需运行在宿主进程。通过Intent启动携带参数通信实现功能调用执行。
+
+#### 宿主启动的activity关闭后会回到宿主页面。不回到小程序页面
+
++ 宿主启动activity时请使用DCUniMPSDK.getInstance().startActivityForUniMPTask [详情](UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
+
+#### 宿主启动的Dialog无正常显示到小程序页面之上
+
++ 宿主启动Dialog样式的activity, 可参考SDK中DEMO里的DialogActivity及主题设置等！
+
+### 原生扩展注意点
+
++ Module 扩展 非 UI 的特定功能.
+
++ Component 扩展 实现特别功能的 Native 控件.
+
++ 关于扩展的`Module`或`Component`代码中日志log。小程序运行在io.dcloud.unimp子进程。看日志log需要在这个进程看日志log。
+
++ 扩展的`Module`或`Component`参数中有用到`JSONObject`或`JSONArray`,不要使用`org.json.JSONObject`。请使用`com.alibaba.fastjson.JSONObject`. 依赖库`com.alibaba:fastjson:1.1.46.android`
+
++ 原生扩展代码运行在小程序进程中。所以禁止调用`DCUniMPSDK`的API。`DCUniMPSDK`的API只可以在宿主进程调用。否则会触发Not initialized异常。
+
 
 ### 权限申请 重要！
 
