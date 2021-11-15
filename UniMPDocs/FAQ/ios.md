@@ -37,7 +37,7 @@ A：如果您原生工程依赖的三方库与SDK依赖的三方库冲突
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 |Google登录|v5.0.2|Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.15.1|UniAD/快手|
+|快手|v3.3.17|UniAD/快手|
 |快手广告联盟|v3.3.23.1|UniAD/快手广告联盟|
 |广点通|v4.13.11|UniAD/广点通|
 |穿山甲|v4.1.0.0|UniAD/穿山甲|
