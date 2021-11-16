@@ -871,6 +871,8 @@ A：如果您依赖的三方库与SDK依赖的三方库冲突
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 |百度语音库|v3.0.10.0|Speech/百度语音识别模块|
+|Google登录|v5.0.2|Oauth/Google|
+|Facebook登录|v11.2.0|Oauth/Facebook|
 
 ### Q: 之前引用的头文件和资源 现在找不到了
 
