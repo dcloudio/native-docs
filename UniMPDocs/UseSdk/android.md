@@ -47,7 +47,7 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  fingerprint-release.aar
  contacts-release.aar
  Bluetooth-release.aar
- android-gif-drawable-release@1.2.17.aar //必须集成
+ android-gif-drawable-release@1.2.23.aar //必须集成
  ```
  
 ```
