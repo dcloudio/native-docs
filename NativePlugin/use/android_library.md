@@ -31,3 +31,4 @@
 |快手广告联盟|V3.3.14|HBuilder X V3.2.7|广告模块
 |快手内容联盟|V3.3.22|HBuilder X V3.2.5|广告模块
 |sigmob广告|V3.4.1|HBuilder X V3.2.11|广告模块
+|ijkplayer|k0.8.8|HBuilder X V3.0.1|视频播放器模块
