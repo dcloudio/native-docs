@@ -9,11 +9,10 @@
 
 ## 更新日志
 
-#### SDK 3.2.12
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.12.zip)
+#### SDK 3.2.15
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.15.zip)
 
-+ `liblibPGInvocation.a`从基础库中移动到 feature 目录中，变为非必需依赖（如果没有调用 native.js 相关方法可以直接从工程配置中移除该库的依赖，如果用到请从 feature 路径中重新添加到工程）；
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.12.20211029.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.15.20211120.html)
 
 
 ## 历史版本
@@ -21,6 +20,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.2.12
+
++ `liblibPGInvocation.a`从基础库中移动到 feature 目录中，变为非必需依赖（如果没有调用 native.js 相关方法可以直接从工程配置中移除该库的依赖，如果用到请从 feature 路径中重新添加到工程）；
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.12.20211029.html)
 
 #### SDK 3.2.9
 
