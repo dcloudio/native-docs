@@ -8,29 +8,40 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年10月29日发布——HBuilderX（3.2.12.20211029） 
-[百度云点击下载SDK，提取码: xhuj](https://pan.baidu.com/s/1-KAIXB0Fb0GowFTUlAYxig)
+### 2021年11月20日发布——HBuilderX（3.2.12.20211120） 
 
-[和彩云点击下载SDK，提取码: ttoi](https://caiyun.139.com/m/i?115CoobNNJRSd) 
+[百度网盘下载历史版本，提取码: 8i5c](https://pan.baidu.com/s/1yHeyawl34ZIHoXJK44olHA)
 
-+ App平台、H5平台 新增 支持设置动态配置 tabBarItem 显示隐藏 详情
-+ App平台、H5平台 新增 uni.showModal 支持配置是否显示输入框 详情
-+ App平台、H5平台 修复 vue3 项目 picker-view 组件部分情况下 value 错误的Bug 详情
-+ App平台 新增 nvue map 组件 API MapContext.on 详情
-+ App-iOS平台 修复 nvue list 组件在 iOS15 设备上可能出现空白内容的Bug 详情
-+ App-iOS平台 修复 nvue map 组件 marker 的 label 属性值格式不正确时可能引起崩溃的Bug
-+ App-iOS平台 修复 应用长时间后台运行再回到前台 tabbar 页面可能显示白屏的Bug
-+ App-iOS平台 修复 nvue textarea 组件 padding 样式显示不正确的Bug 详情
-+ App-iOS平台 修复 nvue list 中 header 组件在 iOS15 设备上存在默认 padding-top 的Bug 详情
- 
-+ 更新 uni-AD 今日头条穿山甲广告SDK iOS为4.1.0.0版；Sigmob广告联盟SDK Android为3.4.1版，iOS为3.4.2版
-+ 修复 geolocation 设置 timeout 参数时无法获取位置信息并且在控制报错的Bug
-+ iOS平台 修复 wgt热更新资源后再整包覆盖安装 App 导致获取不到之前 storage 保存的数据的Bug
-+ iOS平台 修复 sqlite 在页面关闭时可能会自动关闭数据库的Bug 详情
-+ iOS平台 修复 视频播放控件 VideoPlayer 设置 poster 后点播放按钮封面消失后播放器可能出现黑屏的Bug 详情
-+ iOS平台 修复 显示模态弹窗如 actionSheet 引起系统状态栏文字颜色会自动变成黑色的Bug 详情
-+ iOS平台 修复 打开悬浮红包广告可能引起崩溃或无法关闭广告页面的Bug 详情
-+ iOS平台 修复 图片选择界面在 iOS15 设备上导航栏会显示白色的Bug 详情
+[和彩云点击下载SDK，提取码: C3D9](https://caiyun.139.com/m/i?115CoVFVp7050) 
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.15.20211120）版本生成本地打包App资源。
+
++ 【重要】iOS平台 修复 应用启动时间统计在网络服务异常时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/article/39448)
+
++ App平台、H5平台 新增 rich-text 组件支持 itemclick 事件 [详情](https://uniapp.dcloud.io/component/rich-text)
++ App平台、H5平台 新增 uni.setClipboardData 支持配置是否弹出提示 [详情](https://uniapp.dcloud.io/api/system/clipboard?id=setclipboarddata)
++ App平台、H5平台 新增 异步触发 uni.chooseImage 时，会进入失败回调 [详情](https://ask.dcloud.net.cn/question/130768)
++ App平台、H5平台 修复 picker-view 滚动时会触发页面下拉刷新的Bug [详情](https://ask.dcloud.net.cn/question/113718)
++ App平台、H5平台 修复 swiper 组件动态加载内容时，触摸造成显示异常的Bug [详情](https://ask.dcloud.net.cn/question/100684)
++ App平台 新增 NVUE map API poiSearchNearBy 支持 offset，poiKeywordsSearch 支持 offset、cityLimit [详情](https://uniapp.dcloud.net.cn/api/location/map?id=poisearchnearby)
++ App平台 新增 cover 组件支持嵌套 [详情](https://uniapp.dcloud.io/component/cover-view?id=cover-view)
++ App平台 新增 nvue 页面支持 dynamicRpx 配置，用于 rpx 适配屏幕大小动态变化 [详情](https://uniapp.dcloud.io/collocation/pages?id=globalstyle)
++ App平台 修复 在 slot 使用 v-for 无法渲染的Bug [详情](https://ask.dcloud.net.cn/question/130258)
++ App平台 修复 editor 组件 a 标签 href 填写相对地址时渲染错误的Bug  [详情](https://github.com/dcloudio/uni-app/issues/2218)
++ App平台 修复 editor、rich-text 组件 img 本地路径图片渲染错误的Bug [详情](https://ask.dcloud.net.cn/question/117245)
+
++ App-iOS平台 修复 editor 组件设置字体格式时，placeholder 显示异常的Bug [详情](https://ask.dcloud.net.cn/question/106127)
++ App-iOS平台 修复 uni.request 请求与其它网络请求 user-agent 不一致的Bug
++ App-iOS平台 修复 nvue cover-view 组件样式可能存在异常的Bug
++ App-iOS平台 修复 nvue image 组件请求网络图片与其它网络请求 user-agent 不一致的Bug
++ App-iOS平台 修复 nvue video 中 cover-view 组件的点击事件会透传到 video 中的Bug [详情](https://ask.dcloud.net.cn/question/132936)
++ App-iOS平台 修复 nvue map 组件设置 marker-callout-textAlign 属性为 center 不生效的Bug [详情](https://ask.dcloud.net.cn/question/133264)
+
++ iOS平台 新增 云端打包支持生成符号表 dsym 文件 [详情](https://uniapp.dcloud.io/app/ios/dsym)
++ iOS平台 更新 友盟统计SDK UMCommon 为 7.3.5 版，UMAPM 为 1.5.2 版
++ iOS平台 修复 基础开屏广告可能重复显示的Bug
++ iOS平台 修复 图片/视频选择界面中选择iCloud视频可能报错的Bug [详情](https://ask.dcloud.net.cn/question/133635)
++ iOS平台 修复 plus.navigator.getSignature 获取签名标识在应用通过 AppStore 或 Testflight 安装时 返回空值的Bug [详情](https://ask.dcloud.net.cn/question/133881)
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -39,21 +50,22 @@
     
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
+[百度网盘下载历史版本，提取码: n1d4](https://pan.baidu.com/s/1ZfKdn9muRn5GsT_oydj0Cw)
 
-[百度网盘下载历史版本，提取码: 1xf5](https://pan.baidu.com/s/1yumgw8Sif3RiyYFo_W1fSg)
-
-[和彩云点击下载SDK，提取码: eQVd](https://caiyun.139.com/m/i?115CepCFexTXS) 
+[和彩云点击下载SDK，提取码: HjK2](https://caiyun.139.com/m/i?115CoVFTTmNPF) 
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年11月12日发布——HBuilderX（3.2.14.20211112-alpha）
+### 2021年11月20日发布——HBuilderX（3.2.15.20211120-alpha）
 
-[百度云点击下载SDK，提取码: u78n](https://pan.baidu.com/s/1jYVEeszPLrOwbVLkK9-E7w) 
+[百度云点击下载SDK，提取码: a8r4](https://pan.baidu.com/s/1kYA4htOApjRrtZHpj9w3UQ) 
 
-[和彩云点击下载SDK，提取码: J2mY](https://caiyun.139.com/m/i?115Ceo2gKDq1X) 
+[和彩云点击下载SDK，提取码: uny5](https://caiyun.139.com/m/i?115CopEoF78mx) 
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.2.15.20211120-alpha）版本生成本地打包App资源。
+
++ 【重要】iOS平台 修复 应用启动时间统计在网络服务异常时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/article/39448)
   
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.14.20211112-alpha）版本生成本地打包App资源。
-
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
@@ -66,9 +78,8 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
     
+[百度网盘下载历史版本，提取码: g4vg](https://pan.baidu.com/s/1WbAFav1X_0hSkaRXQB1P_g)
 
-[百度网盘下载历史版本，提取码: sp3q](https://pan.baidu.com/s/1NhC-1r-otoCRXoXp_WZGPQ)
-
-[和彩云点击下载SDK，提取码: A0up](https://caiyun.139.com/m/i?115Co9TTbtscY) 
+[和彩云点击下载SDK，提取码: 985o](https://caiyun.139.com/m/i?115CoBGhsQx51) 
 
 
