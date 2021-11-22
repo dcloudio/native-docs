@@ -10,7 +10,7 @@
 
 ### 2021年11月20日发布——HBuilderX（3.2.12.20211120） 
 
-[百度网盘下载历史版本，提取码: 8i5c](https://pan.baidu.com/s/1yHeyawl34ZIHoXJK44olHA)
+[百度云点击下载SDK，提取码: 8i5c](https://pan.baidu.com/s/1yHeyawl34ZIHoXJK44olHA)
 
 [和彩云点击下载SDK，提取码: C3D9](https://caiyun.139.com/m/i?115CoVFVp7050) 
 
