@@ -26,6 +26,7 @@
     * [Statistic（统计）](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
     * [uni-AD](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
     * [iOS UIWebview](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)
+    * [第三方 SDK 依赖说明](/AppDocs/usemodule/iOSModuleConfig/dependentLibrary.md)
 * 导入App资源
 	* [导出App资源](/AppDocs/importfeproject/export.md)
 	* [Android 导入App资源](/AppDocs/importfeproject/android.md)
