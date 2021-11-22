@@ -8,7 +8,7 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年11月20日发布——HBuilderX（3.2.12.20211120） 
+### 2021年11月20日发布——HBuilderX（3.2.15.20211120） 
 
 [百度云点击下载SDK，提取码: 8i5c](https://pan.baidu.com/s/1yHeyawl34ZIHoXJK44olHA)
 
