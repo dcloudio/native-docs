@@ -606,6 +606,7 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
                 .setMenuDefFontColor("#ff00ff")
                 .setMenuDefFontWeight("normal")
                 .setMenuActionSheetItems(sheetItems)
+				.setNJS(false)
                 .build();
 ```
 
@@ -724,6 +725,18 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 ```
 MenuActionSheetItem item = new MenuActionSheetItem("关于", "gy");
 ```
+
+
+#### DCSDKInitConfig.Builder.setNJS(boolean enable)
+
+设置是否支持NJS功能，默认关闭
+
+**参数说明**
+
+|参数|类型|默认值|说明
+|:----|:----|:----|:----
+|enable|boolean|false|设置是否支持NJS功能，默认关闭
+
 
 ## 接口 IDCUniMPAppSplashView
 
