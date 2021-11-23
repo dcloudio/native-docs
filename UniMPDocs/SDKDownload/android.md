@@ -26,6 +26,7 @@
 + 需使用HBuilderX（3.2.16）版本生成 小程序App 资源
 + 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
 + SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](UniMPDocs/API/android-v2);
++ 默认不支持NJS功能，如果需要NJS功能，需要手动配置DCSDKInitConfig.setNJS(true)
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.16.20211122.html)
 
 
