@@ -6,7 +6,7 @@
 |高德定位|v2.6.7|Geolocation/高德定位 |
 |百度地图|v4.1.1|Maps/百度地图 |
 |高德地图|v7.8.0|Maps/高德地图 |
-|微信SDK|v1.9.1|Oauth、Share、Payment/微信|
+|微信SDK|v1.9.2|Oauth、Share、Payment/微信|
 |AlipaySDK|v15.7.9|Payment/支付宝|
 |QQSDK|v3.5.3_lite|Oauth、Share/QQ|
 |新浪微博SDK|v3.3.1|Oauth、Share/新浪微博|
