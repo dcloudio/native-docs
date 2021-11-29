@@ -17,6 +17,9 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/2460.png)
 
+3.在工程的 info.plist 添加 `NSLocationAlwaysAndWhenInUseUsageDescription` 和 `NSLocationWhenInUseUsageDescription` key，并填写获取权限描述信息
+
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/locationDes.png)
 
 ### 常见问题解决
 1.如下图只能看见栅格图可能的原因appkey配置不对、Bundle identifier和安全码不一致、百度地图缓存导致的可以删除app重新安装
@@ -47,6 +50,9 @@
    
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
 
+3.在工程的 info.plist 添加 `NSLocationAlwaysAndWhenInUseUsageDescription` 和 `NSLocationWhenInUseUsageDescription` key，并填写获取权限描述信息
+
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/locationDes.png)
 
 ### uni项目的nvue页面中使用地图组件，目前只支持高德地图
 
@@ -65,5 +71,8 @@
    
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
 
+3.在工程的 info.plist 添加 `NSLocationAlwaysAndWhenInUseUsageDescription` 和 `NSLocationWhenInUseUsageDescription` key，并填写获取权限描述信息
 
-**注意：工程里只能有一个地图，其他的地图功能，要删除info.plist里的key，和对应的库文件,请详细根据Feature-iOS.xml文件的内容配置**
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/locationDes.png)
+
+**注意：工程里只能有一个地图，其他的地图功能，要删除info.plist里的key，和对应的库文件，请根据 [功能模块与依赖关系对照表](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/common?id=%e5%a6%82%e4%bd%95%e9%85%8d%e7%bd%ae%e6%a8%a1%e5%9d%97%e4%b8%89%e6%96%b9sdk) 配置**
