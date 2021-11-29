@@ -91,7 +91,7 @@ uni原生插件描述文件，完整格式如下：
 			"embedSwift": false,   // 开启 swift 编译支持，如果插件使用了 swift 需要配置此项
 			"deploymentTarget": "8.0, 可选，支持的iOS最低版本",
 			"validArchitectures": [    // 可选，支持的CPU架构类型
-			 	"arm64"    //支持多个值，可取值：arm64 arm64e armv7 armv7s x86_64
+			 	"arm64"    //支持多个值，可取值："arm64", "arm64e", "armv7", "armv7s", "x86_64"
 			],
 			"parameters": {
 				"插件需要配置的参数名称, 如appid": {
