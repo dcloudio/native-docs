@@ -3,7 +3,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibStatistic.a、UMAnalytics.framework、UMCommon.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
+|liblibStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
 ### 帐号配置
 1.到[友盟开放平台](http://www.umeng.com/analytics)申请Appkey

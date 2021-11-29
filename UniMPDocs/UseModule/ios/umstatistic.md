@@ -2,11 +2,11 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibStatistic.a、UMAnalytics.framework、UMCommon.framework|SystemConfiguration.framework、CoreTelephony.framework、libz.tbd、libsqlite3.tbd|无|
+|liblibStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|SystemConfiguration.framework、CoreTelephony.framework、libz.tbd、libsqlite3.tbd|无|
 
 
 ## 账号配置
-1.到[友盟开放平台](http://www.umeng.com/analytics)申请Appkey
+1.到[友盟开放平台](https://www.umeng.com/)申请Appkey
 
 2.在工程的 info.plist 添加 `umeng`节点，添加 appkey 信息，如下图
 
