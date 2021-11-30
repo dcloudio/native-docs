@@ -236,14 +236,19 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 
 ### 如何配置IDFA
-首先要知道：打开IDFA不影响AppStore审核
-如何知道项目中是否使用广告标示符，其实就是查看framework中是否有个叫AdSupport.framework的框架，如果检查工程中没有AdSupport.framework,可能是接入的第三方库里面有,用以下方法检查第三方中是否包含有IDFA版本：
 
-1、打开终端cd到要检查的文件的目录;
+##### 如果您的应用符合下面其中一条就需要配置 IDFA ，反之可以不配置
 
-2、执行命令:grep -r advertisingIdentifier .  (注意别少了点);
+- 只要您的应用使用了uni-AD广告模块，就需要开启 IDFA；
+- 使用的 离线SDK 版本低于 3.2.15 并且应用使用了**新浪微博登录和分享、一键登录、友盟统计** 其中一个或多个功能模块，这些SDK内会触发获取IDFA，所以需要开启 IDFA **（注：HX 3.2.15及以上版本更新了这些三方SDK，不在获取IDFA）**
 
-[iOS平台配置应用使用广告标识（IDFA）](https://ask.dcloud.net.cn/article/36107)
+1、在工程 `TARGETS->Build Phases-> Link Binary With Libaries` 中点击“+”按钮，在弹出的窗口中点击 `Add Other -> Add Files...`，将 “SDK/Resources/Libs” 中的 `liblibAdSupport.a` 和 `AppTrackingTransparency.framework（系统库）` 添加到工程中，注意 AppTrackingTransparency.framework 的 Status 选择 Optional ，如下图所示
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/attframework.png)
+
+2、在工程的 info.plist 中添加 `NSUserTrackingUsageDescription` 权限描述，详情请参考 [iOS平台配置应用使用广告标识（IDFA）](https://ask.dcloud.net.cn/article/36107) 中的说明填写；
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/trackingDes.png)
+
+3、开启广告标识（IDFA）后，提交App Store审核之前，需要在App Store Connect 配置 “App 隐私”，详情请参考[iOS平台配置应用使用广告标识（IDFA）](https://ask.dcloud.net.cn/article/36107) 中的说明；
 
 
 
