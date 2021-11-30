@@ -443,6 +443,17 @@ DCUniMPSDK.getInstance().setCapsuleMenuButtonClickCallBack(new IDCUniMPOnCapsule
 ```
 
 
+## 宿主弹窗显示在小程序前
+
+目前不支持宿主弹窗(Dialog)显示在小程序上方。仅支持显示activity。可以设置activity主题theme。实现Dialog弹窗效果。需要调用startActivityForUniMPTask。
+
+示例如下：
+
+```
+Intent intent = new Intent(context, MenuActivity.class);//跳转宿主构建的activity
+DCUniMPSDK.getInstance().startActivityForUniMPTask(appid, intent);//通过startActivityForUniMPTask启动宿主activity。运行在小程序activity堆栈中
+```
+
 ## 开启后台运行
 
 通过 DCSDKInitConfig配置[setEnableBackground](/UniMPDocs/API/android?id=setEnableBackground)小程序是否支持后台运行，默认点击胶囊按钮的`x`或者在小程序中调用`plus.runtime.quit()`方法会直接关闭小程序，当开启后台运行时会只是将小程序隐藏到后台，下次打开时直接显示之前的状态；
