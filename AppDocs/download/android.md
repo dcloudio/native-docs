@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CnrAL7Dw5E)，提取码: gjhD
+[和彩云](https://caiyun.139.com/m/i?115CoVKXaIq7b)，提取码: OHfx
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.16.20211122）版本生成本地打包App资源。
 
@@ -22,7 +22,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoVKXaIq7b)，提取码: OHfx
+[和彩云](https://caiyun.139.com/m/i?115CoVKJWJ6Ll)，提取码: z2PY
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.15.20211120-alpha）版本生成本地打包App资源。
 + 修复 showTabBarRedDot 设置红点可能不生效的Bug
