@@ -31,7 +31,7 @@
 |穿山甲广告|V4.0.0.1|HBuilder X V3.2.7|广告模块
 |高点通广告|V4.410.1280|HBuilder X V3.2.7|广告模块
 |360广告|V5.17.3157|HBuilder X V2.8.1|广告模块
-|快手广告联盟|V3.3.14|HBuilder X V3.2.7|广告模块
-|快手内容联盟|V3.3.22|HBuilder X V3.2.5|广告模块
+|快手广告联盟|V3.3.18|HBuilder X V3.3.0|广告模块
+|快手内容联盟|V3.3.24|HBuilder X V3.3.0|广告模块
 |sigmob广告|V3.4.1|HBuilder X V3.2.11|广告模块
 |ijkplayer|k0.8.8|HBuilder X V3.0.1|视频播放器模块
