@@ -6,6 +6,9 @@
 |androidx|V1.0.0|HBuilder X V3.2.5|androidx相关依赖库
 |fastjson|v1.1.46|HBuilder X V3.2.5|fastjson是阿里巴巴的开源JSON解析库
 |android-gif-drawable|V1.2.23|HBuilder X V3.2.5|开源库 android-gif-drawable用于gif图显示
+|移动安全联盟OAID|V1.0.25|HBuilder X V3.2.5|oaid_sdk 获取oaid使用
+|glide|V4.9.0|HBuilder X V3.2.5|图片库 图片预览使用
+|fresco|V1.13.0|HBuilder X V3.2.5|图片库 用于nvue页面图片展示
 
 ### 其他功能模块依赖库
 

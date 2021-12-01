@@ -13,6 +13,7 @@
     * [Speech（语音输入）](/AppDocs/usemodule/androidModuleConfig/speech.md)
     * [uni-AD](/AppDocs/usemodule/androidModuleConfig/uniad.md)
 	* [Android X5 Webview（腾讯TBS）](/AppDocs/usemodule/androidModuleConfig/x5.md)
+	* [第三方 SDK 依赖说明](/AppDocs/usemodule/androidModuleConfig/android_Library.md)
 	* [其他模块及国际化配置](/AppDocs/usemodule/androidModuleConfig/others.md)       
   * [iOS 模块配置](/AppDocs/usemodule/iOSModuleConfig/common.md)
     * [Geolocation（定位）](/AppDocs/usemodule/iOSModuleConfig/geolocation.md)
