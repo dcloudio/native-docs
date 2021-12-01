@@ -11,6 +11,15 @@ android {
 }
 ~~~
 
+3.2.5版本之后更新到AndroidX，老项目需要在gradle.properties添加如下配置
+
+~~~
+android.useAndroidX=true
+android.enableJetifier=true
+~~~
+
+其余AndroidX依赖库配置可参考[Android 原生工程配置](/AppDocs/usesdk/android.md)
+
 ### 应用启动白屏或者提示打包时未添加ui模块
 
 出现白屏或者提示打包时未添加ui模块时，大多数是因为build.gradle中配置了混淆。
