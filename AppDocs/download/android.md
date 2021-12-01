@@ -23,7 +23,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoVKJWJ6Ll)，提取码: z2PY
+[和彩云](https://caiyun.139.com/m/i?115CnrEUxlY8J)，提取码: EG0V
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.0.20211130-alpha）版本生成本地打包App资源。
 + 修复 nvue input 组件 placeholder-class 样式中 font-size 不支持 rpx 单位的Bug
