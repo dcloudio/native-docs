@@ -3,6 +3,7 @@
   * [Android 插件开发教程](/NativePlugin/course/android.md) 
   * [Android 第三方 SDK 依赖说明](../AppDocs/usemodule/androidModuleConfig/android_Library.md)
   * [iOS 插件开发教程](/NativePlugin/course/ios.md)
+  * [iOS 第三方 SDK 依赖说明](../AppDocs/usemodule/iOSModuleConfig/dependentLibrary.md)
   * [uni原生插件包格式](/NativePlugin/course/package.md) 
 * uni原生插件参考手册
   * [Android uni原生API参考手册](/NativePlugin/API/android.md)
