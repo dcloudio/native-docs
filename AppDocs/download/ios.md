@@ -12,7 +12,7 @@
 
 [百度云点击下载SDK，提取码: f1ep](https://pan.baidu.com/s/1-tnbufeTJVAcCUDVHxXyIw)
 
-[和彩云点击下载SDK，提取码: keZx](https://caiyun.139.com/m/i?115CnXBlEXcr5) 
+[和彩云点击下载SDK，提取码: KEtP](https://caiyun.139.com/m/i?115CnqqksqrSM) 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.16.20211122）版本生成本地打包App资源。
 
