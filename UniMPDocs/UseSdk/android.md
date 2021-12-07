@@ -131,7 +131,7 @@ dependencies {
 }
 ```
 
-**注意！！！！ targetSdkVersion 取值范围最高30 最优26 设置值域超过28可能在android10以上手机出现白屏问题。 HX2.8.11+已支持targetSdkVersion设置30**
+**注意！！！！ targetSdkVersion 取值范围最高30 最优26 HX2.8.11+已支持targetSdkVersion设置30**
 
 
 ### uni小程序集成的第三方依赖库与宿主发生冲突
