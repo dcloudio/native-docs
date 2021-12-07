@@ -59,6 +59,8 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 
 关于扩展模块需要某些权限申请时。请使用[DCUniMPPermissionUtil.requestPermissions](/UniMPDocs/API/android?id=requestpermissions)申请权限。方便日后权限统一申请处理！！！
 
+**注意 仅支持activity权限申请。Fragment申请权限请使用Fragment的requestPermissions方法**
+
 ## 扩展 module
 
 下面以`TestModule`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；
