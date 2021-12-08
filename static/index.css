@@ -19,6 +19,7 @@ main {
 }
 
 .markdown-section * {
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
@@ -422,7 +423,6 @@ body[data-page="/platform.md"] h4 {
 .search {
   margin-bottom: 20px;
   padding: 6px;
-  border-bottom: 1px solid #eee;
 }
 
 .search.mobile {
@@ -535,6 +535,62 @@ body[data-page="/platform.md"] h4 {
   height: 32px;
   border: 1px solid #eee;
   border-radius: 15px;
+}
+
+.search-result {
+  display: flex;
+  margin: auto;
+  padding: 0px;
+}
+
+.search-result.hide {
+  display: none;
+}
+
+.search-result.show {
+  display: flex;
+}
+
+.search-result-list {
+  flex: 1;
+  border-bottom: 1px solid #eee;
+  word-break: break-all;
+}
+
+.search-result-aside-placeholder {
+  width: 300px;
+  flex: none;
+}
+
+.search-result-aside {
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  bottom: 0px;
+  padding: 24px 15px 20px 26px;
+  line-height: 24px;
+  width: 300px;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(0, 0, 0, .07);
+}
+
+.search-result-aside-link a {
+  line-height: 30px;
+  color: #42b983;
+}
+
+.search-result-aside-link a:hover {
+  border-bottom: solid 1px #42b983;
+}
+
+@media screen and (max-width: 1200px) {
+  .search-result-aside-placeholder {
+    display: none;
+  }
+
+  .search-result-aside {
+    display: none;
+  }
 }
 
 .app-nav p {
