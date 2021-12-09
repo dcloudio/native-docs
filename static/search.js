@@ -1,25 +1,5 @@
 (function () {
-	var INDEXS = {};
-	var helper;
-
-	var isMobile = document.body.clientWidth <= 600;
-
-	function escapeHtml(string) {
-		var entityMap = {
-			'&': '&amp;',
-			'<': '&lt;',
-			'>': '&gt;',
-			'"': '&quot;',
-			'\'': '&#39;',
-			'/': '&#x2F;'
-		};
-
-		return String(string).replace(/[&<>"'/]/g, function (s) {
-			return entityMap[s];
-		})
-	}
-
-	const validBitList = [
+	var validBitList = [
 		[7],
 		[5, 6],
 		[4, 6, 6],
@@ -27,15 +7,15 @@
 		[2, 6, 6, 6, 6],
 		[1, 6, 6, 6, 6, 6]
 	]
-	const otherByteBase = 1 << 7
-	const b64Info = new Array(6)
-	for (let i = 0; i < validBitList.length; i++) {
-		const validBit = validBitList[i]
-		let firstByteBase
+	var otherByteBase = 1 << 7
+	var b64Info = new Array(6)
+	for (var i = 0; i < validBitList.length; i++) {
+		var validBit = validBitList[i]
+		var firstByteBase
 		if (i === 0) {
 			firstByteBase = 0
 		}
-		const fillLength = validBit[0] + 1
+		var fillLength = validBit[0] + 1
 		firstByteBase = 255 >> fillLength << fillLength
 
 		b64Info[i] = {
@@ -74,10 +54,9 @@
 	// ...
 	// 1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
 	function charCodeToUtf8(code) {
-		console.log('char code', code)
-		let lengthIndex
-		for (let i = 0; i < b64Info.length; i++) {
-			const maxValue = b64Info[i].maxValue;
+		var lengthIndex
+		for (var i = 0; i < b64Info.length; i++) {
+			var maxValue = b64Info[i].maxValue;
 			if (code <= maxValue) {
 				lengthIndex = i
 				break;
@@ -86,48 +65,95 @@
 		if (lengthIndex === undefined) {
 			throw new Error('invalid char code')
 		}
-		const {
+		var {
 			validBit,
 			firstByteBase,
 			otherByteBase,
 		} = b64Info[lengthIndex]
-		const result = []
-		for (let i = validBit.length - 1; i >= 0; i--) {
-			const base = i === 0 ? firstByteBase : otherByteBase
-			let tempCode = code >>> validBit[i]
+		var result = []
+		for (var i = validBit.length - 1; i >= 0; i--) {
+			var base = i === 0 ? firstByteBase : otherByteBase
+			var tempCode = code >>> validBit[i]
 			result.unshift(base + code - (tempCode << validBit[i]))
 			code = tempCode
 		}
 		return result
 	}
 
-	// 8,8,8 -> 6,6,6,6 -> 8,8,8,8
-	function utf8ToB64Code(utf8Arr) {
-		const b64Arr = []
-		let totalValue = utf8Arr.reduce(function (total, value, index, arr) {
-			total += value << (arr.length - 1 - index) * 8
-			return total
-		}, 0)
-		for (let i = 0; i <= 3; i++) {
-			const tempValue = totalValue >> 6
-			b64Arr.unshift(totalValue - (tempValue << 6))
-			totalValue = tempValue
-		}
-		return b64Arr
+	function b64CodeToString(code) {
+		return String.fromCharCode(uint6ToB64(code))
 	}
 
-	function btoaUtf8(str) {
-		let result = ''
-		for (let i = 0; i < str.length; i++) {
-			const charCode = str.charCodeAt(i);
-			const utf8Arr = charCodeToUtf8(charCode)
-			const b64Arr = utf8ToB64Code(utf8Arr)
-			result += b64Arr.map(function (item) {
-				return String.fromCharCode(uint6ToB64(item))
-			}).join('')
+	// 8,8,8 -> 6,6,6,6 -> 8,8,8,8
+	function Encoder() {
+		this.remainder = 0
+		this.remainderBit = 0
+		this.utf8ArrLength = 0
+		this.result = ''
+	}
+
+	Encoder.prototype.push = function (utf8Code) {
+		this.utf8ArrLength++
+		var remainderMoveBit = (6 - this.remainderBit)
+		this.remainderBit = 8 - remainderMoveBit
+		var b64Value1 = this.remainder << remainderMoveBit
+		var b64Value2 = utf8Code >> this.remainderBit
+		var b64Value = b64Value1 + b64Value2
+		this.remainder = utf8Code - (b64Value2 << this.remainderBit)
+		this.result += b64CodeToString(b64Value)
+		if (this.remainderBit === 6) {
+			this.result += b64CodeToString(this.remainder)
+			this.remainder = 0
+			this.remainderBit = 0
 		}
-		const eqLength = (3 - (result.length % 3)) % 3
-		return result + '='.repeat(eqLength)
+	}
+
+	Encoder.prototype.flush = function () {
+		if (this.remainderBit) {
+			var b64Value = this.remainder << (6 - this.remainderBit)
+			this.result += b64CodeToString(b64Value)
+		}
+		var eqLength = (3 - (this.utf8ArrLength % 3)) % 3
+		this.result += '='.repeat(eqLength)
+	}
+
+	var Base64 = {
+		encode: function (str) {
+			// 一次循环计算出结果，减少内存占用
+			var encoder = new Encoder()
+			for (var i = 0; i < str.length; i++) {
+				var charCode = str.charCodeAt(i);
+				var utf8Arr = charCodeToUtf8(charCode)
+				utf8Arr.forEach(function (item) {
+					encoder.push(item)
+				});
+			}
+			encoder.flush()
+			return encoder.result
+		}
+	}
+	window.Base64 = Base64
+})();
+
+(function () {
+	var INDEXS = {};
+	var helper;
+
+	var isMobile = document.body.clientWidth <= 600;
+
+	function escapeHtml(string) {
+		var entityMap = {
+			'&': '&amp;',
+			'<': '&lt;',
+			'>': '&gt;',
+			'"': '&quot;',
+			'\'': '&#39;',
+			'/': '&#x2F;'
+		};
+
+		return String(string).replace(/[&<>"'/]/g, function (s) {
+			return entityMap[s];
+		})
 	}
 
 	function getAllPaths(router) {
@@ -649,7 +675,7 @@
 			// TODO 跳转对应搜索结果页面
 			var searchTarget = [{
 				text: '前往DCloud社区搜索',
-				href: 'https://ask.dcloud.net.cn/search/q-' + btoaUtf8(value)
+				href: 'https://ask.dcloud.net.cn/search/q-' + Base64.encode(value)
 			}, {
 				text: '前往uni-app文档搜索',
 				href: 'https://uniapp.dcloud.net.cn/?s=' + value
