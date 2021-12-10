@@ -14,7 +14,7 @@
 
 |SDK|版本|HBuilder X最低版本|备注（使用模块）
 |:----|:----|:----|:----
-|个推push|V3.2.6.0|HBuilder X V3.2.0|unipush模块
+|个推push|V3.2.6.0|HBuilder X V3.3.1|unipush模块
 |百度定位|V7.5.0|HBuilder X V2.0.0|定位模块
 |百度地图|V5.4.1|HBuilder X V2.0.0|map模块
 |高德定位|V5.5.0|HBuilder X V3.1.10|定位模块
