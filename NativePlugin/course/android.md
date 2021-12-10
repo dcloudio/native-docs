@@ -46,6 +46,12 @@
 
 ## 插件开发
 
+可以根据自己的业务进行定制自己的功能。 主要分为两类扩展：
+
++ Module 扩展 非 UI 的特定功能.
+
++ Component 扩展 实现特别功能的 Native 控件.
+
 **Tips**
 
 - 特别注意uni-app插件目前仅支持Module扩展和Component扩展，暂时不支持Adapter扩展！！！
