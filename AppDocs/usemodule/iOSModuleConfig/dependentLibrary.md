@@ -20,8 +20,8 @@
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 |Google登录|v5.0.2|Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.17|UniAD/快手|
-|快手广告联盟|v3.3.23.1|UniAD/快手广告联盟|
+|快手|v3.3.19|UniAD/快手|
+|快手广告联盟|v3.3.25|UniAD/快手广告联盟|
 |广点通|v4.13.31|UniAD/广点通|
 |穿山甲|v4.1.0.1|UniAD/穿山甲|
 |Sigmob|v3.5.0|UniAD/Sigmob|
