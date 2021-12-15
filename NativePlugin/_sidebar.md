@@ -1,12 +1,13 @@
 * [概述](/NativePlugin/README.md)
 * uni原生插件开发教程
   * [Android 插件开发教程](/NativePlugin/course/android.md) 
+  * [Android 第三方 SDK 依赖说明](../AppDocs/usemodule/androidModuleConfig/android_Library.md)
   * [iOS 插件开发教程](/NativePlugin/course/ios.md)
+  * [iOS 第三方 SDK 依赖说明](../AppDocs/usemodule/iOSModuleConfig/dependentLibrary.md)
   * [uni原生插件包格式](/NativePlugin/course/package.md) 
 * uni原生插件参考手册
   * [Android uni原生API参考手册](/NativePlugin/API/android.md)
   * [iOS uni原生API参考手册](/NativePlugin/API/ios.md)
-  * [Android 集成的三方依赖库列表](/NativePlugin/use/android_library.md)
 * uni原生插件使用教程
   * [插件使用说明](/NativePlugin/use/use.md)
   * [HBuilderX中使用本地插件](/NativePlugin/use/use_local_plugin.md)

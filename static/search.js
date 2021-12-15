@@ -1,4 +1,141 @@
-(function() {
+(function () {
+	var validBitList = [
+		[7],
+		[5, 6],
+		[4, 6, 6],
+		[3, 6, 6, 6],
+		[2, 6, 6, 6, 6],
+		[1, 6, 6, 6, 6, 6]
+	]
+	var otherByteBase = 1 << 7
+	var b64Info = new Array(6)
+	for (var i = 0; i < validBitList.length; i++) {
+		var validBit = validBitList[i]
+		var firstByteBase
+		if (i === 0) {
+			firstByteBase = 0
+		}
+		var fillLength = validBit[0] + 1
+		firstByteBase = 255 >> fillLength << fillLength
+
+		b64Info[i] = {
+			validBit,
+			firstByteBase,
+			otherByteBase,
+			maxValue: Math.pow(2, sum(validBit)) - 1 // 移位会溢出，使用Math.pow计算
+		}
+	}
+
+	function sum(arr) {
+		return arr.reduce(function (total, value) {
+			return total + value
+		}, 0)
+	}
+
+	/**
+	 * 将base64 code转换为字符对应的char code
+	 */
+	function uint6ToB64(nUint6) {
+		return nUint6 < 26 ?
+			nUint6 + 65
+			: nUint6 < 52 ?
+				nUint6 + 71
+				: nUint6 < 62 ?
+					nUint6 - 4
+					: nUint6 === 62 ?
+						43
+						: nUint6 === 63 ?
+							47
+							: 65;
+	}
+
+	// 0xxxxxxx
+	// 110xxxxx 10xxxxxx
+	// ...
+	// 1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+	function charCodeToUtf8(code) {
+		var lengthIndex
+		for (var i = 0; i < b64Info.length; i++) {
+			var maxValue = b64Info[i].maxValue;
+			if (code <= maxValue) {
+				lengthIndex = i
+				break;
+			}
+		}
+		if (lengthIndex === undefined) {
+			throw new Error('invalid char code')
+		}
+		var {
+			validBit,
+			firstByteBase,
+			otherByteBase,
+		} = b64Info[lengthIndex]
+		var result = []
+		for (var i = validBit.length - 1; i >= 0; i--) {
+			var base = i === 0 ? firstByteBase : otherByteBase
+			var tempCode = code >>> validBit[i]
+			result.unshift(base + code - (tempCode << validBit[i]))
+			code = tempCode
+		}
+		return result
+	}
+
+	function b64CodeToString(code) {
+		return String.fromCharCode(uint6ToB64(code))
+	}
+
+	// 8,8,8 -> 6,6,6,6 -> 8,8,8,8
+	function Encoder() {
+		this.remainder = 0
+		this.remainderBit = 0
+		this.utf8ArrLength = 0
+		this.result = ''
+	}
+
+	Encoder.prototype.push = function (utf8Code) {
+		this.utf8ArrLength++
+		var remainderMoveBit = (6 - this.remainderBit)
+		this.remainderBit = 8 - remainderMoveBit
+		var b64Value1 = this.remainder << remainderMoveBit
+		var b64Value2 = utf8Code >> this.remainderBit
+		var b64Value = b64Value1 + b64Value2
+		this.remainder = utf8Code - (b64Value2 << this.remainderBit)
+		this.result += b64CodeToString(b64Value)
+		if (this.remainderBit === 6) {
+			this.result += b64CodeToString(this.remainder)
+			this.remainder = 0
+			this.remainderBit = 0
+		}
+	}
+
+	Encoder.prototype.flush = function () {
+		if (this.remainderBit) {
+			var b64Value = this.remainder << (6 - this.remainderBit)
+			this.result += b64CodeToString(b64Value)
+		}
+		var eqLength = (3 - (this.utf8ArrLength % 3)) % 3
+		this.result += '='.repeat(eqLength)
+	}
+
+	var Base64 = {
+		encode: function (str) {
+			// 一次循环计算出结果，减少内存占用
+			var encoder = new Encoder()
+			for (var i = 0; i < str.length; i++) {
+				var charCode = str.charCodeAt(i);
+				var utf8Arr = charCodeToUtf8(charCode)
+				utf8Arr.forEach(function (item) {
+					encoder.push(item)
+				});
+			}
+			encoder.flush()
+			return encoder.result
+		}
+	}
+	window.Base64 = Base64
+})();
+
+(function () {
 	var INDEXS = {};
 	var helper;
 
@@ -14,7 +151,7 @@
 			'/': '&#x2F;'
 		};
 
-		return String(string).replace(/[&<>"'/]/g, function(s) {
+		return String(string).replace(/[&<>"'/]/g, function (s) {
 			return entityMap[s];
 		})
 	}
@@ -22,7 +159,7 @@
 	function getAllPaths(router) {
 		var paths = [];
 
-		helper.dom.findAll('a:not([data-nosearch])').forEach(function(node) {
+		helper.dom.findAll('a:not([data-nosearch])').forEach(function (node) {
 			var href = node.href;
 			var originHref = node.getAttribute('href');
 			var path = router.parse(href).path;
@@ -66,6 +203,28 @@
 		return text;
 	}
 
+	const docMetaReg = /^<!--+\s*\n\/\/\/\s+meta\s*\n(.*)\n\s*-->/s
+
+	function isMeta(html) {
+		return docMetaReg.test(html)
+	}
+
+	function parseMeta(html) {
+		var metaMatch = html.match(docMetaReg)
+		if (!metaMatch || !metaMatch[1]) {
+			return
+		}
+		var result = {}
+		metaMatch[1].split('\n').forEach(function (row) {
+			row = row.trim()
+			row = row.split(':')
+			if (row.length === 2) {
+				result[row[0].trim()] = row[1].trim()
+			}
+		})
+		return result
+	}
+
 	function genIndex(path, content, router, depth) {
 		content = content.replace(/^\s*$/g, '') || '';
 		// fixed by hxy 处理页面顶部无标题时，内容无法被搜索到的情况。
@@ -86,12 +245,12 @@
 		var fixf = null;
 		var fixl = 4; // 需要添加前缀的标题级别
 		var fixspan = 3; // 被作为前缀添加的标题级别
-		
-		tokens.forEach(function(token) {
+
+		tokens.forEach(function (token, tokenIndex) {
 			if (token.type === 'heading' && token.depth <= depth) {
-				if(token.depth < fixspan) fixf = null;
-				if(token.depth === fixspan) fixf = token.text;
-				
+				if (token.depth < fixspan) fixf = null;
+				if (token.depth === fixspan) fixf = token.text;
+
 				// created by xxxxxx 处理标题别名
 				var matchSlug = token.text.match(/@([A-Za-z0-9\-]+)/);
 				var slugText = '';
@@ -107,9 +266,19 @@
 				index[slug] = {
 					slug: slug,
 					title: token.text,
-					body: ''
+					body: '',
+					keyword: []
 				};
-				if(token.depth === fixl && fixf) {
+
+				var metaToken = tokens[tokenIndex + 1]
+				if (metaToken && metaToken.type === 'html' && isMeta(metaToken.text)) {
+					var meta = parseMeta(metaToken.text)
+					if (meta && meta.keyword) {
+						index[slug].keyword = meta.keyword.split(',').map(function (item) { return item.trim() })
+					}
+				}
+
+				if (token.depth === fixl && fixf) {
 					index[slug].title = fixf + '#' + index[slug].title;
 				}
 			} else {
@@ -155,7 +324,8 @@
 		return {
 			title: _replaceMark(title),
 			body: _replaceMark(body),
-			slug: post.slug
+			slug: post.slug,
+			keyword: post.keyword
 		}
 	};
 
@@ -176,11 +346,14 @@
 	 * @param {String} query
 	 * @returns {Array}
 	 */
+	var TiTlePriority = 10
+	var BaseKeywordPriority = 2
+	var ContentPriority = 1
 	function search(query) {
 		var matchingResults = [];
 		var data = [];
-		Object.keys(INDEXS).forEach(function(key) {
-			data = data.concat(Object.keys(INDEXS[key]).map(function(page) {
+		Object.keys(INDEXS).forEach(function (key) {
+			data = data.concat(Object.keys(INDEXS[key]).map(function (page) {
 				return INDEXS[key][page];
 			}));
 		});
@@ -190,11 +363,12 @@
 		// 		if (keywords.length !== 1) {
 		// 			keywords = [].concat(query, keywords);
 		// 		}
-		var loop = function(i) {
+		var loop = function (i) {
 			var post = _handlePost(data[i]);
 			var isMatch = false;
 			var resultStr = '';
 			var postTitle = post.title && post.title.trim();
+			var postKeyword = post.keyword || [];
 			var postContent = post.body && post.body.trim();
 			var postUrl = post.slug || '';
 			if (postTitle && postContent) {
@@ -207,13 +381,35 @@
 				var indexContent = -1;
 
 				isTitle = postTitle && postTitle.match(regEx);
+				var matchedKeyword = postKeyword.filter(function (item) {
+					return query.toLowerCase().indexOf(item.toLowerCase()) > -1
+				});
+				isKeyword = matchedKeyword.length > 0
 				isContent = postContent && postContent.match(regEx);
-				
-				if (!isTitle && !isContent) {
+
+				var matchPriority = 0
+				switch (true) {
+					case isTitle:
+						matchPriority = TiTlePriority
+						break;
+					case isKeyword:
+						matchPriority = BaseKeywordPriority + matchedKeyword.length
+						break;
+					case isContent:
+						matchPriority = ContentPriority
+						break;
+					default:
+						break;
+				}
+
+				if (!isTitle && !isKeyword && !isContent) {
 					isMatch = false;
 				} else {
 					isMatch = true;
 					var indexContent = 0;
+					// postContent = postContent.replace(docMetaReg, '');
+					postContent = postContent.replace(/<!--(.*?)-->/s, '')
+
 					if (isContent) {
 						indexContent = postContent.indexOf(keyword)
 					}
@@ -233,31 +429,37 @@
 					var matchContent =
 						'...' +
 						escapeHtml(postContent.substring(start, end))
-						.replace(regEx, ("<em class=\"search-keyword\">" + keyword + "</em>")) +
+							.replace(regEx, ("<em class=\"search-keyword\">" + keyword + "</em>")) +
 						'...';
 
 					resultStr += matchContent;
-					
+
+
 					// title 也高亮处理下
 					postTitle = escapeHtml(postTitle).replace(regEx, ("<em class=\"search-keyword\">" + keyword + "</em>"))
 				}
-				
+
 				if (isMatch) {
 					var matchingPost = {
 						title: postTitle,
 						content: resultStr,
-						url: postUrl
+						url: postUrl,
+						type: matchPriority
 					};
+					// TODO 调整不同情况的优先级
 					if (postTitle.indexOf("<em class=") === 0) { //如果title第一个就是keyword，则应该加在前面
-						matchingResults.unshift(matchingPost);
-					} else {
-						matchingResults.push(matchingPost);
+						matchingPost.type = 1000
 					}
+					matchingResults.push(matchingPost)
 				}
 			}
 		};
 
 		for (var i = 0; i < data.length; i++) loop(i);
+
+		matchingResults.sort(function (a, b) {
+			return b.type - a.type
+		})
 
 		return matchingResults
 	}
@@ -272,6 +474,7 @@
 		if (isExpired) {
 			INDEXS = {};
 		} else if (!isAuto) {
+			initSearch(config, vm)
 			return
 		}
 
@@ -279,17 +482,29 @@
 		var len = paths.length;
 		var count = 0;
 
-		paths.forEach(function(path) {
+		function loaded() {
+			if (count === len) {
+				saveData(config.maxAge)
+				initSearch(config, vm)
+			}
+		}
+
+		paths.forEach(function (path) {
 			if (INDEXS[path]) {
 				return count++
 			}
 
 			helper
 				.get(vm.router.getFile(path), false, vm.config.requestHeaders)
-				.then(function(result) {
+				.then(function (result) {
 					// console.log('path:' + path);
 					INDEXS[path] = genIndex(path, result, vm.router, config.depth);
-					len === ++count && saveData(config.maxAge);
+					count++
+					loaded()
+				}, function (err) {
+					console.error(err)
+					count++
+					loaded()
 				});
 		});
 	}
@@ -358,7 +573,7 @@
 	function _renderPost(post, value) {
 		var html = '';
 		var tagName = '规范';
-		
+
 		if (!!value) {
 			post.title = _handleHTMLString(post.title, value);
 			post.content = _handleHTMLString(post.content, value);
@@ -383,14 +598,14 @@
 		} else {
 			html += '<p class="aw-text"><span class="post-tag">' + tagName + '</span></p>';
 		}
-		
+
 		html += '\n<h2>' + (post.title) + '</h2></div>';
-		
-		if(!!value){
+
+		if (!!value) {
 			html += '<p>' + post.comment_count + '个' + commentText + '<span class="aw-text-space">-</span>' + post.view_count + '次浏览</p>';
 		}
-		
-		html += '\n<p>' + (post.content) +'</p>\n</a>\n</div>';
+
+		html += '\n<p>' + (post.content) + '</p>\n</a>\n</div>';
 
 		return html;
 	}
@@ -406,12 +621,12 @@
 		html += '<a href="' + (ext.url) + '" target="_blank"><div class="post-wrapper">';
 		//  post-tag-plugin
 		html += '<p class="aw-text"><span class="post-tag">插件</span></p>';
-		
+
 		html += '\n<h2>' + (ext.name) + '</h2></div>';
-		
+
 		html += '<p>' + ext.total_download + '次下载</p>';
-		
-		html += '\n<p>' + (ext.description) +'</p>\n</a>\n</div>';
+
+		html += '\n<p>' + (ext.description) + '</p>\n</a>\n</div>';
 
 		return html;
 	}
@@ -425,8 +640,9 @@
 	 */
 	function doSearch(value, vm) {
 		var $search = Docsify.dom.find('div.search');
-		var $panel = isMobile ? Docsify.dom.find($search, '.results-panel') : document.getElementById(
-			'search-results');
+		var $panel = isMobile ? Docsify.dom.find($search, '.results-panel') : document.getElementById('search-results');
+		var $searchResultListPanel = isMobile ? $panel : document.getElementById('search-results-list');
+		var $searchLinkPanel = document.getElementById('search-result-aside-link');
 		var $clearBtn = Docsify.dom.find($search, '.clear-button');
 
 		var $main = document.getElementById('main');
@@ -434,7 +650,7 @@
 		if (!value) {
 			$clearBtn.classList.remove('show');
 			$panel.classList.remove('show');
-			$panel.innerHTML = '';
+			$searchResultListPanel.innerHTML = '';
 			if (!isMobile && $main) {
 				$main.classList.remove('hide');
 			}
@@ -443,7 +659,7 @@
 		}
 		var matchs = search(value);
 		var html = '';
-		matchs.forEach(function(post) {
+		matchs.forEach(function (post) {
 			html += _renderPost(post);
 		});
 
@@ -451,11 +667,31 @@
 		$clearBtn.classList.add('show');
 		// fixed by xxxxxx 文档中搜索无结果，不显示提示，因为还有联网查询。
 		// $panel.innerHTML = html || ("<p class=\"empty\">" + NO_DATA_TEXT + "</p>");
-		$panel.innerHTML = html || ("<p class=\"empty\"></p>");
+		html = html || "<p class=\"empty\"></p>"
+		$searchResultListPanel.innerHTML = html;
 		!isMobile && $main.classList.add('hide');
 
+		if ($searchLinkPanel) {
+			// TODO 跳转对应搜索结果页面
+			var searchTarget = [{
+				text: '前往DCloud社区搜索',
+				href: 'https://ask.dcloud.net.cn/search/q-' + Base64.encode(value)
+			}, {
+				text: '前往uni-app文档搜索',
+				href: 'https://uniapp.dcloud.net.cn/?s=' + value
+			}, {
+				text: '前往HBuilderX文档搜索',
+				href: 'https://hx.dcloud.net.cn/?s=' + value
+			}]
+
+			var searchTargetHtml = searchTarget.map(function (item) {
+				return '<a href="' + item.href + '" target="_blank">' + item.text + '</a>'
+			}).join('<br/>')
+			$searchLinkPanel.innerHTML = searchTargetHtml
+		}
+
 		// search ext
-		$docsify.get('//ext.dcloud.net.cn/search/json?query=' + encodeURIComponent(value)).then(function(res) {
+		$docsify.get('//ext.dcloud.net.cn/search/json?query=' + encodeURIComponent(value)).then(function (res) {
 			// console.log('ext:', res)
 			var ret = JSON.parse(res);
 			if (ret.ret === 0) {
@@ -464,11 +700,11 @@
 				for (var i = 0, len = data.length; i < len; i++) {
 					extHtml += _renderExt(data[i], value);
 				}
-				$panel.innerHTML += extHtml;
+				$searchResultListPanel.innerHTML += extHtml;
 			}
 
 			$docsify.get('//ask.dcloud.net.cn/search/ajax/search_result/search_type-doc__q-' + value + '__page-1').then(
-				function(res) {
+				function (res) {
 					// console.log('ask:', res)
 					if (!res) {
 						return;
@@ -477,20 +713,20 @@
 					if (ret.code !== 0) {
 						// 如果联网查询都没有结果，那么依旧要展示无信息。
 						if (!html) {
-							$panel.innerHTML = "<p class=\"empty\">" + NO_DATA_TEXT + "</p>";
+							$searchResultListPanel.innerHTML = "<p class=\"empty\">" + NO_DATA_TEXT + "</p>";
 						}
 						return;
 					}
 
 					var data = ret.data;
 					var askHtml = '';
-					data.forEach(function(item) {
+					data.forEach(function (item) {
 						askHtml += _renderPost(item, value);
 					});
 					if (!!askHtml) {
 						askHtml += '<div class="more"><a href="//ask.dcloud.net.cn/search/q-' + ret.searchKeyword +
 							'#all" target="_blank">前往社区搜索更多内容</a></div>';
-						$panel.innerHTML += askHtml;
+						$searchResultListPanel.innerHTML += askHtml;
 					}
 				});
 
@@ -558,19 +794,19 @@
 		Docsify.dom.on(
 			$search,
 			'click',
-			function(e) {
+			function (e) {
 				return e.target.tagName !== 'A' && e.stopPropagation();
 			}
 		);
-		Docsify.dom.on($input, 'input', function(e) {
+		Docsify.dom.on($input, 'input', function (e) {
 			clearTimeout(timeId);
 			// fixed by xxxxxx
 			// 出发间隔太短了，加长一些。100 -> 1000
-			timeId = setTimeout(function(_) {
+			timeId = setTimeout(function (_) {
 				return doSearch(e.target.value.trim(), vm);
 			}, 1000);
 		});
-		Docsify.dom.on($inputWrap, 'click', function(e) {
+		Docsify.dom.on($inputWrap, 'click', function (e) {
 			// Click input outside
 			if (e.target.tagName !== 'INPUT') {
 				$input.value = '';
@@ -587,7 +823,7 @@
 		if (typeof text === 'string') {
 			$input.placeholder = text;
 		} else {
-			var match = Object.keys(text).filter(function(key) {
+			var match = Object.keys(text).filter(function (key) {
 				return path.indexOf(key) > -1;
 			})[0];
 			$input.placeholder = text[match];
@@ -598,14 +834,14 @@
 		if (typeof text === 'string') {
 			NO_DATA_TEXT = text;
 		} else {
-			var match = Object.keys(text).filter(function(key) {
+			var match = Object.keys(text).filter(function (key) {
 				return path.indexOf(key) > -1;
 			})[0];
 			NO_DATA_TEXT = text[match];
 		}
 	}
 
-	function init(opts, vm) {
+	function initSearch(opts, vm) {
 		var keywords = vm.router.parse().query.s;
 
 		// fixed by xxxxxx 将css抽离成单独的文件
@@ -617,7 +853,7 @@
 		 * 初始化事件和搜索方法，均传入Docsify实例对象。
 		 */
 		bindEvents(vm);
-		keywords && setTimeout(function(_) {
+		keywords && setTimeout(function (_) {
 			return doSearch(keywords, vm);
 		}, 500);
 	}
@@ -639,7 +875,7 @@
 	 * fixed by xxxxxx
 	 * 将初始化的内容独立出来
 	 */
-	var getConfig = function(vm, config) {
+	var getConfig = function (vm, config) {
 		var util = Docsify.util;
 		var opts = vm.config.search || CONFIG;
 
@@ -655,17 +891,15 @@
 		return config;
 	};
 
-	var install = function(hook, vm) {
+	var install = function (hook, vm) {
 		var config = getConfig(vm, CONFIG);
-		var isAuto = config.paths === 'auto';
 
-		hook.mounted(function(_) {
-			init(config, vm);
-			!isAuto && init$1(config, vm);
+		hook.mounted(function (_) {
+			// init(config, vm);
 		});
-		hook.doneEach(function(_) {
+		hook.doneEach(function (_) {
 			update(config, vm);
-			isAuto && init$1(config, vm);
+			init$1(config, vm);
 		});
 	};
 
@@ -679,6 +913,6 @@
 		install: install,
 		clear: clearSearch,
 		searching: false,
-		init: init
+		init: function () { }
 	};
 }());

@@ -66,19 +66,6 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation 'com.alibaba:fastjson:1.1.46.android'
 	~~~
 	
-	support版本需添加如下资源
-	
-	~~~
-    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
-    implementation "com.android.support:support-v4:28.0.0"
-    implementation "com.android.support:appcompat-v7:28.0.0"
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
-    implementation 'com.facebook.fresco:fresco:1.13.0'
-    implementation "com.facebook.fresco:animated-gif:1.13.0"
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
-    implementation 'com.alibaba:fastjson:1.1.46.android'
-	~~~
-	
 	uni-app配置时需要在build.gradle中添加aaptOptions配置
 	
 	~~~

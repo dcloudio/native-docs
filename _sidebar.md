@@ -21,6 +21,7 @@
     * [Statistic（友盟统计）](UniMPDocs/UseModule/android/umstatistic.md)
     * [X5（腾讯x5内核）](UniMPDocs/UseModule/android/x5.md)
     * [Geolocation（定位）](UniMPDocs/UseModule/android/geolocation.md)
+	* [第三方 SDK 依赖说明](../AppDocs/usemodule/androidModuleConfig/android_Library.md)
   * [iOS 集成教程](UniMPDocs/UseModule/ios/ios.md)
     * [Share（分享）](UniMPDocs/UseModule/ios/share.md)
     * [Oauth（登录鉴权）](UniMPDocs/UseModule/ios/oauth.md)

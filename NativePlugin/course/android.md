@@ -24,7 +24,7 @@
 - **HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+**
 - **HX3.1.10版本起需要申请 Appkey(dcloud_appkey)，否则无法正常运行uniapp并调试插件,申请[参考](/AppDocs/usesdk/appkey.md)**
 - **HX3.2.5+版本开始改为Androidx依赖库。需注意！！项目需要默认配置useAndroidX=true**
-- **HX3.2.13+版本开始 默认targetSdkVersion将由26改为28 插件开发者同学们需要注意！！如果你的插件不支持targetSdkVersion=28需要告知插件使用者！！**
+- **HX3.2.13+版本开始 默认targetSdkVersion将由26改为28 插件开发者同学们需要注意！！如果你的插件不支持targetSdkVersion=28需要告知插件使用者！！21-11-19 更新**
 
 ## 导入uni插件原生项目
 
@@ -45,6 +45,12 @@
 
 
 ## 插件开发
+
+可以根据自己的业务进行定制自己的功能。 主要分为两类扩展：
+
++ Module 扩展 非 UI 的特定功能.
+
++ Component 扩展 实现特别功能的 Native 控件.
 
 **Tips**
 
@@ -143,7 +149,7 @@ public JSONObject testSyncFunc(){
 
 #### 创建TestComponent类
 
-- Component 扩展类必须继承 UniComponent  容器Component(例如view组件)则需要继承UniVContainer
+- Component 扩展类必须继承 UniComponent, 父容器Component(例如ViewGroup组件)则需要继承UniVContainer
 
 **示例:**
 	

@@ -6,16 +6,19 @@
 |androidx|V1.0.0|HBuilder X V3.2.5|androidx相关依赖库
 |fastjson|v1.1.46|HBuilder X V3.2.5|fastjson是阿里巴巴的开源JSON解析库
 |android-gif-drawable|V1.2.23|HBuilder X V3.2.5|开源库 android-gif-drawable用于gif图显示
+|移动安全联盟OAID|V1.0.25|HBuilder X V3.2.5|oaid_sdk 获取oaid使用
+|glide|V4.9.0|HBuilder X V3.2.5|图片库 图片预览使用
+|fresco|V1.13.0|HBuilder X V3.2.5|图片库 用于nvue页面图片展示
 
 ### 其他功能模块依赖库
 
 |SDK|版本|HBuilder X最低版本|备注（使用模块）
 |:----|:----|:----|:----
-|个推push|V3.2.2.0|HBuilder X V3.2.0|unipush模块
+|个推push|V3.2.6.0|HBuilder X V3.3.1|unipush模块
 |百度定位|V7.5.0|HBuilder X V2.0.0|定位模块
 |百度地图|V5.4.1|HBuilder X V2.0.0|map模块
-|高德定位|V5.5.0|HBuilder X V3.1.10|定位模块
-|高德地图|V8.0.1|HBuilder X V3.2.10|map模块
+|高德定位|V5.6.1|HBuilder X V3.3.0|定位模块
+|高德地图|V8.1.0|HBuilder X V3.3.0|map模块
 |微信|V6.7.9|HBuilder X V3.2.7|登录、分享、支付模块
 |新浪微博|V10.10.0|HBuilder X V3.1.14|登录、分享模块
 |QQ|V3.5.2|HBuilder X V3.1.5|登录、分享模块
@@ -28,7 +31,7 @@
 |穿山甲广告|V4.0.0.1|HBuilder X V3.2.7|广告模块
 |高点通广告|V4.410.1280|HBuilder X V3.2.7|广告模块
 |360广告|V5.17.3157|HBuilder X V2.8.1|广告模块
-|快手广告联盟|V3.3.14|HBuilder X V3.2.7|广告模块
-|快手内容联盟|V3.3.22|HBuilder X V3.2.5|广告模块
+|快手广告联盟|V3.3.18|HBuilder X V3.3.0|广告模块
+|快手内容联盟|V3.3.24|HBuilder X V3.3.0|广告模块
 |sigmob广告|V3.4.1|HBuilder X V3.2.11|广告模块
 |ijkplayer|k0.8.8|HBuilder X V3.0.1|视频播放器模块

@@ -12,7 +12,7 @@
 
 [百度云点击下载SDK，提取码: f1ep](https://pan.baidu.com/s/1-tnbufeTJVAcCUDVHxXyIw)
 
-[和彩云点击下载SDK，提取码: keZx](https://caiyun.139.com/m/i?115CnXBlEXcr5) 
+[和彩云点击下载SDK，提取码: KEtP](https://caiyun.139.com/m/i?115CnqqksqrSM) 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.2.16.20211122）版本生成本地打包App资源。
 
@@ -30,15 +30,24 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年11月20日发布——HBuilderX（3.2.15.20211120-alpha）
+### 2021年12月2日发布——HBuilderX（3.3.0.20211130-alpha）
 
 [百度云点击下载SDK，提取码: a8r4](https://pan.baidu.com/s/1kYA4htOApjRrtZHpj9w3UQ) 
 
-[和彩云点击下载SDK，提取码: uny5](https://caiyun.139.com/m/i?115CopEoF78mx) 
+[和彩云点击下载SDK，提取码: TzHB](https://caiyun.139.com/m/i?115CoV5bfuAx0) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.2.15.20211120-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.0.20211130-alpha）版本生成本地打包App资源。
 
-+ 【重要】iOS平台 修复 应用启动时间统计在网络服务异常时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/article/39448)
++ App平台、H5平台 新增 uni.request 支持 PATCH 方法
++ App平台、H5平台 修复 swiper 组件开启衔接滑动点击指示器时切换问题 [详情](https://github.com/dcloudio/uni-app/issues/2985)
++ App平台 优化 nvue 页面默认文字大小更改为 16px
++ App平台 优化 innerAudioContext 支持多个音频同时播放
++ App-Android平台 修复 nvue input 组件 placeholder-class 样式中 font-size 不支持 rpx 单位的Bug [详情](https://ask.dcloud.net.cn/question/134764)
++ App-iOS平台 修复 nvue 页面固定横屏启动时 rpx 计算错误的Bug [详情](https://ask.dcloud.net.cn/question/134971)
+
++ iOS平台 修复 uni-AD setSplashAd 关闭开屏广告可能不生效的Bug
++ iOS平台 修复 拍照和本地相册选择 crop 裁剪编辑图片 resize 参数默认值不正确的Bug
++ iOS平台 修复 uni原生插件 validArchitectures 配置不正确可能导致云端打包失败的Bug
   
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
@@ -51,9 +60,9 @@
 `注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
-    
-[百度网盘下载历史版本，提取码: g4vg](https://pan.baidu.com/s/1WbAFav1X_0hSkaRXQB1P_g)
+    	
+[百度网盘下载历史版本，提取码: hnua](https://pan.baidu.com/s/1t90SfGft4ovy7MmlWQw9-w)
 
-[和彩云点击下载SDK，提取码: 985o](https://caiyun.139.com/m/i?115CoBGhsQx51) 
+[和彩云点击下载SDK，提取码: u8A2](https://caiyun.139.com/m/i?115CnX83VtMF3) 
 
-
+[历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
