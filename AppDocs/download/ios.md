@@ -30,24 +30,25 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2021年12月2日发布——HBuilderX（3.3.0.20211130-alpha）
+### 2021年12月14日发布——HBuilderX（3.3.1.20211214-alpha）
 
-[百度云点击下载SDK，提取码: a8r4](https://pan.baidu.com/s/1kYA4htOApjRrtZHpj9w3UQ) 
+[百度云点击下载SDK，提取码: p76j](https://pan.baidu.com/s/1XXEnIGJHNWqne6rw0qk2ug) 
 
 [和彩云点击下载SDK，提取码: TzHB](https://caiyun.139.com/m/i?115CoV5bfuAx0) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.0.20211130-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.1.20211214-alpha）版本生成本地打包App资源。
 
-+ App平台、H5平台 新增 uni.request 支持 PATCH 方法
-+ App平台、H5平台 修复 swiper 组件开启衔接滑动点击指示器时切换问题 [详情](https://github.com/dcloudio/uni-app/issues/2985)
-+ App平台 优化 nvue 页面默认文字大小更改为 16px
-+ App平台 优化 innerAudioContext 支持多个音频同时播放
-+ App-Android平台 修复 nvue input 组件 placeholder-class 样式中 font-size 不支持 rpx 单位的Bug [详情](https://ask.dcloud.net.cn/question/134764)
-+ App-iOS平台 修复 nvue 页面固定横屏启动时 rpx 计算错误的Bug [详情](https://ask.dcloud.net.cn/question/134971)
++ App平台 修复 vue3 项目使用 uni.canvasGetImageData 报错的Bug [详情](https://ask.dcloud.net.cn/question/134355)
++ App平台 修复 vue3 项目使用 uni.showLoading 方法在不调用 hideLoading 时会运行两秒左右自动关闭的Bug [详情](https://ask.dcloud.net.cn/question/135551)
++ App平台 修复 vue3 项目 开发期间页面热刷新不生效的Bug
++ App平台 修复 vue3 项目 开发期间页面直达不生效的Bug
++ App-iOS平台 修复 nvue rich-text 组件在页面中动态创建时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/135136)
 
-+ iOS平台 修复 uni-AD setSplashAd 关闭开屏广告可能不生效的Bug
-+ iOS平台 修复 拍照和本地相册选择 crop 裁剪编辑图片 resize 参数默认值不正确的Bug
-+ iOS平台 修复 uni原生插件 validArchitectures 配置不正确可能导致云端打包失败的Bug
++ 更新 uni-AD 快手广告SDK iOS为 3.3.19 版；快手内容联盟SDK iOS为 3.3.25 版
++ iOS平台 修复 plus.nativeUI.showWaiting 在暗黑模式下默认文字颜色不正确的Bug
++ iOS平台 修复 二维码扫码 pdf417 码时识别中文字符为乱码的Bug
++ iOS平台 修复 本地相册选择进入编辑界面可能出现点击完成按钮无响应的Bug [详情](https://ask.dcloud.net.cn/question/135653)
+
   
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
@@ -61,8 +62,10 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
     	
-[百度网盘下载历史版本，提取码: hnua](https://pan.baidu.com/s/1t90SfGft4ovy7MmlWQw9-w)
+		
 
-[和彩云点击下载SDK，提取码: u8A2](https://caiyun.139.com/m/i?115CnX83VtMF3) 
+[百度网盘下载历史版本，提取码: duki](https://pan.baidu.com/s/1-iLfJ1WucEvW9WAhmXAVqA)
+
+[和彩云点击下载历史版本，提取码: 7VUo](https://caiyun.139.com/m/i?115Cnq4qwMiNS) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
