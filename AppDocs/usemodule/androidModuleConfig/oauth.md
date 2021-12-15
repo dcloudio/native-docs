@@ -15,7 +15,7 @@
 
 ### 需要修改的配置选项
 
-**需要在build.gradle 中manifestPlaceholders节点中的manifestPlaceholders 新增配置选项**
+**需要在build.gradle 中 defaultConfig 节点下的 manifestPlaceholders 新增配置选项**
 
 
 ~~~
