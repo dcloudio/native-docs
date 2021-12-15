@@ -19,12 +19,13 @@
 
 
 ~~~
-"GETUI_APPID"     : "%GETUI_APPID%",(个推app id)
-"GY_APP_ID"       : "%GY_APP_ID%",(个验app id)
+"GETUI_APPID"     : "%GETUI_APPID%",
+"GY_APP_ID"       : "%GY_APP_ID%",
 "GT_INSTALL_CHANNEL":"HBuilder",
 （GT_INSTALL_CHANNEL 固定值 "HBuilder"）
 ~~~
 
+GETUI_APPID与GY_APP_ID对应[开发者中心](https://dev.dcloud.net.cn/)一键登录->基础配置->一键登录应用ID（离线打包使用），GETUI_APPID与GY_APP_ID取值相同。
 
 **dcloud_properties.xml需要添加如下代码**
 
