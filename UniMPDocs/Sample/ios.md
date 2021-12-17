@@ -254,24 +254,23 @@ plus.runtime.quit()
 **注：当开启后台运行时，点击胶囊按钮的`x`，或小程序中调用`plus.runtime.quit()`，原生调用`[DCUniMPSDKEngine closeUniMP]` 会将小程序隐藏到后台并不会销毁，如果想真正关闭并销毁请使用 方法2 通过 DCUniMPInstance 实例对象执行关闭**
 
 ## 宿主与小程序通讯
-> 注：2.6.10 版本开始支持此功能
 
 ### 宿主 App 向小程序发送事件
 
 **API**
 
 ```Objective-C
-Class DCUniMPSDKEngine.h
+Class DCUniMPInstance
 /// 向小程序发送事件
 /// @param event 事件名称
 /// @param data 数据：NSString 或 NSDictionary 类型
-+ (void)sendUniMPEvent:(NSString *)event data:(id)data;
+- (void)sendUniMPEvent:(NSString *)event data:(id __nullable)data;
 ```
 
 **示例**
 
 ```Objective-C
-[DCUniMPSDKEngine sendUniMPEvent:@"NativeEvent" data:@{@"msg":@"native message"}];
+[self.uniMPInstance sendUniMPEvent:@"NativeEvent" data:@{@"msg":@"native message"}];
 ```
 
 #### 小程序中接收宿主App发送事件
