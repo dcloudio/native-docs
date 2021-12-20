@@ -23,7 +23,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeodVS1fdm)，提取码: OEtX
+[和彩云](https://caiyun.139.com/m/i?115CoBAM4O778)，提取码: Lm83
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.2.20211218-alpha）版本生成本地打包App资源。
 + 新增 uni-AD 支持设置是否关闭个性化推荐功能
