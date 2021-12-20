@@ -1,5 +1,17 @@
 ## Alpha版历次更新说明
 
+### 3.3.1
++ App平台 修复 vue3 项目使用 uni.canvasGetImageData 报错的Bug [详情](https://ask.dcloud.net.cn/question/134355)
++ App平台 修复 vue3 项目使用 uni.showLoading 方法在不调用 hideLoading 时会运行两秒左右自动关闭的Bug [详情](https://ask.dcloud.net.cn/question/135551)
++ App平台 修复 vue3 项目 开发期间页面热刷新不生效的Bug
++ App平台 修复 vue3 项目 开发期间页面直达不生效的Bug
++ App-iOS平台 修复 nvue rich-text 组件在页面中动态创建时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/135136)
+
++ 更新 uni-AD 快手广告SDK iOS为 3.3.19 版；快手内容联盟SDK iOS为 3.3.25 版
++ iOS平台 修复 plus.nativeUI.showWaiting 在暗黑模式下默认文字颜色不正确的Bug
++ iOS平台 修复 二维码扫码 pdf417 码时识别中文字符为乱码的Bug
++ iOS平台 修复 本地相册选择进入编辑界面可能出现点击完成按钮无响应的Bug [详情](https://ask.dcloud.net.cn/question/135653)
+
 ### 3.3.0 
 + App平台、H5平台 新增 uni.request 支持 PATCH 方法
 + App平台、H5平台 修复 swiper 组件开启衔接滑动点击指示器时切换问题 [详情](https://github.com/dcloudio/uni-app/issues/2985)
