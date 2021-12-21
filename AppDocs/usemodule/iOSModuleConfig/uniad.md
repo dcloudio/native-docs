@@ -56,6 +56,9 @@
 |:--|:--|:--|
 |libUniAD.a、libUniAd-Ks.a、`KSAdSDK.framework(动态库)`|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
 
+快手广告SDK使用Libs/KSAdSDK.framework
+快手内容联盟SDK(包含广告SDK)使用Libs/Compatibles/KSAdSDK.framework
+
 ## Sigmob
 ### 添加依赖资源及文件
 
