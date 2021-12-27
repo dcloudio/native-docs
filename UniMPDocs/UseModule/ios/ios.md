@@ -665,8 +665,9 @@ UniMPSDK/Feature目录结构
 	    </td>
 	    <td> 
 		liblibStatistic.a<br/>
-		UMAnalytics.framework<br/>
+		UMDevice.framework
 		UMCommon.framework
+		UMAPM.framework
 		</td>
 	    <td>
 	    </td>
@@ -955,26 +956,6 @@ UniMPSDK/Feature目录结构
 		libDCUniGPUImage.a<br/>
 		libDCUniLivePush.a<br/>
 		UPLiveSDKDll.framework(动态库)
-		</td>
-	    <td>
-	    </td>
-	    <td>
-	    </td>
-	</tr>
-	<tr>
-	    <td>Statistic(友盟统计)</td>
-	    <td><a href="https://www.html5plus.org/doc/zh_cn/statistic.html"> plus.statistic </a></td>
-	    <td></td>
-	    <td>
-		SystemConfiguration.framework<br/>
-		CoreTelephony.framework<br/>
-		libz.tbd<br/>
-		libsqlite3.tbd
-	    </td>
-	    <td>
-		liblibStatistic.a<br/>
-		UMAnalytics.framework<br/>
-		UMCommon.framework
 		</td>
 	    <td>
 	    </td>
