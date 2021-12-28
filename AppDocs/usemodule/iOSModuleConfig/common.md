@@ -105,7 +105,7 @@
 	</tr>
 	<tr>
 	    <td>Audio(音频)</td>
-	    <td><a href="https://www.html5plus.org/doc/zh_cn/accelerometer.html"> plus.audio </a></td>
+	    <td><a href="https://www.html5plus.org/doc/zh_cn/audio.html"> plus.audio </a></td>
 	    <td>
 		<a href="https://uniapp.dcloud.io/api/media/record-manager"> record-manager </a><br/>
 		<a href="https://uniapp.dcloud.io/api/media/audio-context"> audio-context </a>
@@ -263,7 +263,7 @@
 	</tr>
 	<tr>
 	    <td>Messaging(短彩邮件消息)</td>
-	    <td><a href="https://www.html5plus.org/doc/zh_cn/messaging.html"> Accelerometer </a></td>
+	    <td><a href="https://www.html5plus.org/doc/zh_cn/messaging.html"> plus.messaging </a></td>
 	    <td></td>
 	    <td> 
 	    MessageUI.framework
@@ -301,7 +301,7 @@
 	</tr>
 	<tr>
 	    <td>XMLHttpRequest(网络请求)</td>
-	    <td><a href="https://www.html5plus.org/doc/zh_cn/xhr.html"> Accelerometer </a></td>
+	    <td><a href="https://www.html5plus.org/doc/zh_cn/xhr.html"> plus.net </a></td>
 	    <td><a href="https://uniapp.dcloud.io/api/request/request?id=request"> request </a></td>
 	    <td> 
 	    </td>
@@ -372,7 +372,7 @@
 	</tr>
 	<tr>
 		<td rowspan="3">Maps（地图）</td>
-		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/maps.html"> Accelerometer </a></td>
+		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/maps.html"> plus.maps </a></td>
 		<td rowspan="3"><a href="https://uniapp.dcloud.io/api/location/map"> map </a></td>
 		<td>
 		（vue）高德地图：<br/>
@@ -945,7 +945,7 @@
 	</tr>
 	<tr>
 	    <td>iBeacon</td>
-	    <td><a href="plus.ibeacon](https://www.html5plus.org/doc/zh_cn/ibeacon.html"> Accelerometer </a></td>
+	    <td><a href="plus.ibeacon](https://www.html5plus.org/doc/zh_cn/ibeacon.html"> plus.ibeacon </a></td>
 	    <td><a href="https://uniapp.dcloud.io/api/system/ibeacon"> ibeacon </a></td>
 	    <td>
 		CoreBluetooth.framework<br/>
