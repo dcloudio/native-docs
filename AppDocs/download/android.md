@@ -2,11 +2,11 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2021年11月22日发布——HBuilderX（3.2.16.20211122）
+### 2021年12月28日发布——HBuilderX（3.3.3.20211225）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CoVKXaIq7b)，提取码: OHfx
+[和彩云](https://caiyun.139.com/m/i?115CnX8VdjTZm)，提取码: 4WEL
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.3.20211225）版本生成本地打包App资源。
 + 修复 nvue input 组件 placeholder-class 样式中 font-size 不支持 rpx 单位的Bug
