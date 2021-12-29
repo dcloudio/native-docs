@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CnX8VdjTZm)，提取码: 4WEL
+[和彩云](https://caiyun.139.com/m/i?115CeVYCbY7RI)，提取码: HK6A
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.4.20211228）版本生成本地打包App资源。
 + 修复 nvue input组件 maxlength 属性不生效的Bug
