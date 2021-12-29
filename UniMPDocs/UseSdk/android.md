@@ -7,6 +7,11 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 - 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 
+
+## 版本更新注意
+
+SDK 3.2.16+版本默认不支持NJS功能，如果需要NJS功能，需要手动配置DCSDKInitConfig.setNJS(true) 使用的同学需要留意此次更新
+
 ## 集成方法
 
 打开Android Studio加载已有android项目或新建android项目。然后按照以下步骤配置您的项目。
