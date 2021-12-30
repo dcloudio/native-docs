@@ -1,3 +1,10 @@
+### 2021年12月29日发布——HBuilderX（3.3.4.20211228）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.4.20211228）版本生成本地打包App资源。
++ 修复 nvue input组件 maxlength 属性不生效的Bug
++ 修复 3.3.3 版本引出的 nvue video 组件 cover-view 全屏后排版不正确的Bug
++ 修复 二维码扫码在部分设备可能引起崩溃的Bug
+
 ### 2021年12月28日发布——HBuilderX（3.3.3.20211225）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.3.20211225）版本生成本地打包App资源。
