@@ -16,6 +16,20 @@
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
 
+### 2021年12月31日发布
+
+#### SDK 3.3.5 V2版本（支持同时运行多个小程序）
+
+[点击下载SDK UniMPSDK_Android@3.3.5.V2.20211230.zip](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_Android@3.3.5.V2.20211230.zip)
+
+#### 更新日志
++ 需使用HBuilderX（3.3.5）版本生成 小程序App 资源
++ 支持 已经打开的小程序实例，再次打开并直达具体落地页
++ 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
++ SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](UniMPDocs/API/android-v2);
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.5.20211229.html)
+
+
 
 ### 2021年11月23日发布
 
