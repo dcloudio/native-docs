@@ -16,21 +16,6 @@
 
 ### API
 
-**注意：从 2.8.0+ 版本开始老版本API不在推荐使用，请使用新的API**
-
-```
-此方法已经标识弃用，请使用下面的方法
-/// 启动 App 
-/// @param appid appid
-/// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
-/// @param redirectPath 启动后直接打开的页面路径 例："pages/component/view/view?a=1&b=2"
-+ (void)openApp:(NSString *)appid
-      arguments:(NSDictionary * _Nullable)arguments
-   redirectPath:(NSString * _Nullable)redirectPath __attribute__((deprecated("deprecated, Use -openUniMP:configuration:completed:")));
-```
-
-**2.8.0+ 版本支持**
-
 ```objective-c
 Class DCUniMPSDKEngine
 /// 启动小程序
@@ -62,8 +47,10 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 @property (nonatomic, weak) DCUniMPInstance *currentUniMP; /**< 引用当前启动的uni小程序 */
 ```
 
-### 启动小程序并传参
-宿主启动小程序时支持传入参数到小程序环境，小程序中可以通过 `plus.runtime.arguments` 获取宿主传入的参数
+### 启动小程序并传参  
+宿主启动小程序时支持传入数据到小程序环境
+
+> 注意：3.3.4+ 版本开始 DCUniMPConfiguration 的 arguments 不在推荐使用，请使用 extraData 属性代替
 
 **示例**
 
@@ -71,12 +58,11 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 // 初始化小程序的配置信息对象
 DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
 // 配置启动小程序时传递的参数
-configuration.arguments = @{ @"arguments":@"Hello uni microprogram" };
+configuration.extraData = @{ @"arguments":@"Hello uni microprogram" };
 // 启动小程序
 [DCUniMPSDKEngine openUniMP:k_AppId configuration:configuration completed:^(DCUniMPInstance * _Nullable uniMPInstance, NSError * _Nullable error) {
 	if (uniMPInstance) {
 		// success
-		self.currentUniMP = uniMPInstance;
 	} else {
 		// error
 	}
@@ -85,22 +71,39 @@ configuration.arguments = @{ @"arguments":@"Hello uni microprogram" };
 
 **小程序中获取参数**
 
+小程序中可在 `App.onLaunch，App.onShow` 中获取到启动时传递的数据
+
 ```JavaScript
-var info = plus.runtime.arguments;
+// App.vue
+onLaunch: function(launchInfo) {
+	console.log('App Launch:', launchInfo);
+}
 ```
 
+启动参数 launchInfo 为 Object 类型，结构如下
+
+属性|类型 |说明:--|:--|:--|path |String|打开的页面路径query |Object| 页面参数
+referrerInfo| Object |启动小程序时传递的数据
+
+referrerInfo 
+
+属性|类型 |说明:--|:--|:--|extraData |String/Object| 启动时传递的数据
+
 ##### 注意事项：
-- 启动传入的参数只有冷启动小程序时才会生效，**开启后台运行**小程序从后台切换到前台时即使宿主更新了传入的 arguments 值小程序中调用` plus.runtime.arguments` 获取的依旧是之前的值；
+- 使用 `DCUniMPConfiguration` 的 `extraData` 属性设置启动参数，宿主更新 `extraData` 值后再次调用 open 方法打开小程序不区分冷启动和热启动，小程序中都可以获取最新的值，之前的 `arguments` 属性只有冷启动时才会生效；
 
 ### 启动打开指定页面
 
 宿主启动小程序时可通过传入页面路径来打开指定页面
 
+> 注意：3.3.4+ 版本开始 DCUniMPConfiguration 的 redirectPath 不在推荐使用，请使用 path 属性代替
+
 **页面路径格式要求** 
 
-路径从 pages/ 开始填写绝对路径并支持参数 示例：
+路径从 `pages/` 开始填写绝对路径并支持参数  
 
 ```
+// 页面路径 path 中 ? 后面的部分会成为 query
 pages/component/view/view?action=redirect
 ```
 
@@ -110,7 +113,7 @@ pages/component/view/view?action=redirect
 // 初始化小程序的配置信息对象
 DCUniMPConfiguration *configuration = [[DCUniMPConfiguration alloc] init];
 // 配置启动小程序时直达页面路径
-configuration.redirectPath = @"pages/component/view/view?action=redirect";
+configuration.path = @"pages/component/view/view?action=redirect";
 // 启动小程序
 [DCUniMPSDKEngine openUniMP:k_AppId configuration:configuration completed:^(DCUniMPInstance * _Nullable uniMPInstance, NSError * _Nullable error) {
 	if (uniMPInstance) {
@@ -156,7 +159,7 @@ configuration.redirectPath = @"pages/component/view/view?action=redirect";
 
 ##### 注意事项：
 - **如果直达的页面为首页并且是 vue 的话页面参数无效** 应使用启动传参的方式；
-- 启动打开二级页面只有冷启动小程序时才会生效，**开启后台运行**小程序从后台切换到前台时即使宿主更新了传入的 redirectPath 值不会生效；
+- 使用 `DCUniMPConfiguration` 的 `path` 属性设置直达页面，宿主更新 `path` 值后再次调用 open 方法打开小程序不区分冷启动和热启动，小程序中都会进入直达页面，之前的 `redirectPath` 属性只有冷启动时才会生效；
 
 ### 转场动画
 > 2.8.0+ 版本支持

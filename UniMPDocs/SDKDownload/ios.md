@@ -9,10 +9,11 @@
 
 ## 更新日志
 
-#### SDK 3.2.16
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.2.16.zip)
+#### SDK 3.3.5
+[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.3.5.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.16.20211122.html)
++ **优化 启动小程序直达页面及启动参数属性调整，热启动小程序直达页面及参数也会生效** [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f%e5%b9%b6%e4%bc%a0%e5%8f%82);
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.5.20211229.html)
 
 
 ## 历史版本
@@ -20,6 +21,10 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.2.16
+
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.16.20211122.html)
 
 #### SDK 3.2.15
 
