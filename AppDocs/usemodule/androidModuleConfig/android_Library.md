@@ -22,7 +22,7 @@
 |微信|V6.7.9|HBuilder X V3.2.7|登录、分享、支付模块
 |新浪微博|V10.10.0|HBuilder X V3.1.14|登录、分享模块
 |QQ|V3.5.2|HBuilder X V3.1.5|登录、分享模块
-|友盟|V9.4.2|HBuilder X V3.2.7|统计模块
+|友盟统计|V9.4.2|HBuilder X V3.2.7|统计模块
 |百度语音|V3.4.1.101|HBuilder X V3.0.1|语音模块
 |LiteAVSDK|V6.3.7089|HBuilder X V3.0.1|livepusher推流模块
 |腾讯x5内核|V4.3.0.1148_43697|HBuilder X V3.0.7|X5内核
@@ -37,3 +37,5 @@
 |ijkplayer|V0.8.8|HBuilder X V3.0.1|视频播放器模块
 |DanmakuFlameMaster|V0.6.2|HBuilder X V2.0.0|视频播放器模块
 |lame|V3.100|HBuilder X V3.2.16|音频录音
+|play-services-auth|V19.2.0|HBuilder X V3.2.7|登录 Google登录
+|facebook-android-sdk|V4.42.0|HBuilder X V3.2.7|登录 Facebook登录
