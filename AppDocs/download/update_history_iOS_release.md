@@ -1,4 +1,7 @@
 ## 正式版历次更新说明
+### 3.3.4
++ App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
++ App平台 修复 vue3 项目 input/textarea 组件使用 v-model 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3107)
 
 ### 3.3.3
 + 【重要】App平台 修复 uni.getLocation 参数 type 配置不生效的Bug [详情](https://ask.dcloud.net.cn/article/39552)
