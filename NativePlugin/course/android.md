@@ -719,3 +719,7 @@ A:
  
 + 插件生成的路径尽量添加`file://`防止路径被转换导致无法正确获取文件
 + 尽量将文件放到`/storage/emulated/0/Android/data/$应用的包名$/apps/$uniapp的appid$/doc/`目录下
+
+Q: 如何查看如何查看uniapp console日志
+
+A:修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  查看log.TAG为console
