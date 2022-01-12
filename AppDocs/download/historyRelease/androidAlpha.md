@@ -1,3 +1,11 @@
+### 2022年01月04日发布——HBuilderX（3.3.6.20211231-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.6.20211231-alpha）版本生成本地打包App资源。
++ 修复 nvue input组件 maxlength 属性不生效的Bug
++ 修复 3.3.1 版本引出的 nvue video 组件 cover-view 全屏后排版不正确的Bug
++ 修复 二维码扫码在部分设备可能引起崩溃的Bug
++ 修复 targetSdkVersion 设置为 31 在 Android 12 设备可能无法安装的Bug
+
 ### 2021年12月20日发布——HBuilderX（3.3.2.20211218-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.2.20211218-alpha）版本生成本地打包App资源。
