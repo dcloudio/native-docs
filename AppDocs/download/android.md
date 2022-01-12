@@ -25,7 +25,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Cooo7K1vlM)，提取码: ej2V
+[和彩云](https://caiyun.139.com/m/i?115Coojo644VX)，提取码: GxiT
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.7.20220112-alpha）版本生成本地打包App资源。
 + 修复 nvue list 组件不支持 click 事件的Bug
