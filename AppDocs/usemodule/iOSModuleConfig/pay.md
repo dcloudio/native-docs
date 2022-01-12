@@ -85,6 +85,7 @@
 
 ### 工程配置
 1. 在 info.plist 添加 `paypal` 项，填写`returnUrl`，参考如下
+
 ![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
 
 
