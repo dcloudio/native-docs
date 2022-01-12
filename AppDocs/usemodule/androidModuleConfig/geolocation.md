@@ -29,7 +29,9 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | amap-libs-release.aar, geolocation-amap-release.aar |
+| SDK\libs | AMap_Location_XXX.jar（XXX为版本号）, geolocation-amap-release.aar |
+
+**注意：3.3.6及以下版本要使用amap-libs-release.aar代替AMap_Location_XXX.jar**
 
 ### Androidmainfest.xml文件需要修改的项
 

@@ -62,8 +62,10 @@ services节点下添加:
 
 | 页面 | 路径 | 文件 | 
 | :-------: | :-------: | :-------: |
-|nvue页面| SDK\libs | amap-libs-release.aar，weex_amap-release.aar |
-|vue页面 | SDK\libs | amap-libs-release.aar，map-amap-release.aar |
+|nvue页面| SDK\libs | AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar，weex_amap-release.aar |
+|vue页面 | SDK\libs | AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar，map-amap-release.aar |
+
+**注意：3.3.6及以下版本需要使用amap-libs-release.aar代替AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar**
 
 ### Androidmainfest.xml文件需要修改的项
 

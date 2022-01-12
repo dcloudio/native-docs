@@ -82,7 +82,7 @@ features 节点添加
 ~~~
 
 
-## 腾讯广点通
+## 腾讯优量汇
 
 ### 库文件配置
 
@@ -127,11 +127,10 @@ features 节点添加
 
 将以下文件放入工程的libs目录下
 
-路径 | 文件名
--|-
-SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad.aar
-
-如果接入了内容联盟的广告，需要将ks_adsdk-ad.aar替换为kssdk-allad-content.aar
+类型 | 路径 | 文件名
+-|-|-
+快手广告联盟|SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad.aar
+快手内容联盟|SDK/libs| ads-release.aar、ads-ks-content-release.aar、kssdk-allad-content.aar
 
 ### Androidmanifest.xml配置
 

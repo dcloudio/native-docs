@@ -157,7 +157,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	+ 配置应用启动页及provider节点
 
-	将下述内容添加到Androidmanifest.xml的application节点中
+	将下述activity信息添加到Androidmanifest.xml的application节点中
 	
 	**注意：新建的项目默认会有一个MainActivity的节点，必须删掉！**
 	
@@ -194,18 +194,25 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
                 <data android:scheme="h56131bcf" />
             </intent-filter>
         </activity>
-		<!--provider节点必须添加-->
-		<provider
-            android:name="io.dcloud.common.util.DCloud_FileProvider"
-            android:authorities="${apk.applicationId}.dc.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/dcloud_file_provider" />
-        </provider>
 	~~~
 
+	添加provider信息到Androidmanifest.xml的application节点中
+	
+	**注意：3.3.7及以上版本，可以不添加**
+	
+	~~~
+	<!--provider节点必须添加-->
+	<provider
+	    android:name="io.dcloud.common.util.DCloud_FileProvider"
+	    android:authorities="${apk.applicationId}.dc.fileprovider"
+	    android:exported="false"
+	    android:grantUriPermissions="true">
+	    <meta-data
+	        android:name="android.support.FILE_PROVIDER_PATHS"
+	        android:resource="@xml/dcloud_file_provider" />
+	</provider>
+	~~~
+	
 	**注意：${apk.applicationId} 必须替换成当前应用的包名**
 	
 	如果集成离线SDK时需要重写application，必须继承自DCloudApplication，否则会导致SDK中业务逻辑无法正常运行。
