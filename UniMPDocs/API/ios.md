@@ -62,7 +62,13 @@
 ### 获取uni小程序应用资源部署路径
 
 ```objective-c
-/// 获取 App 运行路径，注：需要将应用资源放到此路径下
+/// 获取 App 运行路径，注：需要将应用资源放到此路径下 （3.3.7+ 支持）
+/// @param appid appid
++ (NSString *)getUniMPRunPathWithAppid:(NSString *)appid;
+```
+
+```
+/// 获取 App 运行路径，注：需要将应用资源放到此路径下 (3.3.7+ 已废弃)
 /// @param appid appid
 + (NSString *)getAppRunPathWithAppid:(NSString *)appid;
 ```
@@ -70,7 +76,13 @@
 ### 判断应用资源是否已经部署
 
 ```objective-c
-/// 运行目录中是否已经存在 App
+/// 运行目录中是否已经存在小程序资源 （3.3.7+ 支持）
+/// @param appid appid
++ (BOOL)isExistsUniMP:(NSString *)appid;
+```
+
+```
+/// 运行目录中是否已经存在 App （3.3.7+ 已废弃）
 /// @param appid appid
 + (BOOL)isExistsApp:(NSString *)appid;
 ```
@@ -88,8 +100,9 @@
                      resourceFilePath:(NSString *)wgtPath
                              password:(nullable NSString *)password
                                 error:(NSError * *)error;
+```
 
-
+```
 /// 将wgt应用资源包部署到运行路径中 （3.3.7+ 已废弃）
 /// @param appid appid
 /// @param wgtPath wgt应用资源包路径
@@ -100,7 +113,7 @@
 ### 启动小程序应用
 
 ```objective-c
-/// 启动小程序 2.8.0+ 支持
+/// 启动小程序 （2.8.0+ 支持）
 /// @param appid appid
 /// @param configuration 小程序的配置信息
 /// @param completionBlock 方法执行回调
@@ -225,7 +238,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
 
 ```
-/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示） 3.1.22+ 支持
+/// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示） （3.1.22+ 支持）
 /// @param capsuleButtonHidden Bool 是否隐藏胶囊按钮
 + (void)setCapsuleButtonHidden:(BOOL)capsuleButtonHidden;
 ```
@@ -274,20 +287,20 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### DCUniMPSDKEngineDelegate 相关方法
 
 ```
-/// 拦截胶囊`x`关闭按钮事件，注意：实现该方法后框架内不会执行关闭小程序的逻辑，需要宿主自行处理逻辑 3.2.9+ 支持
+/// 拦截胶囊`x`关闭按钮事件，注意：实现该方法后框架内不会执行关闭小程序的逻辑，需要宿主自行处理逻辑 （3.2.9+ 支持）
 /// @param appid appid
 - (void)hookCapsuleCloseButtonClicked:(NSString *)appid;
 ```
 
 ```
-/// 拦截胶囊`···`菜单按钮事件，注意：实现该方法后框架内不会弹出actionSheet弹窗，需宿主自行处理逻辑 3.2.9+ 支持
+/// 拦截胶囊`···`菜单按钮事件，注意：实现该方法后框架内不会弹出actionSheet弹窗，需宿主自行处理逻辑 （3.2.9+ 支持）
 /// @param appid appid
 - (void)hookCapsuleMenuButtonClicked:(NSString *)appid;
 ```
 
 
 ```
-/// 胶囊按钮‘x’关闭按钮点击回调 3.1.22+ 支持
+/// 胶囊按钮‘x’关闭按钮点击回调 （3.1.22+ 支持）
 /// @param appid appid
 - (void)closeButtonClicked:(NSString *)appid;
 ```

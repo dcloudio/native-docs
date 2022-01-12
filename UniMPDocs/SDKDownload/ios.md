@@ -9,6 +9,16 @@
 
 ## 更新日志
 
+#### SDK 3.3.7
+[点击下载 UniMP_iOS_SDK](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_iOS%403.3.7.zip)
+
++ 新增 小程序 wgt 资源文件支持加密 [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=installWgt)
++ iOS平台 修复 小程序未开启后台运行，通过手势关闭小程序后快速打开小程序偶现崩溃的Bug
++ iOS平台 修复 在隐藏小程序的回调方法中再次打开同一小程序无效的Bug
++ iOS平台 修复 同时打开多个小程序 getCurrentPageUrl 获取当前显示的小程序页面路径不正确的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.7.20220112-alpha.html)
+
+
 #### SDK 3.3.5
 [点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.3.5.zip)
 

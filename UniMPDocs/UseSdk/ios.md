@@ -181,15 +181,24 @@ UniMPSDK/Core 目录结构说明
 
 ```objective-c
 /// 检查运行目录是否存在应用资源，不存在将应用资源部署到运行目录
-- (void)checkUniMPResource {
-    // 注意：isExistsApp: 方法仅是判断运行目录中是否存在应用资源，正式环境应该添加版本控制，内置新的wgt资源后需要判断版本，决定是否需要释放应用资源 
-    if (![DCUniMPSDKEngine isExistsApp:k_AppId]) {
+- (void)checkUniMPResource:(NSString *)appid {
+#warning 注意：isExistsUniMP: 方法判断的仅是运行路径中是否有对应的应用资源，宿主还需要做好内置wgt版本的管理，如果更新了内置的wgt也应该执行 releaseAppResourceToRunPathWithAppid 方法应用最新的资源
+    if (![DCUniMPSDKEngine isExistsUniMP:appid]) {
         // 读取导入到工程中的wgt应用资源
-        NSString *appResourcePath = [[NSBundle mainBundle] pathForResource:k_AppId ofType:@"wgt"];
-        // 将应用资源部署到运行路径中
-        if ([DCUniMPSDKEngine releaseAppResourceToRunPathWithAppid:k_AppId resourceFilePath:appResourcePath]) {
-            NSLog(@"应用资源文件部署成功");
+        NSString *appResourcePath = [[NSBundle mainBundle] pathForResource:appid ofType:@"wgt"];
+        if (!appResourcePath) {
+            NSLog(@"资源路径不正确，请检查");
+            return;
         }
+        // 将应用资源部署到运行路径中
+        NSError *error;
+        if ([DCUniMPSDKEngine installUniMPResourceWithAppid:appid resourceFilePath:appResourcePath password:nil error:&error]) {
+            NSLog(@"小程序 %@ 应用资源文件部署成功，版本信息：%@",appid,[DCUniMPSDKEngine getUniMPVersionInfoWithAppid:appid]);
+        } else {
+            NSLog(@"小程序 %@ 应用资源部署失败： %@",appid,error);
+        }
+    } else {
+        NSLog(@"已存在小程序 %@ 应用资源，版本信息：%@",appid,[DCUniMPSDKEngine getUniMPVersionInfoWithAppid:appid]);
     }
 }
 ```
@@ -216,11 +225,11 @@ UniMPSDK/Core 目录结构说明
 ```objective-c
 #pragma mark - DCUniMPSDKEngineDelegate
 /// DCUniMPMenuActionSheetItem 点击触发回调方法
-- (void)defaultMenuItemClicked:(NSString *)identifier {
+- (void)defaultMenuItemClicked:(NSString *)appid identifier:(NSString *)identifier {
     NSLog(@"标识为 %@ 的 item 被点击了", identifier);
 }
 
-/// 返回打开小程序时的自定义闪屏视图（此视图会以屏幕大小展示）
+/// 返回打开小程序时的自定义闪屏视图
 - (UIView *)splashViewForApp:(NSString *)appid {
     UIView *splashView = [[[NSBundle mainBundle] loadNibNamed:@"SplashView" owner:self options:nil] lastObject];
     return splashView;
@@ -240,12 +249,11 @@ UniMPSDK/Core 目录结构说明
 ### 应用资源管理
 
 #### uni小程序的应用资源集成方式
-	
-生成的 uni小程序 wgt 资源包可以**部署到远程服务器动态下发**也可以**直接内置到工程中**。然后通过 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入wgt资源路径即可将wgt资源部署到运行路径。然后通过`openApp:arguments:` 运行uni小程序应用。
+生成的 uni小程序 wgt 资源包可以**部署到远程服务器动态下发**也可以**直接内置到工程中**。然后通过 DCUniMPSDKEngine 类的`installUniMPResourceWithAppid:resourceFilePath:password:error:`方法传入wgt资源路径即可将wgt资源部署到运行路径。然后通过`openUniMP:configuration:completed:` 运行uni小程序应用。
 
 #### uni小程序应用资源升级
 
-1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在 App 升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`releaseAppResourceToRunPathWithAppid:resourceFilePath:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
+1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在 App 升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`installUniMPResourceWithAppid:resourceFilePath:password:error:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
  
 2. **小程序触发更新：**小程序内下载新的wgt包，然后调用更新api应用新的wgt资源，具体请参考 [wgt 资源在线升级/热更新](https://ask.dcloud.net.cn/article/35667)
 
@@ -253,4 +261,4 @@ UniMPSDK/Core 目录结构说明
 
 #### uni小程序应用删除
 
-可通过 DCUniMPSDKEngine 类的 `getAppRunPathWithAppid:` 方法获取应用运行路径，删除应用资源即可；
+可通过 DCUniMPSDKEngine 类的 `getUniMPRunPathWithAppid:` 方法获取应用运行路径，删除应用资源即可；
