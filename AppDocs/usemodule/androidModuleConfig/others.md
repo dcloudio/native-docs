@@ -222,7 +222,7 @@
 
 | 路径 | 文件名 |
 | :-------: | :-------: |
-|SDK\libs|alipayutdid.jar、statistics-umeng-release.aar|
+|SDK\libs|utdid4all-XXX-proguard.jar(XXX为版本号)、statistic-umeng-release.aar|
 
 ### AndroidManifest.xml配置
 

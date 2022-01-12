@@ -13,7 +13,7 @@
 
 需要在 App 系统生命周期方法中调用 SDK 相关方法
 
-**示例**2.8.0
+**示例**
 
 ```objective-c
 - (void)applicationDidBecomeActive:(UIApplication *)application {  
@@ -56,29 +56,6 @@
     return YES;  
 }  
 
-#pragma mark - 如需使用远程推送相关功能，请实现以下方法  
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {  
-    // 远程通知注册成功，收到 deviceToken 调用sdk方法，传入 deviceToken  
-    [DCUniMPSDKEngine application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];  
-}  
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {  
-    // 远程通知注册失败  
-    [DCUniMPSDKEngine application:application didFailToRegisterForRemoteNotificationsWithError:error];  
-}  
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {  
-    // 收到远程推送消息  
-    [DCUniMPSDKEngine application:application didReceiveRemoteNotification:userInfo];  
-    completionHandler(UIBackgroundFetchResultNewData);  
-}  
-
-#pragma mark - 如需使用本地推送通知功能，请实现以下方法  
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {  
-    // 收到本地推送消息  
-    [DCUniMPSDKEngine application:application didReceiveLocalNotification:notification];  
-}
-
 ```
 
 
@@ -98,10 +75,22 @@
 + (BOOL)isExistsApp:(NSString *)appid;
 ```
 
+<h3 id="installWgt"></h3>
 ### 将wgt应用资源包部署到运行路径中
 
 ```objective-c
-/// 将wgt应用资源包部署到运行路径中
+/// 将wgt资源部署到运行路径中 (3.3.7+ 支持)
+/// @param appid appid
+/// @param wgtPath wgt资源路径
+/// @param password wgt资源解压密码（没有密码传 nil）
+/// @param error 解压报错对应的 Error
++ (BOOL)installUniMPResourceWithAppid:(NSString *)appid
+                     resourceFilePath:(NSString *)wgtPath
+                             password:(nullable NSString *)password
+                                error:(NSError * *)error;
+
+
+/// 将wgt应用资源包部署到运行路径中 （3.3.7+ 已废弃）
 /// @param appid appid
 /// @param wgtPath wgt应用资源包路径
 + (BOOL)releaseAppResourceToRunPathWithAppid:(NSString *)appid
