@@ -84,7 +84,7 @@
 |liblibPayment.a、libpaypalpay.a、PayPalCheckout.xcframework|无|无|
 
 ### 工程配置
-1.在 info.plist 添加 `paypal` 项，填写`returnUrl`，参考如下
+1. 在 info.plist 添加 `paypal` 项，填写`returnUrl`，参考如下
 ![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
 
 
@@ -97,9 +97,10 @@
 |liblibPayment.a、libstripepay.a、Stripe.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework|无|无|
 
 ### 工程配置
-1.在URL Types 中添加当前应用的自定义URL Schemes，参考如下
+1. 在URL Types 中添加当前应用的自定义URL Schemes，参考如下
 ![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_stripe_urlscheme.png)
-2.在 info.plist 添加 `stripe` 项，填写`returnUrl`，returnUrl为当前应用的自定义URL Schemes参考如下
+
+2. 在 info.plist 添加 `stripe` 项，填写`returnUrl`，returnUrl为当前应用的自定义URL Schemes参考如下
 ![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_stripe_returnurl.png)
 
 
