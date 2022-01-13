@@ -31,6 +31,20 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
 
 
+## Google Cloud Message （3.3.7+ 新增）
+### 将FCM模块依赖库及资源添加到工程
+
+
+|依赖库|系统库|依赖资源|
+|:--:|:--:|:--:|
+|liblibPush.a<br>libFCMPush.a<br>FirebaseCore.xcframework,<br>FirebaseCoreDiagnostics.xcframework<br>FirebaseInstallations.xcframework,<br>GoogleDataTransport.xcframework<br>GoogleUtilities.xcframework<br>PromisesObjC.xcframework<br>nanopb.xcframework<br>FirebaseMessaging.xcframework|UserNotifications.framework|GoogleService-Info.plist|
+
+
+
+### 帐号配置
+1. 在 [Firebase官网](https://firebase.google.com/) 创建新项目或找到已创建项目
+2. 下载Firebase生成的 `GoogleService-Info.plist` 加到工程中
+
 
 
 <!-- 
