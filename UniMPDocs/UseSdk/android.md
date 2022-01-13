@@ -182,7 +182,9 @@ dependencies {
 
 > 非内置uni小程序集成方式
 
-应用资源包(.wgt)可以选择从云端获取或共享文件等方式。存放到手机SD卡中。宿主通过uni小程序SDK的API调用`releaseWgtToRunPathFromePath`实现释放资源包集成uni小程序。 （暂时不支持assets路径下的资源）
+3.3.7+ 版本 应用资源包(.wgt)可以选择从云端获取或共享文件等方式。存放到手机SD卡中。宿主通过uni小程序SDK的API调用`releaseWgtToRunPath`实现释放资源包集成uni小程序。 （暂时不支持assets路径下的资源）
+
+3.3.7 之前版本 应用资源包(.wgt)可以选择从云端获取或共享文件等方式。存放到手机SD卡中。宿主通过uni小程序SDK的API调用`releaseWgtToRunPathFromePath`实现释放资源包集成uni小程序。 （暂时不支持assets路径下的资源）
 
 ## 代码实现
 
@@ -258,7 +260,37 @@ try {
 }
 ```
 
-#### 启动非内置uni小程序
+#### 启动非内置uni小程序  3.3.7+ 版本
+
+ - 通过调用DCUniMPSDK.getInstance().releaseWgtToRunPath 释放wgt资源包到运行时目录下。
+ - 调用DCUniMPSDK.getInstance().openUniMP启动小程序
+
+**示例：**
+
+```
+UniMPReleaseConfiguration uniMPReleaseConfiguration = new UniMPReleaseConfiguration();
+uniMPReleaseConfiguration.wgtPath = file.getPath();
+uniMPReleaseConfiguration.password = "789456123222";
+
+DCUniMPSDK.getInstance().releaseWgtToRunPath("__UNI__A922B72_minimall", uniMPReleaseConfiguration, new IUniMPReleaseCallBack() {
+      @Override
+      public void onCallBack(int code, Object pArgs) {
+            if(code ==1) {
+                  //释放wgt完成
+                  try {
+                       DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__A922B72_minimall");
+                  } catch (Exception e) {
+                       e.printStackTrace();
+                  }
+            } else{
+                  //释放wgt失败
+            }
+    }
+});
+
+```
+
+#### 启动非内置uni小程序  3.3.7之前 版本
 
  - 通过调用DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath释放wgt资源包到运行时目录下。
  - 调用DCUniMPSDK.getInstance().openUniMP启动小程序
@@ -329,11 +361,11 @@ try {
 #### uni小程序的应用资源集成方式
 
  - 放在项目assets目录下 属于内置应用。无需开发者拷贝应用资源，直接通过appid 调用SDK的openUniMP启动即可。
- - 开发者自行下载或其他方式获取到.wgt文件(uni小程序应用资源包)后。可通过SDK的getAppBasePath获取运行时路径。自行解压释放.wgt文件到运行时路径。.wgt文件生成请参考`第二步，生成小程序应用资源`。也可通过SDK的releaseWgtToRunPathFromePath方法释放wgt资源包。释放完毕后通过openUniMP启动uni小程序。
+ - 开发者自行下载或其他方式获取到.wgt文件(uni小程序应用资源包)后。可通过SDK的getAppBasePath获取运行时路径。自行解压释放.wgt文件到运行时路径。.wgt文件生成请参考`第二步，生成小程序应用资源`。也可通过SDK的releaseWgtToRunPath方法释放wgt资源包。释放完毕后通过openUniMP启动uni小程序。
 
 #### uni小程序应用资源升级
 
- - 可通过SDK的getAppBasePath获取运行时路径。自行拷贝应用资源到运行时路径。也可通过SDK的releaseWgtToRunPathFromePath方法释放升级后的wgt资源包。直接替换原有应用资源。
+ - 可通过SDK的getAppBasePath获取运行时路径。自行拷贝应用资源到运行时路径。也可通过SDK的releaseWgtToRunPath方法释放升级后的wgt资源包。直接替换原有应用资源。
 
 #### uni小程序应用删除
 
