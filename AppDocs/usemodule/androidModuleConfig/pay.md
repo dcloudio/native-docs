@@ -81,3 +81,171 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="Payment-Weixin" value="io.dcloud.feature.payment.weixin.WeiXinPay"/></feature>
 ~~~
+
+
+## paypal支付
+
+### Gradle配置
+**需要在project级的build.gradle设置PayPal私有库**
+~~~
+allprojects {
+    repositories {
+        maven {
+                url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+                credentials {
+                    username 'paypal_sgerritz'
+                    password 'AKCp8jQ8tAahqpT5JjZ4FRP2mW7GMoFZ674kGqHmupTesKeAY2G8NcmPKLuTxTGkKjDLRzDUQ'
+            }
+        }
+    }
+}
+~~~
+
+
+### Androidmainfest.xml文件需要修改的项
+
+**需要在application节点前添加权限**
+
+~~~xml
+<uses-permission android:name="android.permission.INTERNET" />
+~~~
+
+**application节点内配置如下代码**
+~~~xml
+
+<activity
+            android:name="com.paypal.openid.RedirectUriReceiverActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/PYPLAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="paypalpay"
+                    android:scheme="%YOUR-CUSTOM-SCHEME%" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="paypalxo"
+                    android:scheme="%YOUR-CUSTOM-SCHEME%" />
+            </intent-filter>
+        </activity>
+		
+		<meta-data android:name="returnUrl" android:value="%YOUR-CUSTOM-SCHEME%://paypalpay"/>
+~~~
+
+其中`YOUR-CUSTOM-SCHEME`替换为你自定义的scheme，具体说明参考官方[文档](https://developer.paypal.com/sdk/in-app/android/customize-return-url/)
+
+### 需要拷贝的文件
+**需要引入工程的jar文件**
+需要将以下jar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | payment-paypal-release.aar |
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~ xml
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
+    <module name="Payment-Paypal" value="io.dcloud.feature.payment.paypal.PaypalPay" />
+</feature>
+~~~
+
+
+## stripe支付
+
+### Gradle配置
+**app级的build.gradle设置**
+- 在android节点下配置
+~~~
+android {
+	...
+	defaultConfig {
+        minSdkVersion 21
+    }
+	...
+}
+~~~
+
+### Androidmainfest.xml文件需要修改的项
+**application节点内配置如下代码**
+
+~~~xml
+<activity
+            android:name="io.dcloud.feature.payment.stripe.TransparentActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/TranslucentTheme" />
+~~~
+
+### 需要拷贝的文件
+**需要引入工程的jar文件**
+
+需要将以下jar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | payment-stripe-release.aar |
+
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~ xml
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
+    <module name="Payment-Stripe" value="io.dcloud.feature.payment.stripe.StripePay"/>
+</feature>
+~~~
+
+
+## Google支付
+
+### Gradle配置
+
+~~~
+implementation "androidx.appcompat:appcompat:root.androidxVersion"
+~~~
+
+### Androidmainfest.xml文件需要修改的项
+**application节点内配置如下代码**
+
+~~~xml
+<meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+~~~
+
+
+### 需要拷贝的文件
+
+**需要引入工程的jar文件**
+
+需要将以下jar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | payment-google-release.aar |
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~ xml
+<feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
+    <module name="Payment-Google" value="io.dcloud.feature.payment.google.GooglePay"/>
+</feature>
+~~~

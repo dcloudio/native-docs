@@ -494,3 +494,93 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
 ~~~
 
 -->
+
+##  FCM
+
+### Gradle配置
+**需要在project级的build.gradle设置**
+~~~
+
+buildscript {
+
+  repositories {
+
+    google()  // Google's Maven repository
+  }
+
+  dependencies {
+    // ...
+    classpath 'com.google.gms:google-services:4.2.0'  // Google Services plugin
+  }
+}
+
+allprojects {
+  // ...
+
+  repositories {
+    google()  // Google's Maven repository
+    // ...
+  }
+}
+
+~~~
+
+**app级的build.gradle设置**
+- 在build.gradle最前面添加下面内容
+~~~
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+~~~
+
+### Androidmainfest.xml文件需要修改的项
+
+**application节点内配置如下代码**
+
+~~~xml
+
+<application>
+		//...
+        <service
+            android:name="io.dcloud.feature.fcm.FCMVendorService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="%YOUR-CHANNEL-ID%" />
+
+		<meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="%NOTIFICATION_ICON%" />
+		//...
+    </application>
+~~~
+
+- `YOUR-CHANNEL-ID`设置为您自定义的通知的channelId ,
+- `NOTIFICATION_ICON`设置为推送消息的图片
+
+### 需要拷贝的文件
+
+**添加google-services.json**
+
+在创建好Firebase应用时，会有自动弹框指引下载googie-services.json，请根据指引下载google-services.json文件，并根据官网指引将google-services.json文件放在对应的文件夹下, 然后点击continue.
+
+**需要引入工程的aar文件**
+
+需要将以下aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | aps-release.aar,aps-fcm-release.aar |
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+~~~ xml
+<feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl">
+	<module name="fcm" value="io.dcloud.feature.fcm.FCMPushService" />
+</feature>
+~~~
