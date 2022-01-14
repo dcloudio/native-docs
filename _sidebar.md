@@ -8,7 +8,6 @@
   * [iOS 平台](UniMPDocs/Sample/ios.md)
 * API 参考手册
   * [Android API V2版本参考手册](UniMPDocs/API/android-v2.md)
-  * [Android API V1版本参考手册](UniMPDocs/API/android.md)
   * [iOS API 参考手册](UniMPDocs/API/ios.md)
 * 内置功能模块集成
   * [Android 集成教程](UniMPDocs/UseModule/android/android.md)
@@ -18,7 +17,6 @@
     * [Payment（支付）](UniMPDocs/UseModule/android/payment.md)
     * [Speech（语音输入）](UniMPDocs/UseModule/android/speech.md)
     * [LivePusher（直播推流）](UniMPDocs/UseModule/android/livepusher.md)
-    * [Statistic（友盟统计）](UniMPDocs/UseModule/android/umstatistic.md)
     * [X5（腾讯x5内核）](UniMPDocs/UseModule/android/x5.md)
     * [Geolocation（定位）](UniMPDocs/UseModule/android/geolocation.md)
 	* [第三方 SDK 依赖说明](../AppDocs/usemodule/androidModuleConfig/android_Library.md)
