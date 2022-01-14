@@ -4,7 +4,6 @@
   * [iOS 集成教程](UniMPDocs/UseSdk/ios.md)
 * 功能示例
   * [Android 平台 V2版本](UniMPDocs/Sample/android-v2.md)
-  * [Android 平台](UniMPDocs/Sample/android.md)
   * [iOS 平台](UniMPDocs/Sample/ios.md)
 * API 参考手册
   * [Android API V2版本参考手册](UniMPDocs/API/android-v2.md)
