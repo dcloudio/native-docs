@@ -212,52 +212,6 @@
 <feature name="Sqlite" value="io.dcloud.feature.sqlite.DataBaseFeature"/>
 ~~~
 
-## Statistic（友盟统计）
-
-**uni-app推荐使用自带的uni统计，无需集成此模块，[详情](https://tongji.dcloud.net.cn/)**
-
-### 需要添加的文件
-
-将以下文件放入工程的libs下
-
-| 路径 | 文件名 |
-| :-------: | :-------: |
-|SDK\libs|utdid4all-XXX-proguard.jar(XXX为版本号)、statistic-umeng-release.aar|
-
-### AndroidManifest.xml配置
-
-#### 权限配置
-
-```
-<uses-permission android:name="android.permission.READ_LOGS"/>
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
-```
-
-#### application节点配置
-
-```
-<meta-data android:value="%appkey_android%" android:name="UMENG_APPKEY"/>
-<meta-data android:value="%channelid_android%" android:name="UMENG_CHANNEL"/>
-```
-%appkey_android% 和 %channelid_android% 替换成申请的平台信息。
-
-### dcloud_properties.xml配置
-
-**dcloud_properties.xml文件在assets/data目录下**
-
-#### features节点下添加
-
-```
-	<feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl"></feature>
-```
-
-#### services节点下添加
-
-~~~
-	<service name="Statistic" value="io.dcloud.feature.statistics.StatisticsBootImpl"/>
-~~~
-
 ## 拓展模块
 
 + audio-mp3aac-release.aar

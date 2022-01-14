@@ -29,7 +29,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.0.aar,utdid4all-1.5.2.1-proguard.jar|
+| SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.0.aar,utdid4all-XXX-proguard.jar(XXX为版本号)|
 
 **dcloud_properties.xml需要添加如下代码**
 
