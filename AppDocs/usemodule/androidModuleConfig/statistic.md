@@ -31,6 +31,8 @@
 | :-------: | :-------: |
 | SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.0.aar,utdid4all-XXX-proguard.jar(XXX为版本号)|
 
+**注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
+
 **dcloud_properties.xml需要添加如下代码**
 
 dcloud_properties.xml文件在assets/data目录下

@@ -10,6 +10,8 @@
 | :-------: | :-------: |
 | SDK\libs | payment-alipay-release.aar, utdid4all-XXX-proguard.jar(XXX为版本号), alipaySdk-15.6.5-20190718211159-noUtdid.aar |
 
+**注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
+
 ### Androidmainfest.xml文件需要修改的项
 
 **需要在application节点前添加权限**
@@ -44,7 +46,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | payment-weixin-release.aar, wechat-sdk-android-with-mta-5.4.3.jar |
+| SDK\libs | payment-weixin-release.aar, wechat-sdk-android-without-mta-6.7.9.aar |
 
 需要将以下代码文件引入到工程，包名为”$你的包名.wxapi”
 
