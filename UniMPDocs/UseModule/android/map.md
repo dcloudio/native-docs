@@ -2,11 +2,16 @@
 
 uni小程序中目前仅支持高德地图
 
-### 需要拷贝添加的文件
+### 需要拷贝的文件 
 
-| 路径 | 文件 | 
-| :-------: | :-------: |
-| uniMPSDK\Features\libs | amap-libs-release.aar，map-amap-release.aar，weex_amap-release.aar|
+需要将以下aar文件放到工程的libs目录下
+
+| 页面 | 路径 | 文件 | 
+| :-------: | :-------: | :-------: |
+|nvue页面| SDK\libs | AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar，weex_amap-release.aar |
+|vue页面 | SDK\libs | AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar，map-amap-release.aar |
+
+**注意：3.3.6及以下版本需要使用amap-libs-release.aar代替AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar**
 
 将表格中的文件拷贝至主Module中的libs下。
 

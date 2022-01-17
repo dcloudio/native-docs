@@ -34,34 +34,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年1月12日发布——HBuilderX（3.3.7.20220112-alpha）
+### 2022年1月14日发布——HBuilderX（3.3.8.20220114-alpha）
 
-[百度云点击下载SDK，提取码: z4pm](https://pan.baidu.com/s/1ZAsdRjdPqZjm6lGRZ-Xvtg?pwd=z4pm) 
+[百度云点击下载SDK，提取码: 69b2](https://pan.baidu.com/s/1Bbf4tLCpxdz29V6J9Pwn7g?pwd=69b2) 
 
-[和彩云点击下载SDK，提取码: L91a](https://caiyun.139.com/m/i?115CnqiD7SLTi) 
+[和彩云点击下载SDK，提取码: AJfT](https://caiyun.139.com/m/i?115CoAcI3Xpwa) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.7.20220112-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.8.20220114-alpha）版本生成本地打包App资源。
 
-+ 【重要】新增 Payment 模块支持 Paypal支付、Stripe支付、Google支付 [文档](https://uniapp.dcloud.io/app-payment)
-+ 【重要】新增 Push 模块支持 Google推送 Firebase Cloud Push (FCM) [文档](https://uniapp.dcloud.io/app-push-fcm)
-+ 【重要】新增 Statistic 模块支持 Google统计 [文档](https://uniapp.dcloud.io/app-statistic-google)
- 
-+ App平台、H5平台 新增 textarea、input 组件支持 confirm-hold 属性 [详情](https://uniapp.dcloud.io/component/input)
-+ App平台、H5平台 优化 image 组件 draggable 属性默认值改为 false
-+ App平台 优化 uni.request 请求参数支持 ArrayBuffer 类型
-+ App平台 修复 vue3 项目 发行后 renderjs 调用 ownerInstance.callMethod 失效的Bug [详情](https://ask.dcloud.net.cn/question/137832)
-+ App平台 修复 vue3 项目 picker 组件默认语言固定为英文的Bug [详情](https://ask.dcloud.net.cn/question/136954)
-+ App-iOS平台 修复 nvue swiper-list 组件滚动条无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/136261)
- 
-+ 新增 一键登录 支持 closeIcon 属性设置自定义关闭按钮图片 [文档](https://uniapp.dcloud.io/univerify)
-+ 更新 uni-AD 快手广告SDK Android为 3.3.20 版，iOS为 3.3.20 版；快手内容联盟SDK Android为 3.3.27 版， iOS为 3.3.27 版
-+ iOS平台 修复 小程序未开启后台运行，通过手势关闭小程序后快速打开小程序偶现崩溃的Bug
-+ iOS平台 修复 在隐藏小程序的回调方法中再次打开同一小程序无效的Bug
-+ iOS平台 修复 同时打开多个小程序 getCurrentPageUrl 获取当前显示的小程序页面路径不正确的Bug
-+ iOS平台 修复 uni-AD 使用自定义 storyboard 时开屏广告底部应用图标、名称可能不显示的Bug
-
-
- 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
 `注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
@@ -73,9 +53,9 @@
 `注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
-    			
-[百度网盘下载历史版本，提取码: xk56](https://pan.baidu.com/s/1XRxHzekWMbeUuuBSgzBoug?pwd=xk56)
+ 				
+[百度网盘下载历史版本，提取码: mrav](https://pan.baidu.com/s/1EvXy3-r7TtoX4x4dlMQ6Pg?pwd=mrav)
 
-[和彩云点击下载历史版本，提取码: 98et](https://caiyun.139.com/m/i?115CoogyI75MC) 
+[和彩云点击下载历史版本，提取码: SxtD](https://caiyun.139.com/m/i?115CoAcFiDDLB) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
