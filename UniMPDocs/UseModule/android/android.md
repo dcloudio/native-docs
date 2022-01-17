@@ -1,30 +1,24 @@
-SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件，在`uniMPSDK/Features`目录中
-目录结构
+SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件
 
-```
-|-- uniMPSDK/Features
-	|-- Feature 依赖库说明.xls // 功能模块配置表
-	|-- libs				// 各功能模块的依赖库存放位置
-```
-请参考 `Feature 依赖库说明.xls` 配置表，添加模块所需依赖。修改项目相关配置信息；
+请参考 当前文档，添加模块所需依赖。修改项目相关配置信息；
 
 ### 集成方式
 
 #### 下面以 map 模块为例
-首先查看`Feature 依赖库说明.xls` 表格说明需要添加amap-libs-release.aar,map-amap-release.aar两个库文件 及其AndroidManifest.xml等配置！
+首先查看 [map集成文档](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/map?id=%e9%ab%98%e5%be%b7%e5%9c%b0%e5%9b%be) 文档中说明 vue需要添加AMap3DMap_XXX_AMapSearch_XXX.jar，AMap_Location_XXX.jar，map-amap-release.aar三个库文件 及其AndroidManifest.xml等配置！
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_3.png)
 
-将amap-libs-release.aar,map-amap-release.aar两个库文件拷贝到项目中。主Module中的libs下。
+将AMap3DMap_XXX_AMapSearch_XXX.jar，AMap_Location_XXX.jar，map-amap-release.aar两个库文件拷贝到项目中。主Module中的libs下。
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
 地图依赖库文件拷贝完毕后。需要在build.gradle配置导入你引用的两个库文件。
 ```
 	implementation files('libs/map-amap-release.aar')
-	implementation files('libs/amap-libs-release.aar')
+	implementation files('libs/AMap_Location_XXX.jar')
+	implementation files('libs/AMap3DMap_XXX_AMapSearch_XXX.jar')
 ```
-参考`Feature 依赖库说明.xls` 中Map配置信息修改工程项目：
+参考 [map集成文档](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/map?id=%e9%ab%98%e5%be%b7%e5%9c%b0%e5%9b%be)  中Map配置信息修改工程项目：
 
  - 修改AndroidManifest.xml 增加以下权限及配置
 
@@ -53,8 +47,7 @@ SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块�
 ```
 features节点
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
-services节点
-<service name="Maps" value="io.dcloud.js.map.MapInitImpl"/>
+
 ```
 
 以上配置完毕后。运行项目即可体验模块功能了。
