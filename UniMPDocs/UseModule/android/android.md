@@ -1,6 +1,6 @@
 SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件
 
-请参考 当前文档，添加模块所需依赖。修改项目相关配置信息；
+当前文档目录下 列出了常见的模块配置步骤。   更多模块配置，请参看 [其他模块](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/androidModuleConfig/others)
 
 ### 集成方式
 
