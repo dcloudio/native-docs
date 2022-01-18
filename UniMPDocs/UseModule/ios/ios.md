@@ -331,7 +331,7 @@ UniMPSDK/Feature目录结构
 	    </td>
 	</tr>
 	<tr>
-	    <td>zip</td>
+	    <td>zip(解压缩)</td>
 	    <td><a href="https://www.html5plus.org/doc/zh_cn/zip.html"> plus.zip </a></td>
 	    <td></td>
 	    <td>
@@ -346,7 +346,7 @@ UniMPSDK/Feature目录结构
 		</td>
 	</tr>
 	<tr>
-	    <td rowspan="2">Barcode</td>
+	    <td rowspan="2">Barcode(扫码)</td>
 	    <td rowspan="2"><a href="https://www.html5plus.org/doc/zh_cn/barcode.html"> plus.barcode </a></td>
 	    <td rowspan="2"><a href="https://uniapp.dcloud.io/api/system/barcode"> barcode </a></td>
 	    <td> 
@@ -476,7 +476,7 @@ UniMPSDK/Feature目录结构
 	    </td>
 	</tr>
 	<tr>
-		<td rowspan="3">Payment</td>
+		<td rowspan="3">Payment（支付）</td>
 		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/payment.html"> plus.payment </a></td>
 		<td rowspan="3"><a href="https://uniapp.dcloud.io/api/plugins/payment"> payment </a></td>
 		<td>
@@ -976,8 +976,8 @@ UniMPSDK/Feature目录结构
 	    <td>
 	    </td>
 	    <td>
-		CoreBluetooth.framework<br/>
-		CoreLocation.framework
+		NSBluetoothPeripheralUsageDescription<br/>
+		NSBluetoothAlwaysUsageDescription
 	    </td>
 	</tr>
 </table>
