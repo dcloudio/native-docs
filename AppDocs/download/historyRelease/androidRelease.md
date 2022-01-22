@@ -1,3 +1,9 @@
+### 2021年12月30日发布——HBuilderX（3.3.5.20211229）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.5.20211229）版本生成本地打包App资源。
++ 修复 3.3.3 版本引出的 nvue video 组件全屏后 cover-view 在部分情况下排版不正确的Bug
++ 修复 targetSdkVersion 设置为 31 在 Android 12 设备可能无法安装的Bug
+
 ### 2021年12月29日发布——HBuilderX（3.3.4.20211228）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.4.20211228）版本生成本地打包App资源。
