@@ -8,16 +8,29 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2021年12月29日发布——HBuilderX（3.3.5.20211229） 
+### 2022年01月21日发布——HBuilderX（3.3.9.20220121） 
 
-[百度云点击下载SDK，提取码: cwgg](https://pan.baidu.com/s/150MMQEibDLd39jzDwg-TkQ?pwd=cwgg)
+[百度云点击下载SDK，提取码: m3x7](https://pan.baidu.com/s/1UxOH2PLNlF7DY9M2iGrSlQ?pwd=m3x7)
 
-[和彩云点击下载SDK，提取码: Ukor](https://caiyun.139.com/m/i?115CepOuv0mHh) 
+[和彩云点击下载SDK，提取码: YcSc](https://caiyun.139.com/m/i?115CoBJLxLexB) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.5.20211229）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.9.20220121）版本生成本地打包App资源。
 
-+ App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
-+ App平台 修复 vue3 项目 picker-view 组件报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3130)
+
++ 【重要】新增 Payment 模块支持 Paypal支付、Stripe支付、Google支付 [文档](https://uniapp.dcloud.io/app-payment)
++ 【重要】新增 Statistic 模块支持 Google统计 [文档](https://uniapp.dcloud.io/app-statistic-google)
+
++ App平台、H5平台 新增 textarea、input 组件支持 confirm-hold 属性 [详情](https://uniapp.dcloud.io/component/input)
++ App平台、H5平台 优化 image 组件 draggable 属性默认值改为 false
++ App平台 优化 uni.request 请求参数支持 ArrayBuffer 类型
++ App平台 修复 vue3 项目 发行后 renderjs 调用 ownerInstance.callMethod 失效的Bug [详情](https://ask.dcloud.net.cn/question/137832)
++ App平台 修复 vue3 项目 picker 组件默认语言固定为英文的Bug [详情](https://ask.dcloud.net.cn/question/136954)
++ App-iOS平台 修复 nvue swiper-list 组件滚动条无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/136261)
++ App-iOS平台 修复 3.3.3 版本引出的支持多个音频同时播放引发iOS影响静音开关的问题，默认不支持同时播放多个文件，如果需要可手动设置 sessionCategory
+  
++ 新增 一键登录 支持 closeIcon 属性设置自定义关闭按钮图片 [文档](https://uniapp.dcloud.io/univerify)
++ 更新 uni-AD 快手广告SDK Android为 3.3.20 版，iOS为 3.3.20 版；快手内容联盟SDK Android为 3.3.27 版， iOS为 3.3.27 版
++ iOS平台 修复 uni-AD 使用自定义 storyboard 时开屏广告底部应用图标、名称可能不显示的Bug
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -26,9 +39,9 @@
     
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
-[百度网盘下载历史版本，提取码: jvc2]( https://pan.baidu.com/s/1L-MsoBf5gy3lnQxfySDM7g?pwd=jvc2)
+[百度网盘下载历史版本，提取码: 7xyg](https://pan.baidu.com/s/1wJSpfzeu8FgG7ALg24aGvA?pwd=7xyg)
 
-[和彩云点击下载SDK，提取码: Ni9Q](https://caiyun.139.com/m/i?115CnWvv3vbJB) 
+[和彩云点击下载SDK，提取码: vk6D](https://caiyun.139.com/m/i?115CeVqlXiOBR) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 

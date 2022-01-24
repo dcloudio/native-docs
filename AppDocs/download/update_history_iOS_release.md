@@ -1,4 +1,8 @@
 ## 正式版历次更新说明
+### 3.3.5
++ App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
++ App平台 修复 vue3 项目 picker-view 组件报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3130)
+
 ### 3.3.4
 + App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
 + App平台 修复 vue3 项目 input/textarea 组件使用 v-model 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3107)
