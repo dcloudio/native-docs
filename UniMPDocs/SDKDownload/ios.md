@@ -9,21 +9,11 @@
 
 ## 更新日志
 
-#### SDK 3.3.7
-[点击下载 UniMP_iOS_SDK](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_iOS%403.3.7.zip)
+#### SDK 3.3.10
+[点击下载 UniMP_iOS_SDK](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_iOS%403.3.10.zip)
 
-+ 新增 小程序 wgt 资源文件支持加密 [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=installWgt)
-+ iOS平台 修复 小程序未开启后台运行，通过手势关闭小程序后快速打开小程序偶现崩溃的Bug
-+ iOS平台 修复 在隐藏小程序的回调方法中再次打开同一小程序无效的Bug
-+ iOS平台 修复 同时打开多个小程序 getCurrentPageUrl 获取当前显示的小程序页面路径不正确的Bug
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.7.20220112-alpha.html)
-
-
-#### SDK 3.3.5
-[点击下载 UniMP_iOS_SDK](https://download.dcloud.net.cn/unimpsdk/UniMPSDK_iOS@3.3.5.zip)
-
-+ **优化 启动小程序直达页面及启动参数属性调整，热启动小程序直达页面及参数也会生效** [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f%e5%b9%b6%e4%bc%a0%e5%8f%82);
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.5.20211229.html)
++ 修复 动态切换横竖屏导致页面布局异常的Bug;
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.10.20220124.html)
 
 
 ## 历史版本
@@ -31,6 +21,19 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.3.7
+
++ 新增 小程序 wgt 资源文件支持加密 [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/API/ios?id=installWgt)
++ iOS平台 修复 小程序未开启后台运行，通过手势关闭小程序后快速打开小程序偶现崩溃的Bug
++ iOS平台 修复 在隐藏小程序的回调方法中再次打开同一小程序无效的Bug
++ iOS平台 修复 同时打开多个小程序 getCurrentPageUrl 获取当前显示的小程序页面路径不正确的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.7.20220112-alpha.html)
+
+#### SDK 3.3.5
+
++ **优化 启动小程序直达页面及启动参数属性调整，热启动小程序直达页面及参数也会生效** [文档](https://nativesupport.dcloud.net.cn/UniMPDocs/Sample/ios?id=%e5%90%af%e5%8a%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f%e5%b9%b6%e4%bc%a0%e5%8f%82);
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.5.20211229.html)
 
 #### SDK 3.2.16
 
