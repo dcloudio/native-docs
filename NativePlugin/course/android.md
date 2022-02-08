@@ -613,6 +613,17 @@ public void onActivityResume() {
 #### 广告插件说明
 + 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK，目前不支持自行开发包含这两个SDK的原生插件，云打包会导致冲突；
 
+#### 插件混淆配置
+
+请将以下混淆配置信息添加到相应的原生插件proguard配置文件中即可。
+
+```
+-keep public class * extends io.dcloud.weex.AppHookProxy{*;}
+-keep public class * extends io.dcloud.feature.uniapp.UniAppHookProxy{*;}
+-keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
+-keep public class * extends io.dcloud.feature.uniapp.ui.component.UniComponent{*;}
+```
+
 ## 常见问题
 
 Q:云打包 运行插件提示"XXX"插件不存在？
