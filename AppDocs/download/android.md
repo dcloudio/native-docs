@@ -14,7 +14,7 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115CeprQLpymv)，提取码: 7UTt
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CnWfhS1Aka)，提取码: pNHq
 
 [历史更新日志](/AppDocs/download/historyRelease/androidRelease.md)
 
