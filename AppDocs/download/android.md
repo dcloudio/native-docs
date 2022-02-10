@@ -2,13 +2,15 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2022年01月25日发布——HBuilderX（3.3.10.20220124）
+### 2022年02月10日发布——HBuilderX（3.3.11.20220209）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CeVnMZm1fq)，提取码: AWiQ
+[和彩云](https://caiyun.139.com/m/i?115CnqbyLPVoX)，提取码: Z3qK
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.10.20220124）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
++ 修复 3.3.10版本引出的 picker 组件样式错误的Bug
++ 修复 3.3.9 版本引出的 一键登录 同时自定义 logo 与 closeIcon 可能导致显示异常的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
