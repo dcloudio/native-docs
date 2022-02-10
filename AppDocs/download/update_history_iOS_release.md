@@ -1,4 +1,6 @@
 ## 正式版历次更新说明
+### 3.3.10
+
 ### 3.3.9
 + 【重要】新增 Payment 模块支持 Paypal支付、Stripe支付、Google支付 [文档](https://uniapp.dcloud.io/app-payment)
 + 【重要】新增 Statistic 模块支持 Google统计 [文档](https://uniapp.dcloud.io/app-statistic-google)

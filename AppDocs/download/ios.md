@@ -8,13 +8,16 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年01月24日发布——HBuilderX（3.3.10.20220124） 
+### 2022年02月09日发布——HBuilderX（3.3.11.20220209） 
 
 [百度云点击下载SDK，提取码: 54fz](https://pan.baidu.com/s/1qVN1vDWsCjswIxtstakgcg?pwd=54fz)
 
-[和彩云点击下载SDK，提取码: 4uP9](https://caiyun.139.com/m/i?115CopE82kjj6) 
+[和彩云点击下载SDK，提取码: zE1p](https://caiyun.139.com/m/i?115CnWe9LNY8q) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.10.20220124）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
+
++ App-iOS平台 修复 3.3.9 版本引出的 nvue swiper-list 组件中的 list 组件设置 show-scrollbar 为 false 时吸顶效果异常的Bug [详情](https://ask.dcloud.net.cn/question/138944)
++ iOS平台 修复 Downloader 下载图片文件可能失败的Bug [详情](https://ask.dcloud.net.cn/question/116101)
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -23,9 +26,10 @@
     
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
-[百度网盘下载历史版本，提取码: hevn](https://pan.baidu.com/s/1vsugO_lPM2XYAUQwgBOcxA?pwd=hevn)
 
-[和彩云点击下载SDK，提取码: nePY](https://caiyun.139.com/m/i?115CepmhL6nPS) 
+[百度网盘下载历史版本，提取码: ci8q](https://pan.baidu.com/s/103T7rnxCqSuStV4Hh-x3dA?pwd=ci8q)
+
+[和彩云点击下载SDK，提取码: aTjK](https://caiyun.139.com/m/i?115Cep6zp8Egi) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 
