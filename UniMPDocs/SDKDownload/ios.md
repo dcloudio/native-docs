@@ -9,11 +9,11 @@
 
 ## 更新日志
 
-#### SDK 3.3.10
-[点击下载 UniMP_iOS_SDK](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_iOS%403.3.10.zip)
+#### SDK 3.3.11
+[点击下载 UniMP_iOS_SDK](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_iOS%403.3.11.zip)
 
-+ 修复 动态切换横竖屏导致页面布局异常的Bug;
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.10.20220124.html)
++ 修复 频繁快速关闭小程序在启动小程序直达页面偶现崩溃的Bug；
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.11.20220209.html)
 
 
 ## 历史版本
@@ -21,6 +21,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.3.10
+
++ 修复 动态切换横竖屏导致页面布局异常的Bug;
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.10.20220124.html)
 
 #### SDK 3.3.7
 
@@ -56,7 +61,7 @@
 #### SDK 3.2.3 (补丁版本2)
 
 + 修复 3.2.3 版本引起的小程序内 wgt 热更新后白屏的Bug；
-+ 修复 3.2.3 版本引起的频繁快速启动关闭小程序偶像崩溃的Bug；
++ 修复 3.2.3 版本引起的频繁快速启动关闭小程序偶现崩溃的Bug；
 + 修复 3.2.3 版本引起的未开启手势关闭并使用 push 方式打开小程序时原生导航栏没有正常隐藏的Bug；
 + 修复 3.2.3 版本引起的未开启手势关闭并使用 push 方式第二次打开小程序后，手势还可以关闭的Bug；
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.2.3.20210825.html)
