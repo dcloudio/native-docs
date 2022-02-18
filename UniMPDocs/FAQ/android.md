@@ -101,6 +101,10 @@ A: 请按以下配置修改：
 A：注意两点，  1   activity 换成 AppCompatActivity  2  libs 里面没有用到的aar 尽量去掉。  
 
 
+## Q: uni-app项目 能否集成到android studio的 任意module下的asset中
+
+A：不可以，默认只能放在app module下。 
+
 
 
 	
