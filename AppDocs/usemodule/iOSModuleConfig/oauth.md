@@ -202,7 +202,7 @@ Oauth 模块支持
 
 3.在 info.plist 添加 Schemes 白名单
 
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_bmd.png)
+![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/oauth_facebook_bmd.png)
 
 
 **注意 :除苹果授权登录外，都需要实现如下方法**
