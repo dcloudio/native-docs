@@ -85,7 +85,12 @@ allprojects {
 ~~~
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 ~~~
-
+- 在dependencies下添加下面内容
+~~~
+dependencies {
+    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+}
+~~~
 
 ### 需要拷贝的文件
 

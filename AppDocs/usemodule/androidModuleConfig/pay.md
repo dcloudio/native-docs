@@ -103,6 +103,13 @@ allprojects {
 }
 ~~~
 
+**在app级的build.gradle配置**
+~~~
+dependencies {
+    implementation('com.paypal.checkout:android-sdk:0.5.2')
+}
+~~~
+
 
 ### Androidmainfest.xml文件需要修改的项
 
@@ -173,11 +180,15 @@ dcloud_properties.xml文件在assets/data目录下
 - 在android节点下配置
 ~~~
 android {
-	...
 	defaultConfig {
         minSdkVersion 21
     }
-	...
+	
+    dependencies {
+        implementation "androidx.appcompat:appcompat:${rootProject.ext.androidxVersion}"
+        implementation "androidx.legacy:legacy-support-v4:${rootProject.ext.androidxVersion}"
+        implementation 'com.stripe:stripe-android:18.2.0'
+    }
 }
 ~~~
 
@@ -218,7 +229,10 @@ dcloud_properties.xml文件在assets/data目录下
 ### Gradle配置
 
 ~~~
-implementation "androidx.appcompat:appcompat:root.androidxVersion"
+dependencies {
+    implementation "androidx.appcompat:appcompat:${rootProject.ext.androidxVersion}"
+    implementation 'com.google.android.gms:play-services-wallet:18.1.3'
+}
 ~~~
 
 ### Androidmainfest.xml文件需要修改的项

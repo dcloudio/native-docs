@@ -531,6 +531,13 @@ allprojects {
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 ~~~
 
+- 在dependencies下添加下面内容
+~~~
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+}
+~~~
+
 ### Androidmainfest.xml文件需要修改的项
 
 **application节点内配置如下代码**

@@ -230,6 +230,31 @@ dcloud_properties.xml文件在assets/data目录下
 <module name="OAuth-Google" value="io.dcloud.feature.google.GoogleOAuthService"/>
 ~~~
 
+**gradle配置**
+
+在project目录下build.gradle配置如下：
+~~~
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        ...
+        classpath 'com.google.gms:google-services:4.2.0'
+    }
+}
+~~~
+
+在app目录下的build.gradle配置如下：
+
+~~~
+dependencies {
+    ...
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
+}
+
+~~~
+
 
 ## Facebook登录Android离线打包
 
@@ -264,4 +289,14 @@ dcloud_properties.xml文件在assets/data目录下
 <module name="OAuth-Facebook" value="io.dcloud.feature.facebook.FacebookOAuthService"/>
 ~~~
 
+**gradle配置**
+
+在app目录下的build.gradle配置如下：
+
+~~~
+dependencies {
+    ...
+    implementation 'com.facebook.android:facebook-login:4.42.0'
+}
+~~~
 
