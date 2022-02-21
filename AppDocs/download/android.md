@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CnqbyLPVoX)，提取码: Z3qK
+[和彩云](https://caiyun.139.com/m/i?115Cop0TpWE3r)，提取码: d14d
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
 + 修复 3.3.10版本引出的 picker 组件样式错误的Bug
