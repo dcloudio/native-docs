@@ -354,8 +354,9 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 ### 导入 uni-app 资源
 
 #### 生成 uni-app 本地打包资源
-
-首先需要生成本地打包资源，在 HBuilderX 中选您的 uni-app 工程，`右键->发现->原生App-本地打包->生成本地打包App资源`
+本操作需要在 HBuilderX 中进行,需要您新建一个uni-app项目,
+并编写js端代码,最后导出本地资源
+`右键->发现->原生App-本地打包->生成本地打包App资源`
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi14.png)
 
