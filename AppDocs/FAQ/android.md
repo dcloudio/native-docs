@@ -22,7 +22,7 @@
 adb: failed to install XXX.apk: Failure [INSTALL_PARSE_FAILED_MANIFEST_MALFORMED: Failed parse during installPackageLI: /data/base.apk (at Binary XML file line #173): XXX.XXX.XXX.TestActivity: Targeting S+ (version 31 and above) requires that an explicit value for android:exported be defined when intent filters are present]
 ~~~
 
-Android 12 中要求包含 <intent-filter> 的 activity 、 service 或 receiver 必须为这些应用组件显示声明 android:exported 属性，如下所示：
+Android 12 中要求包含 intent-filter 的 activity 、 service 或 receiver 必须为这些应用组件显示声明 android:exported 属性，如下所示：
 
 ~~~
 <activity
