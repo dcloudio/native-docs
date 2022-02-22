@@ -1,3 +1,44 @@
+### 离线打包设置隐私协议状态
+
+如果离线打包需要自定义隐私协议，为了不影响SDK正常使用，需要用户在同意或拒绝隐私状态时同步到SDK。
+
+- SDK.setAgreePrivacy(Context context,boolean isAllow)
+
+  设置SDK隐私协议的状态
+  
+  支持版本：3.3.1+
+  
+- SDK.isAgreePrivacy(Context context)
+
+  获取SDK隐私协议的状态
+  
+  支持版本：3.3.1+
+
+### Android 12 适配
+
+离线打包如果将targetSdkVersion设置为31时，在Android 12设备上安装是可能会报如下错误信息
+
+~~~
+adb: failed to install XXX.apk: Failure [INSTALL_PARSE_FAILED_MANIFEST_MALFORMED: Failed parse during installPackageLI: /data/base.apk (at Binary XML file line #173): XXX.XXX.XXX.TestActivity: Targeting S+ (version 31 and above) requires that an explicit value for android:exported be defined when intent filters are present]
+~~~
+
+Android 12 中要求包含 <intent-filter> 的 activity 、 service 或 receiver 必须为这些应用组件显示声明 android:exported 属性，如下所示：
+
+~~~
+<activity
+    android:name="XXX.XXX.XXX.TestActivity"
+    android:exported="true">
+    <intent-filter>
+        ......
+    </intent-filter>
+</activity>
+
+~~~
+
+如果冲突的组件注册在aar的AndroidManifest.xml中，只需要将组件的注册信息拷贝到主项目，然后添加android:exported="true"即可
+
+**注意：Android系统默认包含 intent-filter 的组件android:exported默认值为true，所以建议将android:exported设置为true**
+
 ### 升级到3.2.5以上版本之后离线打包无法正常启动
 
 3.2.5及以上版本支持了Java 8，集成时需要在项目的build.gradle添加如下配置

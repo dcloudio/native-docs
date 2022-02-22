@@ -450,7 +450,7 @@ dcRichAlert.show({
 
 - 创建uni-app工程或在已有的uni-app工程编写相关的.nvue 和.vue文件。使用uni-app插件中的module 或 component。
 
-- xxx.vue 示例代码（源码请参考UniPlugin-Hello-AS项目中`uniapp示例工程源码`文件夹的`unipluginDemo`工程）
+- xxx.vue 示例代码（源码请参考UniPlugin-Hello-AS项目中`uniapp示例工程源码`文件夹的`unipluginDemo`工程，**导入示例工程时需要重新获取appid**）
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_5.png" width=700>
 
