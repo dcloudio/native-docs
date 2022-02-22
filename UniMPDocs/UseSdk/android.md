@@ -215,8 +215,8 @@ DCUniMPSDK.getInstance().initialize(this, config);
 为了防止其他三方SDK可能影响小程序的运行 请禁止在小程序进程初始化其他三方SDK
 
 ```
-// 非小程序进程
-if(!RuningAcitvityUtil.getAppName(getBaseContext()).contains("io.dcloud.unimp")) {
+// 非小程序进程（这里的unimp 关键字 可以根据宿主的具体情况进行调整）
+if(!RuningAcitvityUtil.getAppName(getBaseContext()).contains("unimp")) {
 	//请在此处初始化其他三方SDK
 	... ...
 }
