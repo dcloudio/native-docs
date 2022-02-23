@@ -35,13 +35,23 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年1月14日发布——HBuilderX（3.3.8.20220114-alpha）
+### 2022年2月22日发布——HBuilderX（3.3.12.20220222-alpha）
 
-[百度云点击下载SDK，提取码: 69b2](https://pan.baidu.com/s/1Bbf4tLCpxdz29V6J9Pwn7g?pwd=69b2) 
 
-[和彩云点击下载SDK，提取码: AJfT](https://caiyun.139.com/m/i?115CoAcI3Xpwa) 
+[百度云点击下载SDK，提取码: kufb](https://pan.baidu.com/s/1cPXINF68DVIUpVpcRvoe7w?pwd=kufb) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.8.20220114-alpha）版本生成本地打包App资源。
+[和彩云点击下载SDK，提取码: Ew9o](https://caiyun.139.com/m/i?115CoooNj4ATm) 
+
++ App平台、H5平台 修复 vue3 项目两个开启了下拉刷新的页面跳转后返回，下拉刷新不触发 onPullDownRefresh 生命周期的Bug [详情](https://github.com/dcloudio/uni-app/issues/3187)
++ App平台 修复 vue3 项目 nvue 页面使用 map 组件时部分方法不生效的Bug [详情](https://ask.dcloud.net.cn/question/138515)
++ App-iOS平台 修复 3.3.2 版本引出的支持多个音频同时播放引发iOS影响静音开关的问题，默认不支持同时播放多个文件，如果需要可手动设置 sessionCategory
++ App-iOS平台 修复 vue3 项目 canvas 组件绘制本地图像后无法导出到本地到Bug
++ 更新 uni-AD 腾讯优量汇SDK Android为 4.450.1320 版，iOS为 4.13.50 版；今日头条穿山甲SDK Android为 4.3.0.1 版， iOS为 4.3.0.2 版；快手广告SDK Android为 3.3.21 版，iOS为 3.3.21 版
++ iOS平台 修复 Downloader 下载图片文件可能失败的Bug [详情](https://ask.dcloud.net.cn/question/116101)
++ iOS平台 修复 geitImageInfo 可能不触发回调的Bug [详情](https://ask.dcloud.net.cn/question/139361)
+
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.12.20220222-alpha）版本生成本地打包App资源。
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
@@ -55,8 +65,9 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
  				
-[百度网盘下载历史版本，提取码: mrav](https://pan.baidu.com/s/1EvXy3-r7TtoX4x4dlMQ6Pg?pwd=mrav)
+				
+[百度网盘下载历史版本，提取码: vxt8](https://pan.baidu.com/s/1GmpLeDmlQG2_fh5P6VujXA?pwd=vxt8)
 
-[和彩云点击下载历史版本，提取码: SxtD](https://caiyun.139.com/m/i?115CoAcFiDDLB) 
+[和彩云点击下载历史版本，提取码: a1P1](https://caiyun.139.com/m/i?115CoooLNjXru) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)

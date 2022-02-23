@@ -1,4 +1,6 @@
 ## Alpha版历次更新说明
+### 3.3.8
+
 ### 3.3.7
 + 【重要】新增 Payment 模块支持 Paypal支付、Stripe支付、Google支付 [文档](https://uniapp.dcloud.io/app-payment)
 + 【重要】新增 Push 模块支持 Google推送 Firebase Cloud Push (FCM) [文档](https://uniapp.dcloud.io/app-push-fcm)
