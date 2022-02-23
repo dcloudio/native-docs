@@ -1,3 +1,8 @@
+### 2022年01月15日发布——HBuilderX（3.3.8.20220114-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.8.20220114-alpha）版本生成本地打包App资源。
++ 修复 3.3.7 版本引出的 nvue list 组件滚动后也会触发 click 事件的Bug
+
 ### 2022年01月12日发布——HBuilderX（3.3.7.20220112-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.7.20220112-alpha）版本生成本地打包App资源。

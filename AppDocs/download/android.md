@@ -21,14 +21,15 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年01月15日发布——HBuilderX（3.3.8.20220114-alpha）
+### 2022年02月23日发布——HBuilderX（3.3.12.20220222-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Cep7IZwhzX)，提取码: kCtX
+[和彩云](https://caiyun.139.com/m/i?115CeVPF3OFSV)，提取码: uwEg
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.8.20220114-alpha）版本生成本地打包App资源。
-+ 修复 3.3.7 版本引出的 nvue list 组件滚动后也会触发 click 事件的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.12.20220222-alpha）版本生成本地打包App资源。
++ 更新 uni-AD 腾讯优量汇SDK为 4.450.1320 版；今日头条穿山甲SDK为 4.3.0.1 版；快手广告SDK为 3.3.21 版
++ 修复 一键登录 授权页面服务协议自定义复选框状态图片设置不正确的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
