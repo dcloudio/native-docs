@@ -545,7 +545,6 @@ HBuilderX 中可视化配置效果：
   |-- nativeplugins
     |-- DCloud-RichAlert(实际包含iOS Extension的uni原生插件标识)
       |-- ios-extension.json
-      |-- package.json
       |-- ios-XXXExt.mobileprovision
 ```
 
