@@ -40,7 +40,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libSDWebImage.a、libUniAd-Csj.a、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|BUAdSDK.bundle|
+|libUniAD.a、libSDWebImage.a、libUniAd-Csj.a、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|BUAdSDK.bundle|
 
 ## 腾讯广点通
 ### 添加依赖资源及文件
