@@ -20,10 +20,10 @@
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 |Google登录|v5.0.2|Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.20|UniAD/快手|
+|快手|v3.3.21|UniAD/快手|
 |快手内容联盟|v3.3.27|UniAD/快手内容联盟|
-|广点通|v4.13.31|UniAD/广点通|
-|穿山甲|v4.1.0.1|UniAD/穿山甲|
+|广点通|v4.13.50|UniAD/广点通|
+|穿山甲|v4.3.0.2|UniAD/穿山甲|
 |Sigmob|v3.5.0|UniAD/Sigmob|
 |Paypal支付|v0.79.0|Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
