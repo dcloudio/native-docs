@@ -106,6 +106,10 @@ A：注意两点，  1   activity 换成 AppCompatActivity  2  libs 里面没有
 A：不可以，默认只能放在app module下。 
 
 
+## Q: unimp支持打开多个小程序实例吗？
+
+A： 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
+
 
 	
 ## Q: 打包Android 10上无法启动相机
