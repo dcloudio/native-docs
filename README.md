@@ -57,11 +57,16 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 - **顺丰速运：** 顺丰速运官方提供查、寄快递，网点查询、邮费查询等相关服务的一站式快递物流服务软件。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.sf.activity)、[AppStore下载](https://apps.apple.com/cn/app/id899529698)
 - **驿收发：** 驿收发快递驿站App。[AppStore下载](https://apps.apple.com/cn/app/id1515218332)
 - **我i科大：** 河南科技大学移动App。[官方下载](https://download.haust.edu.cn/haust/getApp/ihaust.apk)、[AppStore下载](https://apps.apple.com/cn/app/id1119046005)
-- **大参林百科：** 大参林医药集团股份有限公司智能零售App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.dsl.newwiki)、[AppStore下载](https://apps.apple.com/cn/app/id1437878101)
+- **郑州大学移动校园：** 郑州大学官方校园生活工具App。[官方下载](http://app6.zzu.edu.cn/index.html)、[AppStore下载](https://apps.apple.com/cn/app/id1219859554)
 - **多彩洛职：** 洛阳职业技术学院移动App。[官方下载](http://download.lypt.edu.cn/dclz/dclz.apk)、[AppStore下载](https://apps.apple.com/cn/app/id1532844806)
-- **网易藏宝阁:** 网易官方游戏交易平台。 [App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.netease.cbg)
+- **大参林百科：** 大参林医药集团股份有限公司智能零售App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.dsl.newwiki)、[AppStore下载](https://apps.apple.com/cn/app/id1437878101)
+- **网易藏宝阁：** 网易官方游戏交易平台。 [App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.netease.cbg)
+- **咪咕视频爱看版：** 咪咕视频爱看版App。[App下载](https://android.myapp.com/myapp/detail.htm?apkName=com.wondertek.miguaikan)、[AppStore下载](https://apps.apple.com/cn/app/id1168490851)
 - **剧豆星光：** 帮助线下门店更好的进行积分营销App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.xar.weichat)
 - **国家医保服务平台：** 国家统一的医保服务平台App，为百姓提供参保缴费、信息查询、待遇申请、业务经办等多种使用功能服务。 [App下载](https://a.app.qq.com/o/simple.jsp?pkgname=cn.hsa.app)、[AppStore下载](https://apps.apple.com/cn/app/id1490383593)
+- **乐健体育：** 一款智能云端健身App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.ledreamer.zz)
+- **海康威视：** 海康互联App。[官方下载](https://www.me-app.net/Sentinels)
+- **伴玩：** 比心陪玩交友平台App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.wanjiu.heishi)
 
 
 ## FAQ
