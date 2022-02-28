@@ -10,7 +10,7 @@ uni原生插件（native plugin）提交[DCloud插件市场](https://ext.dcloud.
 
 
 ## package.json
-uni原生插件描述文件，完整格式如下：
+uni原生插件描述文件，仅云端打包生效，完整格式如下：
 
 **注意：配置文件为 json 格式，不能有注释，否则会解析失败**
 
