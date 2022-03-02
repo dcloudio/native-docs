@@ -38,12 +38,15 @@
 **解决办法：**
 
 1. 依次查看插件iOS目录下面的 .framework 库文件，下面以 `UTDID.framework` 为例，打开后发现 UTDID、Resources、Headers 大小都为 1kb，说明这几个文件既是软链（在Windows上加压后被转换为文本文件，无法链接到真实文件）
+
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/34a38c1ce14b8a60d4616620dae3d825.png)
 
 2. 用记事本打开这几个文件，里面写的就是链接的真实文件目录，（链接的是`/Versions/A/`目录中的文件）
+
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/f3a25f6ad23b4e8828a2e73a932a602e.png)
 
 3. 把真实文件拷贝到这个库的根目录，将其他文件全部删除即可，最终的库文件
+
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/0df26b80a6af2b0c48c578e28322f871.png)
 
 4. 然后重新提交打包即可；
