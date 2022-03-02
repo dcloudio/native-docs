@@ -31,7 +31,8 @@
 ## 使用 Windows 系统提交 iOS 本地插件打包报错的解决方法
 
 > 如果使用 mac 提交本地插件打包正常，而使用 Windows 系统提交 iOS 本地插件打包时报错，是因为插件包使用的某个 .framework 库中存现软链接，在 Windows 系统上解压后导致软链接失效，打包时导致这个库缺失，所以会报错
-报错如下图：
+报错如下图： 
+
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/c1d5e07691a68b735a1725ab26760a35.png)
 
 **解决办法：**
