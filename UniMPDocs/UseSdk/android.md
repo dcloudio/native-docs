@@ -6,6 +6,7 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
 - 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
+- Android API 最低运行版本 21
 
 
 ## 版本更新注意
