@@ -527,3 +527,45 @@ IUniMP.closeUniMP()
 ```
 
 
+### 修改启动动画
+
+unimp 默认自带一个从下而上的转场动画，且支持集成者自定义转场动画
+
+
+A 基本概念解释：宿主activity 和 小程序实例activity
+
+app中用来启动商城小程序的 activity，被称为宿主 activity
+承载小程序实例的activity 被称为 小程序实例activity
+
+宿主 activity 由开发者实现，小程序实例activity 开发者无感知。
+
+
+B 进入动画和退出动画
+
+从宿主开启小程序，宿主activity将会播放 dcloud_unimp_host_close_exit动画，小程序实例会播放dcloud_unimp_open_enter
+从小程序返回宿主，小程序实例会播放dcloud_unimp_close_exit，宿主activity会播放 dcloud_unimp_host_open_enter
+
+
+C 操作步骤
+
+1 在开发者的app module下 res/anim下新建下面四个动画资源
+
+dcloud_unimp_close_exit
+dcloud_unimp_open_enter
+dcloud_unimp_host_close_exit
+dcloud_unimp_host_open_enter
+
+
+2 宿主activity 需要定义如下样式
+```
+<activity android:name=".MainActivity" android:theme="@style/DCloudMPHostActivityTheme">
+</activity>
+```
+
+其中关键点是 需要将 windowAnimationStyle 设置为 uniMPHostWindowAnimation
+
+```
+<style name="DCloudMPHostActivityTheme" parent="@style/Theme.AppCompat">
+	<item name="android:windowAnimationStyle">@style/uniMPHostWindowAnimation</item>
+</style>
+```
