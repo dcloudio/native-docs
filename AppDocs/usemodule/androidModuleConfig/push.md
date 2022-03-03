@@ -32,6 +32,18 @@ android {
 }
 ~~~
 
+### AndroidManifest.xml配置
+
+在io.dcloud.PandoraEntry的Activity标签下追加intent-filter
+~~~xml
+<intent-filter>
+	<action android:name="android.intent.action.VIEW"/>
+	<category android:name="android.intent.category.DEFAULT" />
+	<category android:name="android.intent.category.BROWSABLE" />
+	<data android:host="io.dcloud.unipush" android:path="/" android:scheme="unipush" />
+</intent-filter>
+~~~
+
 ### 厂商配置
 
 添加下列内容到androidmanifest.xml中（未申请平台无需添加）
