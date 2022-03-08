@@ -66,6 +66,13 @@
 |:--|:--|:--|
 |libUniAD.a、libUniAd-Sgm.a、WindSDK.framework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|Sigmob.bundle|
 
+## 百度常青藤
+### 添加依赖资源及文件
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libUniAD.a、libUniAd-Baidu.a、BaiduMobAdSDK.framework|StoreKit.framework、SafariServices.framework、MessageUI.framework、CoreMedia.framework、CoreMotion.framework、SystemConfiguration.framework、CoreLocation.framework、CoreTelephony.framework、AVFoundation.framework、AdSupport.framework、Webkit.framework、libc++.tbd|baidumobadsdk.bundle|
+
 **注意：以上增强广告配置，如果是uni项目 必须配置上libUniADWeex.a  这个库**
 
 ## 注意事项
