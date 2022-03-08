@@ -510,9 +510,6 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11");
 ```
 
-**Tips**
-
-注意：已启动的小程序并进入后台运行，再次启动直达参数将会失效。请注意！！！
 
 ### 关闭小程序
 
