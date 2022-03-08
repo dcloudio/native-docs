@@ -107,6 +107,47 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 
 
+## 谷歌地图
+### 需要拷贝的文件
+需要将以下aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs |weex_google-map-release.aar|
+
+
+### app目录的build.gradle添加依赖
+~~~
+implementation 'com.google.android.gms:play-services-maps:18.0.1'
+~~~
+
+### Androidmainfest.xml文件需要修改的项
+
+需要在application节点前添加权限
+
+~~~
+<uses-permission android:name=android.permission.ACCESS_COARSE_LOCATION />
+<uses-permission android:name=android.permission.ACCESS_FINE_LOCATION />
+<uses-permission android:name=android.permission.ACCESS_NETWORK_STATE />
+<uses-permission android:name=android.permission.INTERNET />
+<uses-permission android:name=android.permission.WRITE_EXTERNAL_STORAGE />
+<uses-permission android:name=android.permission.ACCESS_LOCATION_EXTRA_COMMANDS />
+~~~
+
+application节点下配置如下代码:
+
+~~~
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="%api_key%" />
+~~~
+
+api_key在[谷歌开发者](https://mapsplatform.google.com/)开通。
+
+
+
+
+
 <!--
 ## 百度定位
 
