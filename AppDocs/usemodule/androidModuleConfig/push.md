@@ -6,11 +6,9 @@
 
 需要将以下jar/aar文件放到工程的libs目录下
 
-**注意：HBuilderX 3.1.15之后集成uniPush需要添加gtc-3.1.1.0.aar、gtsdk-3.2.0.0.aar、hwp-3.0.1.aar、mzp-3.0.2.aar、oppo-3.0.3.aar、vivo-3.0.3.aar、xmp-3.0.2.aar**
-
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc-3.1.1.0.aar, gtsdk-3.2.0.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar |
+| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc-3.1.1.0.aar, gtsdk-3.2.0.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar, push-3.0.0.aar(HBuilderX 3.4.1以上), push-internal-4.1.4.aar(HBuilderX 3.4.1以上) |
 
 ### gradle配置
 

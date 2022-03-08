@@ -1,3 +1,31 @@
+### 2022年03月07日发布——HBuilderX（3.4.0.20220304-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.0.20220304-alpha）版本生成本地打包App资源。
++ 修复 nvue image 组件 mode 属性设置为 widthFix/HeightFix 时可能导致图片无法显示的Bug
++ 修复 nvue list 组件插入列表项可能引起页面闪烁的Bug
++ 修复 nvue web-view 组件 progress 颜色值不支持3位十六进制格式字符串的Bug
++ 修复 nvue web-view 组件 无法正常加载使用非受信任证书网页的Bug
++ 修复 nvue animation 动画切到后台可能无法执行的Bug
++ 修复 nvue map 组件 marker 设置 joinCluster 为 true 时导致 callouttap 事件不响应的Bug
++ 修复 nvue text 组件 font-style 设置 italic 在部分设备可能无效的Bug
++ 修复 nvue 页面切换可能导致 plus.key.addEventListener 监听 keydown 事件不触发回调的Bug
++ 新增 支持Google地图
++ uni-AD 新增 百度百青藤广告联盟 支持开屏、插屏、激励视频广告
++ 新增 uni-AD 支持华为广告联盟 包括开屏、信息流、插屏、激励视频广告
++ 优化 应用启动首页可能出现上下抖动的Bug
++ 修复 使用 X5 内核调用 plus.key.addEventListener 监听 keyup 事件不触发回调的Bug
++ 修复 Android8及以上设备 plus.navigator.createShortcut 无法创建桌面快捷图标的Bug
++ 修复 视频播放控件 video 边缘可能出现黑线的Bug
++ 修复 在部分设备调用 plus.runtime.restart 可能引起应用闪退的Bug
++ 修复 系统语言设置为土耳其语时，tabbar 切换选项可能导致不显示的Bug
++ 修复 本地相册选择视频设置 compressed 为 false 时依然会压缩的Bug
+
+### 2022年02月23日发布——HBuilderX（3.3.12.20220222-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.12.20220222-alpha）版本生成本地打包App资源。
++ 更新 uni-AD 腾讯优量汇SDK为 4.450.1320 版；今日头条穿山甲SDK为 4.3.0.1 版；快手广告SDK为 3.3.21 版
++ 修复 一键登录 授权页面服务协议自定义复选框状态图片设置不正确的Bug
+
 ### 2022年01月15日发布——HBuilderX（3.3.8.20220114-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.8.20220114-alpha）版本生成本地打包App资源。

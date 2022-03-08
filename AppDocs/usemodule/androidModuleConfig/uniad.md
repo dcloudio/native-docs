@@ -14,29 +14,6 @@ AndroidManifest.xml文件的application节点中添加如下节点到节点中�
 * 渠道：[渠道包制作指南](https://ask.dcloud.net.cn/article/35974)
 
 
-## 360广告
-
-### 库文件配置
-
-将以下文件放入工程的libs目录下
-
-路径 | 360聚合模块配置 | 360聚合穿山甲模块配置 | 360聚合广点通模块配置
-- | - | - | -
-SDK/libs| ads-release.aar、ads-360-release.aar、torch-adcore-5.12.3140.aar | open_ad_sdk.aar、torch-plcsjsdk-5.12.3140.aar | torch-plgdtapi-5.12.3140.aar、torch-plgdtsdk-5.12.3140.aar
-
-**如果没有在360聚合平台申请穿山甲和广点通的广告，则对应的aar不需要添加**
-
-### dcloud_properties.xml配置
-
-features 节点添加
-
-~~~
-        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
-            <module name="360" value="io.dcloud.feature.ad.juhe360.AD360Module"/>
-        </feature>
-~~~
-
-
 ## 今日头条穿山甲
 
 ### 库文件配置
@@ -195,6 +172,104 @@ features 节点添加
         </feature>
 ~~~
 
+## 百度广告
+
+**最低支持版本：离线sdk 3.4.1**
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+- | - 
+SDK/libs| ads-release.aar、ads-bd-release.aar、Baidu_MobAds_SDK.aar
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+            <module name="bd" value="io.dcloud.feature.ad.bd.ADBDModule" />
+        </feature>
+~~~
+
+## 华为广告
+
+**最低支持版本：离线sdk 3.4.1**
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+- | - 
+SDK/libs| ads-release.aar、ads-hw-release.aar
+
+### Gradle配置
+
+项目级build.gradle
+
+~~~
+buildscript {
+    repositories {
+		...
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+    dependencies {
+		...
+        classpath 'com.huawei.agconnect:agcp:1.6.0.300'
+    }
+}
+
+allprojects {
+    repositories {
+		...
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+~~~
+
+应用级的build.gradle
+
+~~~
+dependencies {
+    implementation 'com.huawei.hms:ads-lite:13.4.49.301'
+}
+~~~
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+            <module name="hw" value="io.dcloud.feature.ad.hw.AdHwModule" />
+        </feature>
+~~~
+
+
+## 360广告
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 360聚合模块配置 | 360聚合穿山甲模块配置 | 360聚合广点通模块配置
+- | - | - | -
+SDK/libs| ads-release.aar、ads-360-release.aar、torch-adcore-5.12.3140.aar | open_ad_sdk.aar、torch-plcsjsdk-5.12.3140.aar | torch-plgdtapi-5.12.3140.aar、torch-plgdtsdk-5.12.3140.aar
+
+**如果没有在360聚合平台申请穿山甲和广点通的广告，则对应的aar不需要添加**
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+            <module name="360" value="io.dcloud.feature.ad.juhe360.AD360Module"/>
+        </feature>
+~~~
 
 ## nvue配置
 
