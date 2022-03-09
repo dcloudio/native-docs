@@ -206,13 +206,15 @@ TestModule.m 文件截图：
 - (BOOL)application:(UIApplication *_Nullable)application handleOpenURL:(NSURL *_Nullable)url;
 - (BOOL)application:(UIApplication *_Nullable)app openURL:(NSURL *_Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *_Nullable)options NS_AVAILABLE_IOS(9_0);
 
-- (void)applicationWillResignActive:(UIApplication *)application;
-- (void)applicationDidBecomeActive:(UIApplication *)application;
-- (void)applicationDidEnterBackground:(UIApplication *)application;
-- (void)applicationWillEnterForeground:(UIApplication *)application;
+- (void)applicationWillResignActive:(UIApplication *_Nullable)application;
+- (void)applicationDidBecomeActive:(UIApplication *_Nullable)application;
+- (void)applicationDidEnterBackground:(UIApplication *_Nullable)application;
+- (void)applicationWillEnterForeground:(UIApplication *_Nullable)application;
+
+
+- (void)applicationMain:(int)argc argv:(char * _Nullable [_Nonnull])argv;
 
 - (BOOL)application:(UIApplication *_Nullable)application continueUserActivity:(NSUserActivity *_Nullable)userActivity restorationHandler:(void(^_Nullable)(NSArray * __nullable restorableObjects))restorationHandler API_AVAILABLE(ios(8.0));
-
 ```
 
 具体示例请查看 [离线SDK包](AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
