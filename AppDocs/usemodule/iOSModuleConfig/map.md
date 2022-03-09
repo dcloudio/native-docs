@@ -76,3 +76,22 @@
 ![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/locationDes.png)
 
 **注意：工程里只能有一个地图，其他的地图功能，要删除info.plist里的key，和对应的库文件，请根据 [功能模块与依赖关系对照表](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/common?id=%e5%a6%82%e4%bd%95%e9%85%8d%e7%bd%ae%e6%a8%a1%e5%9d%97%e4%b8%89%e6%96%b9sdk) 配置**
+
+
+## 谷歌地图
+
+|依赖库|系统库|依赖资源|
+|:--|:--|:--|
+|libDCUniMap.a 、 libDCUniGoogleMap.a、 GoogleMapsBase.framework、 
+GoogleMaps.framework、GoogleMapsCore.framework、liblibMap.a|Accelerate.framework、CoreData.framework、CoreGraphics.framework 、 CoreImage.framework 、 CoreLocation.framework 、 CoreTelephony.framework 、 CoreText.framework 、 GLKit.framework 、 ImageIO.framework 、 libc++.tbd 、 libz.tbd 、 Metal.framework 、 OpenGLES.framework 、  QuartzCore.framework 、 SystemConfiguration.framework |GoogleMaps.bundle|
+
+
+### 账号配置
+1.在[谷歌地图官网](https://developers.google.com/maps)申请APIKey
+
+2.在工程的 info.plist 添加 `googleMap`节点，添加 APIKey 信息
+   
+3.在工程的 info.plist 添加 `NSLocationAlwaysAndWhenInUseUsageDescription` 和 `NSLocationWhenInUseUsageDescription` key，并填写获取权限描述信息
+
+![](https://img.cdn.aliyun.dcloud.net.cn/client/doc/ios/locationDes.png)
+
