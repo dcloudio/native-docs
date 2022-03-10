@@ -756,7 +756,7 @@ splash创建时会调用此函数
 |context|Context|上下文
 |String|appid|小程序appid  （2.6.6+新增）
 |String|appName|小程序名称 注意需要判空 (3.3.5+新增)
-|String|icon|小程序图片 注意需要判空 (3.3.5+新增)
+|String|icon|小程序图标 网络地址或本地图片地址 注意需要判空 (3.3.5+新增)
 
 **返回值**
 
