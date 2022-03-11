@@ -67,8 +67,12 @@ dcloud_properties.xml文件在assets/data目录下
 **application节点下配置如下代码**
 
 ~~~
-<meta-data  android:name="WX_APPID"  android:value="$微信APPID" />
- <meta-data android:name="WX_SECRET" android:value="$微信SECRET"/>
+ <meta-data  android:name="WX_APPID"  android:value="$微信APPID" />
+ <activity android:name="io.dcloud.feature.payment.weixin.WXPayProcessMeadiatorActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/ProjectDialogTheme"
+            ></activity>
   <activity
             android:name="$你的包名.wxapi.WXPayEntryActivity"
             android:exported="true"
