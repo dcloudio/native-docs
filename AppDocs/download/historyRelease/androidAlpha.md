@@ -1,3 +1,8 @@
+### 2022年03月08日发布——HBuilderX（3.4.1.20220308-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.1.20220308-alpha）版本生成本地打包App资源。
++ 3.4.0 引出的 UniPush模块使用 Oppo 厂商通道时云端打包失败的Bug
+
 ### 2022年03月07日发布——HBuilderX（3.4.0.20220304-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.0.20220304-alpha）版本生成本地打包App资源。

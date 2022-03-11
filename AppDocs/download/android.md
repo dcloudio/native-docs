@@ -21,14 +21,16 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年03月08日发布——HBuilderX（3.4.1.20220308-alpha）
+### 2022年03月11日发布——HBuilderX（3.4.2.20220310-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeV4twMdQe)，提取码: kAPJ
+[和彩云](https://caiyun.139.com/m/i?115CoAJ7baGZH)，提取码: kAPJ
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.1.20220308-alpha）版本生成本地打包App资源。
-+ 3.4.0 引出的 UniPush模块使用 Oppo 厂商通道时云端打包失败的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.2.20220310-alpha）版本生成本地打包App资源。
++ 修复 nvue map组件使用高德地图时，频繁调用 addMarkers 增加聚合点可能引起崩溃的Bug
++ 修复 nvue map组件使用谷歌地图时，调用 moveAlong 移动 marker 可能出现偏移的Bug
++ 新增 Google支付支持 isReadyToPay 方法
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
