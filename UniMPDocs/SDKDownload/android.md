@@ -19,7 +19,7 @@
 
 #### SDK 3.3.11 V2版本（支持同时运行多个小程序）
 
-[点击下载UniMPSDK_Android@3.3.11.V2.20220210.zip](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/unimp-sdk/UniMPSDK_Android%403.3.11.V2.20220210.zip)
+[点击下载UniMPSDK_Android@3.3.11.V2.20220210.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.3.11.V2.20220210.zip)
 
 #### 更新日志
 + 需使用HBuilderX（3.3.11）版本生成 小程序App 资源

@@ -87,7 +87,7 @@
 ### 工程配置
 1. 在 info.plist 添加 `paypal` 项，填写`returnUrl`，参考如下
 
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
 
 ## stripe支付
 注:v3.3.7及以上版本支持
@@ -100,10 +100,10 @@
 
 ### 工程配置
 1. 在URL Types 中添加当前应用的自定义URL Schemes，参考如下
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_stripe_urlscheme.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_stripe_urlscheme.png)
 
 2. 在 info.plist 添加 `stripe` 项，填写`returnUrl`，returnUrl为当前应用的自定义URL Schemes参考如下
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_stripe_returnurl.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_stripe_returnurl.png)
 
 
 
@@ -113,7 +113,7 @@
 
 1、在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
 
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/payment_feature.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
 
 
 2、除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下

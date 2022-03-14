@@ -179,7 +179,7 @@ Oauth 模块支持
 ### 工程配置
 
 1.在 info.plist 添加 `googleOauth` 项，填写Google `clientid`，参考如下：
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/oauth_google_clientid.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/oauth_google_clientid.png)
 
 2.在工程的 info -> URL types 中添加配置，identifier 填写`google_url`， 添加您的反向clientid作为URL Schemes，如下图所示
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/gg_urlschemes.png)
@@ -202,7 +202,7 @@ Oauth 模块支持
 
 3.在 info.plist 添加 Schemes 白名单
 
-![](https://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/uniapp/nativedocs/iOS/oauth_facebook_bmd.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/oauth_facebook_bmd.png)
 
 
 **注意 :除苹果授权登录外，都需要实现如下方法**

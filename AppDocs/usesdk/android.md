@@ -258,7 +258,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 	将SDK->assets->data文件夹拷贝到刚刚创建的assets文件夹下，如下图：
 		
-	![avatar](http://partner-dcloud-native.oss-cn-hangzhou.aliyuncs.com/images/nativeplugin/android/assets_data.png)
+	![avatar](http://native-res.dcloud.net.cn/images/nativeplugin/android/assets_data.png)
 	
 	注意：SDK升级时，data下资源需要同时更新。
 		
