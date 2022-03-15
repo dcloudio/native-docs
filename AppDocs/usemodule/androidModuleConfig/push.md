@@ -8,7 +8,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc-3.1.1.0.aar, gtsdk-3.2.0.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar, push-3.0.0.aar(HBuilderX 3.4.1以上), push-internal-4.1.4.aar(HBuilderX 3.4.1以上) |
+| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc-3.1.1.0.aar, gtsdk-3.2.0.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar, push-3.0.0.aar(HBuilderX 3.3.13及以上), push-internal-4.1.4.aar(HBuilderX 3.3.13及以上) |
 
 ### gradle配置
 
