@@ -12,7 +12,7 @@
 
 [百度云点击下载SDK，提取码: 54fz](https://pan.baidu.com/s/1qVN1vDWsCjswIxtstakgcg?pwd=54fz)
 
-[和彩云点击下载SDK，提取码: zE1p](https://caiyun.139.com/m/i?115CnWe9LNY8q) 
+[和彩云点击下载SDK，提取码: zd5C](https://caiyun.139.com/m/i?115CepnnJSK6d) 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
 
@@ -29,7 +29,7 @@
 
 [百度网盘下载历史版本，提取码: ci8q](https://pan.baidu.com/s/103T7rnxCqSuStV4Hh-x3dA?pwd=ci8q)
 
-[和彩云点击下载SDK，提取码: aTjK](https://caiyun.139.com/m/i?115Cep6zp8Egi) 
+[和彩云点击下载SDK，提取码: M4Rc](https://caiyun.139.com/m/i?115Cepnky7hTu) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 
