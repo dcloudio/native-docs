@@ -8,16 +8,26 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年02月09日发布——HBuilderX（3.3.11.20220209） 
+### 2022年03月14日发布——HBuilderX（3.3.13.20220314） 
 
-[百度云点击下载SDK，提取码: 54fz](https://pan.baidu.com/s/1qVN1vDWsCjswIxtstakgcg?pwd=54fz)
+[百度云点击下载SDK，提取码: mt4v](https://pan.baidu.com/s/1Kvj5WQ9OGIf0NbNvj46e0Q?pwd=mt4v)
 
-[和彩云点击下载SDK，提取码: zd5C](https://caiyun.139.com/m/i?115CepnnJSK6d) 
+[和彩云点击下载SDK，提取码: r5si](https://caiyun.139.com/m/i?115CoVBh3q48m) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.13.20220314）版本生成本地打包App资源。
 
-+ App-iOS平台 修复 3.3.9 版本引出的 nvue swiper-list 组件中的 list 组件设置 show-scrollbar 为 false 时吸顶效果异常的Bug [详情](https://ask.dcloud.net.cn/question/138944)
-+ iOS平台 修复 Downloader 下载图片文件可能失败的Bug [详情](https://ask.dcloud.net.cn/question/116101)
+## 3.3.13.20220314
++ App平台、H5平台 修复 vue3 项目两个开启了下拉刷新的页面跳转后返回，下拉刷新不触发 onPullDownRefresh 生命周期的Bug [详情](https://github.com/dcloudio/uni-app/issues/3187)
++ App平台、H5平台 修复 vue3 项目 uni.pageScrollTo 的 duration 为0时不生效的Bug [详情](https://ask.dcloud.net.cn/question/139432)
++ App平台 修复 vue3 项目 nvue 页面使用 map 组件时部分方法不生效的Bug [详情](https://ask.dcloud.net.cn/question/138515)
++ App平台 修复 vue3 项目使用 html 原生标签（如div）时，事件监听报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3240)
++ App平台 修复 vue3 项目 navigator 组件和 rich-text 组件嵌套使用时 scopeId 值不一致导致的样式Bug [详情](https://ask.dcloud.net.cn/question/140644)
++ App平台 修复 vue3 项目 wxs/renderjs 监听事件运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3324)
++ App-iOS平台 修复 vue3 项目 canvas 组件绘制本地图像后无法导出到本地到Bug
++ App-iOS平台 修复 vue3 项目 调试时启动白屏的Bug
+  
++ 更新 uni-AD 腾讯优量汇SDK iOS为 4.13.50 版；今日头条穿山甲SDK iOS为 4.3.0.2 版；快手广告SDK iOS为 3.3.21 版
++ iOS平台 修复 geitImageInfo 可能不触发回调的Bug [详情](https://ask.dcloud.net.cn/question/139361)
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -27,9 +37,9 @@
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
-[百度网盘下载历史版本，提取码: ci8q](https://pan.baidu.com/s/103T7rnxCqSuStV4Hh-x3dA?pwd=ci8q)
+[百度网盘下载历史版本，提取码: svpv](https://pan.baidu.com/s/1gXd3Z3AMnLi9J19ZhCKJ4w?pwd=svpv)
 
-[和彩云点击下载SDK，提取码: M4Rc](https://caiyun.139.com/m/i?115Cepnky7hTu) 
+[和彩云点击下载SDK，提取码: NAfn](https://caiyun.139.com/m/i?115CepieWDKEg) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 

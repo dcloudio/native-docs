@@ -1,4 +1,8 @@
 ## 正式版历次更新说明
+## 3.3.11.20220209
++ App-iOS平台 修复 3.3.9 版本引出的 nvue swiper-list 组件中的 list 组件设置 show-scrollbar 为 false 时吸顶效果异常的Bug [详情](https://ask.dcloud.net.cn/question/138944)
++ iOS平台 修复 Downloader 下载图片文件可能失败的Bug [详情](https://ask.dcloud.net.cn/question/116101)
+
 ### 3.3.10
 
 ### 3.3.9
