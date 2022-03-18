@@ -42,7 +42,7 @@
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150203/02e43567316bd7b11b7228a5c29121cf.png)
 
 #### 注意 SDK 3.2.0+ 必须按照下图填写
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/sina_plist.jpg)
+![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/sina_plist.jpg)
 
 
 2.在工程的 info -> URL types 中添加配置，identifier 填写`com.weibo`，URL Schemes 填写`wb[后面填写appkey]`,如下图所示
@@ -55,7 +55,7 @@
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20151222/9637d63385bc52fee7cdfd45ee3aee55.png)
 
 #### 注意 SDK 3.2.0+ 必须按照下图填写
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/weibo3_3.jpg)
+![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/weibo3_3.jpg)
 
 
 配置Associated Domains（域名）
@@ -91,7 +91,7 @@
 #### 注意 SDK 3.2.0+ 必须按照下图填写
 1. 在 info.plist 中添加 qq 字段，填入自己帐号的信息
 
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/qq_plist.jpg)
+![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/qq_plist.jpg)
 
 2. 配置Associated Domains（域名）
 
@@ -139,7 +139,7 @@
 
 5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `appSecret`, `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
 
-![](https://dcloud-img.oss-cn-hangzhou.aliyuncs.com/nativedocs/nativeplugin/Iosimgs/weixin_plist.jpg)
+![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/weixin_plist.jpg)
 
 ## 苹果授权登录
 
