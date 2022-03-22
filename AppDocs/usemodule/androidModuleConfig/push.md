@@ -136,6 +136,19 @@ oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配
         </activity>
 ~~~
 
+**当添加了push-3.0.0.aar库时**
+
+在app目录下的build.gradle内添加
+
+~~~
+dependencies {
+	implementation 'com.google.code.gson:gson:2.6.2' 
+	implementation 'commons-codec:commons-codec:1.6' 
+	implementation 'androidx.annotation:annotation:1.1.0'
+}
+~~~
+
+
 #### 华为推送
 
 HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添加如下配置
