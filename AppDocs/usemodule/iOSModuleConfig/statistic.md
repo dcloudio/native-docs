@@ -11,6 +11,8 @@
 |:--|:--|:--|
 |liblibStatistic.a、libUmengStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
+**3.3.7 之后 还需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
+![](https://native-res.dcloud.net.cn/images/uniapp/statistic/feature_umeng.png)
 
 ### 帐号配置
 1.到[友盟开放平台](http://www.umeng.com/analytics)申请Appkey
@@ -30,6 +32,10 @@
 
 ## Firebase Analytics （3.3.7+ 新增）
 ### 将Firebase Analytics模块依赖库及资源添加到工程
+
+
+**需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
+![](https://native-res.dcloud.net.cn/images/uniapp/statistic/feature_google.png)
 
 
 |依赖库|系统库|依赖资源|
