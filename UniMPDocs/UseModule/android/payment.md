@@ -89,6 +89,13 @@ public class WXPayEntryActivity extends AbsWXPayCallbackActivity{
     android:exported="true"
     android:theme="@android:style/Theme.Translucent.NoTitleBar"
     android:launchMode="singleTop" />
+<!--如果是小程序模式，还需要添加这行配置-->
+<activity android:name="io.dcloud.feature.payment.weixin.WXPayProcessMeadiatorActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/ProjectDialogTheme"
+            ></activity>
+
 ~~~
 
 ### 修改dcloud_properties.xml配置
