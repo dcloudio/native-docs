@@ -1,3 +1,10 @@
+### 2022年03月11日发布——HBuilderX（3.4.2.20220310-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.2.20220310-alpha）版本生成本地打包App资源。
++ 修复 nvue map组件使用高德地图时，频繁调用 addMarkers 增加聚合点可能引起崩溃的Bug
++ 修复 nvue map组件使用谷歌地图时，调用 moveAlong 移动 marker 可能出现偏移的Bug
++ 新增 Google支付支持 isReadyToPay 方法
+
 ### 2022年03月08日发布——HBuilderX（3.4.1.20220308-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.1.20220308-alpha）版本生成本地打包App资源。

@@ -23,16 +23,21 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年03月11日发布——HBuilderX（3.4.2.20220310-alpha）
+### 2022年03月28日发布——HBuilderX（3.4.3.20220325-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAJ7baGZH)，提取码: JxFF
+[和彩云](https://caiyun.139.com/m/i?115CeVchXbaup)，提取码: 1sjo
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.2.20220310-alpha）版本生成本地打包App资源。
-+ 修复 nvue map组件使用高德地图时，频繁调用 addMarkers 增加聚合点可能引起崩溃的Bug
-+ 修复 nvue map组件使用谷歌地图时，调用 moveAlong 移动 marker 可能出现偏移的Bug
-+ 新增 Google支付支持 isReadyToPay 方法
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.3.20220325-alpha）版本生成本地打包App资源。
++ 新增 nvue ad-content-page 组件支持内容播放状态事件start、pause、resume、complete [规范](https://uniapp.dcloud.io/component/ad-content-page.html#%E7%9F%AD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E8%81%94%E7%9B%9F%E7%BB%84%E4%BB%B6)
++ 优化 nvue 组件 box-shadow 渲染逻辑，解决在部分设备可能出现排版异常及闪烁的问题
++ 修复 nvue 组件设置 overflow 为 hidden 在部分设备无效的Bug
++ 修复 nvue swiper 组件设置 circular 为 true 时首次启动可能先显示最后一项的Bug
++ 修复 nvue swiper 组件在特定环境下可能出现页面空白的Bug
++ 新增 百度百青藤广告联盟支持信息流广告
++ 更新 uni-AD 百度百青藤广告SDK 为 9.202 版
++ 修复 在部分设备识别国际化语言不正确的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
