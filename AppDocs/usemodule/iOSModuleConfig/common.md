@@ -517,6 +517,37 @@
 		URL Schemes=scheme
 	    </td>
 	</tr>
+        <tr>
+	    <td>
+	    paypal：<br/>
+	    </td>
+	    <td>
+		liblibPayment.a
+		libpaypalpay.a
+		PayPalCheckout.xcframework
+	    </td>
+	    <td>
+	    </td>
+	    <td>
+	    </td>
+	</tr>
+        <tr>
+	    <td>
+	    stripe：<br/>
+	    </td>
+	    <td>
+		liblibPayment.a
+		libstripepay.a
+                Stripe.xcframework
+                StripeCore.xcframework
+                StripeUICore.xcframework
+                Stripe3DS2.xcframework
+	    </td>
+	    <td>
+	    </td>
+	    <td>
+	    </td>
+	</tr>
 	<tr>
 		<td rowspan="3">Share(分享)</td>
 		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/share.html"> plus.share </a></td>
