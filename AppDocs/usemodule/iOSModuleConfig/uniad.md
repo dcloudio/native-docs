@@ -66,7 +66,7 @@
 |:--|:--|:--|
 |libUniAD.a、libUniAd-Sgm.a、WindSDK.framework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|Sigmob.bundle|
 
-## 百度常青藤
+## 百度百青藤
 v3.4.1及以上版本支持
 ### 添加依赖资源及文件
 
