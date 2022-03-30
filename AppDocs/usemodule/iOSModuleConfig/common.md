@@ -232,7 +232,7 @@
 	    </td>
 	    <td>
 	    liblibGeolocation.a<br/>
-		aiduMapAPI_Utils.framework<br/>
+		BaiduMapAPI_Utils.framework<br/>
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
 		BaiduMapAPI_Location.framework
