@@ -457,9 +457,9 @@
 	    </td>
 	</tr>
 	<tr>
-		<td rowspan="3">Payment</td>
-		<td rowspan="3"><a href="https://www.html5plus.org/doc/zh_cn/payment.html"> plus.payment </a></td>
-		<td rowspan="3"><a href="https://uniapp.dcloud.io/api/plugins/payment"> payment </a></td>
+		<td rowspan="5">Payment</td>
+		<td rowspan="5"><a href="https://www.html5plus.org/doc/zh_cn/payment.html"> plus.payment </a></td>
+		<td rowspan="5"><a href="https://uniapp.dcloud.io/api/plugins/payment"> payment </a></td>
 		<td>
 		微信支付：<br/>
 		libsqlite3.0.tbd
