@@ -521,6 +521,7 @@
 	    <td>
 	    paypal：<br/>
 	    </td>
+            无
 	    <td>
 	    liblibPayment.a
 	    libpaypalpay.a
@@ -535,6 +536,7 @@
 	    <td>
 	    stripe：<br/>
 	    </td>
+            无
 	    <td>
 	    liblibPayment.a
 	    libstripepay.a
