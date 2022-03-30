@@ -522,9 +522,9 @@
 	    paypal：<br/>
 	    </td>
 	    <td>
-		liblibPayment.a
-		libpaypalpay.a
-		PayPalCheckout.xcframework
+	    liblibPayment.a
+	    libpaypalpay.a
+	    PayPalCheckout.xcframework
 	    </td>
 	    <td>
 	    </td>
@@ -536,12 +536,12 @@
 	    stripe：<br/>
 	    </td>
 	    <td>
-		liblibPayment.a
-		libstripepay.a
-                Stripe.xcframework
-                StripeCore.xcframework
-                StripeUICore.xcframework
-                Stripe3DS2.xcframework
+	    liblibPayment.a
+	    libstripepay.a
+            Stripe.xcframework
+            StripeCore.xcframework
+            StripeUICore.xcframework
+            Stripe3DS2.xcframework
 	    </td>
 	    <td>
 	    </td>
