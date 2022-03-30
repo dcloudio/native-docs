@@ -76,7 +76,7 @@
 |liblibPayment.a、libIAPPay.a| StoreKit.framework| 无 |
 
 ## paypal支付
-注:v3.3.7及以上版本支持
+注:HX3.3.7及iOS11.0+
 
 ### 添加依赖库及资源
 
@@ -90,7 +90,7 @@
 ![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
 
 ## stripe支付
-注:v3.3.7及以上版本支持
+注:HX3.3.7及iOS13.0+
 
 ### 添加依赖库及资源
 
