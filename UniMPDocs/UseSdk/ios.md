@@ -182,7 +182,7 @@ UniMPSDK/Core 目录结构说明
 ```objective-c
 /// 检查运行目录是否存在应用资源，不存在将应用资源部署到运行目录
 - (void)checkUniMPResource:(NSString *)appid {
-#warning 注意：isExistsUniMP: 方法判断的仅是运行路径中是否有对应的应用资源，宿主还需要做好内置wgt版本的管理，如果更新了内置的wgt也应该执行 releaseAppResourceToRunPathWithAppid 方法应用最新的资源
+#warning 注意：isExistsUniMP: 方法判断的仅是运行路径中是否有对应的应用资源，宿主还需要做好内置wgt版本的管理，如果更新了内置的wgt也应该执行 installUniMPResourceWithAppid 方法应用最新的资源
     if (![DCUniMPSDKEngine isExistsUniMP:appid]) {
         // 读取导入到工程中的wgt应用资源
         NSString *appResourcePath = [[NSBundle mainBundle] pathForResource:appid ofType:@"wgt"];
