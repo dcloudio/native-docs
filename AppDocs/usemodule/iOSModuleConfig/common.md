@@ -232,6 +232,8 @@
 	    </td>
 	    <td>
 	    liblibGeolocation.a<br/>
+                libBaiduLocationPlugin.a<br/>
+                libBaiduKeyVerify.a<br/>
                 libssl.a<br/>
                 libcrypto.a<br/>
 		BaiduMapAPI_Utils.framework<br/>
