@@ -45,7 +45,6 @@
     <div class="contact-smg">
        <div>uni小程序SDK官方QQ交流群</div>
     <div>群2：799670194 &nbsp;<a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=4pmWsrg5Ow7zV7hPTJ5AfES3sEzqz24F&jump_from=webapi">点此加入</a></div>
-    </div>
     <div>群1：892918401 &nbsp;<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=4b0a7a0f7c73efb5cebb38bb8bf7df262b68a31e0205709467eed8cca8da58d1">人员已满</a></div>
     </div>
   </div>
