@@ -232,6 +232,10 @@
 	    </td>
 	    <td>
 	    liblibGeolocation.a<br/>
+                libBaiduLocationPlugin.a<br/>
+                libBaiduKeyVerify.a<br/>
+                libssl.a<br/>
+                libcrypto.a<br/>
 		BaiduMapAPI_Utils.framework<br/>
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
@@ -520,8 +524,8 @@
         <tr>
 	    <td>
 	    paypal：<br/>
-	    </td>
             无
+	    </td>
 	    <td>
 	    liblibPayment.a
 	    libpaypalpay.a
@@ -535,8 +539,8 @@
         <tr>
 	    <td>
 	    stripe：<br/>
-	    </td>
             无
+	    </td>
 	    <td>
 	    liblibPayment.a
 	    libstripepay.a
