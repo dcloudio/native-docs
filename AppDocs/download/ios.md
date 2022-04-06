@@ -47,26 +47,24 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年3月25日发布——HBuilderX（3.4.3.20220325-alpha）
+### 2022年04月03日发布——HBuilderX（3.4.4.20220403-alpha）
 
-[百度云点击下载SDK，提取码: yprp](https://pan.baidu.com/s/1TqleJbjeDUpS60syY2o3BA?pwd=yprp) 
+[百度云点击下载SDK，提取码: gk5b](https://pan.baidu.com/s/19ZR4Gtk0Vbyf2oMoQJ4t4g?pwd=gk5b) 
 
-[和彩云点击下载SDK，提取码: bUo9](https://caiyun.139.com/m/i?115Cnr9xfAPZt) 
+[和彩云点击下载SDK，提取码: nomX](https://caiyun.139.com/m/i?115CnWzR3K8ty) 
 
+## 3.4.4.20220403-alpha
 
-## 3.4.3.20220325-alpha
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.4.20220403-alpha）版本生成本地打包App资源。
 
-+ 【重要】App平台 nvue 页面支持 vue3（需要项目的 Vue 版本切换为3）[详情](https://uniapp.dcloud.net.cn/tutorial/migration-to-vue3.html)
-+ App平台、H5平台 新增 map 组件支持 polygons [详情](https://uniapp.dcloud.io/component/map)
-+ App平台、小程序平台 修复 vue3 项目配置 base 后资源路径可能错误的Bug [详情](https://github.com/dcloudio/uni-app/issues/3362)
-+ App平台 新增 打开微信客服功能 [详情](https://uniapp.dcloud.io/api/plugins/share.html)
-+ App平台 修复 vue3 项目内联样式引用静态资源可能错误的Bug [详情](https://ask.dcloud.net.cn/question/141278)
-+ App平台 新增 nvue ad-content-page 组件支持内容播放状态事件start、pause、resume、complete [规范](https://uniapp.dcloud.io/component/ad-content-page.html#%E7%9F%AD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E8%81%94%E7%9B%9F%E7%BB%84%E4%BB%B6)
-+ App-iOS平台 修复 nvue swiper 组件内嵌 list-waterfall 时，横向滑动的同时列表还可以竖向滚动的Bug [详情](https://ask.dcloud.net.cn/question/134909)
-+ App-iOS平台 修复 nvue 页面内存在可滚动子组件时，开启 enablePullDownRefresh 下拉刷新功能无效的Bug
-+ App平台 修复 vue3 组件 picker-view 调整列数据时渲染错误的Bug [详情](https://ask.dcloud.net.cn/question/140609)
-
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.3.20220325-alpha）版本生成本地打包App资源。
++ App平台、H5平台 新增 input 组件配置 ignoreCompositionEvent 属性 [详情](https://uniapp.dcloud.io/component/input?id=input)
++ App平台 新增 tabbar 支持配置 iconfont [详情](https://uniapp.dcloud.net.cn/api/ui/tabbar?id=settabbaritem)
++ App平台 修复 vue2 nvue 页面文本首尾回车符占用高度的Bug [详情](https://ask.dcloud.net.cn/question/95429)
++ App平台 修复 vue3 项目 uni.getSavedFileList、uni.getSavedFileInfo、uni.removeSavedFile、uni.getFileInfo 无效的Bug  [详情](https://ask.dcloud.net.cn/question/142428)
++ App-iOS平台 修复 video 组件 vslide-gesture-in-fullscreen 属性无效的Bug [详情](https://ask.dcloud.net.cn/question/138299)
++ App-iOS平台 修复 nvue image 组件不支持 gif 图片中设置循环次数参数的Bug [详情](https://ask.dcloud.net.cn/question/140176)
++ 新增 音频播放 AudioPlayer 支持 playbackRate 设置设置倍速播放 [文档](https://www.html5plus.org/doc/zh_cn/audio.html#plus.audio.AudioPlayer.playbackRate)
++ iOS平台 修复 视频播放控件 video 播放视频音量与系统音量不一致的Bug
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -80,9 +78,9 @@
 `注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
- 					
-[百度网盘下载历史版本，提取码: dprr](https://pan.baidu.com/s/1sDi8KsH7StwnSVDLxQW-1A?pwd=dprr)
+ 									
+[百度网盘下载历史版本，提取码: ybeh](https://pan.baidu.com/s/1H2do2sFO5ehI9HGw7Xb1Zw?pwd=ybeh)
 
-[和彩云点击下载历史版本，提取码: qWBS](https://caiyun.139.com/m/i?115CnXBJ5or0O) 
+[和彩云点击下载历史版本，提取码: hBf1](https://caiyun.139.com/m/i?115CnWzOhzWFk) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)

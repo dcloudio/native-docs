@@ -82,8 +82,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libDCUniMap.a 、 libDCUniGoogleMap.a、 GoogleMapsBase.framework、 
-GoogleMaps.framework、GoogleMapsCore.framework、liblibMap.a|Accelerate.framework、CoreData.framework、CoreGraphics.framework 、 CoreImage.framework 、 CoreLocation.framework 、 CoreTelephony.framework 、 CoreText.framework 、 GLKit.framework 、 ImageIO.framework 、 libc++.tbd 、 libz.tbd 、 Metal.framework 、 OpenGLES.framework 、  QuartzCore.framework 、 SystemConfiguration.framework |GoogleMaps.bundle|
+|libDCUniMap.a 、 libDCUniGoogleMap.a、 GoogleMapsBase.framework、 GoogleMaps.framework、GoogleMapsCore.framework、liblibMap.a|Accelerate.framework、CoreData.framework、CoreGraphics.framework 、 CoreImage.framework 、 CoreLocation.framework 、 CoreTelephony.framework 、 CoreText.framework 、 GLKit.framework 、 ImageIO.framework 、 libc++.tbd 、 libz.tbd 、 Metal.framework 、 OpenGLES.framework 、  QuartzCore.framework 、 SystemConfiguration.framework |GoogleMaps.bundle|
 
 
 ### 账号配置
