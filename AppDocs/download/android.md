@@ -23,21 +23,20 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年03月28日发布——HBuilderX（3.4.3.20220325-alpha）
+### 2022年04月06日发布——HBuilderX（3.4.4.20220403-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeVchXbaup)，提取码: 1sjo
+[和彩云](https://caiyun.139.com/m/i?115CeVUSX2yaB)，提取码: pQHP
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.3.20220325-alpha）版本生成本地打包App资源。
-+ 新增 nvue ad-content-page 组件支持内容播放状态事件start、pause、resume、complete [规范](https://uniapp.dcloud.io/component/ad-content-page.html#%E7%9F%AD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E8%81%94%E7%9B%9F%E7%BB%84%E4%BB%B6)
-+ 优化 nvue 组件 box-shadow 渲染逻辑，解决在部分设备可能出现排版异常及闪烁的问题
-+ 修复 nvue 组件设置 overflow 为 hidden 在部分设备无效的Bug
-+ 修复 nvue swiper 组件设置 circular 为 true 时首次启动可能先显示最后一项的Bug
-+ 修复 nvue swiper 组件在特定环境下可能出现页面空白的Bug
-+ 新增 百度百青藤广告联盟支持信息流广告
-+ 更新 uni-AD 百度百青藤广告SDK 为 9.202 版
-+ 修复 在部分设备识别国际化语言不正确的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.4.20220403-alpha）版本生成本地打包App资源。
++ 修复 nvue list 组件横向滚动不会触发 loadmore 事件的Bug
++ 修复 连续调用 uni.chooseImage 在部分手机可能引起应用闪退的Bug
++ 修复 3.4.3 引出的 tabBar 的列表项未设置 iconPath 会导致文字显示不全的Bug
++ 新增 音频播放 AudioPlayer 支持 playbackRate 设置设置倍速播放
++ 更新 高德定位SDK为 6.0.1 版，高德地图SDK为 9.0.1 版；UniPush 使用的个推SDK为 3.2.9.0 版，小米厂商推送库SDK为 3.1.1 版；Google地图SDK为 18.0.2 版
++ 优化 二维码扫码检测到 QR 码时自动放大，提升扫码识别率
++ 修复 uni-AD 今日头条穿山甲广告联盟在部分设备可能提示应用的uni-AD业务状态异常的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
