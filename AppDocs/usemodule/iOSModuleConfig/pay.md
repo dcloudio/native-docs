@@ -2,6 +2,13 @@
 
 支付插件首先需要到各开放平台申请帐号,查看该[文档](http://ask.dcloud.net.cn/article/71)
 
+## 配置支付平台参数
+
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
+
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
+
+
 ## 支付宝
 
 ### 添加依赖库及资源
@@ -111,12 +118,7 @@
 
  **注意：以上支付方式都需要配置支付平台参数**
 
-1、在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
-
-![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
-
-
-2、除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
+除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
 
 ```
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url

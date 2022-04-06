@@ -1,3 +1,8 @@
+## 注意
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中),在 Push 节点下,确保和下图所示一样
+
+![](https://native-res.dcloud.net.cn/images/uniapp/push/unipush-feature-plist.png)
+
 ## uniPush
 ### 将uniPush模块依赖库及资源添加到工程
 

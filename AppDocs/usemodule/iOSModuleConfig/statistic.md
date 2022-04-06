@@ -2,14 +2,17 @@
 ### 将友盟统计模块依赖库及资源添加到工程
 
 (3.3.7 之前)
-|依赖库|系统库|依赖资源|
+
+|依赖库|系统库|资源文件|
 |:--|:--|:--|
 |liblibStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
 (3.3.7 之后)
+
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
 |liblibStatistic.a、libUmengStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
+
 
 **3.3.7 之后 还需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
 ![](https://native-res.dcloud.net.cn/images/uniapp/statistic/feature_umeng.png)
@@ -35,6 +38,7 @@
 
 
 **需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
+
 ![](https://native-res.dcloud.net.cn/images/uniapp/statistic/feature_google.png)
 
 
