@@ -25,6 +25,6 @@
 |广点通|v4.13.50|UniAD/广点通|
 |穿山甲|v4.3.0.2|UniAD/穿山甲|
 |Sigmob|v3.5.0|UniAD/Sigmob|
-|百度常青藤|v4.85|UniAD/百度|
+|百度百青藤|v4.85|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
