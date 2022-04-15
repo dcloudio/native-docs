@@ -9,11 +9,10 @@
 
 ## 更新日志
 
-#### SDK 3.3.11
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.3.11.zip)
+#### SDK 3.3.13
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.3.13.zip)
 
-+ 修复 频繁快速关闭小程序在启动小程序直达页面偶现崩溃的Bug；
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.11.20220209.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.13.20220314.html)
 
 
 ## 历史版本
@@ -21,6 +20,11 @@
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.3.11
+
++ 修复 频繁快速关闭小程序在启动小程序直达页面偶现崩溃的Bug；
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.11.20220209.html)
 
 #### SDK 3.3.10
 
