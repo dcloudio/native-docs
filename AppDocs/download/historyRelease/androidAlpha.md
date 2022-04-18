@@ -1,3 +1,11 @@
+### 2022年04月11日发布——HBuilderX（3.4.5.20220408-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.5.20220408-alpha）版本生成本地打包App资源。
++ 修复 3.4.3版本 引出的 nvue 组件设置 box-shadow 后 border 可能显示异常的Bug
++ 修复 3.4.3版本 引出的 tabBar 设置 iconPath 且未设置 selectedIconPath 可能引起图标无法正常显示的Bug
++ 修复 nvue 页面 flex 布局在部分设备可能出现换行计算不正确的Bug
++ 修复 uni-AD 腾讯优量汇插屏广告在 onLoad 回调中执行 show 可能引起广告无法正常显示的Bug
+
 ### 2022年04月06日发布——HBuilderX（3.4.4.20220403-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.4.20220403-alpha）版本生成本地打包App资源。

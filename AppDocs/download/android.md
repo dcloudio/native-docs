@@ -23,17 +23,16 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年04月11日发布——HBuilderX（3.4.5.20220408-alpha）
+### 2022年04月18日发布——HBuilderX（3.4.6.20220416-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Cop4bKUCiO)，提取码: ZCd0
+[和彩云](https://caiyun.139.com/m/i?115CnWcDn1YKU)，提取码: hv97
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.5.20220408-alpha）版本生成本地打包App资源。
-+ 修复 3.4.3版本 引出的 nvue 组件设置 box-shadow 后 border 可能显示异常的Bug
-+ 修复 3.4.3版本 引出的 tabBar 设置 iconPath 且未设置 selectedIconPath 可能引起图标无法正常显示的Bug
-+ 修复 nvue 页面 flex 布局在部分设备可能出现换行计算不正确的Bug
-+ 修复 uni-AD 腾讯优量汇插屏广告在 onLoad 回调中执行 show 可能引起广告无法正常显示的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.6.20220416-alpha）版本生成本地打包App资源。
++ 修复 uni.saveImageToPhotosAlbum 在部分手机可能无法正常保存到系统相册的Bug
++ 修复 uni.getScreenBrightness 获取屏幕亮度始终返回 -1 的Bug
++ 修复 nvue 页面调用 dom.scrollToElement 滚动到 list 组件指定元素位置可能无效的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
