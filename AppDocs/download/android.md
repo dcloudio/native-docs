@@ -2,17 +2,15 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2022年03月15日发布——HBuilderX（3.3.13.20220314）
+### 2022年04月24日发布——HBuilderX（3.4.7.20220422）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115Cnq50JAhSc)，提取码: LHkK
+[和彩云](https://caiyun.139.com/m/i?115CeUbbHJ94r)，提取码: WC5o
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.13.20220314）版本生成本地打包App资源。
-+ 修复 vue3 项目 安卓低版本时使用 type=number 的 input 组件输入报错的Bug
-+ 更新 uni-AD 腾讯优量汇SDK为 4.450.1320 版；今日头条穿山甲SDK为 4.3.0.1 版；快手广告SDK为 3.3.21 版
-+ 更新 UniPush 使用的个推SDK版本为3.2.7.0，个推核心组件SDK版本为3.1.7.0，优化云端打包按需包含厂商通道SDK
-+ 修复 一键登录 授权页面服务协议自定义复选框状态图片设置不正确的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.7.20220422）版本生成本地打包App资源。
++ 修复 3.4.6版本 引出的 nvue 页面在部分设备可能出现渲染闪烁的Bug
++ 更新 高德地图SDK为 9.2.0 版， 解决在部分设备使用地图引起应用崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 

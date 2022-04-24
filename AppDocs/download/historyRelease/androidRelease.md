@@ -1,3 +1,52 @@
+### 2022年04月20日发布——HBuilderX（3.4.6.20220420）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.6.20220420）版本生成本地打包App资源。
++ 优化 nvue box-shadow 组件 渲染逻辑，解决在部分设备可能出现排版异常及闪烁的问题
++ 修复 nvue image 组件 mode 属性设置为 widthFix/HeightFix 时可能导致图片无法显示的Bug
++ 修复 nvue list 组件插入列表项可能引起页面闪烁的Bug
++ 修复 nvue web-view 组件 progress 颜色值不支持3位十六进制格式字符串的Bug
++ 修复 nvue web-view 组件 无法正常加载使用非受信任证书网页的Bug
++ 修复 nvue animation 动画切到后台可能无法执行的Bug
++ 修复 nvue map 组件 marker 设置 joinCluster 为 true 时导致 callouttap 事件不响应的Bug
++ 修复 nvue text 组件 font-style 设置 italic 在部分设备可能无效的Bug
++ 修复 nvue 页面切换可能导致 plus.key.addEventListener 监听 keydown 事件不触发回调的Bug
++ 修复 nvue map 组件 使用高德地图时，频繁调用 addMarkers 增加聚合点可能引起崩溃的Bug
++ 修复 nvue map 组件 使用谷歌地图时，调用 moveAlong 移动 marker 可能出现偏移的Bug
++ 修复 nvue swiper 组件 设置 circular 为 true 时首次启动可能先显示最后一项的Bug 详情
++ 修复 nvue swiper 组件 在特定环境下可能出现页面空白的Bug
++ 修复 nvue list 组件 横向滚动不会触发 loadmore 事件的Bug
++ 修复 nvue 页面 flex 布局在部分设备可能出现换行计算不正确的Bug
++ 修复 nvue 页面调用 dom.scrollToElement 滚动到 list 组件 指定元素位置可能无效的Bug
++ 修复 连续调用 uni.chooseImage 在部分手机可能引起应用闪退的Bug
++ 修复 uni.saveImageToPhotosAlbum 在部分手机可能无法正常保存到系统相册的Bug
++ 修复 uni.getScreenBrightness 获取屏幕亮度始终返回 -1 的Bug 详情
++ uni-AD 新增 百度百青藤广告联盟 包括开屏、信息流、插屏、激励视频广告
++ uni-AD 新增 支持华为广告联盟 包括开屏、信息流、插屏、激励视频广告（仅Android平台）
++ uni-AD 修复 Android平台 穿山甲广告联盟在部分设备可能提示应用的uni-AD业务状态异常的Bug
++ 新增 支持Google地图
++ 新增 音频播放 AudioPlayer 支持 playbackRate 设置倍速播放
++ 新增 Google支付支持 isReadyToPay 方法
++ 更新 UniPush 使用的个推SDK版本为3.2.7.0，个推核心组件SDK版本为3.1.7.0，优化云端打包按需包含厂商通道SDK
++ 更新 高德定位SDK为 6.0.1 版，高德地图SDK为 9.0.1 版；UniPush 使用的个推SDK为 3.2.9.0 版，小米厂商推送库SDK为 3.1.1 版；Google地图SDK为 18.0.2 版
++ 优化 应用启动首页可能出现上下抖动的Bug
++ 优化 二维码扫码检测到 QR 码时自动放大，提升扫码识别率
++ 修复 uni-AD 腾讯优量汇插屏广告在 onLoad 回调中执行 show 可能引起广告无法正常显示的Bug
++ 修复 使用 X5 内核调用 plus.key.addEventListener 监听 keyup 事件不触发回调的Bug
++ 修复 Android8及以上设备 plus.navigator.createShortcut 无法创建桌面快捷图标的Bug
++ 修复 视频播放控件 video 边缘可能出现黑线的Bug
++ 修复 在部分设备调用 plus.runtime.restart 可能引起应用闪退的Bug
++ 修复 系统语言设置为土耳其语时，tabbar 切换选项可能导致不显示的Bug
++ 修复 本地相册选择视频设置 compressed 为 false 时依然会压缩的Bug
++ 修复 在部分设备识别国际化语言不正确的Bug
+
+### 2022年03月15日发布——HBuilderX（3.3.13.20220314）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.3.13.20220314）版本生成本地打包App资源。
++ 修复 vue3 项目 安卓低版本时使用 type=number 的 input 组件输入报错的Bug
++ 更新 uni-AD 腾讯优量汇SDK为 4.450.1320 版；今日头条穿山甲SDK为 4.3.0.1 版；快手广告SDK为 3.3.21 版
++ 更新 UniPush 使用的个推SDK版本为3.2.7.0，个推核心组件SDK版本为3.1.7.0，优化云端打包按需包含厂商通道SDK
++ 修复 一键登录 授权页面服务协议自定义复选框状态图片设置不正确的Bug
+
 ### 2022年02月10日发布——HBuilderX（3.3.11.20220209）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.3.11.20220209）版本生成本地打包App资源。
