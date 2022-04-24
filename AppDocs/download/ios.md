@@ -10,26 +10,26 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年03月14日发布——HBuilderX（3.3.13.20220314） 
+### 2022年04月22日发布——HBuilderX（3.4.7.20220422） 
 
-[百度云点击下载SDK，提取码: mt4v](https://pan.baidu.com/s/1Kvj5WQ9OGIf0NbNvj46e0Q?pwd=mt4v)
+[百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy)
 
-[和彩云点击下载SDK，提取码: Lm9X](https://caiyun.139.com/m/i?115CnWaazikEZ) 
+[和彩云点击下载SDK，提取码: nEP1](https://caiyun.139.com/m/i?115CeUbu1y8c5) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.3.13.20220314）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.7.20220422）版本生成本地打包App资源。
 
-## 3.3.13.20220314
-+ App平台、H5平台 修复 vue3 项目两个开启了下拉刷新的页面跳转后返回，下拉刷新不触发 onPullDownRefresh 生命周期的Bug [详情](https://github.com/dcloudio/uni-app/issues/3187)
-+ App平台、H5平台 修复 vue3 项目 uni.pageScrollTo 的 duration 为0时不生效的Bug [详情](https://ask.dcloud.net.cn/question/139432)
-+ App平台 修复 vue3 项目 nvue 页面使用 map 组件时部分方法不生效的Bug [详情](https://ask.dcloud.net.cn/question/138515)
-+ App平台 修复 vue3 项目使用 html 原生标签（如div）时，事件监听报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3240)
-+ App平台 修复 vue3 项目 navigator 组件和 rich-text 组件嵌套使用时 scopeId 值不一致导致的样式Bug [详情](https://ask.dcloud.net.cn/question/140644)
-+ App平台 修复 vue3 项目 wxs/renderjs 监听事件运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3324)
-+ App-iOS平台 修复 vue3 项目 canvas 组件绘制本地图像后无法导出到本地到Bug
-+ App-iOS平台 修复 vue3 项目 调试时启动白屏的Bug
-  
-+ 更新 uni-AD 腾讯优量汇SDK iOS为 4.13.50 版；今日头条穿山甲SDK iOS为 4.3.0.2 版；快手广告SDK iOS为 3.3.21 版
-+ iOS平台 修复 geitImageInfo 可能不触发回调的Bug [详情](https://ask.dcloud.net.cn/question/139361)
+## 3.4.7.20220422
+
+ + 新增 vue3 项目内置支持 pinia [详情](https://uniapp.dcloud.net.cn/tutorial/vue3-pinia.html)
+ + 修复 3.4.6 版本引发的 vue3 项目使用 pinia 报错的Bug [详情](https://ask.dcloud.net.cn/question/143578)
+ + 修复 3.4.6 版本引发的 vue3 项目部分情况编译变慢的Bug [详情](https://github.com/dcloudio/uni-app/issues/3458)
+ + App平台 修复 vue3 项目 nvue 页面引用的静态资源编译后可能不存在的Bug
+ + App平台 修复 vue3 项目 nvue 页面事件无法冒泡的Bug
+ + App平台 修复 vue3 项目 nvue 页面 input，textarea 组件的 v-model 不生效的Bug [详情](https://ask.dcloud.net.cn/question/143547)
+ + App平台 修复 3.4.6 版本引发的 ArrayBuffer 类型判断错误的Bug [详情](https://ask.dcloud.net.cn/question/143534)
+
+ + iOS平台 修复 3.4.6版本 引出的 获取底部安全区域高度不正确的Bug [详情](https://ask.dcloud.net.cn/question/143633)
+ + iOS平台 修复 3.4.6版本 引出的 未使用Push模块上传 AppStore 报`ITMS-90078: Missing Push Notification Entitlement`警告的Bug
 
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -39,9 +39,11 @@
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
-[百度网盘下载历史版本，提取码: svpv](https://pan.baidu.com/s/1gXd3Z3AMnLi9J19ZhCKJ4w?pwd=svpv)
 
-[和彩云点击下载SDK，提取码: BMwB](https://caiyun.139.com/m/i?115CnqbTrh21U) 
+
+[百度网盘下载历史版本，提取码: svpv](https://pan.baidu.com/s/1PBSeUz395_Ehk1GPteaHNA?pwd=2s13)
+
+[和彩云点击下载SDK，提取码: BnoS](https://caiyun.139.com/m/i?115Coo5xQt0Bv) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 
@@ -51,25 +53,25 @@
 
 [百度云点击下载SDK，提取码: 63av](https://pan.baidu.com/s/1LLGkN8qAlmwGbWGMnnK3YQ?pwd=63av) 
 
-[和彩云点击下载SDK，提取码: Q9LN](https://caiyun.139.com/m/i?115CnqbdF1WTS) 
+[和彩云点击下载SDK，提取码: P1Tw](https://caiyun.139.com/m/i?115Coo5v5YNaK) 
 
 ## 3.4.6.20220416-alpha
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.6.20220416-alpha）版本生成本地打包App资源。
 
 
-+ App平台 修复 vue3 项目 nvue map 组件部分属性无效的Bug [详情](https://ask.dcloud.net.cn/question/142159)
-+ App平台 修复 InnerAudioContext 某些情况下 paused 属性值不正确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
-+ App平台 修复 vue3 项目使用 vue-i18n 运行报错的Bug [详情](https://ask.dcloud.net.cn/question/142911)
-+ App平台 修复 vue3 项目 renderjs 在低版本手机可能运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3366)
-+ App-iOS平台 修复 video 不支持 enable-play-gesture 属性的Bug [详情](https://ask.dcloud.net.cn/question/141862)
-+ App-iOS平台 修复 nvue input 组件 confirm-hold 属性默认值不正确的Bug
-+ App-iOS平台 修复 nvue ad-content-page 显示位置可能偏移的Bug
-+ iOS平台 修复 3.4.5版本 引出的 关闭页面动画异常的Bug [详情](https://ask.dcloud.net.cn/question/142797)
-+ iOS平台 修复 音频播放 AudioPlayer 获取暂停状态不准确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
-+ iOS平台 修复 音频播放 AudioPlayer 暂停后再恢复播放倍速会重置为1的Bug [详情](https://ask.dcloud.net.cn/question/142848)
-+ iOS平台 修复 视频播放控件 video 在刘海屏设备全屏播放时进度条可能无法拖动的Bug [详情](https://ask.dcloud.net.cn/question/141862)
-+ iOS平台 修复 视频播放控件 video 设置 show-fullscreen-btn 属性为 false 时可能显示不正确的Bug
+ + App平台 修复 vue3 项目 nvue map 组件部分属性无效的Bug [详情](https://ask.dcloud.net.cn/question/142159)
+ + App平台 修复 InnerAudioContext 某些情况下 paused 属性值不正确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
+ + App平台 修复 vue3 项目使用 vue-i18n 运行报错的Bug [详情](https://ask.dcloud.net.cn/question/142911)
+ + App平台 修复 vue3 项目 renderjs 在低版本手机可能运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3366)
+ + App-iOS平台 修复 video 不支持 enable-play-gesture 属性的Bug [详情](https://ask.dcloud.net.cn/question/141862)
+ + App-iOS平台 修复 nvue input 组件 confirm-hold 属性默认值不正确的Bug
+ + App-iOS平台 修复 nvue ad-content-page 显示位置可能偏移的Bug
+ + iOS平台 修复 3.4.5版本 引出的 关闭页面动画异常的Bug [详情](https://ask.dcloud.net.cn/question/142797)
+ + iOS平台 修复 音频播放 AudioPlayer 获取暂停状态不准确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
+ + iOS平台 修复 音频播放 AudioPlayer 暂停后再恢复播放倍速会重置为1的Bug [详情](https://ask.dcloud.net.cn/question/142848)
+ + iOS平台 修复 视频播放控件 video 在刘海屏设备全屏播放时进度条可能无法拖动的Bug [详情](https://ask.dcloud.net.cn/question/141862)
+ + iOS平台 修复 视频播放控件 video 设置 show-fullscreen-btn 属性为 false 时可能显示不正确的Bug
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -87,6 +89,6 @@
 									
 [百度网盘下载历史版本，提取码: c69z](https://pan.baidu.com/s/1cZlPdrczxyAbaGNEVnB9YA?pwd=c69z)
 
-[和彩云点击下载历史版本，提取码: hktO](https://caiyun.139.com/m/i?115CnqbYYMHEp) 
+[和彩云点击下载历史版本，提取码: tyw0](https://caiyun.139.com/m/i?115CoA2pIy144) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
