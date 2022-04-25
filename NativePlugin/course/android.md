@@ -607,12 +607,11 @@ public void onActivityResume() {
 ```
 
 #### 第三方依赖库
-+ 均要使用compileOnly依赖方式，打包时需要配置或挪动文件到相关文件夹中。 打包插件介绍时会有相关的具体描述！
 + 请参考[android平台所有依赖库列表](http://ask.dcloud.net.cn/article/35419), 编写自己插件时需要查看是否与编译的程序依赖有冲突，防止审核失败或编译失败等问题。
 + 对有些插件需要引用到.so文件，需要特殊配置一下.请参考[Android studio添加第三方库和so](https://blog.csdn.net/anhenzhufeng/article/details/78913341)
 + 代码中用到的JSONObject、JSONArray 要使用com.alibaba.fastjson.JSONArray;com.alibaba.fastjson.JSONObject; 不要使用org.json.JSONObject;org.json.JSONArray 否则造成参数无法正常传递使用等问题。
-+ 尽量去下载相关的aar或jar，然后配置到插件包相应文件夹下。aar放到android目录下。jar放到libs目录下。如果不下载也可以。可使用compileOnly修饰，然后将相应的依赖库名称配置到package.json中的dependencies节点下。
-+ 第三方库依赖冲突。一种是主app已完整集成相关第三方库。可使用用compileOnly修饰即可。如果主app仅集成了部分第三方库。可参考https://blog.csdn.net/wapchief/article/details/80514880
++ aar放到android目录下。jar放到libs目录下。也可使用compileOnly修饰，然后将相应的依赖库名称配置到package.json中的dependencies节点下。具体参考[package.json文档](NativePlugin/course/package?id=packagejson)
++ 第三方库依赖冲突。一种是主app已完整集成相关第三方库。可使用compileOnly修饰即可。如果主app仅集成了部分第三方库。可参考https://blog.csdn.net/wapchief/article/details/80514880
 + .os文件需要注意 armeabi-v7a必须存在，没有可能无法正常使用！其他cpu类型os库x86 、arm64-v8a、x86-64如有最好添加。
 + 插件中包含FileProvider云打包冲突，可通过http://ask.dcloud.net.cn/article/36105此贴配置绕过。
 + 插件中有资源路径返回时，请使用绝对路径file://开头防止不必要的路径转换问题。
