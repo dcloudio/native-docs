@@ -48,8 +48,8 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 5. uni小程序支持 wgt升级，可以在小程序中直接调用 api 在线更新 wgt 资源，即热更新 [参考文档](https://ask.dcloud.net.cn/article/35667)
 
 ## 注意
-- 目前 uni小程序sdk 仅支持在原生App中集成使用，暂不支持 HBuilderX 打包生成的App中集成
-- 目前 uni小程序sdk 支持同时运行多个小程序实例,android平台最多打开三个
+- uni小程序sdk 仅支持在原生App中集成使用，不支持 HBuilderX 打包生成的App中集成。如需在uni-app项目中使用，请加QQ群984388064申请
+- uni小程序sdk 支持同时运行多个小程序实例，但android平台最多打开三个
 - uni 小程序 sdk 无法使用插件市场中付费的原生插件
 
 ## 案例
