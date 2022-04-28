@@ -1,3 +1,10 @@
+### 2022年04月18日发布——HBuilderX（3.4.6.20220416-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.6.20220416-alpha）版本生成本地打包App资源。
++ 修复 uni.saveImageToPhotosAlbum 在部分手机可能无法正常保存到系统相册的Bug
++ 修复 uni.getScreenBrightness 获取屏幕亮度始终返回 -1 的Bug
++ 修复 nvue 页面调用 dom.scrollToElement 滚动到 list 组件指定元素位置可能无效的Bug
+
 ### 2022年04月20日发布——HBuilderX（3.4.6.20220420）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.6.20220420）版本生成本地打包App资源。
