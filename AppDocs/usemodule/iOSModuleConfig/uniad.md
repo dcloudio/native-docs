@@ -61,7 +61,7 @@
 快手内容联盟SDK(包含广告SDK)使用Libs/Compatibles/KSAdSDK.framework
 * hx3.4.8之后:
 快手广告SDK使用Libs/KSAdSDK.xcframework
-快手内容联盟SDK(包含广告SDK)使用KSAdSDK.framework
+快手内容联盟SDK(包含广告SDK)使用Libs/KSAdSDK.framework
 
 ## Sigmob
 ### 添加依赖资源及文件
