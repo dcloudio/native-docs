@@ -10,16 +10,15 @@
 
 ```JAVA
 // 启动小程序
-IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, splashClass, redirectPath, arguments)
+IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, uniMPOpenConfiguration)
 ```
 
 |参数|类型|必填|说明|
 |:----|:----|:----|:-----|
 |context|Context|是|上下文|
 |appid|String|是|小程序的 appid|
-|splashClass|IDCUniMPAppSplashView|否|自定义splashView接口类|
-|redirectPath|String|否|指定启动应用后直接打开的页面路径|
-|arguments|JSONObject|否|启动小程序传入的参数|
+|uniMPOpenConfiguration|UniMPOpenConfiguration|是|小程序打开的参数集合类，包含 redirectPath（指定启动应用后直接打开的页面路径）extraData（其他自定义参数）splashClass(自定义splashView接口类)|
+
 
 **返回值**
 
