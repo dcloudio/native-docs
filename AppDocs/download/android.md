@@ -21,19 +21,15 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年04月28日发布——HBuilderX（3.4.8.20220428-alpha）
+### 2022年04月09日发布——HBuilderX（3.4.9.20220508-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Co9hlefnJ0)，提取码: ncPf
+[和彩云](https://caiyun.139.com/m/i?115Co8kbB3XbE)，提取码: c9Te
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.8.20220428-alpha）版本生成本地打包App资源。
-+ 修复 3.4.6版本 引出的 nvue 页面在部分设备可能出现渲染闪烁的Bug
-+ 修复 3.4.6版本 引出的 nvue 页面 boxShadow 在部分情况下可能渲染异常的Bug
-+ 修复 bindingx 执行 getComputedStyle 方法返回异常的Bug
-+ 更新 uni-AD 腾讯优量汇SDK为 4.462.1332 版；快手广告SDK为 3.3.23 版
-+ 更新 高德地图SDK为 9.2.0 版， 解决在部分设备使用地图引起应用崩溃的Bug
-+ 修复 uni-AD 离线打包开通开屏广告可能引起应用崩溃的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.9.20220508-alpha）版本生成本地打包App资源。
++ 修复 音频播放 AudioPlayer 暂停后设置播放倍速大于 0 会自动触发播放的Bug
++ 修复 uni-AD 开屏广告开通腾讯优量汇可能引起应用启动白屏的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
