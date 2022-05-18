@@ -49,25 +49,25 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年04月28日发布——HBuilderX（3.4.8.20220428-alpha）
-
-??:
-???:34WZ
-???????????APP???????
+### 2022年05月18日发布——HBuilderX（3.4.10.20220517-alpha）
 
 [百度云点击下载SDK，提取码: 63av](https://pan.baidu.com/s/1LLGkN8qAlmwGbWGMnnK3YQ?pwd=63av) 
 
-[和彩云点击下载SDK，提取码: 34WZ](https://caiyun.139.com/m/i?115ComnCUJpZ7) 
+[和彩云点击下载SDK，提取码: d0NC](https://caiyun.139.com/m/i?115CepUcrSEaW) 
 
-## 3.4.9.20220508-alpha
+## 3.4.10.20220517-alpha
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.9.20220508-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.10.20220517-alpha）版本生成本地打包App资源。
 
-
-+ App-iOS平台 修复 nvue textarea 组件默认换行不生效的Bug [详情](https://ask.dcloud.net.cn/question/143784)
-+ App-iOS平台 修复 nvue map 组件开启标记点聚合时，调用 removeMarkers 移除所有 marker 引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/143991)
-+ 修复 音频播放 AudioPlayer 暂停后设置播放倍速大于 0 会自动触发播放的Bug [详情](https://ask.dcloud.net.cn/question/143757)
-+ iOS平台 修复 登录鉴权、分享的 authorize 方法传入认证参数 options 不生效的Bug
++ App、H5平台 优化 image 组件减少网络请求
++ App、H5平台 修复 canvas transform 渲染时没有使用高清处理的Bug [详情](https://ask.dcloud.net.cn/question/144676)
++ App平台、微信小程序平台 新增 vue3 ad-rewarded-video 激励视频广告组件，更加易用 [详情](https://uniapp.dcloud.net.cn/component/ad-rewarded-video.html)
++ App平台、微信小程序平台 新增 vue3 ad-interstitial 插屏广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-interstitial.html)
++ App平台 新增 vue3 ad-fullscreen-video 全屏视频广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-fullscreen-video.html)
++ App平台 修复 vue3 项目使用录音时报错的Bug [详情](https://ask.dcloud.net.cn/question/144821)
++ App平台 修复 vue3 项目 纯 nvue 项目编译报错的Bug
++ App平台 修复 nvue 页面列表删除渲染卡顿的Bug [详情](https://ask.dcloud.net.cn/question/144110)
++ App平台 修复 nvue 页面 transition 包含多个属性时编译报错的Bug [详情](https://ask.dcloud.net.cn/question/89110)
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -83,8 +83,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
  		
 						
-[百度网盘下载历史版本，提取码: ch15](https://pan.baidu.com/s/16CEoq37ULUcwVidGR2GYXQ?pwd=ch15)
+[百度网盘下载历史版本，提取码: dutr](https://pan.baidu.com/s/1Xtz93OQ0rQYlDo2fFAaw7w?pwd=dutr)
 
-[和彩云点击下载历史版本，提取码: AHFU](https://caiyun.139.com/m/i?115Co8l5eNeZo) 
+[和彩云点击下载历史版本，提取码: Svhp](https://caiyun.139.com/m/i?115CeVV8imysI) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
