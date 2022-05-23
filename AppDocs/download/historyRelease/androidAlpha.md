@@ -1,3 +1,8 @@
+### 2022年05月18日发布——HBuilderX（3.4.10.20220517-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.10.20220517-alpha）版本生成本地打包App资源。
++ 补齐 tabBar 和 navigationBar 支持高斯模糊效果[详情](https://uniapp.dcloud.io/tutorial/app-blureffect.html)
+
 ### 2022年05月09日发布——HBuilderX（3.4.9.20220508-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.9.20220508-alpha）版本生成本地打包App资源。
