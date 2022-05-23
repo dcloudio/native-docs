@@ -49,25 +49,21 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年05月18日发布——HBuilderX（3.4.10.20220517-alpha）
+### 2022年05月20日发布——HBuilderX（3.4.11.20220520-alpha）
 
-[百度云点击下载SDK，提取码: 63av](https://pan.baidu.com/s/1LLGkN8qAlmwGbWGMnnK3YQ?pwd=63av) 
+[百度云点击下载SDK，提取码: cy34](https://pan.baidu.com/s/1d52yiPAK9QayZU-1nOheiA?pwd=cy34) 
 
-[和彩云点击下载SDK，提取码: d0NC](https://caiyun.139.com/m/i?115CepUcrSEaW) 
+[和彩云点击下载SDK，提取码: qs6p](https://caiyun.139.com/m/i?115CnqfBa5M05) 
 
-## 3.4.10.20220517-alpha
+## 3.4.11.20220520-alpha
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.10.20220517-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.11.20220520-alpha）版本生成本地打包App资源。
 
-+ App、H5平台 优化 image 组件减少网络请求
-+ App、H5平台 修复 canvas transform 渲染时没有使用高清处理的Bug [详情](https://ask.dcloud.net.cn/question/144676)
-+ App平台、微信小程序平台 新增 vue3 ad-rewarded-video 激励视频广告组件，更加易用 [详情](https://uniapp.dcloud.net.cn/component/ad-rewarded-video.html)
-+ App平台、微信小程序平台 新增 vue3 ad-interstitial 插屏广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-interstitial.html)
-+ App平台 新增 vue3 ad-fullscreen-video 全屏视频广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-fullscreen-video.html)
-+ App平台 修复 vue3 项目使用录音时报错的Bug [详情](https://ask.dcloud.net.cn/question/144821)
-+ App平台 修复 vue3 项目 纯 nvue 项目编译报错的Bug
-+ App平台 修复 nvue 页面列表删除渲染卡顿的Bug [详情](https://ask.dcloud.net.cn/question/144110)
-+ App平台 修复 nvue 页面 transition 包含多个属性时编译报错的Bug [详情](https://ask.dcloud.net.cn/question/89110)
++ App平台 修复 nvue 页面 switch 组件切换状态无限闪动的Bug [详情](https://ask.dcloud.net.cn/question/145272)
++ App平台 修复 纯 nvue 编译模式 uni_modules 内静态资源未拷贝的Bug
++ App-iOS平台 修复 vue3 项目 nvue 页面 swiper 组件面板指示点无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/145097)
++ 更新 uni-AD 腾讯优量汇SDK iOS为 4.13.65 版；快手广告SDK iOS为 3.3.24 版；百度百青藤广告SDK iOS为 4.87 版
+
 
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -83,8 +79,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
  		
 						
-[百度网盘下载历史版本，提取码: dutr](https://pan.baidu.com/s/1Xtz93OQ0rQYlDo2fFAaw7w?pwd=dutr)
+[百度云点击下载历史版本，提取码: wgmr](https://pan.baidu.com/s/1V5bYo1hv7PVPj99EsTE73A?pwd=wgmr) 
 
-[和彩云点击下载历史版本，提取码: Svhp](https://caiyun.139.com/m/i?115CeVV8imysI) 
+[和彩云点击下载历史版本，提取码: 7iUU](https://caiyun.139.com/m/i?115Cep9L99rOh) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
