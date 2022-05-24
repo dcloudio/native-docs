@@ -21,14 +21,13 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年05月23日发布——HBuilderX（3.4.11.20220520-alpha）
+### 2022年05月24日发布——HBuilderX（3.4.12.20220523-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAc8fSwkA)，提取码: ZQ4G
+[和彩云](https://caiyun.139.com/m/i?115CoAWQiEZG6)，提取码: SFHm
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.11.20220520-alpha）版本生成本地打包App资源。
-+ 更新 uni-AD 今日头条穿山甲SDK Android为 4.5.1.1 版；快手广告SDK Android为 3.3.24 版；百度百青藤广告SDK Android为 9.212 版；Sigmob广告联盟SDK Android为 3.5.9 版
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.12.20220523-alpha）版本生成本地打包App资源。
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
