@@ -1,5 +1,11 @@
 ## Alpha版历次更新说明
 
+## 3.4.11.20220520-alpha
+App平台 修复 nvue 页面 switch 组件切换状态无限闪动的Bug [详情](https://ask.dcloud.net.cn/question/145272)
++ App平台 修复 纯 nvue 编译模式 uni_modules 内静态资源未拷贝的Bug
++ App-iOS平台 修复 vue3 项目 nvue 页面 swiper 组件面板指示点无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/145097)
++ 更新 uni-AD 腾讯优量汇SDK iOS为 4.13.65 版；快手广告SDK iOS为 3.3.24 版；百度百青藤广告SDK iOS为 4.87 版
+
 ## 3.4.10.20220517-alpha
 + App、H5平台 优化 image 组件减少网络请求
 + App、H5平台 修复 canvas transform 渲染时没有使用高清处理的Bug [详情](https://ask.dcloud.net.cn/question/144676)
