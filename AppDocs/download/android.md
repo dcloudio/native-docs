@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CeUbbHJ94r)，提取码: WC5o
+[和彩云](https://caiyun.139.com/m/i?115Cnq5gUi00m)，提取码: Q83J
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.7.20220422）版本生成本地打包App资源。
 + 修复 3.4.6版本 引出的 nvue 页面在部分设备可能出现渲染闪烁的Bug
@@ -14,7 +14,7 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115CnWfhS1Aka)，提取码: pNHq
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CoA0tkmuCW)，提取码: YrWw
 
 [历史更新日志](/AppDocs/download/historyRelease/androidRelease.md)
 
@@ -31,6 +31,6 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115CnVmQQQRee)，提取码: qCk0
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115Ceoa47mEyQ)，提取码: 3njF
 
 [历史更新日志](/AppDocs/download/historyRelease/androidAlpha.md)
