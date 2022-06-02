@@ -21,13 +21,17 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年05月24日发布——HBuilderX（3.4.12.20220523-alpha）
+### 2022年06月02日发布——HBuilderX（3.4.13.20220601-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAWQiEZG6)，提取码: SFHm
+[和彩云](https://caiyun.139.com/m/i?115ConfnKTxqH)，提取码: x0tV
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.12.20220523-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.13.20220601-alpha）版本生成本地打包App资源。
++ 修复 使用谷歌地图时，mapContext 对象调用 moveAlong 移动 marker 动画过程中拖拽地图会产生偏移的Bug
++ 修复 nvue view 组件 hover-class 属性动态改变组件大小时无效的Bug
++ 新增 原生隐私政策提示框支持 hrefLoader 属性，配置提示框中点击 href 链接的打开方式
++ 修复 uni-AD 腾讯优量汇广告联盟部分下载类广告下载成功之后无法安装的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
