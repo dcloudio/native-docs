@@ -1,5 +1,8 @@
 ## Alpha版历次更新说明
 
+## 3.4.12.20220523-alpha
+无
+
 ## 3.4.11.20220520-alpha
 App平台 修复 nvue 页面 switch 组件切换状态无限闪动的Bug [详情](https://ask.dcloud.net.cn/question/145272)
 + App平台 修复 纯 nvue 编译模式 uni_modules 内静态资源未拷贝的Bug
