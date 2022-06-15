@@ -172,7 +172,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 		dependencies {
 			classpath 'com.android.tools.build:gradle:3.4.1'
 			// 增加agcp配置。
-			classpath 'com.huawei.agconnect:agcp:1.4.1.300'
+			classpath 'com.huawei.agconnect:agcp:1.6.0.300'
 		}
 	}
 	allprojects {
@@ -204,7 +204,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	
 	~~~
 	dependencies {
-		implementation 'com.huawei.hms:push:5.0.2.300'
+		implementation 'com.huawei.hms:push:6.1.0.300'
 	}
 	~~~
 	
@@ -220,6 +220,8 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	
 
 ## 个推推送
+
+**注意：个推推送和UniPush二选一进行集成！不要同时集成以免编译错误！**
 
 ### 需要拷贝的文件
 
@@ -429,6 +431,7 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
 [个推](/AppDocs/usemodule/androidModuleConfig/push?id=个推推送)
 
 <!--
+
 ## 小米推送
 
 ### 需要拷贝的文件
@@ -520,8 +523,12 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
 
 ##  FCM
 
+**注意：FCM与上文的谷歌推送的区别为：这个库是单独集成FCM的库，而上文的谷歌推送是基于个推实现的，所以不要同时集成。**
+
 ### Gradle配置
+
 **需要在project级的build.gradle设置**
+
 ~~~
 
 buildscript {
