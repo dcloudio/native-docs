@@ -32,7 +32,7 @@ android {
 
 ### AndroidManifest.xml配置
 
-在io.dcloud.PandoraEntry的Activity标签下追加intent-filter
+在io.dcloud.PandoraEntry的Activity标签下追加intent-filter，**注意不能和其他的intent-filter内容合并到一起**！
 ~~~xml
 <intent-filter>
 	<action android:name="android.intent.action.VIEW"/>
@@ -354,7 +354,7 @@ services节点下添加
 ~~~
 buildscript { 
 	dependencies {
-		classpath 'com.google.gms：google-services：4.2.0'
+		classpath 'com.google.gms:google-services:4.3.10'
 	}
 }
 ~~~
@@ -540,7 +540,7 @@ buildscript {
 
   dependencies {
     // ...
-    classpath 'com.google.gms:google-services:4.2.0'  // Google Services plugin
+    classpath 'com.google.gms:google-services:4.3.10'  // Google Services plugin
   }
 }
 
