@@ -75,6 +75,13 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 ~~~
+**当targetSdkVersion31及以上版本时，需追加如下权限:**
+
+~~~
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+~~~
+
 
 ### dcloud_properties.xml需要添加如下代码
 
@@ -103,6 +110,13 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
+~~~
+
+**当targetSdkVersion31及以上版本时，需追加如下权限:**
+
+~~~
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 ~~~
 
 ### dcloud_properties.xml需要添加如下代码
@@ -279,12 +293,12 @@ android 设置国际化可参考：[本地化您的应用](https://developer.and
 |dcloud_gallery_video|视频|
 |dcloud_gallery_cant_play_video|没有可以播放的程序|
 |dcloud_gallery_read_external_storage|需要打开读取存储权限|
-	
+
 #### 应用启动时引导用户允许权限的提示语
 
 字符串键名|字符串键值
 :--:|:--:|
 dcloud_permission_write_external_storage_message|引导用户开启“读写手机存储”权限提示语
 dcloud_permission_read_phone_state_message|引导用户开启“获取设备信息”权限提示语
-	
+
 配置应用启动时申请权限详细配置参考：[https://ask.dcloud.net.cn/article/36549](https://ask.dcloud.net.cn/article/36549)
