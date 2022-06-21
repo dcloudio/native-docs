@@ -45,9 +45,7 @@ dcloud_properties.xml文件在assets/data目录下
 services节点下添加
 
 ~~~xml
-<services>
-	<service name="Statistic" value="io.dcloud.feature.statistics.umeng.StatisticsBootImpl"/>
-</services>
+	<service name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.StatisticsBootImpl"/>
 ~~~
 
 ## 谷歌统计
