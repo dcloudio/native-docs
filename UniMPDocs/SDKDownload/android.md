@@ -30,7 +30,6 @@
 
 #### SDK 3.4.7 V2版本（支持同时运行多个小程序）
 
-[点击下载UniMPSDK_Android@3.4.7.V2.20220425.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.4.7.V2.20220425.zip)
 
 #### 更新日志
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.7.20220422.html)
@@ -41,7 +40,6 @@
 
 #### SDK 3.3.13 V2版本（支持同时运行多个小程序）
 
-[点击下载UniMPSDK_Android@3.3.13.V2.20220414.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.3.13.V2.20220414.zip)
 
 #### 更新日志
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.13.20220314.html)
@@ -52,7 +50,6 @@
 
 #### SDK 3.3.11 V2版本（支持同时运行多个小程序）
 
-[点击下载UniMPSDK_Android@3.3.11.V2.20220210.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.3.11.V2.20220210.zip)
 
 #### 更新日志
 + 需使用HBuilderX（3.3.11）版本生成 小程序App 资源
