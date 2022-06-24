@@ -2,9 +2,9 @@
 
 |SDK名称|版本|备注（使用模块）|
 |:--|:--|:--|
-|百度定位|v4.1.1|Geolocation/百度定位模块 |
+|百度定位|v2.0.0|Geolocation/百度定位模块 |
 |高德定位|v2.6.7|Geolocation/高德定位 |
-|百度地图|v4.1.1|Maps/百度地图 |
+|百度地图|v6.5.0|Maps/百度地图 |
 |高德地图|v7.8.0|Maps/高德地图 |
 |微信SDK|v1.9.2|Oauth、Share、Payment/微信|
 |AlipaySDK|v15.7.9|Payment/支付宝|
@@ -23,7 +23,7 @@
 |快手|v3.3.25|UniAD/快手|
 |快手内容联盟|v3.3.29|UniAD/快手内容联盟|
 |优量汇|v4.13.65|UniAD/优量汇|
-|穿山甲|v4.4.0.5|UniAD/穿山甲|
+|穿山甲|v4.5.1.6|UniAD/穿山甲|
 |Sigmob|v4.1.0|UniAD/Sigmob|
 |百度百青藤|v4.87|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
