@@ -86,7 +86,8 @@
 		liblibNavigator.a<br/>
 		liblibNativeUI.a<br/>
 		liblibNativeObj.a<br/>
-		liblibAdSupport.a(IDFA)
+		liblibAdSupport.a(IDFA)<br/>
+		KSCrash.framework
 		</td>
 	    <td>PandoraApi.bundle 
 		</td>
