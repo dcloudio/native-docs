@@ -20,16 +20,20 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年06月15日发布——HBuilderX（3.4.17.20220614-alpha）
+### 2022年06月24日发布——HBuilderX（3.5.0.20220623-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoSn4UmcMd)，提取码: 1HsO
+[和彩云](https://caiyun.139.com/m/i?115CnXJMN9XzX)，提取码: JwYD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.17.20220614-alpha）版本生成本地打包App资源。
-+ 修复 nvue web-view 组件 user-agent 不正确导致加载H5页面显示异常的Bug
-+ 修复 nvue 组件同时设置 box-shadow、elevation 样式在部分特殊场景可能会出现渲染异常的Bug
-+ 修复 uni-AD 开屏广告在部分小米手机可能会卡在启动界面的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.0.20220623-alpha）版本生成本地打包App资源。
++ 新增 manifest.json 支持 webview 配置，系统 webview 低于指定版本时，弹出提示或者下载 x5 内核后继续启动
++ 修复 tabbar 启用高斯模糊后获取 windowBottom 错误的Bug
++ uni-AD 新增 激励视频广告支持实时竞价
++ 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备在 Android12 设备可能引起应用崩溃的Bug
++ 修复 UniPush 存在监听ACTION_BOOT_COMPLETED广播行为，可能违反应用市场上架合规检测问题
++ 修复 UniPush 调用 plus.runtime.restart 后无法创建本地通知消息的Bug
++ 修复 从本地相册选择大图片预览时可能引起应用崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 

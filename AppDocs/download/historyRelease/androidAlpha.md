@@ -1,3 +1,10 @@
+### 2022年06月15日发布——HBuilderX（3.4.17.20220614-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.4.17.20220614-alpha）版本生成本地打包App资源。
++ 修复 nvue web-view 组件 user-agent 不正确导致加载H5页面显示异常的Bug
++ 修复 nvue 组件同时设置 box-shadow、elevation 样式在部分特殊场景可能会出现渲染异常的Bug
++ 修复 uni-AD 开屏广告在部分小米手机可能会卡在启动界面的Bug
+
 ### 2022年06月02日发布——HBuilderX（3.4.13.20220601-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.13.20220601-alpha）版本生成本地打包App资源。

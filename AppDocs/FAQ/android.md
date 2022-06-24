@@ -1,3 +1,7 @@
+### 升级离线SDK到3.5.0之后，离线打包报：java.lang.NoClassDefFoundError: Failed resolution of: Lcom/sample/breakpad/BreakpadInit;
+
+离线SDK3.5.0及以上版本新增加了breakpad-build-release.aar，直接将这个库拷贝到libs目录下即可。详情可参考[文档](/AppDocs/usesdk/android.md)
+
 ### 离线打包设置隐私协议状态
 
 如果离线打包需要自定义隐私协议，为了不影响SDK正常使用，需要用户在同意或拒绝隐私状态时同步到SDK。
