@@ -239,7 +239,7 @@
 		BaiduMapAPI_Utils.framework<br/>
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
-		BaiduMapAPI_Location.framework
+		BMKLocationKit.framework
 	    </td>
 	    <td>  
 	    </td>
@@ -424,7 +424,7 @@
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
 		BaiduMapAPI_Map.framework<br/>
-		BaiduMapAPI_Location.framework
+		BMKLocationKit.framework
 		</td>
 		<td> 
 		mapapi.bundle

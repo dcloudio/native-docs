@@ -40,26 +40,22 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libSDWebImage.a、libUniAd-Csj.a、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|BUAdSDK.bundle|
+|libSDWebImage.a、libDCUniAdCsj.a、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation.framework、CSJAdSDK.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
 
 ## 腾讯优量汇
 ### 添加依赖资源及文件
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libSDWebImage.a、libUniAd-Gdt.a、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
+|libSDWebImage.a、libDCUniAdGdt.a、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
 
 ## 快手
 ### 添加依赖资源及文件
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libUniAd-Ks.a、hx3.4.8之前添加：`KSAdSDK.framework(动态库)` hx3.4.8之后添加：`KSAdSDK.xcframework(动态库)`|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
+|libDCUniAdKs.a、KSAdSDK.xcframework(动态库)|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
 
-* hx3.4.8之前:
-快手广告SDK使用Libs/KSAdSDK.framework
-快手内容联盟SDK(包含广告SDK)使用Libs/Compatibles/KSAdSDK.framework
-* hx3.4.8之后:
 快手广告SDK使用Libs/KSAdSDK.xcframework
 快手内容联盟SDK(包含广告SDK)使用Libs/KSAdSDK.framework
 
@@ -68,7 +64,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libUniAd-Sgm.a、hx3.4.8之前添加：WindSDK.framework hx3.4.8之后添加：WindSDK.xcframework、WindFoundation.xcframework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|hx3.4.8之前添加：Sigmob.bundle|
+|libDCUniAdSgm.a、WindSDK.xcframework、WindFoundation.xcframework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|无|
 
 ## 百度百青藤
 v3.4.1及以上版本支持
@@ -76,9 +72,9 @@ v3.4.1及以上版本支持
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libUniAD.a、libUniAd-Baidu.a、BaiduMobAdSDK.framework|StoreKit.framework、SafariServices.framework、MessageUI.framework、CoreMedia.framework、CoreMotion.framework、SystemConfiguration.framework、CoreLocation.framework、CoreTelephony.framework、AVFoundation.framework、AdSupport.framework、Webkit.framework、libc++.tbd|baidumobadsdk.bundle|
+|libDCUniAdBd.a、BaiduMobAdSDK.framework|StoreKit.framework、SafariServices.framework、MessageUI.framework、CoreMedia.framework、CoreMotion.framework、SystemConfiguration.framework、CoreLocation.framework、CoreTelephony.framework、AVFoundation.framework、AdSupport.framework、Webkit.framework、libc++.tbd|baidumobadsdk.bundle|
 
-**注意：以上增强广告配置，如果是uni项目 必须配置上libUniADWeex.a  这个库**
+**注意：以上增强广告配置，如果是uni项目 必须配置上libDCUniAdWeexModule.a  这个库**
 
 ## 注意事项
 
