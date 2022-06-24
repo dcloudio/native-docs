@@ -75,30 +75,22 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年06月01日发布——HBuilderX（3.4.13.20220601-alph）
+### 2022年06月23日发布——HBuilderX（3.5.0.20220623-alpha）
 
 [百度云点击下载SDK，提取码: cy34](https://pan.baidu.com/s/1d52yiPAK9QayZU-1nOheiA?pwd=cy34) 
 
+[和彩云点击下载SDK，提取码: DtaQ](https://caiyun.139.com/m/i?115CoVG0HBS4U) 
 
-[和彩云点击下载SDK，提取码: tvZs](https://caiyun.139.com/m/i?115CnVmXR4DTa) 
+## 3.5.0.20220623-alpha
 
-## 3.4.13.20220601-alpha
-
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.4.13.20220601-alph）版本生成本地打包App资源。
-  
-
-+ App、H5平台 新增 uni.getDeviceInfo [详情](https://uniapp.dcloud.io/api/system/getDeviceInfo.html)
-+ App、H5平台 新增 uni.getAppBaseInfo [详情](https://uniapp.dcloud.io/api/system/getAppBaseInfo.html)
-+ App、H5平台 新增 uni.getWindowInfo [详情](https://uniapp.dcloud.io/api/system/getWindowInfo.html)
-+ App、H5平台 新增 uni.getSystemInfo 添加 devicePixelRatio、deviceOrientation、appLanguage 等字段 [详情](https://uniapp.dcloud.io/api/system/info.html)
-+ App平台 新增 uni.getSystemInfo 添加 romName、romVersion 字段 [详情](https://uniapp.dcloud.io/api/system/info.html)
-+ App平台 修复 3.4.10 版本引出的 view 组件使用 wxs/renderjs 报错的Bug
-+ App-iOS平台 修复 nvue 页面滚动视图中设置 position 属性为 sticky 样式显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/144303)
-
-+ iOS平台 更新 一键登录 使用的个验SDK为 2.2.0.0 版，个推核心组件SDK为 1.2.7.0 版
-+ iOS平台 修复 音频播放 audio 设置 startTime 可能不生效的Bug [详情](https://ask.dcloud.net.cn/question/146028)
-+ iOS平台 修复 视频播放 video 播放 rtmp 协议直播流视频时声音只能通过扬声器播放的Bug [详情](https://ask.dcloud.net.cn/question/129703)
-+ iOS平台 修复 视频播放 video 播放 rtmp/rtsp 协议视频时 timeupdate 事件返回当前播放时间 currentTime 始终为 0 的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.0.20220623-alpha）版本生成本地打包App资源。
++ App、Web平台 修复 3.4.10 版本引出的 vue2项目 image 组件 load 事件图像大小信息不准确的Bug [详情](https://ask.dcloud.net.cn/question/147174)
++ App-iOS平台 修复 uni.request 访问特定接口可能数据解析出现乱码的Bug [详情](https://ask.dcloud.net.cn/question/145530)
++ 【重要】uni-AD 新增 激励视频广告支持实时竞价 [详情](https://uniapp.dcloud.io/uni-ad.html#bidding)
++ iOS平台 更新 uni-AD 今日头条穿山甲SDK为 4.5.1.6 版
++ iOS平台 更新 百度定位SDK为 2.0.0 版，百度地图SDK为 6.5.0 版
++ iOS平台 修复 5+App项目获取5G网络类型错误的Bug
++ iOS平台 更新 uni-AD 废弃DCADManager、DCADManagerDelegate(AppDelegate中相关内容删除即可)
 
 
 
@@ -114,10 +106,9 @@
   
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
  		
+					
+[百度云点击下载历史版本，提取码: irm4](https://pan.baidu.com/s/1rXC-kedCUibqLy-eog9a0A?pwd=irm4) 
 
-						
-[百度云点击下载历史版本，提取码: 251x](https://pan.baidu.com/s/1hmrhxJrJvqUUyhGuXYDeJA?pwd=251x) 
-
-[和彩云点击下载历史版本，提取码: jEeN](https://caiyun.139.com/m/i?115CnVmV5jarZ) 
+[和彩云点击下载历史版本，提取码: MXBr](https://caiyun.139.com/m/i?115CnXK2Z8mJm) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
