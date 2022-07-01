@@ -110,6 +110,25 @@ A: 如果宿主底层是 `TabBar` 从首页以 `push` 方式打开小程序页�
 }
 ```
 
+## Q：push 手势异常
+
+A: push 方式打开小程序时 由于小程序页面隐藏了导航栏，默认的返回手势会失效，小程序页面会设置 navigationController.interactivePopGestureRecognizer.delegate = self; 让手势生效，但是这样设置后会带来一个问题就是在 rootViewController 页面触发手势后，会导致再次 push 页面的时候无响应，解决方法就是需要在 导航控制器的 rootViewController 页面添加下面的代码控制 interactivePopGestureRecognizer.enabled
+
+
+```
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+}
+```
+
 ## Q：wgt资源释放失败 
 
 A：调用`releaseAppResourceToRunPathWithAppid:` 释放wgt资源是通过调用 SSZipArchive 库（编译在 libcoreSupport.a 库中）的方法将 wgt 资源解压到运行路径中，如果您的项目按照文档集成 UniMPSDK 基础库后 wgt 资源释放失败可以尝试将 libcoreSupport.a 库移除，然后将 [SSZipArchive](https://github.com/ZipArchive/ZipArchive) 库的源码添加到工程，注意 SSZipArchive 库需要在工程的 `Build Settings -> Preprocessor Macros -> Debug 和 Release`中分别添加 `HAVE_INTTYPES_H`，`HAVE_PKCRYPT`，`HAVE_STDINT_H`，`HAVE_WZAES`，`HAVE_ZLIB` 这5个宏定义（注意：原有的配置项下不要删除，点击+号添加），如下图所示，然后重新编译运行。
