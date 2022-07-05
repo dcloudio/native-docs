@@ -15,11 +15,24 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
+
+### 2022年07月05日发布
+
+#### SDK 3.4.18 V2版本（支持同时运行多个小程序）
+
++  Android平台 支持自定义oaid 功能
+
+[点击下载UniMPSDK_Android@3.4.18.V2.20220705.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.4.18.V2.20220705.zip)
+
+#### 更新日志
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.18.20220630.html)
+
+
+
 ### 2022年06月23日发布
 
 #### SDK 3.4.15 V2版本（支持同时运行多个小程序）
 
-[点击下载UniMPSDK_Android@3.4.15.V2.20220623.zip](https://native-res.dcloud.net.cn/unimp-sdk/SDK-Android@3.4.15-20220623.zip)
 
 #### 更新日志
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.15.20220610.html)
