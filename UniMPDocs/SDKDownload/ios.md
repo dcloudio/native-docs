@@ -9,18 +9,21 @@
 
 ## 更新日志
 
-#### SDK 3.4.15
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.4.15.zip)
+#### SDK 3.4.18
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.4.18.zip)
 
-+ 修复 调用 closeWithCompletion 方法关闭小程序后紧接着在打开小程序可能引起崩溃的Bug
-+ 修复 存在自定义 UIWindow 时 toast 可能无法显示的Bug
-+ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.15.20220610.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.18.20220630.html)
 
 ## 历史版本
 > 历史版本仅提供上个正式版本的 SDK 下载
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.4.15
++ 修复 调用 closeWithCompletion 方法关闭小程序后紧接着在打开小程序可能引起崩溃的Bug
++ 修复 存在自定义 UIWindow 时 toast 可能无法显示的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.15.20220610.html)
 
 #### SDK 3.4.7
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.7.20220422.html)
