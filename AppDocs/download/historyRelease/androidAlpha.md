@@ -1,3 +1,14 @@
+### 2022年06月24日发布——HBuilderX（3.5.0.20220623-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.0.20220623-alpha）版本生成本地打包App资源。
++ 新增 manifest.json 支持 webview 配置，系统 webview 低于指定版本时，弹出提示或者下载 x5 内核后继续启动
++ 修复 tabbar 启用高斯模糊后获取 windowBottom 错误的Bug
++ uni-AD 新增 激励视频广告支持实时竞价
++ 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备在 Android12 设备可能引起应用崩溃的Bug
++ 修复 UniPush 存在监听ACTION_BOOT_COMPLETED广播行为，可能违反应用市场上架合规检测问题
++ 修复 UniPush 调用 plus.runtime.restart 后无法创建本地通知消息的Bug
++ 修复 从本地相册选择大图片预览时可能引起应用崩溃的Bug
+
 ### 2022年06月15日发布——HBuilderX（3.4.17.20220614-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.17.20220614-alpha）版本生成本地打包App资源。
