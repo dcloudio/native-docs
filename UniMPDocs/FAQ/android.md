@@ -129,3 +129,20 @@ A: 在application节点下添加provider节点
 ~~~
 
 ${apk.applicationId}须替换成应用的包名。
+
+## Q: Android uni小程序初始化的时候显示调用隐私数据。如何避免。
+
+A：unimp 初始化时本身是没有获取设备信息的。
+
+但是其依赖的oaid库 会获取设备信息，
+
+unimp 3.4.18版本之前，初始化SDK时，会被默认初始化oaid。
+unimp 3.4.18版本之后，开发者可以自己决定oaid的初始化时机。
+
+代码如下：
+
+```
+DCSDKInitConfig config = new DCSDKInitConfig.Builder()
+                .setCustomOAID("xxxxxx")
+                .build();
+```
