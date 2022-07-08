@@ -1,5 +1,16 @@
 ## Alpha版历次更新说明
 
+## 3.5.0.20220623-alpha
+
++ App、Web平台 修复 3.4.10 版本引出的 vue2项目 image 组件 load 事件图像大小信息不准确的Bug [详情](https://ask.dcloud.net.cn/question/147174)
++ App-iOS平台 修复 uni.request 访问特定接口可能数据解析出现乱码的Bug [详情](https://ask.dcloud.net.cn/question/145530)
++ 【重要】uni-AD 新增 激励视频广告支持实时竞价 [详情](https://uniapp.dcloud.io/uni-ad.html#bidding)
++ iOS平台 更新 uni-AD 今日头条穿山甲SDK为 4.5.1.6 版
++ iOS平台 更新 百度定位SDK为 2.0.0 版，百度地图SDK为 6.5.0 版
++ iOS平台 修复 5+App项目获取5G网络类型错误的Bug
++ iOS平台 更新 uni-AD 废弃DCADManager、DCADManagerDelegate(AppDelegate中相关内容删除即可)
+
+
 ## 3.4.12.20220523-alpha
 无
 
