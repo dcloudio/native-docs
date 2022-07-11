@@ -487,9 +487,9 @@ implementation project(':uniplugin_richalert')
 ## 生成uni-app插件
 
 + 完整的android 插件包.ZIP包含：
-	- android文件 里面存放XXX.aar 、libs文件夹。
-		- .aar文件 插件包
-		- libs文件夹 存放插件包依赖的第三方 .jar文件和.so文件 
+	- android文件
+		- .aar文件 :  包括插件aar、插件所依赖的aar。
+		- libs文件夹 :  存放插件包依赖的第三方 .jar文件和.so文件 
 	- package.json 插件信息
 		- [点击查看具体说明](/NativePlugin/course/package.md) 
 
@@ -503,7 +503,13 @@ implementation project(':uniplugin_richalert')
 ```
 |-- DCloud-RichAlert --->插件id命名的文件夹
    |-- android       --->安卓插件目录
+	  |--libs
+		 - xxx.jar    --->依赖的jar
+		 - libxxx.so  --->依赖的so文件
+	  - vendor.aar   --->依赖的aar
+	  - unipluginRichAlert.aar --->插件module的aar
 ```
+<img src="https://native-res.dcloud.net.cn/images/nativeplugin/android/nativeplugin_menu_introduce.png" width="650">
 
 + 生成插件的aar并放入到android目录下
 	+ 选择Gradle--->插件module--->Tasks--->build或other--->assembleRelease编译module的aar文件
@@ -519,7 +525,9 @@ implementation project(':uniplugin_richalert')
 + 将插件依赖的aar文件放入到插件android目录下
 
 **注意**
-目前发现部分同学将开发插件的uniapp-v8-release.aar、uniapp-release.aar放到了插件包libs中。导致冲突。切记不要放进libs里去！！！
+
+**目前发现部分同学将开发插件的uniapp-v8-release.aar、uniapp-release.aar放到了插件包libs中。导致冲突。切记不要放进libs里去！！！
+插件所依赖的aar要放到android目录下。**
 
 ## 插件编写命名规范
 + 源代码的package中一定要作者标识防止与其他插件冲突导致插件审核失败，无法上传。
