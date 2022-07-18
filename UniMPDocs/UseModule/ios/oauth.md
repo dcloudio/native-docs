@@ -39,10 +39,10 @@
 
 1.在 info.plist 中添加 sinaweibo 字段，填入自己帐号的信息，如下图
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150203/02e43567316bd7b11b7228a5c29121cf.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/sinaweibo_320_before.png)
 
 #### 注意 SDK 3.2.0+ 必须按照下图填写
-![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/sina_plist.jpg)
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/sinaweibo_plist.png)
 
 
 2.在工程的 info -> URL types 中添加配置，identifier 填写`com.weibo`，URL Schemes 填写`wb[后面填写appkey]`,如下图所示
@@ -137,9 +137,9 @@
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
-5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `appSecret`, `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
+5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
 
-![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/weixin_plist.jpg)
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/weixin_plist.png)
 
 ## 苹果授权登录
 

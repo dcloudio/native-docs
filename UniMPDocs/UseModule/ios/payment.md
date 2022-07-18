@@ -64,9 +64,9 @@
 
 ![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
 
-5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `appSecret`, `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
+5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及 `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
 
-![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/weixin_plist.jpg)
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/weixin_plist.png)
 
 6.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 

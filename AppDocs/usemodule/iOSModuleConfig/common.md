@@ -715,7 +715,6 @@
 		<td>
 		<b>sinaweibo：</b><br/>
 		appkey<br/>
-		appSecret<br/>
 		redirectURI<br/>
 		<b>[URL Types]</b><br/>
 		Identifier=com.weibo<br/>
