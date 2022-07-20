@@ -14,7 +14,11 @@ AndroidManifest.xml文件的application节点中添加如下节点到节点中�
 * 渠道：[渠道包制作指南](https://ask.dcloud.net.cn/article/35974)
 
 
-## 今日头条穿山甲
+## 穿山甲
+
+### 注意事项
+
+穿山甲GroMore广告与穿山甲广告互斥，集成时必须二选一。
 
 ### 库文件配置
 
@@ -68,25 +72,6 @@ features 节点添加
 路径 | 文件名
 -|-
 SDK/libs| ads-release.aar、ads-gdt-release.aar、GDTSDK.unionNormal.aar
-
-### Androidmanifest.xml配置
-
-application节点下添加
-
-将“${applicationId}”替换成应用的包名
-
-~~~
-        <provider
-            android:name="io.dcloud.gdt.GdtFileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/gdt_file_path"
-                tools:replace="android:resource"/>
-        </provider>
-~~~
 
 ### dcloud_properties.xml配置
 
@@ -143,7 +128,7 @@ features 节点添加
 
 路径 | 文件名
 -|-
-SDK/libs| ads-release.aar、ads-sigmob-release.aar、windAd.aar
+SDK/libs| ads-release.aar、ads-sigmob-release.aar、windAd.aar、wind-common.aar(3.5.2及以上版本)
 
 ### Androidmanifest.xml配置
 
@@ -234,7 +219,8 @@ allprojects {
 
 ~~~
 dependencies {
-    implementation 'com.huawei.hms:ads-lite:13.4.49.301'
+    implementation 'com.huawei.hms:ads-lite:13.4.54.300'
+	implementation 'com.huawei.hms:ads-omsdk:1.3.0'
 }
 ~~~
 
@@ -249,6 +235,53 @@ features 节点添加
 ~~~
 
 
+## 穿山甲GroMore
+
+**最低支持版本：离线sdk 3.5.2**
+
+### 注意事项
+
+穿山甲GroMore广告与穿山甲广告互斥，集成时必须二选一。
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+-|-
+SDK/libs| ads-release.aar、ads-gromore-release.aar、mediation_ad_sdk.aar、open_ad_sdk.aar、pangle_adapter.aar
+
+### Androidmanifest.xml配置
+
+manifest节点下添加
+
+~~~
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+~~~
+
+### dcloud_properties.xml配置
+
+features 节点添加
+
+~~~ 
+        <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
+			<module name="gm" value="io.dcloud.feature.ad.gm.AdGMModule"/>
+		</feature>
+~~~
+
+<!--
 ## 360广告
 
 ### 库文件配置
@@ -270,7 +303,7 @@ features 节点添加
             <module name="360" value="io.dcloud.feature.ad.juhe360.AD360Module"/>
         </feature>
 ~~~
-
+-->
 ## nvue配置
 
 ### 库文件配置
