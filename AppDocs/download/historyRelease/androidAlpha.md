@@ -1,3 +1,16 @@
+### 2022年07月08日发布——HBuilderX（3.5.1.20220707-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.1.20220707-alpha）版本生成本地打包App资源。
++ 修复 nvue 页面为首页时在部分特定手机启动界面关闭过慢的Bug
++ 修复 nvue image 组件在部分设备可能报空指针错误的Bug
++ 优化 uni-AD 激励视频和信息流广告支持并发请求
++ 新增 Google Pay 支持配置支付网关信息 buildTokenizationSpecification
++ 更新 腾讯X5内核为 4.3.0.299 版
++ 新增 Facebook 登录 SDK 为 12.0.0 版，解决登录受限的问题
++ 修复 3.5.0 版本引出的 uni-AD 特定情况可能只展示同一广告源广告的Bug
++ 修复 uploader 上传文件请求返回错误响应码时，无法获取服务器返回数据的Bug
++ 修复 setBadgeNumber 设置角标在新荣耀设备不生效的Bug
+
 ### 2022年06月24日发布——HBuilderX（3.5.0.20220623-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.0.20220623-alpha）版本生成本地打包App资源。

@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CoUurwCr5V)，提取码: afcK
+[和彩云](https://caiyun.139.com/m/i?115Co9KonHmxU)，提取码: pmkg
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.4.18.20220630）版本生成本地打包App资源。
 + 修复 nvue web-view 组件 user-agent 不正确导致加载H5页面显示异常的Bug
@@ -17,29 +17,23 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115CoA0tkmuCW)，提取码: YrWw
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CnVMpSbT4f)，提取码: LPf5
 
 [历史更新日志](/AppDocs/download/historyRelease/androidRelease.md)
 
 
 ## Android 离线SDK - Alpha版
 
-### 2022年07月08日发布——HBuilderX（3.5.1.20220707-alpha）
+### 2022年07月20日发布——HBuilderX（3.5.2.20220719-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAEaIyMsO)，提取码: OYu5
+[和彩云](https://caiyun.139.com/m/i?115CeTtDKIhlN)，提取码: AXQ0
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.1.20220707-alpha）版本生成本地打包App资源。
-+ 修复 nvue 页面为首页时在部分特定手机启动界面关闭过慢的Bug
-+ 修复 nvue image 组件在部分设备可能报空指针错误的Bug
-+ 优化 uni-AD 激励视频和信息流广告支持并发请求
-+ 新增 Google Pay 支持配置支付网关信息 buildTokenizationSpecification
-+ 更新 腾讯X5内核为 4.3.0.299 版
-+ 新增 Facebook 登录 SDK 为 12.0.0 版，解决登录受限的问题
-+ 修复 3.5.0 版本引出的 uni-AD 特定情况可能只展示同一广告源广告的Bug
-+ 修复 uploader 上传文件请求返回错误响应码时，无法获取服务器返回数据的Bug
-+ 修复 setBadgeNumber 设置角标在新荣耀设备不生效的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.2.20220719-alpha）版本生成本地打包App资源。
++ 修复 nvue map 组件放大地图时标记点气泡 callout 不显示的Bug
++ 新增 uni-AD 支持穿山甲GroMore广告 包括开屏、信息流、插屏、全屏视频、激励视频广告
++ 更新 uni-AD 腾讯优量汇SDK为 4.472.1342 版；快手广告SDK为 3.3.27 版；快手内容联盟SDK为 3.3.30 版；百度百青藤广告SDK为 9.223 版；Sigmob广告联盟SDK为 4.4.0 版；华为广告SDK为 13.4.54.300 版
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
