@@ -405,7 +405,7 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
 
 ~~~
         <activity
-            android:name="com.igexin.sdk.PrivacyActivity"
+            android:name="io.dcloud.feature.unipush.PrivacyActivity"
             android:exported="false"/>
 ~~~
 
@@ -420,7 +420,7 @@ SDK提供aps-igexin-gp-release.aar和aps-unipush-gp-release.aar，打包应用�
             android:label="PushService"
             android:process=":pushservice" />
         <activity
-            android:name="com.igexin.sdk.PrivacyActivity"
+            android:name="io.dcloud.feature.unipush.PrivacyActivity"
             android:exported="false"/>
 ~~~
 
