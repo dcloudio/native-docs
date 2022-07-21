@@ -44,8 +44,8 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
 除视频、地图、分享、支付、登录、直播pusher等SDK，只集成基础模块如下:
 
  ```
- uniMPSDK-release.aar  //必须集成
- uniapp-release.aar //必须集成
+ uniMPSDK-V2-release.aar  //必须集成
+ uniapp-v8-release.aar //必须集成
  sqlite-release.aar
  base_oaid_sdk.aar //必须集成 注意(3.3.8版本的SDK及以下版本请集成oaid_sdk_1.0.25.aar)
  messaging-release.aar
@@ -58,12 +58,12 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  
 ```
 dependencies {
-	implementation 'com.android.support:recyclerview-v7:28.0.0' //必须集成
-    implementation 'com.android.support:support-v4:28.0.0' //必须集成
-    implementation 'com.android.support:appcompat-v7:28.0.0' //必须集成
+	implementation 'androidx.recyclerview:recyclerview:1.0.0' //必须集成
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0' //必须集成
+    implementation 'androidx.appcompat:appcompat:1.0.0' //必须集成
     implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
-    implementation 'com.facebook.fresco:fresco:1.13.0'//必须集成
-    implementation 'com.facebook.fresco:animated-gif:1.13.0'//必须集成
+    implementation 'com.facebook.fresco:fresco:2.5.0'//必须集成
+    implementation 'com.facebook.fresco:animated-gif:2.5.0'//必须集成
 	implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
 }
 ```
