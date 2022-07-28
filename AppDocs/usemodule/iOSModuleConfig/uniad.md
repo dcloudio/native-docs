@@ -40,14 +40,14 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libSDWebImage.a、libDCUniAdCsj.a、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation.framework、CSJAdSDK.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
+|libSDWebImage.a、libDCUniAdCsj.a、BUAdSDK.framework、BURelyFoundation.framework、CSJAdSDK.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
 
 ## 今日头条穿山甲Gromore(3.5.2+版本支持)
 ### 添加依赖资源及文件
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libDCUniAdGm.a、ABUAdCsjAdapter.framework、ABUAdSDK.framework、BUAdSDK.framework、BUFoundation.framework、BUCNAuxiliary.framework、BURelyFoundation.framework、CSJAdSDK.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
+|libDCUniAdGm.a、ABUAdCsjAdapter.framework、ABUAdSDK.framework、BUAdSDK.framework、BURelyFoundation.framework、CSJAdSDK.framework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
 
 ## 腾讯优量汇
 ### 添加依赖资源及文件
