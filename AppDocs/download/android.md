@@ -24,16 +24,17 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年07月20日发布——HBuilderX（3.5.2.20220719-alpha）
+### 2022年07月28日发布——HBuilderX（3.5.3.20220727-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeTtDKIhlN)，提取码: AXQ0
+[和彩云](https://caiyun.139.com/m/i?115CeTIjIH51h)，提取码: KeCH
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.2.20220719-alpha）版本生成本地打包App资源。
-+ 修复 nvue map 组件放大地图时标记点气泡 callout 不显示的Bug
-+ 新增 uni-AD 支持穿山甲GroMore广告 包括开屏、信息流、插屏、全屏视频、激励视频广告
-+ 更新 uni-AD 腾讯优量汇SDK为 4.472.1342 版；快手广告SDK为 3.3.27 版；快手内容联盟SDK为 3.3.30 版；百度百青藤广告SDK为 9.223 版；Sigmob广告联盟SDK为 4.4.0 版；华为广告SDK为 13.4.54.300 版
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220727-alpha）版本生成本地打包App资源。
++ 新增 uni.openAppAuthorizeSetting 跳转系统授权管理页
++ 更新 uni-AD 腾讯优量汇SDK为 4.480.1350 版
++ 更新 UniPush 使用的个推SDK为 3.2.11.0 版，个推核心组件SDK为 3.1.9.0 版；谷歌渠道个推SDK为 3.2.10.8 版，个推核心组件SDK为 3.1.9.10 版；解决安全检测可能报个推SDK超频获取信息的问题
++ 修复 上架某些应用市场审核检测可能报应用后台运行时存在获取任务列表行为的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
