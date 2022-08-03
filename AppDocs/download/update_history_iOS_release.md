@@ -1,5 +1,16 @@
 ## 正式版历次更新说明
 
+## 3.4.18.20220630
++ 修复 vue3 项目 onError 生命周期不生效的Bug
++ App、Web平台 修复 vue3 项目 uni.setTabBarItem 设置 pagePath 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3592)
++ App、Web平台 修复 3.4.14 版本引出的 vue2项目 image 组件 load 事件图像大小信息不准确的Bug [详情](https://ask.dcloud.net.cn/question/147174)
++ App平台 优化 video 组件支持 show-mute-btn 配置
++ App平台 优化 vue3 项目 rich-text 组件支持服务端渲染
++ App平台 修复 vue3 项目 nvue 页面 onPageScroll，onReachBottom 不触发的Bug [详情](https://ask.dcloud.net.cn/question/145873)
++ App平台 修复 vue3 项目 uni.getVideoInfo 成功回调不执行Bug
++ iOS平台 修复 nvue ad-content-page 组件暂停后展示其它视频类广告，关闭广告可能引起组件后台自动播放的Bug
++ iOS平台 更新 uni-AD 快手广告SDK为 3.3.25 版，快手内容联盟SDK为 3.3.29 版，解决调用系统相册可能引起崩溃的问题
+
 ## 3.4.14.20220607
 
 + 【重要】App平台 优化 vue2 项目 view 组件实现方式，提高渲染性能。建议相关开发者升级
