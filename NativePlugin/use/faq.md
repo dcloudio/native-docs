@@ -76,5 +76,58 @@ a_test.jar
 + 请使用自定义基座测试自己插件。默认基座并不包含你的插件。
 + 确认打包时是否勾选了"XXX"插件。
 + 查看插件配置`package.json`这也是多数同学容易犯错的地方。主要检查`class`配置的信息与插件中的aar(iOS端为xxx.a 或者 xxx.framework)是否匹配。
-+ 插件中依赖库没有添加到配置或者aar(OS端为xxx.a 或者 xxx.framework)中。多数为离线工程没问题，云打包有问题！认真检查依赖库是否都包含在插件中。
++ 插件中依赖库没有添加到配置或者aar(iOS端为xxx.a 或者 xxx.framework)中。多数为离线工程没问题，云打包有问题！认真检查依赖库是否都包含在插件中。
 + 以上都不能解决你的问题，请@客服
+
+## Q:云打包 运行插件提示"XXX"插件不存在？
+
+**A:按以下步骤检测自己项目:**
++ 请使用自定义基座测试自己插件。默认基座并不包含你的插件。
++ 确认打包时是否勾选了"XXX"插件。
++ 查看插件配置`package.json`这也是多数同学容易犯错的地方。主要检查`class`配置的信息与插件中的aar(iOS端为xxx.a 或者 xxx.framework)是否匹配。
++ 插件中依赖库没有添加到配置或者aar(iOS端为xxx.a 或者 xxx.framework)中。多数为离线工程没问题，云打包有问题！认真检查依赖库是否都包含在插件中。
++ 以上都不能解决你的问题，请@客服
+
+## Q:云打包后 iOS端调用插件模块闪退了如何解决
+**A:按以下步骤检测自己项目:**
++ 下载对应版本的离线iOS SDK文件
++ Xcode打开`HBuilder-Hello`工程  
++ 去 [开发者中心](https://dev.dcloud.net.cn/) 找到该项目 生成离线`AppKey` 在`plist`中修改`dcloud_appkey`
++ 用IDE `HBuilerX` 导出的该项目的本地App资源 并放到 `HBuilder-Hello/Pandora/apps/`下
++ 修改`control.xml` 中的 `appid` 为该项目ID
++ 把已经开发好的自定义插件里的所有的 `xxx.a`或者 `xxx.framework`加到 `HBuider`,另外资源文件或者其他修改记得都在工程里配置好
++ 运行项目  查看崩溃信息
+
+### 自定义插件云打包闪退原因查询步骤
+
+1. 先检查自己封装的插件中 数据类型是否对的上 
+
+```
+- (void)test:(NSArray*)files callback:(DCUniModuleCallback)callback 
+{
+	NSString * first =[files objectAtIndex:0];
+}
+简单举例 封装需要传入参数files  原生代码未做类型判断直接调用方法  可能前端传入的是个NSNumber 或者其他类型  objectAtIndex 原生层异常直接Crash 
+```
+建议 插件开发者 做好参数防护  防止crash
+
+2. 插件所需plist字段等 是否都添加正确 
+  
+  在插件开发过程中,我们通常都是在Xcode里的示例工程里去添加内容到plist中,而云打包时脚本自己动态去创建,
+  比如是一个扫描证件类型的插件 如果在插件的package.json 里 没有声明 相机的描述字段 在调用时 可能会出现闪退
+  
+3. 检查插件需要的第三方资源是否 都已经放在 `ios/BundleResources` 路径下
+  
+  比如Firebase 之类的第三方服务 插件作者需要将 `GoogleService-Info.plist` 加入到工程才可正常调用 
+   
+4. 开发者插件 如果写一些系统类的类别 尽量名字起的特殊一些 减少和其他人写的类别冲突
+ 
+```
+例如 NSString (md5)  md5 很容易重复  而且类别会根据编译顺序执行 可能会产生 意想不到的情况 所以这点也要注意
+```
+5. 利用Xcode 自带日志查看工具查看闪退原因
+```
+	Xcode->Devices And Simulators->View Devices Logs -> Crash 
+```
+  装上云打包后的ipa,调用自定义插件功能后闪退,可以连上Xcode,根据上边步骤 查看闪退信息,一般也可以获取有用的信息,便于快速查看
+   
