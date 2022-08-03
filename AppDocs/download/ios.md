@@ -50,6 +50,7 @@
 + 优化 uni-AD 激励视频和信息流广告支持并发请求
 + iOS平台 新增 IAP支付 手动关闭订单、获取未关闭订单列表等功能，以解决自动关闭订单在某些情况引发的订单丢失的Bug [详情](https://uniapp.dcloud.io/tutorial/app-payment-aip.html)
 + iOS平台 更新 百度定位SDK为 2.0.0 版，百度地图SDK为 6.5.0 版
++ iOS平台 更新 uni-AD 废弃DCADManager、DCADManagerDelegate(AppDelegate中相关内容删除即可)
 + iOS平台 修复 首次启动 App 获取安全区域高度可能不正确的Bug [详情](https://ask.dcloud.net.cn/question/148277)
 + iOS平台 修复 设备型号名称 model、deviceModel 返回值不规范的Bug
 + iOS平台 修复 5+App项目获取 5G 网络类型错误的Bug
