@@ -254,7 +254,7 @@ UniMPSDK/Feature目录结构
 		aiduMapAPI_Utils.framework<br/>
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
-		BaiduMapAPI_Location.framework
+		BMKLocationKit.framework
 	    </td>
 	    <td>  
 	    </td>
@@ -439,7 +439,7 @@ UniMPSDK/Feature目录结构
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
 		BaiduMapAPI_Map.framework<br/>
-		BaiduMapAPI_Location.framework
+		BMKLocationKit.framework
 		</td>
 		<td> 
 		mapapi.bundle
