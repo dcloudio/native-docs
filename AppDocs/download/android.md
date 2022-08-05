@@ -38,17 +38,16 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年07月28日发布——HBuilderX（3.5.3.20220727-alpha）
+### 2022年08月05日发布——HBuilderX（3.5.4.20220805-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeTIjIH51h)，提取码: KeCH
+[和彩云](https://caiyun.139.com/m/i?115Co7vIGAoCn)，提取码: RzRK
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220727-alpha）版本生成本地打包App资源。
-+ 新增 uni.openAppAuthorizeSetting 跳转系统授权管理页
-+ 更新 uni-AD 腾讯优量汇SDK为 4.480.1350 版
-+ 更新 UniPush 使用的个推SDK为 3.2.11.0 版，个推核心组件SDK为 3.1.9.0 版；谷歌渠道个推SDK为 3.2.10.8 版，个推核心组件SDK为 3.1.9.10 版；解决安全检测可能报个推SDK超频获取信息的问题
-+ 修复 上架某些应用市场审核检测可能报应用后台运行时存在获取任务列表行为的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.4.20220805-alpha）版本生成本地打包App资源。
++ 新增 uni.scanCode autoZoom 属性，可控制扫码时是否启用自动放大功能
++ 修复 nvue map 组件 maker 点聚合坐标重叠无法展现的Bug
++ 修复 nvue map 组件 polyline、polygon 清空数据不生效的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
