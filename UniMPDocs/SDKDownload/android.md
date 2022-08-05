@@ -25,58 +25,6 @@
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.5.3.20220729.html)
 
 
-### 2022年07月05日发布
-
-#### SDK 3.4.18 V2版本（支持同时运行多个小程序）
-
-+  Android平台 支持自定义oaid 功能
-
-
-#### 更新日志
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.18.20220630.html)
-
-
-
-### 2022年06月23日发布
-
-#### SDK 3.4.15 V2版本（支持同时运行多个小程序）
-
-
-#### 更新日志
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.15.20220610.html)
-
-
-
-### 2022年04月25日发布
-
-#### SDK 3.4.7 V2版本（支持同时运行多个小程序）
-
-
-#### 更新日志
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.7.20220422.html)
-
-
-
-### 2022年04月14日发布
-
-#### SDK 3.3.13 V2版本（支持同时运行多个小程序）
-
-
-#### 更新日志
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.13.20220314.html)
-
-
-
-### 2022年02月10日发布
-
-#### SDK 3.3.11 V2版本（支持同时运行多个小程序）
-
-
-#### 更新日志
-+ 需使用HBuilderX（3.3.11）版本生成 小程序App 资源
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.3.11.20220209.html)
-
-
 ## 升级SDK注意事项
 
 + 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
