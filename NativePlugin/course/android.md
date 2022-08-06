@@ -495,7 +495,7 @@ implementation project(':uniplugin_richalert')
 
 #### 准备相关文件
 
-+ 创建已插件id命名的文件夹
++ 创建以插件id命名的文件夹
 + 创建android文件夹。并将该文件夹放入到新建的插件id命名的文件夹中
 
 **示例:**
