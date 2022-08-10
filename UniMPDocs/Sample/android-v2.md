@@ -101,6 +101,7 @@ pages/component/view/view?action=redirect
 DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
 ```
 
+<!-- 
 #### 屏蔽返回
 
 直达二级页面如果您想屏蔽返回按钮及返回手势，可以在小程序页面的 `onLoad()` 方法中获取当前页面调用 `setStyle()` 方法实现，代码如下
@@ -129,7 +130,7 @@ DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/vi
 		}
 	}
 </script>
-``` 
+``` -->
 
 
 ## 关闭小程序
