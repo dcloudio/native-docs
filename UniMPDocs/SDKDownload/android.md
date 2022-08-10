@@ -30,7 +30,7 @@
 + 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
 + 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
 + 更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
-+ 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、oaid_sdk_1.0.xx.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
++ 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、base_oaid_sdk.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
 
 ## 历史稳定版本
 
