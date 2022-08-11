@@ -10,6 +10,11 @@
 
 需要到各开放平台申请帐号
 
+## 配置登录平台参数
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 OAuth-> extend 节点下添加对应平台的配置
+
+![oauth_feature](https://native-res.dcloud.net.cn/images/unimp/oauth_feature_mp.png)
+
 <!--## 一键登录（univerify）
 >2.9.12+ 版本支持，手机号一键登录
 
