@@ -89,6 +89,8 @@ features 节点添加
 
 将以下文件放入工程的libs目录下
 
+**注意：快手广告联盟跟快手内容联盟只能二选一，使用时根据自己是否需要`短视频内容联盟广告`做选择。**
+
 类型 | 路径 | 文件名
 -|-|-
 快手广告联盟|SDK/libs| ads-release.aar、ads-ks-release.aar、ks_adsdk-ad.aar
