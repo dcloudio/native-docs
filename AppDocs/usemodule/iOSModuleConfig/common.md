@@ -229,7 +229,8 @@
 	    Security.framework<br/>
 	    CoreLocation.framework<br/>
 	    libc++.tbd<br/>
-	    libsqlite3.0.tbd
+	    libsqlite3.0.tbd<br/>
+	    CoreTelephony.framework
 	    </td>
 	    <td>
 	    liblibGeolocation.a<br/>
@@ -406,7 +407,9 @@
 		（vue）百度地图：<br/>
 		libc++.tbd<br/>
 		libsqlite3.0.tbd<br/>
+		libz.tbd<br/>
 		QuartzCore.framework<br/>
+		Accelerate.framework<br/>
 		CoreGraphics.framework<br/>
 		CoreTelephony.framework<br/>
 		SystemConfiguration.framework<br/>
