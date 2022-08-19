@@ -23,7 +23,7 @@
 
 #### 更新日志
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.5.3.20220729.html)
-
++ 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
 
 ## 升级SDK注意事项
 

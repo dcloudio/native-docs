@@ -9,9 +9,15 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 - Android API 最低运行版本 21
 
 
-## 版本更新注意
 
-SDK 3.2.16+版本默认不支持NJS功能，如果需要NJS功能，需要手动配置DCSDKInitConfig.setNJS(true) 使用的同学需要留意此次更新
+## 版本更新注意事项
+
++  升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
+
++  更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
+
++  将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、base_oaid_sdk.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
+
 
 ## 集成方法
 
