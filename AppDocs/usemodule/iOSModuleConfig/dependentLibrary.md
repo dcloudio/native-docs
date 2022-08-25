@@ -26,6 +26,6 @@
 |穿山甲|v4.7.0.0|UniAD/穿山甲|
 |穿山甲Gromore|v3.5.1.0|UniAD/穿山甲Gromore|
 |Sigmob|v4.2.1|UniAD/Sigmob|
-|百度百青藤|v4.883|UniAD/百度|
+|百度百青藤|v4.891|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
