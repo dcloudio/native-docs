@@ -296,7 +296,7 @@ dcloud_properties.xml文件在assets/data目录下
 ~~~
 dependencies {
     ...
-    implementation 'com.facebook.android:facebook-login:4.42.0'
+    implementation 'com.facebook.android:facebook-login:12.0.0'
 }
 ~~~
 
