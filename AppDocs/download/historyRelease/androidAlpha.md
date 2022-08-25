@@ -1,3 +1,10 @@
+### 2022年08月05日发布——HBuilderX（3.5.4.20220805-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.4.20220805-alpha）版本生成本地打包App资源。
++ 新增 uni.scanCode autoZoom 属性，可控制扫码时是否启用自动放大功能
++ 修复 nvue map 组件 maker 点聚合坐标重叠无法展现的Bug
++ 修复 nvue map 组件 polyline、polygon 清空数据不生效的Bug
+
 ### 2022年07月28日发布——HBuilderX（3.5.3.20220727-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220727-alpha）版本生成本地打包App资源。

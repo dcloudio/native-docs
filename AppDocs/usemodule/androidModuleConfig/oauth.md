@@ -99,7 +99,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | oauth-qq-release.aar，qq_mta-sdk-1.6.2.jar，qq_open_sdk_3.5.2.152.jar|
+| SDK\libs | oauth-qq-release.aar，qq_mta-sdk-1.6.2.jar，open_sdk_3.5.12.2_r97423a8_lite.jar|
 
 ### Androidmainfest.xml文件需要修改的项
 

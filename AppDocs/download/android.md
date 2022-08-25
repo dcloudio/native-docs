@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115Co8M6D1cum)，提取码: 12tz
+[和彩云](https://caiyun.139.com/m/i?115CnWLjlFIT3)，提取码: cwdB
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220729）版本生成本地打包App资源。
 + 新增 manifest.json 支持最低要求 webview 配置，系统 webview 低于指定版本时，弹出提示或者下载 x5 内核后继续启动
@@ -38,16 +38,20 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年08月05日发布——HBuilderX（3.5.4.20220805-alpha）
+### 2022年08月25日发布——HBuilderX（3.5.5.20220825-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Co7vIGAoCn)，提取码: RzRK
+[和彩云](https://caiyun.139.com/m/i?115CoUGiWdmgb)，提取码: hHAC
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.4.20220805-alpha）版本生成本地打包App资源。
-+ 新增 uni.scanCode autoZoom 属性，可控制扫码时是否启用自动放大功能
-+ 修复 nvue map 组件 maker 点聚合坐标重叠无法展现的Bug
-+ 修复 nvue map 组件 polyline、polygon 清空数据不生效的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220825-alpha）版本生成本地打包App资源。
++ 修复 uni.saveImageToPhotosAlbum 保存网络图片可能覆盖上次保存的图片的Bug
++ 修复 picker 组件获取焦点异常的Bug
++ 修复 nvue 页面 map 组件 customCallout 设置图片可能引起应用崩溃的Bug
++ 更新 QQ 登录、分享SDK版本为 3.5.12 版；百度定位SDK为 9.3.5 版，百度地图SDK为 7.5.3 版
++ 修复 UniPush 2.0 厂商推送通道不支持 payload 字段为非 json 字符串的Bug
++ 修复 plus.push.createMessage 创建本地消息 option 参数设置 when 字段无效的Bug
++ 修复 plus.runtime.install 升级 apk 可能报空指针的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
