@@ -1,7 +1,9 @@
 ## 注意
-在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中),在 Push 节点下,确保和下图所示一样
+1. 在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中),在 Push 节点下,确保和下图所示一样
 
 ![](https://native-res.dcloud.net.cn/images/uniapp/push/unipush-feature-plist.png)
+
+2. uniPush 1.0 和 uniPush2.0的是不同的服务 具体请查看 [uniPush](https://uniapp.dcloud.net.cn/unipush.html) 
 
 ## uniPush
 ### 将uniPush模块依赖库及资源添加到工程
@@ -13,7 +15,7 @@
 **注意： UserNotifications.framework 需要设置为Optional **
 
 ### 帐号配置
-1. 在 [UniPush官网](https://dev.dcloud.net.cn/uni/push) 申请App，获取appid 等信息
+1. 在 [开发者后台](https://dev.dcloud.net.cn/) 找到对应App，获取appid 等信息
 2. 在工程的 info.plist 中添加 "getui" 字段，并填写如下信息
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/push/28612.png)
@@ -131,4 +133,10 @@
 **uniPush使用指南：http://ask.dcloud.net.cn/article/35622** 
 -->
 
+### 常见问题排查步骤
+
+1. feature.plist 里的 Push结点 是否与 离线SDK文档一致
+2. 确认自己的是push 1.0 还是2.0 的工程
+3. 推送证书 最近有没有变动过
+4. 联系管理员排查
 
