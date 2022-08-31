@@ -307,6 +307,60 @@ mUniSDKInstance.fireGlobalEventCallback("myEvent", params);
 **注意**
 globalEvent事件只能通过页面的UniSDKInstance实例给当前页面发送globalEvent事件。其他页面无法接受。
 
+### Module、Component扩展申请权限
+
+使用PermissionControler实现权限申请
+
+```JAVA
+PermissionControler.requestPermissions(Activity, permissions, REQUEST_CODE);
+```
+
+UniModule、UniComponent都有onRequestPermissionsResult周期函数 实现并处理数据即可监听权限申请结果
+
+```JAVA
+@Override
+public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+	super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+}
+```
+
+**简单示例：**
+```JAVA
+import io.dcloud.common.core.permission.PermissionControler;
+import android.Manifest;
+...
+...
+
+public class TestModule extends UniModule {
+    final int REQUEST_CODE = 11111;
+    private static String[] permissions = new String[]{
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION
+    };
+
+    @UniJSMethod(uiThread = true)
+    public void requestPermissions() {
+        if(mUniSDKInstance.getContext() != null) {
+            Activity activity = (Activity) mUniSDKInstance.getContext();
+            PermissionControler.requestPermissions(activity, permissions, REQUEST_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if(requestCode == REQUEST_CODE) {
+            for(int i= 0; i< permissions.length; i++) {
+                String preName = permissions[i];
+                int granted = grantResults[i];
+                if(Manifest.permission.ACCESS_FINE_LOCATION.equals(preName) && granted == PackageManager.PERMISSION_GRANTED) {
+                    //获取权限结果
+                }
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+}
+```
 
 ### 插件示例--RichAlert
 
