@@ -14,7 +14,8 @@
 
 [百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy)
 
-[和彩云点击下载SDK，提取码: SjX8](https://caiyun.139.com/m/i?115CoSRdOuXyE) 
+[和彩云点击下载SDK，提取码: DMGn](https://caiyun.139.com/m/i?115CeUmBbiTT5) 
+
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220729）版本生成本地打包App资源。
 
@@ -74,30 +75,34 @@
 
 [百度网盘下载历史版本，提取码: 1ibt](https://pan.baidu.com/s/194R2eP3yH0b-cNpUSTY-JQ?pwd=1ibt)
 
-[和彩云点击下载SDK，提取码: Xgcw](https://caiyun.139.com/m/i?115ComKVKMr8a) 
+[和彩云点击下载SDK，提取码: gqdH](https://caiyun.139.com/m/i?115CeUm9GNqrT) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年08月05日发布——HBuilderX（3.5.4.20220805-alpha）
+### 2022年08月05日发布——HBuilderX（3.5.5.20220824-alpha）
 
 [百度云点击下载SDK，提取码: cy34](https://pan.baidu.com/s/1d52yiPAK9QayZU-1nOheiA?pwd=cy34) 
 
-[和彩云点击下载SDK，提取码: Poee](https://caiyun.139.com/m/i?115Co7sZUDk2A) 
+[和彩云点击下载SDK，提取码: ZBYv](https://caiyun.139.com/m/i?115CooA7GkUWZ) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.4.20220805-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220824-alpha）版本生成本地打包App资源。
 
-## 3.5.4.20220805-alpha
+## 3.5.5.20220824-alpha
 
-+ App平台 优化 vue2 项目 web-view 组件通过 webviewStyles 设置更多样式 [详情](https://ask.dcloud.net.cn/question/149212)
-+ App平台 优化 vue 页面 web-view 组件内页面默认支持绘制到安全区外 [详情](https://ask.dcloud.net.cn/question/149472)
-+ App平台 修复 openLocation、chooseLocation 在应用语言改变时没有跟随变化的Bug [详情](https://ask.dcloud.net.cn/question/149216)
-+ App-iOS平台 修复 uni.setTabBarItem 动态更新 icon 可能不生效的Bug [详情](https://ask.dcloud.net.cn/question/149955)
-+ App-iOS平台 修复 nvue map 组件使用 Google 地图时，多个页面中使用地图组件可能无法正常加载的Bug [详情](https://ask.dcloud.
-+ iOS平台 修复 3.5.0版本引出的 使用百度地图或百度定位时未勾选`使用广告标识（IDFA）`云打包报错的Bug
-+ iOS平台 修复 3.5.3版本引出的 开通 uni-AD 开屏广告后台切前台可能导致页面回退不正常的Bug [详情](https://ask.dcloud.net.cn/question/150053)
-+ iOS平台 修复 图片选择界面设置 crop 属性选择 iCloud 图片黑屏的Bug [详情](https://ask.dcloud.net.cn/question/149219)
++ App平台 修复 vue 页面 cover-view 组件 flex 布局无效的Bug [详情](https://ask.dcloud.net.cn/question/151697)
++ App平台 修复 vue3 项目 uni.getSystemInfo 获取 windowHeight 值不准确的Bug [详情](https://ask.dcloud.net.cn/question/150862)
++ App平台 修复 vue3 项目 vue 页面 map 组件更新中心坐标后显示错误的Bug [详情](https://ask.dcloud.net.cn/question/151438)
++ App-iOS平台 修复 uni.getSystemSetting 获取的 bluetoothEnabled、locationEnabled 值不准确的Bug
++ App-iOS平台 修复 nvue 页面 map 组件 marker 调用 moveAlong 方法没有中断前一次动画的Bug [详情](https://ask.dcloud.net.cn/question/151411)
++ App-iOS平台 修复 3.5.2 引出的 nvue 页面 ad-content-page 组件在某些场景可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/151778)
++ iOS平台 更新 uni-AD 百度百青藤广告SDK为 4.891 版
++ iOS平台 修复 3.5.0版本引出的 uni-AD 信息流广告设置宽度可能引起显示异常的Bug [详情](https://ask.dcloud.net.cn/question/150789)
++ iOS平台 修复 3.5.0版本引出的 使用百度定位模块需要勾选IDFA的Bug
++ iOS平台 修复 3.5.3版本引起的 标准真机运行基座中一键登录返回的 token 值不正确的Bug
++ iOS平台 修复 从本地相册中选择慢动作视频显示的时长不准确Bug [详情](https://ask.dcloud.net.cn/question/150531)
+
 
 
 
@@ -114,8 +119,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
 
 
-[百度云点击下载历史版本，提取码: ptd9](https://pan.baidu.com/s/1YomNRbpLeAejfnSL-jMR1Q?pwd=ptd9) 
+[百度云点击下载历史版本，提取码: 3ag6](https://pan.baidu.com/s/1IUDIfmpVUJYJ-xE8Q52bHQ?pwd=3ag6) 
 
-[和彩云点击下载历史版本，提取码: 2DSB](https://caiyun.139.com/m/i?115ColoB8wqDG) 
+[和彩云点击下载历史版本，提取码: Usv0](https://caiyun.139.com/m/i?115CoUCIGid5y) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
