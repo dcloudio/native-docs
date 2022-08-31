@@ -6,7 +6,7 @@ geolocation 模块不添加百度或者高德的依赖库也可以正常使用�
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|libBaiduLocationPlugin.a、libBaiduKeyVerify.a、liblibGeolocation.a、BaiduMapAPI_Utils.framework、BaiduMapAPI_Base.framework、BaiduMapAPI_Search.framework、BMKLocationKit.framework|libc++.dylib、libsqlite3.0.dylib、SystemConfiguration.framework、Security.framework、CoreLocation.framework|无|
+|libBaiduLocationPlugin.a、libBaiduKeyVerify.a、liblibGeolocation.a、BaiduMapAPI_Utils.framework、BaiduMapAPI_Base.framework、BaiduMapAPI_Search.framework、BMKLocationKit.framework|libc++.tbd、libsqlite3.0.tbd、SystemConfiguration.framework、Security.framework、CoreLocation.framework|无|
 
 ### 帐号配置
 1.申请Appkey,如果没有appkey将会导致地图显示不出

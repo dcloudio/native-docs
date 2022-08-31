@@ -56,7 +56,7 @@
  ## 小米推送配置
 注: Linker Flags、framework添加方法参考该[文档](/AppDocs/usemodule/iOSModuleConfig/common.md)
 1. 依次添加下列Linker Flags:-lXiaomiPush,-lMiPushSDK
-2. 添加下列framework:libresolv.dylib, libxml2.dylib,libz.dylib,SystemConfiguration.framework,MobileCoreServices.framework,CFNetwork.framework,CoreTelephony.framework,
+2. 添加下列framework:libresolv.tbd, libxml2.tbd,libz.tbd,SystemConfiguration.framework,MobileCoreServices.framework,CFNetwork.framework,CoreTelephony.framework,
 
 ### 帐号配置
 1.首先到小米申请appkey等信息,查看该[文档](http://ask.dcloud.net.cn/article/34)

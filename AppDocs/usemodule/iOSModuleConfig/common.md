@@ -509,7 +509,7 @@
 	    SystemConfiguration.framework
 	    CoreMotion.framework
 	    Security.framework   
-		libc++.dylib
+		libc++.tbd
 	    </td>
 	    <td>
 		liblibPayment.a
@@ -946,7 +946,7 @@
 	    <td><a href="https://www.html5plus.org/doc/zh_cn/sqlite.html"> plus.sqlite </a></td>
 	    <td></td>
 	    <td>
-		libsqlite3.0.dylib
+		libsqlite3.0.tbd
 	    </td>
 	    <td> 
 		liblibSqlite.a

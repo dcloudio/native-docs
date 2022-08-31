@@ -15,7 +15,7 @@
 
 |依赖库|系统库|资源文件|
 |:--|:--|:--|
-|liblibPayment.a、libalixpayment.a、AlipaySDK.framework|Security.framework、CoreMotion.framework、SystemConfiguration.framework、CFNetwork.framework、libc++.dylib|AlipaySDK.bundle|
+|liblibPayment.a、libalixpayment.a、AlipaySDK.framework|Security.framework、CoreMotion.framework、SystemConfiguration.framework、CFNetwork.framework、libc++.tbd|AlipaySDK.bundle|
 
 ### 工程配置
 1.在URL Types 中添加配置： identifier 填写 `alixpay` ，URL Schemes 填写 `alix[后面是您在支付宝平台申请的appid]` ,如果没有该项按照图中的格式创建
@@ -31,7 +31,7 @@
 ### 添加依赖库及资源
 | 依赖库 | 系统库 | 资源文件 |
 |  :--  |  :--  |  :--  |
-|liblibPayment.a、libwxpay.a、libWeChatSDK_pay.a | libsqlite3.0.dylib、libz.dylib、CoreTelephony.framework、SystemConfiguration.framework| 无 |
+|liblibPayment.a、libwxpay.a、libWeChatSDK_pay.a | libsqlite3.0.tbd、libz.tbd、CoreTelephony.framework、SystemConfiguration.framework| 无 |
 
 注意：SDK 中的 
 
