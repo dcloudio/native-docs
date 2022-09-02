@@ -1,3 +1,14 @@
+### 2022年08月25日发布——HBuilderX（3.5.5.20220825-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220825-alpha）版本生成本地打包App资源。
++ 修复 uni.saveImageToPhotosAlbum 保存网络图片可能覆盖上次保存的图片的Bug
++ 修复 picker 组件获取焦点异常的Bug
++ 修复 nvue 页面 map 组件 customCallout 设置图片可能引起应用崩溃的Bug
++ 更新 QQ 登录、分享SDK版本为 3.5.12 版；百度定位SDK为 9.3.5 版，百度地图SDK为 7.5.3 版
++ 修复 UniPush 2.0 厂商推送通道不支持 payload 字段为非 json 字符串的Bug
++ 修复 plus.push.createMessage 创建本地消息 option 参数设置 when 字段无效的Bug
++ 修复 plus.runtime.install 升级 apk 可能报空指针的Bug
+
 ### 2022年08月05日发布——HBuilderX（3.5.4.20220805-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.4.20220805-alpha）版本生成本地打包App资源。

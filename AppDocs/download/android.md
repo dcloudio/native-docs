@@ -38,20 +38,18 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年08月25日发布——HBuilderX（3.5.5.20220825-alpha）
+### 2022年09月02日发布——HBuilderX（3.6.0.20220901-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoUGiWdmgb)，提取码: hHAC
+[和彩云](https://caiyun.139.com/m/i?115ConZPAjS85)，提取码: XqyE
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220825-alpha）版本生成本地打包App资源。
-+ 修复 uni.saveImageToPhotosAlbum 保存网络图片可能覆盖上次保存的图片的Bug
-+ 修复 picker 组件获取焦点异常的Bug
-+ 修复 nvue 页面 map 组件 customCallout 设置图片可能引起应用崩溃的Bug
-+ 更新 QQ 登录、分享SDK版本为 3.5.12 版；百度定位SDK为 9.3.5 版，百度地图SDK为 7.5.3 版
-+ 修复 UniPush 2.0 厂商推送通道不支持 payload 字段为非 json 字符串的Bug
-+ 修复 plus.push.createMessage 创建本地消息 option 参数设置 when 字段无效的Bug
-+ 修复 plus.runtime.install 升级 apk 可能报空指针的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.0.20220901-alpha）版本生成本地打包App资源。
++ 新增 云端打包支持配置原生应用清单文件 AndroidManifest.xml 和应用资源目录 res、assets
++ 更新 uni-AD 快手广告SDK Android为 3.3.29 版；快手内容联盟SDK Android为 3.3.31 版
++ 修复 uni-AD Sigmob激励视频广告点击跳过按钮后关闭触发 onClose 事件返回的 isEnded 属性值可能不准确的Bug
++ 修复 腾讯云安全检测可能误报`含数字天堂(dcloud)广告插件,可读取设备信息,可能泄露您的个人隐私`的Bug
++ 修复 安全检测可能报快手广告 SDK 频繁获取用户信息的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
