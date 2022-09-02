@@ -81,27 +81,20 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年08月05日发布——HBuilderX（3.5.5.20220824-alpha）
+### 2022年09月01日发布——HBuilderX（3.6.0.20220901-alpha）
 
-[百度云点击下载SDK，提取码: cy34](https://pan.baidu.com/s/1d52yiPAK9QayZU-1nOheiA?pwd=cy34) 
+[百度云点击下载SDK，提取码: 3rka](https://pan.baidu.com/s/1AXWA6205J9CK-5Ik8P4pYw?pwd=3rka) 
 
-[和彩云点击下载SDK，提取码: ZBYv](https://caiyun.139.com/m/i?115CooA7GkUWZ) 
+[和彩云点击下载SDK，提取码: AuNq](https://caiyun.139.com/m/i?115CnVh3XIaGB) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220824-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.0.20220901-alpha）版本生成本地打包App资源。
 
-## 3.5.5.20220824-alpha
+## 3.6.0.20220901-alpha
 
-+ App平台 修复 vue 页面 cover-view 组件 flex 布局无效的Bug [详情](https://ask.dcloud.net.cn/question/151697)
-+ App平台 修复 vue3 项目 uni.getSystemInfo 获取 windowHeight 值不准确的Bug [详情](https://ask.dcloud.net.cn/question/150862)
-+ App平台 修复 vue3 项目 vue 页面 map 组件更新中心坐标后显示错误的Bug [详情](https://ask.dcloud.net.cn/question/151438)
-+ App-iOS平台 修复 uni.getSystemSetting 获取的 bluetoothEnabled、locationEnabled 值不准确的Bug
-+ App-iOS平台 修复 nvue 页面 map 组件 marker 调用 moveAlong 方法没有中断前一次动画的Bug [详情](https://ask.dcloud.net.cn/question/151411)
-+ App-iOS平台 修复 3.5.2 引出的 nvue 页面 ad-content-page 组件在某些场景可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/151778)
-+ iOS平台 更新 uni-AD 百度百青藤广告SDK为 4.891 版
-+ iOS平台 修复 3.5.0版本引出的 uni-AD 信息流广告设置宽度可能引起显示异常的Bug [详情](https://ask.dcloud.net.cn/question/150789)
-+ iOS平台 修复 3.5.0版本引出的 使用百度定位模块需要勾选IDFA的Bug
-+ iOS平台 修复 3.5.3版本引起的 标准真机运行基座中一键登录返回的 token 值不正确的Bug
-+ iOS平台 修复 从本地相册中选择慢动作视频显示的时长不准确Bug [详情](https://ask.dcloud.net.cn/question/150531)
++ App-iOS平台 修复 uni.openLocation 底部安全区适配问题 [详情](https://ask.dcloud.net.cn/question/150074)
++ App-iOS平台 修复 uni.chooseLocation 可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/152367)
++ iOS平台 修复 3.5.0版本引出的 快手开屏广告点击打开落地页返回后无法进入应用首页的Bug [详情](https://ask.dcloud.net.cn/question/152441)
++ iOS平台 修复 未使用Push模块上传 AppStore 报ITMS-90078: Missing Push Notification Entitlement警告的Bug
 
 
 
@@ -119,8 +112,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
 
 
-[百度云点击下载历史版本，提取码: 3ag6](https://pan.baidu.com/s/1IUDIfmpVUJYJ-xE8Q52bHQ?pwd=3ag6) 
+[百度云点击下载历史版本，提取码: wcp3](https://pan.baidu.com/s/1AjCnbkVXfkwms_ur4qI5tg?pwd=wcp3) 
 
-[和彩云点击下载历史版本，提取码: Usv0](https://caiyun.139.com/m/i?115CoUCIGid5y) 
+[和彩云点击下载历史版本，提取码: ifGp](https://caiyun.139.com/m/i?115Co9aVa4CRZ) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)

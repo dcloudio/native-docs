@@ -199,10 +199,10 @@ TestModule.m 文件截图：
 -(void)onCreateUniPlugin;
 
 - (BOOL)application:(UIApplication *_Nullable)application didFinishLaunchingWithOptions:(NSDictionary *_Nullable)launchOptions;
-- (void)application:(UIApplication *_Nullable)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *_Nullable)deviceToken;
-- (void)application:(UIApplication *_Nullable)application didFailToRegisterForRemoteNotificationsWithError:(NSError *_Nullable)err;
-- (void)application:(UIApplication *_Nullable)application didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo;
-- (void)application:(UIApplication *_Nullable)application didReceiveLocalNotification:(UILocalNotification *_Nullable)notification;
+- (void)didRegisterForRemoteNotificationsWithDeviceToken:(NSData *_Nullable)deviceToken;
+- (void)didFailToRegisterForRemoteNotificationsWithError:(NSError *_Nullable)err;
+- (void)didReceiveRemoteNotification:(NSDictionary *_Nullable)userInfo;
+- (void)didReceiveLocalNotification:(UILocalNotification *_Nullable)notification;
 - (BOOL)application:(UIApplication *_Nullable)application handleOpenURL:(NSURL *_Nullable)url;
 - (BOOL)application:(UIApplication *_Nullable)app openURL:(NSURL *_Nonnull)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *_Nullable)options NS_AVAILABLE_IOS(9_0);
 
