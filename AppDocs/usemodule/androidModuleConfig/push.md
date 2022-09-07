@@ -204,7 +204,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	
 	~~~
 	dependencies {
-		implementation 'com.huawei.hms:push:6.1.0.300'
+		implementation 'com.huawei.hms:push:6.5.0.300'
 	}
 	~~~
 	
