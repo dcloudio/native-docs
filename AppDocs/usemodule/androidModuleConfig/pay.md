@@ -50,11 +50,14 @@ dcloud_properties.xml文件在assets/data目录下
 
 需要将以下代码文件引入到工程，包名为”$你的包名.wxapi”
 
-**注意：文件位于离线sdk的/SDK/src/wxapi下，可直接拷贝并将文件内的包名替换成自己的包名。**
+**注意：文件位于离线sdk的/SDK/src/wxapi下，可直接拷贝文件并将文件内的包名替换成自己的包名。**
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
 | $你的包名\wxapi | WXPayEntryActivity.java |
+
+**比如开发者的包名为`com.company.xxx`，那么应该把`WXPayEntryActivity.java`文件拷贝到
+`com.company.xxx.wxapi`目录下，并编辑`WXPayEntryActivity.java`文本，把第一行的`package io.dcloud.HBuilder.wxapi`替换为实际的路径。**
 
 ### Androidmainfest.xml文件需要修改的项
 

@@ -55,9 +55,13 @@ dcloud_properties.xml文件在assets/data目录下
 
 **注意：文件位于离线sdk的/SDK/src/wxapi下，可直接拷贝并将文件内的包名替换成自己的包名。**
 
+
 | 路径 | 文件 | 
 | :-------: | :-------: |
 | %应用包名%\wxapi | WXEntryActivity.java |
+
+**比如开发者的包名为`com.company.xxx`，那么应该把`WXEntryActivity.java`文件拷贝到
+`com.company.xxx.wxapi`目录下，并编辑`WXEntryActivity.java`文本，把第一行的`package io.dcloud.HBuilder.wxapi`替换为实际的路径。**
 
 
 ### Androidmainfest.xml文件需要修改的项
