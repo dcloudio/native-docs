@@ -7,9 +7,8 @@
 
 |路径|文件|
 | :-------: | :-------: |
-| SDK\libs | elogin-1.2.0.1.aar |
 | SDK\libs | gtc.aar (如同时集成unipush谷歌渠道，应引入gtc-gp.aar。)|
-| SDK\libs | gysdk-2.0.0.8.aar |
+| SDK\libs | gysdk-3.0.6.0.aar |
 | SDK\libs | oauth-univerify-release.aar |
 
 
@@ -147,7 +146,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | openDefault-4.4.1.aar，oauth-sina-release.aar|
+| SDK\libs | openDefault-12.5.0.aar，oauth-sina-release.aar|
 
 ### Androidmainfest.xml文件需要修改的项
 

@@ -29,7 +29,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.0.aar,utdid4all-XXX-proguard.jar(XXX为版本号)|
+| SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.1.aar,utdid4all-XXX-proguard.jar(XXX为版本号)|
 
 **注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
 

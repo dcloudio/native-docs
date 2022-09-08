@@ -8,7 +8,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | payment-alipay-release.aar, utdid4all-XXX-proguard.jar(XXX为版本号), alipaySdk-15.6.5-20190718211159-noUtdid.aar |
+| SDK\libs | payment-alipay-release.aar, utdid4all-XXX-proguard.jar(XXX为版本号), alipaysdk-android-15.8.11.aar |
 
 **注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
 

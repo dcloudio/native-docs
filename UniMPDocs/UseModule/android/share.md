@@ -122,7 +122,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | sina-libs-release.aar，share-sina-release.aar, openDefault-10.10.0.aar|
+| uniMPSDK\Features\libs | sina-libs-release.aar，share-sina-release.aar, openDefault-12.5.0.aar|
 
 将表格中的文件拷贝至主Module中的libs下。
 

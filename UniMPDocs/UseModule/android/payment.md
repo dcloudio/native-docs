@@ -4,7 +4,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| uniMPSDK\Features\libs | payment-alipay-release.aar, utdid4all-1.5.2.1-proguard.jar, alipaysdk-noutdid-15.8.00.201112210139.aar|
+| uniMPSDK\Features\libs | payment-alipay-release.aar, utdid4all-1.5.2.1-proguard.jar, alipaysdk-android-15.8.11.aar|
 
 将表格中的文件拷贝至主Module中的libs下。
 
