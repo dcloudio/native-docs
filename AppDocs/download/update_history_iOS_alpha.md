@@ -1,5 +1,12 @@
 ## Alpha版历次更新说明
 
+## 3.6.0.20220901-alpha
+
++ App-iOS平台 修复 uni.openLocation 底部安全区适配问题 [详情](https://ask.dcloud.net.cn/question/150074)
++ App-iOS平台 修复 uni.chooseLocation 可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/152367)
++ iOS平台 修复 3.5.0版本引出的 快手开屏广告点击打开落地页返回后无法进入应用首页的Bug [详情](https://ask.dcloud.net.cn/question/152441)
++ iOS平台 修复 未使用Push模块上传 AppStore 报ITMS-90078: Missing Push Notification Entitlement警告的Bug
+
 ## 3.5.5.20220824-alpha
 
 + App平台 修复 vue 页面 cover-view 组件 flex 布局无效的Bug [详情](https://ask.dcloud.net.cn/question/151697)

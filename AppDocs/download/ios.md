@@ -81,21 +81,18 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年09月01日发布——HBuilderX（3.6.0.20220901-alpha）
+### 2022年09月07日发布——HBuilderX（3.6.1.20220907-alpha）
 
-[百度云点击下载SDK，提取码: 3rka](https://pan.baidu.com/s/1AXWA6205J9CK-5Ik8P4pYw?pwd=3rka) 
+[百度云点击下载SDK，提取码: ag2g](https://pan.baidu.com/s/1dj3T2qIiqKmGfo4pRVCt_A?pwd=ag2g) 
 
-[和彩云点击下载SDK，提取码: AuNq](https://caiyun.139.com/m/i?115CnVh3XIaGB) 
+[和彩云点击下载SDK，提取码: U89N](https://caiyun.139.com/m/i?115CoVCfzT3NJ) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.0.20220901-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.1.20220907-alpha）版本生成本地打包App资源。
 
-## 3.6.0.20220901-alpha
+## 3.6.1.20220907-alpha
 
-+ App-iOS平台 修复 uni.openLocation 底部安全区适配问题 [详情](https://ask.dcloud.net.cn/question/150074)
-+ App-iOS平台 修复 uni.chooseLocation 可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/152367)
-+ iOS平台 修复 3.5.0版本引出的 快手开屏广告点击打开落地页返回后无法进入应用首页的Bug [详情](https://ask.dcloud.net.cn/question/152441)
-+ iOS平台 修复 未使用Push模块上传 AppStore 报ITMS-90078: Missing Push Notification Entitlement警告的Bug
-
++ App-iOS平台 修复 nvue tabbar 页面 uni.reLaunch 不触发 onUnload 生命周期的Bug [详情](https://ask.dcloud.net.cn/question/152738)
++ iOS平台 修复 uploader 上传文件获取 uploadedSize 值不准确的Bug 
 
 
 
@@ -112,8 +109,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
 
 
-[百度云点击下载历史版本，提取码: wcp3](https://pan.baidu.com/s/1AjCnbkVXfkwms_ur4qI5tg?pwd=wcp3) 
+[百度云点击下载历史版本，提取码: a8sa](https://pan.baidu.com/s/1vNymcXjPgIbU8bFdrOBhPw?pwd=a8sa) 
 
-[和彩云点击下载历史版本，提取码: ifGp](https://caiyun.139.com/m/i?115Co9aVa4CRZ) 
+[和彩云点击下载历史版本，提取码: nkWr](https://caiyun.139.com/m/i?115CnXFjKmCFH) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
