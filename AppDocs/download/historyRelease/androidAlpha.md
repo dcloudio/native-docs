@@ -1,3 +1,12 @@
+### 2022年09月02日发布——HBuilderX（3.6.0.20220901-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.0.20220901-alpha）版本生成本地打包App资源。
++ 新增 云端打包支持配置原生应用清单文件 AndroidManifest.xml 和应用资源目录 res、assets
++ 更新 uni-AD 快手广告SDK Android为 3.3.29 版；快手内容联盟SDK Android为 3.3.31 版
++ 修复 uni-AD Sigmob激励视频广告点击跳过按钮后关闭触发 onClose 事件返回的 isEnded 属性值可能不准确的Bug
++ 修复 腾讯云安全检测可能误报`含数字天堂(dcloud)广告插件,可读取设备信息,可能泄露您的个人隐私`的Bug
++ 修复 安全检测可能报快手广告 SDK 频繁获取用户信息的Bug
+
 ### 2022年08月25日发布——HBuilderX（3.5.5.20220825-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.5.5.20220825-alpha）版本生成本地打包App资源。
