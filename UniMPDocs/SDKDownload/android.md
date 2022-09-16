@@ -15,15 +15,16 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2022年08月04日发布
+### 2022年09月16日发布
 
-#### SDK 3.5.3 V2版本（支持同时运行多个小程序）
+#### SDK 3.6.2 版本
 
-[点击下载UniMPSDK_Android@3.5.3.V2.20220804.zip](https://native-res.dcloud.net.cn/unimp-sdk/SDK-Android%403.5.3-20220804.zip)
+[点击下载UniMPSDK_Android@3.6.2.V2.20220916.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.2.V2.20220916.zip)
 
 #### 更新日志
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.5.3.20220729.html)
-+ 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
+
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.2.20220914.html)
+
 
 ## 升级SDK注意事项
 
