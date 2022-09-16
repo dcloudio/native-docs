@@ -10,14 +10,14 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年07月29日发布——HBuilderX（3.5.3.20220729） 
+### 2022年09月14日发布——HBuilderX（3.6.2.20220914） 
 
 [百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy)
 
 [和彩云点击下载SDK，提取码: 5U6N](https://caiyun.139.com/m/i?115CnqkW5J0qw) 
 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.5.3.20220729）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.2.20220914）版本生成本地打包App资源。
 
 ## 3.6.2.20220914
 
