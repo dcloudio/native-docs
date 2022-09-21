@@ -89,9 +89,9 @@ uni原生插件描述文件，仅云端打包生效，完整格式如下：
 				"可选, 插件使用到的隐私列表，如NSPhotoLibraryUsageDescription"
 			],
 			"embedSwift": false,   // 开启 swift 编译支持，如果插件使用了 swift 需要配置此项
-			"deploymentTarget": "8.0, 可选，支持的iOS最低版本",
+			"deploymentTarget": "8.0, 可选，注意：使用 Xcode14 需配置为 "11.0"
 			"validArchitectures": [    // 可选，支持的CPU架构类型
-			 	"arm64"    //支持多个值，可取值："arm64", "arm64e", "armv7", "armv7s", "x86_64"
+			 	"arm64"    // 支持多个值，可取值："arm64", "armv7"，注意：使用 Xcode14 需要配置为 “arm64” 
 			],
 			"parameters": {
 				"插件需要配置的参数名称, 如appid": {

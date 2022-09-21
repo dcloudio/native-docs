@@ -10,13 +10,18 @@
 
 [Xcode14官方更新](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes)
 
-所以插件开发者如果是用Xcode14制作的原生插件 需要在文档里写清楚仅支持arm64
+所以插件开发者如果是用 Xcode14 制作的原生插件 需要在文档里写清楚仅支持 iOS11 及以上系统版本
 
-要注意在package.json里
+需要在 package.json 里添加如下配置
+
 ```
-            "validArchitectures": [    // 可选，支持的CPU架构类型
-                 "arm64"
-            ],
+"ios": {
+	"deploymentTarget": "11.0",	
+	"validArchitectures": [    
+		"arm64"
+	],
+}
+...
 ```
 
 ### 什么是uni原生插件
