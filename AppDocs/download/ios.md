@@ -20,6 +20,7 @@
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.3.20220917）版本生成本地打包App资源。
 
 ## 3.6.3.20220917
+
 无
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
@@ -37,18 +38,15 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2022年09月07日发布——HBuilderX（3.6.1.20220907-alpha）
+### 2022年09月19日发布——HBuilderX（3.6.3.20220919-alpha）
 
 [百度云点击下载SDK，提取码: ag2g](https://pan.baidu.com/s/1dj3T2qIiqKmGfo4pRVCt_A?pwd=ag2g) 
 
-[和彩云点击下载SDK，提取码: U89N](https://caiyun.139.com/m/i?115CoVCfzT3NJ) 
+[和彩云点击下载SDK，提取码: 4LD1](https://caiyun.139.com/m/i?115CoAPOhfDLu) 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.1.20220907-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.3.20220919-alpha）版本生成本地打包App资源。
 
-## 3.6.1.20220907-alpha
-
-+ App-iOS平台 修复 nvue tabbar 页面 uni.reLaunch 不触发 onUnload 生命周期的Bug [详情](https://ask.dcloud.net.cn/question/152738)
-+ iOS平台 修复 uploader 上传文件获取 uploadedSize 值不准确的Bug 
+无
 
 
 
@@ -65,8 +63,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
 
 
-[百度云点击下载历史版本，提取码: a8sa](https://pan.baidu.com/s/1vNymcXjPgIbU8bFdrOBhPw?pwd=a8sa) 
+[百度云点击下载历史版本，提取码: w8ra](https://pan.baidu.com/s/1PCkRIR9eHqVkN6AMwj5dyg?pwd=w8ra) 
 
-[和彩云点击下载历史版本，提取码: nkWr](https://caiyun.139.com/m/i?115CnXFjKmCFH) 
+[和彩云点击下载历史版本，提取码: RCeX](https://caiyun.139.com/m/i?115CooOdOK4uH) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
