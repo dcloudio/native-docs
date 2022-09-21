@@ -2,6 +2,23 @@
 
 本文档主要介绍如何在 iOS 平台开发 uni-app 原生插件，在您阅读此文档时，您需要具备 iOS 应用开发经验，对 HTML、JavaScript、CSS 等前端开发有一定的了解，并且熟悉在JavaScript 和 Objective-C 环境下的 JSON 格式数据操作等。
 
+### ⚠️⚠️⚠️Xcode14开发原生插件注意事项
+由于Xcode14的一些变动,需要开发者知晓:
+1. Bitcode 废除
+2. 不再支持构建 armv7、armv7s 以及 i386 架构的 iOS 项目 (iOS真机只支持arm64)
+3. 不再支持构建部署目标早于 macOS 10.13（High Sierra）、iOS 11、tvOS 11 以及 watchOS 4 的应用程序。
+
+[Xcode14官方更新](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes)
+
+所以插件开发者如果是用Xcode14制作的原生插件 需要在文档里写清楚仅支持arm64
+
+要注意在package.json里
+```
+            "validArchitectures": [    // 可选，支持的CPU架构类型
+                 "arm64"
+            ],
+```
+
 ### 什么是uni原生插件
 uni原生插件指的是将您原生开发的功能按照规范封装成插件包，然后即可在 `uni-app` 前端项目中通过`js`调用您开发的原生能力。
 
