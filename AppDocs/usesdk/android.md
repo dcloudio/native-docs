@@ -278,6 +278,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-9.png)
 	
+	<h3 id="debug"></h3>
 	生成自定义基座，需要在根节点下添加debug="true"和syncDebug="true"，如下图：
 	
 	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5%2BSDK-android/image/5-20.png)
