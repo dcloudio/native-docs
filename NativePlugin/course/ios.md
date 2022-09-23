@@ -12,7 +12,7 @@
 
 所以插件开发者如果是用 Xcode14 制作的原生插件 需要在文档里写清楚仅支持 iOS11 及以上系统版本，具体操作如下所示:
 
-1. 需要在 package.json 里添加如下配置
+1.需要在 package.json 里添加如下配置
 
 ```
 "ios": {
@@ -23,7 +23,7 @@
 }
 ...
 ```
-2. 需要在原生插件工程的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
+2.需要在原生插件工程的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
 
     ![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)
 
