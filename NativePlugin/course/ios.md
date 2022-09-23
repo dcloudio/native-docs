@@ -10,9 +10,9 @@
 
 [Xcode14官方更新](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes)
 
-所以插件开发者如果是用 Xcode14 制作的原生插件 需要在文档里写清楚仅支持 iOS11 及以上系统版本
+所以插件开发者如果是用 Xcode14 制作的原生插件 需要在文档里写清楚仅支持 iOS11 及以上系统版本，具体操作如下所示:
 
-需要在 package.json 里添加如下配置
+1. 需要在 package.json 里添加如下配置
 
 ```
 "ios": {
@@ -23,6 +23,9 @@
 }
 ...
 ```
+2. 需要在原生插件工程的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
+    ![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)****
+
 
 ### 什么是uni原生插件
 uni原生插件指的是将您原生开发的功能按照规范封装成插件包，然后即可在 `uni-app` 前端项目中通过`js`调用您开发的原生能力。
