@@ -824,7 +824,6 @@ UniMPSDK/Feature目录结构
 		OpenGLES.framework<br/>
 		QuartzCore.framework<br/>
 		UIKit.framework<br/>
-		VideoToolbox.framework<br/>
 		</td>
 		<td>
 		liblibVideo.a<br/>
@@ -856,7 +855,6 @@ UniMPSDK/Feature目录结构
 		OpenGLES.framework<br/>
 		QuartzCore.framework<br/>
 		UIKit.framework<br/>
-		VideoToolbox.framework<br/>
 	    </td>
 	    <td>
 		libDCUniVideo.a<br/>

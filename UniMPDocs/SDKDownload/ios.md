@@ -9,8 +9,19 @@
 
 ## 更新日志
 
+#### SDK 3.6.4
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.6.4.zip)
+
++ iOS平台 修复 uni.setStorage 存储数据可能出错的Bug
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.4.20220922.html)
+
+## 历史版本
+> 历史版本仅提供上个正式版本的 SDK 下载
+
+#### 下载地址
+链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
 #### SDK 3.5.3
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.5.3.zip)
 
 + iOS平台 修复 小程序未开启后台运行，前台运行时调用 open 方法直达页面无效的Bug
 + iOS平台 修复 偶现内存泄漏可能引起应用崩溃的Bug
@@ -18,12 +29,6 @@
 + iOS平台 修复 未开启后台运行，多次切换小程序和原生界面可能导致小程序返回按钮无效的Bug
 
 + [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.5.3.20220729.html)
-
-## 历史版本
-> 历史版本仅提供上个正式版本的 SDK 下载
-
-#### 下载地址
-链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
 
 #### SDK 3.4.18
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.4.18.20220630.html)
