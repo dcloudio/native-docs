@@ -10,18 +10,21 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年09月19日发布——HBuilderX（3.6.3.20220917） 
+### 2022年09月22日发布——HBuilderX（3.6.4.20220922） 
 
 [百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy)
 
-[和彩云点击下载SDK，提取码: J3fs](https://caiyun.139.com/m/i?115CooXp0A49I) 
+[和彩云点击下载SDK，提取码: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K) 
 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.3.20220917）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.4.20220922）版本生成本地打包App资源。
 
-## 3.6.3.20220917
+## 3.6.4.20220922
 
-无
++ iOS平台 更新 uni-AD 今日头条穿山甲SDK更新为 4.8.0.3 版，穿山甲Gromore SDK更新为 3.7.0.0 版
++ iOS平台 修复 uni-AD 穿山甲Gromore 激励视频偶现可能无法显示的Bug 详情
++ iOS平台 修复 3.6.2版本引出的 uni原生语言插件Hook不到applicationWillEnterForeground、applicationDidEnterBackground等系统事件的Bug
++ iOS平台 修复 安全检测可能报获取设备idfv的Bug
 
 `注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 
@@ -30,9 +33,9 @@
 `注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
 
 
-[百度网盘下载历史版本，提取码: 6n4p](https://pan.baidu.com/s/1i30NYsZBcIvfMOOXkUBKtg?pwd=6n4p)
+[百度网盘下载历史版本，提取码: qfq5](https://pan.baidu.com/s/1lsd9n5Gjmv3-cvWOpsIKpQ?pwd=qfq5)
 
-[和彩云点击下载SDK，提取码: Ubrr](https://caiyun.139.com/m/i?115CoAZgI9FsV) 
+[和彩云点击下载SDK，提取码: HUpB](https://caiyun.139.com/m/i?115CoA5AcgSUC) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 
