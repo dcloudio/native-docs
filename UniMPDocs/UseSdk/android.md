@@ -38,14 +38,13 @@ uniMPSDK文件夹目录结构说明:
 	|-- proguard.cfg  //混淆配置
 /-- uniMPSDK/DEMO	//uni小程序SDK示例DEMO
 /-- uniMPSDK\Features // 框架已有的原生功能依赖库
-	|-- Features 依赖库说明.xls
 	|-- libs //原生功能依赖库
 ```
 
 
 #### uniMPSDK/SDK/Libs 依赖库说明
 
-Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可根据功能增删修改。具体可阅读`Features 依赖库说明.xls`参考修改添加等操作。
+Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可根据功能增删修改。具体可阅读 [模块配置在线文档](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/android) 参考修改添加等操作。
 
 除视频、地图、分享、支付、登录、直播pusher等SDK，只集成基础模块如下:
 
