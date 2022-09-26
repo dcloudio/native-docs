@@ -1,4 +1,7 @@
 ## 正式版历次更新说明
+## 3.6.3.20220919
+无
+
 ## 3.6.2.20220914
 
 + App平台 优化 vue2 项目 web-view 组件通过 webviewStyles 设置更多样式 [详情](https://ask.dcloud.net.cn/question/149212)
