@@ -87,6 +87,7 @@
 		liblibNativeUI.a<br/>
 		liblibNativeObj.a<br/>
 		liblibAdSupport.a(IDFA)<br/>
+		liblibWeex.a<br/>
 		KSCrash.framework
 		</td>
 	    <td>PandoraApi.bundle 
