@@ -84,7 +84,7 @@ buildTypes {
 	+ Android studio调试时提示appkey配置错误，参考[文档](/AppDocs/package/android?id=查看签名信息)获取签名信息与后台配置SHA1对比是否一致。
 	+ 生成正式包时提示appkey配置错误，获取安装包apk文件获取（签名参考下面问题4）与后台配置SHA1对比是否一致。
 
-5. 检查dcloud_appkey配置位置是否正确，dcloud_appkey一定要放到application节点里。
+5. 检查dcloud_appkey配置位置是否正确，dcloud_appkey一定要放到Androidmanifest.xml文件的application节点里。
 
 ```xml
 	<application>
