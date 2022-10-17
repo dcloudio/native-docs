@@ -72,10 +72,10 @@ buildTypes {
 
 1. 查看签名文件是否配置到了主APP的build.gradle，配置方式参考上面常见问题1。**注意：需要将signingConfigs添加到buildTypes才会生效**
 2. 查看离线项目中dcloud_control.xml文件中的appid是否与申请AppKey时的appid一致。
-![avatar](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/Android/appid%E4%B8%80%E8%87%B4.png)
+<br/><img src='https://native-res.dcloud.net.cn/images/uniapp/nativedocs/Android/appid%E4%B8%80%E8%87%B4.png' style="max-width:70%"/>
 3. 检测离线项目的包名是否申请AppKey时的包名是否一致。
-![avatar](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/Android/%E5%8C%85%E5%90%8D%E4%B8%80%E8%87%B4.png)
-5. 对比安装包apk文件的SHA1是否与应用后台配置的SHA1一致。
+<br/><img src='https://native-res.dcloud.net.cn/images/uniapp/nativedocs/Android/%E5%8C%85%E5%90%8D%E4%B8%80%E8%87%B4.png' style="max-width:70%"/>
+4. 对比安装包apk文件的SHA1是否与应用后台配置的SHA1一致。
 	+ Android studio调试时提示appkey配置错误，参考[文档](/AppDocs/package/android?id=查看签名信息)获取签名信息与后台配置SHA1对比是否一致。
 	+ 生成正式包时提示appkey配置错误，获取安装包apk文件获取（签名参考下面问题4）与后台配置SHA1对比是否一致。
 
