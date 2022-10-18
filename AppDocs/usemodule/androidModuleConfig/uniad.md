@@ -221,8 +221,8 @@ allprojects {
 
 ~~~
 dependencies {
-    implementation 'com.huawei.hms:ads-lite:13.4.54.300'
-	implementation 'com.huawei.hms:ads-omsdk:1.3.0'
+    implementation 'com.huawei.hms:ads-lite:13.4.56.302'
+    implementation 'com.huawei.hms:ads-omsdk:1.3.35'
 }
 ~~~
 
