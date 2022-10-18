@@ -113,7 +113,7 @@ allprojects {
 **在app级的build.gradle配置**
 ~~~
 dependencies {
-    implementation('com.paypal.checkout:android-sdk:0.5.2')
+    implementation('com.paypal.checkout:android-sdk:0.6.2')
 }
 ~~~
 
@@ -132,6 +132,7 @@ dependencies {
 <activity
             android:name="com.paypal.openid.RedirectUriReceiverActivity"
             android:excludeFromRecents="true"
+			android:exported="true"
             android:theme="@style/PYPLAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -145,6 +146,7 @@ dependencies {
 
         <activity
             android:name="com.paypal.pyplcheckout.home.view.activities.PYPLInitiateCheckoutActivity"
+			android:exported="true"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
