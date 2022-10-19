@@ -1,5 +1,8 @@
 ## Alpha版历次更新说明
 
+## 3.6.3.20220919-alpha
+无
+
 ## 3.6.1.20220907-alpha
 
 + App-iOS平台 修复 nvue tabbar 页面 uni.reLaunch 不触发 onUnload 生命周期的Bug [详情](https://ask.dcloud.net.cn/question/152738)
