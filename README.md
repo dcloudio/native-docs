@@ -83,3 +83,14 @@ A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk�
   |:---|:---
   |armeabi-v7a|约7MB左右
   |'armeabi-v7a'、'x86'、'arm64-v8a'|约16MB左右
+
+Q：支持uni小程序的基座与标准的HX基座权限方面有什么变化？
+A：两者权限基本一致，除了uni小程序的基座会增加下列权限，用于支持创建小程序桌面快捷方式
+
+  |权限|
+  |:---|
+  |com.android.launcher.permission.INSTALL_SHORTCUT|
+  |com.android.launcher.permission.UNINSTALL_SHORTCUT|
+  |com.android.launcher.permission.READ_SETTINGS|
+  |com.android.launcher2.permission.READ_SETTINGS|
+  |com.android.launcher3.permission.READ_SETTINGS|
