@@ -7,7 +7,7 @@ HTML5+ 基座扩展采用三层结构，JS层、PluginBridge层和Native层。 �
 
 **Native层**： 插件扩展的平台原生代码，负责执行业务逻辑并执行结果返回到请求页面。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141017/6e2bd27ff777bed57750a5b3b6143a0f.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141017/6e2bd27ff777bed57750a5b3b6143a0f.png)
 
 开发者在开发扩展插件时需要为扩展插件编写对应的JS API，JS API将在HTML页面中触发调用对应Native扩展方法的请求，并负责接收运行结果。 
 
@@ -23,13 +23,13 @@ HTML5+ 基座扩展采用三层结构，JS层、PluginBridge层和Native层。 �
 
 **插件异步扩展方法：**
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141017/e7b481bc1dc1caf69cda678f92587cd9.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141017/e7b481bc1dc1caf69cda678f92587cd9.png)
 
 同步方法的执行会阻塞当前JS的运行，方法执行完成后可直接获取执行的结果。
 
 **插件同步扩展方法：**
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141017/095b9c2bdb95d1d9ef68ddeeb610b883.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141017/095b9c2bdb95d1d9ef68ddeeb610b883.png)
 
 ## 扩展插件JS API 编写
 
@@ -523,11 +523,11 @@ public class PGPlugintest extends StandardFeature
 
 在编写扩展插件时需要修改“/assets/data”中properties.xml文件，在其中添加JS对象名称和Android包的类名对应关系，SDK会根据对应的类名查找并生成相应的对象并执行对应的逻辑。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141017/5489a76e7be78c295b8c786c77835162.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141017/5489a76e7be78c295b8c786c77835162.png)
 
 在应用的manifest.json文件中还需要添加扩展插件的应用使用权限
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141017/5aa58c39dd81aba2838bdb60b2509ddb.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141017/5aa58c39dd81aba2838bdb60b2509ddb.png)
 
 ## Android平台插件开发API
 

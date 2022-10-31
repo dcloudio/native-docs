@@ -9,7 +9,7 @@
 可以登录[uni原生插件市场](https://ext.dcloud.net.cn/?cat1=5&cat2=51)，在免费的插件详情页中点击“下载for离线打包”下载原生插件（zip格式），解压到HBuilderX的uni-app项目下的“nativeplugins”目录（如不存在则创建），以下是“DCloud-RichAlert”插件举例，它的下载地址是：[https://ext.dcloud.net.cn/plugin?id=36](https://ext.dcloud.net.cn/plugin?id=36)
 下载解压后目录结构如下：
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190416/499c1b53bb61fa1792d5e47cf088c926.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190416/499c1b53bb61fa1792d5e47cf088c926.png)
 
 ### 开发者自己开发uni-app原生插件
 
@@ -18,7 +18,7 @@
 ## uni-app原生插件本地配置
 将原生插件配置到uni-app项目的“nativeplugins”下，还需要在manifest.json文件的“App原生插件配置”项下点击“选择本地插件”，在列表中选择需要打包生效的插件：
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190416/bfe0dde508c6652dd79a5820c2ea71ac.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190416/bfe0dde508c6652dd79a5820c2ea71ac.png)
 
 **注意：保存后，需要提交云端打包，（制作自定义基座也属于云端打包）后插件才会生效**
 
@@ -33,21 +33,21 @@
 > 如果使用 mac 提交本地插件打包正常，而使用 Windows 系统提交 iOS 本地插件打包时报错，是因为插件包使用的某个 .framework 库中存现软链接，在 Windows 系统上解压后导致软链接失效，打包时导致这个库缺失，所以会报错
 报错如下图： 
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/c1d5e07691a68b735a1725ab26760a35.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190918/c1d5e07691a68b735a1725ab26760a35.png)
 
 **解决办法：**
 
 1. 依次查看插件iOS目录下面的 .framework 库文件，下面以 `UTDID.framework` 为例，打开后发现 UTDID、Resources、Headers 大小都为 1kb，说明这几个文件既是软链（在Windows上加压后被转换为文本文件，无法链接到真实文件）
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/34a38c1ce14b8a60d4616620dae3d825.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190918/34a38c1ce14b8a60d4616620dae3d825.png)
 
 2. 用记事本打开这几个文件，里面写的就是链接的真实文件目录，（链接的是`/Versions/A/`目录中的文件）
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/f3a25f6ad23b4e8828a2e73a932a602e.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190918/f3a25f6ad23b4e8828a2e73a932a602e.png)
 
 3. 把真实文件拷贝到这个库的根目录，将其他文件全部删除即可，最终的库文件
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20190918/0df26b80a6af2b0c48c578e28322f871.png)
+![](https://ask.dcloud.net.cn/uploads/article/20190918/0df26b80a6af2b0c48c578e28322f871.png)
 
 4. 然后重新提交打包即可；
 

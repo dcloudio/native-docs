@@ -92,7 +92,7 @@ dependencies {
 
 将SDK目录下的资源拷贝到工程项目相对路径中.具体可参考uniMPSDK示例DEMO
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200215/69ac35d5a6db85d8890c610d567acf25.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200215/69ac35d5a6db85d8890c610d567acf25.png)
 
 **注意**
 
@@ -158,19 +158,19 @@ dependencies {
 
 首先在 HBuilderX 中选择您的 uni-app 项目，如果没有请新建一个 uni-app 项目，如下图，创建 uni-app 项目
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200215/1943ed21ceedcd85c9ba0bc74d4cd0f5.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200215/1943ed21ceedcd85c9ba0bc74d4cd0f5.png)
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包
 
 注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包” ，2.6.2 版本近期会发布，只是修改了描述功能是一样的.
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/9d254389e00fe11f36606b3fc6577ddb.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200225/9d254389e00fe11f36606b3fc6577ddb.png)
 
 项目编译完成后会在控制台，输出wgt包的路径，点击路径可以直接打开wgt所在目录
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/dc6b2614816763dcdd9a25ad4c56a25a.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200225/dc6b2614816763dcdd9a25ad4c56a25a.png)
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200225/9e9da9a8e0a0a5da8c331917a0225ba5.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200225/9e9da9a8e0a0a5da8c331917a0225ba5.png)
 
 如图，`__UNI__04E3A11.wgt`就是应用资源包，（`__UNI__04E3A11` 为小程序的 appid）
 
@@ -185,7 +185,7 @@ dependencies {
 
 注意：不少开发者对示例图片有些误解 是创建`apps/__UNI__04E3A11/www `目录，不是创建`apps.__UNI__04E3A11.www`文件夹。请注意是`apps/__UNI__04E3A11/www `目录。并将wgt资源包解压释放到www文件夹中！！！
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200305/f96b6f4e801b8c7cc3e89ed7f0242e42.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200305/f96b6f4e801b8c7cc3e89ed7f0242e42.png)
 
 > 非内置uni小程序集成方式
 

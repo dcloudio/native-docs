@@ -14,7 +14,7 @@ uni小程序中目前仅支持高德地图
 
 2.在工程的 info.plist 添加 `amap`节点，添加 appkey 信息，如下图
    
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
+![](https://ask.dcloud.net.cn/uploads/article/20181218/4e630bfdb3d418b8847d82d7d4ada95d.png)
 
 3.在工程的 info.plist 添加 `NSLocationAlwaysAndWhenInUseUsageDescription` 和 `NSLocationWhenInUseUsageDescription` key，并填写获取权限描述信息
 

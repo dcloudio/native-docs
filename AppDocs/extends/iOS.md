@@ -16,7 +16,7 @@ HTML5+ 基座扩展采用三层结构，JS层、PluginBridge层和Native层。 �
 
 **Native层**： 插件扩展的平台原生代码，负责执行业务逻辑并执行结果返回到请求页面。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141031/916e01c36b1d1c06fc3e806e3389bb60.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141031/916e01c36b1d1c06fc3e806e3389bb60.png)
 
 开发者在开发扩展插件时需要为扩展插件编写对应的JS API，JS API将在HTML页面中触发调用对应Native扩展方法的请求，并负责接收运行结果。 
 
@@ -28,19 +28,19 @@ HTML5+ 基座扩展采用三层结构，JS层、PluginBridge层和Native层。 �
 ### 插件异步扩展方法：
 异步方法的执行不会阻塞当前JS的运行，方法的执行结果会通过回调的方式返回给调用者。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141031/e1022c696351dd8fe520c2a3c997aab3.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141031/e1022c696351dd8fe520c2a3c997aab3.png)
 
 
 ### 插件同步扩展方法：
 
 同步方法的执行会阻塞当前JS的运行，方法执行完成后可直接获取执行的结果。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20141031/4e73a29376448744e58b0129cc1b76bc.png)
+![](https://ask.dcloud.net.cn/uploads/article/20141031/4e73a29376448744e58b0129cc1b76bc.png)
 
 ## 扩展插件JS API 编写
 开发者在实现JS层API时首先要定义一个插件类别名，并需要在IOS工程的PandoraApi.bundle\feature.plist文件中声明插件类别名和Native层扩展插件类的对应关系
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150909/0550b4b7f8d19038b04026627b8441ad.png)
+![](https://ask.dcloud.net.cn/uploads/article/20150909/0550b4b7f8d19038b04026627b8441ad.png)
 
 #### JS扩展方法的实现
 
@@ -270,7 +270,7 @@ document.addEventListener( "plusready",  function()
 
 在编写JS时同时需要修改PandoraAPI.bundle中feature.plist文件，在其中添加JS插件别名和Native插件类的对应关系，SDK基座会根据对应关系查找并生成相应的Native对象并执行对应的方法。
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20150512/3128575ba1fd66871c51224e3880b43a.png)
+![](https://ask.dcloud.net.cn/uploads/article/20150512/3128575ba1fd66871c51224e3880b43a.png)
 
 **调用PDRCore的接口声明对应关系**
 

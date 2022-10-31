@@ -2,7 +2,7 @@
 
 uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用了相关模块的 API 但是原生工程没有添加相关依赖的时候会出现如下提示
 
-![](https://img-cdn-tc.dcloud.net.cn/uploads/article/20200320/3c5d9ebaddef0ffb3f20c7d49f2daeea.png)
+![](https://ask.dcloud.net.cn/uploads/article/20200320/3c5d9ebaddef0ffb3f20c7d49f2daeea.png)
 
 按照下面的教程将该模块所需的依赖库和依赖资源添加到原生工程中即可
 您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件，请参考页面最下面的模块对照表
