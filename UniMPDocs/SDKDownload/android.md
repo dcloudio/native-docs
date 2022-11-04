@@ -15,15 +15,15 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2022年09月16日发布
+### 2022年11月04日发布
 
-#### SDK 3.6.2 版本
+#### SDK 3.6.4 版本
 
-[点击下载UniMPSDK_Android@3.6.2.V2.20220916.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.2.V2.20220916.zip)
+[点击下载UniMPSDK_Android@3.6.4.20221104.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.4.20221104.zip)
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.2.20220914.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.4.20220922.html)
 
 
 ## 升级SDK注意事项
