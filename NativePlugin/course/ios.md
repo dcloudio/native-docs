@@ -23,7 +23,7 @@
 }
 ...
 ```
-2.需要在原生插件工程的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
+2.需要在原生**插件工程**的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
 
 ![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)
 

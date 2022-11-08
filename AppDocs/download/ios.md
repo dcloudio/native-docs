@@ -12,7 +12,7 @@
 
 ### 2022年09月22日发布——HBuilderX（3.6.4.20220922） 
 
-[百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy)
+[百度云点击下载SDK，提取码: rvdy](https://pan.baidu.com/s/1ExtRytSAuOpGjl4e4m9Hdw?pwd=rvdy) (若下载后解压失败，使用和彩云下载)
 
 [和彩云点击下载SDK，提取码: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K) 
 
@@ -44,7 +44,7 @@
 
 ### 2022年10月27日发布——HBuilderX（3.6.8.20221027-alpha）
 
-[百度云点击下载SDK，提取码: dpgm](https://pan.baidu.com/s/12nF4fNrnNYf_UInwcEfsDA?pwd=dpgm) 
+[百度云点击下载SDK，提取码: dpgm](https://pan.baidu.com/s/12nF4fNrnNYf_UInwcEfsDA?pwd=dpgm) (若下载后解压失败，使用和彩云下载)
 
 [和彩云点击下载SDK，提取码: Ve8o](https://caiyun.139.com/m/i?115CoVGpplCzv)
 
