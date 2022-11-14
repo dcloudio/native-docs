@@ -31,7 +31,8 @@
 | :-------: | :-------: |
 | SDK\libs | AMap_Location_XXX.jar（XXX为版本号）, geolocation-amap-release.aar |
 
-**注意：3.3.6及以下版本要使用amap-libs-release.aar代替AMap_Location_XXX.jar**
+**注意：3.3.6及以下版本要使用amap-libs-release.aar代替AMap_Location_XXX.jar ，**
+**当3.6.9及以上，与高德地图同时使用时，由于高德地图使用的jar已经包含了定位相关类库，所以不要导入AMap_Location_XXX.jar。**
 
 ### Androidmainfest.xml文件需要修改的项
 
