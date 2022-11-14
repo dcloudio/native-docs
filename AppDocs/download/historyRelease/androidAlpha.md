@@ -1,3 +1,15 @@
+### 2022年10月28日发布——HBuilderX（3.6.8.20221027-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.8.20221027-alpha）版本生成本地打包App资源。
++ 优化 Vue3 项目 minUserAgentVersion 默认配置为 49，避免低版本webview上白屏无提示 [详情](https://uniapp.dcloud.net.cn/collocation/manifest.html#appwebview)
++ 修复 uni.getStorageSync在某些情况下可能报`SyntaxError`错误的Bug [详情](https://ask.dcloud.net.cn/question/154284)
++ 修复 uts插件不支持泛型通配符语法的Bug [详情](https://ask.dcloud.net.cn/question/155942)
++ 新增 UTS插件 支持application/activity部分生命周期函数 [详情](https://uniapp.dcloud.net.cn/plugin/uts-plugin.html#iodcloudutsandroid)
++ 修复 chooseVideo 使用相机拍摄视频在Android10及以上设备可能失败的Bug [详情](https://ask.dcloud.net.cn/question/155877)
++ 修复 chooseImage、chooseVideo 存在读取设备应用安装列表的行为可能导致隐私检测不合规的Bug
++ 修复 应用安全检测可能报`app关联启动`的Bug
++ 修复 3.6.0版本引出的 首次真机运行隐私政策提示框可能不弹出的Bug
+
 ### 2022年10月18日发布——HBuilderX（3.6.7.20221018-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.7.20221018-alpha）版本生成本地打包App资源。

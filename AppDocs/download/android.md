@@ -22,21 +22,21 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年10月28日发布——HBuilderX（3.6.8.20221027-alpha）
+### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115Co9WXRrsTt)，提取码: gQVv
+[和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.8.20221027-alpha）版本生成本地打包App资源。
-+ 优化 Vue3 项目 minUserAgentVersion 默认配置为 49，避免低版本webview上白屏无提示 [详情](https://uniapp.dcloud.net.cn/collocation/manifest.html#appwebview)
-+ 修复 uni.getStorageSync在某些情况下可能报`SyntaxError`错误的Bug [详情](https://ask.dcloud.net.cn/question/154284)
-+ 修复 uts插件不支持泛型通配符语法的Bug [详情](https://ask.dcloud.net.cn/question/155942)
-+ 新增 UTS插件 支持application/activity部分生命周期函数 [详情](https://uniapp.dcloud.net.cn/plugin/uts-plugin.html#iodcloudutsandroid)
-+ 修复 chooseVideo 使用相机拍摄视频在Android10及以上设备可能失败的Bug [详情](https://ask.dcloud.net.cn/question/155877)
-+ 修复 chooseImage、chooseVideo 存在读取设备应用安装列表的行为可能导致隐私检测不合规的Bug
-+ 修复 应用安全检测可能报`app关联启动`的Bug
-+ 修复 3.6.0版本引出的 首次真机运行隐私政策提示框可能不弹出的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.9.20221114-alpha）版本生成本地打包App资源。
++ 修复 radio 组件禁用状态样式异常的Bug
++ 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法
++ 新增 nvue list 组件支持 render-reverse 属性
++ 更新 uni-AD 今日头条穿山甲广告SDK 为 4.9.0.8 版；穿山甲GroMore广告SDK 为 4.8.0.0 版；腾讯优量汇广告SDK 为 4.492.1362 版
++ 更新 高德地图SDK为 9.5.0 版，高德定位SDK为 6.1.0 版，解决隐私合规检测可能报高德SDK收取MAC地址、ANDROID ID的问题
++ 修复 3.6.7版本引出的 应用后台切前台插屏广告可能不显示的Bug
++ 修复 视频播放控件 VideoPlayer 隐私合规检测可能报数字天堂SDK获取传感器的Bug
++ 修复 原生隐私政策提示框在部分设备 message 内容可能显示不正常的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
