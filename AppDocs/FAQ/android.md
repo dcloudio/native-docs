@@ -9,22 +9,22 @@ dependencies {
 
 为适配暗黑模式，需要在AndroidManifest.xml中PandoraEntryActivity对应的android:configChanges中添加uiMode，可参考如下配置
 ```
-        <activity
-            android:name="io.dcloud.PandoraEntryActivity"
-            android:launchMode="singleTask"
-            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
-            android:hardwareAccelerated="true"
-            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
-            android:screenOrientation="user"
-            android:theme="@style/DCloudTheme"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <action android:name="android.intent.action.VIEW" />
-                <data android:scheme=" " />
-            </intent-filter>
-        </activity>
+<activity
+    android:name="io.dcloud.PandoraEntryActivity"
+    android:launchMode="singleTask"
+    android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
+    android:hardwareAccelerated="true"
+    android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+    android:screenOrientation="user"
+    android:theme="@style/DCloudTheme"
+    android:windowSoftInputMode="adjustResize">
+    <intent-filter>
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme=" " />
+    </intent-filter>
+</activity>
 ```
 
 ### 升级到3.6.9，离线打包卡在Splash界面无法进入主页

@@ -147,6 +147,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		implementation 'androidx.appcompat:appcompat:1.0.0'
 		implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 		implementation 'com.alibaba:fastjson:1.1.46.android'
+		implementation 'androidx.webkit:webkit:1.3.0'
 	}
 	~~~
 	
