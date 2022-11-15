@@ -1,3 +1,36 @@
+### 适配暗黑模式
+
+3.6.9适配暗黑模式新增了webkit依赖库，需要将如下配置添加到build.gradle中
+```
+dependencies {
+    implementation 'androidx.webkit:webkit:1.3.0'
+}
+```
+
+为适配暗黑模式，需要在AndroidManifest.xml中PandoraEntryActivity对应的android:configChanges中添加uiMode，可参考如下配置
+```
+        <activity
+            android:name="io.dcloud.PandoraEntryActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
+            android:hardwareAccelerated="true"
+            android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
+            android:screenOrientation="user"
+            android:theme="@style/DCloudTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme=" " />
+            </intent-filter>
+        </activity>
+```
+
+### 升级到3.6.9，离线打包卡在Splash界面无法进入主页
+
+3.6.9适配暗黑模式新增了依赖库，参考上述适配暗黑模式即可解决
+
 ### 升级离线SDK到3.5.0之后，离线打包报：java.lang.NoClassDefFoundError: Failed resolution of: Lcom/sample/breakpad/BreakpadInit;
 
 离线SDK3.5.0及以上版本新增加了breakpad-build-release.aar，直接将这个库拷贝到libs目录下即可。详情可参考[文档](/AppDocs/usesdk/android.md)

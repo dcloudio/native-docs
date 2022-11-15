@@ -66,6 +66,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation "com.facebook.fresco:animated-gif:2.5.0"
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.alibaba:fastjson:1.1.46.android'
+	implementation 'androidx.webkit:webkit:1.3.0'
 	~~~
 	
 	uni-app配置时需要在build.gradle中添加aaptOptions配置
@@ -164,6 +165,8 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	**注意：新建的项目默认会有一个MainActivity的节点，必须删掉！**
 	
 	**注意：为适配折叠屏，需要在PandoraEntryActivity的android:configChanges属性中追加“smallestScreenSize|screenLayout|screenSize”，参考如下配置。**
+	
+	**注意：为适配暗黑模式，需要在PandoraEntryActivity的android:configChanges属性中追加“uiMode”，参考如下配置。**
 
 	~~~
 		<activity
@@ -183,7 +186,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		<activity
             android:name="io.dcloud.PandoraEntryActivity"
             android:launchMode="singleTask"
-            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc|fontScale|keyboard|smallestScreenSize|screenLayout|screenSize|uiMode"
             android:hardwareAccelerated="true"
             android:permission="com.miui.securitycenter.permission.AppPermissionsEditor"
             android:screenOrientation="user"
@@ -193,7 +196,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <action android:name="android.intent.action.VIEW" />
-                <data android:scheme="h56131bcf" />
+                <data android:scheme=" " />
             </intent-filter>
         </activity>
 	~~~
