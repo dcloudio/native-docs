@@ -42,27 +42,32 @@
 ## iOS 离线SDK - Alpha版
 
 
-### 2022年10月27日发布——HBuilderX（3.6.8.20221027-alpha）
+### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
+
+[和彩云点击下载SDK，提取码: 9kEy](https://caiyun.139.com/m/i?115CoAPTO0c6y)
 
 [百度云点击下载SDK，提取码: dpgm](https://pan.baidu.com/s/12nF4fNrnNYf_UInwcEfsDA?pwd=dpgm) (若下载后解压失败，使用和彩云下载)
 
-[和彩云点击下载SDK，提取码: Ve8o](https://caiyun.139.com/m/i?115CoVGpplCzv)
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.8.20221027-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.9.20221114-alpha）版本生成本地打包App资源。
 
-## 3.6.8.20221027-alpha
-
-+ App平台、Web平台 新增 地理位置更新相关接口 [详情](https://uniapp.dcloud.net.cn/api/location/location-change.html)
-+ App平台 修复 3.6.7 版本引出 Vue3 项目的 nvue 页面全局样式无效的Bug [详情](https://ask.dcloud.net.cn/question/155639)
-+ App平台 修复 Vue2 项目移除页面根节点后导致事件异常的Bug [详情](https://ask.dcloud.net.cn/question/155057)
-+ App平台 修复 Vue2 项目列表不使用 index 作为 key 时更新数据导致事件异常的Bug [详情](https://ask.dcloud.net.cn/question/155238)
-
-+ App-iOS平台 修复 在 iOS16 设备 nvue 页面关闭、开启下拉刷新效果时偶现崩溃的Bug
-+ App-iOS平台 修复 3.6.0版本引出的 nvue list 组件内使用 ad 信息流广告组件偶发渲染空白的Bug [详情](https://ask.dcloud.net.cn/question/155752)
+## 3.6.9.20221114-alpha
++ 新增 uni错误规范 [详情](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
++ App、Web平台 新增 暗黑模式（DarkMode） [详情](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
++ App、Web平台 修复 radio 组件禁用状态样式异常的Bug
++ App平台 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法 [详情](https://uniapp.dcloud.net.cn/api/location/map.html#setLocMarkerIcon)
++ App平台 新增 nvue list 组件支持 render-reverse 属性 [详情](https://uniapp.dcloud.net.cn/component/list.html#%E5%B1%9E%E6%80%A7)
++ App平台 修复 Vue2 项目使用组合式 API 时 onReady 声明周期 template ref 未绑定的Bug
++ App平台 修复 Vue3 项目 template ref 会被代理的Bug
++ App平台 修复 Vue3 项目设置导航栏背景色为 rgba 色值无效的Bug [详情](https://ask.dcloud.net.cn/question/135111)
++ App平台 修复 Vue3 项目根节点 height:100% 无效的Bug [详情](https://ask.dcloud.net.cn/question/156564)
++ App-iOS平台 修复 Vue3 项目录音播放无效的Bug [详情](https://ask.dcloud.net.cn/question/155741)
  
-+ iOS平台 更新 uni-AD 百度百青藤广告SDK 为 4.901 版；快手广告SDK 为 3.3.32 版
-+ iOS平台 更新 微信SDK 为 1.9.6 版
-+ iOS平台 修复 分享到微信收藏夹时跳转到朋友圈的Bug [详情](https://ask.dcloud.net.cn/question/155362)
++ 新增 Stripe支付支持设置账单信息 [详情](https://uniapp.dcloud.net.cn/tutorial/app-payment-stripe.html)
++ iOS平台 修复 3.6.0版本引出的 开屏广告自定义底部图片、背景色不生效的Bug
++ iOS平台 修复 标题栏 titleNView 设置默认导航栏颜色可能导致与状态栏颜色不一致的Bug
++ iOS平台 修复 setUIStyle 设置暗黑模式可能无效的Bug
++ iOS平台 修复 uts插件 类构造函数无法使用外参的Bug
 
 
 
@@ -79,9 +84,8 @@
 `注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
 
 
+[和彩云点击下载SDK，提取码: JpK3](https://caiyun.139.com/m/i?115CoUMQTO9ja) 
 
-[百度云点击下载历史版本，提取码: m8jk](https://pan.baidu.com/s/12UZoHZ58uRbGLdjA7VMW-g?pwd=m8jk) 
-
-[和彩云点击下载SDK，提取码: RZZN](https://caiyun.139.com/m/i?115CepndunyhC) 
+[百度云点击下载历史版本，提取码: hn6k](https://pan.baidu.com/s/1lnFoCTV1H6qjIc5ZjafWEA?pwd=hn6k) (若下载后解压失败，使用和彩云下载)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
