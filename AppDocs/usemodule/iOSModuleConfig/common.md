@@ -129,6 +129,7 @@
 	    <td><a href="https://uniapp.dcloud.io/api/media/image"> image </a></td>
 	    <td> 
 		AssetsLibrary.framework <br/>
+		Accelerate.framework <br/>
 		Photos.framework <br/>
 		CoreMedia.framework<br/>
 		MetalKit.framework<br/>
