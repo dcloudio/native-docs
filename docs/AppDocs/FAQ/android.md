@@ -55,13 +55,13 @@ dependencies {
 
 离线打包如果将targetSdkVersion设置为31时，在Android 12设备上安装是可能会报如下错误信息
 
-~~~
+```
 adb: failed to install XXX.apk: Failure [INSTALL_PARSE_FAILED_MANIFEST_MALFORMED: Failed parse during installPackageLI: /data/base.apk (at Binary XML file line #173): XXX.XXX.XXX.TestActivity: Targeting S+ (version 31 and above) requires that an explicit value for android:exported be defined when intent filters are present]
-~~~
+```
 
 Android 12 中要求包含 intent-filter 的 activity 、 service 或 receiver 必须为这些应用组件显示声明 android:exported 属性，如下所示：
 
-~~~
+```
 <activity
     android:name="XXX.XXX.XXX.TestActivity"
     android:exported="true">
@@ -70,7 +70,7 @@ Android 12 中要求包含 intent-filter 的 activity 、 service 或 receiver �
     </intent-filter>
 </activity>
 
-~~~
+```
 
 如果冲突的组件注册在aar的AndroidManifest.xml中，只需要将组件的注册信息拷贝到主项目，然后添加android:exported="true"即可
 
@@ -80,21 +80,21 @@ Android 12 中要求包含 intent-filter 的 activity 、 service 或 receiver �
 
 3.2.5及以上版本支持了Java 8，集成时需要在项目的build.gradle添加如下配置
 
-~~~
+```
 android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }	
 }
-~~~
+```
 
 3.2.5版本之后更新到AndroidX，老项目需要在gradle.properties添加如下配置
 
-~~~
+```
 android.useAndroidX=true
 android.enableJetifier=true
-~~~
+```
 
 其余AndroidX依赖库配置可参考[Android 原生工程配置](/AppDocs/usesdk/android.md)
 
@@ -122,15 +122,15 @@ HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加�
 	
 如果离线打包编译时提示如下错误，请参考以下做法
 
-~~~
+```
 	Execution failed for task ':hbuilder:checkDebugDuplicateClasses'.
 	> 1 exception was raised by workers:
 	java.lang.IllegalStateException: java.lang.IllegalStateException: Worker finished without being first started
-~~~
+```
 	
 将项目根目录下的build.gradle中的gradle插件版本升级到4.1.1
 	
-~~~
+```
 	buildscript {
 		repositories {
 			jcenter()
@@ -140,17 +140,17 @@ HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加�
 			classpath 'com.android.tools.build:gradle:4.1.1'
 		}
 	}
-~~~
+```
 	
 修改项目根目录 gradle/gradle-wrapper.properties 下的gradle的版本到6.5
 	
-~~~
+```
 	distributionBase=GRADLE_USER_HOME
 	distributionPath=wrapper/dists
 	zipStoreBase=GRADLE_USER_HOME
 	zipStorePath=wrapper/dists
 	distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
-~~~
+```
 
 ### 离线打包无法调起应用安装界面
 	
@@ -158,13 +158,13 @@ HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加�
 	
 在manifest节点下添加安装应用的权限
 	
-~~~
+```
 	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
-~~~
+```
 	
 在application节点下添加provider节点
 	
-~~~
+```
 		<provider
             android:name="io.dcloud.common.util.DCloud_FileProvider"
             android:authorities="${apk.applicationId}.dc.fileprovider"
@@ -174,7 +174,7 @@ HBuilder X 3.0.7及以上版本，gallery-dmcBig-release.aar相应代码被加�
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/dcloud_file_provider" />
         </provider>
-~~~
+```
 
 ${apk.applicationId}须替换成应用的包名。
 	
@@ -182,7 +182,7 @@ ${apk.applicationId}须替换成应用的包名。
 
 在application节点下添加provider节点
 	
-~~~
+```
 		<provider
             android:name="io.dcloud.common.util.DCloud_FileProvider"
             android:authorities="${apk.applicationId}.dc.fileprovider"
@@ -192,7 +192,7 @@ ${apk.applicationId}须替换成应用的包名。
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/dcloud_file_provider" />
         </provider>
-~~~
+```
 
 ${apk.applicationId}须替换成应用的包名。
 	
@@ -228,14 +228,14 @@ uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目�
 	
 将对应的application配置到Androidmanifest.xml中（如下），并添加tools:replace="android:name"以防出现冲突。
 	
-~~~
+```
 	<application  
 	    android:name="io.dcloud.test.TestApplication"  
 	    android:icon="@drawable/icon"  
 	    android:label="@string/app_name"  
 	    tools:replace="android:name">
 	</application>
-~~~
+```
 	
 ### 添加so库
 

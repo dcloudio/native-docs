@@ -16,7 +16,7 @@
 
 ***应用的app id/app key等信息，从开发者后台->unipush->配置管理->应用管理 界面查看***
 ** 注意：HBuilderX3.1.15之后需要添加GETUI_APPID属性 **
-~~~
+```
 android {
     defaultConfig {
         manifestPlaceholders = [
@@ -28,25 +28,25 @@ android {
         ]
     }
 }
-~~~
+```
 
 ### AndroidManifest.xml配置
 
 在io.dcloud.PandoraEntry的Activity标签下追加intent-filter，**注意不能和其他的intent-filter内容合并到一起**！
-~~~xml
+```xml
 <intent-filter>
 	<action android:name="android.intent.action.VIEW"/>
 	<category android:name="android.intent.category.DEFAULT" />
 	<category android:name="android.intent.category.BROWSABLE" />
 	<data android:host="io.dcloud.unipush" android:path="/" android:scheme="unipush" />
 </intent-filter>
-~~~
+```
 
 ### 厂商配置
 
 添加下列内容到androidmanifest.xml中（未申请平台无需添加）
 
-~~~
+```
 		<!--小米厂商配置——开始-->
         <meta-data
             android:name="MIPUSH_APPID"
@@ -84,11 +84,11 @@ android {
             android:name="com.vivo.push.api_key"
             android:value="${VIVO_APP_KEY}" />
 		<!--VIVO厂商配置——结束-->
-~~~
+```
 
 修改build.gradle，添加对应平台申请的appkey或appid（键名必须统一，如XIAOMI_APP_ID必须同时存在于build.gradle文件和Androidmanifest.xml文件中），如下所示:
 
-~~~
+```
 android {
     defaultConfig {
         manifestPlaceholders = [
@@ -97,13 +97,13 @@ android {
         ]
     }
 }
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 在properties中添加如下配置，features节点与services节点必须同时配置！
 
-~~~
+```
 <properties>
 	<features>
 		<feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl">
@@ -114,13 +114,13 @@ android {
 		<service name="push" value="io.dcloud.feature.aps.APSFeatureImpl"/>
 	</services>
 </properties>
-~~~
+```
 ### 其余配置
 
 #### OPPO推送
 oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配置：
 
-~~~
+```
 <activity
             android:name="io.dcloud.PandoraEntry">
             <intent-filter>
@@ -134,19 +134,19 @@ oppo集成uniPush时需在Androidmanifest.xml的入口activity中添加如下配
             </intent-filter>
 			/*oppo配置结束*/
         </activity>
-~~~
+```
 
 **当添加了push-3.0.0.aar库时**
 
 在app目录下的build.gradle内添加
 
-~~~
+```
 dependencies {
 	implementation 'com.google.code.gson:gson:2.6.2' 
 	implementation 'commons-codec:commons-codec:1.6' 
 	implementation 'androidx.annotation:annotation:1.1.0'
 }
-~~~
+```
 
 
 #### 华为推送
@@ -161,7 +161,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 
 	需要在项目根目录下的build.gradle下添加华为推送的仓库地址，如下：
 	
-	~~~
+	```
 	buildscript {
 		repositories {
 			jcenter()
@@ -183,7 +183,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 			maven {url 'https://developer.huawei.com/repo/'}
 		}
 	}
-	~~~
+	```
 	
 - 项目应用下的build.gradle
 
@@ -193,20 +193,20 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 	
 	在文件头**apply plugin: 'com.android.application'**下一行添加如下配置。
 	
-	~~~
+	```
 	apply plugin: 'com.android.application'
 	apply plugin: 'com.huawei.agconnect'
-	~~~
+	```
 	
 	在**“dependencies”**中添加如下编译依赖
 	
 	**注意：推送库版本号与uniPush对应，不能随便修改。**
 	
-	~~~
+	```
 	dependencies {
 		implementation 'com.huawei.hms:push:6.5.0.300'
 	}
-	~~~
+	```
 	
 - 添加添加华为推送的配置文件
 
@@ -243,13 +243,13 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 
 在project级的build.gradle的buildscript->dependencies添加下面内容
 
-~~~
+```
 buildscript { 
 	dependencies {
 		classpath 'com.google.gms:google-services:4.3.10'
 	}
 }
-~~~
+```
 
 如下图：
 
@@ -259,13 +259,13 @@ buildscript {
 
 + 在build.gradle最前面添加下面内容
 
-~~~
+```
 apply plugin: 'com.google.gms.google-services'
-~~~
+```
 
 + 在android节点下添加下面内容
 
-~~~
+```
 android {
     defaultConfig {
         manifestPlaceholders = [
@@ -276,13 +276,13 @@ android {
         ]
     }
 }
-~~~
+```
 
 + 在dependencies节点下添加下面内容
 
-~~~
+```
 implementation 'com.google.firebase:firebase-messaging:23.0.0'
-~~~
+```
 
 
 
@@ -300,7 +300,7 @@ implementation 'com.google.firebase:firebase-messaging:23.0.0'
 
 **需要在project级的build.gradle设置**
 
-~~~
+```
 
 buildscript {
 
@@ -324,26 +324,26 @@ allprojects {
   }
 }
 
-~~~
+```
 
 **app级的build.gradle设置**
 - 在build.gradle最前面添加下面内容
-~~~
+```
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
-~~~
+```
 
 - 在dependencies下添加下面内容
-~~~
+```
 dependencies {
     implementation 'com.google.firebase:firebase-messaging:23.0.0'
 }
-~~~
+```
 
 ### Androidmainfest.xml文件需要修改的项
 
 **application节点内配置如下代码**
 
-~~~xml
+```xml
 
 <application>
 		//...
@@ -364,7 +364,7 @@ dependencies {
             android:resource="%NOTIFICATION_ICON%" />
 		//...
     </application>
-~~~
+```
 
 - `YOUR-CHANNEL-ID`设置为您自定义的通知的channelId ,
 - `NOTIFICATION_ICON`设置为推送消息的图片
@@ -387,8 +387,8 @@ dependencies {
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Push" value="io.dcloud.feature.aps.APSFeatureImpl">
 	<module name="fcm" value="io.dcloud.feature.fcm.FCMPushService" />
 </feature>
-~~~
+```

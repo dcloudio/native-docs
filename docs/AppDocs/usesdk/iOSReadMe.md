@@ -1,6 +1,6 @@
 ## iOS平台-App离线SDK内不同文件的作用
 
-~~~
+```
     |-- uni-app_5+pluginDemo       在uni-app中开发5+插件，详细请看目录里的 .md文件
     |-- HBuilder-ExampleDemo       5+app、uni-app项目包含所有模块的离线打包示例工程
     |-- HBuilder-Integrate        5+规范的原生插件开发工程,注意这个里面的工程不是打包工程
@@ -9,7 +9,7 @@
     |-- Feature-iOS.xls            配置表（依赖的库、资源文件、参数配置等）
     |-- SDK            工程需要的库文件，.h头文件，配置文件，资源文件
     |-- HBuilder-Hello    给用户打5+app、uni-app项目的离线打包工程。
-~~~
+```
 
 	
 ## SDK/SDK/Libs 目录下主要库的作用

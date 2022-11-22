@@ -8,14 +8,14 @@
 
 ## SDK目录说明
 
-~~~
+```
 	|-- HBuilder-Hello				App离线打包演示应用
 	|-- HBuilder-Integrate-AS		集成uni-app的最简示例
 	|-- SDK							SDK库文件目录
 	|-- Feature-Android.xls			Android平台各扩展Feature API对应的详细配置
 	|-- Readme.txt					版本说明文件及注意事项
 	|-- UniPlugin-Hello-AS			uni原生插件开发示例
-~~~
+```
 
 ## 准备工程
 
@@ -56,7 +56,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	AndroidX版本需添加如下资源
 	
-	~~~
+	```
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation fileTree(include: ['*.aar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.0.0'
@@ -67,16 +67,16 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.alibaba:fastjson:1.1.46.android'
 	implementation 'androidx.webkit:webkit:1.3.0'
-	~~~
+	```
 	
 	uni-app配置时需要在build.gradle中添加aaptOptions配置
 	
-	~~~
+	```
 	aaptOptions {  
 	    additionalParameters '--auto-add-overlay'  
 	    ignoreAssetsPattern "!.svn:!.git:.*:!CVS:!thumbs.db:!picasa.ini:!*.scc:*~"  
 	}  
-	~~~
+	```
 	
 	**注意：更新SDK时需要同时更新aar/jar文件和build.gradle配置**
 	
@@ -114,7 +114,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	完整版build.gradle可参考如下内容。
 	
-	~~~
+	```
 	apply plugin: 'com.android.application'
 
 	android {
@@ -149,7 +149,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		implementation 'com.alibaba:fastjson:1.1.46.android'
 		implementation 'androidx.webkit:webkit:1.3.0'
 	}
-	~~~
+	```
 	
 	**注意：如果需要集成的第三方sdk存在so库文件，只需添加armeabi-v7a、arm64-v8a、x86三个文件夹即可，否则会导致在部分手机上无法运行。**
 	
@@ -169,7 +169,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	**注意：为适配暗黑模式，需要在PandoraEntryActivity的android:configChanges属性中追加“uiMode”，参考如下配置。**
 
-	~~~
+	```
 		<activity
             android:name="io.dcloud.PandoraEntry"
             android:configChanges="orientation|keyboardHidden|keyboard|navigation"
@@ -200,13 +200,13 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
                 <data android:scheme=" " />
             </intent-filter>
         </activity>
-	~~~
+	```
 
 	添加provider信息到Androidmanifest.xml的application节点中
 	
 	**注意：3.3.7及以上版本，可以不添加**
 	
-	~~~
+	```
 	<!--provider节点必须添加-->
 	<provider
 	    android:name="io.dcloud.common.util.DCloud_FileProvider"
@@ -217,7 +217,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	        android:name="android.support.FILE_PROVIDER_PATHS"
 	        android:resource="@xml/dcloud_file_provider" />
 	</provider>
-	~~~
+	```
 	
 	**注意：${apk.applicationId} 必须替换成当前应用的包名**
 	
@@ -225,14 +225,14 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		
 	将对应的application配置到Androidmanifest.xml中（如下），并添加tools:replace="android:name"以防出现冲突。
 		
-	~~~
+	```
 		<application  
 		    android:name="io.dcloud.test.TestApplication"  
 		    android:icon="@drawable/icon"  
 		    android:label="@string/app_name"  
 		    tools:replace="android:name">
 		</application>
-	~~~
+	```
 
 	<h3 id="icons"></h3>
 
@@ -297,10 +297,10 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	需要在项目根目录下的gradle.properties文件中添加如下内容
 	
-	~~~
+	```
 	android.useAndroidX=true
 	android.enableJetifier=true
-	~~~
+	```
 
 <!--5. 模块配置
 

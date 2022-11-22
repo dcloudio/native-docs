@@ -116,7 +116,7 @@ A： 目前最多同时开启3个unimp小程序。超过3个则遵循先入先�
 
 A: 在application节点下添加provider节点
 	
-~~~
+```
 		<provider
             android:name="io.dcloud.common.util.DCloud_FileProvider"
             android:authorities="${apk.applicationId}.dc.fileprovider"
@@ -126,7 +126,7 @@ A: 在application节点下添加provider节点
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/dcloud_file_provider" />
         </provider>
-~~~
+```
 
 ${apk.applicationId}须替换成应用的包名。
 
