@@ -1,2 +1,5 @@
 node_modules
-img
+docs/.vuepress/dist
+.DS_Store
+root/sitemap.xml
+dist
