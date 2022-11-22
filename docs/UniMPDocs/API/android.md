@@ -558,7 +558,7 @@ uniapp页面没有配置navigationBar或titleNView则不会显示胶囊按钮 �
 
 |参数|类型|默认值|说明
 |:----|:----|:----|:----
-|list|List<MenuActionSheetItem>|无|默认菜单按钮列表。设置setCapsule为true生效。
+|list|List\<MenuActionSheetItem\>|无|默认菜单按钮列表。设置setCapsule为true生效。
 
 #### 类MenuActionSheetItem
 
