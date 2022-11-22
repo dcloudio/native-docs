@@ -12,7 +12,7 @@
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-permission android:name="android.permission.INTERNET"/>
@@ -20,7 +20,7 @@
 <uses-permission android:name="android.permission.FLASHLIGHT"/>
 <uses-feature android:name="android.hardware.camera"/>
 <uses-feature android:name="android.hardware.camera.autofocus"/>
-~~~
+```
 
 ### 修改dcloud_properties.xml配置
 
@@ -32,6 +32,6 @@ dcloud_properties.xml文件在assets/data目录下
 
 #### features节点下设置
 
-~~~
+```
 <feature name="LivePusher" value="io.dcloud.media.live.LiveMediaFeatureImpl"/>
-~~~
+```

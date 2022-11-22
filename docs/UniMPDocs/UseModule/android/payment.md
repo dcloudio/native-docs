@@ -14,14 +14,14 @@
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-~~~
+```
 
 ### 修改dcloud_properties.xml配置
 
@@ -33,9 +33,9 @@ dcloud_properties.xml文件在assets/data目录下
 
 #### features节点下设置
 
-~~~
+```
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/></feature>
-~~~
+```
 
 ## 微信支付配置
 
@@ -61,7 +61,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 继承AbsWXPayCallbackActivity即可。
 
-~~~
+```
 package 应用包名.wxapi;
 
 import io.dcloud.feature.payment.weixin.AbsWXPayCallbackActivity;
@@ -69,19 +69,19 @@ import io.dcloud.feature.payment.weixin.AbsWXPayCallbackActivity;
 public class WXPayEntryActivity extends AbsWXPayCallbackActivity{
 
 }
-~~~
+```
 
 ### Androidmainfest.xml文件需要修改的项
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-~~~
+```
 
 **application节点下配置如下代码**
 
-~~~
+```
 <meta-data  android:name="WX_APPID"  android:value="$微信APPID" />
 <meta-data android:name="WX_SECRET" android:value="$微信SECRET"/>
 <activity
@@ -96,7 +96,7 @@ public class WXPayEntryActivity extends AbsWXPayCallbackActivity{
             android:theme="@style/ProjectDialogTheme"
             ></activity>
 
-~~~
+```
 
 ### 修改dcloud_properties.xml配置
 
@@ -108,6 +108,6 @@ dcloud_properties.xml文件在assets/data目录下
 
 #### features节点下设置
 
-~~~
+```
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="Payment-Weixin" value="io.dcloud.feature.payment.weixin.WeiXinPay"/></feature>
-~~~
+```

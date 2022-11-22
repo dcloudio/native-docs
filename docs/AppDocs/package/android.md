@@ -13,9 +13,9 @@ versionName为应用的版本名称（字符串），在系统应用管理程序
 ## 生成安装包
 
 **注意：如果需要生成aab安装包，需要在项目根目录下的gradle.properties文件中添加如下内容**
-~~~
+```
 android.bundle.enableUncompressedNativeLibs = false
-~~~
+```
 
 点击Build->Generate Signed Bundle/APK...，如下图：
 	
@@ -69,7 +69,7 @@ android.bundle.enableUncompressedNativeLibs = false
 	
 	首先，需要在build.gradle中配置签名路径及密码
 	
-	~~~
+	```
 	android {
 		signingConfigs {
 			config {
@@ -88,7 +88,7 @@ android.bundle.enableUncompressedNativeLibs = false
 			}
 		}
 	}
-	~~~
+	```
 	
 	点击右侧Gradle选项卡，点击上面build.gradle对应的项目，点击Tasks->android->signingReport，如下图所示：
 	
@@ -102,9 +102,9 @@ android.bundle.enableUncompressedNativeLibs = false
 
 	在cmd中输入下面内容，回车查询。
 	
-	~~~
+	```
 	keytool -v -list -keystore keystore.jks(签名文件路径)
-	~~~
+	```
 	
 	输出内容如下图所示：
 	

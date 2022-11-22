@@ -3,22 +3,22 @@
 ### Androidmainfest.xml文件需要修改的项
 **需要在application节点前添加权限**
 
-~~~xml
+```xml
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />,
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />,
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />,
 <uses-permission android:name="android.permission.INTERNET"/>
-~~~
+```
 
 **application节点内配置如下代码**
-~~~xml
+```xml
 <meta-data            
     android:name="UMENG_APPKEY"
     android:value="%appkey_android%" />
 <meta-data            
     android:name="UMENG_CHANNEL"
     android:value="%channelid_android%" />"
-~~~
+```
 
 其中`appkey_android`、`channelid_android`分别为友盟平台的appkey和渠道id，请开发者根据自身信息填写。
 
@@ -37,22 +37,22 @@
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl">
 	<module name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.UmengStatistics" />
 </feature>
-~~~
+```
 services节点下添加
 
-~~~xml
+```xml
 	<service name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.StatisticsBootImpl"/>
-~~~
+```
 
 ## 谷歌统计
 
 ### Gradle配置
 **需要在project级的build.gradle设置**
-~~~
+```
 
 buildscript {
 
@@ -76,19 +76,19 @@ allprojects {
   }
 }
 
-~~~
+```
 
 **app级的build.gradle设置**
 - 在build.gradle最前面添加下面内容
-~~~
+```
 apply plugin: 'com.google.gms.google-services'  // Google Services plugin
-~~~
+```
 - 在dependencies下添加下面内容
-~~~
+```
 dependencies {
     implementation 'com.google.firebase:firebase-analytics:20.0.0'
 }
-~~~
+```
 
 ### 需要拷贝的文件
 
@@ -109,8 +109,8 @@ dependencies {
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl">
 	<module name="Statistic-Google" value="io.dcloud.feature.statistics.google.GoogleStatistics" />
 </feature>
-~~~
+```

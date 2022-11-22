@@ -2,11 +2,11 @@
 
 AndroidManifest.xml文件的application节点中添加如下节点到节点中，并配置替换其中uni-app或5+应用appid和广告联盟会员adid的值，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现。**
 
-~~~
+```
 <meta-data android:name="DCLOUD_AD_ID" android:value="广告标识"/>  
 <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"/><!--如果不开启开屏广告则不设置此字段或者值设置为false-->  
 <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="包名|应用标识|广告标识|渠道，如io.dcloud.appid|appid|adid|google" /><!--为了保证广告统计的有效性，请正确设置此值-->
-~~~
+```
 
 * 包名：对应Android项目中build.gradle中的applicationId，如io.dcloud.HBuilder
 * 应用标识：对应5+ APP或uni-app项目manifest.json中appid，当前应用必须开通广告并且必须与dcloud_control.xml中的appid保持一致。
@@ -34,7 +34,7 @@ application节点下添加
 
 将“${applicationId}”替换成应用的包名
 
-~~~
+```
         <provider
             android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
             android:authorities="${applicationId}.TTFileProvider"
@@ -50,17 +50,17 @@ application节点下添加
             android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
             android:authorities="${applicationId}.TTMultiProvider"
             android:exported="false" />
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 features 节点添加
 
-~~~
+```
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="csj" value="io.dcloud.feature.ad.csj.ADCsjModule"/>
         </feature>
-~~~
+```
 
 
 ## 腾讯优量汇
@@ -77,11 +77,11 @@ SDK/libs| ads-release.aar、ads-gdt-release.aar、GDTSDK.unionNormal.aar
 
 features 节点添加
 
-~~~ 
+``` 
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="gdt" value="io.dcloud.feature.ad.gdt.ADGdtModule"/>
         </feature>
-~~~
+```
 
 ## 快手
 
@@ -102,7 +102,7 @@ manifest节点下添加
 
 将“${applicationId}”替换成应用的包名
 
-~~~
+```
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -110,17 +110,17 @@ manifest节点下添加
         android:name="${applicationId}.permission.KW_SDK_BROADCAST"
         android:protectionLevel="signature" />
     <uses-permission android:name="${applicationId}.permission.KW_SDK_BROADCAST" />    
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 features 节点添加
 
-~~~ 
+``` 
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="ks" value="io.dcloud.feature.ad.ks.ADKsModule"/>
         </feature>
-~~~
+```
 
 ## Sigmob
 
@@ -136,7 +136,7 @@ SDK/libs| ads-release.aar、ads-sigmob-release.aar、windAd.aar、wind-common.aa
 
 manifest节点下添加
 
-~~~
+```
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -147,17 +147,17 @@ manifest节点下添加
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 features 节点添加
 
-~~~ 
+``` 
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="sgm" value="io.dcloud.feature.ad.sigmob.ADSMModule"/>
         </feature>
-~~~
+```
 
 ## 百度广告
 
@@ -175,11 +175,11 @@ SDK/libs| ads-release.aar、ads-bd-release.aar、Baidu_MobAds_SDK.aar
 
 features 节点添加
 
-~~~
+```
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="bd" value="io.dcloud.feature.ad.bd.ADBDModule" />
         </feature>
-~~~
+```
 
 ## 华为广告
 
@@ -197,7 +197,7 @@ SDK/libs| ads-release.aar、ads-hw-release.aar
 
 项目级build.gradle
 
-~~~
+```
 buildscript {
     repositories {
 		...
@@ -215,26 +215,26 @@ allprojects {
         maven {url 'https://developer.huawei.com/repo/'}
     }
 }
-~~~
+```
 
 应用级的build.gradle
 
-~~~
+```
 dependencies {
     implementation 'com.huawei.hms:ads-lite:13.4.56.302'
     implementation 'com.huawei.hms:ads-omsdk:1.3.35'
 }
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 features 节点添加
 
-~~~
+```
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="hw" value="io.dcloud.feature.ad.hw.AdHwModule" />
         </feature>
-~~~
+```
 
 
 ## 穿山甲GroMore
@@ -257,7 +257,7 @@ SDK/libs| ads-release.aar、ads-gromore-release.aar、mediation_ad_sdk.aar、ope
 
 manifest节点下添加
 
-~~~
+```
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -271,17 +271,17 @@ manifest节点下添加
 	<uses-permission android:name="android.permission.GET_TASKS"/>
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-~~~
+```
 
 ### dcloud_properties.xml配置
 
 features 节点添加
 
-~~~ 
+``` 
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
 			<module name="gm" value="io.dcloud.feature.ad.gm.AdGMModule"/>
 		</feature>
-~~~
+```
 
 <!--
 ## 360广告
@@ -300,11 +300,11 @@ SDK/libs| ads-release.aar、ads-360-release.aar、torch-adcore-5.12.3140.aar | o
 
 features 节点添加
 
-~~~
+```
         <feature name="Ad" value="io.dcloud.feature.ad.AdFlowFeatureImpl">
             <module name="360" value="io.dcloud.feature.ad.juhe360.AD360Module"/>
         </feature>
-~~~
+```
 -->
 ## nvue配置
 

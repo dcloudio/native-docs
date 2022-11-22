@@ -12,9 +12,9 @@
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="VideoPlayer" value="io.dcloud.media.MediaFeatureImpl"/>
-~~~
+```
 
 ## LivePusher（直播推流）
 
@@ -32,7 +32,7 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -45,13 +45,13 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-feature android:name="android.hardware.Camera"/>
     <uses-feature android:name="android.hardware.camera.autofocus" />
-~~~
+```
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="LivePusher" value="io.dcloud.media.live.LiveMediaFeatureImpl"/>
-~~~
+```
 
 ## Bluetooth（低功耗蓝牙）
 
@@ -69,25 +69,25 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
-~~~
+```
 **当targetSdkVersion31及以上版本时，需追加如下权限:**
 
-~~~
+```
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-~~~
+```
 
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="Bluetooth" value="io.dcloud.feature.bluetooth.BluetoothFeature"/>
-~~~
+```
 
 ## iBeacon
 
@@ -105,25 +105,25 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
-~~~
+```
 
 **当targetSdkVersion31及以上版本时，需追加如下权限:**
 
-~~~
+```
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-~~~
+```
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="iBeacon" value="io.dcloud.feature.iBeacon.WxBluetoothFeatureImpl"/>
-~~~
+```
 
 ## Contact（通讯录）
 
@@ -141,17 +141,17 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
 <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
 <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 <uses-permission android:name="android.permission.READ_CONTACTS"/>
-~~~
+```
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="Contacts" value="io.dcloud.feature.contacts.ContactsFeatureImpl"></feature>
-~~~
+```
 
 ## Fingerprint（指纹识别）
 
@@ -169,15 +169,15 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
 <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
-~~~
+```
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="Fingerprint" value="io.dcloud.feature.fingerprint.FingerPrintsImpl"/>
-~~~
+```
 
 ## Messaging（短彩邮件消息）
 
@@ -195,18 +195,18 @@
 
 #### 需要在application节点前添加权限
 
-~~~
+```
 	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.WRITE_SMS"/>
     <uses-permission android:name="android.permission.READ_SMS"/>
-~~~
+```
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="Messaging" value="io.dcloud.adapter.messaging.MessagingPluginImpl" />
-~~~
+```
 
 ## SQLite（数据库）
 
@@ -222,9 +222,9 @@
 
 ### dcloud_properties.xml需要添加如下代码
 
-~~~
+```
 <feature name="Sqlite" value="io.dcloud.feature.sqlite.DataBaseFeature"/>
-~~~
+```
 
 ## 拓展模块
 

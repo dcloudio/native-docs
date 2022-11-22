@@ -29,7 +29,7 @@
 #### 5. 在assets目录下创建dcloud_uniplugins.json文件
 插件配置信息请参考插件配置文档或插件配置文件package.json
 关于package.json请参考：**[Android uni-app原生插件开发文档](/NativePlugin/course/android?id=插件调试)**
-~~~
+```
 {  
   "nativePlugins": [  
     {
@@ -43,11 +43,11 @@
     }  
   ]  
 }
-~~~
+```
 
 #### 6. 配置gradle文件
 添加指定依赖
-~~~
+```
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation fileTree(dir: 'libs', include: ['*.aar'])
@@ -63,7 +63,7 @@ dependencies {
     // 基座需要，必须添加
     implementation 'com.github.bumptech.glide:glide:4.9.0'
 }
-~~~
+```
 其余uni-app离线集成事项请参考：**[Android平台，uni-app离线打包集成要领及注意事项](http://ask.dcloud.net.cn/article/35139)**
 
 #### 7. 运行

@@ -575,7 +575,7 @@ Activity页面在关闭前调用setResult设置标识code将要返回的参数�
 
 **示例：**
 
-~~~
+```
 {  
   "nativePlugins": [  
     {
@@ -589,7 +589,7 @@ Activity页面在关闭前调用setResult设置标识code将要返回的参数�
     }  
   ]  
 }
-~~~
+```
 
 5.阅读`package.json`读取dependencies、minSdkVersion、permissions配置信息。配置gradle文件和AndroidManifest.xml。
 

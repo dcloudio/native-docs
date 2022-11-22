@@ -14,7 +14,7 @@
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -28,11 +28,11 @@
 <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
 <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
 <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-~~~
+```
 
 **application节点下配置如下代码**
 
-~~~
+```
 <meta-data android:name="com.amap.api.v2.apikey" android:value=\"%用户申请的APPkey%\"></meta-data>
 <service android:name="com.amap.api.location.APSService"></service>
-~~~
+```

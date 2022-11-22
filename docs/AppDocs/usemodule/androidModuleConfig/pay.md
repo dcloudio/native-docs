@@ -16,22 +16,22 @@
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-~~~
+```
 
 **dcloud_properties.xml需要添加如下代码**
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~
+```
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="AliPay" value="io.dcloud.feature.payment.alipay.AliPay"/></feature>
-~~~
+```
 
 
 ## 微信支付
@@ -63,13 +63,13 @@ dcloud_properties.xml文件在assets/data目录下
 
 **需要在application节点前添加权限**
 
-~~~
+```
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
-~~~
+```
 
 **application节点下配置如下代码**
 
-~~~
+```
  <meta-data  android:name="WX_APPID"  android:value="$微信APPID" />
  <activity android:name="io.dcloud.feature.payment.weixin.WXPayProcessMeadiatorActivity"
             android:exported="false"
@@ -81,22 +81,22 @@ dcloud_properties.xml文件在assets/data目录下
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:launchMode="singleTop" />
-~~~
+```
 
 **dcloud_properties.xml需要添加如下代码**
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~
+```
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl"><module name="Payment-Weixin" value="io.dcloud.feature.payment.weixin.WeiXinPay"/></feature>
-~~~
+```
 
 
 ## paypal支付
 
 ### Gradle配置
 **需要在project级的build.gradle设置PayPal私有库**
-~~~
+```
 allprojects {
     repositories {
         maven {
@@ -108,26 +108,26 @@ allprojects {
         }
     }
 }
-~~~
+```
 
 **在app级的build.gradle配置**
-~~~
+```
 dependencies {
     implementation('com.paypal.checkout:android-sdk:0.6.2')
 }
-~~~
+```
 
 
 ### Androidmainfest.xml文件需要修改的项
 
 **需要在application节点前添加权限**
 
-~~~xml
+```xml
 <uses-permission android:name="android.permission.INTERNET" />
-~~~
+```
 
 **application节点内配置如下代码**
-~~~xml
+```xml
 
 <activity
             android:name="com.paypal.openid.RedirectUriReceiverActivity"
@@ -159,7 +159,7 @@ dependencies {
         </activity>
 		
 		<meta-data android:name="returnUrl" android:value="%YOUR-CUSTOM-SCHEME%://paypalpay"/>
-~~~
+```
 
 其中`YOUR-CUSTOM-SCHEME`替换为你自定义的scheme，具体说明参考官方[文档](https://developer.paypal.com/sdk/in-app/android/customize-return-url/)
 
@@ -175,11 +175,11 @@ dependencies {
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
     <module name="Payment-Paypal" value="io.dcloud.feature.payment.paypal.PaypalPay" />
 </feature>
-~~~
+```
 
 
 ## stripe支付
@@ -187,7 +187,7 @@ dcloud_properties.xml文件在assets/data目录下
 ### Gradle配置
 **app级的build.gradle设置**
 - 在android节点下配置
-~~~
+```
 android {
 	defaultConfig {
         minSdkVersion 21
@@ -199,18 +199,18 @@ android {
         implementation 'com.stripe:stripe-android:18.2.0'
     }
 }
-~~~
+```
 
 ### Androidmainfest.xml文件需要修改的项
 **application节点内配置如下代码**
 
-~~~xml
+```xml
 <activity
             android:name="io.dcloud.feature.payment.stripe.TransparentActivity"
             android:excludeFromRecents="true"
             android:exported="false"
             android:theme="@style/TranslucentTheme" />
-~~~
+```
 
 ### 需要拷贝的文件
 **需要引入工程的jar文件**
@@ -226,33 +226,33 @@ android {
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
     <module name="Payment-Stripe" value="io.dcloud.feature.payment.stripe.StripePay"/>
 </feature>
-~~~
+```
 
 
 ## Google支付
 
 ### Gradle配置
 
-~~~
+```
 dependencies {
     implementation "androidx.appcompat:appcompat:${rootProject.ext.androidxVersion}"
     implementation 'com.google.android.gms:play-services-wallet:18.1.3'
 }
-~~~
+```
 
 ### Androidmainfest.xml文件需要修改的项
 **application节点内配置如下代码**
 
-~~~xml
+```xml
 <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
 
-~~~
+```
 
 
 ### 需要拷贝的文件
@@ -269,8 +269,8 @@ dependencies {
 
 dcloud_properties.xml文件在assets/data目录下
 
-~~~ xml
+``` xml
 <feature name="Payment" value="io.dcloud.feature.payment.PaymentFeatureImpl">
     <module name="Payment-Google" value="io.dcloud.feature.payment.google.GooglePay"/>
 </feature>
-~~~
+```
