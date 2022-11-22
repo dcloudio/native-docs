@@ -7,8 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "node --max_old_space_size=3072 ./node_modules/vuepress/cli.js build docs --no-cache",
+    "dev": "cross-env DOCS_LOCAL=zh vuepress dev docs",
+    "dev:zh": "cross-env DOCS_LOCAL=zh vuepress dev docs",
+    "dev:en": "cross-env DOCS_LOCAL=en vuepress dev docs",
+    "build": "cross-env DOCS_LOCAL=zh node --max_old_space_size=3072 ./node_modules/vuepress/cli.js build docs --no-cache",
+    "build:zh": "cross-env DOCS_LOCAL=zh node --max_old_space_size=3072 ./node_modules/vuepress/cli.js build docs --no-cache",
+    "build:en": "cross-env DOCS_LOCAL=en node --max_old_space_size=3072 ./node_modules/vuepress/cli.js build docs --no-cache",
     "sitemap": "node ./script/createSiteMap.js"
   },
   "repository": {
@@ -25,8 +29,10 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.5",
     "clipboard": "^2.0.10",
+    "cross-env": "^7.0.3",
     "fs-extra": "^10.0.0",
     "glob": "^7.1.7",
+    "preprocess": "^3.2.0",
     "vuepress": "^1.8.2"
   },
   "dependencies": {
