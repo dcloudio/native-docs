@@ -31,8 +31,8 @@ const config = {
     prevLinks: false,
     // TODO use theme
     repo: 'dcloudio/uni-app',
-    docsRepo: 'https://gitcode.net/dcloud/native-docs-zh',
-    docsBranch: 'master',
+    docsRepo: 'https://gitee.com/dcloud/native-docs',
+    docsBranch: 'docs-zh',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
