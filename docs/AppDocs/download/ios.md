@@ -25,11 +25,12 @@ The recommended method is to put the entire SDK under the project path. When add
 [和彩云点击下载SDK，提取码: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K) 
 [Hecaiyun click to download SDK, extraction code: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K)
 
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.5.20221121）版本生成本地打包App资源。
++ Updated uni-app offline packaging support, need to use HBuilderX (3.6.5.20221121) version to generate local packaged App resources.
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.4.20220922）版本生成本地打包App资源。
 + Updated uni-app offline packaging support, need to use HBuilderX (3.6.4.20220922) version to generate local packaged App resources.
 
-## 3.6.4.20220922
 
 + iOS平台 更新 uni-AD 今日头条穿山甲SDK更新为 4.8.0.3 版，穿山甲Gromore SDK更新为 3.7.0.0 版
 + iOS platform update uni-AD Jinri Toutiao pangolin SDK to version 4.8.0.3, pangolin Gromore SDK to version 3.7.0.0

@@ -1,4 +1,15 @@
 ## 正式版历次更新说明
+## 3.6.4.20220922
+
++ iOS平台 更新 uni-AD 今日头条穿山甲SDK更新为 4.8.0.3 版，穿山甲Gromore SDK更新为 3.7.0.0 版
++ iOS platform update uni-AD Jinri Toutiao pangolin SDK to version 4.8.0.3, pangolin Gromore SDK to version 3.7.0.0
++ iOS平台 修复 uni-AD 穿山甲Gromore 激励视频偶现可能无法显示的Bug 详情
++ iOS platform fixed the bug that the incentive video of uni-AD Pangolin Gromore might not be displayed occasionally. Details
++ iOS平台 修复 3.6.2版本引出的 uni原生语言插件Hook不到applicationWillEnterForeground、applicationDidEnterBackground等系统事件的Bug
++ iOS platform fixed the bug that the uni native language plug-in hook introduced by version 3.6.2 could not reach system events such as applicationWillEnterForeground and applicationDidEnterBackground
++ iOS平台 修复 安全检测可能报获取设备idfv的Bug
++ iOS platform repaired the bug that the security detection may report the device idfv
+
 ## 3.6.3.20220919
 无
 none

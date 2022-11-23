@@ -35,8 +35,8 @@
 ## Android 离线SDK - Alpha版
 ## Android Offline SDK - Alpha Version
 
-### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
-### Released November 14, 2022 - HBuilderX (3.6.9.20221114-alpha)
+### 2022年11月22日发布——HBuilderX（3.6.10.20221121-alpha）
+### Released November 22, 2022 - HBuilderX (3.6.10.20221121-alpha)
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 [Baidu Cloud](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg), extraction code: 5vgk
@@ -44,24 +44,22 @@
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 [He Caiyun](https://caiyun.139.com/m/i?115CoAT1jHOJZ), extraction code: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.9.20221114-alpha）版本生成本地打包App资源。
-+ Updated uni-app offline packaging support, need to use HBuilderX (3.6.9.20221114-alpha) version to generate local packaged App resources.
-+ 修复 radio 组件禁用状态样式异常的Bug
-+ Fixed the bug that the style of the disabled radio component was abnormal
-+ 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法
-+ Added nvue page MapContext to support setLocMarkerIcon method
-+ 新增 nvue list 组件支持 render-reverse 属性
-+ Added nvue list component to support render-reverse property
-+ 更新 uni-AD 今日头条穿山甲广告SDK 为 4.9.0.8 版；穿山甲GroMore广告SDK 为 4.8.0.0 版；腾讯优量汇广告SDK 为 4.492.1362 版
-+ Updated uni-AD Toutiao Pangolin Advertising SDK to version 4.9.0.8; Pangolin GroMore Advertising SDK to version 4.8.0.0; Tencent Youlianghui Advertising SDK to version 4.492.1362
-+ 更新 高德地图SDK为 9.5.0 版，高德定位SDK为 6.1.0 版，解决隐私合规检测可能报高德SDK收取MAC地址、ANDROID ID的问题
-+ Update Amap SDK to version 9.5.0, and Amap Positioning SDK to version 6.1.0, to solve the problem that privacy compliance detection may report MAC address and ANDROID ID to Amap SDK
-+ 修复 3.6.7版本引出的 应用后台切前台插屏广告可能不显示的Bug
-+ Fixed the bug caused by version 3.6.7 that the interstitial advertisements in the background of the application may not be displayed in the foreground
-+ 修复 视频播放控件 VideoPlayer 隐私合规检测可能报数字天堂SDK获取传感器的Bug
-+ Fixed the bug that the video playback control VideoPlayer privacy compliance detection may report the bug that the Digital Paradise SDK obtains the sensor
-+ 修复 原生隐私政策提示框在部分设备 message 内容可能显示不正常的Bug
-+ Fix the bug that the message content of the native privacy policy prompt box may display abnormally on some devices
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.10.20221121-alpha）版本生成本地打包App资源。
++ Updated uni-app offline packaging support, need to use HBuilderX (3.6.10.20221121-alpha) version to generate local packaged App resources.
++ 修复 uni.request 不支持 head 请求的Bug
++ Fix the bug that uni.request does not support head request
++ 修复 页面中存在多个 input 组件时获取焦点光标位置可能不正确的Bug
++ Fix the bug that the position of the focus cursor may be incorrect when there are multiple input components on the page
++ 修复 nvue live-pusher 组件在 Android11+ 设备使用移动网络无法预览的Bug
++ Fixed the bug that the nvue live-pusher component could not be previewed on Android11+ devices using the mobile network
++ 新增 隐私政策提示框支持 showAlways 配置是否每次启动都弹窗提示
++ Added the privacy policy prompt box to support showAlways to configure whether to pop up a prompt every time it starts
++ 修复 监听系统暗黑模式主题切换事件可能无效的Bug
++ Fix the bug that monitoring system dark mode theme switching event may not work
++ 修复 云端打包 使用自有证书可能报 Invalid keystore format 错误的Bug
++ Fix the bug that Invalid keystore format error may be reported when using self-owned certificate in cloud packaging
++ 修复 云端打包 配置应用清单文件 AndroidManifest.xml 的 package 属性值与包名相同时打包失败的Bug
++ Fixed the bug that packaging failed when the value of the package attribute in the AndroidManifest.xml configuration application manifest file AndroidManifest.xml was the same as the package name.
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 [Baidu network disk download historical version](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA), extraction code: 6msp

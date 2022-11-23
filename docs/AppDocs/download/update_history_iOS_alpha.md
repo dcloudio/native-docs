@@ -1,6 +1,40 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.6.9.20221114-alpha
++ 新增 uni错误规范 [详情](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
++ Added uni error specification [details](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
++ App、Web平台 新增 暗黑模式（DarkMode） [详情](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
++ Added Dark Mode (DarkMode) on App and Web platforms [Details](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
++ App、Web平台 修复 radio 组件禁用状态样式异常的Bug
++ App, Web platform Fix the bug that the style of the radio component is disabled and the style is abnormal
++ App平台 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法 [详情](https://uniapp.dcloud.net.cn/api/location/map.html#setLocMarkerIcon)
++ App platform added nvue page MapContext supports setLocMarkerIcon method [Details](https://uniapp.dcloud.net.cn/api/location/map.html#setLocMarkerIcon)
++ App平台 新增 nvue list 组件支持 render-reverse 属性 [详情](https://uniapp.dcloud.net.cn/component/list.html#%E5%B1%9E%E6%80%A7)
++ App platform added nvue list component to support render-reverse attribute [Details](https://uniapp.dcloud.net.cn/component/list.html#%E5%B1%9E%E6%80%A7)
++ App平台 修复 Vue2 项目使用组合式 API 时 onReady 声明周期 template ref 未绑定的Bug
++ App platform Fixed the bug that the template ref in the onReady statement cycle was not bound when the Vue2 project used the combined API
++ App平台 修复 Vue3 项目 template ref 会被代理的Bug
++ App platform fixes the bug that the template ref of the Vue3 project will be proxied
++ App平台 修复 Vue3 项目设置导航栏背景色为 rgba 色值无效的Bug [详情](https://ask.dcloud.net.cn/question/135111)
++ App platform Fix the bug that the background color of the navigation bar of the Vue3 project is set to an invalid rgba color value [Details](https://ask.dcloud.net.cn/question/135111)
++ App平台 修复 Vue3 项目根节点 height:100% 无效的Bug [详情](https://ask.dcloud.net.cn/question/156564)
++ App platform fix Vue3 project root node height: 100% invalid bug [Details](https://ask.dcloud.net.cn/question/156564)
++ App-iOS平台 修复 Vue3 项目录音播放无效的Bug [详情](https://ask.dcloud.net.cn/question/155741)
++ App-iOS platform fixes the bug that Vue3 project recording playback is invalid [Details](https://ask.dcloud.net.cn/question/155741)
+ 
++ 新增 Stripe支付支持设置账单信息 [详情](https://uniapp.dcloud.net.cn/tutorial/app-payment-stripe.html)
++ Added support for setting billing information for Stripe payment [Details](https://uniapp.dcloud.net.cn/tutorial/app-payment-stripe.html)
++ iOS平台 修复 3.6.0版本引出的 开屏广告自定义底部图片、背景色不生效的Bug
++ iOS platform fixed the bug caused by version 3.6.0 that the custom bottom image and background color of the opening screen advertisement did not take effect
++ iOS平台 修复 标题栏 titleNView 设置默认导航栏颜色可能导致与状态栏颜色不一致的Bug
++ iOS platform fixed the bug that the title bar titleNView setting the default navigation bar color may cause inconsistent color with the status bar
++ iOS平台 修复 setUIStyle 设置暗黑模式可能无效的Bug
++ iOS platform fixes the bug that setUIStyle may not work when setting the dark mode
++ iOS平台 修复 uts插件 类构造函数无法使用外参的Bug
++ iOS platform fixes the bug that the class constructor of the uts plugin cannot use external parameters
+
+
 ## 3.6.8.20221027-alpha
 
 + App平台、Web平台 新增 地理位置更新相关接口 [详情](https://uniapp.dcloud.net.cn/api/location/location-change.html)
