@@ -12,6 +12,7 @@ const config_en = require('./build/config.en');
 const config = process.env.DOCS_LOCAL === 'en' ? config_en : config_zh
 
 module.exports = merge({
+  base: '/en/',
   theme: 'vuepress-theme-uni-app-test',
   themeConfig: {
     sidebar: createSidebar(tabs),
