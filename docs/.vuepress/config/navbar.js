@@ -30,7 +30,7 @@ export const navbarLanguage = {
   items: [
     {
       text: '简体中文',
-      link: 'https://nativesupport-test.dcloud.net.cn /'
+      link: 'https://nativesupport-test.dcloud.net.cn/'
     },
     {
       text: 'English',
