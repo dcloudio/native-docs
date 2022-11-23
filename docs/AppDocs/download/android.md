@@ -22,21 +22,20 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
+### 2022年11月22日发布——HBuilderX（3.6.10.20221121-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.9.20221114-alpha）版本生成本地打包App资源。
-+ 修复 radio 组件禁用状态样式异常的Bug
-+ 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法
-+ 新增 nvue list 组件支持 render-reverse 属性
-+ 更新 uni-AD 今日头条穿山甲广告SDK 为 4.9.0.8 版；穿山甲GroMore广告SDK 为 4.8.0.0 版；腾讯优量汇广告SDK 为 4.492.1362 版
-+ 更新 高德地图SDK为 9.5.0 版，高德定位SDK为 6.1.0 版，解决隐私合规检测可能报高德SDK收取MAC地址、ANDROID ID的问题
-+ 修复 3.6.7版本引出的 应用后台切前台插屏广告可能不显示的Bug
-+ 修复 视频播放控件 VideoPlayer 隐私合规检测可能报数字天堂SDK获取传感器的Bug
-+ 修复 原生隐私政策提示框在部分设备 message 内容可能显示不正常的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.10.20221121-alpha）版本生成本地打包App资源。
++ 修复 uni.request 不支持 head 请求的Bug
++ 修复 页面中存在多个 input 组件时获取焦点光标位置可能不正确的Bug
++ 修复 nvue live-pusher 组件在 Android11+ 设备使用移动网络无法预览的Bug
++ 新增 隐私政策提示框支持 showAlways 配置是否每次启动都弹窗提示
++ 修复 监听系统暗黑模式主题切换事件可能无效的Bug
++ 修复 云端打包 使用自有证书可能报 Invalid keystore format 错误的Bug
++ 修复 云端打包 配置应用清单文件 AndroidManifest.xml 的 package 属性值与包名相同时打包失败的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
