@@ -1,13 +1,18 @@
 ## 说明
+## illustrate
 
 uni小程序SDK 提供了丰富的原生能力，如果您在小程序中调用了相关模块的 API 但是原生工程没有添加相关依赖的时候会出现如下提示
+The uni applet SDK provides a wealth of native capabilities. If you call the API of related modules in the applet but the native project does not add relevant dependencies, the following prompt will appear
 
 ![](https://ask.dcloud.net.cn/uploads/article/20200320/3c5d9ebaddef0ffb3f20c7d49f2daeea.png)
 
 按照下面的教程将该模块所需的依赖库和依赖资源添加到原生工程中即可
+Follow the tutorial below to add the dependent libraries and dependent resources required by the module to the native project.
 您可根据需求自行添加功能模块，各功能模块所需的依赖库及资源文件，请参考页面最下面的模块对照表
+You can add functional modules according to your needs. For the dependent libraries and resource files required by each functional module, please refer to the module comparison table at the bottom of the page
 
 UniMPSDK/Feature目录结构
+UniMPSDK/Feature directory structure
 
 ```
 |-- UniMPSDK/Features
@@ -17,14 +22,18 @@ UniMPSDK/Feature目录结构
 	|-- Resources			// 资源文件
 ```
 请参考模块对照表，添加模块所需依赖库及资源文件即可；
+Please refer to the module comparison table and add the dependent libraries and resource files required by the module;
 
 
 ### 集成方式
+### Integration
 
 
 #### 下面以 Gallery 模块为例
+#### Let's take the Gallery module as an example
 
 首先查看对照表，找到 Gallery 模块查看所需添加的系统库、SDK中的库及资源文件
+First check the comparison table, find the Gallery module and check the system libraries, libraries in the SDK and resource files that need to be added
 
 <table>
 	<tr>
@@ -32,9 +41,13 @@ UniMPSDK/Feature目录结构
 	    <th>5+ API</th>
 	    <th>Uni API</th>
 	    <th>系统库</th>
+	    <th>system library</th>
 	    <th>SDK中的库</th>  
+	    <th>Libraries in the SDK</th>
 	    <th>资源文件</th>
+	    <th>resource</th>
 	    <th>Info.plist（添加权限描述或字段）</th>
+	    <th>Info.plist (add permission description or field)</th>
 	</tr >
 	<tr>
 	    <td>Camera(摄像头)/Gallery(图片选择)</td>
@@ -61,12 +74,15 @@ UniMPSDK/Feature目录结构
 </table>
 
 #### 添加依赖库
+#### Add dependent library
 
 将 UniMPSDK/Features/Lib 中的库
+Copy the library in UniMPSDK/Features/Lib
 
 - liblibCamera.a
 
 系统库
+system library
 
 -  AssetsLibrary.framework
 - AssetsLibrary.framework
@@ -76,32 +92,41 @@ UniMPSDK/Feature目录结构
 - GLKit.framework
 
 添加到工程的 `TARGETS->Build Phases-> Link Binary With Libaries` 中；
+Add it to `TARGETS->Build Phases-> Link Binary With Libaries` of the project;
 
 
 #### 添加依赖资源文件
+#### Add dependent resource files
 
 将 UniMPSDK/Features/Resources 中的
+In UniMPSDK/Features/Resources
 
 - DCTZImagePickerController.bundle
 - DCMediaEditingController.bundle
 
 两个资源文件添加到工程
+Two resource files are added to the project
 
 #### 添加权限描述
+#### Add permission description
 
 在工程的 info.plist 文件中添加
+Add in the project's info.plist file
 
 - NSCameraUsageDescription		
 - NSPhotoLibraryUsageDescription
 - NSPhotoLibraryAddUsageDescription
 
 对于的描述信息；
+For the description information;
 
 然后即可调用 Gallery 相关功能；
+Then you can call Gallery related functions;
 
 
 <h3 id="moduletable"></h3>
 ### 功能模块对照表 （温馨提示表格可左右滑动）
+### Function module comparison table (warm reminder table can be slid left and right)
 
 <table>
 	<tr>
@@ -109,9 +134,13 @@ UniMPSDK/Feature目录结构
 	    <th>5+ API</th>
 	    <th>Uni API</th>
 	    <th>系统库</th>
+	    <th>system library</th>
 	    <th>SDK中的库</th>  
+	    <th>Libraries in the SDK</th>
 	    <th>资源文件</th>
+	    <th>resource</th>
 	    <th>Info.plist（添加权限描述或字段）</th>
+	    <th>Info.plist (add permission description or field)</th>
 	</tr >
 	<tr >
 	    <td>Accelerometer(加速度传感器)</td>
@@ -452,6 +481,7 @@ UniMPSDK/Feature目录结构
 	<tr>
 	    <td>
 	    （nvue）高德地图：<br/>
+	    (nvue) Gaode map:<br/>
 		（nvue不支持百度地图）
 	    MapKit.framework<br/>
 	    CoreLocation.framework<br/>
@@ -567,6 +597,7 @@ UniMPSDK/Feature目录结构
 	    <td>
 	    QQ：<br/>
 		无
+		none
 	    </td>
 	    <td>
 		liblibShare.a<br/>
@@ -626,6 +657,7 @@ UniMPSDK/Feature目录结构
 		</td>
 		<td>
 		BDSClientEASRResources文件夹里的资源文件
+		Resource files in the BDSClientEASRResources folder
 		</td>
 		<td>
 		<b>baiduspeech:</b><br/>
@@ -706,6 +738,7 @@ UniMPSDK/Feature目录结构
 	    <td>
 	    QQ：<br/>
 		无
+		none
 	    </td>
 	    <td>
 		liblibOauth.a<br/>
@@ -770,6 +803,7 @@ UniMPSDK/Feature目录结构
 		<b>[URL Types]</b><br/>
 		Identifier=google_url<br/>
 		URL Schemes= 反向clientid
+		URL Schemes= reverse clientid
 	    </td>
 	</tr>
 	<tr>
@@ -953,6 +987,7 @@ UniMPSDK/Feature目录结构
 		libDCUniGPUImage.a<br/>
 		libDCUniLivePush.a<br/>
 		UPLiveSDKDll.framework(动态库)
+		UPLiveSDKDll.framework (dynamic library)
 		</td>
 	    <td>
 	    </td>

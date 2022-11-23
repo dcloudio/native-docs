@@ -1,16 +1,22 @@
 ## 百度语音
+## Baidu Voice
 
 ### 需要添加的文件
+### Files that need to be added
 
 将以下文件放入工程的libs下
+Put the following files into the libs of the project
 
 | 路径 | 文件名 |
+| path | filename |
 | :-------: | :-------: |
 |SDK\libs|speech-release.aar、speech_baidu-release.aar|
 
 ### AndroidManifest.xml配置
+### AndroidManifest.xml configuration
 
 #### 权限配置
+#### Rights Profile
 
 ```
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -23,6 +29,7 @@
 ```
 
 #### application节点配置
+#### application node configuration
 
 ```
 		<meta-data android:name="com.baidu.speech.APP_ID" android:value="${百度语音申请的appid}"/>
@@ -32,10 +39,13 @@
 ```
 
 ### dcloud_properties.xml配置
+### dcloud_properties.xml configuration
 
 **dcloud_properties.xml文件在assets/data目录下**
+**The dcloud_properties.xml file is in the assets/data directory**
 
 #### features节点下设置
+#### Settings under the features node
 
 ```
 		<feature name="Speech" value="io.dcloud.feature.speech.SpeechFeatureImpl">
@@ -45,18 +55,24 @@
 
 
 ## 讯飞语音
+## Xunfei voice
 
 ### 需要添加的文件
+### Files that need to be added
 
 将以下文件放入工程的libs下
+Put the following files into the libs of the project
 
 | 路径 | 文件名 |
+| path | filename |
 | :-------: | :-------: |
 |SDK\libs|speech-release.aar、speech_ifly-release.aar|
 
 ### AndroidManifest.xml配置
+### AndroidManifest.xml configuration
 
 #### 权限配置
+#### Rights Profile
 
 ```
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -69,6 +85,7 @@
 ```
 
 #### application节点配置
+#### application node configuration
 
 ```
 		<meta-data
@@ -77,10 +94,13 @@
 ```
 
 ### dcloud_properties.xml配置
+### dcloud_properties.xml configuration
 
 **dcloud_properties.xml文件在assets/data目录下**
+**The dcloud_properties.xml file is in the assets/data directory**
 
 #### features节点下设置
+#### Settings under the features node
 
 ```
 		<feature name="Speech" value="io.dcloud.feature.speech.SpeechFeatureImpl">

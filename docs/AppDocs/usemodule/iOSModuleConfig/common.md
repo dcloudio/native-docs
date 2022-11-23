@@ -1,40 +1,53 @@
 ### 模块/三方SDK配置介绍
+### Module/three-party SDK configuration introduction
 1、配置离线打包工程时，可以根据需要进行 模块/三方SDK 的增删，这个过程需要对工程做出修改。
+1、 When configuring an offline packaging project, you can add or delete modules/third-party SDKs as needed. This process requires modification of the project.
 
 2、目前插件需要修改的项目包含Library、Framework、资源文件、info.plist、宏定义、LinkerFlags文件几项。
+2、 Currently, the items that need to be modified by the plug-in include Library, Framework, resource files, info.plist, macro definitions, and LinkerFlags files.
 
 3、并不是所有的模块/三方SDK都要修改以上几项，大部分模块/三方SDK只需要修改其中几项即可。
+3、 Not all modules/three-party SDKs need to modify the above items, and most modules/three-party SDKs only need to modify a few of them.
 
 4、如果app中出现“缺失功能提醒框”，需要按照下面步骤配置相应的模块/三方SDK即可。
+4、 If the "Missing function reminder box" appears in the app, you need to configure the corresponding module/three-party SDK according to the following steps.
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/50289.png)
 
 <!--
 ### 每个模块/三方SDK需要修改哪些项目，每个项目需要配置的值是什么，可以查看SDK中的Feature-iOS.xls文件。
+### Which items need to be modified for each module/three-party SDK, and what values need to be configured for each item, you can check the Feature-iOS.xls file in the SDK.
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/50292.png)
 ### 功能模块与 API 对应关系
+### Correspondence between functional modules and APIs
 -->
 
 
 ### 具体修改方法：
+### Specific modification method:
 
 #### 如何配置Library
+#### How to configure Library
     library为模块/三方SDK对应的库文件和依赖库，按照下图找到配置位置，点击“+”可以添加，选中.a库点击“-”可以删除
   ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1156s.png)
 	
 #### 如何配置framework
+#### How to configure the framework
     framework为模块/三方SDK依赖的库，按照下图找到配置位置，点击”+“可以添加，选中framework点击“-”可以删除
  ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1156s.png)
 
 #### 如何添加删除文件
+#### How to add and remove files
     当需要使用的资源如图片、国际化文件等， 点击File->addFile 在弹出的对话框中选择响应文件即可，删除时在工程中选中该项目，点击delete键
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1155.png)
 
 #### 如何修改宏定义
+#### How to modify the macro definition
     按照下图找到Macors，在弹出的窗口中点击“+”可以添加添加“-”可以删除
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1156.png)
 
 #### 如何修改LinkerFlags配置
+#### How to modify LinkerFlags configuration
     按照下图找到Other Linker Flags 点击该项，在弹出的窗口中点击"+"可以添加flag 点击"-"可以删除flag
    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1154.png)
    ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/common/1218.png)
@@ -42,8 +55,10 @@
 <h3 id="moduletable"></h3>
 
 #### 如何配置模块/三方SDK
+#### How to configure the module/three-party SDK
 
 1、查看功能模块对照表中的配置要求，如下表：
+1、 Check the configuration requirements in the functional module comparison table, as shown in the following table:
 
 <table>
 	<tr>
@@ -51,13 +66,19 @@
 	    <th>5+ API</th>
 	    <th>Uni API</th>
 	    <th>系统库</th>
+	    <th>system library</th>
 	    <th>SDK中的库</th>  
+	    <th>Libraries in the SDK</th>
 	    <th>资源文件</th>
+	    <th>resource</th>
 	    <th>Info.plist（添加权限描述或字段）</th>
+	    <th>Info.plist (add permission description or field)</th>
 	</tr >
 	<tr >
 	    <td>基础模块</td>
+	    <td>Basic module</td>
 	    <td>无</td>
+	    <td>none</td>
 	    <td>无</td>
 	    <td> CoreText.framework<br/>
 		JavaScriptCore.framework<br/>
@@ -94,6 +115,7 @@
 		</td>
 	    <td> 
 		无
+		none
 		</td>
 	</tr>
 	<tr >
@@ -443,6 +465,7 @@
 	<tr>
 	    <td>
 	    （nvue）高德地图：<br/>
+	    (nvue) Gaode map:<br/>
 		（nvue不支持百度地图）
 	    MapKit.framework<br/>
 	    CoreLocation.framework<br/>
@@ -531,6 +554,7 @@
 	    <td>
 	    paypal：<br/>
             无
+            none
 	    </td>
 	    <td>
 	    liblibPayment.a
@@ -546,6 +570,7 @@
 	    <td>
 	    stripe：<br/>
             无
+            none
 	    </td>
 	    <td>
 	    liblibPayment.a
@@ -591,6 +616,7 @@
 	    <td>
 	    QQ：<br/>
 		无
+		none
 	    </td>
 	    <td>
 		liblibShare.a<br/>
@@ -650,6 +676,7 @@
 		</td>
 		<td>
 		BDSClientEASRResources文件夹里的资源文件
+		Resource files in the BDSClientEASRResources folder
 		</td>
 		<td>
 		<b>baiduspeech:</b><br/>
@@ -730,6 +757,7 @@
 	    <td>
 	    QQ：<br/>
 		无
+		none
 	    </td>
 	    <td>
 		liblibOauth.a<br/>
@@ -794,6 +822,7 @@
 		<b>[URL Types]</b><br/>
 		Identifier=google_url<br/>
 		URL Schemes= 反向clientid
+		URL Schemes= reverse clientid
 	    </td>
 	</tr>
 	<tr>
@@ -979,6 +1008,7 @@
 		libDCUniGPUImage.a<br/>
 		libDCUniLivePush.a<br/>
 		UPLiveSDKDll.framework(动态库)
+		UPLiveSDKDll.framework (dynamic library)
 		</td>
 	    <td>
 	    </td>
@@ -1006,41 +1036,60 @@
 </table>
 
 工程中引入liblibLog.a库和在control.xml里配置debug="true" 可以在集成的Xcode里输入console.log()日志。
+Introduce the liblibLog.a library into the project and configure debug="true" in control.xml to enter the console.log() log in the integrated Xcode.
 
 
 2、在离线SDK包里，SDK/Resources/Libs目录下找到需要的库文件，然后把找到的liblibBlueTooth.a库拷贝到工程的libs目录下，再根据配置要求把相关的库引入到工程中，如下图：
+2、 In the offline SDK package, find the required library files in the SDK/Resources/Libs directory, then copy the found liblibBlueTooth.a library to the libs directory of the project, and then import the relevant libraries into the project according to the configuration requirements. As shown below:
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx2.png)
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx3.png)
 
 3、有些功能（如推送、分享、语音识别、统计），则需要按照上文提到的“功能模块对照表”中的内容，去查找对应模块的“Info”值，并在工程属性界面“Info”下“Custom iOS Target Properties”中配置对应的项：
+3、 For some functions (such as push, share, voice recognition, and statistics), you need to find the "Info" value of the corresponding module according to the content in the "Function Module Comparison Table" mentioned above, and click " Configure the corresponding items in "Custom iOS Target Properties" under "Info":
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx11.png)
 
 如百度地图三方SDK，需要配置在百度云平台申请应用的appkey，找到“baidu”项下的“appkey”，双击后输入正确的appkey值：
+For example, the third-party SDK of Baidu Maps needs to configure the appkey applied for on the Baidu cloud platform, find the "appkey" under the "baidu" item, double-click and enter the correct appkey value:
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx12.png)
 
 4、有些功能（如新浪微博分享和微信分享）还需要配置应用的URL Schemes，在“URL Types”项下分别输入在各开放平台申请的值：
+4、 Some functions (such as Sina Weibo sharing and WeChat sharing) also need to configure the URL Schemes of the application, and enter the values applied for each open platform under the "URL Types" item:
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/ModuleReference/nzkx13.png)
 
 5、iOS10之后 有些功能（如地图）需要在info.plist文件中添加隐私权限配置。
+5、 After iOS10, some functions (such as maps) need to add privacy permission configuration in the info.plist file.
 
 [info.plist文件中如何添加隐私权限配置](http://ask.dcloud.net.cn/article/931)
+[How to add privacy permission configuration in info.plist file](http://ask.dcloud.net.cn/article/931)
 
 
 
 ### 其他模块/三方SDK配置
+### Other modules/three-party SDK configuration
 
 * [定位配置](/AppDocs/usemodule/iOSModuleConfig/geolocation.md)
+* [Geolocation Configuration](/AppDocs/usemodule/iOSModuleConfig/geolocation.md)
 * [推送配置](/AppDocs/usemodule/iOSModuleConfig/push.md)
+* [Push Configuration](/AppDocs/usemodule/iOSModuleConfig/push.md)
 * [分享配置](/AppDocs/usemodule/iOSModuleConfig/share.md)
+* [Share Configuration](/AppDocs/usemodule/iOSModuleConfig/share.md)
 * [登陆鉴权配置](/AppDocs/usemodule/iOSModuleConfig/oauth.md)
+* [Login authentication configuration](/AppDocs/usemodule/iOSModuleConfig/oauth.md)
 * [地图配置](/AppDocs/usemodule/iOSModuleConfig/map.md)
+* [Map Configuration](/AppDocs/usemodule/iOSModuleConfig/map.md)
 * [支付配置](/AppDocs/usemodule/iOSModuleConfig/pay.md)
+* [Payment Configuration](/AppDocs/usemodule/iOSModuleConfig/pay.md)
 * [语音识别配置](/AppDocs/usemodule/iOSModuleConfig/speech.md)
+* [Speech Recognition Configuration](/AppDocs/usemodule/iOSModuleConfig/speech.md)
 * [直播推流配置](/AppDocs/usemodule/iOSModuleConfig/livepusher.md)
+* [Live pusher configuration](/AppDocs/usemodule/iOSModuleConfig/livepusher.md)
 * [统计配置](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
+* [Statistics Configuration](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
 * [uni-AD广告联盟配置](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
+* [uni-AD advertising network configuration](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
 * [iOS UIWebview配置](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)
+* [iOS UIWebview Configuration](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)

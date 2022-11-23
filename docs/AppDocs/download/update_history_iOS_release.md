@@ -1,287 +1,531 @@
 ## 正式版历次更新说明
 ## 3.6.3.20220919
 无
+none
 
 ## 3.6.2.20220914
 
 + App平台 优化 vue2 项目 web-view 组件通过 webviewStyles 设置更多样式 [详情](https://ask.dcloud.net.cn/question/149212)
++ App platform optimize vue2 project web-view component to set more styles through webviewStyles [Details](https://ask.dcloud.net.cn/question/149212)
 + App平台 优化 vue 页面 web-view 组件内页面默认支持绘制到安全区外 [详情](https://ask.dcloud.net.cn/question/149472)
++ App platform optimized vue page web-view component pages support drawing outside the safe area by default [Details](https://ask.dcloud.net.cn/question/149472)
 + App平台 修复 openLocation、chooseLocation 在应用语言改变时没有跟随变化的Bug [详情](https://ask.dcloud.net.cn/question/149216)
++ App platform Fixed the bug that openLocation and chooseLocation did not follow the change of the application language [Details](https://ask.dcloud.net.cn/question/149216)
 + App平台 修复 vue 页面 cover-view 组件 flex 布局无效的Bug [详情](https://ask.dcloud.net.cn/question/151697)
++ App platform Fix the bug that the flex layout of the vue page cover-view component is invalid [Details](https://ask.dcloud.net.cn/question/151697)
 + App平台 修复 vue3 项目 uni.getSystemInfo 获取 windowHeight 值不准确的Bug [详情](https:/ask.dcloud.net.cn/question/150862)
++ App platform Fix the bug that the windowHeight value obtained by uni.getSystemInfo of vue3 project is not accurate [Details](https:/ask.dcloud.net.cn/question/150862)
 + App平台 修复 vue3 项目 vue 页面 map 组件更新中心坐标后显示错误的Bug [详情](https://ask.dcloud.net.cn/question/151438)
++ App platform Fixed the bug that the map component of the vue page of the vue3 project displayed an error after updating the center coordinates [Details](https://ask.dcloud.net.cn/question/151438)
 + App平台 修复 vue3 项目切换 tabbar 页面时调用 uni.createVideoContext 的 pause 无法暂停播放的Bug[详情](https://ask.dcloud.net.cn/question/151933)
++ App platform Fix the bug that the pause of uni.createVideoContext cannot be paused when the vue3 project switches tabbar pages [details](https://ask.dcloud.net.cn/question/151933)
 + App-iOS平台 修复 uni.setTabBarItem 动态更新 icon 可能不生效的Bug [详情](https://ask.dcloud.net.cn/question/149955)
++ App-iOS platform fixes the bug that uni.setTabBarItem dynamic update icon may not take effect [Details](https://ask.dcloud.net.cn/question/149955)
 + App-iOS平台 修复 nvue map 组件使用 Google 地图时，多个页面中使用地图组件可能无法正常加载的Bug [详情](https://ask.dcloud.net.cn/question/150080)
++ App-iOS platform Fix the bug that the map component may not be loaded properly in multiple pages when the nvue map component uses Google Maps [Details](https://ask.dcloud.net.cn/question/150080)
 + App-iOS平台 修复 uni.getSystemSetting 获取的 bluetoothEnabled、locationEnabled 值不准确的Bug
++ App-iOS platform fixed the bug that the bluetoothEnabled and locationEnabled values obtained by uni.getSystemSetting were inaccurate
 + App-iOS平台 修复 nvue 页面 map 组件 marker 调用 moveAlong 方法没有中断前一次动画的Bug [详情](https://ask.dcloud.net.cn/question/151411)
++ App-iOS platform fixed the bug that the nvue page map component marker did not interrupt the previous animation when calling the moveAlong method [Details](https://ask.dcloud.net.cn/question/151411)
 + App-iOS平台 修复 3.5.2 引出的 nvue 页面 ad-content-page 组件在某些场景可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/151778)
++ App-iOS platform fixes the bug that the ad-content-page component of the nvue page introduced in 3.5.2 may cause the app to crash in some scenarios [Details](https://ask.dcloud.net.cn/question/151778)
 + App-iOS平台 修复 uni.openLocation 底部安全区适配问题 [详情](https://ask.dcloud.net.cn/question/150074)
++ App-iOS platform fix uni.openLocation bottom safety area adaptation problem [Details](https://ask.dcloud.net.cn/question/150074)
 + App-iOS平台 修复 uni.chooseLocation 可能引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/152367)
++ App-iOS platform fixes the bug that uni.chooseLocation may cause the app to crash [Details](https://ask.dcloud.net.cn/question/152367)
 + App-iOS平台 修复 nvue tabbar 页面 uni.reLaunch 不触发 onUnload 生命周期的Bug [详情](https://ask.dcloud.net.cn/question/152738)
++ App-iOS platform fix nvue tabbar page uni.reLaunch does not trigger the onUnload life cycle Bug [details](https://ask.dcloud.net.cn/question/152738)
 
 
 + 更新 uni-AD 百度百青藤广告SDK iOS为 4.891 版
++ Updated uni-AD Baidu Baiqingteng Advertising SDK iOS to version 4.891
 + iOS平台 修复 未使用Push模块上传 AppStore 报`ITMS-90078: Missing Push Notification Entitlement`警告的Bug
++ iOS platform fixed the Bug that did not use the Push module to upload to the AppStore and reported `ITMS-90078: Missing Push Notification Entitlement` warning bug
 + iOS平台 修复 uploader 上传文件获取 uploadedSize 值不准确的Bug
++ iOS platform fixes the bug that the uploader uploads files to get the uploadedSize value is inaccurate
 + iOS平台 修复 从本地相册中选择慢动作视频显示的时长不准确的Bug [详情](https://ask.dcloud.net.cn/question/150531)
++ iOS platform fixed the bug that the displayed duration of the slow-motion video selected from the local photo album was inaccurate [Details](https://ask.dcloud.net.cn/question/150531)
 + iOS平台 修复 3.5.0版本引出的 uni-AD 信息流广告设置宽度可能引起显示异常的Bug [详情](https://ask.dcloud.net.cn/question/150789)
++ iOS platform fixed the bug that the width of uni-AD information feed advertisement setting width caused by version 3.5.0 may cause abnormal display [Details](https://ask.dcloud.net.cn/question/150789)
 + iOS平台 修复 3.5.0版本引出的 使用百度定位模块需要勾选IDFA的Bug
++ iOS platform fixed the bug that IDFA needs to be checked when using the Baidu positioning module introduced by version 3.5.0
 + iOS平台 修复 3.5.0版本引出的 快手开屏广告点击打开落地页返回后无法进入应用首页的Bug [详情](https://ask.dcloud.net.cn/question/152441)
++ iOS platform Fixed the bug caused by version 3.5.0 that the Kuaishou screen advertisement could not enter the application homepage after clicking to open the landing page [Details](https://ask.dcloud.net.cn/question/152441)
 + iOS平台 修复 3.5.0版本引出的 使用百度地图或百度定位时未勾选`使用广告标识（IDFA）`云打包报错的Bug
++ iOS platform fixes the bug that cloud packaging errors caused by version 3.5.0 were not checked when using Baidu Maps or Baidu Positioning
 + iOS平台 修复 3.5.3版本引出的 开通 uni-AD 开屏广告后台切前台可能导致页面回退不正常的Bug [详情](https://ask.dcloud.net.cn/question/150053)
++ iOS platform fixes the bug caused by version 3.5.3, which may lead to abnormal page rollback when uni-AD is activated and the background switches to the foreground. [Details](https://ask.dcloud.net.cn/question/150053)
 
 
 ## 3.5.3.20220729
 + App、Web平台 优化 movable-view 组件触摸过程中支持设置 disabled 属性 [详情](https://github.com/dcloudio/uni-app/issues/2384)
++ App and Web platform optimized the movable-view component to support setting the disabled property during touch [Details](https://github.com/dcloudio/uni-app/issues/2384)
 + App、Web平台 修复 vue3 项目 uni.openLocation 未配置 latitude longitude 时不触发 fail 回调的Bug
++ App, Web platform Fix the bug that the fail callback is not triggered when the uni.openLocation of the vue3 project is not configured with latitude longitude
 + 【重要】App平台 新增 uni.getAppAuthorizeSetting 获取应用权限状态，是否被授予定位、相册等权限 [详情](https://uniapp.dcloud.io/api/system/getappauthorizesetting)
++ [Important] App platform has added uni.getAppAuthorizeSetting to get the status of app permissions, whether it has been granted permissions such as location and photo album [details](https://uniapp.dcloud.io/api/system/getappauthorizesetting)
 + 【重要】App平台 新增 uni.openAppAuthorizeSetting 跳转系统授权管理页 [详情](https://uniapp.dcloud.io/api/system/openappauthorizesetting.html)
++ [Important] App platform added uni.openAppAuthorizeSetting to jump to the system authorization management page [Details](https://uniapp.dcloud.io/api/system/openappauthorizesetting.html)
 + 【重要】App平台 新增 uni.getSystemSetting 获取手机系统的定位、蓝牙、wifi开关等设置 [详情](https://uniapp.dcloud.io/api/system/getsystemsetting)
++ [Important] Added uni.getSystemSetting to the App platform to obtain the location, Bluetooth, wifi switch and other settings of the mobile phone system [Details](https://uniapp.dcloud.io/api/system/getsystemsetting)
 + App平台 新增 uni.createPushMessage 创建本地通知栏消息 [详情](https://uniapp.dcloud.io/api/plugins/push.html#createpushmessage)
++ App platform added uni.createPushMessage to create a local notification bar message [Details](https://uniapp.dcloud.io/api/plugins/push.html#createpushmessage)
 + App平台 优化 slot name 支持动态赋值 [详情](https://ask.dcloud.net.cn/question/95109)
++ App platform optimized slot name to support dynamic assignment [Details](https://ask.dcloud.net.cn/question/95109)
 + App平台 修复 map 组件在部分设备显示黑色边框的Bug [详情](https://ask.dcloud.net.cn/question/145449)
++ App platform Fixed the bug that the map component displayed black borders on some devices [Details](https://ask.dcloud.net.cn/question/145449)
 + App平台 修复 vue3 项目 input 绑定动态 type 报错的Bug
++ App platform fixes the bug that the vue3 project input is bound to the dynamic type and the error is reported
 + App平台 修复 vue3 项目 nvue 页面组件插槽样式可能不正确的Bug [详情](https://github.com/dcloudio/uni-app/issues/3632)
++ App platform Fix the bug that the vue3 project nvue page component slot style may be incorrect [Details](https://github.com/dcloudio/uni-app/issues/3632)
 + App平台 修复 vue3 项目 vue 页面在 iOS 平台内存不足导致白屏未自动恢复的Bug [详情](https://ask.dcloud.net.cn/article/35913)
++ App platform Fix the bug that the vue page of the vue3 project has insufficient memory on the iOS platform and the white screen does not automatically recover [Details](https://ask.dcloud.net.cn/article/35913)
 + App平台 修复 vue3 项目 nvue 页面 webview 组件 onPostMessage 事件无效的Bug [详情](https://ask.dcloud.net.cn/question/144731)
++ App platform Fix the bug that the onPostMessage event of the nvue page webview component of the vue3 project is invalid [Details](https://ask.dcloud.net.cn/question/144731)
 + App平台 修复 vue3 项目 首次启动调用 uni.getPushClientId 获取不到cid的Bug
++ App platform fixes the bug that the cid cannot be obtained by calling uni.getPushClientId for the first startup of the vue3 project
 + App平台 修复 vue2 项目 nvue 页面访问 process.env 报错的Bug [详情](https://ask.dcloud.net.cn/question/147948)
++ App platform fixes the bug that the vue2 project nvue page access process.env error report [details](https://ask.dcloud.net.cn/question/147948)
 + 【重要】App-iOS平台 优化 IAP 支付逻辑 补充手动关闭订单策略，解决自动关单但后续报错可能造成丢单的Bug [详情](https://uniapp.dcloud.net.cn/api/plugins/payment.html#iap)
++ [Important] The App-iOS platform optimizes the IAP payment logic and supplements the manual closing order strategy to solve the bug that the order is automatically closed but the subsequent error report may cause the order to be lost. [Details](https://uniapp.dcloud.net.cn/api/plugins /payment.html#iap)
 + App-iOS平台 修复 uni.request 访问特定接口可能数据解析出现乱码的Bug [详情](https://ask.dcloud.net.cn/question/145530)
++ App-iOS platform fixes the bug that uni.request accessing a specific interface may cause garbled data parsing [Details](https://ask.dcloud.net.cn/question/145530)
 + App-iOS平台 修复 uni.getSystemInfo 获取某些设备型号不正确的Bug [详情](https://ask.dcloud.net.cn/question/148344)
++ App-iOS platform fixes the bug that uni.getSystemInfo gets incorrect device models [details](https://ask.dcloud.net.cn/question/148344)
 + App-iOS平台 修复 动态设置 tabBar 隐藏再显示后高斯模糊效果失效的Bug [详情](https://ask.dcloud.net.cn/question/146478)
++ App-iOS platform fixes the bug that the Gaussian blur effect fails after dynamically setting the tabBar to hide and display [Details](https://ask.dcloud.net.cn/question/146478)
 + App-iOS平台 修复 nvue bindingx 在滚动视图中使用 transform.translateY 结果有偏差的Bug [详情](https://ask.dcloud.net.cn/question/144209)
++ App-iOS platform fixes the bug that nvue bindingx uses transform.translateY in the scroll view and the result is biased. [Details](https://ask.dcloud.net.cn/question/144209)
 + App-iOS平台 修复 nvue input 组件嵌套在 list 中时，页面上下滑动 v-model 绑定的值会置空的Bug [详情](https://ask.dcloud.net.cn/question/146246)
++ App-iOS platform fixes the bug that when the nvue input component is nested in the list, the value bound to the v-model will be empty when the page slides up and down [Details](https://ask.dcloud.net.cn/question/146246 )
 + App-iOS平台 修复 nvue textarea 组件设置 auto-height 为 true 时初始高度不正确的Bug [详情](https://ask.dcloud.net.cn/question/146688)
++ App-iOS platform fixes the bug that the initial height of the nvue textarea component is incorrect when auto-height is set to true [Details](https://ask.dcloud.net.cn/question/146688)
 + App-iOS平台 修复 nvue image 组件 src 属性更新使用 gif 格式图片时无法切换的Bug [详情](https://ask.dcloud.net.cn/question/148807)
++ App-iOS platform fixed the bug that the nvue image component src attribute update cannot be switched when using gif format images [Details](https://ask.dcloud.net.cn/question/148807)
 + App-iOS平台 修复 nvue 组件动态修改 border-radius 样式可能不生效的Bug [详情](https://ask.dcloud.net.cn/question/144709)
++ App-iOS platform fixes the bug that the dynamic modification of the border-radius style of the nvue component may not take effect [Details](https://ask.dcloud.net.cn/question/144709)
 + App-iOS平台 修复 https 请求配置自签名 p12 证书包含中间证书时请求报错的Bug [详情](https://ask.dcloud.net.cn/question/149526)
++ App-iOS platform fixes the bug that the https request configuration self-signed p12 certificate contains an intermediate certificate. [Details](https://ask.dcloud.net.cn/question/149526)
 + App-iOS平台 修复 nvue box-shadow 样式设置 spread 参数无效的Bug [详情](https://ask.dcloud.net.cn/question/148415)
++ App-iOS platform fix nvue box-shadow style setting spread parameter invalid Bug [details](https://ask.dcloud.net.cn/question/148415)
 + 【重要】uni-AD 新增 激励视频广告支持实时竞价 [详情](https://uniapp.dcloud.io/uni-ad.html#bidding)
++ [Important] uni-AD has added rewarded video ads to support real-time bidding [Details](https://uniapp.dcloud.io/uni-ad.html#bidding)
 + 新增 uni-AD 支持穿山甲GroMore广告 包括开屏、信息流、插屏、全屏视频、激励视频广告
++ Added uni-AD support for pangolin GroMore ads, including opening screen, news feed, interstitial screen, full-screen video, rewarded video ads
 + 更新 uni-AD 腾讯优量汇SDK Android为 4.480.1350 版，iOS为 4.13.80 版；快手广告SDK Android为 3.3.27 版，iOS为 3.3.27 版；快手内容联盟SDK Android为 3.3.30 版；今日头条穿山甲SDK iOS为 4.7.0.0 版；Sigmob广告联盟SDK Android为 4.4.0 版，iOS为 4.2.1 版；百度百青藤广告SDK Android为 9.223 版，iOS为 4.883 版；华为广告SDK Android为 13.4.54.300 版
++ Update uni-AD Tencent Youlianghui SDK Android to version 4.480.1350, iOS to version 4.13.80; Kuaishou Advertising SDK Android to version 3.3.27, iOS to version 3.3.27; Kuaishou Content Alliance SDK Android to version 3.3.30 Toutiao Pangolin SDK iOS version 4.7.0.0; Sigmob advertising alliance SDK Android version 4.4.0, iOS version 4.2.1; Baidu Baiqingteng advertising SDK Android version 9.223, iOS version 4.883; Huawei advertising SDK Android version 13.4.54.300
 + 优化 uni-AD 激励视频和信息流广告支持并发请求
++ Optimize uni-AD rewarded video and feed ads to support concurrent requests
 + iOS平台 新增 IAP支付 手动关闭订单、获取未关闭订单列表等功能，以解决自动关闭订单在某些情况引发的订单丢失的Bug [详情](https://uniapp.dcloud.io/tutorial/app-payment-aip.html)
++ The iOS platform has added functions such as IAP payment to manually close orders, obtain a list of unclosed orders, etc., to solve the bug of order loss caused by automatic closing orders in some cases [details](https://uniapp.dcloud.io/tutorial/ app-payment-aip.html)
 + iOS平台 更新 百度定位SDK为 2.0.0 版，百度地图SDK为 6.5.0 版
++ iOS platform update Baidu positioning SDK to version 2.0.0, Baidu map SDK to version 6.5.0
 + iOS平台 更新 uni-AD 废弃DCADManager、DCADManagerDelegate(AppDelegate中相关内容删除即可)
++ iOS platform update uni-AD to discard DCADManager, DCADManagerDelegate (delete relevant content in AppDelegate)
 + iOS平台 修复 首次启动 App 获取安全区域高度可能不正确的Bug [详情](https://ask.dcloud.net.cn/question/148277)
++ iOS platform fixes the bug that the height of the safe area may be incorrect when starting the App for the first time [Details](https://ask.dcloud.net.cn/question/148277)
 + iOS平台 修复 设备型号名称 model、deviceModel 返回值不规范的Bug
++ iOS platform fixed the bug that the device model name model, deviceModel return value is not standardized
 + iOS平台 修复 5+App项目获取 5G 网络类型错误的Bug
++ iOS platform fixes the bug that 5+App projects get wrong 5G network type
 + iOS平台 修复 plus.runtime.openWeb 在 iOS15.4 及以上设备打开页面导航栏显示不正常的Bug [详情](https://ask.dcloud.net.cn/question/148585)
++ iOS platform fixed the bug that the navigation bar of plus.runtime.openWeb was displayed abnormally on iOS15.4 and above devices [Details](https://ask.dcloud.net.cn/question/148585)
 + iOS平台 修复 标题栏 titleNView 更新按钮样式导致布局错位的Bug [详情](https://ask.dcloud.net.cn/question/148542)
++ iOS platform fixed the bug that the title bar titleNView update button style caused layout misalignment [Details](https://ask.dcloud.net.cn/question/148542)
 + iOS平台 修复 plus.navigator.getOrientation 在设备横屏状态时返回值不正确的Bug [详情](https://ask.dcloud.net.cn/question/148843)
++ iOS platform fixed the bug that the return value of plus.navigator.getOrientation was incorrect when the device was in landscape state [Details](https://ask.dcloud.net.cn/question/148843)
 + iOS平台 修复 未使用Push模块上传 AppStore 报`ITMS-90078: Missing Push Notification Entitlement`警告的Bug
++ iOS platform fixed the Bug that did not use the Push module to upload to the AppStore and reported `ITMS-90078: Missing Push Notification Entitlement` warning bug
 + iOS平台 修复 sqlite 在应用 restart 后 executeSql 修改数据报`Attempt to write a readonly database`错误的Bug [详情](https://ask.dcloud.net.cn/question/139765)
++ iOS platform fixed the bug that executeSql modified the data report `Attempt to write a readonly database` error in sqlite after application restart [details](https://ask.dcloud.net.cn/question/139765)
 + iOS平台 修复 从本地相册中选择慢动作视频引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/149219)
++ iOS platform fixed the bug that the app crashed when selecting a slow-motion video from the local photo album [Details](https://ask.dcloud.net.cn/question/149219)
 + iOS平台 修复 视频播放 video 的 seek 方法传入小于当前播放时间值无效的Bug [详情](https://ask.dcloud.net.cn/question/148781)
++ iOS platform fixes the bug that the seek method of video playback is invalid when the value is less than the current playback time [Details](https://ask.dcloud.net.cn/question/148781)
 + iOS平台 修复 打开包含视频播放 video 控件的页面会打断其他App后台音乐播放的Bug [详情](https://ask.dcloud.net.cn/question/146719)
++ iOS platform fixes the bug that opening a page containing a video control will interrupt the background music playback of other apps [Details](https://ask.dcloud.net.cn/question/146719)
 
 
 ## 3.4.18.20220630
 + 修复 vue3 项目 onError 生命周期不生效的Bug
++ Fixed the bug that the onError life cycle of the vue3 project did not take effect
 + App、Web平台 修复 vue3 项目 uni.setTabBarItem 设置 pagePath 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3592)
++ App, Web platform Fix the bug that the pagePath setting of vue3 project uni.setTabBarItem does not take effect [Details](https://github.com/dcloudio/uni-app/issues/3592)
 + App、Web平台 修复 3.4.14 版本引出的 vue2项目 image 组件 load 事件图像大小信息不准确的Bug [详情](https://ask.dcloud.net.cn/question/147174)
++ App, Web platform Fix the bug that the image size information of the vue2 project image component load event introduced by version 3.4.14 is inaccurate [Details](https://ask.dcloud.net.cn/question/147174)
 + App平台 优化 video 组件支持 show-mute-btn 配置
++ App platform optimized video component to support show-mute-btn configuration
 + App平台 优化 vue3 项目 rich-text 组件支持服务端渲染
++ App platform optimized vue3 project rich-text component supports server-side rendering
 + App平台 修复 vue3 项目 nvue 页面 onPageScroll，onReachBottom 不触发的Bug [详情](https://ask.dcloud.net.cn/question/145873)
++ App platform Fix the bug that onPageScroll and onReachBottom do not trigger on the vue3 project nvue page [Details](https://ask.dcloud.net.cn/question/145873)
 + App平台 修复 vue3 项目 uni.getVideoInfo 成功回调不执行Bug
++ App platform fixes the bug that the uni.getVideoInfo success callback of the vue3 project does not execute
 + iOS平台 修复 nvue ad-content-page 组件暂停后展示其它视频类广告，关闭广告可能引起组件后台自动播放的Bug
++ iOS platform Fix nvue ad-content-page component to display other video ads after pausing, closing the ad may cause the component to automatically play the bug in the background
 + iOS平台 更新 uni-AD 快手广告SDK为 3.3.25 版，快手内容联盟SDK为 3.3.29 版，解决调用系统相册可能引起崩溃的问题
++ iOS platform updated uni-AD Kuaishou Advertising SDK to version 3.3.25, and Kuaishou Content Alliance SDK to version 3.3.29 to solve the problem that calling the system album may cause a crash
 
 ## 3.4.14.20220607
 
 + 【重要】App平台 优化 vue2 项目 view 组件实现方式，提高渲染性能。建议相关开发者升级
++ [Important] App platform optimizes the implementation of the vue2 project view component to improve rendering performance. Suggest related developers to upgrade
 + 新增 uni.getSystemInfo 添加 device、os、rom、host、browser、uni、app 等概念  [详情](https://uniapp.dcloud.io/api/system/info.html)
++ Added uni.getSystemInfo to add device, os, rom, host, browser, uni, app and other concepts [Details](https://uniapp.dcloud.io/api/system/info.html)
 + App、H5平台 优化 image 组件减少网络请求
++ App, H5 platform optimize image components to reduce network requests
 + App、H5平台 新增 uni.getDeviceInfo [详情](https://uniapp.dcloud.io/api/system/getDeviceInfo.html)
++ App, H5 platform added uni.getDeviceInfo [Details](https://uniapp.dcloud.io/api/system/getDeviceInfo.html)
 + App、H5平台 新增 uni.getAppBaseInfo [详情](https://uniapp.dcloud.io/api/system/getAppBaseInfo.html)
++ Added uni.getAppBaseInfo for App and H5 platforms [Details](https://uniapp.dcloud.io/api/system/getAppBaseInfo.html)
 + App、H5平台 新增 uni.getWindowInfo [详情](https://uniapp.dcloud.io/api/system/getWindowInfo.html)
++ App, H5 platform added uni.getWindowInfo [Details](https://uniapp.dcloud.io/api/system/getWindowInfo.html)
 + App、H5平台 修复 uni.canIUse 获取某些 api 的返回值不正确的Bug [详情](https://uniapp.dcloud.io/api/caniuse.html)
++ App, H5 platform Fix the bug that uni.canIUse gets incorrect return value of some api [details](https://uniapp.dcloud.io/api/caniuse.html)
 + App、H5平台 修复 canvas transform 渲染时没有使用高清处理的Bug [详情](https://ask.dcloud.net.cn/question/144676)
++ App, H5 platform Fixed the bug that canvas transform did not use high-definition processing when rendering [Details](https://ask.dcloud.net.cn/question/144676)
 + App、H5平台 修复 canvas 组件画图裁剪异常的Bug [详情](https://ask.dcloud.net.cn/question/142494)
++ App, H5 platform Fix the bug that the canvas component draws and crops abnormally [Details](https://ask.dcloud.net.cn/question/142494)
 + App平台、微信小程序平台 新增 ad-rewarded-video 激励视频广告组件，更易用、安全、高收益 [详情](https://uniapp.dcloud.net.cn/component/ad-rewarded-video.html)
++ Added ad-rewarded-video rewarded video ad component on App platform and WeChat applet platform, which is easier to use, safer and more profitable [Details](https://uniapp.dcloud.net.cn/component/ad-rewarded-video .html)
 + App平台、微信小程序平台 新增 ad-interstitial 插屏广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-interstitial.html)
++ Added ad-interstitial interstitial component on App platform and WeChat applet platform [Details](https://uniapp.dcloud.net.cn/component/ad-interstitial.html)
 + App平台 新增 ad-fullscreen-video 全屏视频广告组件 [详情](https://uniapp.dcloud.net.cn/component/ad-fullscreen-video.html)
++ App platform added ad-fullscreen-video full-screen video ad component [Details](https://uniapp.dcloud.net.cn/component/ad-fullscreen-video.html)
 + App平台 修复 nvue 页面 switch 组件切换状态无限闪动的Bug [详情](https://ask.dcloud.net.cn/question/145272)
++ App platform fixed the bug that the switching status of the switch component on the nvue page flickered infinitely [Details](https://ask.dcloud.net.cn/question/145272)
 + App平台 修复 纯 nvue 编译模式 uni_modules 内静态资源未拷贝的Bug
++ App platform fixed the bug that static resources in uni_modules in pure nvue compilation mode were not copied
 + App平台 修复 vue3 项目使用录音时报错的Bug [详情](https://ask.dcloud.net.cn/question/144821)
++ App platform fixed the bug that the vue3 project reported an error when using recording [Details](https://ask.dcloud.net.cn/question/144821)
 + App平台 修复 vue3 项目 纯 nvue 项目编译报错的Bug
++ App platform fixes the bug that the vue3 project and the pure nvue project compile an error
 + App平台 修复 nvue 页面列表删除渲染卡顿的Bug [详情](https://ask.dcloud.net.cn/question/144110)
++ App platform fix nvue page list deletion bug [details](https://ask.dcloud.net.cn/question/144110)
 + App平台 修复 nvue 页面 transition 包含多个属性时编译报错的Bug [详情](https://ask.dcloud.net.cn/question/89110)
++ App platform Fix the bug that the nvue page transition contains multiple attributes and compile errors [Details](https://ask.dcloud.net.cn/question/89110)
 + App平台 修复 navigator 组件 animation-type、animation-duration 属性无效的Bug [详情](https://ask.dcloud.net.cn/question/143377)
++ App platform Fix the bug that the animation-type and animation-duration properties of the navigator component are invalid [Details](https://ask.dcloud.net.cn/question/143377)
 + App平台 修复 vue3 nvue movable 组件使用异常的Bug [详情](https://ask.dcloud.net.cn/question/143742)
++ App platform fix the bug that the vue3 nvue movable component is used abnormally [details](https://ask.dcloud.net.cn/question/143742)
 + App-iOS平台 修复 vue3 项目 nvue 页面 swiper 组件面板指示点无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/145097)
++ App-iOS platform fixes the bug that the indicator point of the swiper component panel of the vue3 project nvue page cannot be hidden [Details](https://ask.dcloud.net.cn/question/145097)
 + App-iOS平台 修复 nvue 页面滚动视图中设置 position 属性为 sticky 样式显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/144303)
++ App-iOS platform Fix the bug that setting the position attribute to sticky style in the nvue page scroll view is incorrect [Details](https://ask.dcloud.net.cn/question/144303)
 + App-iOS平台 修复 nvue textarea 组件默认换行不生效的Bug [详情](https://ask.dcloud.net.cn/question/143784)
++ App-iOS platform fixes the bug that the default line break of the nvue textarea component does not take effect [Details](https://ask.dcloud.net.cn/question/143784)
 + App-iOS平台 修复 nvue map 组件开启标记点聚合时，调用 removeMarkers 移除所有 marker 引起应用崩溃的Bug [详情](https://ask.dcloud.net.cn/question/143991)
++ App-iOS platform Fix the bug that when the nvue map component enables marker aggregation, call removeMarkers to remove all markers and cause the app to crash [Details](https://ask.dcloud.net.cn/question/143991)
 + App-iOS平台 修复 nvue swiper 组件与页面返回手势冲突的Bug [详情](https://ask.dcloud.net.cn/question/137505)
++ App-iOS platform fixes the bug that the nvue swiper component conflicts with the page return gesture [Details](https://ask.dcloud.net.cn/question/137505)
 
 
 ### 3.4.7.20220422
  + 新增 vue3 项目内置支持 pinia [详情](https://uniapp.dcloud.net.cn/tutorial/vue3-pinia.html)
+ + Added built-in pinia support for vue3 projects [Details](https://uniapp.dcloud.net.cn/tutorial/vue3-pinia.html)
  + 修复 3.4.6 版本引发的 vue3 项目使用 pinia 报错的Bug [详情](https://ask.dcloud.net.cn/question/143578)
+ + Fix the bug that the vue3 project using pinia caused by version 3.4.6 [details](https://ask.dcloud.net.cn/question/143578)
  + 修复 3.4.6 版本引发的 vue3 项目部分情况编译变慢的Bug [详情](https://github.com/dcloudio/uni-app/issues/3458)
+ + Fixed the bug that the compilation of the vue3 project was slow in some cases caused by the 3.4.6 version [Details](https://github.com/dcloudio/uni-app/issues/3458)
  + App平台 修复 vue3 项目 nvue 页面引用的静态资源编译后可能不存在的Bug
+ + App platform Fix the bug that the static resources referenced by the nvue page of the vue3 project may not exist after compilation
  + App平台 修复 vue3 项目 nvue 页面事件无法冒泡的Bug
+ + App platform fixes the bug that the nvue page event of the vue3 project cannot be bubbled
  + App平台 修复 vue3 项目 nvue 页面 input，textarea 组件的 v-model 不生效的Bug [详情](https://ask.dcloud.net.cn/question/143547)
+ + App platform Fix the bug that the v-model of the nvue page input and textarea components of the vue3 project does not take effect [Details](https://ask.dcloud.net.cn/question/143547)
  + App平台 修复 3.4.6 版本引发的 ArrayBuffer 类型判断错误的Bug [详情](https://ask.dcloud.net.cn/question/143534)
+ + App platform Fixed the bug of wrong judgment of ArrayBuffer type caused by version 3.4.6 [Details](https://ask.dcloud.net.cn/question/143534)
 
 
 ### 3.4.6.20220420
 + App平台、H5平台 新增 map 组件支持 polygons [详情](https://uniapp.dcloud.io/component/map)
++ App platform, H5 platform Add map component to support polygons [Details](https://uniapp.dcloud.io/component/map)
 + App平台、H5平台 新增 input 组件配置 ignoreCompositionEvent 属性 [详情](https://uniapp.dcloud.io/component/input?id=input)
++ App platform and H5 platform add input component configuration ignoreCompositionEvent property [details](https://uniapp.dcloud.io/component/input?id=input)
 + App平台、H5平台 优化 取消全局 canvas 高清处理，支持配置单个 canvas 组件 hidpi 属性
++ App platform, H5 platform optimization Cancel the global canvas high-definition processing, support the configuration of a single canvas component hidpi attribute
 + App平台、H5平台 修复 自定义组件监听 tap.native 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3259)
++ App platform, H5 platform Fix the bug that the custom component monitoring tap.native does not take effect [Details](https://github.com/dcloudio/uni-app/issues/3259)
 + App平台、H5平台 修复 vue3 项目 uni.pageScrollTo 的 duration 为0时不生效的Bug [详情](https://ask.dcloud.net.cn/question/139432)
++ App platform, H5 platform Fix the bug that the vue3 project uni.pageScrollTo does not take effect when the duration is 0 [Details](https://ask.dcloud.net.cn/question/139432)
 + App平台、H5平台 修复 vue3 项目 input 组件 类型为 number 时在低版本 webview 失去焦点时报错的Bug [详情](https://ask.dcloud.net.cn/question/138088)
++ App platform, H5 platform Fix the bug that when the input component type of vue3 project is number, an error is reported when the low version webview loses focus [Details](https://ask.dcloud.net.cn/question/138088)
 + App平台、小程序平台 修复 vue3 项目配置 base 后资源路径可能错误的Bug [详情](https://github.com/dcloudio/uni-app/issues/3362)
++ App platform, applet platform Fix the bug that the resource path may be wrong after the vue3 project configures base [details](https://github.com/dcloudio/uni-app/issues/3362)
 + 【重要】App平台 新增 海外SDK 支持 Google 地图 [详情](https://uniapp.dcloud.net.cn/app-maps)
++ [Important] App platform has added overseas SDK to support Google Maps [Details](https://uniapp.dcloud.net.cn/app-maps)
 + 【重要】App平台 新增 海外SDK 支持 Paypal、Stripe、Google Pay 等支付SDK [详情](https://uniapp.dcloud.io/app-payment-paypal)
++ [Important] App platform has added overseas SDKs to support Paypal, Stripe, Google Pay and other payment SDKs [Details](https://uniapp.dcloud.io/app-payment-paypal)
 + 【重要】App平台 新增 海外SDK  Google、Facebook 等登录SDK [详情](https://uniapp.dcloud.io/api/plugins/login?id=app-oauth)
++ [Important] App platform has added overseas SDK Google, Facebook and other login SDKs [details](https://uniapp.dcloud.io/api/plugins/login?id=app-oauth)
 + App平台 新增 vue 页面 video 组件支持 vslide-gesture、vslide-gesture-in-fullscreen 属性 [详情](https://uniapp.dcloud.io/component/video)
++ Added vue page video component on App platform to support vslide-gesture, vslide-gesture-in-fullscreen attributes [details](https://uniapp.dcloud.io/component/video)
 + App平台 新增 pages.json 支持在 style 配置 disableSwipeBack 以禁用 iOS 侧滑返回
++ App platform added pages.json to support configuring disableSwipeBack in style to disable iOS side-swipe back
 + App平台 新增 vue 页面支持 live-pusher 组件 [详情](https://uniapp.dcloud.net.cn/component/live-pusher)
++ Added support for live-pusher component on App platform [Details](https://uniapp.dcloud.net.cn/component/live-pusher)
 + App平台 新增 打开微信客服功能 [详情](https://uniapp.dcloud.io/api/plugins/share.html)
++ App platform added the function of opening WeChat customer service [Details](https://uniapp.dcloud.io/api/plugins/share.html)
 + App平台 新增 nvue ad-content-page 组件 支持内容播放状态事件start、pause、resume、complete [规范](https://uniapp.dcloud.io/component/ad-content-page.html#%E7%9F%AD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E8%81%94%E7%9B%9F%E7%BB%84%E4%BB%B6)
++ Added nvue ad-content-page component on App platform to support content playback state events start, pause, resume, complete [Specification](https://uniapp.dcloud.io/component/ad-content-page.html#%E7 %9F%AD%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E8%81%94%E7%9B%9F%E7%BB%84%E4%BB %B6)
 + App平台 新增 tabbar 支持配置字体图标 iconfont [详情](https://uniapp.dcloud.net.cn/api/ui/tabbar?id=settabbaritem)
++ App platform added tabbar support for configuring font icon iconfont [Details](https://uniapp.dcloud.net.cn/api/ui/tabbar?id=settabbaritem)
 + App平台 新增 InnerAudioContext、BackgroundAudioManager 支持音频倍速播放
++ Added InnerAudioContext and BackgroundAudioManager on the App platform to support double-speed audio playback
 + 【重要】App平台 优化 nvue 页面支持 vue3（需要项目的 Vue 版本切换为3）[详情](https://uniapp.dcloud.net.cn/tutorial/migration-to-vue3.html)+ App平台 修复 uni.addPhoneContact 重复添加联系人的Bug [详情](https://gitee.com/dcloud/uni-app/issues/I4NY6C)
++ [Important] App platform optimization nvue page supports vue3 (need to switch the Vue version of the project to 3) [Details](https://uniapp.dcloud.net.cn/tutorial/migration-to-vue3.html)+ App platform Fix the bug of uni.addPhoneContact repeatedly adding contacts [details](https://gitee.com/dcloud/uni-app/issues/I4NY6C)
   + App平台 修复 uni.getBackgroundAudioManager 的 onPrev onNext 事件无效Bug [详情](https://ask.dcloud.net.cn/question/107325)
+  + App platform fix the invalid bug of onPrev onNext event of uni.getBackgroundAudioManager [Details](https://ask.dcloud.net.cn/question/107325)
   + App平台 修复 uni.request、uni.onSocketMessage 等接口返回的 ArrayBuffer 类型不可用 instanceof 做类型判断的Bug
+  + App platform Fixed the bug that the ArrayBuffer type returned by uni.request, uni.onSocketMessage and other interfaces could not be judged by instanceof
   + App平台 修复 vue2 nvue 页面文本首尾回车符占用高度的Bug [详情](https://ask.dcloud.net.cn/question/95429)
+  + App platform fixes the bug that the carriage return character at the beginning and end of the vue2 nvue page text takes up the height [Details](https://ask.dcloud.net.cn/question/95429)
   + App平台 修复 vue3 使用 html 原生标签（如 div）时，事件监听报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3240)
+  + App platform Fix the bug of event listener reporting error when vue3 uses html native tags (such as div) [details](https://github.com/dcloudio/uni-app/issues/3240)
   + App平台 修复 vue3 navigator 组件和 rich-text 组件嵌套使用时 scopeId 值不一致导致的样式Bug [详情](https://ask.dcloud.net.cn/question/140644)
+  + App platform Fix the style bug caused by inconsistent scopeId values when the vue3 navigator component and rich-text component are nested and used [Details](https://ask.dcloud.net.cn/question/140644)
   + App平台 修复 vue3 wxs/renderjs 监听事件运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3324)
+  + App platform fixed the bug of vue3 wxs/renderjs monitoring event running error [details](https://github.com/dcloudio/uni-app/issues/3324)
   + App平台 修复 vue3 内联样式引用静态资源可能错误的Bug [详情](https://ask.dcloud.net.cn/question/141278)
+  + App platform Fix the bug that the vue3 inline style reference static resources may be wrong [Details](https://ask.dcloud.net.cn/question/141278)
   + App平台 修复 vue3 picker-view 组件 调整列数据时渲染错误的Bug [详情](https://ask.dcloud.net.cn/question/140609)
+  + App platform fix vue3 picker-view component rendering error bug when adjusting column data [details](https://ask.dcloud.net.cn/question/140609)
   + App平台 修复 vue3 uni.getSavedFileList、uni.getSavedFileInfo、uni.removeSavedFile、uni.getFileInfo 无效的Bug  [详情](https://ask.dcloud.net.cn/question/142428)
+  + App platform fix vue3 uni.getSavedFileList, uni.getSavedFileInfo, uni.removeSavedFile, uni.getFileInfo invalid bug [details](https://ask.dcloud.net.cn/question/142428)
   + App平台 修复 vue3 App.vue 中的 css 可能编译报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3403)
+  + App platform Fix the bug that css in vue3 App.vue may compile and report errors [details](https://github.com/dcloudio/uni-app/issues/3403)
   + App平台 修复 vue3 nvue map 组件 部分属性无效的Bug [详情](https://ask.dcloud.net.cn/question/142159)
+  + App platform Fix the bug that some properties of the vue3 nvue map component are invalid [Details](https://ask.dcloud.net.cn/question/142159)
   + App平台 修复 vue3 使用 vue-i18n 运行报错的Bug [详情](https://ask.dcloud.net.cn/question/142911)
+  + App platform fix the bug that vue3 uses vue-i18n to run the bug [details](https://ask.dcloud.net.cn/question/142911)
   + App平台 修复 vue3 renderjs 在低版本手机可能运行报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3366)
+  + App platform fix the bug that vue3 renderjs may run error on low version phones [details](https://github.com/dcloudio/uni-app/issues/3366)
   + App平台 修复 uni.getEnv 在 nvue webview 中返回值不准确的Bug [详情](https://uniapp.dcloud.net.cn/component/web-view.html#getenv)
+  + App platform Fix the bug that uni.getEnv returns inaccurate values in nvue webview [Details](https://uniapp.dcloud.net.cn/component/web-view.html#getenv)
   + App平台 修复 InnerAudioContext 某些情况下 paused 属性值不正确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
+  + App platform Fix the bug that the paused attribute value of InnerAudioContext is incorrect in some cases [Details](https://ask.dcloud.net.cn/question/141832)
   + App-iOS平台 修复 vue3 项目 调试时启动白屏的Bug
+  + App-iOS platform fixes the bug of starting a white screen when debugging a vue3 project
   + App-iOS平台 修复 nvue map 组件 marker 的 joinCluster 为 false 时 removeMarkers 方法不生效的Bug [详情](https://ask.dcloud.net.cn/question/140648)
+  + App-iOS platform fixes the bug that the removeMarkers method does not take effect when the joinCluster of the nvue map component marker is false [Details](https://ask.dcloud.net.cn/question/140648)
   + App-iOS平台 修复 nvue rich-text 组件 text-overflow 样式不生效的Bug [详情](https://ask.dcloud.net.cn/question/140586)
+  + App-iOS platform fixes the bug that the text-overflow style of the nvue rich-text component does not take effect [Details](https://ask.dcloud.net.cn/question/140586)
   + App-iOS平台 修复 nvue 组件 userInteractionEnabled 属性无效的Bug [详情](https://ask.dcloud.net.cn/question/140838)
+  + App-iOS platform fix nvue component userInteractionEnabled attribute invalid Bug [details](https://ask.dcloud.net.cn/question/140838)
   + App-iOS平台 修复 nvue refresh 组件 pullingdown 事件触发时机不正确的Bug [详情](https://ask.dcloud.net.cn/question/138962)
+  + App-iOS platform fixed the bug that the trigger timing of nvue refresh component pullingdown event was incorrect [Details](https://ask.dcloud.net.cn/question/138962)
   + App-iOS平台 修复 nvue swiper 组件 内嵌 list-waterfall 时，横向滑动的同时列表还可以竖向滚动的Bug [详情](https://ask.dcloud.net.cn/question/134909)
+  + App-iOS platform fixes the bug that when the nvue swiper component is embedded with list-waterfall, the list can also scroll vertically while swiping horizontally [Details](https://ask.dcloud.net.cn/question/134909)
   + App-iOS平台 修复 nvue 页面内存在可滚动子组件时，开启 enablePullDownRefresh 下拉刷新功能无效的Bug
+  + App-iOS platform Fix the bug that the enablePullDownRefresh pull-down refresh function is invalid when there are scrollable subcomponents in the nvue page
   + App-iOS平台 修复 video 组件 vslide-gesture-in-fullscreen 属性无效的Bug [详情](https://ask.dcloud.net.cn/question/138299)
+  + App-iOS platform fix the bug that video component vslide-gesture-in-fullscreen property is invalid [details](https://ask.dcloud.net.cn/question/138299)
   + App-iOS平台 修复 nvue image 组件 不支持 gif 图片中设置循环次数参数的Bug [详情](https://ask.dcloud.net.cn/question/140176)
+  + App-iOS platform fix the bug that the nvue image component does not support setting the number of cycles parameter in the gif image [Details](https://ask.dcloud.net.cn/question/140176)
   + App-iOS平台 修复 在页面生命周期 onLoad 方法中调用 lockOrientation 锁定屏幕方向可能引起布局异常的Bug
+  + App-iOS platform fixed the bug that calling lockOrientation in the onLoad method of the page life cycle to lock the screen orientation may cause layout exceptions
   + App-iOS平台 修复 video 不支持 enable-play-gesture 属性的Bug [详情](https://ask.dcloud.net.cn/question/141862)
+  + App-iOS platform fixes the bug that the video does not support the enable-play-gesture attribute [Details](https://ask.dcloud.net.cn/question/141862)
   + App-iOS平台 修复 nvue input 组件 confirm-hold 属性默认值不正确的Bug
+  + App-iOS platform fixes the bug that the default value of the confirm-hold attribute of the nvue input component is incorrect
   + 【重要】uni-AD 新增 百度百青藤广告联盟 包括开屏、信息流、插屏、激励视频广告 [详情](https://ask.dcloud.net.cn/article/36769)
+  + [Important] uni-AD has added Baidu Baiqingteng Advertising Alliance, including open screen, information flow, interstitial screen, rewarded video ads [Details](https://ask.dcloud.net.cn/article/36769)
   + 【重要】uni-AD 新增 支持华为广告联盟 包括开屏、信息流、插屏、激励视频广告（仅Android平台） [详情](https://ask.dcloud.net.cn/article/36769)
+  + [Important] uni-AD adds support for HUAWEI Advertising Alliance, including open screen, information flow, interstitial screen, rewarded video ads (only on Android platform) [Details](https://ask.dcloud.net.cn/article/36769 )
   + 【重要】uni-AD 修复 Android平台 穿山甲广告联盟在部分设备可能提示`应用的uni-AD业务状态异常`的Bug
+  + [Important] uni-AD repaired the bug that some devices of the Pangolin Ad Alliance on the Android platform may prompt `the application’s uni-AD business status is abnormal`
   + 新增 支持Google地图 [详情](https://uniapp.dcloud.io/app-maps?id=google%e5%9c%b0%e5%9b%be)
+  + Added support for Google Maps [Details](https://uniapp.dcloud.io/app-maps?id=google%e5%9c%b0%e5%9b%be)
   + 新增 音频播放 AudioPlayer 支持 playbackRate 设置倍速播放 [文档](https://www.html5plus.org/doc/zh_cn/audio.html#plus.audio.AudioPlayer.playbackRate)
+  + Added audio playback AudioPlayer supports playbackRate setting double speed playback [documentation](https://www.html5plus.org/doc/zh_cn/audio.html#plus.audio.AudioPlayer.playbackRate)
   + iOS平台 新增 uni原生插件 支持 applicationMain 获取 main 函数启动参数 argc、argv [文档](https://nativesupport.dcloud.net.cn/NativePlugin/course/ios?id=hook%e7%b3%bb%e7%bb%9f%e4%ba%8b%e4%bb%b6)
+  + Added uni native plug-in on iOS platform to support applicationMain to get main function startup parameters argc and argv [documentation](https://nativesupport.dcloud.net.cn/NativePlugin/course/ios?id=hook%e7%b3%bb% e7%bb%9f%e4%ba%8b%e4%bb%b6)
   + iOS平台 修复 Webview窗口标题栏 titleNView无法动态更新网络页面标题的Bug [详情](https://ask.dcloud.net.cn/question/138958)
+  + iOS platform fixed the bug that the title bar of the Webview window titleNView could not dynamically update the title of the web page [Details](https://ask.dcloud.net.cn/question/138958)
   + iOS平台 修复 compressVideo 视频压缩可能出现尺寸错乱的Bug [详情](https://ask.dcloud.net.cn/question/138303)
+  + iOS platform fixed the bug that compressVideo video compression may have wrong size [Details](https://ask.dcloud.net.cn/question/138303)
   + iOS平台 修复 微博分享 type 为 web 时无法正常分享的Bug [详情](https://ask.dcloud.net.cn/question/138830)
+  + iOS platform fixed the bug that the Weibo sharing type was web and could not be shared normally [Details](https://ask.dcloud.net.cn/question/138830)
   + iOS平台 修复 播放背景音频时系统锁屏界面音乐播放器的进度条可能显示不正确的Bug [详情](https://ask.dcloud.net.cn/question/140101)
+  + iOS platform fixes the bug that the progress bar of the music player on the system lock screen may display incorrectly when playing background audio [Details](https://ask.dcloud.net.cn/question/140101)
   + iOS平台 修复 音频播放 AudioPlayer 获取暂停状态不准确的Bug [详情](https://ask.dcloud.net.cn/question/141832)
+  + iOS platform fixed the bug that AudioPlayer got inaccurate pause status [details](https://ask.dcloud.net.cn/question/141832)
   + iOS平台 修复 视频播放 video 播放视频音量与系统音量不一致的Bug
+  + iOS platform repaired the bug that the volume of the video played by the video was inconsistent with the volume of the system
   + iOS平台 修复 视频播放 video 在刘海屏设备全屏播放时进度条可能无法拖动的Bug [详情](https://ask.dcloud.net.cn/question/141862)
+  + iOS platform fixed the bug that the progress bar may not be able to be dragged when the video is played in the full screen of the Notch device [Details](https://ask.dcloud.net.cn/question/141862)
   + iOS平台 修复 视频播放 video 设置 show-fullscreen-btn 属性为 false 时可能显示不正确的Bug
+  + iOS platform fixed the bug that the video may not be displayed correctly when the video player set the show-fullscreen-btn property to false
   + iOS平台 修复 在 iOS15.4 及以上设备系统时间设置为12小时制 pickDate 返回值异常的Bug [详情](https://ask.dcloud.net.cn/question/141906)
+  + iOS platform fixes the bug that the pickDate return value is abnormal when the system time of iOS15.4 and above devices is set to 12 hours [Details](https://ask.dcloud.net.cn/question/141906)
   + iOS平台 修复 安心打包使用 swift 开发的uni原生插件时上传 AppStore 报`ITMS-90426: Invalid Swift Support`错误的Bug [详情](https://ask.dcloud.net.cn/question/142611)
+  + iOS platform fixes the bug of `ITMS-90426: Invalid Swift Support` error reported when uploading AppStore when using the uni native plug-in developed by swift to package with peace of mind. [Details](https://ask.dcloud.net.cn/question/142611)
 * 【Uni小程序SDK】
+* 【Uni Mini Program SDK】
   + iOS平台 修复 关闭小程序后快速启动小程序并直达页面，重复操作偶现崩溃的Bug
+  + iOS platform repaired the bug that the applet could be quickly launched after closing the applet and went directly to the page, and repeated operations occasionally crashed the bug
   + iOS平台 修复 小程序SDK中设置 user-agent 影响宿主原生页面中 Webview 的Bug
+  + iOS platform fixes the bug that setting user-agent in the Mini Program SDK affects the Webview in the native page of the host
 
 ### 3.3.11.20220209
 + App-iOS平台 修复 3.3.9 版本引出的 nvue swiper-list 组件中的 list 组件设置 show-scrollbar 为 false 时吸顶效果异常的Bug [详情](https://ask.dcloud.net.cn/question/138944)
++ App-iOS platform fixes the bug that the ceiling effect is abnormal when the list component in the nvue swiper-list component introduced by version 3.3.9 sets show-scrollbar to false [Details](https://ask.dcloud.net.cn/ question/138944)
 + iOS平台 修复 Downloader 下载图片文件可能失败的Bug [详情](https://ask.dcloud.net.cn/question/116101)
++ iOS platform fixes the bug that Downloader may fail to download image files [Details](https://ask.dcloud.net.cn/question/116101)
 
 ### 3.3.10
 
 ### 3.3.9
 + 【重要】新增 Payment 模块支持 Paypal支付、Stripe支付、Google支付 [文档](https://uniapp.dcloud.io/app-payment)
++ [Important] Added Payment module to support Paypal payment, Stripe payment, Google payment [Documentation](https://uniapp.dcloud.io/app-payment)
 + 【重要】新增 Statistic 模块支持 Google统计 [文档](https://uniapp.dcloud.io/app-statistic-google)
++ [Important] Added Statistic module to support Google statistics [documentation](https://uniapp.dcloud.io/app-statistic-google)
 
 + App平台、H5平台 新增 textarea、input 组件支持 confirm-hold 属性 [详情](https://uniapp.dcloud.io/component/input)
++ Added textarea and input components on App platform and H5 platform to support confirm-hold attribute [Details](https://uniapp.dcloud.io/component/input)
 + App平台、H5平台 优化 image 组件 draggable 属性默认值改为 false
++ App platform, H5 platform optimized image component draggable property default value changed to false
 + App平台 优化 uni.request 请求参数支持 ArrayBuffer 类型
++ App platform optimized uni.request request parameter to support ArrayBuffer type
 + App平台 修复 vue3 项目 发行后 renderjs 调用 ownerInstance.callMethod 失效的Bug [详情](https://ask.dcloud.net.cn/question/137832)
++ App platform Fix the bug that renderjs calls ownerInstance.callMethod invalid after the release of vue3 project [Details](https://ask.dcloud.net.cn/question/137832)
 + App平台 修复 vue3 项目 picker 组件默认语言固定为英文的Bug [详情](https://ask.dcloud.net.cn/question/136954)
++ App platform Fix the bug that the default language of the picker component of the vue3 project is fixed to English [Details](https://ask.dcloud.net.cn/question/136954)
 + App-iOS平台 修复 nvue swiper-list 组件滚动条无法隐藏的Bug [详情](https://ask.dcloud.net.cn/question/136261)
++ App-iOS platform fixed the bug that the nvue swiper-list component scroll bar could not be hidden [Details](https://ask.dcloud.net.cn/question/136261)
 + App-iOS平台 修复 3.3.3 版本引出的支持多个音频同时播放引发iOS影响静音开关的问题，默认不支持同时播放多个文件，如果需要可手动设置 sessionCategory
++ App-iOS platform Fix the problem that the support for multiple audios played simultaneously caused iOS to affect the mute switch caused by version 3.3.3. The default does not support multiple files played at the same time. If necessary, you can manually set the sessionCategory
   
 + 新增 一键登录 支持 closeIcon 属性设置自定义关闭按钮图片 [文档](https://uniapp.dcloud.io/univerify)
++ Added one-click login to support closeIcon property to set custom close button image [documentation](https://uniapp.dcloud.io/univerify)
 + 更新 uni-AD 快手广告SDK Android为 3.3.20 版，iOS为 3.3.20 版；快手内容联盟SDK Android为 3.3.27 版， iOS为 3.3.27 版
++ Update uni-AD Kuaishou Advertising SDK Android to version 3.3.20, iOS to version 3.3.20; Kuaishou Content Alliance SDK to Android version 3.3.27, iOS to version 3.3.27
 + iOS平台 修复 uni-AD 使用自定义 storyboard 时开屏广告底部应用图标、名称可能不显示的Bug
++ iOS platform fixed the bug that the application icon and name at the bottom of the splash ad might not be displayed when uni-AD uses a custom storyboard
 
 ### 3.3.5
 + App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
++ App platform Fix the bug that the conditional compilation does not take effect when the nvue page uses scss/sass
 + App平台 修复 vue3 项目 picker-view 组件报错的Bug [详情](https://github.com/dcloudio/uni-app/issues/3130)
++ App platform Fix the bug that the picker-view component of the vue3 project reported an error [details](https://github.com/dcloudio/uni-app/issues/3130)
 
 ### 3.3.4
 + App平台 修复 nvue 页面使用 scss/sass 时条件编译不生效的Bug
++ App platform Fix the bug that the conditional compilation does not take effect when the nvue page uses scss/sass
 + App平台 修复 vue3 项目 input/textarea 组件使用 v-model 不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3107)
++ App platform Fix the bug that the input/textarea component of the vue3 project does not work when using v-model [Details](https://github.com/dcloudio/uni-app/issues/3107)
 
 ### 3.3.3
 + 【重要】App平台 修复 uni.getLocation 参数 type 配置不生效的Bug [详情](https://ask.dcloud.net.cn/article/39552)
++ [Important] App platform fixes the bug that the uni.getLocation parameter type configuration does not take effect [Details](https://ask.dcloud.net.cn/article/39552)
 + 修复 vue3 项目 部分组合式 API 参数缺少类型的Bug [详情](https://github.com/dcloudio/uni-app/issues/3076#issuecomment-994557108)
++ Fix the bug of missing types of some composite API parameters in the vue3 project [details](https://github.com/dcloudio/uni-app/issues/3076#issuecomment-994557108)
 + App平台、H5平台 新增 uni.request 支持 PATCH 方法
++ Added uni.request support for PATCH method on App platform and H5 platform
 + App平台、H5平台 修复 swiper 组件开启衔接滑动点击指示器时切换问题 [详情](https://github.com/dcloudio/uni-app/issues/2985)
++ App platform, H5 platform Fix the switching problem when the swiper component is turned on and connected to slide and click on the indicator [Details](https://github.com/dcloudio/uni-app/issues/2985)
 + App平台、H5平台 修复 vue2 项目缺失 uni.previewImage.cancel 国际化的Bug [详情](https://ask.dcloud.net.cn/question/136054)
++ App platform, H5 platform Fix the bug that the vue2 project is missing uni.previewImage.cancel internationalization [Details](https://ask.dcloud.net.cn/question/136054)
 + App平台 优化 nvue 页面默认文字大小更改为 16px
++ App platform optimization nvue page default text size changed to 16px
 + App平台 优化 innerAudioContext 支持多个音频同时播放
++ App platform optimized innerAudioContext to support multiple audios playing at the same time
 + App平台 修复 vue3 项目使用 uni.canvasGetImageData 报错的Bug [详情](https://ask.dcloud.net.cn/question/134355)
++ App platform fixes the bug that the vue3 project uses uni.canvasGetImageData to report errors [details](https://ask.dcloud.net.cn/question/134355)
 + App平台 修复 vue3 项目使用 uni.showLoading 方法在不调用 hideLoading 时会运行两秒左右自动关闭的Bug [详情](https://ask.dcloud.net.cn/question/135551)
++ App platform Fix the bug that the vue3 project uses the uni.showLoading method to run for about two seconds and close automatically when hideLoading is not called [Details](https://ask.dcloud.net.cn/question/135551)
 + App平台 修复 vue3 项目 开发期间页面热刷新不生效的Bug
++ App platform Fix the bug that the page hot refresh does not take effect during the development of the vue3 project
 + App平台 修复 vue3 项目 开发期间页面直达不生效的Bug
++ App platform Fix the bug that the direct access to the page does not take effect during the development of the vue3 project
 + App平台 修复 vue3 项目 部分样式在低版本手机上不生效的Bug [详情](https://github.com/dcloudio/uni-app/issues/3073)
++ App platform Fix the bug that some styles of the vue3 project do not work on low-version phones [Details](https://github.com/dcloudio/uni-app/issues/3073)
 + App-iOS平台 修复 nvue 页面固定横屏启动时 rpx 计算错误的Bug [详情](https://ask.dcloud.net.cn/question/134971)
++ App-iOS platform fixed the bug of rpx calculation error when nvue page fixed horizontal screen startup [details](https://ask.dcloud.net.cn/question/134971)
 + App-iOS平台 修复 nvue rich-text 组件在页面中动态创建时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/question/135136)
++ App-iOS platform fixes the bug that may cause a crash when the nvue rich-text component is dynamically created in the page [Details](https://ask.dcloud.net.cn/question/135136)
 + App-iOS平台 修复 nvue map 组件当聚合簇中只有1个 marker 时，markertap 事件返回的 id 不正确的Bug [详情](https://ask.dcloud.net.cn/question/136245)
++ App-iOS platform fixes the bug that the id returned by the markertap event is incorrect when there is only 1 marker in the aggregation cluster of the nvue map component [Details](https://ask.dcloud.net.cn/question/136245)
 + 新增 拍照和本地相册选择 crop 裁剪编辑图片支持 saveToAlbum 属性设置是否保存编辑后的图片到相册 [文档](https://www.html5plus.org/doc/zh_cn/camera.html#plus.camera.CameraCropStyles)
++ Added photo and local album selection crop crop edit picture support saveToAlbum attribute setting whether to save the edited picture to the album [Documentation](https://www.html5plus.org/doc/zh_cn/camera.html#plus.camera. CameraCropStyles)
 + 新增 系统定位模块，无需商业授权 [详情](https://uniapp.dcloud.io/app/geolocation)
++ Added system location module, no commercial authorization required [Details](https://uniapp.dcloud.io/app/geolocation)
 + 优化 定位模块默认使用 wgs84 坐标系，优先使用系统定位 
++ Optimization The positioning module uses the wgs84 coordinate system by default, and the system positioning is preferred
 + 新增 uni-AD 基础开屏广告支持 gif 图
++ Added uni-AD basic splash ads support gif
 + 新增 uni-AD 支持设置是否关闭个性化推荐功能 [文档](https://www.html5plus.org/doc/zh_cn/ad.html#plus.ad.setPersonalizedAd)
++ Added uni-AD support to set whether to turn off the personalized recommendation function [documentation](https://www.html5plus.org/doc/zh_cn/ad.html#plus.ad.setPersonalizedAd)
 + 更新 uni-AD 腾讯优量汇SDK Android为 4.431.1301 版，iOS为 4.13.31 版；今日头条穿山甲SDK iOS为 4.1.0.1 版；快手广告SDK Android为 3.3.19 版，iOS为 3.3.19 版；快手内容联盟SDK Android为 3.3.25 版， iOS为 3.3.25 版；Sigmob广告联盟SDK Android为 3.5.3 版，iOS为 3.5.0 版
++ Updated uni-AD Tencent Youlianghui SDK to version 4.431.1301 for Android and 4.13.31 for iOS; Toutiao Pangolin SDK for iOS to version 4.1.0.1; Kuaishou Advertising SDK for Android to version 3.3.19 and iOS to version 3.3.19 version; Kuaishou content alliance SDK Android version 3.3.25, iOS version 3.3.25; Sigmob advertising alliance SDK Android version 3.5.3, iOS version 3.5.0
 + 修复 微信分享场景参数 scene 默认值不正确的Bug
++ Fixed the bug that the default value of the parameter scene of WeChat sharing scene was incorrect
 + 【重要】iOS平台 更新 云端打包环境 XCode 为 13.2.1 版、iOS SDK 为 15.2 版，解决提交 AppStore 审核报 ITMS-90901 警告的问题 [详情](https://ask.dcloud.net.cn/question/136405) 
++ [Important] The iOS platform has updated the cloud packaging environment XCode to version 13.2.1 and the iOS SDK to version 15.2 to solve the problem of submitting the AppStore review report ITMS-90901 warning [details](https://ask.dcloud.net.cn/ question/136405)
 + iOS平台 修复 uni-AD setSplashAd 关闭开屏广告可能不生效的Bug
++ iOS platform fixed the bug that the uni-AD setSplashAd may not take effect when closing the splash ad
 + iOS平台 修复 uni-AD 后台切前台时开屏广告展示间隔时间设置无效及可能重复展示的Bug
++ iOS platform fixed the bug that the display interval setting of the opening screen advertisement was invalid and may be displayed repeatedly when the background of uni-AD was switched to the foreground
 + iOS平台 修复 plus.nativeUI.showWaiting 在暗黑模式下默认文字颜色不正确的Bug
++ iOS platform fixed the bug that the default text color of plus.nativeUI.showWaiting was incorrect in dark mode
 + iOS平台 修复 二维码扫码 pdf417 码时识别中文字符为乱码的Bug
++ iOS platform fixed the bug that recognized Chinese characters as garbled characters when scanning QR codes and pdf417 codes
 + iOS平台 修复 本地相册选择进入编辑界面可能出现点击完成按钮无响应的Bug [详情](https://ask.dcloud.net.cn/question/135653)
++ iOS platform fixes the bug that there may be no response when clicking the Done button when selecting the local album to enter the editing interface [Details](https://ask.dcloud.net.cn/question/135653)
 + iOS平台 修复 拍照和本地相册选择 crop 裁剪编辑图片 resize 参数默认值不正确的Bug
++ iOS platform fixed the bug that the default value of the resize parameter was incorrect when taking photos and local album selection crop, cropping and editing pictures
 + iOS平台 修复 uni原生插件 validArchitectures 配置不正确可能导致云端打包失败的Bug
++ iOS platform fixed the bug that the incorrect configuration of the validArchitectures of the uni native plug-in may cause the cloud packaging to fail
 
 ### 3.2.16
 
 ### 3.2.15 
   + 【重要】iOS平台 修复 应用启动时间统计在网络服务异常时可能引起崩溃的Bug [详情](https://ask.dcloud.net.cn/article/39448)
+  + 【Important】IOS platform repaired the bug that the application startup time statistics may cause a crash when the network service is abnormal [Details](https://ask.dcloud.net.cn/article/39448)
   + App平台、H5平台 新增 rich-text 组件支持 itemclick 事件 [详情](https://uniapp.dcloud.io/component/rich-text)
+  + Added rich-text component on App platform and H5 platform to support itemclick event [Details](https://uniapp.dcloud.io/component/rich-text)
   + App平台、H5平台 新增 uni.setClipboardData 支持配置是否弹出提示 [详情](https://uniapp.dcloud.io/api/system/clipboard?id=setclipboarddata)
+  + Added uni.setClipboardData on App platform and H5 platform to support whether pop-up prompts can be configured [Details](https://uniapp.dcloud.io/api/system/clipboard?id=setclipboarddata)
   + App平台、H5平台 新增 异步触发 uni.chooseImage 时，会进入失败回调 [详情](https://ask.dcloud.net.cn/question/130768)
+  + App platform, H5 platform added When uni.chooseImage is triggered asynchronously, it will enter a failure callback [Details](https://ask.dcloud.net.cn/question/130768)
   + App平台、H5平台 修复 picker-view 滚动时会触发页面下拉刷新的Bug [详情](https://ask.dcloud.net.cn/question/113718)
+  + App platform, H5 platform Fix the bug that the page will be pulled down to refresh when the picker-view scrolls [Details](https://ask.dcloud.net.cn/question/113718)
   + App平台、H5平台 修复 swiper 组件动态加载内容时，触摸造成显示异常的Bug [详情](https://ask.dcloud.net.cn/question/100684)
+  + App platform, H5 platform Fix the bug that the touch causes abnormal display when the swiper component dynamically loads content [Details](https://ask.dcloud.net.cn/question/100684)
   + App平台 新增 NVUE map API poiSearchNearBy 支持 offset，poiKeywordsSearch 支持 offset、cityLimit [详情](https://uniapp.dcloud.net.cn/api/location/map?id=poisearchnearby)
+  + App platform added NVUE map API poiSearchNearBy supports offset, poiKeywordsSearch supports offset, cityLimit [Details](https://uniapp.dcloud.net.cn/api/location/map?id=poisearchnearby)
   + App平台 新增 cover 组件支持嵌套 [详情](https://uniapp.dcloud.io/component/cover-view?id=cover-view)
+  + Added cover component on App platform to support nesting [Details](https://uniapp.dcloud.io/component/cover-view?id=cover-view)
   + App平台 新增 nvue 页面支持 dynamicRpx 配置，用于 rpx 适配屏幕大小动态变化 [详情](https://uniapp.dcloud.io/collocation/pages?id=globalstyle)
+  + Added nvue page support for dynamicRpx configuration on the App platform, used for rpx to adapt to dynamic changes in screen size [Details](https://uniapp.dcloud.io/collocation/pages?id=globalstyle)
   + App平台 修复 在 slot 使用 v-for 无法渲染的Bug [详情](https://ask.dcloud.net.cn/question/130258)
+  + App platform fixed the bug that cannot be rendered when using v-for in the slot [Details](https://ask.dcloud.net.cn/question/130258)
   + App平台 修复 editor 组件 a 标签 href 填写相对地址时渲染错误的Bug  [详情](https://github.com/dcloudio/uni-app/issues/2218)
+  + App platform Fix the bug that the editor component a tag href renders incorrectly when filling in the relative address [details](https://github.com/dcloudio/uni-app/issues/2218)
   + App平台 修复 editor、rich-text 组件 img 本地路径图片渲染错误的Bug [详情](https://ask.dcloud.net.cn/question/117245)
+  + App platform Fix editor, rich-text component img local path image rendering error [Details](https://ask.dcloud.net.cn/question/117245)
   
   + App-iOS平台 修复 editor 组件设置字体格式时，placeholder 显示异常的Bug [详情](https://ask.dcloud.net.cn/question/106127)
+  + App-iOS platform fixes the bug that the placeholder displays abnormally when the editor component sets the font format [Details](https://ask.dcloud.net.cn/question/106127)
   + App-iOS平台 修复 uni.request 请求与其它网络请求 user-agent 不一致的Bug
+  + App-iOS platform fixes the bug that the uni.request request is inconsistent with other network request user-agent
   + App-iOS平台 修复 nvue cover-view 组件样式可能存在异常的Bug
+  + App-iOS platform fix nvue cover-view component style may have abnormal bug
   + App-iOS平台 修复 nvue image 组件请求网络图片与其它网络请求 user-agent 不一致的Bug
+  + App-iOS platform fixes the bug that the nvue image component requesting network images is inconsistent with other network requesting user-agent
   + App-iOS平台 修复 nvue video 中 cover-view 组件的点击事件会透传到 video 中的Bug [详情](https://ask.dcloud.net.cn/question/132936)
+  + App-iOS platform fixes the bug that the click event of the cover-view component in nvue video will be transparently transmitted to the bug in the video [Details](https://ask.dcloud.net.cn/question/132936)
   + App-iOS平台 修复 nvue map 组件设置 marker-callout-textAlign 属性为 center 不生效的Bug [详情](https://ask.dcloud.net.cn/question/133264)
+  + App-iOS platform fix nvue map component setting marker-callout-textAlign attribute to center does not take effect Bug [details](https://ask.dcloud.net.cn/question/133264)
   
   + iOS平台 新增 云端打包支持生成符号表 dsym 文件 [详情](https://uniapp.dcloud.io/app/ios/dsym)
+  + Added cloud packaging support for iOS platform to generate symbol table dsym file [Details](https://uniapp.dcloud.io/app/ios/dsym)
   + iOS平台 更新 友盟统计SDK UMCommon 为 7.3.5 版，UMAPM 为 1.5.2 版
+  + iOS platform update Youmeng Statistics SDK UMCommon to version 7.3.5, UMAPM to version 1.5.2
   + iOS平台 修复 基础开屏广告可能重复显示的Bug
+  + iOS platform fixed the bug that the basic open screen advertisement may be displayed repeatedly
   + iOS平台 修复 图片/视频选择界面中选择iCloud视频可能报错的Bug [详情](https://ask.dcloud.net.cn/question/133635)
+  + iOS platform fixed the bug that an error may be reported when selecting iCloud video in the picture/video selection interface [Details](https://ask.dcloud.net.cn/question/133635)
   + iOS平台 修复 plus.navigator.getSignature 获取签名标识在应用通过 AppStore 或 Testflight 安装时 返回空值的Bug [详情](https://ask.dcloud.net.cn/question/133881)
+  + iOS platform fixes the bug that plus.navigator.getSignature returns a null value when the app is installed via AppStore or Testflight when obtaining the signature ID [Details](https://ask.dcloud.net.cn/question/133881)
   

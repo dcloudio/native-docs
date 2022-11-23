@@ -20,7 +20,7 @@ function isPlaceholder(text) {
 
 function parse(str = '') {
   const originTest = /[\u4e00-\u9fa5]/
-  const codeTest1 = /^\s*(```[\sa-zA-Z]*)$/
+  const codeTest1 = /^\s*(```[\sa-zA-Z]*)|(```objective-c)$/
   const codeTest2 = /^\s*<\/?code.*?>\s*$/
   const origin = []
   const target = []

@@ -1,4 +1,5 @@
 ## iOS平台-App离线SDK内不同文件的作用
+## iOS platform - the role of different files in App offline SDK
 
 ```
     |-- uni-app_5+pluginDemo       在uni-app中开发5+插件，详细请看目录里的 .md文件
@@ -13,27 +14,45 @@
 
 	
 ## SDK/SDK/Libs 目录下主要库的作用
+## The role of the main library under the SDK/SDK/Libs directory
 
   其他库的用途在离线包中Feature-iOS.xls文件里有详细描述
+  The usage of other libraries is described in detail in the Feature-iOS.xls file in the offline package
   
     |  主要库 |  作用  ｜
+    | Main library | Function ｜
     | :------: | :------: |
     | AlipaySDK.framework | 支付宝支付|
     | AMapFoundationKit.framework、AMapFoundationKit.framework、
 	AMapLocationKit.framework、AMapSearchKit.framework、MAMapKit.framework | 高德地图和定位|
+	AMapLocationKit.framework, AMapSearchKit.framework, MAMapKit.framework | Gaode map and positioning|
     | BaiduMapAPI_Base.framework、BaiduMapAPI_Cloud.framework、
 	BaiduMapAPI_Location.framework、BaiduMapAPI_Map.framework、BaiduMapAPI_Search.framework、BaiduMapAPI_Utils.framework |百度地图和定位|
+	BaiduMapAPI_Location.framework, BaiduMapAPI_Map.framework, BaiduMapAPI_Search.framework, BaiduMapAPI_Utils.framework |Baidu Map and Location|
     | BUAdSDK.framework、BUFoundation.framework |穿山甲广告|
+    | BUAdSDK.framework, BUFoundation.framework |Pangolin Advertising|
     | DCUniVideoPublic.framework |video组件和videoPlayer控件的公共库|
+    | DCUniVideoPublic.framework | A public library of video components and videoPlayer controls |
     | GTSDK.framework |个推消息推送|
+    | GTSDK.framework |Push message push|
     | iflyMSC.framework |讯飞语音识别|
+    | iflyMSC.framework | IflyMSC.framework | IflyMSC Speech Recognition|
     | IJKMediaFramework.framework |video组件和videoPlayer控件播放|
+    | IJKMediaFramework.framework |video component and videoPlayer control playback|
     | libBaiduSpeechSDK.a |百度语音识别|
+    | libBaiduSpeechSDK.a |Baidu Speech Recognition|
     | libSDWebImage.a |开源的SDWebImage打出来的库|
+    | libSDWebImage.a |The open source SDWebImage library|
     | libWeChatSDK_pay.a |微信SDK带支付功能|
+    | libWeChatSDK_pay.a |WeChat SDK with payment function|
     | libWeChatSDK.a |微信SDK不带支付功能|
+    | libWeChatSDK.a |WeChat SDK without payment function|
     | libWeiboSDK.a |新浪微博SDK|
+    | libWeiboSDK.a |Sina Weibo SDK|
     | QHADSDK.framework |360广告|
+    | QHADSK.framework |360 Advertising|
     | UMAnalytics.framework、UMCommon.framework |友盟统计|
+    | UMAnalytics.framework, UMCommon.framework |Youmeng Statistics|
     | UPLiveSDKDll.framework |livePusher推流|
+    | UPLiveSDKDll.framework |livePusher streaming|
 

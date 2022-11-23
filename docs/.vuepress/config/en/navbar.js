@@ -26,7 +26,7 @@ export const navbar = [
 ]
 
 export const navbarLanguage = {
-  default: 0,
+  default: 1,
   items: [
     {
       text: '简体中文',
