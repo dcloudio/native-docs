@@ -2,16 +2,14 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2022年09月26日发布——HBuilderX（3.6.4.20220922）
+### 2022年11月22日发布——HBuilderX（3.6.5.20221121）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 [和彩云](https://caiyun.139.com/m/i?115CeU0TNdKlH)，提取码: hX73
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.4.20220922）版本生成本地打包App资源。
-+ 修复 3.5.5版本引出 input 组件自动获取焦点可能失效的Bug
-+ 修复 本地打包生成的自定义基座可能无法识别安装的Bug
-+ 修复 3.6.2版本引出的 在 Android4.4 设备无法正常运行的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.5.20221121）版本生成本地打包App资源。
++ 修复 uni.getStorageSync 在某些情况下可能报SyntaxError错误的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
