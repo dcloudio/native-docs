@@ -9,17 +9,17 @@
  */
 export const navbar = [
   {
-    text: 'uniMPSdk',
+    text: 'uniMP SDK',
     type: 'link',
     link: '/'
   },
   {
-    text: 'App Offline Packaging',
+    text: 'App Local Packaging',
     type: "link",
     link: '/AppDocs/'
   },
   {
-    text: 'Native Plugin',
+    text: 'Native Language Plugin',
     type: "link",
     link: '/NativePlugin/'
   }
