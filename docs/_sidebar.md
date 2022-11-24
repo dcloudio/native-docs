@@ -1,25 +1,25 @@
 * [概述](README.md)
 * [Overview](README.md)
 * 集成教程
-* Integration Tutorial
+* Tutorial
   * [Android 集成教程](UniMPDocs/UseSdk/android.md)
   * [Android Integration Tutorial](UniMPDocs/UseSdk/android.md)
   * [iOS 集成教程](UniMPDocs/UseSdk/ios.md)
   * [iOS Integration Tutorial](UniMPDocs/UseSdk/ios.md)
 * 功能示例
-* function example
+* Examples
   * [Android 平台 V2版本](UniMPDocs/Sample/android-v2.md)
   * [Android platform V2 version](UniMPDocs/Sample/android-v2.md)
   * [iOS 平台](UniMPDocs/Sample/ios.md)
   * [iOS platform](UniMPDocs/Sample/ios.md)
 * API 参考手册
-* API reference manual
+* API References
   * [Android API V2版本参考手册](UniMPDocs/API/android-v2.md)
   * [Android API V2 Version Reference Manual](UniMPDocs/API/android-v2.md)
   * [iOS API 参考手册](UniMPDocs/API/ios.md)
   * [iOS API Reference Manual](UniMPDocs/API/ios.md)
 * 内置功能模块集成
-* Built-in function module integration
+* Modules
   * [Android 集成教程](UniMPDocs/UseModule/android/android.md)
   * [Android Integration Tutorial](UniMPDocs/UseModule/android/android.md)
     * [Share（分享）](UniMPDocs/UseModule/android/share.md)
@@ -61,13 +61,13 @@
     * [第三方 SDK 依赖说明](AppDocs/usemodule/iOSModuleConfig/dependentLibrary.md)
     * [Third-party SDK dependency instructions](AppDocs/usemodule/iOSModuleConfig/dependentLibrary.md)
 * 扩展原生能力
-* Expand native capabilities
+* Extensions
   * [Android 扩展教程](UniMPDocs/Extension/android.md)
   * [Android Extension Tutorial](UniMPDocs/Extension/android.md)
   * [iOS 扩展教程](UniMPDocs/Extension/ios.md)
   * [iOS extension tutorial](UniMPDocs/Extension/ios.md)
 * 下载
-* download
+* Downloads
   * [Android SDK 下载](UniMPDocs/SDKDownload/android.md)
   * [Android SDK Download](UniMPDocs/SDKDownload/android.md)
   * [iOS SDK 下载](UniMPDocs/SDKDownload/ios.md)
