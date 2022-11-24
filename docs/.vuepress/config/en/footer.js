@@ -1,7 +1,7 @@
 export default {
   footNavList: [
     {
-      title: '开发产品',
+      title: 'products',
       content: [
         {
           subTitle: 'HBuilderX',
@@ -22,14 +22,6 @@ export default {
         {
           subTitle: '5+Runtime',
           url: 'https://www.dcloud.io/runtime.html',
-        },
-        {
-          subTitle: 'wap2app',
-          url: 'https://www.dcloud.io/wap2app.html?platform=wap2app',
-        },
-        {
-          subTitle: 'MUI',
-          url: 'https://www.dcloud.io/mui.html',
         },
         {
           subTitle: 'uni-id',
@@ -68,18 +60,18 @@ export default {
   ],
   aboutusList: [
     {
-      title: '运营产品',
+      title: 'Operating services',
       content: [
         {
           subTitle: 'uni-AD',
           url: 'https://uniad.dcloud.net.cn/login',
         },
         {
-          subTitle: 'uni统计',
+          subTitle: 'uni-stat',
           url: 'https://tongji.dcloud.net.cn/',
         },
         {
-          subTitle: 'uni发行',
+          subTitle: 'uni-portal',
           url: 'https://www.dcloud.io/dportal.html',
         },
         {
@@ -101,90 +93,87 @@ export default {
        'content': []
      }, */
     {
-      title: '开发者服务',
+      title: 'Developer Services',
       content: [
         {
-          subTitle: '问答社区',
+          subTitle: 'forum',
           url: 'https://ask.dcloud.net.cn/explore/',
         },
         {
-          subTitle: '开发者后台',
+          subTitle: 'dashboard',
           url: 'https://dev.dcloud.net.cn/',
         },
       ],
     },
     {
-      title: '技术文档',
+      title: 'Docs',
       content: [
         {
-          subTitle: 'uni-app文档',
+          subTitle: 'uni-app',
           url: 'https://uniapp.dcloud.io/',
         },
         {
-          subTitle: 'uniCloud文档',
+          subTitle: 'uniCloud',
           url: 'https://uniapp.dcloud.io/uniCloud/README',
         },
         {
-          subTitle: '原生开发者支持文档',
+          subTitle: 'native-support',
           url: 'https://nativesupport.dcloud.net.cn/',
         },
         {
-          subTitle: 'HBuilder文档',
+          subTitle: 'HBuilderX',
           url: 'https://hx.dcloud.net.cn/',
         },
       ],
     },
     {
-      title: '生态服务',
+      title: 'Ecosystem',
       content: [
         {
-          subTitle: '插件市场',
+          subTitle: 'Marketplace',
           url: 'https://ext.dcloud.net.cn/',
         },
         {
-          subTitle: 'OAuth用户开放平台',
+          subTitle: 'OAuth',
           url: 'https://open.dcloud.net.cn/pages/login/login',
         },
       ],
     },
     {
-      title: '关于我们',
+      title: 'About',
       content: [
         {
-          subTitle: 'DCloud官网',
+          subTitle: 'DCloud',
           url: 'https://dcloud.io/',
         },
+		{
+		  subTitle: 'Jobs',
+		  url: 'https://www.dcloud.io/hr/',
+		},
         {
-          subTitle: '案例',
-          url: 'https://uniapp.dcloud.io/case',
+          subTitle: 'Terms of service',
+          url: 'https://account.dcloud.io/privacy-policy/DCloud-Terms-of-Service.html',
         },
-        {
-          subTitle: '需求墙',
-          url: 'https://dev.dcloud.net.cn/wish/?channel=uniapp',
-        },
-        {
-          subTitle: '许可协议',
-          url: 'https://ask.dcloud.net.cn/article/35623',
-        },
-        {
-          subTitle: '加入我们',
-          url: 'https://www.dcloud.io/hr/',
-        },
-        {
-          subTitle: '赞助我们',
-          url: 'https://dev.dcloud.net.cn/sponsor/',
-        },
+		{
+		  subTitle: 'Privacy policy',
+		  url: 'https://account.dcloud.io/privacy-policy/DCloud-Privacy-Policy.html',
+		},
+		{
+		  subTitle: 'acceptable use policy',
+		  url: 'https://account.dcloud.io/privacy-policy/DCloud-Acceptable-Use-Policy.html',
+		}
+        
       ],
     },
     {
-      title: '联系我们',
+      title: 'Contact us',
       content: [
         {
-          subTitle: '商务合作：bd@dcloud.io',
+          subTitle: 'bussiness：bd@dcloud.io',
           url: 'mailto:bd@dcloud.io',
         },
         {
-          subTitle: '广告合作：uniad@dcloud.io',
+          subTitle: 'Advertising：uniad@dcloud.io',
           url: 'mailto:uniad@dcloud.io',
         },
       ],

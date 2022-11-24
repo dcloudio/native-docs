@@ -75,7 +75,7 @@
   * [源码公开策略](UniMPDocs/SDKDownload/opensource.md)
   * [Source Code Disclosure Policy](UniMPDocs/SDKDownload/opensource.md)
 * 常见问题
-* common problem
+* FAQ
   * [Android 常见问题](UniMPDocs/FAQ/android.md)
   * [Android FAQ](UniMPDocs/FAQ/android.md)
   * [iOS 常见问题](UniMPDocs/FAQ/ios.md)
