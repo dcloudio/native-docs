@@ -42,8 +42,7 @@ Put the data file under the download directory/SDK/assets into the project asset
 插件配置信息请参考插件配置文档或插件配置文件package.json
 For plug-in configuration information, please refer to the plug-in configuration document or the plug-in configuration file package.json
 关于package.json请参考：**[Android uni-app原生插件开发文档](/NativePlugin/course/android?id=插件调试)**
-For package.json, please refer to: **[Android uni-app native plug-in development document](/NativePlugin/course/android?id=%E6%8F%92%E4%BB%B6%E8%B0%83%E8% AF%95)**
-```
+```json
 {  
   "nativePlugins": [  
     {

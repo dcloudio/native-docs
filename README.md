@@ -68,7 +68,6 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 - **海康威视：** 海康互联App。[官方下载](https://www.me-app.net/Sentinels)
 - **伴玩：** 比心陪玩交友平台App。[App下载](https://a.app.qq.com/o/simple.jsp?pkgname=com.wanjiu.heishi)
 
-
 ## FAQ
 Q：uni小程序sdk 与 App离线sdk 的差别是什么？
 A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App，用DCloud的工具来开发App，又不想使用云打包，则可以使用App离线sdk打包发布为原生App，App离线sdk支持5+ App、uni-app，不支持wap2app。虽然App离线sdk也可以集成到已有原生App中，但自从uni小程序sdk推出后，将不再推荐这种用法。
