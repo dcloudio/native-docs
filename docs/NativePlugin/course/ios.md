@@ -165,7 +165,7 @@ TestModule.h 文件截图：
 
 **异步方法实现**
 
-``` Objective-C
+```objc
 /// 异步方法（注：异步方法会在主线程（UI线程）执行）
 /// @param options js 端调用方法时传递的参数   支持：String、Number、Boolean、JsonObject 类型
 /// @param callback 回调方法，回传参数给 js 端   支持： NSString、NSDictionary（只能包含基本数据类型）、NSNumber 类型
