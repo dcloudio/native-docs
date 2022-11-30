@@ -8473,7 +8473,20 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-uni-app-test@^1.2.10, vuepress-theme-uni-app-test@^1.2.7:
+vuepress-theme-uni-app-test@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.2.12.tgz#7c1203afa221b1e8e2de53af1c6775a6bb39a091"
+  integrity sha512-WS8y406n/btkol/gu5VvNyVLl0WDkIaWD4zr2BCQ+v8abOjobRQAv9ilMfHHTDRfwynbVpX4YQd521WIsL2VWQ==
+  dependencies:
+    "@vuepress/plugin-back-to-top" "^1.9.5"
+    "@vuepress/theme-default" "^1.8.2"
+    algoliasearch "^4.13.1"
+    clipboard "^2.0.11"
+    vuepress "^1.8.2"
+    vuepress-plugin-juejin-style-copy "^1.0.4"
+    vuepress-theme-uni-app-test "^1.2.7"
+
+vuepress-theme-uni-app-test@^1.2.7:
   version "1.2.10"
   resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.2.10.tgz#f7a36c850ac81779557abecbadcfafe86f4c3ede"
   integrity sha512-/PgJbMwDWhZZSW/P6pH5MdsyJamLwDEuRxirVIEANXf8nqivbj3214clJXMDUliRovnsq02uvhVQp6HQRT8SKw==
