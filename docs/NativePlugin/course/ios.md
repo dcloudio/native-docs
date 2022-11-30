@@ -208,7 +208,7 @@ UNI_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
 
 通过宏 `UNI_EXPORT_METHOD_SYNC` 将同步方法暴露给 js 端
 
-``` Objective-C
+``` objc
 // 通过宏 UNI_EXPORT_METHOD_SYNC 将同步方法暴露给 js 端
 UNI_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
 ```
