@@ -19,6 +19,11 @@ module.exports = merge({
     sidebarDepth: 0,
     nextLinks: false,
     prevLinks: false,
+    // TODO use theme
+    repo: 'dcloudio/uni-app',
+    docsRepo: 'https://gitee.com/dcloud/native-docs',
+    docsBranch: 'master',
+    docsDir: 'docs',
     editLinks: true,
     repo: 'dcloudio/native-docs',
     docsDir: 'docs',
