@@ -32,12 +32,12 @@ export const navbarLanguage = {
       text: '简体中文',
       link: 'javascript:;',
       click() {
-        location.href = 'https://nativesupport-test.dcloud.net.cn' + location.pathname.replace('/en/','/') + location.hash + location.search
+        location.href = 'https://nativesupport.dcloud.net.cn' + location.pathname.replace('/en/','/') + location.hash + location.search
       }
     },
     {
       text: 'English',
-      link: 'https://nativesupport-test.dcloud.net.cn/en'
+      link: 'https://nativesupport.dcloud.net.cn/en'
     }
   ]
 }
