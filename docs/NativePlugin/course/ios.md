@@ -190,7 +190,7 @@ UNI_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
 
 **同步方法实现**
 
-``` Objective-C
+``` objc
 /// 同步方法（注：同步方法会在 js 线程执行）
 /// @param options js 端调用方法时传递的参数   支持：String、Number、Boolean、JsonObject 类型
 - (NSString *)testSyncFunc:(NSDictionary *)options {
