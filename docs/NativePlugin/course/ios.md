@@ -199,7 +199,7 @@ Create a new `TestModule` class, inherit `DCUniModule`, and import the `DCUniMod
 TestModule.h 文件
 TestModule.h file
 
-```Objective-C
+```objc
 #import <Foundation/Foundation.h>
 // 引入 DCUniModule.h 头文件
 // import DCUniModule.h header file
