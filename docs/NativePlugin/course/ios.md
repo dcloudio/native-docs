@@ -222,7 +222,7 @@ Then add the implementation method in the TestModule.m file
 **异步方法实现**
 **Asynchronous method implementation**
 
-``` Objective-C
+```objc
 /// 异步方法（注：异步方法会在主线程（UI线程）执行）
 /// Asynchronous method (Note: The asynchronous method will be executed on the main thread (UI thread))
 /// @param options js 端调用方法时传递的参数   支持：String、Number、Boolean、JsonObject 类型
