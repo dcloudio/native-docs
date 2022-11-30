@@ -183,6 +183,12 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme=" " />
+            </intent-filter>
         </activity>
 		<activity
             android:name="io.dcloud.PandoraEntryActivity"
@@ -193,12 +199,6 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
             android:screenOrientation="user"
             android:theme="@style/DCloudTheme"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <action android:name="android.intent.action.VIEW" />
-                <data android:scheme=" " />
-            </intent-filter>
         </activity>
 	```
 
