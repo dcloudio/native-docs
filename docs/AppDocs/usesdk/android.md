@@ -226,6 +226,12 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme=" " />
+            </intent-filter>
         </activity>
 		<activity
             android:name="io.dcloud.PandoraEntryActivity"
@@ -236,12 +242,6 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
             android:screenOrientation="user"
             android:theme="@style/DCloudTheme"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <action android:name="android.intent.action.VIEW" />
-                <data android:scheme=" " />
-            </intent-filter>
         </activity>
 	```
 

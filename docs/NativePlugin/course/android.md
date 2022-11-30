@@ -697,8 +697,7 @@ implementation project(':uniplugin_richalert')
 #### 准备相关文件
 #### Prepare related files
 
-+ 创建已插件id命名的文件夹
-+ Create a folder named after the plugin id
++ 创建以插件id命名的文件夹
 + 创建android文件夹。并将该文件夹放入到新建的插件id命名的文件夹中
 + Create android folder. And put the folder into the folder named by the newly created plugin id
 
