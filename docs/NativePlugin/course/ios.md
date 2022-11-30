@@ -146,7 +146,7 @@ SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**�
 
 TestModule.h 文件
 
-```Objective-C
+```objc
 #import <Foundation/Foundation.h>
 // 引入 DCUniModule.h 头文件
 #import "DCUniModule.h"
