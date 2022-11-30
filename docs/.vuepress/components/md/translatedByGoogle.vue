@@ -16,7 +16,7 @@
 	export default {
 		computed: {
 			chineseHref() {
-				return 'https://nativesupport-test.dcloud.net.cn' + this.$route.fullPath;
+				return 'https://nativesupport.dcloud.net.cn' + this.$route.fullPath;
 			},
 		},
 	};
