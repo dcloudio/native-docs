@@ -32,7 +32,7 @@ const config = {
     // TODO use theme
     repo: 'dcloudio/uni-app',
     docsRepo: 'https://gitee.com/dcloud/native-docs',
-    docsBranch: 'docs-zh',
+    docsBranch: 'master',
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '帮助我们改善此页面！',
