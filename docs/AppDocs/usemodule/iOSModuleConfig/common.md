@@ -116,7 +116,8 @@
 	    <td> 
 		liblibMedia.a<br/>
 		libopencore-amrnb.a<br/>
-		libmp3lame.a
+		libmp3lame.a<br/>
+		DCUniRecord.framework
 		</td>
 	    <td> </td>
 	    <td>
