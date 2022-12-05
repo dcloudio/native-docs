@@ -6,7 +6,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CeU0TNdKlH)，提取码: hX73
+[和彩云](https://caiyun.139.com/m/i?115CeUbIVKWgF)，提取码: VSud
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.5.20221121）版本生成本地打包App资源。
 + 修复 uni.getStorageSync 在某些情况下可能报SyntaxError错误的Bug
@@ -20,20 +20,16 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年11月22日发布——HBuilderX（3.6.10.20221121-alpha）
+### 2022年12月05日发布——HBuilderX（3.6.11.20221205-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
+[和彩云](https://caiyun.139.com/m/i?115CnW8jOEAN7)，提取码: p1U1
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.10.20221121-alpha）版本生成本地打包App资源。
-+ 修复 uni.request 不支持 head 请求的Bug
-+ 修复 页面中存在多个 input 组件时获取焦点光标位置可能不正确的Bug
-+ 修复 nvue live-pusher 组件在 Android11+ 设备使用移动网络无法预览的Bug
-+ 新增 隐私政策提示框支持 showAlways 配置是否每次启动都弹窗提示
-+ 修复 监听系统暗黑模式主题切换事件可能无效的Bug
-+ 修复 云端打包 使用自有证书可能报 Invalid keystore format 错误的Bug
-+ 修复 云端打包 配置应用清单文件 AndroidManifest.xml 的 package 属性值与包名相同时打包失败的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.11.20221205-alpha）版本生成本地打包App资源。
++ 修复 使用 tabbar 后页面多次跳转返回可能引起路由管理异常的Bug
++ 修复 3.6.9 版本引出的 uni.switchTab 在特殊场景可能无法正常切换页面的Bug
++ 更新 UniPush 使用的个推SDK为 3.2.13.0 版，个推核心组件SDK为 3.1.12.0 版；谷歌渠道个推SDK为 4.10.1.0 版；解决隐私合规检测可能报超频采集的问题
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
