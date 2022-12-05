@@ -1,3 +1,14 @@
+### 2022年11月22日发布——HBuilderX（3.6.10.20221121-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.10.20221121-alpha）版本生成本地打包App资源。
++ 修复 uni.request 不支持 head 请求的Bug
++ 修复 页面中存在多个 input 组件时获取焦点光标位置可能不正确的Bug
++ 修复 nvue live-pusher 组件在 Android11+ 设备使用移动网络无法预览的Bug
++ 新增 隐私政策提示框支持 showAlways 配置是否每次启动都弹窗提示
++ 修复 监听系统暗黑模式主题切换事件可能无效的Bug
++ 修复 云端打包 使用自有证书可能报 Invalid keystore format 错误的Bug
++ 修复 云端打包 配置应用清单文件 AndroidManifest.xml 的 package 属性值与包名相同时打包失败的Bug
+
 ### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
 ### Released November 14, 2022 - HBuilderX (3.6.9.20221114-alpha)
  
