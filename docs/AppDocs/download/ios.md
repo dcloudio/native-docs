@@ -64,51 +64,26 @@ The recommended method is to put the entire SDK under the project path. When add
 ## iOS Offline SDK - Alpha Version
 
 
-### 2022年11月14日发布——HBuilderX（3.6.9.20221114-alpha）
-### Released November 14, 2022 - HBuilderX (3.6.9.20221114-alpha)
+### 2022年12月05日发布——HBuilderX（3.6.11.20221205-alpha）
 
-[和彩云点击下载SDK，提取码: 9kEy](https://caiyun.139.com/m/i?115CoAPTO0c6y)
-[Hecaiyun click to download SDK, extraction code: 9kEy](https://caiyun.139.com/m/i?115CoAPTO0c6y)
+[和彩云点击下载SDK，提取码: gK34](https://caiyun.139.com/m/i?115CnW58hcnK0)
 
-[百度云点击下载SDK，提取码: dpgm](https://pan.baidu.com/s/12nF4fNrnNYf_UInwcEfsDA?pwd=dpgm) (若下载后解压失败，使用和彩云下载)
-[Baidu Cloud click to download SDK, extraction code: dpgm](https://pan.baidu.com/s/12nF4fNrnNYf_UInwcEfsDA?pwd=dpgm) (If the decompression fails after downloading, use He Caiyun to download)
+[百度云点击下载SDK，提取码: nfre](https://pan.baidu.com/s/13NnafTM0CmkFNIHpkhvUiA?pwd=nfre) (若下载后解压失败，使用和彩云下载)
 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.9.20221114-alpha）版本生成本地打包App资源。
-+ Updated uni-app offline packaging support, need to use HBuilderX (3.6.9.20221114-alpha) version to generate local packaged App resources.
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.11.20221205-alpha）版本生成本地打包App资源。
 
-## 3.6.9.20221114-alpha
-+ 新增 uni错误规范 [详情](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
-+ Added uni error specification [details](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
-+ App、Web平台 新增 暗黑模式（DarkMode） [详情](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
-+ Added Dark Mode (DarkMode) on App and Web platforms [Details](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
-+ App、Web平台 修复 radio 组件禁用状态样式异常的Bug
-+ App, Web platform Fix the bug that the style of the radio component is disabled and the style is abnormal
-+ App平台 新增 nvue 页面 MapContext 支持 setLocMarkerIcon 方法 [详情](https://uniapp.dcloud.net.cn/api/location/map.html#setLocMarkerIcon)
-+ App platform added nvue page MapContext supports setLocMarkerIcon method [Details](https://uniapp.dcloud.net.cn/api/location/map.html#setLocMarkerIcon)
-+ App平台 新增 nvue list 组件支持 render-reverse 属性 [详情](https://uniapp.dcloud.net.cn/component/list.html#%E5%B1%9E%E6%80%A7)
-+ App platform added nvue list component to support render-reverse attribute [Details](https://uniapp.dcloud.net.cn/component/list.html#%E5%B1%9E%E6%80%A7)
-+ App平台 修复 Vue2 项目使用组合式 API 时 onReady 声明周期 template ref 未绑定的Bug
-+ App platform Fixed the bug that the template ref in the onReady statement cycle was not bound when the Vue2 project used the combined API
-+ App平台 修复 Vue3 项目 template ref 会被代理的Bug
-+ App platform fixes the bug that the template ref of the Vue3 project will be proxied
-+ App平台 修复 Vue3 项目设置导航栏背景色为 rgba 色值无效的Bug [详情](https://ask.dcloud.net.cn/question/135111)
-+ App platform Fix the bug that the background color of the navigation bar of the Vue3 project is set to an invalid rgba color value [Details](https://ask.dcloud.net.cn/question/135111)
-+ App平台 修复 Vue3 项目根节点 height:100% 无效的Bug [详情](https://ask.dcloud.net.cn/question/156564)
-+ App platform fix Vue3 project root node height: 100% invalid bug [Details](https://ask.dcloud.net.cn/question/156564)
-+ App-iOS平台 修复 Vue3 项目录音播放无效的Bug [详情](https://ask.dcloud.net.cn/question/155741)
-+ App-iOS platform fixes the bug that Vue3 project recording playback is invalid [Details](https://ask.dcloud.net.cn/question/155741)
- 
-+ 新增 Stripe支付支持设置账单信息 [详情](https://uniapp.dcloud.net.cn/tutorial/app-payment-stripe.html)
-+ Added support for setting billing information for Stripe payment [Details](https://uniapp.dcloud.net.cn/tutorial/app-payment-stripe.html)
-+ iOS平台 修复 3.6.0版本引出的 开屏广告自定义底部图片、背景色不生效的Bug
-+ iOS platform fixed the bug caused by version 3.6.0 that the custom bottom image and background color of the opening screen advertisement did not take effect
-+ iOS平台 修复 标题栏 titleNView 设置默认导航栏颜色可能导致与状态栏颜色不一致的Bug
-+ iOS platform fixed the bug that the title bar titleNView setting the default navigation bar color may cause inconsistent color with the status bar
-+ iOS平台 修复 setUIStyle 设置暗黑模式可能无效的Bug
-+ iOS platform fixes the bug that setUIStyle may not work when setting the dark mode
-+ iOS平台 修复 uts插件 类构造函数无法使用外参的Bug
-+ iOS platform fixes the bug that the class constructor of the uts plugin cannot use external parameters
+## 3.6.11.20221205-alpha
+
++ App平台 新增 【ext api】 Wi-Fi 模块 [详情](https://uniapp.dcloud.net.cn/api/system/wifi.html)
++ App平台 优化 Vue2 项目 component is 支持传入组件选项和构造函数 [详情](https://ask.dcloud.net.cn/question/140044)
++ App平台 修复 nvue 页面 slider 组件某些情况下位置位置计算不准确的Bug [详情](https://ask.dcloud.net.cn/question/152714)
++ App-iOS平台 补齐 【ext api】 uni.onMemoryWarning [详情](https://ext.dcloud.net.cn/plugin?id=10071)
++ App-iOS平台 修复 3.6.7 版本引出的 ad 组件偶现加载优量汇广告成功但无法正常渲染的Bug
++ 新增 Record、Camera、Barcode、Orientation模块，解决iOS平台隐私合规检测可能报包含麦克风、相机/相册、运动等权限的问题 [详情](https://uniapp.dcloud.net.cn/tutorial/app-modules.html#bcor)
++ iOS平台 更新 uni-AD 快手广告SDK为 3.3.33 版；快手内容联盟SDK为 3.3.32 版；今日头条穿山甲SDK为 4.9.0.5 版；穿山甲GroMore广告SDK为 3.8.0.2 版
++ iOS平台 修复 IAP支付 订单数据 orderInfo 参数异常时引起应用假死的Bug
++ iOS平台 修复 3.6.10版本引出的 三方登录授权不触发回调的Bug [详情](https://ask.dcloud.net.cn/question/158380)
 
 
 
@@ -131,11 +106,9 @@ The recommended method is to put the entire SDK under the project path. When add
 `Note: In the Bundles folder of the offline SDK, update SVProgressHUD.bundle to DCSVProgressHUD.bundle, and update TZImagePickerController.bundle to DCTZImagePickerController.bundle; update the header files of DCSVProgressHUD and DCTZImagePickerController in the inc folder`
 
 
-[和彩云点击下载SDK，提取码: JpK3](https://caiyun.139.com/m/i?115CoUMQTO9ja) 
-[Hecaiyun click to download SDK, extraction code: JpK3](https://caiyun.139.com/m/i?115CoUMQTO9ja)
+[和彩云点击下载历史版本，提取码: BeZD](https://caiyun.139.com/m/i?115CeUWzHPKEs) 
 
-[百度云点击下载历史版本，提取码: hn6k](https://pan.baidu.com/s/1lnFoCTV1H6qjIc5ZjafWEA?pwd=hn6k) (若下载后解压失败，使用和彩云下载)
-[Baidu Cloud click to download the historical version, extraction code: hn6k](https://pan.baidu.com/s/1lnFoCTV1H6qjIc5ZjafWEA?pwd=hn6k) (If the decompression fails after downloading, use He Caiyun to download)
+[百度云点击下载历史版本，提取码: ee34](https://pan.baidu.com/s/1gKDtzW8Olby81XPlzs6PVQ?pwd=ee34) (若下载后解压失败，使用和彩云下载)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)

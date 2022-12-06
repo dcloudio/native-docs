@@ -1,6 +1,18 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.6.10.20221121-alpha
++ App平台 修复 Vue2 项目 编辑 uts 插件代码热更新失效的Bug
++ App平台 修复 Vue2 项目 nvue 页面不支持 uts 插件的Bug [详情](https://ask.dcloud.net.cn/question/157435)
++ App平台 修复 darkmode 模式下设置 statusBar 颜色不正常的Bug
++ App平台 修复 nvue 首页设置 navigationBarTextStyle 无效的Bug [详情](https://ask.dcloud.net.cn/question/150485)
++ App平台 修复 uni.startSoterAuthentication（生物识别）识别错误时 loading 没有文字提示的Bug [详情](https://ask.dcloud.net.cn/question/157353)
+ 
++ iOS平台 修复 3.6.7版本引出的 设置启动页不自动关闭无效的Bug [详情](https://ask.dcloud.net.cn/question/157721)
++ iOS平台 修复 plus.screen.lockOrientation、plus.screen.unlockOrientation 在 iOS16 设备无效的Bug [详情](https://ask.dcloud.net.cn/question/155357)
++ iOS平台 修复 播放音频时无法正常录音的Bug [详情](https://ask.dcloud.net.cn/question/157408)
++ iOS平台 修复 设置暗黑模式跟随系统主题可能无效的Bug
+
 ## 3.6.9.20221114-alpha
 + 新增 uni错误规范 [详情](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
 + Added uni error specification [details](https://uniapp.dcloud.net.cn/tutorial/err-spec.html)
