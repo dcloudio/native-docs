@@ -34,17 +34,14 @@
 ## Android 离线SDK - Alpha版
 ## Android Offline SDK - Alpha Version
 
-### 2022年12月05日发布——HBuilderX（3.6.11.20221205-alpha）
+### 2022年12月08日发布——HBuilderX（3.6.12.20221207-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 [Baidu Cloud](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg), extraction code: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CnW8jOEAN7)，提取码: p1U1
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.11.20221205-alpha）版本生成本地打包App资源。
-+ 修复 使用 tabbar 后页面多次跳转返回可能引起路由管理异常的Bug
-+ 修复 3.6.9 版本引出的 uni.switchTab 在特殊场景可能无法正常切换页面的Bug
-+ 更新 UniPush 使用的个推SDK为 3.2.13.0 版，个推核心组件SDK为 3.1.12.0 版；谷歌渠道个推SDK为 4.10.1.0 版；解决隐私合规检测可能报超频采集的问题
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.12.20221207-alpha）版本生成本地打包App资源。
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 [Baidu network disk download historical version](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA), extraction code: 6msp
