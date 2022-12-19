@@ -66,19 +66,20 @@ The recommended method is to put the entire SDK under the project path. When add
 ## iOS Offline SDK - Alpha Version
 
 
-### 2022年12月07日发布——HBuilderX（3.6.12.20221207-alpha）
+### 2022年12月16日发布——HBuilderX（3.6.14.20221216-alpha）
 
 
-[和彩云点击下载SDK，提取码: LC9d](https://caiyun.139.com/m/i?115CepcwXPh4W)
+[和彩云点击下载SDK，提取码: xK0h](https://caiyun.139.com/m/i?115CnWadJcZmB)
 
-[百度云点击下载SDK，提取码: nfre](https://pan.baidu.com/s/13NnafTM0CmkFNIHpkhvUiA?pwd=nfre) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载SDK，提取码: g8qy](https://pan.baidu.com/s/1UtYLQTfUlgmQ1EmEQNRuJA?pwd=g8qy) (若下载后解压失败，使用和彩云下载)
 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.12.20221207-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221216-alpha）版本生成本地打包App资源。
 
-## 3.6.12.20221207-alpha
+## 3.6.14.20221216-alpha
 
-+ iOS平台 修复 3.6.11 版本引出的 显示开屏广告时弹出系统 alert 窗偶现崩溃的Bug
++ 修复 UniPush 2.0 在vue2项目中 启用离线推送后，调用 uni.getPushClientId 某些情况下获取不到cid的Bug[详情](https://ask.dcloud.net.cn/question/158921)
++ 修复 plus.push.getClientInfoAsync 在应用热重启后调用不触发回调的Bug
 
 `注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
 `Note: After the HX3.2.0 version, the configuration of the general links of WeChat, QQ, and Weibo in the Plist has changed. If you encounter login, sharing, and payment problems during the upgrade, please refer to the latest document to configure`
@@ -99,9 +100,9 @@ The recommended method is to put the entire SDK under the project path. When add
 `Note: In the Bundles folder of the offline SDK, update SVProgressHUD.bundle to DCSVProgressHUD.bundle, and update TZImagePickerController.bundle to DCTZImagePickerController.bundle; update the header files of DCSVProgressHUD and DCTZImagePickerController in the inc folder`
 
 
-[和彩云点击下载历史版本，提取码: dPLZ](https://caiyun.139.com/m/i?115CoV5ECNz2d) 
+[和彩云点击下载历史版本，提取码: ECMd](https://caiyun.139.com/m/i?115CeV7MHJQAL) 
 
-[百度云点击下载历史版本，提取码: 43vf](https://pan.baidu.com/s/1dO3biaIebsV28ltc5J-BvQ?pwd=43vf) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载历史版本，提取码: 3k77](https://pan.baidu.com/s/1x-qbRD-KIB39nc8cqcpWIA?pwd=3k77) (若下载后解压失败，使用和彩云下载)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)

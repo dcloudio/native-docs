@@ -1,6 +1,10 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.6.12.20221207-alpha
+
++ iOS平台 修复 3.6.11 版本引出的 显示开屏广告时弹出系统 alert 窗偶现崩溃的Bug
+
 ## 3.6.11.20221205-alpha
 
 + App平台 新增 【ext api】 Wi-Fi 模块 [详情](https://uniapp.dcloud.net.cn/api/system/wifi.html)
