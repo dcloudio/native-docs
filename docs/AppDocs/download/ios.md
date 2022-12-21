@@ -12,9 +12,9 @@
 
 ### 2022年12月15日发布——HBuilderX（3.6.14.20221215） 
 
-[和彩云点击下载SDK，提取码: 83QB](https://caiyun.139.com/m/i?115Cnqlc3QBlH) 
+[和彩云点击下载SDK，提取码: AZ1C](https://caiyun.139.com/m/i?115CnqSKZks4G) 
 
-[百度云点击下载SDK，提取码: ia4q](https://pan.baidu.com/s/1uzV50Z65W6eSZwAFj6YrBQ?pwd=ia4q) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载SDK，提取码: c4gz](https://pan.baidu.com/s/1XsWhW_-3TpiGQdzgbyrU2g?pwd=c4gz) (若下载后解压失败，使用和彩云下载)
 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221215）版本生成本地打包App资源。
@@ -48,9 +48,9 @@
 ### 2022年12月16日发布——HBuilderX（3.6.14.20221216-alpha）
 
 
-[和彩云点击下载SDK，提取码: xK0h](https://caiyun.139.com/m/i?115CnWadJcZmB)
+[和彩云点击下载SDK，提取码: Tdt6](https://caiyun.139.com/m/i?115CnWRrUROf3)
 
-[百度云点击下载SDK，提取码: g8qy](https://pan.baidu.com/s/1UtYLQTfUlgmQ1EmEQNRuJA?pwd=g8qy) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载SDK，提取码: vfjm](https://pan.baidu.com/s/1IMP5bOFINl5Swu1G7JjZbQ?pwd=vfjm) (若下载后解压失败，使用和彩云下载)
 
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221216-alpha）版本生成本地打包App资源。
