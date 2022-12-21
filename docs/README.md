@@ -15,10 +15,10 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 
 **名词解释**
 
-- 宿主：想要构建小程序的原生App，集成uni小程序SDK的宿主
-- 小程序：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
-- wgt：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
-- HBuilderX：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
+-  **宿主** ：想要构建小程序的原生App，集成uni小程序SDK的宿主
+-  **小程序** ：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
+-  **wgt** ：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
+-  **HBuilderX** ：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
 
 **注意**
 	
@@ -28,9 +28,9 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 ## 特色
 uni-app 在 app 端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。其中 webview 渲染在 Android 上也同时支持系统webview渲染和x5渲染。
 
-- 性能
+-  **性能** ：
 uni小程序sdk的性能，与uni-app的app端v3编译器相同，性能超过市面其他小程序引擎。在启动速度、页面加载速度、逻辑层与视图层通信优化等方面均优有更优秀的表现。
-- 功能
+-  **功能** ：
 uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力均可调用。不同于小程序的限制和有限API，uni小程序sdk的功能更加强大。
 - 插件生态
 [uni-app插件市场](https://ext.dcloud.net.cn/)有大量丰富的插件。
