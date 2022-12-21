@@ -122,17 +122,17 @@ The functions of the uni applet sdk are the same as those of the app side of uni
 
 ## FAQ
 Q：uni小程序sdk 与 App离线sdk 的差别是什么？
-Q: What is the difference between uni applet sdk and App offline sdk?
+
 A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App，用DCloud的工具来开发App，又不想使用云打包，则可以使用App离线sdk打包发布为原生App，App离线sdk支持5+ App、uni-app，不支持wap2app。虽然App离线sdk也可以集成到已有原生App中，但自从uni小程序sdk推出后，将不再推荐这种用法。
 A: Solve two different demand scenarios. The usage scenario of the former is that you already have a native App. On this basis, you can expand the mini-program capabilities of the host App, or replace some functional modules of the native App with mini-programs. Only uni-app is supported. And use the v3 compiler; the usage scenario of the latter is that you don’t have a native app, but you use DCloud’s tools to develop an app, but you don’t want to use cloud packaging, you can use the app offline sdk to package and publish it as a native app, and the app offline sdk supports 5+ apps , uni-app, does not support wap2app. Although the App Offline SDK can also be integrated into the existing native App, since the launch of the uni Mini Program SDK, this usage is no longer recommended.
 
 Q：想了解 uni小程序sdk 都有哪些js api，和微信小程序相比如何？
-Q: I want to know what js APIs the uni applet sdk has, how does it compare with the wechat applet?
+
 A：uni小程序sdk的js api比微信小程序更多，不同于微信小程序的“小”的限制，uni小程序sdk的功能更接近于正常的app，没有包体积限制，并且提供了更丰富的api，以支持完整app的开发。文档和演示demo见：[https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
 A: The js API of uni applet sdk is more than that of wechat applet. Rich APIs to support the development of complete apps. For documentation and demos, see: [https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
 
 Q: uni小程序不需要集成分享、支付等第三方的功能。集成到我的Android项目中APK的体积会增加多少？
-Q: The uni applet does not need to integrate third-party functions such as sharing and payment. How much will the APK size increase when integrated into my Android project?
+
 A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk，只集成[基础模块](UniMPDocs/UseSdk/android?id=unimpsdksdklibs-依赖库说明)。占用APK体积大小如下：
 A: If SDKs such as video, map, sharing, payment, login, and live pusher are excluded, only [basic modules](UniMPDocs/UseSdk/android?id=unimpsdksdklibs-%E4%BE%9D%E8%B5%96%E5 %BA%93%E8%AF%B4%E6%98%8E). The occupied APK volume size is as follows:
 
@@ -145,7 +145,7 @@ A: If SDKs such as video, map, sharing, payment, login, and live pusher are excl
   |'armeabi-v7a', 'x86', 'arm64-v8a'|about 16MB
 
 Q：支持uni小程序的基座与标准的HX基座权限方面有什么变化？
-Q: What is the difference between the base that supports uni applets and the standard HX base permissions?
+
 A：两者权限基本一致，除了uni小程序的基座会增加下列权限，用于支持创建小程序桌面快捷方式
 A: The permissions of the two are basically the same, except that the base of the uni applet will add the following permissions to support the creation of applet desktop shortcuts
 
