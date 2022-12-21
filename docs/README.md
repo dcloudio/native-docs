@@ -22,14 +22,10 @@ The uni applet SDK is a native SDK that provides Android and iOS versions. It ne
 **名词解释**
 **Glossary**
 
-- 宿主：想要构建小程序的原生App，集成uni小程序SDK的宿主
-- Host: the native app that wants to build a small program, and the host that integrates the uni small program SDK
-- 小程序：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
-- Small program: a small program project written by the front-end code running in the host, developed using the uni-app framework
-- wgt：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
-- wgt: small program application resource package, that is, the project developed using the uni-app framework, the exported small program application resource package
-- HBuilderX：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
-- HBuilderX: [IDE tool] for developing uni-apps (https://www.dcloud.io/hbuilderx.html)
+-  **宿主** ：想要构建小程序的原生App，集成uni小程序SDK的宿主
+-  **小程序** ：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
+-  **wgt** ：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
+-  **HBuilderX** ：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
 
 **注意**
 **Notice**
@@ -44,12 +40,9 @@ The uni applet SDK is a native SDK that provides Android and iOS versions. It ne
 uni-app 在 app 端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。其中 webview 渲染在 Android 上也同时支持系统webview渲染和x5渲染。
 uni-app is a dual-rendering engine on the app side, which can use webview rendering like WeChat, or use a modified version of weex for native rendering. Among them, webview rendering also supports system webview rendering and x5 rendering on Android.
 
-- 性能
-- performance
+-  **性能** ：
 uni小程序sdk的性能，与uni-app的app端v3编译器相同，性能超过市面其他小程序引擎。在启动速度、页面加载速度、逻辑层与视图层通信优化等方面均优有更优秀的表现。
-The performance of uni applet sdk is the same as that of uni-app's app-side v3 compiler, and its performance exceeds that of other applet engines on the market. It has better performance in terms of startup speed, page loading speed, logic layer and view layer communication optimization, etc.
-- 功能
-- Function
+-  **功能** ：
 uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力均可调用。不同于小程序的限制和有限API，uni小程序sdk的功能更加强大。
 The functions of the uni applet sdk are the same as those of the app side of uni-app, and all native capabilities can be called. Unlike the restrictions and limited API of applets, the uni applet sdk has more powerful functions.
 - 插件生态
