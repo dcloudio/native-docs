@@ -166,7 +166,8 @@
 	    <td>
 		NSCameraUsageDescription<br/>
 		NSPhotoLibraryUsageDescription<br/>
-		NSPhotoLibraryAddUsageDescription
+		NSPhotoLibraryAddUsageDescription<br/>
+		NSMicrophoneUsageDescription
 		</td>
 	</tr>
 	<tr>
