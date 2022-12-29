@@ -29,3 +29,4 @@
 |百度百青藤|v4.901|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
+|个推|v3.0.3.0|Push/UniPush|
