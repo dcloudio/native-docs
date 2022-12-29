@@ -15,8 +15,7 @@
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibPush.a、libUniPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
-| liblibPush.a、libUniPush.a、GTSDK.framework| libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|none|
+|liblibPush.a、libUniPush.a、GTSDK.xcframework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
 **注意： UserNotifications.framework 需要设置为Optional **
 **Note: UserNotifications.framework needs to be set to Optional**
@@ -40,8 +39,7 @@
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibPush.a、libGeTuiPush.a、GTSDK.framework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
-| liblibPush.a、libGeTuiPush.a、GTSDK.framework| libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|none|
+|liblibPush.a、libGeTuiPush.a、GTSDK.xcframework|libc++.tbd、libsqlite3.tbd、libz.tbd、libresolv.tbd、UserNotifications.framework、Security.framework、MobileCoreServices.framework、SystemConfiguration.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、|无|
 
 **注意： UserNotifications.framework 需要设置为Optional **
 **Note: UserNotifications.framework needs to be set to Optional**
