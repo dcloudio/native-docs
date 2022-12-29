@@ -24,7 +24,7 @@
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 **⚠️Note: If the click fails to download, you can right-click the link -> select "Save link as.." to download. **
 
-### 2022年11月29日发布
+### 2022年12月29日发布
 
 #### SDK 3.6.15 版本
 
