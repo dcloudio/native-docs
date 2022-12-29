@@ -10,32 +10,30 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2022年12月15日发布——HBuilderX（3.6.14.20221215） 
+### 2022年12月28日发布——HBuilderX（3.6.15.20221228） 
 
-[和彩云点击下载SDK，提取码: AZ1C](https://caiyun.139.com/m/i?115CnqSKZks4G) 
+[和彩云点击下载SDK，提取码: KJxT](https://caiyun.139.com/m/i?115CopJ2k13OG) 
 
-[百度云点击下载SDK，提取码: c4gz](https://pan.baidu.com/s/1XsWhW_-3TpiGQdzgbyrU2g?pwd=c4gz) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载SDK，提取码: 5ib6](https://pan.baidu.com/s/1WQa0p9B3PqZf3rO0lgcCwg?pwd=5ib6) (若下载后解压失败，使用和彩云下载)
 
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221215）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.15.20221228）版本生成本地打包App资源。
 
-## 3.6.14.20221215
+## 3.6.15.20221228
   
-无
++ App-iOS平台 修复 nvue 页面 ad-content-page 组件拉取广告配置失败后无法重新拉取的Bug
++ iOS平台 更新 UniPush 使用的个推SDK为 2.7.2.0 版(新版需要支持swift环境,纯OC项目添加一个swift文件后,根据提示操作即可)
++ iOS平台 修复 设置应用语言为英文时部分系统界面可能会显示为回退语言的Bug[详情](https://ask.dcloud.net.cn/question/159445)
 
 
 
-
-`注意：HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
-
-`注意：HX3.1.17版本之后，一键登录功能需要增加配置libGTCommonSDK-1.2.2.0.a库，否则可能编译报错`
-    
-`注意：HX3.0.4版本之后，需要使用Xcode12.1以上版本，否则可能编译报错`
+`注意：HX3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
 
 
-[和彩云点击下载历史版本，提取码: koWv](https://caiyun.139.com/m/i?115CoUhyanjtn) 
 
-[百度网盘下载历史版本，提取码: 749q](https://pan.baidu.com/s/178TcQ6K7gFkQBF2v7_lQsg?pwd=749q)(若下载后解压失败，使用和彩云下载)
+[和彩云点击下载历史版本，提取码: T941](https://caiyun.139.com/m/i?115CoVK34ftgi) 
+
+[百度网盘下载历史版本，提取码: x45v](https://pan.baidu.com/s/1Fo9zb661IZYj0iCF_vBSVg?pwd=x45v)(若下载后解压失败，使用和彩云下载)
 
 
 

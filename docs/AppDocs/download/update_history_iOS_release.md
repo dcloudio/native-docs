@@ -1,4 +1,7 @@
 ## 正式版历次更新说明
+## 3.6.14.20221215
+  
+无
 
 ## 3.6.13.20221209
 + App平台、Web平台 新增 暗黑模式（DarkMode） [详情](https://uniapp.dcloud.net.cn/tutorial/darkmode.html)
