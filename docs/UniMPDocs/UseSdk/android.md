@@ -162,8 +162,6 @@ dependencies {
 
 然后选中您的项目，右键->发行->原生App-制作应用wgt包
 
-注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包” ，2.6.2 版本近期会发布，只是修改了描述功能是一样的.
-
 ![](https://ask.dcloud.net.cn/uploads/article/20200225/9d254389e00fe11f36606b3fc6577ddb.png)
 
 项目编译完成后会在控制台，输出wgt包的路径，点击路径可以直接打开wgt所在目录

@@ -15,10 +15,10 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 
 **名词解释**
 
-- 宿主：想要构建小程序的原生App，集成uni小程序SDK的宿主
-- 小程序：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
-- wgt：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
-- HBuilderX：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
+-  **宿主** ：想要构建小程序的原生App，集成uni小程序SDK的宿主
+-  **小程序** ：运行在宿主中的前端代码编写的小程序项目，使用 uni-app 框架开发
+-  **wgt** ：小程序应用资源包，即使用 uni-app 框架开发的项目，导出的小程序应用资源包
+-  **HBuilderX** ：开发 uni-app 的 [IDE 工具](https://www.dcloud.io/hbuilderx.html)
 
 **注意**
 	
@@ -28,9 +28,9 @@ uni小程序SDK是原生SDK，提供 Android 版本 和 iOS 版本，需要在�
 ## 特色
 uni-app 在 app 端是双渲染引擎，可以像微信那样使用webview渲染，也可以使用改造版的weex进行原生渲染。其中 webview 渲染在 Android 上也同时支持系统webview渲染和x5渲染。
 
-- 性能
+-  **性能** ：
 uni小程序sdk的性能，与uni-app的app端v3编译器相同，性能超过市面其他小程序引擎。在启动速度、页面加载速度、逻辑层与视图层通信优化等方面均优有更优秀的表现。
-- 功能
+-  **功能** ：
 uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力均可调用。不同于小程序的限制和有限API，uni小程序sdk的功能更加强大。
 - 插件生态
 [uni-app插件市场](https://ext.dcloud.net.cn/)有大量丰富的插件。
@@ -71,12 +71,15 @@ uni小程序sdk的功能，与uni-app的app端功能相同，所有原生能力�
 
 ## FAQ
 Q：uni小程序sdk 与 App离线sdk 的差别是什么？
+
 A：解决两种不同的需求场景，前者的使用场景是你已经有原生App，在此基础上扩展宿主App的小程序能力，或者用小程序替换原生App的部分功能模块，仅支持uni-app并使用v3编译器；后者的使用场景是你没有原生App，用DCloud的工具来开发App，又不想使用云打包，则可以使用App离线sdk打包发布为原生App，App离线sdk支持5+ App、uni-app，不支持wap2app。虽然App离线sdk也可以集成到已有原生App中，但自从uni小程序sdk推出后，将不再推荐这种用法。
 
 Q：想了解 uni小程序sdk 都有哪些js api，和微信小程序相比如何？
+
 A：uni小程序sdk的js api比微信小程序更多，不同于微信小程序的“小”的限制，uni小程序sdk的功能更接近于正常的app，没有包体积限制，并且提供了更丰富的api，以支持完整app的开发。文档和演示demo见：[https://uniapp.dcloud.io/](https://uniapp.dcloud.io/)
 
 Q: uni小程序不需要集成分享、支付等第三方的功能。集成到我的Android项目中APK的体积会增加多少？
+
 A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk，只集成[基础模块](UniMPDocs/UseSdk/android?id=unimpsdksdklibs-依赖库说明)。占用APK体积大小如下：
 
   |cpu型号.so选择|apk占用大小   
@@ -85,6 +88,7 @@ A: 如果排除视频、地图、分享、支付、登录、直播pusher等sdk�
   |'armeabi-v7a'、'x86'、'arm64-v8a'|约16MB左右
 
 Q：支持uni小程序的基座与标准的HX基座权限方面有什么变化？
+
 A：两者权限基本一致，除了uni小程序的基座会增加下列权限，用于支持创建小程序桌面快捷方式
 
   |权限|
