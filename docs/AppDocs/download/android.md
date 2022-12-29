@@ -2,14 +2,15 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2022年11月22日发布——HBuilderX（3.6.5.20221121）
+### 2022年12月29日发布——HBuilderX（3.6.15.20221228）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CeUbIVKWgF)，提取码: VSud
+[和彩云](https://caiyun.139.com/m/i?115CnX8m11GZ8)，提取码: cqMr
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.5.20221121）版本生成本地打包App资源。
-+ 修复 uni.getStorageSync 在某些情况下可能报SyntaxError错误的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.15.20221228）版本生成本地打包App资源。
++ 修复 3.6.13版引出的 从系统相册中选择文件在部分鸿蒙设备可能引起崩溃的Bug
++ 修复 设置 targetSdkVersion 值大于或等于 30 时使用高德地图引起应用崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
@@ -20,13 +21,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2022年12月08日发布——HBuilderX（3.6.12.20221207-alpha）
+### 2022年12月19日发布——HBuilderX（3.6.14.20221216-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CnW8jOEAN7)，提取码: p1U1
+[和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.12.20221207-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221216-alpha）版本生成本地打包App资源。
++ 修复 使用 canvas 模块后 wgt 升级提示没有配置 canvas 模块的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
