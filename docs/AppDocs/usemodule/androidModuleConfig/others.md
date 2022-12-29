@@ -67,6 +67,26 @@ The following aar files need to be placed in the libs directory of the project
 <feature name="LivePusher" value="io.dcloud.media.live.LiveMediaFeatureImpl"/>
 ```
 
+## Barcode（扫码）
+
+### Androidmainfest.xml文件需要修改的项
+
+#### 需要在application节点前添加权限
+
+```
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+```
+
+### dcloud_properties.xml需要添加如下代码
+
+```
+<feature name="Barcode" value="io.dcloud.feature.barcode2.BarcodeFeatureImpl"/>
+```
+
 ## Bluetooth（低功耗蓝牙）
 ## Bluetooth (Bluetooth Low Energy)
 
@@ -110,6 +130,22 @@ The following aar files need to be placed in the libs directory of the project
 
 ```
 <feature name="Bluetooth" value="io.dcloud.feature.bluetooth.BluetoothFeature"/>
+```
+
+## Camera（相机/相册）
+
+### Androidmainfest.xml文件需要修改的项
+
+#### 需要在application节点前添加权限
+
+```
+	<uses-permission android:name="android.permission.CAMERA" />
+```
+
+### dcloud_properties.xml需要添加如下代码
+
+```
+<feature name="Camera" value="io.dcloud.js.camera.CameraFeatureImpl"/>
 ```
 
 ## iBeacon
@@ -263,6 +299,17 @@ The following aar files need to be placed in the libs directory of the project
 <feature name="Messaging" value="io.dcloud.adapter.messaging.MessagingPluginImpl" />
 ```
 
+## Record（录音）
+
+### Androidmainfest.xml文件需要修改的项
+
+#### 需要在application节点前添加权限
+
+```
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+```
+
 ## SQLite（数据库）
 ## SQLite (database)
 
@@ -286,6 +333,19 @@ The following aar files need to be placed in the libs directory of the project
 ```
 <feature name="Sqlite" value="io.dcloud.feature.sqlite.DataBaseFeature"/>
 ```
+
+## gcanvas
+
+### 需要拷贝的文件
+
+**需要引入工程的aar文件**
+
+需要将以下aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK/libs | weex_gcanvas-release.aar |
+
 
 ## 拓展模块
 ## Extension module

@@ -1,3 +1,52 @@
+### 2022年12月19日发布——HBuilderX（3.6.14.20221215）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221215）版本生成本地打包App资源。
++ 修复 使用 canvas 模块后 wgt 升级提示没有配置 canvas 模块的Bug
+
+### 2022年12月12日发布——HBuilderX（3.6.13.20221209）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.13.20221209）版本生成本地打包App资源。
++ 优化 Vue3 项目 minUserAgentVersion 默认配置为 49，避免低版本webview上白屏无提示
++ 修复 3.5.5 版本引出 input 组件自动获取焦点可能失效的Bug
++ 修复 uni.getStorageSync在某些情况下可能报SyntaxError错误的Bug
++ 修复 uni.request 不支持 head 请求的Bug
++ 修复 页面中存在多个 input 组件时获取焦点光标位置可能不正确的Bug
++ 修复 nvue live-pusher 组件在 Android11+ 设备使用移动网络无法预览的Bug
++ 修复 使用 tabbar 后页面多次跳转返回可能引起路由管理异常的Bug
++ 新增 plus.device.getDeviceId 获取匿名设备标识
++ 新增 Stripe支付支持设置账单信息
++ 更新 uni-AD 腾讯优量汇SDK Android为 4.492.1362 版；快手广告SDK Android为3.3.32；快手内容联盟SDK iOS为 3.3.32 版；今日头条穿山甲SDK Android为 4.9.0.8 版；穿山甲GroMore广告SDK Android为 4.8.0.0 版；Sigmob广告联盟SDK Android为 4.7.0 版；百度百青藤广告SDK Android为 9.241 版；华为广告SDK Android为 13.4.56.302 版
++ 新增 支持暗黑模式
++ 新增 隐私政策提示框支持配置游客模式按钮
++ 新增 隐私政策提示框支持 showAlways 配置是否每次启动都弹窗提示
++ 修复 plus.device.uuid 在高版本Android上不同设备获取的值可能相同的Bug。如之前依赖uuid，需注意处理兼容
++ 修复 上架应用市场隐私合规检测可能报数字天堂SDK获取传感器的行为的Bug
++ 修复 应用安全检测可能报app关联启动的Bug
++ 修复 原生隐私政策提示框在部分设备 message 内容可能显示不正常的Bug
++ 修复 3.6.0版本引出的 首次真机运行隐私政策提示框可能不弹出的Bug
++ 修复 应用设置仅支持竖屏时在部分Android8设备可能引起应用崩溃的Bug
++ 修复 X5 内核在部分情况无法正确加载的Bug
++ 修复 直播推流 LivePusher 在部分场景可能引起应用崩溃的Bug
++ 修复 视频播放控件 VideoPlayer 切换视频资源后静音状态可能失效的Bug
++ 修复 视频播放控件 VideoPlayer 销毁时可能导致卡顿的Bug
++ 修复 视频播放控件 VideoPlayer 在部分情况下标题栏不显示的Bug
++ 修复 chooseVideo 选择视频文件在鸿蒙系统可能无法加载缩略图的Bug
++ 修复 chooseVideo 使用相机拍摄视频在Android10及以上设备可能失败的Bug
++ 修复 chooseImage、chooseVideo 存在读取设备应用安装列表的行为可能导致隐私检测不合规的Bug
++ 修复 监听系统暗黑模式主题切换事件可能无效的Bug
++ 修复 云端打包 使用自有证书可能报 Invalid keystore format 错误的Bug
++ 修复 云端打包 配置应用清单文件 AndroidManifest.xml 的 package 属性值与包名相同时打包失败的Bug
++ 修复 一键登录 全屏模式设置背景图时沉浸式效果不正确的Bug
++ 修复 UniPush 异步获取推送标识在部分情况可能返回慢的Bug
++ 更新 UniPush 使用的个推SDK为 3.2.13.0 版，个推核心组件SDK为 3.1.12.0 版；谷歌渠道个推SDK为 4.10.1.0 版；解决隐私合规检测可能报超频采集的问题
++ 更新 Paypal SDK 为 0.6.2 版，解决设置targetSdkVersion为31打包失败的问题
++ 更新 高德地图SDK为 9.5.0 版，高德定位SDK为 6.1.0 版，解决隐私合规检测可能报高德SDK收取MAC地址、ANDROID ID的问题
+
+### 2022年11月22日发布——HBuilderX（3.6.5.20221121）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.5.20221121）版本生成本地打包App资源。
++ 修复 uni.getStorageSync 在某些情况下可能报SyntaxError错误的Bug
+
 ### 2022年09月26日发布——HBuilderX（3.6.4.20220922）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.4.20220922）版本生成本地打包App资源。
