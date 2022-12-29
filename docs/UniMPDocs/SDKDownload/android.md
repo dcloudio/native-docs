@@ -15,19 +15,20 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2022年11月04日发布
+### 2022年11月29日发布
 
-#### SDK 3.6.4 版本
+#### SDK 3.6.15 版本
 
-[点击下载UniMPSDK_Android@3.6.4.20221104.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.4.20221104.zip)
+[点击下载UniMPSDK_Android@3.6.15.20221129.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.15.20221129.zip)
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.4.20220922.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.15.20221228.html)
 
 
 ## 升级SDK注意事项
 
++ 3.6.15 版本之后，为了支持暗黑模式，新增了一个必须集成的依赖 androidx.webkit:webkit:1.3.0，如果未集成此依赖，可能会导致白屏
 + 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
 + 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
 + 更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
