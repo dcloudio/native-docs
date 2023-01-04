@@ -2,4 +2,7 @@
 ## Q: Sometimes after installing the application, it is found that the project resources have not been updated
 
 A: 可能是control.xml 文件配置了syncDebug="true"导致的，需要改成false或者删除这个配置
-A: It may be caused by the configuration of syncDebug="true" in the control.xml file, which needs to be changed to false or deleted.
+
+## Q: 更新SDK后编译报'Could not find or use auto-linked library 'swiftXXX''的错误
+
+A: 可能是工程为纯OC的项目，部分SDK更新后需要swift环境导致的，主工程添加swift环境即可解决(新建一个swift文件后，根据xcode提示操作即可)
