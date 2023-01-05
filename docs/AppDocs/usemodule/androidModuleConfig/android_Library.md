@@ -14,7 +14,9 @@
 |移动安全联盟OAID|V1.0.25|HBuilder X V3.2.5|oaid_sdk 获取oaid使用
 |Mobile Security Alliance OAID| V1.0.25| HBuilder X V3.2.5| oaid_sdk Get oaid usage
 |glide|V4.9.0|HBuilder X V3.2.5|图片库 图片预览使用
-|fresco|V2.6.0|HBuilder X V3.4.0|图片库 用于nvue页面图片展示
+|fresco|V1.13.0|HBuilder X V3.2.5|图片库 用于nvue页面图片展示
+|webkit|V1.3.0|HBuilder X V3.6.15|webkit依赖库，用于支持暗黑模式  3.6.15版本必须集成
+
 
 ### 其他功能模块依赖库
 ### Other functional modules depend on the library
