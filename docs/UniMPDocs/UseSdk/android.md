@@ -70,7 +70,8 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.46.android' //必须集成
     implementation 'com.facebook.fresco:fresco:2.5.0'//必须集成
     implementation 'com.facebook.fresco:animated-gif:2.5.0'//必须集成
-	implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
+    implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
+    implementation 'androidx.webkit:webkit:1.3.0' //3.6.15版本之后 必须集成
 }
 ```
 
@@ -139,7 +140,8 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.1.46.android'
     implementation 'com.facebook.fresco:fresco:1.13.0'
     implementation 'com.facebook.fresco:animated-gif:1.13.0'
-	implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'androidx.webkit:webkit:1.3.0'
 }
 ```
 
