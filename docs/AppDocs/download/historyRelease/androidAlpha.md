@@ -1,3 +1,8 @@
+### 2022年12月19日发布——HBuilderX（3.6.14.20221216-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221216-alpha）版本生成本地打包App资源。
++ 修复 使用 canvas 模块后 wgt 升级提示没有配置 canvas 模块的Bug
+
 ### 2022年12月08日发布——HBuilderX（3.6.12.20221207-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.12.20221207-alpha）版本生成本地打包App资源。
