@@ -1,6 +1,11 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.6.14.20221216-alpha
+
++ 修复 UniPush 2.0 在vue2项目中 启用离线推送后，调用 uni.getPushClientId 某些情况下获取不到cid的Bug[详情](https://ask.dcloud.net.cn/question/158921)
++ 修复 plus.push.getClientInfoAsync 在应用热重启后调用不触发回调的Bug
+
 ## 3.6.12.20221207-alpha
 
 + iOS平台 修复 3.6.11 版本引出的 显示开屏广告时弹出系统 alert 窗偶现崩溃的Bug

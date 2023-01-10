@@ -53,43 +53,38 @@ The recommended method is to put the entire SDK under the project path. When add
 ## iOS Offline SDK - Alpha Version
 
 
-### 2022年12月16日发布——HBuilderX（3.6.14.20221216-alpha）
+### 2023年01月09日发布——HBuilderX（3.6.16.20230109-alpha）
 
 
-[和彩云点击下载SDK，提取码: Tdt6](https://caiyun.139.com/m/i?115CnWRrUROf3)
+[和彩云点击下载SDK，提取码: wx6x](https://caiyun.139.com/m/i?115CoAKfgRAVo)
 
-[百度云点击下载SDK，提取码: vfjm](https://pan.baidu.com/s/1IMP5bOFINl5Swu1G7JjZbQ?pwd=vfjm) (若下载后解压失败，使用和彩云下载)
-
-
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.14.20221216-alpha）版本生成本地打包App资源。
-
-## 3.6.14.20221216-alpha
-
-+ 修复 UniPush 2.0 在vue2项目中 启用离线推送后，调用 uni.getPushClientId 某些情况下获取不到cid的Bug[详情](https://ask.dcloud.net.cn/question/158921)
-+ 修复 plus.push.getClientInfoAsync 在应用热重启后调用不触发回调的Bug
-
-`注意:HX3.2.0版本之后，微信,QQ,微博的通用链接在Plist中配置有变化,升级如遇到登录,分享,支付问题,请参考最新的文档去配置`
-`Note: After the HX3.2.0 version, the configuration of the general links of WeChat, QQ, and Weibo in the Plist has changed. If you encounter login, sharing, and payment problems during the upgrade, please refer to the latest document to configure`
-
-`注意:HX3.1.19(含)版本之后，更新video模块，需要把"IJKMediaFramework.framework"库改成"IJKMediaFrameworkWithSSL.framework"`
-`Note: After HX3.1.19 (included) version, update the video module, you need to change the "IJKMediaFramework.framework" library to "IJKMediaFrameworkWithSSL.framework"`
-
-`注意:HX3.1.16版本之后，更新video模块和nvue的高德地图模块，需要配置"Masonry.framework"库`
-`Note: After HX3.1.16 version, update the video module and nvue's Gaode map module, you need to configure the "Masonry.framework" library`
-
-`注意:HX3.1.10版本开始，iOS离线SDK打包5+ app或者uni-app需要申请`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
-`Note: Starting from version HX3.1.10, iOS offline SDK packages 5+ apps or uni-app need to apply for`[AppKey](https://nativesupport.dcloud.net.cn/AppDocs/usesdk/appkey)
-  
-`注意:HX3.1.6版本之后，更新camera模块，需要配置"MetalKit.framework", "GLKit.framework"系统库`
-`Note: After HX3.1.6 version, to update the camera module, you need to configure the "MetalKit.framework", "GLKit.framework" system library`
-  
-`注意：离线SDK中Bundles文件夹下把SVProgressHUD.bundle更新为DCSVProgressHUD.bundle，把TZImagePickerController.bundle更新为DCTZImagePickerController.bundle；inc文件夹下更新了DCSVProgressHUD和DCTZImagePickerController头文件`
-`Note: In the Bundles folder of the offline SDK, update SVProgressHUD.bundle to DCSVProgressHUD.bundle, and update TZImagePickerController.bundle to DCTZImagePickerController.bundle; update the header files of DCSVProgressHUD and DCTZImagePickerController in the inc folder`
+[百度云点击下载SDK，提取码: q1ja](https://pan.baidu.com/s/1lz85b9tORlZivMXy5FkIVg?pwd=q1ja) (若下载后解压失败，使用和彩云下载)
 
 
-[和彩云点击下载历史版本，提取码: ECMd](https://caiyun.139.com/m/i?115CeV7MHJQAL) 
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.16.20230109-alpha）版本生成本地打包App资源。
 
-[百度云点击下载历史版本，提取码: 3k77](https://pan.baidu.com/s/1x-qbRD-KIB39nc8cqcpWIA?pwd=3k77) (若下载后解压失败，使用和彩云下载)
+## 3.6.16.20230109-alpha
+
+* uni-app插件
+  + App-iOS平台 修复 nvue 页面 ad-content-page 组件拉取广告配置失败后无法重新拉取的Bug
+  + App-iOS平台 修复 nvue 页面 map 组件使用自定义地图样式后切换卫星图无效的Bug [详情](https://ask.dcloud.net.cn/question/159316)
+  + App-iOS平台 修复 使用模拟器开启调试后启动应用白屏的Bug [详情](https://ask.dcloud.net.cn/question/160363)
+  + App-iOS平台 修复 Vue3 项目中 input 组件 disabled 无法动态修改的Bug 详情
+
+* App插件(含5+App和uni-app的App端)
+  + iOS平台 更新 UniPush 使用的个推SDK为 2.7.2.0 版，因个推改为 Swift 版，需引入 Swift 库，可能导致打包后 ipa 文件变大 [详情](https://uniapp.dcloud.net.cn/tutorial/app-push-unipush.html#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)
+  + iOS平台 修复 设置应用语言为英文时部分系统界面可能会显示为回退语言的Bug [详情](https://ask.dcloud.net.cn/question/159445)
+  + iOS平台 修复 自定义基座真机运行可能导致 setStorage 保存的数据丢失的Bug [详情](https://ask.dcloud.net.cn/question/159903)
+  + iOS平台 修复 plus.nativeUI.toast 设置 style 为 inline 时 iconWidth/iconHeight 属性失效的Bug [详情](https://ask.dcloud.net.cn/question/160192)
+  + iOS平台 修复 uni-AD 优量汇开屏广告展示期间弹出提示框可能导致开屏界面不会关闭的Bug
+  + iOS平台 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备返回数据没有 advertisData 字段的Bug [详情](https://ask.dcloud.net.cn/question/160178)
+
+`注意：HX3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
+
+
+[和彩云点击下载历史版本，提取码: b08j](https://caiyun.139.com/m/i?115CooLC4PDGU) 
+
+[百度云点击下载历史版本，提取码: xr1k](https://pan.baidu.com/s/1NWaXtYLSCOK4OTBOnRkYEw?pwd=xr1k) (若下载后解压失败，使用和彩云下载)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
