@@ -7,7 +7,7 @@
 
 |路径|文件|
 | :-------: | :-------: |
-| SDK\libs | gtc.aar (如同时集成unipush谷歌渠道，应引入gtc-gp.aar。)|
+| SDK\libs | gtc.aar (HBuilderX3.6.16以下时，如同时集成unipush谷歌渠道，应引入gtc-gp.aar，3.6.16及以上时无需处理。)|
 | SDK\libs | gysdk-3.0.6.0.aar |
 | SDK\libs | oauth-univerify-release.aar |
 

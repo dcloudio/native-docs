@@ -229,7 +229,7 @@ HBuilder X 3.0.7及以上版本uniPush更新了华为推送，新版本需要添
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-gp-release.aar, gtc-gp.aar, sdk-for-google-play-3.2.10.8.aar, aps-igexin-fcm-release.aar ,fcm-3.1.1.aar |
+| SDK\libs | aps-release.aar, aps-unipush-gp-release.aar, sdk-for-gj-4.4.3.1.aar, aps-igexin-fcm-release.aar ,fcm-3.1.1.aar |
 
 **注意：要想使用谷歌推送必须使用aps-unipush-gp-release.aar**
 
