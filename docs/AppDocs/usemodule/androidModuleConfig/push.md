@@ -281,7 +281,7 @@ The following jar/aar files need to be placed in the libs directory of the proje
 | 路径 | 文件 | 
 | path | file |
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-gp-release.aar, gtc-gp.aar, sdk-for-google-play-3.2.10.8.aar, aps-igexin-fcm-release.aar ,fcm-3.1.1.aar |
+| SDK\libs | aps-release.aar, aps-unipush-gp-release.aar, sdk-for-gj-4.4.3.1.aar, aps-igexin-fcm-release.aar ,fcm-3.1.1.aar |
 
 **注意：要想使用谷歌推送必须使用aps-unipush-gp-release.aar**
 **Note: To use Google Push, you must use aps-unipush-gp-release.aar**
