@@ -1,4 +1,10 @@
 ## 正式版历次更新说明
+## 3.6.15.20221228
+  
++ App-iOS平台 修复 nvue 页面 ad-content-page 组件拉取广告配置失败后无法重新拉取的Bug
++ iOS平台 更新 UniPush 使用的个推SDK为 2.7.2.0 版(新版需要支持swift环境,纯OC项目添加一个swift文件后,根据提示操作即可)
++ iOS平台 修复 设置应用语言为英文时部分系统界面可能会显示为回退语言的Bug[详情](https://ask.dcloud.net.cn/question/159445)
+
 ## 3.6.14.20221215
   
 无
