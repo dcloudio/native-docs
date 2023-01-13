@@ -4,7 +4,8 @@
 
 ## 配置支付平台参数
 
-在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置<br>
+**注意：如果用不到的不要配置，以免影响审核**
 
 ![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
 
@@ -67,9 +68,9 @@
 6.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
 ```
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    // 通过通用链接唤起 App
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
+    restorationHandler(nil);
     return YES;
 }
 ```
