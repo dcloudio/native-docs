@@ -7,8 +7,8 @@ The payment plug-in first needs to apply for an account on each open platform, c
 ## 配置支付平台参数
 ## Configure payment platform parameters
 
-在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
-Search for the feature.plist file (located in PandoraApi.bundle) in the project, and add the configuration of the corresponding platform under the Payment-> extend node
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置<br>
+**注意：如果用不到的不要配置，以免影响审核**
 
 ![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
 
@@ -93,10 +93,9 @@ Fill in the universal link domain name
 6. Call the framework method in the AppDelegate.m system universal link callback method of the project as follows:
 
 ```
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-    // 通过通用链接唤起 App
-    // invoke the App via a universal link
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
+    restorationHandler(nil);
     return YES;
 }
 ```

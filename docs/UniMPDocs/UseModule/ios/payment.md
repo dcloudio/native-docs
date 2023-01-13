@@ -1,19 +1,17 @@
 ## 概述
 ## Overview
 
-目前支持支付宝、微信支付和苹果内购支付：
-Currently supports Alipay, WeChat payment and Apple in-app purchase payment:
+目前支持支付宝、微信支付、苹果内购支付、paypal支付、stripe支付：
 
-支付插件首先需要到各开放平台申请帐号,申请查看该[文档](http://ask.dcloud.net.cn/article/71)
-The payment plug-in first needs to apply for an account on each open platform, and apply to view this [document](http://ask.dcloud.net.cn/article/71)
+支付插件首先需要到各开放平台申请帐号,查看该[文档](http://ask.dcloud.net.cn/article/71)
 
 ## 配置支付平台参数
 ## Configure payment platform parameters
 
-在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置
-Search for the feature.plist file (located in PandoraApi.bundle) in the project, and add the configuration of the corresponding platform under the Payment-> extend node
+在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中），在 Payment-> extend 节点下添加对应平台的配置<br>
+**注意：如果用不到的不要配置，以免影响审核**
 
-![](https://ask.dcloud.net.cn/uploads/article/20200415/4fb6270ceaedb5244ae8da70a4e9782a.png)
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_feature.png)
 
 ## 支付宝
 ## Alipay
@@ -102,6 +100,7 @@ Fill in the universal link domain name
     // 通过通用链接唤起 App
     // invoke the App via a universal link
     [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+    restorationHandler(nil);
     return YES;
 }
 ```
@@ -118,3 +117,45 @@ Fill in the universal link domain name
 |liblibPayment.a、libIAPPay.a| StoreKit.framework| 无 |
 | liblibPayment.a、libIAPPay.a| StoreKit.framework| none |
 
+## paypal支付
+注:SDK3.3.7+、iOS11.0+
+
+### 添加依赖库及资源
+
+|依赖库|系统库|资源文件|
+|:--|:--|:--|
+|liblibPayment.a、libpaypalpay.a、PayPalCheckout.xcframework|无|无|
+
+### 工程配置
+1. 在 info.plist 添加 `paypal` 项，填写`returnUrl`，参考如下
+
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_paypal_returnurl.png)
+
+## stripe支付
+注:SDK3.3.7+、iOS13.0+
+
+### 添加依赖库及资源
+
+|依赖库|系统库|资源文件|
+|:--|:--|:--|
+|liblibPayment.a、libstripepay.a、Stripe.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework|无|无|
+
+### 工程配置
+1. 在URL Types 中添加当前应用的自定义URL Schemes，参考如下
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_stripe_urlscheme.png)
+
+2. 在 info.plist 添加 `stripe` 项，填写`returnUrl`，returnUrl为当前应用的自定义URL Schemes参考如下
+![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/payment_stripe_returnurl.png)
+
+
+## 添加系统回调方法
+
+除苹果支付外，其他支付需在 AppDelegate.m 文件的系统回调方法中调用框架的方法如下
+
+```
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+	[DCUniMPSDKEngine application:app openURL:url options:options];
+    return YES;
+}
+
+```
