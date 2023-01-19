@@ -2,15 +2,15 @@
 
 **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2023年01月12日发布——HBuilderX（3.6.17.20230112）
+### 2023年01月17日发布——HBuilderX（3.6.18.20230117）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 [和彩云](https://caiyun.139.com/m/i?115CnX8m11GZ8)，提取码: cqMr
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.17.20230112）版本生成本地打包App资源。
-+ 修复 使用 tabbar 后页面多次跳转可能导致底部系统导航栏颜色变化的bug
-+ 修复 nvue 页面 live-pusher 组件拒绝相机权限后再手动开启，回到应用后可能无法调用相机预览的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.18.20230117）版本生成本地打包App资源。
++ 修复 修复 3.6.17版引出的 系统导航栏按键颜色与背景颜色相同的Bug
++ 修复 修复 3.6.17版引出的 自定义隐私政策提示框时启动应用可能出现卡死的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
