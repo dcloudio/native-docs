@@ -16,32 +16,29 @@ The recommended method is to put the entire SDK under the project path. When add
 ## iOS 离线SDK - 正式版
 ## iOS Offline SDK - Official Version
 
-### 2023年01月12日发布——HBuilderX（3.6.17.20230112） 
+### 2023年01月12日发布——HBuilderX（3.6.18.20230117） 
 
-[和彩云点击下载SDK，提取码: 1fK7](https://caiyun.139.com/m/i?115CeoeZ31wTR) 
+[和彩云点击下载SDK，提取码: QNB3](https://caiyun.139.com/m/i?115CnVtNgusLm) 
 
-[百度云点击下载SDK，提取码: bdxc](https://pan.baidu.com/s/1wKg4UhV6NWI39HlEGegIMA?pwd=bdxc) (若下载后解压失败，使用和彩云下载)
+[百度云点击下载SDK，提取码: s6bw](https://pan.baidu.com/s/1EUvhiwaTamt8dhx06tNNUQ?pwd=s6bw) (若下载后解压失败，使用和彩云下载)
 
 [和彩云点击下载SDK，提取码: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K) 
 [Hecaiyun click to download SDK, extraction code: wLYN](https://caiyun.139.com/m/i?115CoA5Cy156K)
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.17.20230112）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.6.18.20230117）版本生成本地打包App资源。
 
-## 3.6.17.20230112
+## 3.6.18.20230117ßß
 
-+ 修复 自定义基座真机运行可能导致 setStorage 保存的数据丢失的Bug[详情](https://ask.dcloud.net.cn/question/159903)
-+ 修复 plus.nativeUI.toast 设置 style 为 inline 时 iconWidth/iconHeight 属性失效的Bug[详情](https://ask.dcloud.net.cn/question/160192)
-+ 修复 uni-AD 优量汇开屏广告展示期间弹出提示框可能导致开屏界面不会关闭的Bug
-+ 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备返回数据没有 advertisData 字段的Bug[详情](https://ask.dcloud.net.cn/question/160178)
+无
 
 
 `注意：HX3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
 
 
 
-[和彩云点击下载历史版本，提取码: Kcab](https://caiyun.139.com/m/i?115Ceof8D1IdC) 
+[和彩云点击下载历史版本，提取码: zN6c](https://caiyun.139.com/m/i?115CeoIPQ4gcH) 
 
-[百度网盘下载历史版本，提取码: x76f]( https://pan.baidu.com/s/1GVXPw_yUpLRpm4H6wgxMqA?pwd=x76f)(若下载后解压失败，使用和彩云下载)
+[百度网盘下载历史版本，提取码: pbh4](https://pan.baidu.com/s/1OcWicN4B3xxNydh-CNCBWQ?pwd=pbh4)(若下载后解压失败，使用和彩云下载)
 
 
 

@@ -1,4 +1,10 @@
 ## 正式版历次更新说明
+## 3.6.17.20230112
++ 修复 自定义基座真机运行可能导致 setStorage 保存的数据丢失的Bug[详情](https://ask.dcloud.net.cn/question/159903)
++ 修复 plus.nativeUI.toast 设置 style 为 inline 时 iconWidth/iconHeight 属性失效的Bug[详情](https://ask.dcloud.net.cn/question/160192)
++ 修复 uni-AD 优量汇开屏广告展示期间弹出提示框可能导致开屏界面不会关闭的Bug
++ 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备返回数据没有 advertisData 字段的Bug[详情](https://ask.dcloud.net.cn/question/160178)
+
 ## 3.6.15.20221228
   
 + App-iOS平台 修复 nvue 页面 ad-content-page 组件拉取广告配置失败后无法重新拉取的Bug
