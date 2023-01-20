@@ -1,6 +1,9 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.6.17.20230111-alpha
+无
+
 ## 3.6.16.20230109-alpha
 
 * uni-app插件

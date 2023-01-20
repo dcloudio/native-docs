@@ -16,7 +16,7 @@ The recommended method is to put the entire SDK under the project path. When add
 ## iOS 离线SDK - 正式版
 ## iOS Offline SDK - Official Version
 
-### 2023年01月12日发布——HBuilderX（3.6.18.20230117） 
+### 2023年01月17日发布——HBuilderX（3.6.18.20230117） 
 
 [和彩云点击下载SDK，提取码: QNB3](https://caiyun.139.com/m/i?115CnVtNgusLm) 
 
@@ -27,13 +27,12 @@ The recommended method is to put the entire SDK under the project path. When add
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.6.18.20230117）版本生成本地打包App资源。
 
-## 3.6.18.20230117ßß
+## 3.6.18.20230117
 
 无
 
 
 `注意：HX3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
-
 
 
 [和彩云点击下载历史版本，提取码: zN6c](https://caiyun.139.com/m/i?115CeoIPQ4gcH) 
@@ -42,34 +41,36 @@ The recommended method is to put the entire SDK under the project path. When add
 
 
 
-
 [历次更新说明](AppDocs/download/update_history_iOS_release.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_release.md)
+
 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
 
-### 2023年01月11日发布——HBuilderX（3.6.17.20230111-alpha）
+### 2023年01月18日发布——HBuilderX（3.7.0.20230118-alpha）
 
 
-[和彩云点击下载SDK，提取码: qDkK](https://caiyun.139.com/m/i?115CnWG1nCFnF)
+[和彩云点击下载SDK，提取码: MkrD](https://caiyun.139.com/m/i?115Co9l5uNp9u)
 
-[百度云点击下载SDK，提取码: wwic](https://pan.baidu.com/s/1LvqUD1KdyO57ryyZ1RRvaQ?pwd=wwic) (若下载后解压失败，使用和彩云下载)
-
-
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.6.17.20230111-alpha）版本生成本地打包App资源。
-
-## 3.6.17.20230111-alpha
-
-无
-
-`注意：HX3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
+[百度云点击下载SDK，提取码: rkhq](https://pan.baidu.com/s/1Qnd4iI8UCeSADDwVyKHl4w?pwd=rkhq) (若下载后解压失败，使用和彩云下载)
 
 
-[和彩云点击下载历史版本，提取码: AMdw](https://caiyun.139.com/m/i?115CnqAIRxbLo) 
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.0.20230118-alpha）版本生成本地打包App资源。
 
-[百度云点击下载历史版本，提取码: 6byy](https://pan.baidu.com/s/1LZBpk3LdcB_ooSWjexDvqw?pwd=6byy) (若下载后解压失败，使用和彩云下载)
+## 3.7.0.20230118-alpha
+
++ iOS平台 更新 一键登录使用的个验SDK为 3.0.3.0 版(libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework)
+
+`注意：SDK3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)`
+
+`注意：SDK3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework`
+
+
+[和彩云点击下载历史版本，提取码: s4Jw](https://caiyun.139.com/m/i?115Co9lOf2peW) 
+
+[百度云点击下载历史版本，提取码: cg6h](https://pan.baidu.com/s/1E_rduUkMT3EJYqnZh9l8Lg?pwd=cg6h) (若下载后解压失败，使用和彩云下载)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
