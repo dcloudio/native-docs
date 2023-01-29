@@ -9,16 +9,19 @@
 
 ## 更新日志
 
-#### SDK 3.6.17
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.6.17.zip)
+#### SDK 3.6.18
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.6.18.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.17.20230112.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.18.20230117.html)
 
 ## 历史版本
 > 历史版本仅提供上个正式版本的 SDK 下载
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.6.17
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.17.20230112.html)
 
 #### SDK 3.6.15
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.15.20221228.html)
