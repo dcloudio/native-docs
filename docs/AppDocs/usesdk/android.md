@@ -65,7 +65,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
     implementation 'com.facebook.fresco:fresco:2.5.0'
     implementation "com.facebook.fresco:animated-gif:2.5.0"
     implementation 'com.github.bumptech.glide:glide:4.9.0'
-    implementation 'com.alibaba:fastjson:1.1.46.android'
+    implementation 'com.alibaba:fastjson:1.2.83'
 	implementation 'androidx.webkit:webkit:1.3.0'
 	```
 	
@@ -146,7 +146,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
 		implementation 'androidx.appcompat:appcompat:1.0.0'
 		implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-		implementation 'com.alibaba:fastjson:1.1.46.android'
+		implementation 'com.alibaba:fastjson:1.2.83'
 		implementation 'androidx.webkit:webkit:1.3.0'
 	}
 	```
