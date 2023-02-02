@@ -1,18 +1,11 @@
 ### 申请
 1. 登录[开发者中心](https://dev.dcloud.net.cn)
-2. 在左侧菜单中选择我创建的应用，点击需要申请的应用，如下图：
- ![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/APPKEY/appkey_applist-1.png)
-4. 在应用管理界面选择离线打包Key管理，根据需要选择对应平台，输入包名和SHA1，确认无误点击保存，即可获取到对应平台的App ，如下图：
+2. 在应用管理 - 点击应用 - 各平台信息 创建以及查看离线AppKey：
+ ![avatar](https://native-res.dcloud.net.cn/images/nativesdk/77A2D811-07FA-43cb-B823-85D08181B3E1.png)
  
     **SHA1的获取请参考该[文章](https://ask.dcloud.net.cn/article/35777)**
     
     **AppKey不区分debug和release模式，Andorid如需要调试需要使用申请AppKey时的证书**
-    
-    ![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/APPKEY/applist-config.png)
-	
-	**点击保存得到`Appkey`**
-	
-	![avatar](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/APPKEY/applist-config-key.png)
 
 ### 配置
 
