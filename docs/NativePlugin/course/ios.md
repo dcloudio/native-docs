@@ -33,8 +33,7 @@ Therefore, if the plug-in developer is a native plug-in made with Xcode14, it ne
 }
 ...
 ```
-2.需要在原生**插件工程**的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
-2. You need to configure **-fno-objc-msgsend-selector-stubs** under Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags and Other C++ Flags of the native **plug-in project** As shown in the picture:
+2.需要在原生 ***<u>插件工程</u>*** 的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
 
 ![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)
 
