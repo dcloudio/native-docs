@@ -21,21 +21,18 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年01月18日发布——HBuilderX（3.7.0.20230118-alpha）
+### 2023年02月13日发布——HBuilderX（3.7.1.20230210-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.7.0.20230118-alpha）版本生成本地打包App资源。
-+ 新增 隐私政策提示框支持 backToExit 配置是否响应点击系统返回键退出应用，解决部分应用市场上架审核可能提示`系统返回键失灵`的问题 [详情](https://uniapp.dcloud.net.cn/tutorial/app-privacy-android.html)
-+ 更新 uni-AD 腾讯优量汇广告SDK 为 4.500.1370 版；Sigmob广告联盟SDK 为 4.9.0 版
-+ 修复 3.6.17版引出的 系统导航栏按键颜色与背景颜色相同的Bug
-+ 修复 3.6.17版引出的 自定义隐私政策提示框时启动应用可能出现卡死的Bug
-+ 修复 隐私合规检测可能报`隐私弹窗中处理超链接的过程中调用到了获取设备sim卡国家信息的api`的Bug
-+ 修复 图片选择在 Android13 设备提示没有权限的Bug
-+ 修复 plus.io.FileReader 的 readAsDataURL 读取数据时未按 slice 分割位置读取的Bug
-+ 修复 视频播放控件 VideoPlayer 在视频缓冲时触发 timeupdate 事件的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.1.20230210-alpha）版本生成本地打包App资源。
++ 更新 Paypal SDK 为 0.8.8 版，修复无法正常支付的Bug
++ 修复 3.6.16版引出的 一键登录 全屏模式下配置其他登录按钮可能引起显示异常的Bug
++ 修复 plus.downloader.clear 无法清除持久化存储的下载任务的Bug
++ 修复 使用 UniPush 上架应用市场审核可能报`频繁自启动或关联启动第三方App`的Bug
++ 修复 真机运行时应用沙盒目录 _doc 中的文件会被清除的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
