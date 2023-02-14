@@ -297,6 +297,9 @@ Advertising ID: DCloud’s advertising ID, which can be obtained at dev.dcloud.n
 渠道：可以填apple。
 Channel: you can fill in apple.
 
+### 如何配置暗黑模式
+1. 在需要的打包的原生工程中找到工程的配置文件-Info.plist，移除Appearance节点(若不想支持暗夜模式，添加该节点并将该节点的值修改为Light或Dark即可，其中Light为始终显示默认高亮模式，Dark为始终显示暗夜模式，值为String类型)
+2. 如需设置启动时的默认模式，在上述Info.plist文件中添加DCloudConfig节点(如已有无需再次添加，节点类型为Dictionary)，在该节点下添加defaultTheme节点(值类型为String），根据需求添加light(高亮)、dark(暗夜)、auto(跟随系统)即可
 
 ### 如何配置广告
 ### How to configure ads
