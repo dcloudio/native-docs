@@ -32,16 +32,16 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年01月18日发布——HBuilderX（3.7.0.20230118-alpha）
+### 2023年02月10日发布——HBuilderX（3.7.1.20230210-alpha）
 
-[和彩云，提取码: MkrD](https://caiyun.139.com/m/i?115Co9l5uNp9u)
+[和彩云，提取码: HE5L](https://caiyun.139.com/m/i?115Co8DW5N1hy)
 
-[百度网盘，提取码: rkhq](https://pan.baidu.com/s/1Qnd4iI8UCeSADDwVyKHl4w?pwd=rkhq)
+[百度网盘，提取码: fip2](https://pan.baidu.com/s/1JWj4VPU1Sp08NrC090je1A?pwd=fip2)
 
-+ 更新 一键登录使用的个验SDK为 3.0.3.0 版(libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework)
++ 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug
 
-[和彩云历史版本，提取码: s4Jw](https://caiyun.139.com/m/i?115Co9lOf2peW) 
+[和彩云历史版本，提取码: Vh7D](https://caiyun.139.com/m/i?115CoSFSaexVu) 
 
-[百度网盘历史版本，提取码: cg6h](https://pan.baidu.com/s/1E_rduUkMT3EJYqnZh9l8Lg?pwd=cg6h)
+[百度网盘历史版本，提取码: 3qrf](https://pan.baidu.com/s/1kPkcwWdiHSdZv7wfc9RabA?pwd=3qrf)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
