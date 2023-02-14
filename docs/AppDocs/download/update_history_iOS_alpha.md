@@ -1,7 +1,12 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.7.0.20230118-alpha
+
++ 更新 一键登录使用的个验SDK为 3.0.3.0 版(libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework)
+
 ## 3.6.17.20230111-alpha
+
 无
 
 ## 3.6.16.20230109-alpha
