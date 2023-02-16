@@ -361,8 +361,17 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
 	[详细步骤可参考链接](https://ask.dcloud.net.cn/article/35482)
 	[For detailed steps, please refer to the link](https://ask.dcloud.net.cn/article/35482)
 	
-4. 其他配置
-4. Other configuration
+4. 如何配置暗黑模式	
+	在AndroidManifest.xml中添加:
+	```xml
+	<meta-data
+	            android:name="DCLOUD_DARK_MODE"
+	            android:value= "替换为应用的主题模式" />
+	```
+	其中可用的模式分别为 `light`、`dark`、`auto`, 此设置会影响启动时的默认模式，另外在运行时可使用`plus.nativeUI.setUIStyle`动态修改主题模式。
+	
+	**注意`PandoraEntryActivity`的`android:configChanges`配置必须包含uiMode。**
+5. 其他配置
 
 	AndroidX 配置
 	AndroidX configuration
