@@ -21,18 +21,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年02月13日发布——HBuilderX（3.7.1.20230210-alpha）
+### 2023年02月20日发布——HBuilderX（3.7.2.20230217-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.7.1.20230210-alpha）版本生成本地打包App资源。
-+ 更新 Paypal SDK 为 0.8.8 版，修复无法正常支付的Bug
-+ 修复 3.6.16版引出的 一键登录 全屏模式下配置其他登录按钮可能引起显示异常的Bug
-+ 修复 plus.downloader.clear 无法清除持久化存储的下载任务的Bug
-+ 修复 使用 UniPush 上架应用市场审核可能报`频繁自启动或关联启动第三方App`的Bug
-+ 修复 真机运行时应用沙盒目录 _doc 中的文件会被清除的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.2.20230217-alpha）版本生成本地打包App资源。
++ 修复 uni.getSystemInfo 在部分设备获取 deviedId 值可能相同的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
