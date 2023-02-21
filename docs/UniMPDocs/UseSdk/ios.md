@@ -56,8 +56,7 @@ Next, you need to add the system dependent library, select the project name in t
 |AVFoundation.framework|AVKit.framework|GLKit.framework|
 |OpenGLES.framework|CoreText.framework|QuartzCore.framework|
 |CoreGraphics.framework|libc++.tbd|QuickLook.framework|
-|CoreTelephony.framework|AssetsLibrary.framework|CoreLocation.framework|
-|AddressBook.framework|libiconv.tbd|
+|CoreTelephony.framework|libiconv.tbd|
 
 #### 添加依赖资源文件
 #### Add dependent resource files
