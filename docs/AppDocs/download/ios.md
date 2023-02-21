@@ -34,17 +34,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年02月10日发布——HBuilderX（3.7.1.20230210-alpha）
+### 2023年02月17日发布——HBuilderX（3.7.2.20230217-alpha）
 
-[和彩云，提取码: HE5L](https://caiyun.139.com/m/i?115Co8DW5N1hy)
+[和彩云，提取码: BauN](https://caiyun.139.com/m/i?115CnXETxpbGt)
 
-[百度网盘，提取码: fip2](https://pan.baidu.com/s/1JWj4VPU1Sp08NrC090je1A?pwd=fip2)
+[百度网盘，提取码: 7qaf](https://pan.baidu.com/s/1dMwAX8wDZYkAvZ3Xfs2UuQ?pwd=7qaf)
 
-+ 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug
+无
 
-[和彩云历史版本，提取码: Vh7D](https://caiyun.139.com/m/i?115CoSFSaexVu) 
+[和彩云历史版本，提取码: 8FhR](https://caiyun.139.com/m/i?115CepixEt3gz) 
 
-[百度网盘历史版本，提取码: 3qrf](https://pan.baidu.com/s/1kPkcwWdiHSdZv7wfc9RabA?pwd=3qrf)
+[百度网盘历史版本，提取码: 3tkj](https://pan.baidu.com/s/1jTfq-930ZyXgox1lY-5BTA?pwd=3tkj)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)

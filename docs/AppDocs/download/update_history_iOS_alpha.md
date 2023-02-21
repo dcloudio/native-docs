@@ -1,6 +1,10 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.7.1.20230210-alpha
+
++ 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug
+
 ## 3.7.0.20230118-alpha
 
 + 更新 一键登录使用的个验SDK为 3.0.3.0 版(libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework)
