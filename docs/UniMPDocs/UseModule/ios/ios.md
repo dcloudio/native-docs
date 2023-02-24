@@ -133,7 +133,8 @@ UniMPSDK/Feature目录结构
 	    <td> 
 		liblibMedia.a<br/>
 		libopencore-amrnb.a<br/>
-		libmp3lame.a
+		libmp3lame.a<br/>
+		DCUniRecord.framework
 		</td>
 	    <td> </td>
 	    <td>
@@ -251,7 +252,7 @@ UniMPSDK/Feature目录结构
 	    </td>
 	    <td>
 	    liblibGeolocation.a<br/>
-		aiduMapAPI_Utils.framework<br/>
+		BaiduMapAPI_Utils.framework<br/>
 		BaiduMapAPI_Base.framework<br/>
 		BaiduMapAPI_Search.framework<br/>
 		BMKLocationKit.framework
