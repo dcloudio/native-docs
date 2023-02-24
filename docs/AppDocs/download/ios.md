@@ -9,24 +9,26 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 **离线SDK 3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)**
 
-**离线SDK 3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.0.a 更换为GTCommonSDK.framework**
+**离线SDK 3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.7.a 更换为GTCommonSDK.framework**
 
 **若使用百度网盘下载后解压失败，请使用和彩云下载**
 
 
 ## iOS 离线SDK - 正式版
 
-### 2023年01月17日发布——HBuilderX（3.6.18.20230117） 
+### 2023年02月23日发布——HBuilderX（3.7.3.20230223） 
 
-[和彩云，提取码: QNB3](https://caiyun.139.com/m/i?115CnVtNgusLm) 
+[和彩云，提取码: 8b4e](https://caiyun.139.com/m/i?115CoowJwmK2z) 
 
-[百度网盘，提取码: s6bw](https://pan.baidu.com/s/1EUvhiwaTamt8dhx06tNNUQ?pwd=s6bw)
+[百度网盘，提取码: af8s](https://pan.baidu.com/s/1G4ZT-fkybhmvfbuJXrlA3w?pwd=af8s)
 
-无
++ 新增 苹果应用内支付 IAP 支持订阅促销优惠 [详情](https://uniapp.dcloud.net.cn/api/plugins/payment.html#%25E4%25BF%2583%25E9%2594%2580%25E4%25BC%2598%25E6%2583%25A0%25E5%258F%2582%25E6%2595%25B0%25E8%25AF%25B4%25E6%2598%258E)
++ 更新 一键登录使用的个验SDK为 3.0.3.0 版
++ 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug
 
-[和彩云历史版本，提取码: zN6c](https://caiyun.139.com/m/i?115CeoIPQ4gcH) 
+[和彩云历史版本，提取码: hTWB](https://caiyun.139.com/m/i?115Cnr0XxOm8l) 
 
-[百度网盘历史版本，提取码: pbh4](https://pan.baidu.com/s/1OcWicN4B3xxNydh-CNCBWQ?pwd=pbh4)
+[百度网盘历史版本，提取码: vy9t](https://pan.baidu.com/s/1Xdsx_xd6xoGEuDY-w2rkew?pwd=vy9t)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 

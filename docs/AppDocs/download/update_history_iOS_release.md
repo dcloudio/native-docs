@@ -1,4 +1,7 @@
 ## 正式版历次更新说明
+## 3.6.18.20230117
+无
+
 ## 3.6.17.20230112
 + 修复 自定义基座真机运行可能导致 setStorage 保存的数据丢失的Bug[详情](https://ask.dcloud.net.cn/question/159903)
 + 修复 plus.nativeUI.toast 设置 style 为 inline 时 iconWidth/iconHeight 属性失效的Bug[详情](https://ask.dcloud.net.cn/question/160192)
