@@ -1,3 +1,8 @@
+### 2023年02月20日发布——HBuilderX（3.7.2.20230217-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.2.20230217-alpha）版本生成本地打包App资源。
++ 修复 uni.getSystemInfo 在部分设备获取 deviedId 值可能相同的Bug
+
 ### 2023年02月13日发布——HBuilderX（3.7.1.20230210-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.1.20230210-alpha）版本生成本地打包App资源。
