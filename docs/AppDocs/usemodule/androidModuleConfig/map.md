@@ -85,8 +85,32 @@ The following aar files need to be placed in the libs directory of the project
 |vue页面 | SDK\libs | AMap3DMap_XXX_AMapSearch_XXX_AMapLocation_XXX.jar(XXX为版本号)，map-amap-release.aar |
 | vue page | SDK\libs | AMap3DMap_XXX_AMapSearch_XXX_AMapLocation_XXX.jar (XXX is the version number), map-amap-release.aar |
 
-**注意：3.3.6及以下版本需要使用amap-libs-release.aar，3.3.7-3.6.8版本需要使用AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar。**
-**Note: Versions 3.3.6 and below need to use amap-libs-release.aar, versions 3.3.7-3.6.8 need to use AMap3DMap_XXX_AMapSearch_XXX.jar (XXX is the version number), AMap_Location_XXX.jar. **
+**注意事项：**
++ 3.7.6开始不再提供"amap-libs-release.aar"或"AMap3DMap_XXX_AMapSearch_XXX_AMapLocation_XXX.jar"文件。改为gradle集成
++ 3.3.6及以下版本需要使用amap-libs-release.aar，3.3.7-3.6.8版本需要使用AMap3DMap_XXX_AMapSearch_XXX.jar(XXX为版本号)，AMap_Location_XXX.jar。
+
+### 通过gradle集成高德地图SDK
+
+在主工程的build.gradle文件配置dependencies
+
+```
+android {
+	xxxxxxxx
+	defaultConfig {
+		xxxxxxxx
+	}
+}
+dependencies {
+	xxxxxxxx
+	implementation('com.amap.api:3dmap:xxx')
+	implementation('com.amap.api:search:xxx')
+}
+```
+
+**注意事项：**
++ xxx是版本号 版本号通过离线SDK中的demo获取相对应版本
++ 本地集成的高德地图SDK需要删除相关jar或aar文件 否则会导致sdk冲突
++ 高德定位与高德地图SDK集成冲突 需要注意 如果集成地图无须再配置定位
 
 ### Androidmainfest.xml文件需要修改的项
 ### Items that need to be modified in the Androidmainfest.xml file
