@@ -1,6 +1,7 @@
 ## Android 离线SDK - 正式版
 
-**注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
+1. **注意：HBuilderX 3.7.6版本开始，微信、支付宝、高德改为线上依赖，涉及到的模块有：微信支付、微信登录、微信分享、支付宝支付、高德地图、高德定位，涉及上述功能的App请参考文档重新集成。**
+2. **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
 ### 2023年02月24日发布——HBuilderX（3.7.3.20230223）
 
@@ -36,14 +37,18 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年02月20日发布——HBuilderX（3.7.2.20230217-alpha）
+### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.7.2.20230217-alpha）版本生成本地打包App资源。
-+ 修复 uni.getSystemInfo 在部分设备获取 deviedId 值可能相同的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.6.20230227-alpha）版本生成本地打包App资源。
++ 新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro)
++ 修复 使用安全网络在部分设备可能引起崩溃的Bug
++ 修复 暗黑模式下 tabbar 页面切换可能出现异常的Bug
++ 修复 一键登录 按钮阴影可能显示异常的Bug
++ 修复 3.7.1版引出的 在小米 Android13 设备图片选择功能异常的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 

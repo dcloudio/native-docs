@@ -12,6 +12,7 @@
     * [Payment（支付）](usemodule/androidModuleConfig/pay.md)
     * [Speech（语音输入）](usemodule/androidModuleConfig/speech.md)
     * [Statistic（统计）](usemodule/androidModuleConfig/statistic.md)
+	* [FacialRecognitionVerify（实人认证）](usemodule/androidModuleConfig/facialRecognitionVerify.md)
 	* [uni-AD](usemodule/androidModuleConfig/uniad.md)
 	* [Android X5 Webview（腾讯TBS）](usemodule/androidModuleConfig/x5.md)
 	* [第三方 SDK 依赖说明](usemodule/androidModuleConfig/android_Library.md)
