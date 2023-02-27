@@ -31,8 +31,31 @@
 | :-------: | :-------: |
 | SDK\libs | AMap_Location_XXX.jar（XXX为版本号）, geolocation-amap-release.aar |
 
-**注意：3.3.6及以下版本要使用amap-libs-release.aar代替AMap_Location_XXX.jar ，**
-**当3.6.9及以上，与高德地图同时使用时，由于高德地图使用的jar已经包含了定位相关类库，所以不要导入AMap_Location_XXX.jar。**
+**注意：**
++ 3.7.6开始不再提供"amap-libs-release.aar"或"AMap_Location_XXX.jar"文件 改为gradle集成！geolocation-amap-release.aar还需要继续添加到项目中
++ 3.3.6及以下版本要使用amap-libs-release.aar代替AMap_Location_XXX.jar ，当3.6.9及以上，与高德地图同时使用时，由于高德地图使用的jar已经包含了定位相关类库，所以不要导入AMap_Location_XXX.jar。
+
+### 通过gradle集成高德定位SDK
+
+在主工程的build.gradle文件配置dependencies
+
+```
+android {
+	xxxxxxxx
+	defaultConfig {
+		xxxxxxxx
+	}
+}
+dependencies {
+	xxxxxxxx
+	implementation('com.amap.api:location:xxx')
+}
+```
+
+**注意事项：**
++ xxx是版本号 版本号通过离线SDK中的demo获取相对应版本
++ 本地集成的高德定位SDK需要删除相关jar或aar文件 否则会导致sdk冲突
++ 高德定位与高德地图SDK集成冲突 需要注意 如果集成地图无须再配置定位
 
 ### Androidmainfest.xml文件需要修改的项
 
