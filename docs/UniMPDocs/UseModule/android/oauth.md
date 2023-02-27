@@ -10,6 +10,17 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
 
+**注意：3.7.6及以上版本，微信SDK改为gradle依赖，需要将libs目录下的wechat-sdk-android-without-mta-6.7.9.aar移除**
+
+### 通过gradle集成微信SDK
+
+在主工程的build.gradle文件配置dependencies
+```
+dependencies {
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'
+}
+```
+
 ### WXPayEntryActivity 
 
 需要自主创建`WXPayEntryActivity.java`代码文件并引入到工程

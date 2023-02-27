@@ -8,9 +8,18 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | payment-alipay-release.aar, utdid4all-XXX-proguard.jar(XXX为版本号), alipaysdk-android-15.8.11.aar |
+| SDK\libs | payment-alipay-release.aar, alipaysdk-android-15.8.11.aar |
 
-**注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
+**注意：3.7.6及以上版本，支付宝SDK改为gradle依赖，需要将libs目录下的alipaysdk-android-15.8.11.aar移除**
+
+### 通过gradle集成支付宝SDK
+
+在主工程的build.gradle文件配置dependencies
+```
+dependencies {
+    implementation 'com.alipay.sdk:alipaysdk-android:15.8.11'
+}
+```
 
 ### Androidmainfest.xml文件需要修改的项
 
@@ -47,6 +56,17 @@ dcloud_properties.xml文件在assets/data目录下
 | 路径 | 文件 | 
 | :-------: | :-------: |
 | SDK\libs | payment-weixin-release.aar, wechat-sdk-android-without-mta-6.7.9.aar |
+
+**注意：3.7.6及以上版本，微信SDK改为gradle依赖，需要将libs目录下的wechat-sdk-android-without-mta-6.7.9.aar移除**
+
+### 通过gradle集成微信SDK
+
+在主工程的build.gradle文件配置dependencies
+```
+dependencies {
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'
+}
+```
 
 需要将以下代码文件引入到工程，包名为”$你的包名.wxapi”
 
