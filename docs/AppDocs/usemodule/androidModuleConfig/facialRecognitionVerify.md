@@ -1,6 +1,6 @@
 ## 实人认证
 
-**实人认证依赖于UTS基础模块，请先集成[UTS基础模块](usemodule/androidModuleConfig/uts.md)**
+**实人认证依赖于UTS基础模块，请先集成[UTS基础模块](/AppDocs/usemodule/androidModuleConfig/uts.md)**
 
 ### 需要拷贝的文件
 
