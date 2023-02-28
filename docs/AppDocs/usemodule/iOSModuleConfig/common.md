@@ -1045,4 +1045,5 @@
 * [直播推流配置](/AppDocs/usemodule/iOSModuleConfig/livepusher.md)
 * [统计配置](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
 * [uni-AD广告联盟配置](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
+* [实人认证配置](/AppDocs/usemodule/iOSModuleConfig/facialRecognitionVerify.md)
 * [iOS UIWebview配置](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)

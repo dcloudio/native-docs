@@ -34,16 +34,19 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年02月17日发布——HBuilderX（3.7.2.20230217-alpha）
+### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
 
-[和彩云，提取码: BauN](https://caiyun.139.com/m/i?115CnXETxpbGt)
+[和彩云，提取码: DjTY](https://caiyun.139.com/m/i?115CnqlJIKMAK)
 
-[百度网盘，提取码: 7qaf](https://pan.baidu.com/s/1dMwAX8wDZYkAvZ3Xfs2UuQ?pwd=7qaf)
+[百度网盘，提取码: bn89](https://pan.baidu.com/s/1ACF-GeUU2hZ2Lsul9fOiqg?pwd=bn89)
 
-无
++  新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro.html#)
++  修复 uni.uploadFile 接口 timeout 配置无效的Bug[详情](https://ask.dcloud.net.cn/question/163747)
++  修复 Vue2 项目使用组合式 API 时 onPageScroll、onReachBottom 无效的Bug[详情](https://ask.dcloud.net.cn/question/162503)
++  修复 3.7.0引出的一键登录点击自定义按钮后无法再次调起的Bug[详情](https://ask.dcloud.net.cn/question/163973)
 
-[和彩云历史版本，提取码: 8FhR](https://caiyun.139.com/m/i?115CepixEt3gz) 
+[和彩云历史版本，提取码: L5F6](https://caiyun.139.com/m/i?115CoohEf2UE8) 
 
-[百度网盘历史版本，提取码: 3tkj](https://pan.baidu.com/s/1jTfq-930ZyXgox1lY-5BTA?pwd=3tkj)
+[百度网盘历史版本，提取码: bn4x](https://pan.baidu.com/s/1JjgTWZHxMEQ3ayUApuKNqA?pwd=bn4x)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
