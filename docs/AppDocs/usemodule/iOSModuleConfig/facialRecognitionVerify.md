@@ -1,5 +1,5 @@
 ## 实人认证
-3.6.7+ 版本新增支持
+3.7.6+ 版本新增支持
 
 ### 实人认证开发流程
 详见[实人认证开发指南](https://uniapp.dcloud.net.cn/uniCloud/frv/dev.html)
