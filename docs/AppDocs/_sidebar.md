@@ -49,7 +49,7 @@
     * [LivePusher（直播推流）](usemodule/iOSModuleConfig/livepusher.md)
     * [LivePusher (live streaming)](usemodule/iOSModuleConfig/livepusher.md)
     * [Statistic（统计）](usemodule/iOSModuleConfig/statistic.md)
-    * [Statistic](usemodule/iOSModuleConfig/statistic.md)
+    * [FacialRecognitionVerify（实人认证）](usemodule/iOSModuleConfig/facialRecognitionVerify.md)
     * [uni-AD](usemodule/iOSModuleConfig/uniad.md)
     * [iOS UIWebview](usemodule/iOSModuleConfig/uiwebview.md)
     * [第三方 SDK 依赖说明](usemodule/iOSModuleConfig/dependentLibrary.md)
