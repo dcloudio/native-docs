@@ -1,6 +1,10 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.7.2.20230217-alpha
+
+无
+
 ## 3.7.1.20230210-alpha
 
 + 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug

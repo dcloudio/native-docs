@@ -1092,6 +1092,6 @@ For example, the third-party SDK of Baidu Maps needs to configure the appkey app
 * [统计配置](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
 * [Statistics Configuration](/AppDocs/usemodule/iOSModuleConfig/statistic.md)
 * [uni-AD广告联盟配置](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
-* [uni-AD advertising network configuration](/AppDocs/usemodule/iOSModuleConfig/uniad.md)
+* [实人认证配置](/AppDocs/usemodule/iOSModuleConfig/facialRecognitionVerify.md)
 * [iOS UIWebview配置](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)
 * [iOS UIWebview Configuration](/AppDocs/usemodule/iOSModuleConfig/uiwebview.md)
