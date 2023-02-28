@@ -1,3 +1,60 @@
+## 百度定位
+
+### 需要拷贝添加的文件
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| uniMPSDK\Features\libs | baidu-libs-release.aar, geolocation-baidu-release.aar |
+
+### 通过gradle集成百度定位SDK
+
+在主工程的build.gradle文件配置dependencies
+
+```
+android {
+	xxxxxxxx
+	defaultConfig {
+		xxxxxxxx
+	}
+}
+dependencies {
+	xxxxxxxx
+	implementation files('libs/baidu-libs-release.aar')
+        implementation files('libs/geolocation-baidu-release.aar')
+}
+```
+
+### Androidmainfest.xml文件需要修改的项
+
+**需要在application节点前添加权限**
+
+```
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+<uses-permission android:name="android.permission.READ_LOGS"/>
+<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+```
+
+**application节点下配置如下代码**
+
+```
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="%申请的APPKEY%"></meta-data>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+```
+
 ## 高德定位
 ## AutoNavi Positioning
 
