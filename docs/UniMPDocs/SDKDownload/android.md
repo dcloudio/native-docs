@@ -34,28 +34,15 @@
 
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.3.20230223.html)
 + 修复 打开uni小程序切换应用到后台运行一段时间后可能引起崩溃的Bug
-
-
-### 2023年01月29日发布
-
-#### SDK 3.6.18 版本
-
-[点击下载UniMPSDK_Android@3.6.18.20230129.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.6.18.20230129.zip)
-
-#### 更新日志
-#### Update Log
-
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.18.20230117.html)
++ uni-jsframework 修改为内置集成
 
 
 ## 升级SDK注意事项
 ## Notes on upgrading the SDK
 
++ 3.7.3 版本之后，uni-jsframework 修改为内置集成，开发者无需手动处理
 + 3.6.15 版本之后，为了支持暗黑模式，新增了一个必须集成的依赖 **androidx.webkit:webkit:1.3.0**，如果未集成此依赖，可能会导致白屏
 + 3.5.3 版本之后，新增了一个必须集成的breakpad-build-release.aar，如果未集成此aar会导致项目运行报错
-+ After version 3.5.3, a breakpad-build-release.aar that must be integrated has been added. If this aar is not integrated, it will cause an error when the project runs
-+ 升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
-+ The first step when upgrading the SDK is to replace and update the related resources of the assets file in the SDK directory. The most important thing is that uni-jsframework.js must be replaced! uni-jsframework-vue3.js is the framework of vue3. If the integrated applet does not use vue3, it can not be integrated.
 + 更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
 + Update the proguard.cfg obfuscation configuration, the file is in the root directory of the SDK folder!
 + 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、base_oaid_sdk.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
