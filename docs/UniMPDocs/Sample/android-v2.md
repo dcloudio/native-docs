@@ -17,7 +17,9 @@ IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, uniMPOpenConfi
 |:----|:----|:----|:-----|
 |context|Context|是|上下文|
 |appid|String|是|小程序的 appid|
-|uniMPOpenConfiguration|UniMPOpenConfiguration|是|小程序打开的参数集合类，包含 redirectPath（指定启动应用后直接打开的页面路径）extraData（其他自定义参数）splashClass(自定义splashView接口类)|
+|uniMPOpenConfiguration|UniMPOpenConfiguration|否|小程序打开的参数集合类，包含 redirectPath（指定启动应用后直接打开的页面路径）extraData（其他自定义参数）splashClass(自定义splashView接口类)|
+
+
 
 
 **返回值**
@@ -572,3 +574,15 @@ dcloud_unimp_host_open_enter
 	<item name="android:windowAnimationStyle">@style/uniMPHostWindowAnimation</item>
 </style>
 ```
+
+## 深色模式
+
+3.7.3 版本支持黑色模式，可选值  dark,light,auto(跟随系统)
+
+
+```
+ UniMPOpenConfiguration uniMPOpenConfiguration = new UniMPOpenConfiguration();
+ uniMPOpenConfiguration.extraData.put("darkmode", "auto");
+ DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__7AEA00D",uniMPOpenConfiguration);
+```
+
