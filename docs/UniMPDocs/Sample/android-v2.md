@@ -586,3 +586,6 @@ dcloud_unimp_host_open_enter
  DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__7AEA00D",uniMPOpenConfiguration);
 ```
 
+关于uni-app 暗黑模式的更多说明：
+
+https://uniapp.dcloud.net.cn/tutorial/darkmode.html#darkmode
