@@ -25,9 +25,9 @@ IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, uniMPOpenConfi
 |context|Context|是|上下文|
 | context| Context|Yes |context|
 |appid|String|是|小程序的 appid|
-| appid| String| Yes |appid of the applet|
-|uniMPOpenConfiguration|UniMPOpenConfiguration|是|小程序打开的参数集合类，包含 redirectPath（指定启动应用后直接打开的页面路径）extraData（其他自定义参数）splashClass(自定义splashView接口类)|
-| uniMPOpenConfiguration| UniMPOpenConfiguration|Yes|The parameter collection class opened by the applet, including redirectPath (specify the path of the page opened directly after starting the application) extraData (other custom parameters) splashClass (custom splashView interface class)|
+|uniMPOpenConfiguration|UniMPOpenConfiguration|否|小程序打开的参数集合类，包含 redirectPath（指定启动应用后直接打开的页面路径）extraData（其他自定义参数）splashClass(自定义splashView接口类)|
+
+
 
 
 **返回值**
@@ -58,6 +58,8 @@ After version 3.3.7, when the host starts the applet, it supports getting the pa
  try {
           UniMPOpenConfiguration uniMPOpenConfiguration = new UniMPOpenConfiguration();
           uniMPOpenConfiguration.extraData.put("MSG","Hello DCUniMPConfiguration");
+          // 3.7.3 版本支持暗黑模式，可选值  dark,light,auto(跟随系统)
+          uniMPOpenConfiguration.extraData.put("darkmode", "auto");
           mallMP = new SoftReference<>(DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__A922B72_minimall", uniMPOpenConfiguration));
  } catch (Exception e) {
           e.printStackTrace();
@@ -724,3 +726,18 @@ The key point is that windowAnimationStyle needs to be set to uniMPHostWindowAni
 	<item name="android:windowAnimationStyle">@style/uniMPHostWindowAnimation</item>
 </style>
 ```
+
+## 暗黑模式
+
+3.7.3 版本支持暗黑模式，可选值  dark,light,auto(跟随系统)
+
+
+```
+ UniMPOpenConfiguration uniMPOpenConfiguration = new UniMPOpenConfiguration();
+ uniMPOpenConfiguration.extraData.put("darkmode", "auto");
+ DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__7AEA00D",uniMPOpenConfiguration);
+```
+
+关于uni-app 暗黑模式的更多说明：
+
+https://uniapp.dcloud.net.cn/tutorial/darkmode.html#darkmode
