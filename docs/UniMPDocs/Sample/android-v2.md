@@ -41,6 +41,8 @@ IUniMP unimp = DCUniMPSDK.getInstance().openUniMP(context, appid, uniMPOpenConfi
  try {
           UniMPOpenConfiguration uniMPOpenConfiguration = new UniMPOpenConfiguration();
           uniMPOpenConfiguration.extraData.put("MSG","Hello DCUniMPConfiguration");
+          // 3.7.3 版本支持黑色模式，可选值  dark,light,auto(跟随系统)
+          uniMPOpenConfiguration.extraData.put("darkmode", "auto");
           mallMP = new SoftReference<>(DCUniMPSDK.getInstance().openUniMP(MainActivity.this, "__UNI__A922B72_minimall", uniMPOpenConfiguration));
  } catch (Exception e) {
           e.printStackTrace();
