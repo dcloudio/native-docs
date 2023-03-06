@@ -739,7 +739,6 @@
 		TencentOpenAPI.framework
 	    </td>
 	    <td>
-		TencentOpenApi_IOS_Bundle.bundle
 	    </td>
 	    <td>
 		<b>[URL Types]</b><br/>

@@ -1,4 +1,4 @@
-## 百度地图
+## 百度地图 (仅vue页面支持)
 
 ### 添加依赖资源及文件
 
@@ -31,10 +31,10 @@
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/5178.png)
 
-在XCode控制台搜索baidu maponGetPermissionState 查看错误码是多少,对比百度开发平台错误信息
+在XCode控制台搜索 `baidu maponGetPermissionState` 查看错误码是多少,对比百度开发平台错误信息
 
 
-## 高德地图
+## 高德地图 (仅nvue页面支持)
 ### 添加依赖资源及文件
 
 |依赖库|系统库|依赖资源|
