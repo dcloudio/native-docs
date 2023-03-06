@@ -4,53 +4,7 @@ SDK 提供了丰富的原生能力，您可根据需求自行添加功能模块�
 
 ### 集成方式
 
-#### 下面以 map 模块为例
-首先查看 [map集成文档](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/map?id=%e9%ab%98%e5%be%b7%e5%9c%b0%e5%9b%be) 文档中说明 vue需要添加AMap3DMap_XXX_AMapSearch_XXX.jar，AMap_Location_XXX.jar，map-amap-release.aar三个库文件 及其AndroidManifest.xml等配置！
-
-
-将AMap3DMap_XXX_AMapSearch_XXX.jar，AMap_Location_XXX.jar，map-amap-release.aar两个库文件拷贝到项目中。主Module中的libs下。
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_1.png)
-
-地图依赖库文件拷贝完毕后。需要在build.gradle配置导入你引用的两个库文件。
-```
-	implementation files('libs/map-amap-release.aar')
-	implementation files('libs/AMap_Location_XXX.jar')
-	implementation files('libs/AMap3DMap_XXX_AMapSearch_XXX.jar')
-```
-参考 [map集成文档](https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/map?id=%e9%ab%98%e5%be%b7%e5%9c%b0%e5%9b%be)  中Map配置信息修改工程项目：
-
- - 修改AndroidManifest.xml 增加以下权限及配置
-
-```
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-<uses-permission android:name="android.permission.READ_LOGS"/>
-<uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-
-<meta-data android:name="com.amap.api.v2.apikey" android:value="%申请高德地图apikey%"/>
-```
-
- - 修改dcloud_properties.xml配置
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_3_2.png)
-
-在dcloud_properties.xml添加以下信息
-
-```
-features节点
-<feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
-
-```
-
-以上配置完毕后。运行项目即可体验模块功能了。
+具体的模块配置章节，查看当前模块所属文档。比如  [地图模块]（https://nativesupport.dcloud.net.cn/UniMPDocs/UseModule/android/map.html#%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE）
 
 ### 功能模块与 API 对应关系
 
