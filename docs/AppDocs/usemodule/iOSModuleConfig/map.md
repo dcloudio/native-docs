@@ -1,5 +1,4 @@
-## 百度地图
-## Baidu map
+## 百度地图 (仅vue页面支持)
 
 ### 添加依赖资源及文件
 ### Add dependent resources and files
@@ -43,12 +42,10 @@ Note that the Bundle identifier in info.plist must be consistent with the securi
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/map/5178.png)
 
-在XCode控制台搜索baidu maponGetPermissionState 查看错误码是多少,对比百度开发平台错误信息
-Search baidu maponGetPermissionState in the XCode console to check the error code, and compare the error information of the Baidu development platform
+在XCode控制台搜索 `baidu maponGetPermissionState` 查看错误码是多少,对比百度开发平台错误信息
 
 
-## 高德地图
-## Gaode map
+## 高德地图 (仅nvue页面支持)
 ### 添加依赖资源及文件
 ### Add dependent resources and files
 
