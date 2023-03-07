@@ -18,8 +18,7 @@ uni applet SDK native developer communication QQ group: 892918401
 ## 版本更新注意事项
 ## Version update notes
 
-+  升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。
-+ The first step when upgrading the SDK is to replace and update the related resources of the assets file in the SDK directory. The most important thing is that uni-jsframework.js must be replaced! uni-jsframework-vue3.js is the framework of vue3. If the integrated applet does not use vue3, it can not be integrated.
++  3.7.3 之后版本不需要考虑这个选项  ~~升级SDK时第一步就是先将SDK目录下的assets文件相关资源替换更新。最主要的就是uni-jsframework.js 一定要替换! uni-jsframework-vue3.js是vue3的框架如果集成的小程序不会使用vue3可以不集成。~~
 
 +  更新proguard.cfg混淆配置，文件在SDK文件夹根目录！
 + Update the proguard.cfg obfuscation configuration, the file is in the root directory of the SDK folder!
