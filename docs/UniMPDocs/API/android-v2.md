@@ -888,10 +888,9 @@ The functions of the background mode and the multitasking window are currently c
 **2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
 **Version 2.8.4+ supports setting setEnableBackground to false to remove the multitasking window**
 
-#### setUniMPFromRecents(isFromRecents)
+#### ~~setUniMPFromRecents(isFromRecents)~~  已废弃
 
-设置小程序任务窗口是否显示，仅在后台模式下生效 v3.2.6+
-Set whether to display the task window of the applet, only effective in background mode v3.2.6+
+设置小程序任务窗口是否显示，仅在后台模式下生效 v3.2.6+  已废弃，后续将会移除
 
 **参数说明**
 **Parameter Description**
@@ -905,8 +904,8 @@ Set whether to display the task window of the applet, only effective in backgrou
 **注意事项**
 **Precautions**
 
-该api仅在后台模式下生效！
-This api only works in background mode!
+已废弃，类似场景使用 setEnableBackground 解决
+
 
 #### DCSDKInitConfig.Builder.setMenuDefFontSize(menuDefFontSize)
 
