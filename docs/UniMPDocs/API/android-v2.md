@@ -666,9 +666,9 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 **2.8.4+版本支持设置setEnableBackground为false 去除多任务窗口**
 
-#### setUniMPFromRecents(isFromRecents)
+#### ~~setUniMPFromRecents(isFromRecents)~~  已废弃
 
-设置小程序任务窗口是否显示，仅在后台模式下生效 v3.2.6+
+设置小程序任务窗口是否显示，仅在后台模式下生效 v3.2.6+  已废弃，后续将会移除
 
 **参数说明**
 
@@ -678,7 +678,8 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 **注意事项**
 
-该api仅在后台模式下生效！
+已废弃，类似场景使用 setEnableBackground 解决
+
 
 #### DCSDKInitConfig.Builder.setMenuDefFontSize(menuDefFontSize)
 
