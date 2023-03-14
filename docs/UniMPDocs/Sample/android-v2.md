@@ -626,8 +626,7 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 **注意事项**
 **Precautions**
 
-开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能 或设置setUniMPFromRecents（v3.2.6）关闭任务窗口显示。
-After enabling the background running function of the applet, the multitasking window will also be opened. The effect is as shown below! If your needs do not require applets to have independent task windows. Then please close the background running function of the applet or set setUniMPFromRecents (v3.2.6) to close the task window display.
+开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
 
