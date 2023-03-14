@@ -498,7 +498,7 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
 
 **注意事项**
 
-开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能 或设置setUniMPFromRecents（v3.2.6）关闭任务窗口显示。
+开启小程序后台运行功能后，也将开启多任务窗口。效果如下图！如果你的需求不需要小程序有独立任务窗口。那请关闭小程序后台运行功能。
 
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/unimp_enableback.png" width=35%>
 
