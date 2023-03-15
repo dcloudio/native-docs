@@ -36,6 +36,10 @@ export default {
           url: 'https://uniapp.dcloud.net.cn/uniCloud/uni-id',
         },
         {
+          subTitle: 'uni-search',
+          url: 'https://ext.dcloud.net.cn/plugin?id=3851',
+        },
+        {
           subTitle: 'uniPay',
           url: 'https://uniapp.dcloud.net.cn/uniCloud/unipay',
         },
@@ -46,6 +50,10 @@ export default {
         {
           subTitle: 'uni-verify',
           url: 'https://uniapp.dcloud.io/univerify',
+        },
+        {
+          subTitle: 'uni实人认证',
+          url: 'https://uniapp.dcloud.net.cn/uniCloud/frv/intro.html',
         },
         {
           subTitle: 'sms',
@@ -63,6 +71,10 @@ export default {
           subTitle: 'uni-upgrade-center',
           url: 'https://uniapp.dcloud.io/uniCloud/upgrade-center',
         },
+        {
+          subTitle: 'uni-im',
+          url: 'https://uniapp.dcloud.net.cn/uniCloud/uni-im',
+        }
       ],
     },
   ],
@@ -83,17 +95,9 @@ export default {
           url: 'https://www.dcloud.io/dportal.html',
         },
         {
-          subTitle: '',
-          url: '',
-        },
-        {
-          subTitle: '',
-          url: '',
-        },
-        {
-          subTitle: '',
-          url: '',
-        },
+          subTitle: 'uni安全专题',
+          url: 'https://uniapp.dcloud.net.cn/tutorial/safe.html',
+        }
       ],
     },
     /* {
@@ -146,50 +150,50 @@ export default {
           url: 'https://open.dcloud.net.cn/pages/login/login',
         },
       ],
-    },
-    {
-      title: '关于我们',
-      content: [
-        {
-          subTitle: 'DCloud官网',
-          url: 'https://dcloud.io/',
-        },
-        {
-          subTitle: '案例',
-          url: 'https://uniapp.dcloud.io/case',
-        },
-        {
-          subTitle: '需求墙',
-          url: 'https://dev.dcloud.net.cn/wish/?channel=uniapp',
-        },
-        {
-          subTitle: '许可协议',
-          url: 'https://ask.dcloud.net.cn/article/35623',
-        },
-        {
-          subTitle: '加入我们',
-          url: 'https://www.dcloud.io/hr/',
-        },
-        {
-          subTitle: '赞助我们',
-          url: 'https://dev.dcloud.net.cn/sponsor/',
-        },
-      ],
-    },
-    {
-      title: '联系我们',
-      content: [
-        {
-          subTitle: '商务合作：bd@dcloud.io',
-          url: 'mailto:bd@dcloud.io',
-        },
-        {
-          subTitle: '广告合作：uniad@dcloud.io',
-          url: 'mailto:uniad@dcloud.io',
-        },
-      ],
-    },
+    }
   ],
-  domainImg: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/769929a3-65eb-4d11-815d-84f88197a152.png',
+  aboutus: {
+    title: '关于我们',
+    content: [
+      {
+        subTitle: 'DCloud官网',
+        url: 'https://dcloud.io/',
+      },
+      {
+        subTitle: '案例',
+        url: 'https://uniapp.dcloud.io/case',
+      },
+      {
+        subTitle: '需求墙',
+        url: 'https://dev.dcloud.net.cn/wish/?channel=uniapp',
+      },
+      {
+        subTitle: '许可协议',
+        url: 'https://ask.dcloud.net.cn/article/35623',
+      },
+      {
+        subTitle: '加入我们',
+        url: 'https://www.dcloud.io/hr/',
+      },
+      {
+        subTitle: '赞助我们',
+        url: 'https://dev.dcloud.net.cn/sponsor/',
+      },
+    ],
+  },
+  concatus: {
+    title: '联系我们',
+    content: [
+      {
+        subTitle: '商务合作：bd@dcloud.io',
+        url: 'mailto:bd@dcloud.io',
+      },
+      {
+        subTitle: '广告合作：uniad@dcloud.io',
+        url: 'mailto:uniad@dcloud.io',
+      },
+    ],
+  },
+  domainImg: 'https://web-assets.dcloud.net.cn/unidoc/zh/jgwab.png',
   beian: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802035340'
 }

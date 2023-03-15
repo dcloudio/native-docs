@@ -9219,10 +9219,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-uni-app-test@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.3.4.tgz#b2288119c53dc47532a7d8f3d2b1ac41436b9660"
-  integrity sha512-O3EMfHiEtXI84QST1R1jc8n/K5Js6NpwKuRL49sMbekYtOeebqc1nXUGJKxDp0tOcJYZyGuWKUjNbHhRh2lpXA==
+vuepress-theme-uni-app-test@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.3.5.tgz#87d5a91a4dc3fa2a9eda375483ff9008f3607b89"
+  integrity sha512-ULC2HelbWnWBz3dbH51zDF7ip92x8PUbipRbo9dLSgPRjKx3s0X6SWZpYX9SLyPsHoJ4x0y1+or6JnxaspmVcg==
   dependencies:
     "@vuepress/plugin-back-to-top" "^1.9.5"
     "@vuepress/theme-default" "^1.8.2"
