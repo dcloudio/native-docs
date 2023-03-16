@@ -33,9 +33,18 @@ Therefore, if the plug-in developer is a native plug-in made with Xcode14, it ne
 }
 ...
 ```
-2.需要在原生 ***<u>插件工程</u>*** 的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
+2.Xcode14 编译的依赖库默认无法在低版本 Xcode上使用解决方法需要在原生 ***<u>插件工程</u>*** 的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
 
 ![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)
+
+
+**注意:** 如果插件工程已经按照上面配置，使用插件打包时仍然会报包含 `_objc_msgSend$xxx..` 这种错误
+
+```
+ `Undefined symbols for architecture arm64 \"_objc_msgSend$xxx..." in xxx...` 
+```
+
+说明使用的第三方SDK没有添加上面的配置，报错中 in `xxx`  就是目标SDK中的代码，需要告知三方SDK提供方来解决此问题。
 
 
 
