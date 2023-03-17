@@ -192,7 +192,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:25.3.1"
     implementation "com.android.support:support-v4:25.3.1"
     implementation "com.android.support:appcompat-v7:25.3.1"
-    implementation "com.alibaba:fastjson:1.1.46.android"
+    implementation "com.alibaba:fastjson:1.2.83"
 }
 ```
 
@@ -204,7 +204,7 @@ The dependencies node of package.json needs to configure the following informati
     "com.android.support:recyclerview-v7:25.3.1",
     "com.android.support:support-v4:25.3.1",
     "com.android.support:appcompat-v7:25.3.1",
-    "com.alibaba:fastjson:1.1.46.android"
+    "com.alibaba:fastjson:1.2.83"
 ]
 ```
 

@@ -6,9 +6,7 @@
 | SDK|Version|Minimum version of HBuilder X|Remarks (using modules)
 |:----|:----|:----|:----
 |androidx|V1.0.0|HBuilder X V3.2.5|androidx相关依赖库
-| androidx| V1.0.0| HBuilder X V3.2.5| androidx dependent library
-|fastjson|v1.1.46|HBuilder X V3.2.5|fastjson是阿里巴巴的开源JSON解析库
-| fastjson| v1.1.46| HBuilder X V3.2.5| fastjson is Alibaba's open source JSON parsing library
+|fastjson|v1.2.83|HBuilder X V3.6.17(3.6.17以下版本可使用1.1.46)|fastjson是阿里巴巴的开源JSON解析库
 |android-gif-drawable|V1.2.23|HBuilder X V3.2.5|开源库 android-gif-drawable用于gif图显示
 | android-gif-drawable| V1.2.23| HBuilder X V3.2.5|Open source library android-gif-drawable is used for gif image display
 |移动安全联盟OAID|V1.0.25|HBuilder X V3.2.5|oaid_sdk 获取oaid使用

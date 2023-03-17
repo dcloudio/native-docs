@@ -126,7 +126,7 @@ dependencies {
 	compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
 	compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
 	compileOnly 'androidx.appcompat:appcompat:1.0.0'
-	compileOnly 'com.alibaba:fastjson:1.1.46.android'
+	compileOnly 'com.alibaba:fastjson:1.2.83'
 
 	compileOnly fileTree(include: ['uniapp-v8-release.aar'], dir: '../app/libs')
 }
