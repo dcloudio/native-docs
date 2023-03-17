@@ -34,19 +34,18 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
+### 2023年03月16日发布——HBuilderX（3.7.7.20230316-alpha）
 
-[和彩云，提取码: DjTY](https://caiyun.139.com/m/i?115CnqlJIKMAK)
+[和彩云，提取码: piht](https://caiyun.139.com/m/i?115Cenmunfk6c)
 
-[百度网盘，提取码: bn89](https://pan.baidu.com/s/1ACF-GeUU2hZ2Lsul9fOiqg?pwd=bn89)
+[百度网盘，提取码: n13u](https://pan.baidu.com/s/1miVExLv_2YsykQz5u86gYQ?pwd=n13u)
 
-+  新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro.html#)
-+  修复 uni.uploadFile 接口 timeout 配置无效的Bug[详情](https://ask.dcloud.net.cn/question/163747)
-+  修复 Vue2 项目使用组合式 API 时 onPageScroll、onReachBottom 无效的Bug[详情](https://ask.dcloud.net.cn/question/162503)
-+  修复 3.7.0引出的一键登录点击自定义按钮后无法再次调起的Bug[详情](https://ask.dcloud.net.cn/question/163973)
++  修复 nvue 页面组件设置 border 样式偶现崩溃的Bug[详情](https://ask.dcloud.net.cn/question/164236)
++  修复 nvue 页面 loading 组件事件触发异常的Bug[详情](https://ask.dcloud.net.cn/question/163143)
++  iOS平台 修复 视频播放控件 video 设置 controls 为 false 时全屏状态没有隐藏标题栏的Bug[详情](https://ask.dcloud.net.cn/question/160712)
 
-[和彩云历史版本，提取码: L5F6](https://caiyun.139.com/m/i?115CoohEf2UE8) 
+[和彩云历史版本，提取码: OtZ8](https://caiyun.139.com/m/i?115ConN2dosBl) 
 
-[百度网盘历史版本，提取码: bn4x](https://pan.baidu.com/s/1JjgTWZHxMEQ3ayUApuKNqA?pwd=bn4x)
+[百度网盘历史版本，提取码: x6cj](https://pan.baidu.com/s/1aPcrevSl2VwVNgwyXMio-w?pwd=x6cj)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
