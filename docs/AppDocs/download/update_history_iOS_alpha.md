@@ -1,6 +1,13 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.7.6.20230227-alpha
+
++  新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro.html#)
++  修复 uni.uploadFile 接口 timeout 配置无效的Bug[详情](https://ask.dcloud.net.cn/question/163747)
++  修复 Vue2 项目使用组合式 API 时 onPageScroll、onReachBottom 无效的Bug[详情](https://ask.dcloud.net.cn/question/162503)
++  修复 3.7.0引出的一键登录点击自定义按钮后无法再次调起的Bug[详情](https://ask.dcloud.net.cn/question/163973)
+
 ## 3.7.2.20230217-alpha
 
 无
