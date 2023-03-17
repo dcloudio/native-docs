@@ -84,7 +84,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 		compileOnly 'com.android.support:recyclerview-v7:27.1.0'
 		compileOnly 'com.android.support:support-v4:27.1.0'
 		compileOnly 'com.android.support:appcompat-v7:27.1.0'
-		compileOnly 'com.alibaba:fastjson:1.1.46.android'
+		compileOnly 'com.alibaba:fastjson:1.2.83'
 
 		compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')
 	}

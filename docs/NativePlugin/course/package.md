@@ -163,7 +163,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:25.3.1"
     implementation "com.android.support:support-v4:25.3.1"
     implementation "com.android.support:appcompat-v7:25.3.1"
-    implementation "com.alibaba:fastjson:1.1.46.android"
+    implementation "com.alibaba:fastjson:1.2.83"
 }
 ```
 
@@ -174,7 +174,7 @@ package.json的dependencies节点就需要配置如下信息
     "com.android.support:recyclerview-v7:25.3.1",
     "com.android.support:support-v4:25.3.1",
     "com.android.support:appcompat-v7:25.3.1",
-    "com.alibaba:fastjson:1.1.46.android"
+    "com.alibaba:fastjson:1.2.83"
 ]
 ```
 
