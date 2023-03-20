@@ -1,3 +1,12 @@
+### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.6.20230227-alpha）版本生成本地打包App资源。
++ 新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro)
++ 修复 使用安全网络在部分设备可能引起崩溃的Bug
++ 修复 暗黑模式下 tabbar 页面切换可能出现异常的Bug
++ 修复 一键登录 按钮阴影可能显示异常的Bug
++ 修复 3.7.1版引出的 在小米 Android13 设备图片选择功能异常的Bug
+
 ### 2023年02月20日发布——HBuilderX（3.7.2.20230217-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.2.20230217-alpha）版本生成本地打包App资源。

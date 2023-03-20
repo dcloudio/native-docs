@@ -37,18 +37,17 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
+### 2023年03月17日发布——HBuilderX（3.7.7.20230316-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.7.6.20230227-alpha）版本生成本地打包App资源。
-+ 新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro)
-+ 修复 使用安全网络在部分设备可能引起崩溃的Bug
-+ 修复 暗黑模式下 tabbar 页面切换可能出现异常的Bug
-+ 修复 一键登录 按钮阴影可能显示异常的Bug
-+ 修复 3.7.1版引出的 在小米 Android13 设备图片选择功能异常的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.7.20230316-alpha）版本生成本地打包App资源。
++ 修复 nvue 页面 map 组件使用高德地图 marker 被点击时 label 可能被遮挡的Bug
++ 修复 nvue 页面 map 组件使用谷歌地图 marker 的 label 设置锚点时位置会出现偏差的Bug
++ 修复 上架华为应用市场审核误报集成了com.netease(网易;网易IM;网易云信)SDK的bug
++ 修复 plus.io.FileReader 的 readAsDataURL 返回 base64 字符中包含换行符的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
