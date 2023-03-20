@@ -8,7 +8,7 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc.aar, gtsdk-3.2.11.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar, push-3.0.0.aar(HBuilderX 3.3.13及以上), push-internal-4.1.4.aar(HBuilderX 3.3.13及以上) |
+| SDK\libs | aps-release.aar, aps-unipush-release.aar, gtc.aar, gtsdk-3.2.11.0.aar, hwp-3.0.1.aar, mzp-3.0.2.aar, oppo-3.0.3.aar, vivo-3.0.3.aar, xmp-3.0.2.aar, oppo-push-3.1.0.aar(HBuilderX 3.3.13及以上), mz-push-internal-4.1.4.aar(HBuilderX 3.3.13及以上) |
 
 
 #### sdk说明
@@ -16,9 +16,9 @@
 | 平台 | 文件 |
 |:-------:|:-------:|
 |华为|hwp-3.x.x.aar|
-|魅族|mzp-3.x.x.aar、push-internal-4.x.x.aar|
+|魅族|mzp-3.x.x.aar、mz-push-internal-4.x.x.aar|
 |小米|xmp-3.x.x.aar|
-|oppo|oppo-3.x.x.aar、push-3.x.x.aar|
+|oppo|oppo-3.x.x.aar、oppo-push-3.x.x.aar|
 |vivo|vivo-3.x.x.aar|
 
 **注意 x.x表示任意版本号 随着版本升级版本号更新**
