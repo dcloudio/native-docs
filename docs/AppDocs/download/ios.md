@@ -16,19 +16,21 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ## iOS 离线SDK - 正式版
 
-### 2023年02月23日发布——HBuilderX（3.7.3.20230223） 
+### 2023年03月23日发布——HBuilderX（3.7.8.20230323） 
 
-[和彩云，提取码: 8b4e](https://caiyun.139.com/m/i?115CoowJwmK2z) 
+[和彩云，提取码: kw4e](https://caiyun.139.com/m/i?115Co8weuIqLw) 
 
-[百度网盘，提取码: af8s](https://pan.baidu.com/s/1G4ZT-fkybhmvfbuJXrlA3w?pwd=af8s)
+[百度网盘，提取码: b4ki](https://pan.baidu.com/s/1BHXphaCPwwhEBsgNMClXgg?pwd=b4ki)
 
-+ 新增 苹果应用内支付 IAP 支持订阅促销优惠 [详情](https://uniapp.dcloud.net.cn/api/plugins/payment.html#%25E4%25BF%2583%25E9%2594%2580%25E4%25BC%2598%25E6%2583%25A0%25E5%258F%2582%25E6%2595%25B0%25E8%25AF%25B4%25E6%2598%258E)
-+ 更新 一键登录使用的个验SDK为 3.0.3.0 版
-+ 修复 音频播放 AudioPlayer seekTo 跳转指定位置不支持毫秒的Bug
++ 【重要】新增 uni实人认证，uni.startFacialRecognitionVerify，姓名身份证和人脸活体比对，金融级安全保障[详情](https://uniapp.dcloud.net.cn/uniCloud/frv/intro.html#)
++ 修复 nvue 页面组件设置 border 样式偶现崩溃的Bug[详情](https://ask.dcloud.net.cn/question/164236)
++ 修复 nvue 页面 loading 组件事件触发异常的Bug[详情](https://ask.dcloud.net.cn/question/163143)
++ 修复 视频播放控件 video 设置 controls 为 false 时全屏状态没有隐藏标题栏的Bug[详情](https://ask.dcloud.net.cn/question/160712)
++ 修复 调用 plus.runtime.restart 重启应用后导致一键登录无响应的Bug
 
-[和彩云历史版本，提取码: hTWB](https://caiyun.139.com/m/i?115Cnr0XxOm8l) 
+[和彩云历史版本，提取码: 3kgS](https://caiyun.139.com/m/i?115CenQsCidDx) 
 
-[百度网盘历史版本，提取码: vy9t](https://pan.baidu.com/s/1Xdsx_xd6xoGEuDY-w2rkew?pwd=vy9t)
+[百度网盘历史版本，提取码: qndw](https://pan.baidu.com/s/1DAjhtIKaYpgVjN5F15IvfA?pwd=qndw)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
