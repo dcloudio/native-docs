@@ -11,16 +11,16 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | share-weixin-release.aar，wechat-sdk-android-without-mta-6.7.9.aar |
+| SDK\libs | share-weixin-release.aar，wechat-sdk-android-without-mta-6.8.0.aar |
 
-**注意：3.7.6及以上版本，微信SDK改为gradle依赖，需要将libs目录下的wechat-sdk-android-without-mta-6.7.9.aar移除**
+**注意：3.7.6及以上版本，微信SDK改为gradle依赖，需要将libs目录下的wechat-sdk-android-without-mta-X.X.X.aar移除**
 
 ### 通过gradle集成微信SDK
 
 在主工程的build.gradle文件配置dependencies
 ```
 dependencies {
-    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.7.9'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:6.8.0'
 }
 ```
 
