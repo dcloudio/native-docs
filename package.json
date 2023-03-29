@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "@docsearch/js": "^3.1.0",
-    "vuepress-theme-uni-app-test": "^1.3.5"
+    "vuepress-theme-uni-app-test": "^1.3.6"
   }
 }
