@@ -15,15 +15,18 @@ The recommended method is to put the entire SDK under the project path. When add
 ## 更新日志
 ## Update log
 
-#### SDK 3.7.3
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.7.3.zip)
+#### SDK 3.7.9
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.7.9.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.3.20230223.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.9.20230324.html)
 
 ## 历史版本
 ## historic version
 > 历史版本仅提供上个正式版本的 SDK 下载
 > Historical versions only provide SDK downloads of the last official version
+
+#### SDK 3.7.3
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.3.20230223.html)
 
 #### SDK 3.6.18
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.6.18.20230117.html)
