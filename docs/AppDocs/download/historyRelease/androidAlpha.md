@@ -1,3 +1,11 @@
+### 2023年03月17日发布——HBuilderX（3.7.7.20230316-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.7.20230316-alpha）版本生成本地打包App资源。
++ 修复 nvue 页面 map 组件使用高德地图 marker 被点击时 label 可能被遮挡的Bug
++ 修复 nvue 页面 map 组件使用谷歌地图 marker 的 label 设置锚点时位置会出现偏差的Bug
++ 修复 上架华为应用市场审核误报集成了com.netease(网易;网易IM;网易云信)SDK的bug
++ 修复 plus.io.FileReader 的 readAsDataURL 返回 base64 字符中包含换行符的Bug
+
 ### 2023年02月27日发布——HBuilderX（3.7.6.20230227-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.6.20230227-alpha）版本生成本地打包App资源。
