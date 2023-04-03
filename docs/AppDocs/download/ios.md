@@ -34,19 +34,22 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年03月16日发布——HBuilderX（3.7.7.20230316-alpha）
+### 2023年03月31日发布——HBuilderX（3.7.12.20230331-alpha）
 
-[和彩云，提取码: piht](https://caiyun.139.com/m/i?115Cenmunfk6c)
+[和彩云，提取码: waWZ](https://caiyun.139.com/m/i?115CnU7vaY9Jl)
 
-[百度网盘，提取码: n13u](https://pan.baidu.com/s/1miVExLv_2YsykQz5u86gYQ?pwd=n13u)
+[百度网盘，提取码: bi7i](https://pan.baidu.com/s/1AD2OOGX8Mzh_MGBn3rvWrw?pwd=bi7i)
 
-+  修复 nvue 页面组件设置 border 样式偶现崩溃的Bug[详情](https://ask.dcloud.net.cn/question/164236)
-+  修复 nvue 页面 loading 组件事件触发异常的Bug[详情](https://ask.dcloud.net.cn/question/163143)
-+  iOS平台 修复 视频播放控件 video 设置 controls 为 false 时全屏状态没有隐藏标题栏的Bug[详情](https://ask.dcloud.net.cn/question/160712)
++  更新 uni-AD 腾讯优量汇SDK为 4.14.12 版；快手广告SDK为 3.3.40 版
++  新增 配置 privacyRegisterMode 应用启动时是否获取 idfv，解决应用合规检测可能报同意隐私政策前读取 idfv 的问题[详情](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#privacyRegisterMode)
++  更新 一键登录使用的个验SDK为 3.0.4.0 版，解决某些情况下会获取本地网络权限可能导致苹果审核被拒的Bug[详情](https://ask.dcloud.net.cn/question/166587)
++  修复 进入包含视频播放控件 video 页面会打断音乐播放的Bug[详情](https://ask.dcloud.net.cn/question/165329)
++  修复 导航栏 titleNView 设置 splitLine 样式可能显示不正常的Bug[详情](https://ask.dcloud.net.cn/question/164906)
++  修复 从微信中唤起App时 plus.runtime.arguments 获取的参数可能不正确的Bug[详情](https://ask.dcloud.net.cn/question/166211)
 
-[和彩云历史版本，提取码: OtZ8](https://caiyun.139.com/m/i?115ConN2dosBl) 
+[和彩云历史版本，提取码: GYk6](https://caiyun.139.com/m/i?115CnoDZoQsuM) 
 
-[百度网盘历史版本，提取码: x6cj](https://pan.baidu.com/s/1aPcrevSl2VwVNgwyXMio-w?pwd=x6cj)
+[百度网盘历史版本，提取码: bp4r](https://pan.baidu.com/s/1N0adSkOJu5pik8ZMU03WnA?pwd=bp4r)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
