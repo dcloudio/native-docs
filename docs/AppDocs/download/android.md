@@ -26,18 +26,23 @@
 ## Android 离线SDK - Alpha版
 ## Android Offline SDK - Alpha Version
 
-### 2023年03月17日发布——HBuilderX（3.7.7.20230316-alpha）
+### 2023年04月03日发布——HBuilderX（3.7.12.20230331-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 [Baidu Cloud](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg), extraction code: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.7.7.20230316-alpha）版本生成本地打包App资源。
-+ 修复 nvue 页面 map 组件使用高德地图 marker 被点击时 label 可能被遮挡的Bug
-+ 修复 nvue 页面 map 组件使用谷歌地图 marker 的 label 设置锚点时位置会出现偏差的Bug
-+ 修复 上架华为应用市场审核误报集成了com.netease(网易;网易IM;网易云信)SDK的bug
-+ 修复 plus.io.FileReader 的 readAsDataURL 返回 base64 字符中包含换行符的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.12.20230331-alpha）版本生成本地打包App资源。
++ 修复 uni.onSocketClose 监听 WebSocket 关闭时 code 值为 1001 可能不触发回调的Bug
++ 修复 实人认证 progressBarColor 设置为非法颜色值导致应用重启的Bug
++ 修复 nvue 页面中存在特殊字符可能引起崩溃的Bug
++ 修复 nvue 页面在App悬浮窗口模式下可能渲染异常的Bug
++ 修复 nvue text 组件中特殊字符不显示Bug
++ 修复 反复进入退出App偶发 js 进程崩溃的Bug
++ 更新 uni-AD 腾讯优量汇SDK 为 4.514.1384 版；快手广告SDK 为 3.3.40 版；Sigmob广告联盟SDK 为 4.10.1 版；百度百青藤广告SDK 为 9.271 版
++ 修复 某些情况下可能出现软键盘弹出后立即收起的Bug
++ 修复 plus.navigator.updateSplashscreen 可能不生效的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 [Baidu network disk download historical version](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA), extraction code: 6msp
