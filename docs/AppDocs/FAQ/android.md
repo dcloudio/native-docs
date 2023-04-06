@@ -250,3 +250,16 @@ uni-app将webview-x5-release.aar和weex_webview-x5-release.aar拷贝到libs目�
 2、原生项目根目录 gradle.properties 配置android.bundle.enableUncompressedNativeLibs=false
 
 重新编译打包
+
+
+### 适配android13 文件权限
+
+为了兼容android 13 新的权限要求，需要在AndroidManifest.xml 中新增下面的权限声明，以适配图片选择功能。
+
+```
+ <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+ <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+```
+
+
+
