@@ -315,4 +315,16 @@ Please modify the configuration as follows:
 2、 Native project root directory gradle.properties configuration android.bundle.enableUncompressedNativeLibs=false
 
 重新编译打包
-Recompile and package
+
+
+### 适配android13 文件权限
+
+为了兼容android 13 新的权限要求，需要在AndroidManifest.xml 中新增下面的权限声明，以适配图片选择功能。
+
+```
+ <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+ <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+```
+
+
+
