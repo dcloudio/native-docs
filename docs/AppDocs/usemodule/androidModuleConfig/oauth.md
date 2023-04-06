@@ -101,7 +101,9 @@ dependencies {
 dcloud_properties.xml文件在assets/data目录下
 
 ```xml
-<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Weixin" value="io.dcloud.feature.oauth.weixin.WeiXinOAuthService"/></feature>
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
+	<module name="OAuth-Weixin" value="io.dcloud.feature.oauth.weixin.WeiXinOAuthService"/>
+</feature>
 ```
 
 
@@ -146,8 +148,10 @@ dcloud_properties.xml文件在assets/data目录下
 
 dcloud_properties.xml文件在assets/data目录下
 
-```
-<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-QQ" value="io.dcloud.feature.oauth.qq.QQOAuthService"/></feature>
+```xml
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
+	<module name="OAuth-QQ" value="io.dcloud.feature.oauth.qq.QQOAuthService"/>
+</feature>
 ```
 
 
@@ -182,7 +186,9 @@ dcloud_properties.xml文件在assets/data目录下
 dcloud_properties.xml文件在assets/data目录下
 
 ```xml
-<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl"><module name="OAuth-Sina" value="io.dcloud.feature.oauth.sina.SinaOAuthService"/></feature>
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
+	<module name="OAuth-Sina" value="io.dcloud.feature.oauth.sina.SinaOAuthService"/>
+</feature>
 ```
 
 
@@ -221,7 +227,7 @@ dcloud_properties.xml文件在assets/data目录下
 
 ```xml
 <feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
-<module name="OAuth-MiUi" value="io.dcloud.feature.oauth.miui.MiUiOAuthService"/>
+	<module name="OAuth-MiUi" value="io.dcloud.feature.oauth.miui.MiUiOAuthService"/>
 </feature>
 ```
 
@@ -243,7 +249,9 @@ dcloud_properties.xml文件在assets/data目录下
 dcloud_properties.xml文件在assets/data目录下
 
 ```xml
-<module name="OAuth-Google" value="io.dcloud.feature.google.GoogleOAuthService"/>
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
+	<module name="OAuth-Google" value="io.dcloud.feature.google.GoogleOAuthService"/>
+</feature>
 ```
 
 **gradle配置**
@@ -302,7 +310,9 @@ facebook_app_id 和  fb_login_protocol_scheme
 dcloud_properties.xml文件在assets/data目录下
 
 ```xml
-<module name="OAuth-Facebook" value="io.dcloud.feature.facebook.FacebookOAuthService"/>
+<feature name="OAuth" value="io.dcloud.feature.oauth.OAuthFeatureImpl">
+	<module name="OAuth-Facebook" value="io.dcloud.feature.facebook.FacebookOAuthService"/>
+</feature>
 ```
 
 **gradle配置**
