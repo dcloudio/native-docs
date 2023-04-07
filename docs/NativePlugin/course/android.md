@@ -10,7 +10,6 @@
 - HBuilderX 下载地址：[官方下载地址](https://www.dcloud.io/hbuilderx.html)
 
 #### 版本升级注意
-- 插件目前暂时不支持Kotlin
 - **gradle版本注意事项**
 	+ HX3.0.0+版本云打包及相应版本SDK都将gradle版本4.6-all升级到6.5-all，tools.build:gradle版本3.2.1升级到4.1.1。
 		- 修复部分SDK集成后编译打包失败问题
