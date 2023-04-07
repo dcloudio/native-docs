@@ -18,9 +18,6 @@ When you read this document, we assume that you already have corresponding Andro
 - HBuilderX download address: [official download address](https://www.dcloud.io/hbuilderx.html)
 
 #### 版本升级注意
-#### Version upgrade note
-- 插件目前暂时不支持Kotlin
-- The plugin does not currently support Kotlin
 - **gradle版本注意事项**
 - **gradle version notes**
 	+ HX3.0.0+版本云打包及相应版本SDK都将gradle版本4.6-all升级到6.5-all，tools.build:gradle版本3.2.1升级到4.1.1。
