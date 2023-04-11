@@ -12,7 +12,7 @@
 | :-------: | :-------: |
 | SDK\libs |baidu-libs-release.aar，map-baidu-release.aar|
 
-百度地图暂时不支持 nvue map 标签
+**百度地图暂时不支持 nvue map 标签**
 
 ### Androidmainfest.xml文件需要修改的项 
 
@@ -130,6 +130,7 @@ dcloud_properties.xml文件在assets/data目录下
 <feature name="Maps" value="io.dcloud.js.map.amap.JsMapPluginImpl"></feature>
 ```
 
+**高德地图不需要添加services节点**
 
 ## 谷歌地图
 ### 需要拷贝的文件
@@ -139,6 +140,7 @@ dcloud_properties.xml文件在assets/data目录下
 | :-------: | :-------: |
 | SDK\libs |weex_google-map-release.aar|
 
+**谷歌地图仅支持 nvue map 标签**
 
 ### app目录的build.gradle添加依赖
 ```
@@ -168,8 +170,7 @@ application节点下配置如下代码:
 
 api_key在[谷歌开发者](https://mapsplatform.google.com/)开通。
 
-
-
+**谷歌地图不需要修改dcloud_properties.xml文件**
 
 
 <!--
