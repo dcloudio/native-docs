@@ -283,6 +283,61 @@ features 节点添加
 		</feature>
 ```
 
+## uniMP激励视频广告
+
+**最低支持版本：离线sdk 3.7.13**
+
+### 库文件配置
+
+将以下文件放入工程的libs目录下
+
+路径 | 文件名
+- | - 
+SDK/libs| ads-release.aar、ads-wm-release.aar、wechat-sdk-android-without-mta-6.8.0.aar
+
+uniMP激励视频广告 不需要配置dcloud_properties.xml文件
+
+### 引入 WXEntryActivity.java
+
+**注意：如果已经集成微信登录或者微信分享，当前部分内容可直接跳过**
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| %应用包名%\wxapi | WXEntryActivity.java |
+
+**比如开发者的包名为`com.company.xxx`，那么应该把`WXEntryActivity.java`文件拷贝到
+`com.company.xxx.wxapi`目录下，并编辑`WXEntryActivity.java`文本，把第一行的`package io.dcloud.HBuilder.wxapi`替换为实际的路径。**
+
+可参考如下代码：
+
+```java 
+package %应用包名%.wxapi;
+
+import io.dcloud.feature.aol.wm.AbsWXCallbackActivity;
+
+public class WXEntryActivity extends AbsWXCallbackActivity {
+
+}
+```
+
+### Androidmainfest.xml文件需要修改的项
+
+**需要在application节点前添加权限**
+
+```xml
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+<application>节点下配置如下代码
+<meta-data android:value="%用户申请的微信Appid%" android:name="WX_APPID"/>  
+<activity android:name="%用户包名%.wxapi.WXEntryActivity" 
+	android:label="@string/app_name"  
+	android:exported="true" 
+	android:launchMode="singleTop"> 
+	<intent-filter><action android:name="android.intent.action.VIEW"/>
+		<category android:name="android.intent.category.DEFAULT"/> 
+		<data android:scheme="%用户申请的微信Appid%"/>
+	</intent-filter>
+</activity>
+```
 <!--
 ## 360广告
 
