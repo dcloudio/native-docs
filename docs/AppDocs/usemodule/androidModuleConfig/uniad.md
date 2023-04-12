@@ -324,6 +324,8 @@ public class WXEntryActivity extends AbsWXCallbackActivity {
 
 **需要在application节点前添加权限**
 
+**注意：如果暂时没有微信appid，可将微信appid对应的两行配置去掉**
+
 ```xml
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
 <application>节点下配置如下代码
