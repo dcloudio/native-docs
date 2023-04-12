@@ -42,9 +42,8 @@
 |优量汇|v4.14.12|UniAD/优量汇|
 |穿山甲|v4.9.0.5|UniAD/穿山甲|
 |穿山甲Gromore|v3.8.0.2|UniAD/穿山甲Gromore|
-|Sigmob|v4.6.1|UniAD/Sigmob|
-|百度百青藤|v4.901|UniAD/百度|
-|Baidu Baiqingteng| v4.901| UniAD/Baidu|
+|Sigmob|v4.7.1|UniAD/Sigmob|
+|百度百青藤|v5.121|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
 | Paypal Payment| v0.79.0| Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
