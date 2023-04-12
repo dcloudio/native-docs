@@ -1,3 +1,16 @@
+### 2023年04月03日发布——HBuilderX（3.7.12.20230331-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.12.20230331-alpha）版本生成本地打包App资源。
++ 修复 uni.onSocketClose 监听 WebSocket 关闭时 code 值为 1001 可能不触发回调的Bug
++ 修复 实人认证 progressBarColor 设置为非法颜色值导致应用重启的Bug
++ 修复 nvue 页面中存在特殊字符可能引起崩溃的Bug
++ 修复 nvue 页面在App悬浮窗口模式下可能渲染异常的Bug
++ 修复 nvue text 组件中特殊字符不显示Bug
++ 修复 反复进入退出App偶发 js 进程崩溃的Bug
++ 更新 uni-AD 腾讯优量汇SDK 为 4.514.1384 版；快手广告SDK 为 3.3.40 版；Sigmob广告联盟SDK 为 4.10.1 版；百度百青藤广告SDK 为 9.271 版
++ 修复 某些情况下可能出现软键盘弹出后立即收起的Bug
++ 修复 plus.navigator.updateSplashscreen 可能不生效的Bug
+
 ### 2023年03月17日发布——HBuilderX（3.7.7.20230316-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.7.20230316-alpha）版本生成本地打包App资源。
