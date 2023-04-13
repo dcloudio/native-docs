@@ -1,3 +1,7 @@
+### 离线打包存在多个以uni-jsframework开头的文件
+
+离线打包时为较少集成难度，默认会将所有框架都包含在内，如果需要去除其余框架，可参考[文档](/AppDocs/FAQ/jsframeworkdeclare.md)配置。
+
 ### 适配暗黑模式
 
 3.6.9适配暗黑模式新增了webkit依赖库，需要将如下配置添加到build.gradle中

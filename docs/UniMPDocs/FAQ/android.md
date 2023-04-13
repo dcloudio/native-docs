@@ -1,3 +1,7 @@
+## Q: 小程序SDK为什么会存在多个以uni-jsframework开头的文件？
+
+集成小程序SDK时为较少集成难度，默认会将所有框架都包含在内，如果需要去除其余框架，可参考[文档](/AppDocs/FAQ/jsframeworkdeclare.md)配置。
+
 ## Q: Android 内置uni小程序。为什么还会弹窗提示资源文件不存在？
 
 A: 可以按以下步骤进行验证
