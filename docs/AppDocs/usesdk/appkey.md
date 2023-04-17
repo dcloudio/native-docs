@@ -11,6 +11,35 @@
 
 #### Android
 
+##### build.gradle配置
+
+主APP的build.gradle文件的android节点下配置应用的签名信息，可参考离线配置:
+```
+signingConfigs {
+        config {
+            keyAlias '签名别名'
+            keyPassword '签名密码'
+            storeFile file('xxx/xxx/xxx.keystore或xxx/xxx/xxx.jks') // 路劲为相对路径或绝对路径
+            storePassword '密码'
+            v1SigningEnabled true //兼容v1
+            v2SigningEnabled true //兼容v2
+        }
+}
+
+buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+            ...
+        }
+        release {
+            signingConfig signingConfigs.config
+            ...
+        }
+}
+```
+**注意：签名信息需要与后台一致，不一致也会导致appkey校验失败。**
+
+##### Androidmanifest.xml配置
 获取到android平台的AppKey后！打开Android项目 配置主APP的Androidmanifest.xml文件， 导航到Application节点，创建meta-data节点，name为dcloud_appkey，value为申请的AppKey如下：
 
 ```
@@ -30,7 +59,7 @@
 
 ### 常见问题
 
-#### 1. android平台 怎么配置签名文件打包编译？
+/* #### 1. android平台 怎么配置签名文件打包编译？
 
 主APP的build.gradle文件的android节点下配置如下:
 ```
@@ -55,15 +84,15 @@ buildTypes {
             ...
         }
 }
-```
-
-#### 2. 项目配置都正确怎么还是提示"未配置AppKey或配置错误"？
+``` 
+*/
+#### 1. 项目配置都正确怎么还是提示"未配置AppKey或配置错误"？
 
 这种情况不用怀疑。还是安装包的信息与你在申请Appkey填写信息不符导致的。 appid+应用包名+签名sha1三者必须与申请填写的信息一致才可以的。
 
 **android平台 可以按一下步骤检查一下离线项目配置:**
 
-1. 查看签名文件是否配置到了主APP的build.gradle，配置方式参考上面常见问题1。**注意：需要将signingConfigs添加到buildTypes才会生效**
+1. 查看签名文件是否配置到了主APP的build.gradle。**注意：需要将signingConfigs添加到buildTypes才会生效**
 
 2. 查看离线项目中dcloud_control.xml文件中的appid是否与申请AppKey时的appid一致。
 
@@ -87,11 +116,11 @@ buildTypes {
 	</application>
 ```
 
-#### 3. android平台 怎么创建签名文件？怎么获取签名文件的SHA1？
+#### 2. android平台 怎么创建签名文件？怎么获取签名文件的SHA1？
 
 请查看文档[Android平台签名证书(.keystore)生成指南](https://ask.dcloud.net.cn/article/35777)
 
-#### 4. android平台打包完的apk文件我怎么查看签名信息对比sha1呢？
+#### 3. android平台打包完的apk文件我怎么查看签名信息对比sha1呢？
 
 + 首先使用解压工具解开apk。
 
