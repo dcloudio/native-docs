@@ -3,7 +3,6 @@
 AndroidManifest.xml文件的application节点中添加如下节点到节点中，并配置替换其中uni-app或5+应用appid和广告联盟会员adid的值，**因为涉及到开屏广告业务，项目工程必须以io.dcloud.PandoraEntry作为应用的入口Activity。该activity已包含在lib.5plus.base-release中，开发者无需实现。**
 
 ```
-<meta-data android:name="DCLOUD_AD_ID" android:value="广告标识"/>  
 <meta-data android:name="DCLOUD_AD_SPLASH" android:value="true"/><!--如果不开启开屏广告则不设置此字段或者值设置为false-->  
 <meta-data android:name="DCLOUD_STREAMAPP_CHANNEL" android:value="包名|应用标识|广告标识|渠道，如io.dcloud.appid|appid|adid|google" /><!--为了保证广告统计的有效性，请正确设置此值-->
 ```
