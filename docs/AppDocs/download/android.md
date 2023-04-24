@@ -7,13 +7,13 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115Co8vWaK6Kr)，提取码: mUU4
-
+[和彩云](https://caiyun.139.com/m/i?115CoV3KyydAg)，提取码: xE2q
+ 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.9.20230324）版本生成本地打包App资源。
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115ConOP2fLZy)，提取码: Sg1Z
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CoV3NKJFm7)，提取码: nbFn
 
 [历史更新日志](/AppDocs/download/historyRelease/androidRelease.md)
 
@@ -24,7 +24,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CoAT1jHOJZ)，提取码: dCMh
+[和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.13.20230411-alpha）版本生成本地打包App资源。
 + 修复 蓝牙设备信息 BluetoothDeviceInfo 的 advertisData 字段可能会丢失数据的Bug
@@ -33,6 +33,6 @@
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
-[和彩云下载历史版本](https://caiyun.139.com/m/i?115CoTUvbt4q9)，提取码: FaYg
+[和彩云下载历史版本](https://caiyun.139.com/m/i?115CeVcmBz0c3)，提取码: 7VTL
 
 [历史更新日志](/AppDocs/download/historyRelease/androidAlpha.md)
