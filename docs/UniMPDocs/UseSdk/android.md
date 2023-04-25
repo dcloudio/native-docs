@@ -49,11 +49,11 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
 除视频、地图、分享、支付、登录、直播pusher等SDK，只集成基础模块如下:
 
  ```
- uniMPSDK-V2-release.aar  //必须集成
- uniapp-v8-release.aar //必须集成
- breakpad-build-release.aar //必须集成
+ uniMPSDK-V2-release.aar  //必须集成，uni小程序sdk引擎需要
+ uniapp-v8-release.aar //必须集成，uni-app引擎需要
+ breakpad-build-release.aar //必须集成，breakpad用于采集系统崩溃日志
  sqlite-release.aar
- base_oaid_sdk.aar //必须集成 注意(3.3.8版本的SDK及以下版本请集成oaid_sdk_1.0.25.aar)
+ base_oaid_sdk.aar //可选集成，用来获取设备的oaid唯一标示 注意(3.3.8版本的SDK及以下版本请集成oaid_sdk_1.0.25.aar)
  messaging-release.aar
  iBeacon-release.aar
  fingerprint-release.aar
@@ -64,14 +64,14 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  
 ```
 dependencies {
-	implementation 'androidx.recyclerview:recyclerview:1.0.0' //必须集成
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0' //必须集成
-    implementation 'androidx.appcompat:appcompat:1.0.0' //必须集成
-    implementation 'com.alibaba:fastjson:1.2.83' //必须集成
-    implementation 'com.facebook.fresco:fresco:2.5.0'//必须集成
-    implementation 'com.facebook.fresco:animated-gif:2.5.0'//必须集成
-    implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成
-    implementation 'androidx.webkit:webkit:1.3.0' //3.6.15版本之后 必须集成
+	implementation 'androidx.recyclerview:recyclerview:1.0.0' //必须集成，android 自带recyclerview支持
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0' //必须集成，androidx support支持
+    implementation 'androidx.appcompat:appcompat:1.0.0' //必须集成，androidx appcompat支持
+    implementation 'com.alibaba:fastjson:1.2.83' //必须集成，fastjson功能需要
+    implementation 'com.facebook.fresco:fresco:2.5.0'//必须集成，图片加载需要
+    implementation 'com.facebook.fresco:animated-gif:2.5.0'//必须集成，图片加载需要
+    implementation 'com.github.bumptech.glide:glide:4.9.0'//必须集成，图片加载需要
+    implementation 'androidx.webkit:webkit:1.3.0' //3.6.15版本之后 必须集成，用来支持暗黑模式
 }
 ```
 
