@@ -23,8 +23,8 @@
 |快手|v3.3.40|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
 |优量汇|v4.14.12|UniAD/优量汇|
-|穿山甲|v4.9.0.5|UniAD/穿山甲|
-|穿山甲Gromore|v3.8.0.2|UniAD/穿山甲Gromore|
+|穿山甲|v5.1.6.0|UniAD/穿山甲|
+|穿山甲Gromore|v5.1.6.0|UniAD/穿山甲Gromore|
 |Sigmob|v4.7.1|UniAD/Sigmob|
 |百度百青藤|v5.121|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|

@@ -10,6 +10,8 @@
 
 **离线SDK 3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.7.a 更换为GTCommonSDK.framework**
 
+**离线SDK 3.8.0版本之后，部分广告SDK由.a文件变更为.framework文件，穿山甲以及GromoreSDK由framework变更为xcframework[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)**
+
 **若使用百度网盘下载后解压失败，请使用和彩云下载**
 
 
@@ -32,19 +34,18 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年04月11日发布——HBuilderX（3.7.13.20230411-alpha）
+### 2023年04月25日发布——HBuilderX（3.8.0.20230425-alpha）
 
-[和彩云，提取码: xqd1](https://caiyun.139.com/m/i?115CeS2CcubZe)
+[和彩云，提取码: 5ofs](https://caiyun.139.com/m/i?115Cnr50YIPtA)
 
-[百度网盘，提取码: m84h](https://pan.baidu.com/s/1QLENYX5tu8d6OH24ZIjMiA?pwd=m84h)
+[百度网盘，提取码: w3up](https://pan.baidu.com/s/1WNh9QiF9m41tkE50lH2EUw?pwd=w3up)
 
-+ 【重要】新增 uni-AD 支持 uniMP激励视频广告，提升CPM、提升填充率[详情](https://uniapp.dcloud.net.cn/uni-ad.html#unimp)
-+  更新 uni-AD Sigmob广告联盟SDK为 4.7.1 版；百度百青藤广告SDK为 5.121 版
-+  修复 修复 plus.runtime.restart 后苹果应用内支付 IAP 无响应的Bug
-+  新增 一键登录支持 isCenterHint 参数设置未勾选服务条款时点击登录按钮的提示信息是否垂直居中显示[详情](https://uniapp.dcloud.net.cn/univerify.html#%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%AF%B7%E6%B1%82%E7%99%BB%E5%BD%95%E6%8E%88%E6%9D%83)
++ 修复 uni.scanCode 扫码后跳转页面可能引起应用卡死的Bug[详情](https://ask.dcloud.net.cn/question/160090)
++ 更新 uni-AD 今日头条穿山甲 SDK 为 5.1.6.0 版；穿山甲GroMore广告 SDK 为 5.1.6.0 版
++ 更新 uni-AD 部分广告依赖库文件更新[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)
 
-[和彩云历史版本，提取码: vFSG](https://caiyun.139.com/m/i?115Co7Qaqcmwc) 
+[和彩云历史版本，提取码: M0dZ](https://caiyun.139.com/m/i?115CepZ7m2JBv) 
 
-[百度网盘历史版本，提取码: 2wrm](https://pan.baidu.com/s/1DerHbqtZsvbaEoeTIuYVoQ?pwd=2wrm)
+[百度网盘历史版本，提取码: vei2](https://pan.baidu.com/s/1Jl9C2zaL0uuRoMMV_jEUzw?pwd=vei2)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
