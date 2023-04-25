@@ -1,6 +1,13 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.7.13.20230411-alpha
+
++ 【重要】新增 uni-AD 支持 uniMP激励视频广告，提升CPM、提升填充率[详情](https://uniapp.dcloud.net.cn/uni-ad.html#unimp)
++  更新 uni-AD Sigmob广告联盟SDK为 4.7.1 版；百度百青藤广告SDK为 5.121 版
++  修复 修复 plus.runtime.restart 后苹果应用内支付 IAP 无响应的Bug
++  新增 一键登录支持 isCenterHint 参数设置未勾选服务条款时点击登录按钮的提示信息是否垂直居中显示[详情](https://uniapp.dcloud.net.cn/univerify.html#%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%AF%B7%E6%B1%82%E7%99%BB%E5%BD%95%E6%8E%88%E6%9D%83)
+
 ## 3.7.12.20230331-alpha
 
 +  更新 uni-AD 腾讯优量汇SDK为 4.14.12 版；快手广告SDK为 3.3.40 版
