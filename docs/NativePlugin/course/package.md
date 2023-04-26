@@ -152,9 +152,10 @@ gradle配置的第三方sdk 仓储名称方式的配置信息 需要在dependenc
 云端打包仅支持从以下仓储下载依赖库，务必注意依赖库已提交到这些仓储中
 
 - google()
+- mavenCentral()
 - maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
 - maven { url 'https://jitpack.io' }
-- jcenter()
+- maven { url 'https://developer.huawei.com/repo/' }
 
 app.gradle 配置中dependencies节点信息如下。
 
