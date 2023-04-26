@@ -180,9 +180,10 @@ The configuration information of the third-party SDK repository name configured 
 Cloud packaging only supports downloading dependent libraries from the following repositories, and it is important to note that dependent libraries have been submitted to these repositories
 
 - google()
+- mavenCentral()
 - maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
 - maven { url 'https://jitpack.io' }
-- jcenter()
+- maven { url 'https://developer.huawei.com/repo/' }
 
 app.gradle 配置中dependencies节点信息如下。
 The dependencies node information in the app.gradle configuration is as follows.
