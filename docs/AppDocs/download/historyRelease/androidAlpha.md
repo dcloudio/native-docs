@@ -1,3 +1,10 @@
+### 2023年04月12日发布——HBuilderX（3.7.13.20230411-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.7.13.20230411-alpha）版本生成本地打包App资源。
++ 修复 蓝牙设备信息 BluetoothDeviceInfo 的 advertisData 字段可能会丢失数据的Bug
++ 修复 App切换语言后重启可能出现闪屏的Bug
++ 新增 uni-AD 支持 uniMP激励视频广告，提升CPM、提升填充率[文档](/AppDocs/usemodule/androidModuleConfig/uniad.md)
+
 ### 2023年04月03日发布——HBuilderX（3.7.12.20230331-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.7.12.20230331-alpha）版本生成本地打包App资源。
