@@ -36,19 +36,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年04月25日发布——HBuilderX（3.8.0.20230425-alpha）
+### 2023年04月28日发布——HBuilderX（3.8.1.20230428-alpha）
 
-[和彩云，提取码: 5ofs](https://caiyun.139.com/m/i?115Cnr50YIPtA)
+[和彩云，提取码: aOyt](https://caiyun.139.com/m/i?115CeVJnSz5Ew)
 
-[百度网盘，提取码: w3up](https://pan.baidu.com/s/1WNh9QiF9m41tkE50lH2EUw?pwd=w3up)
+[百度网盘，提取码: wr8p](https://pan.baidu.com/s/19-B9I9LP1Vc7ZhCkDeELhg?pwd=wr8p)
 
-+ 修复 uni.scanCode 扫码后跳转页面可能引起应用卡死的Bug[详情](https://ask.dcloud.net.cn/question/160090)
-+ 更新 uni-AD 今日头条穿山甲 SDK 为 5.1.6.0 版；穿山甲GroMore广告 SDK 为 5.1.6.0 版
-+ 更新 uni-AD 部分广告依赖库文件更新[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)
+无
 
-[和彩云历史版本，提取码: M0dZ](https://caiyun.139.com/m/i?115CepZ7m2JBv) 
+[和彩云历史版本，提取码: bN4X](https://caiyun.139.com/m/i?115CepLhcwCAA) 
 
-[百度网盘历史版本，提取码: vei2](https://pan.baidu.com/s/1Jl9C2zaL0uuRoMMV_jEUzw?pwd=vei2)
+[百度网盘历史版本，提取码: 2upt](https://pan.baidu.com/s/14RcvkmDQqKSY7axY5xTKOw?pwd=2upt)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
