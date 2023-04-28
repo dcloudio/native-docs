@@ -1,5 +1,11 @@
 ## Alpha版历次更新说明
 
+## 3.8.0.20230425-alpha
+
++ 修复 uni.scanCode 扫码后跳转页面可能引起应用卡死的Bug[详情](https://ask.dcloud.net.cn/question/160090)
++ 更新 uni-AD 今日头条穿山甲 SDK 为 5.1.6.0 版；穿山甲GroMore广告 SDK 为 5.1.6.0 版
++ 更新 uni-AD 部分广告依赖库文件更新[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)
+
 ## 3.7.13.20230411-alpha
 
 + 【重要】新增 uni-AD 支持 uniMP激励视频广告，提升CPM、提升填充率[详情](https://uniapp.dcloud.net.cn/uni-ad.html#unimp)
