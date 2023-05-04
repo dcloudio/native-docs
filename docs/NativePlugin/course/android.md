@@ -447,7 +447,7 @@ dcRichAlert.show({
 
 ### 本地注册插件
 
-以上两种方式选一即可
+以下两种方式选一即可
 
 + 第一种方式
  - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件。 在moudles节点下 添加你要注册的Module 或 Component
