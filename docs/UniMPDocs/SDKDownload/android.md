@@ -15,15 +15,15 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2023年03月30日发布
+### 2023年05月04日发布
 
-#### SDK 3.7.9 版本
+#### SDK 3.7.11 版本
 
-[点击下载UniMPSDK_Android@3.7.9.20230324.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.7.9.20230324.zip)
+[点击下载UniMPSDK_Android@3.7.11.20230504.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.7.11.20230504.zip)
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.9.20230324.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.11.20230427.html)
 
 
 ## 升级SDK注意事项
