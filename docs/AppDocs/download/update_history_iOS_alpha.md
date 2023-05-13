@@ -1,6 +1,10 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.8.1.20230428-alpha
+
+无
+
 ## 3.8.0.20230425-alpha
 
 + 修复 uni.scanCode 扫码后跳转页面可能引起应用卡死的Bug[详情](https://ask.dcloud.net.cn/question/160090)

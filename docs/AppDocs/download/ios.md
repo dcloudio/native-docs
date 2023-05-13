@@ -36,17 +36,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年04月28日发布——HBuilderX（3.8.1.20230428-alpha）
+### 2023年05月11日发布——HBuilderX（3.8.2.20230511-alpha）
 
-[和彩云，提取码: aOyt](https://caiyun.139.com/m/i?115CeVJnSz5Ew)
+[和彩云，提取码: QXQg](https://caiyun.139.com/m/i?115Co9uXusqcW)
 
-[百度网盘，提取码: wr8p](https://pan.baidu.com/s/19-B9I9LP1Vc7ZhCkDeELhg?pwd=wr8p)
+[百度网盘，提取码: 4a15](https://pan.baidu.com/s/1lmcmBWA4ent_xzI-8nFrBw?pwd=4a15)
 
 无
 
-[和彩云历史版本，提取码: bN4X](https://caiyun.139.com/m/i?115CepLhcwCAA) 
+[和彩云历史版本，提取码: 3wLs](https://caiyun.139.com/m/i?115CeoQJJwBKj) 
 
-[百度网盘历史版本，提取码: 2upt](https://pan.baidu.com/s/14RcvkmDQqKSY7axY5xTKOw?pwd=2upt)
+[百度网盘历史版本，提取码: exm5](https://pan.baidu.com/s/1gs4WtnUC8iQyiy3qxequHQ?pwd=exm5)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
