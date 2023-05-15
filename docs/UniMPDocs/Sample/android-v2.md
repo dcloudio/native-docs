@@ -575,6 +575,8 @@ dcloud_unimp_host_open_enter
 </style>
 ```
 
+**特别提示：动画资源必须配置到app module. 如果配置在library 不会生效**
+
 ## 暗黑模式
 
 3.7.3 版本支持暗黑模式，可选值  dark,light,auto(跟随系统)
