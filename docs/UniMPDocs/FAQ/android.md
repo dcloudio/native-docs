@@ -139,8 +139,8 @@ ${apk.applicationId}须替换成应用的包名。
 由于unimp 小程序运行在独进程 会涉及进程初始化。无法控制三方SDK初始化时隐私合规问题。因此建议开发隐私未同意时不要初始化unimpSDK
 
 ```
-if(隐私协议是否同意) {
-	//用户同意意思协议后再初始化sdk
+if(隐私协议是否同意) 
+    // 用户同意隐私协议后再初始化sdk
     DCUniMPSDK.getInstance().initialize(...)
 }
 ```
