@@ -29,9 +29,23 @@
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | statistic-release.aar,statistic-umeng-release.aar ,umeng-abtest-v1.0.1.aar,utdid4all-XXX-proguard.jar(XXX为版本号)|
+| SDK\libs | statistic-release.aar, statistic-umeng-release.aar, umeng-abtest-v1.0.1.aar, utdid4all-XXX-proguard.jar(XXX为版本号)|
 
-**注意：3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)**
+**注意**
+- 3.3.6及以下版本需要使用alipayutdid.jar来代替utdid4all-XXX-proguard.jar(XXX为版本号)
+- 3.8.3及以上版本，友盟SDK改为gradle依赖，需要将libs目录下的umeng-abtest-v1.0.1.aar、utdid4all-XXX-proguard.jar移除
+
+**通过gradle集成友盟SDK**
+
+在主工程的build.gradle文件配置dependencies
+```
+dependencies {
+    implementation 'com.umeng.umsdk:common:9.6.1'
+    implementation 'com.umeng.umsdk:asms:1.8.0'
+    implementation 'com.umeng.umsdk:abtest:1.0.1'
+    implementation 'com.umeng.umsdk:apm:1.9.1'
+}
+```
 
 **dcloud_properties.xml需要添加如下代码**
 
