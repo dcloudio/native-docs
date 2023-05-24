@@ -1,6 +1,10 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.8.2.20230511-alpha
+
+无
+
 ## 3.8.1.20230428-alpha
 
 无

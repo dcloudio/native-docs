@@ -37,15 +37,15 @@
 |Google登录|v5.0.2|Oauth/Google|
 | Google Sign In| v5.0.2| Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.40|UniAD/快手|
+|快手|v3.3.44|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
-|优量汇|v4.14.12|UniAD/优量汇|
-|穿山甲|v5.1.6.0|UniAD/穿山甲|
-|穿山甲Gromore|v5.1.6.0|UniAD/穿山甲Gromore|
-|Sigmob|v4.7.1|UniAD/Sigmob|
-|百度百青藤|v5.121|UniAD/百度|
+|优量汇|v4.14.30|UniAD/优量汇|
+|穿山甲|v5.4.0.0|UniAD/穿山甲|
+|穿山甲Gromore|v5.1.7.0|UniAD/穿山甲Gromore|
+|Sigmob|v4.9.0|UniAD/Sigmob|
+|百度百青藤|v5.14|UniAD/百度|
 |Paypal支付|v0.79.0|Payment/Paypal|
 | Paypal Payment| v0.79.0| Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
-|个推|v2.7.2.0|Push/UniPush|
-|个验|v3.0.4.0|Oauth/一键登录|
+|个推|v2.7.4.2|Push/UniPush|
+|个验|v3.0.4.1|Oauth/一键登录|
