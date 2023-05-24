@@ -1,3 +1,13 @@
+### 2023年05月12日发布——HBuilderX（3.8.2.20230511-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.2.20230511-alpha）版本生成本地打包App资源。
++ 新增 UTSAndroid.requestSystemPermission 申请系统权限
++ 修复 Math.random() 返回数据精度不足的Bug
++ 修复 UTSAndroid.offAppActivityRequestPermissionsResult 传入参数不生效的Bug
++ 更新 UniPush 使用的个推核心组件SDK为 3.2.4.0 版；个推SDK为 3.2.17.0 版；适配华为应用市场审核政策调整
++ 修复 部分场景下真机运行同步文件失败的Bug
++ 修复 扫码界面拒绝权限提示文字不支持国际化的Bug
+
 ### 2023年04月28日发布——HBuilderX（3.8.1.20230428-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.1.20230428-alpha）版本生成本地打包App资源。
