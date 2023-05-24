@@ -26,13 +26,9 @@
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.8.2.20230511-alpha）版本生成本地打包App资源。
-+ 新增 UTSAndroid.requestSystemPermission 申请系统权限
-+ 修复 Math.random() 返回数据精度不足的Bug
-+ 修复 UTSAndroid.offAppActivityRequestPermissionsResult 传入参数不生效的Bug
-+ 更新 UniPush 使用的个推核心组件SDK为 3.2.4.0 版；个推SDK为 3.2.17.0 版；适配华为应用市场审核政策调整
-+ 修复 部分场景下真机运行同步文件失败的Bug
-+ 修复 扫码界面拒绝权限提示文字不支持国际化的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.3.20230523-alpha）版本生成本地打包App资源。
++ 更新 uni-AD SDK，对接618预算，其中优量汇SDK为 4.530.1400 版；Sigmob广告联盟SDK为 4.12.1 版；百度百青藤广告SDK为 9.29 版
++ Android平台 更新 友盟统计SDK为 9.6.1 版，适配华为应用市场审核政策调整。**离线打包有变动，详细请参考[文档](/AppDocs/usemodule/androidModuleConfig/statistic.md)**
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
