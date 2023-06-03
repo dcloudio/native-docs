@@ -1,6 +1,13 @@
 ## Alpha版历次更新说明
 ## Alpha version previous update instructions
 
+## 3.8.3.20230523-alpha
+
++ 更新 uni-AD SDK，对接618预算，其中优量汇SDK为4.14.30 版；穿山甲SDK为5.4.0.0 版；穿山甲GroMore广告SDK为5.1.7.0 版；快手广告SDK为3.3.44 版；Sigmob广告联盟SDK为 4.9.0 版；百度百青藤广告SDK为 5.14 版
++ 更新 UniPush 使用的个推SDK为 2.7.4.2 版，解决默认获取定位权限的Bug
++ 更新 一键登录使用的个验SDK为 3.0.4.1 版
+
+
 ## 3.8.2.20230511-alpha
 
 无

@@ -37,19 +37,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年05月23日发布——HBuilderX（3.8.3.20230523-alpha）
+### 2023年06月02日发布——HBuilderX（3.8.4.20230602-alpha）
 
-[和彩云，提取码: sh4X](https://caiyun.139.com/m/i?115CoVLmt7f1X)
+[和彩云，提取码: ggNW](https://caiyun.139.com/m/i?115CnWksXn6xY)
 
-[百度网盘，提取码: nx5c](https://pan.baidu.com/s/19FuCir24JY4VV6be1dQ7KQ?pwd=nx5c)
+[百度网盘，提取码: 52sh](https://pan.baidu.com/s/18lWVItposLwVnIjHAikyeg?pwd=52sh)
 
-+ 更新 uni-AD SDK，对接618预算，其中优量汇SDK为4.14.30 版；穿山甲SDK为5.4.0.0 版；穿山甲GroMore广告SDK为5.1.7.0 版；快手广告SDK为3.3.44 版；Sigmob广告联盟SDK为 4.9.0 版；百度百青藤广告SDK为 5.14 版
-+ 更新 UniPush 使用的个推SDK为 2.7.4.2 版，解决默认获取定位权限的Bug
-+ 更新 一键登录使用的个验SDK为 3.0.4.1 版
+无
 
-[和彩云历史版本，提取码: qp3K](https://caiyun.139.com/m/i?115CoBNMNlrbo) 
+[和彩云历史版本，提取码: m1g6](https://caiyun.139.com/m/i?115CepEYarVOv) 
 
-[百度网盘历史版本，提取码: u7t7](https://pan.baidu.com/s/1Ny0YuaeIcFKvImCBtjNFHA?pwd=u7t7)
+[百度网盘历史版本，提取码: s2uk](https://pan.baidu.com/s/1YMG_PJcEjFWbB8t-kmcMkQ?pwd=s2uk)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
