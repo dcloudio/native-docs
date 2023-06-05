@@ -1,3 +1,9 @@
+### 2023年05月23日发布——HBuilderX（3.8.3.20230523-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.3.20230523-alpha）版本生成本地打包App资源。
++ 更新 uni-AD SDK，对接618预算，其中优量汇SDK为 4.530.1400 版；Sigmob广告联盟SDK为 4.12.1 版；百度百青藤广告SDK为 9.29 版
++ Android平台 更新 友盟统计SDK为 9.6.1 版，适配华为应用市场审核政策调整。**离线打包有变动，详细请参考[文档](/AppDocs/usemodule/androidModuleConfig/statistic.md)**
+
 ### 2023年05月12日发布——HBuilderX（3.8.2.20230511-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.2.20230511-alpha）版本生成本地打包App资源。
