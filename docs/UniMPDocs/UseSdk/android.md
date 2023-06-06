@@ -186,8 +186,7 @@ dependencies {
 ### uni小程序集成的第三方依赖库与宿主发生冲突
 ### The third-party dependent library integrated by the uni applet conflicts with the host
 
- - 遇到此问题。请先检查宿主使用的先关三方依赖库的版本与[uni小程序SDK集成的三方依赖库的版本](https://ask.dcloud.net.cn/article/35419)是否一致。
- - encountered this problem. Please first check whether the version of the third-party dependent library used by the host is consistent with [the version of the third-party dependent library integrated with the uni applet SDK](https://ask.dcloud.net.cn/article/35419).
+ - 遇到此问题。请先检查宿主使用的三方依赖库版本与[uni小程序SDK集成的三方依赖库的版本](https://ask.dcloud.net.cn/article/35419)是否一致。
  - 如果版本号一致！删除uni小程序SDK三方依赖库的文件或gradle配置即可。
  - If the version numbers match! Just delete the file or gradle configuration of the three-party dependent library of the uni applet SDK.
  - 如果版本号不一致！则需要宿主主动修改相关集成三方依赖库的java代码。来适配uni小程序中的三方依赖库的版本逻辑。
