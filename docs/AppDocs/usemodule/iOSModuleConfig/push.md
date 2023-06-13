@@ -1,9 +1,32 @@
 ## 注意
-1. 在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中),在 Push 节点下,确保和下图所示一样
+1.在工程中搜索 feature.plist 文件（位于PandoraApi.bundle中),在 Push 节点下,确保和下图所示一样
 
 ![](https://native-res.dcloud.net.cn/images/uniapp/push/unipush-feature-plist.png)
 
-2. uniPush 1.0 和 uniPush2.0的是不同的服务 具体请查看 [uniPush](https://uniapp.dcloud.net.cn/unipush.html) 
+可直接复制下面对应的值替换，避免手动输入错误
+
+```
+<key>Push</key>
+	<dict>
+		<key>autostart</key>
+		<true/>
+		<key>baseclass</key>
+		<string>PGPush</string>
+		<key>class</key>
+		<string>PGPushActualize</string>
+		<key>global</key>
+		<true/>
+		<key>server</key>
+		<dict>
+			<key>class</key>
+			<string>PGPushServerAct</string>
+			<key>identifier</key>
+			<string>com.pushserver</string>
+		</dict>
+	</dict>
+```
+
+**注意：uniPush 1.0 和 uniPush2.0的是不同的服务 具体请查看** [uniPush](https://uniapp.dcloud.net.cn/unipush.html) 
 
 ## uniPush
 ### 将uniPush模块依赖库及资源添加到工程
