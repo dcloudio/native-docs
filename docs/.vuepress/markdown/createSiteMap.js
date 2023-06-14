@@ -14,7 +14,7 @@ module.exports = (links, callback = () => { }) => {
   </url>`
   }).join('\n')
 
-  const rootPath = path.resolve(__dirname, '../../../root')
+  const rootPath = path.resolve(__dirname, '../public')
   const staticExists = fs.existsSync(rootPath)
   if (!staticExists) fs.mkdirSync(rootPath)
 
