@@ -35,16 +35,22 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年06月02日发布——HBuilderX（3.8.4.20230602-alpha）
+### 2023年06月16日发布——HBuilderX（3.8.5.20230616-alpha）
 
-[和彩云，提取码: ggNW](https://caiyun.139.com/m/i?115CnWksXn6xY)
+[和彩云，提取码: kLLO](https://caiyun.139.com/m/i?115CeUODR6px1)
 
-[百度网盘，提取码: 52sh](https://pan.baidu.com/s/18lWVItposLwVnIjHAikyeg?pwd=52sh)
+[百度网盘，提取码: euq4](https://pan.baidu.com/s/1wV_23KnL95wB1p3AVZFq8Q?pwd=euq4)
 
-无
++ 调整 allowsInlineMediaPlayback 默认值为 ture，允许 H5 视频全屏播放[详情](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 调整 mediaPlaybackRequiresUserAction 默认值为 false，允许 H5 音视频通过 API 控制自动播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 修复 视频播放控件 video 画面方向可能不正确的Bug[详情](https://ask.dcloud.net.cn/question/171484)
++ 修复 nvue rich-text 组件循环渲染时文字可能随机出现白色背景的Bug[详情](https://ask.dcloud.net.cn/question/171090)
++ 修复 uni.setTabBarItem 动态设置 gif 图片不生效的Bug[详情](https://ask.dcloud.net.cn/question/171342)
++ 修复 nvue video 组件高度设置 rpx 单位时可能导致 controls 不显示的Bug[详情](https://ask.dcloud.net.cn/question/171037)
++ 修复 uni原生插件Hook系统事件 applicationMain:argv: 获取参数为空的Bug
 
-[和彩云历史版本，提取码: m1g6](https://caiyun.139.com/m/i?115CepEYarVOv) 
+[和彩云历史版本，提取码: 3LRX](https://caiyun.139.com/m/i?115Co9nRE8iq3) 
 
-[百度网盘历史版本，提取码: s2uk](https://pan.baidu.com/s/1YMG_PJcEjFWbB8t-kmcMkQ?pwd=s2uk)
+[百度网盘历史版本，提取码: gys7](https://pan.baidu.com/s/1UeBuWFMyjcJ9fe_EYSmPlQ?pwd=gys7)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
