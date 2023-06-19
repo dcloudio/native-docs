@@ -250,7 +250,7 @@ features 节点添加
 
 路径 | 文件名
 -|-
-SDK/libs| ads-release.aar、ads-gromore-release.aar、mediation_ad_sdk.aar、open_ad_sdk.aar、pangle_adapter.aar
+SDK/libs| ads-release.aar、ads-gromore-release.aar、open_ad_sdk.aar
 
 ### Androidmanifest.xml配置
 
