@@ -1,5 +1,15 @@
 ## Alpha版历次更新说明
 
+## 3.8.5.20230616-alpha
+
++ 调整 allowsInlineMediaPlayback 默认值为 ture，允许 H5 视频全屏播放[详情](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 调整 mediaPlaybackRequiresUserAction 默认值为 false，允许 H5 音视频通过 API 控制自动播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 修复 视频播放控件 video 画面方向可能不正确的Bug[详情](https://ask.dcloud.net.cn/question/171484)
++ 修复 nvue rich-text 组件循环渲染时文字可能随机出现白色背景的Bug[详情](https://ask.dcloud.net.cn/question/171090)
++ 修复 uni.setTabBarItem 动态设置 gif 图片不生效的Bug[详情](https://ask.dcloud.net.cn/question/171342)
++ 修复 nvue video 组件高度设置 rpx 单位时可能导致 controls 不显示的Bug[详情](https://ask.dcloud.net.cn/question/171037)
++ 修复 uni原生插件Hook系统事件 applicationMain:argv: 获取参数为空的Bug
+
 ## 3.8.4.20230602-alpha
 
 无
