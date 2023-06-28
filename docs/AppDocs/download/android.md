@@ -29,7 +29,7 @@
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.7.20230628-alpha）版本生成本地打包App资源。
-+ 优化 plus.runtime.install 安装apk功能为独立模块，解决上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题。[文档](/AppDocs/usemodule/FAQ/android.md)
++ 优化 plus.runtime.install 安装apk功能为独立模块，解决上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题。[文档](/AppDocs/FAQ/android.md)
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
