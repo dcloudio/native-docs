@@ -44,9 +44,11 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 
 1. 基础库配置
 
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.23.aar、uniapp-v8-release.aar、oaid_sdk_1.0.25.aar和breakpad-build-release.aar拷贝到libs目录下
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.23.aar、uniapp-v8-release.aar、oaid_sdk_1.0.25.aar、install-apk-release.aar和breakpad-build-release.aar拷贝到libs目录下
 	
 	**注意：HBuilder X 3.5.0及以上版本新增库breakpad-build-release.aar**
+	
+	**注意：HBuilder X 3.8.7及以上版本新增库install-apk-release.aar，上架谷歌应用市场不能包含此库，更多参考[文档](/AppDocs/FAQ/android.md)**
 
 	![avatar](https://native-res.dcloud.net.cn/images/uniapp/android/lib-list.png)
 	
