@@ -1,3 +1,7 @@
+### 2023年06月25日发布——HBuilderX（3.8.6.20230621-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.6.20230621-alpha）版本生成本地打包App资源。
+
 ### 2023年06月19日发布——HBuilderX（3.8.5.20230616-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.5.20230616-alpha）版本生成本地打包App资源。
