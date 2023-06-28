@@ -61,11 +61,11 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
 1. 基础库配置
 1. Basic library configuration
 
-	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.23.aar、uniapp-v8-release.aar、oaid_sdk_1.0.25.aar和breakpad-build-release.aar拷贝到libs目录下
-	Copy lib.5plus.base-release.aar, android-gif-drawable-release@1.2.23.aar, uniapp-v8-release.aar, oaid_sdk_1.0.25.aar and breakpad-build-release.aar to the libs directory Down
+	将lib.5plus.base-release.aar、android-gif-drawable-release@1.2.23.aar、uniapp-v8-release.aar、oaid_sdk_1.0.25.aar、install-apk-release.aar和breakpad-build-release.aar拷贝到libs目录下
 	
 	**注意：HBuilder X 3.5.0及以上版本新增库breakpad-build-release.aar**
-	**Note: The new library breakpad-build-release.aar is added for HBuilder X 3.5.0 and above**
+	
+	**注意：HBuilder X 3.8.7及以上版本新增库install-apk-release.aar，上架谷歌应用市场不能包含此库，更多参考[文档](/AppDocs/FAQ/android.md)**
 
 	![avatar](https://native-res.dcloud.net.cn/images/uniapp/android/lib-list.png)
 	
