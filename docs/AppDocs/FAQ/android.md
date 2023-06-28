@@ -1,3 +1,11 @@
+### 解决 上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题
+
+HBuilder X 3.8.7-alpha开始。离线打包将安装功能独立成单独的aar —— install-apk-release.aar，上架谷歌市场不能包含此库，非谷歌市场可酌情考量。
+
+不包含此库，调用plus.runtime.install将无法安装apk文件。
+
+其余上架谷歌市场注意事项可参考[文档](https://uniapp.dcloud.net.cn/tutorial/android-gp.html)。
+
 ### 离线打包存在多个以uni-jsframework开头的文件
 
 离线打包时为较少集成难度，默认会将所有框架都包含在内，如果需要去除其余框架，可参考[文档](/AppDocs/FAQ/jsframeworkdeclare.md)配置。
