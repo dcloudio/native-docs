@@ -35,16 +35,17 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年06月21日发布——HBuilderX（3.8.6.20230621-alpha）
+### 2023年06月28日发布——HBuilderX（3.8.7.20230628-alpha）
 
-[和彩云，提取码: O3EW](https://caiyun.139.com/m/i?115Co9Rf2VIsL)
+[和彩云，提取码: 5vTk](https://caiyun.139.com/m/i?115CnXCW3mlRF)
 
-[百度网盘，提取码: gaj2]( https://pan.baidu.com/s/18Nf325TWx_jRiAN_bS7fZg?pwd=gaj2)
+[百度网盘，提取码: fwc9](https://pan.baidu.com/s/1ID7GtaXIThqe3CPraPHm6Q?pwd=fwc9)
 
-+ 更新 一键登录使用的个验基础库SDK为 3.0.6.0 版，解决上传 AppStore 可能报 ITMS-90683:Missing purpose string in info.plist 的Bug
++ 修复 tabBar 图标宽高不一致时显示会变形的Bug[详情](https://ask.dcloud.net.cn/question/172418)
++ 修复 setTitleNViewButtonStyle 动态设置标题栏按钮样式可能导致无法正常显示的Bug[详情](https://ask.dcloud.net.cn/question/172191)
 
-[和彩云历史版本，提取码: B62g](https://caiyun.139.com/m/i?115ConR36Ufb3) 
+[和彩云历史版本，提取码: wvvr](https://caiyun.139.com/m/i?115CeViRnUaA0) 
 
-[百度网盘历史版本，提取码: w3vt](https://pan.baidu.com/s/1OKZNan9VlXMegQp3lIQOVQ?pwd=w3vt)
+[百度网盘历史版本，提取码: d2tn](https://pan.baidu.com/s/1u4CrdxVt2pNW7M0v2xs3mw?pwd=d2tn)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
