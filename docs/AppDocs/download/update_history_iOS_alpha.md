@@ -5,6 +5,10 @@
 
 无
 
+## 3.8.6.20230621-alpha
+
++ 更新 一键登录使用的个验基础库SDK为 3.0.6.0 版，解决上传 AppStore 可能报 ITMS-90683:Missing purpose string in info.plist 的Bug
+
 ## 3.8.5.20230616-alpha
 
 + 调整 allowsInlineMediaPlayback 默认值为 ture，允许 H5 视频全屏播放[详情](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
