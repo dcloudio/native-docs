@@ -17,18 +17,28 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2023年05月31日发布——HBuilderX（3.8.4.20230531） 
+### 2023年07月03日发布——HBuilderX（3.8.7.20230703） 
 
-[和彩云，提取码: rhZc](https://caiyun.139.com/m/i?115CeVANmwLY6) 
+[和彩云，提取码: KVkz](https://caiyun.139.com/m/i?115CeVRf1mMpK) 
 
-[百度网盘，提取码: mf9c](https://pan.baidu.com/s/1I-PewoZfVmdQiRGJpaa_-A?pwd=mf9c)
+[百度网盘，提取码: msfn](https://pan.baidu.com/s/1MzzRsoeUUr-Nugx2y9OH5w?pwd=msfn)
 
-无
++ 修复 uni.setTabBarItem 动态设置 gif 图片不生效的Bug[详情](https://ask.dcloud.net.cn/question/171342)
++ 修复 nvue rich-text 组件循环渲染时文字可能随机出现白色背景的Bug[详情](https://ask.dcloud.net.cn/question/171090)
++ 修复 nvue video 组件高度设置 rpx 单位时可能导致 controls 不显示的Bug[详情](https://ask.dcloud.net.cn/question/171037)
++ 修复 uni原生插件Hook系统事件 applicationMain:argv: 获取参数为空的Bug
++ 修复 tabBar 图标宽高不一致时显示会变形的Bug[详情](https://ask.dcloud.net.cn/question/171037)
++ 更新 云端打包环境 XCode 为 14.3.1 版、iOS SDK 为 16.4 版
++ 更新 一键登录使用的个验基础库SDK为 3.0.6.0 版，解决上传 AppStore 可能报 ITMS-90683:Missing purpose string in info.plist 的Bug
++ 调整 allowsInlineMediaPlayback 默认值为 ture，允许 H5 视频全屏播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 调整 mediaPlaybackRequiresUserAction 默认值为 false，允许 H5 音视频通过 API 控制自动播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
++ 修复 setTitleNViewButtonStyle 动态设置标题栏按钮样式可能导致无法正常显示的Bug[详情](https://ask.dcloud.net.cn/question/172191)
++ 修复 视频播放控件 video 画面方向可能不正确的Bug[详情](https://ask.dcloud.net.cn/question/171484)
 
 
-[和彩云历史版本，提取码: vgaQ](https://caiyun.139.com/m/i?115CoUsGAIaKJ) 
+[和彩云历史版本，提取码: LfQU](https://caiyun.139.com/m/i?115CnquNrQAQU) 
 
-[百度网盘历史版本，提取码: qqmi](https://pan.baidu.com/s/1Ve7b9m0IpsjQJlgJzhB2pw?pwd=qqmi)
+[百度网盘历史版本，提取码: xvh6](https://pan.baidu.com/s/1rxSPZe1tv5YrsVRja2545Q?pwd=xvh6)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 

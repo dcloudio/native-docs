@@ -1,5 +1,9 @@
 ## 正式版历次更新说明
 
+## 3.8.4.20230531
+
+无
+
 ## 3.8.3.20230526
 
 + 新增 一键登录支持 isCenterHint 参数设置未勾选服务条款时点击登录按钮的提示信息是否垂直居中显示[详情](https://uniapp.dcloud.net.cn/univerify.html#%E5%AE%A2%E6%88%B7%E7%AB%AF-%E8%AF%B7%E6%B1%82%E7%99%BB%E5%BD%95%E6%8E%88%E6%9D%83)
