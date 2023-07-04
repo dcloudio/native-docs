@@ -1,3 +1,9 @@
+### 2023年05月31日发布——HBuilderX（3.8.4.20230531）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.4.20230531）版本生成本地打包App资源。
++ 修复 3.8.3引出的 在部分设备启动白屏，报`Uncaught SyntaxError: Invalid or unexpected token at __uniappview.html:2`错误的Bug 请所有使用3.8.3的开发者重新打包
++ 修复 3.8.3引出的 输入框焦点切换可能引起页面显示异常的Bug
+
 ### 2023年05月27日发布——HBuilderX（3.8.3.20230526）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.3.20230526）版本生成本地打包App资源。
