@@ -18,6 +18,7 @@ When you read this document, we assume that you already have corresponding Andro
 - HBuilderX download address: [official download address](https://www.dcloud.io/hbuilderx.html)
 
 #### 版本升级注意
+- 最新注意事项 `HX3.8.7+版本开始 androidx适配库升级为1.1.0 还在使用support/v4老版本适配的插件同学请尽快升级适配androidx 避免打包机环境不支持导致的编译失败或闪退`
 - **gradle版本注意事项**
 - **gradle version notes**
 	+ HX3.0.0+版本云打包及相应版本SDK都将gradle版本4.6-all升级到6.5-all，tools.build:gradle版本3.2.1升级到4.1.1。
@@ -45,8 +46,7 @@ When you read this document, we assume that you already have corresponding Andro
 - **HX3.2.5+版本开始改为Androidx依赖库。需注意！！项目需要默认配置useAndroidX=true**
 - **HX3.2.5+ version began to change to Androidx dependency library. Attention! ! The project requires the default configuration useAndroidX=true**
 - **HX3.2.13+版本开始 默认targetSdkVersion将由26改为28 插件开发者同学们需要注意！！如果你的插件不支持targetSdkVersion=28需要告知插件使用者！！21-11-19 更新**
-- **HX3.2.13+ version, the default targetSdkVersion will be changed from 26 to 28. Plug-in developers should pay attention! ! If your plugin does not support targetSdkVersion=28, you need to inform the plugin user! ! Updated 21-11-19**
-
+- **HX3.8.7+版本开始 androidx适配库升级为1.1.0 还在使用support/v4老版本适配的插件同学请尽快升级适配androidx 避免打包机环境不支持导致的编译失败或闪退**
 ## 导入uni插件原生项目
 ## Import uni plugin native project
 
@@ -119,10 +119,11 @@ repositories {
 }
 dependencies {
 	//必须添加的依赖
-	// dependencies that must be added
-	compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
-	compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
-	compileOnly 'androidx.appcompat:appcompat:1.0.0'
+	compileOnly 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0',
+	compileOnly 'androidx.core:core:1.1.0'
+	compileOnly 'androidx.fragment:fragment:1.1.0'
+	compileOnly 'androidx.appcompat:appcompat:1.1.0'
+	compileOnly 'androidx.recyclerview:recyclerview:1.1.0'
 	compileOnly 'com.alibaba:fastjson:1.2.83'
 
 	compileOnly fileTree(include: ['uniapp-v8-release.aar'], dir: '../app/libs')
@@ -1033,4 +1034,7 @@ Q: 如何查看如何查看uniapp console日志
 Q: How to view How to view the uniapp console log
 
 A:修改项目中assets/data/dcloud_control.xml 内部信息。将syncDebug改为true，开启调试模式。 注意正式版需要改为false!!!  查看log.TAG为console
-A: Modify the internal information of assets/data/dcloud_control.xml in the project. Change syncDebug to true to enable debug mode. Note that the official version needs to be changed to false!!! View log.TAG as console
+
+Q: HX3.8.7插件编译失败或运行插件闪退
+
+A: 查看是否使用了老版本的v4依赖库。3.8.7开始已升级androidx1.1.0版本，对老版本v4已不再兼容了 请升级androidx依赖库。
