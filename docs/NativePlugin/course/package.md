@@ -190,9 +190,11 @@ The dependencies node information in the app.gradle configuration is as follows.
 
 ```
 dependencies {
-    implementation "com.android.support:recyclerview-v7:25.3.1"
-    implementation "com.android.support:support-v4:25.3.1"
-    implementation "com.android.support:appcompat-v7:25.3.1"
+    implementation "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+    implementation "androidx.core:core:1.1.0"
+	implementation "androidx.fragment:fragment:1.1.0"
+	implementation "androidx.webkit:webkit:1.3.0"
+    implementation "androidx.appcompat:appcompat:1.1.0"
     implementation "com.alibaba:fastjson:1.2.83"
 }
 ```
@@ -202,15 +204,16 @@ The dependencies node of package.json needs to configure the following informati
 
 ```json
 "dependencies": [
-    "com.android.support:recyclerview-v7:25.3.1",
-    "com.android.support:support-v4:25.3.1",
-    "com.android.support:appcompat-v7:25.3.1",
+    "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0",
+    "androidx.core:core:1.1.0",
+    "androidx.fragment:fragment:1.1.0",
+	"androidx.webkit:webkit:1.3.0",
+	"androidx.appcompat:appcompat:1.1.0",
     "com.alibaba:fastjson:1.2.83"
 ]
 ```
 
-！！！注意V7、V4、fastjson都已默认集成 不需要再次配置。这里仅是示例写法！！！
-! ! ! Note that V7, V4, and fastjson are all integrated by default and do not need to be configured again. This is just an example of how to write it! ! !
+！！！注意androidx、fastjson都已默认集成 不需要再次配置。这里仅是示例写法！！！
 
 **HBuilderX2.3.8+开始添加更灵活配置，支持源码写dependencies内容**
 **HBuilderX2.3.8+ began to add more flexible configuration, support source code to write dependencies content**
