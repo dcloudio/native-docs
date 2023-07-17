@@ -41,7 +41,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|DCUniAdGm.framework、BUAdSDK.xcframework、BURelyFoundation.xcframework、CSJAdSDK.xcframework、CSJMediation.xcframework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、DeviceCheck.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|Gromore/CSJAdSDK.bundle|
+|DCUniAdGm.framework、BUAdSDK.xcframework、BURelyFoundation.xcframework、CSJAdSDK.xcframework(3.8.10版本废弃)、CSJMediation.xcframework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、DeviceCheck.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|Gromore/CSJAdSDK.bundle|
 
 注：3.8.0之前的版本依赖库使用:libDCUniAdGm.a、ABUAdCsjAdapter.framework、ABUAdSDK.framework、BUAdSDK.framework、BURelyFoundation.framework、CSJAdSDK.framework
 
