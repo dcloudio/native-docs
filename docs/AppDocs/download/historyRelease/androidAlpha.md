@@ -1,3 +1,8 @@
+### 2023年06月28日发布——HBuilderX（3.8.7.20230628-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.7.20230628-alpha）版本生成本地打包App资源。
++ 优化 plus.runtime.install 安装apk功能为独立模块，解决上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题。[文档](/AppDocs/FAQ/android.md)
+
 ### 2023年06月25日发布——HBuilderX（3.8.6.20230621-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.6.20230621-alpha）版本生成本地打包App资源。

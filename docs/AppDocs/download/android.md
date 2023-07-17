@@ -25,14 +25,18 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年06月28日发布——HBuilderX（3.8.7.20230628-alpha）
+### 2023年07月17日发布——HBuilderX（3.8.10.20230714-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.8.7.20230628-alpha）版本生成本地打包App资源。
-+ 优化 plus.runtime.install 安装apk功能为独立模块，解决上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题。[文档](/AppDocs/FAQ/android.md)
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.10.20230714-alpha）版本生成本地打包App资源。
++ 修复 UniPush1.0 指定格式透传消息不会创建推送消息的Bug
++ 修复 双击返回键退出应用后接收不到推送消息的Bug
++ 修复 隐私政策提示框在部分设备横屏状态下按钮显示不全的Bug
++ 修复 扫码界面拒绝权限提示文字默认语言不正确的Bug
++ 修复 通过 scheme 可唤起应用打开外部链接的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
