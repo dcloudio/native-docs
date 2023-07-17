@@ -47,18 +47,20 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年06月28日发布——HBuilderX（3.8.7.20230628-alpha）
+### 2023年07月14日发布——HBuilderX（3.8.10.20230714-alpha）
 
-[和彩云，提取码: 5vTk](https://caiyun.139.com/m/i?115CnXCW3mlRF)
+[和彩云，提取码: vnaA](https://caiyun.139.com/m/i?115CoUh1yEvhh)
 
-[百度网盘，提取码: fwc9](https://pan.baidu.com/s/1ID7GtaXIThqe3CPraPHm6Q?pwd=fwc9)
+[百度网盘，提取码: v4yv](https://pan.baidu.com/s/1kpmaut5swM5acKwDzDKD8Q?pwd=v4yv)
 
-+ 修复 tabBar 图标宽高不一致时显示会变形的Bug[详情](https://ask.dcloud.net.cn/question/172418)
-+ 修复 setTitleNViewButtonStyle 动态设置标题栏按钮样式可能导致无法正常显示的Bug[详情](https://ask.dcloud.net.cn/question/172191)
++ 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
++ 修复 wgt热更新后整包覆盖安装引起应用启动白屏的Bug[详情](https://ask.dcloud.net.cn/question/163393)
++ 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
++ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.31 版；快手广告联盟SDK 为3.3.46 版；穿山甲广告联盟SDK 为 5.4.0.2 版本；穿山甲GroMore SDK 为 5.3.5.0 版；百度百青藤广告联盟SDK 为 5.30 版；Sigmob广告联盟SDK 为 4.9.1 版
 
-[和彩云历史版本，提取码: wvvr](https://caiyun.139.com/m/i?115CeViRnUaA0) 
+[和彩云历史版本，提取码: Ba3T](https://caiyun.139.com/m/i?115CoAfqLbfTu) 
 
-[百度网盘历史版本，提取码: d2tn](https://pan.baidu.com/s/1u4CrdxVt2pNW7M0v2xs3mw?pwd=d2tn)
+[百度网盘历史版本，提取码: djc2](https://pan.baidu.com/s/1Gy6AV_mUaoCbH89ujK_mdQ?pwd=djc2)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
