@@ -1,5 +1,10 @@
 ## Alpha版历次更新说明
 
+## 3.8.7.20230628-alpha
+
++ 修复 tabBar 图标宽高不一致时显示会变形的Bug[详情](https://ask.dcloud.net.cn/question/172418)
++ 修复 setTitleNViewButtonStyle 动态设置标题栏按钮样式可能导致无法正常显示的Bug[详情](https://ask.dcloud.net.cn/question/172191)
+
 ## 3.8.6.20230621-alpha
 
 + 更新 一键登录使用的个验基础库SDK为 3.0.6.0 版，解决上传 AppStore 可能报 ITMS-90683:Missing purpose string in info.plist 的Bug
