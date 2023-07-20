@@ -47,20 +47,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年07月14日发布——HBuilderX（3.8.10.20230714-alpha）
+### 2023年07月19日发布——HBuilderX（3.8.11.20230719-alpha）
 
-[和彩云，提取码: vnaA](https://caiyun.139.com/m/i?115CoUh1yEvhh)
+[和彩云，提取码: 6cst](https://caiyun.139.com/m/i?115CnXFxMvmt5)
 
-[百度网盘，提取码: v4yv](https://pan.baidu.com/s/1kpmaut5swM5acKwDzDKD8Q?pwd=v4yv)
+[百度网盘，提取码: 6bmy](https://pan.baidu.com/s/1j4OZme6KX_-oxQUd3ahqsg?pwd=6bmy)
 
-+ 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
-+ 修复 wgt热更新后整包覆盖安装引起应用启动白屏的Bug[详情](https://ask.dcloud.net.cn/question/163393)
-+ 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
-+ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.31 版；快手广告联盟SDK 为3.3.46 版；穿山甲广告联盟SDK 为 5.4.0.2 版本；穿山甲GroMore SDK 为 5.3.5.0 版；百度百青藤广告联盟SDK 为 5.30 版；Sigmob广告联盟SDK 为 4.9.1 版
++ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版
 
-[和彩云历史版本，提取码: Ba3T](https://caiyun.139.com/m/i?115CoAfqLbfTu) 
+[和彩云历史版本，提取码: DDQe](https://caiyun.139.com/m/i?115CnXGyeucyf) 
 
-[百度网盘历史版本，提取码: djc2](https://pan.baidu.com/s/1Gy6AV_mUaoCbH89ujK_mdQ?pwd=djc2)
+[百度网盘历史版本，提取码: 4qgf](https://pan.baidu.com/s/1e2CGOAbMfUusRo215LiChA?pwd=4qgf)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
