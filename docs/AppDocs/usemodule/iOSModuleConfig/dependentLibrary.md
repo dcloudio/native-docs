@@ -22,7 +22,7 @@
 |Facebook登录|v11.2.0|Oauth/Facebook|
 |快手|v3.3.46|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
-|优量汇|v4.14.31|UniAD/优量汇|
+|优量汇|v4.14.32|UniAD/优量汇|
 |穿山甲|v5.4.0.2|UniAD/穿山甲|
 |穿山甲Gromore|v5.3.5.0|UniAD/穿山甲Gromore|
 |Sigmob|v4.9.1|UniAD/Sigmob|
