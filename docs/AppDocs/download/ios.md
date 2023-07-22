@@ -47,9 +47,9 @@
 
 ### 2023年07月19日发布——HBuilderX（3.8.11.20230719-alpha）
 
-[和彩云，提取码: 6cst](https://caiyun.139.com/m/i?115CnXFxMvmt5)
+[和彩云，提取码: D0k4](https://caiyun.139.com/m/i?115CepbVRTfhW)
 
-[百度网盘，提取码: 6bmy](https://pan.baidu.com/s/1j4OZme6KX_-oxQUd3ahqsg?pwd=6bmy)
+[百度网盘，提取码: hy4h](https://pan.baidu.com/s/1NKEtkwbcKJc_1NHJ4KvKMw?pwd=hy4h)
 
 + 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版
 
