@@ -1,5 +1,9 @@
 ## Alpha版历次更新说明
 
+## 3.8.11.20230719-alpha
+
++ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版
+
 ## 3.8.10.20230714-alpha
 
 + 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
