@@ -20,13 +20,13 @@
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
 |Google登录|v5.0.2|Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.46|UniAD/快手|
+|快手|v3.3.49|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
 |优量汇|v4.14.32|UniAD/优量汇|
-|穿山甲|v5.4.0.2|UniAD/穿山甲|
-|穿山甲Gromore|v5.3.5.0|UniAD/穿山甲Gromore|
-|Sigmob|v4.9.1|UniAD/Sigmob|
-|百度百青藤|v5.30|UniAD/百度|
+|穿山甲|v5.5.0.3|UniAD/穿山甲|
+|穿山甲Gromore|v5.3.6.0|UniAD/穿山甲Gromore|
+|Sigmob|v4.9.3|UniAD/Sigmob|
+|百度百青藤|v5.31|UniAD/百度|
 |Google AdMob|v9.14.0|UniAD/AdMob|
 |Pangle|v5.2.0.1|UniAD/Pangle|
 |Paypal支付|v0.79.0|Payment/Paypal|
