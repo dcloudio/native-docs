@@ -47,17 +47,19 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年07月19日发布——HBuilderX（3.8.11.20230719-alpha）
+### 2023年08月02日发布——HBuilderX（3.8.12.20230802-alpha）
 
-[和彩云，提取码: D0k4](https://caiyun.139.com/m/i?115CepbVRTfhW)
+[和彩云，提取码: 4UQv](https://caiyun.139.com/m/i?115CoUOJeUeN7)
 
-[百度网盘，提取码: hy4h](https://pan.baidu.com/s/1NKEtkwbcKJc_1NHJ4KvKMw?pwd=hy4h)
+[百度网盘，提取码: j9zn](https://pan.baidu.com/s/1XT7FZWK-pYcbcP0E8pt06g?pwd=j9zn)
 
-+ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版
++ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
++ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
++ 更新 uni-AD模块 快手广告联盟SDK 为 3.3.49 版；穿山甲广告联盟SDK 为 5.5.0.3 版；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
 
-[和彩云历史版本，提取码: DDQe](https://caiyun.139.com/m/i?115CnXGyeucyf) 
+[和彩云历史版本，提取码: i8tQ](https://caiyun.139.com/m/i?115CoUOHJA1lg) 
 
-[百度网盘历史版本，提取码: 4qgf](https://pan.baidu.com/s/1e2CGOAbMfUusRo215LiChA?pwd=4qgf)
+[百度网盘历史版本，提取码: a549](https://pan.baidu.com/s/1IeoDu6oMVv2ndnsJR7ueqQ?pwd=a549)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
