@@ -2,48 +2,12 @@
 
 本文档主要介绍如何在 iOS 平台开发 uni-app 原生插件，在您阅读此文档时，您需要具备 iOS 应用开发经验，对 HTML、JavaScript、CSS 等前端开发有一定的了解，并且熟悉在JavaScript 和 Objective-C 环境下的 JSON 格式数据操作等。
 
-### ⚠️⚠️⚠️Xcode14开发原生插件注意事项
-由于Xcode14的一些变动,需要开发者知晓:
-1. Bitcode 废除
-2. 不再支持构建 armv7、armv7s 以及 i386 架构的 iOS 项目 (iOS真机只支持arm64)
-3. 不再支持构建部署目标早于 macOS 10.13（High Sierra）、iOS 11、tvOS 11 以及 watchOS 4 的应用程序。
-
-[Xcode14官方更新](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes)
-
-所以插件开发者如果是用 Xcode14 制作的原生插件 需要在文档里写清楚仅支持 iOS11 及以上系统版本，具体操作如下所示:
-
-1.需要在 package.json 里添加如下配置
-
-```
-"ios": {
-	"deploymentTarget": "11.0",	
-	"validArchitectures": [    
-		"arm64"
-	],
-}
-...
-```
-2.Xcode14 编译的依赖库默认无法在低版本 Xcode上使用解决方法需要在原生 ***<u>插件工程</u>*** 的Targets -> Build Settings -> Apple Clang - Custom Compiler Flags -> Other C Flags 以及 Other C++ Flags 下配置 **-fno-objc-msgsend-selector-stubs** 如图:
-
-![](https://native-res.dcloud.net.cn/images/nativeplugin/ios/xcode_setup_otherFlags.png)
-
-
-**注意:** 如果插件工程已经按照上面配置，使用插件打包时仍然会报包含 `_objc_msgSend$xxx..` 这种错误
-
-```
- `Undefined symbols for architecture arm64 \"_objc_msgSend$xxx..." in xxx...` 
-```
-
-说明使用的第三方SDK没有添加上面的配置，报错中 in `xxx`  就是目标SDK中的代码，需要告知三方SDK提供方来解决此问题。
-
-
-
 ### 什么是uni原生插件
 uni原生插件指的是将您原生开发的功能按照规范封装成插件包，然后即可在 `uni-app` 前端项目中通过`js`调用您开发的原生能力。
 
 ## 开发环境
 
-- iOS开发环境，Xcode 12.1 及以上版本
+- iOS开发环境，Xcode14 及以上版本
 - 下载开发插件需要的 [SDK包](AppDocs/download/ios.md) 并解压
 - 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) 
 
