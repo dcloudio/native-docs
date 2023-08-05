@@ -1,8 +1,7 @@
 ## 开发环境
 ## Development environment
 	
-- iOS开发环境，请使用 Xcode 12.1 及以上版本；
-- iOS development environment, please use Xcode 12.1 and above;
+- iOS开发环境，请使用 Xcode 14 及以上版本；
 - [下载 uni小程序SDK](UniMPDocs/SDKDownload/ios)；
 - [Download uni applet SDK](UniMPDocs/SDKDownload/ios);
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
