@@ -92,11 +92,6 @@ SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**�
 
 ## 代码实现
 
-### 写法说明
-**从`HBuilderX 3.0.5` 版本开始， 推荐使用新的插件写法。**
-
-如果插件按照新写法，出现云打包报错， 请先确认`HBuilderX`版本在`3.0.5`或其以上。
-
 ### 插件扩展方式
 原生插件是基于 DCUniPlugin 规范来实现，扩展原生功能有两种方式：
 
@@ -695,21 +690,17 @@ DCUniSDKInstance * instance = self.uniInstance;
 然后在 Xcode 左侧目录中选中插件工程名，查看`TARGETS->Build Settings->Architectures`，确保
 
 - `Build Active Architecture Only->Release` 为 `No`
-- `Valid Architectures` 中至少包含 `arm64` 和 `armv7`(一般保持工程默认配置即可)
+- `Valid Architectures` 中至少包含 `arm64`(一般保持工程默认配置即可)
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi25.png)
 
-在`iOS Deployment Target`中选中最低支持的 iOS 版本，建议选择 `iOS9.0`
+在`iOS Deployment Target`中选中最低支持的 iOS 版本，建议选择 `iOS11.0`
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi26.png)
 
 然后点击`运行按钮`或 `Command + B` 编译运行工程
 
-**Xcode12：** 编译完成后，在插件工程 Products 下生成的库（`DCTestUniPlugin.framework`）即为插件所需要的依赖库文件，`右键->Show in Finder`，可打开库所在文件夹
-
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/upi27.png)
-
-**xcode13+：** 工程目录中没有 products 路径了，点击顶部菜单 `Product > Show Build Folder in Finder` 打开编译后的路径，Release-iphoneos 中的库就是编译后的插件库文件；
+编译完成后，点击顶部菜单 `Product > Show Build Folder in Finder` 打开编译后的路径，Release-iphoneos 中的库就是编译后的插件库文件；
 
 ### 编写 package.json 配置文件
 > package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等信息
