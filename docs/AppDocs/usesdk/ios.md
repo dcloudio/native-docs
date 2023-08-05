@@ -1,8 +1,7 @@
 ## 开发环境
 ## Development environment
 
--  安装 Xcode 12.1 及以上版本 
-- Install Xcode 12.1 and above
+-  安装 Xcode 14 及以上版本 
 -  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
 - [HBuilderX Download](https://www.dcloud.io/hbuilderx.html)
 - App离线SDK下载：[最新iOS平台SDK下载](/AppDocs/download/ios.md)
