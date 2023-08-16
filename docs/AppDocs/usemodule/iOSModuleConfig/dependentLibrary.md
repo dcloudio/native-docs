@@ -37,7 +37,7 @@
 |Google登录|v5.0.2|Oauth/Google|
 | Google Sign In| v5.0.2| Oauth/Google|
 |Facebook登录|v11.2.0|Oauth/Facebook|
-|快手|v3.3.49|UniAD/快手|
+|快手|v3.3.46|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
 |优量汇|v4.14.32|UniAD/优量汇|
 |穿山甲|v5.5.0.3|UniAD/穿山甲|
