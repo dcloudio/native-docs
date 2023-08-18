@@ -18,28 +18,23 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ## iOS 离线SDK - 正式版
 
-### 2023年07月03日发布——HBuilderX（3.8.7.20230703） 
+### 2023年08月17日发布——HBuilderX（3.8.12.20230817） 
 
-[和彩云，提取码: KVkz](https://caiyun.139.com/m/i?115CeVRf1mMpK) 
+[和彩云，提取码: yfof](https://caiyun.139.com/m/i?115ConIcN0D2g) 
 
-[百度网盘，提取码: msfn](https://pan.baidu.com/s/1MzzRsoeUUr-Nugx2y9OH5w?pwd=msfn)
+[百度网盘，提取码: dgc7](https://pan.baidu.com/s/1_qJaQtYEEcO4MroFask-Sg?pwd=dgc7)
 
-+ 修复 uni.setTabBarItem 动态设置 gif 图片不生效的Bug[详情](https://ask.dcloud.net.cn/question/171342)
-+ 修复 nvue rich-text 组件循环渲染时文字可能随机出现白色背景的Bug[详情](https://ask.dcloud.net.cn/question/171090)
-+ 修复 nvue video 组件高度设置 rpx 单位时可能导致 controls 不显示的Bug[详情](https://ask.dcloud.net.cn/question/171037)
-+ 修复 uni原生插件Hook系统事件 applicationMain:argv: 获取参数为空的Bug
-+ 修复 tabBar 图标宽高不一致时显示会变形的Bug[详情](https://ask.dcloud.net.cn/question/171037)
-+ 更新 云端打包环境 XCode 为 14.3.1 版、iOS SDK 为 16.4 版
-+ 更新 一键登录使用的个验基础库SDK为 3.0.6.0 版，解决上传 AppStore 可能报 ITMS-90683:Missing purpose string in info.plist 的Bug
-+ 调整 allowsInlineMediaPlayback 默认值为 ture，允许 H5 视频全屏播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
-+ 调整 mediaPlaybackRequiresUserAction 默认值为 false，允许 H5 音视频通过 API 控制自动播放[文档](https://uniapp.dcloud.net.cn/collocation/manifest-app.html#full-manifest)
-+ 修复 setTitleNViewButtonStyle 动态设置标题栏按钮样式可能导致无法正常显示的Bug[详情](https://ask.dcloud.net.cn/question/172191)
-+ 修复 视频播放控件 video 画面方向可能不正确的Bug[详情](https://ask.dcloud.net.cn/question/171484)
++ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版；快手广告联盟SDK 为 3.3.46 版；穿山甲广告联盟SDK 为 5.5.0.3 版本；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
++ 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
++ 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
++ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
++ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
++ 修复 wgt热更新后整包覆盖安装引起应用启动白屏的Bug[详情](https://ask.dcloud.net.cn/question/163393)
 
 
-[和彩云历史版本，提取码: LfQU](https://caiyun.139.com/m/i?115CnquNrQAQU) 
+[和彩云历史版本，提取码: KTch](https://caiyun.139.com/m/i?115ConJIYzT1T) 
 
-[百度网盘历史版本，提取码: xvh6](https://pan.baidu.com/s/1rxSPZe1tv5YrsVRja2545Q?pwd=xvh6)
+[百度网盘历史版本，提取码: 9aei](https://pan.baidu.com/s/18fdKFWenPTqjlXQUwvn_nw?pwd=9aei)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
