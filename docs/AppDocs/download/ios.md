@@ -50,7 +50,7 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 + 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
 + 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
-+ 更新 uni-AD模块 快手广告联盟SDK 为 3.3.49 版；穿山甲广告联盟SDK 为 5.5.0.3 版；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
++ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.5.0.3 版；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
 
 [和彩云历史版本，提取码: i8tQ](https://caiyun.139.com/m/i?115CoUOHJA1lg) 
 
