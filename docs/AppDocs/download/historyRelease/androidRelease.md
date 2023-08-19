@@ -1,3 +1,12 @@
+### 2023年07月04日发布——HBuilderX（3.8.7.20230703）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.7.20230703）版本生成本地打包App资源。
++ 优化 plus.runtime.install 安装apk功能为独立模块，解决上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题。[文档](/AppDocs/FAQ/android.md)
++ 更新 uni-AD 今日头条穿山甲 SDK 为 5.3.4.1 版；穿山甲GroMore广告 SDK 为 5.3.4.1 版
++ 修复 3.8.4引出的 软键盘弹出时输入框可能被遮挡的Bug
++ 修复 3.8.4引出的 同时勾选友盟统计模块和个推推送模块打包冲突报错的Bug
++ 修复 3.8.4引出的 Android 4.4 设备运行崩溃的Bug
+
 ### 2023年05月31日发布——HBuilderX（3.8.4.20230531）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.4.20230531）版本生成本地打包App资源。
