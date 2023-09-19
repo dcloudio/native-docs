@@ -11,6 +11,8 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 **离线SDK 3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.7.a 更换为GTCommonSDK.framework**
 
+**离线SDK 3.8.0版本之后，一键登录依赖的个验SDK基础库由GTCommonSDK.framework 更换为GTCommonSDK.xcframework**
+
 **离线SDK 3.8.0版本之后，部分广告SDK由.a文件变更为.framework文件，穿山甲以及GromoreSDK由framework变更为xcframework[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)**
 
 **若使用百度网盘下载后解压失败，请使用和彩云下载**

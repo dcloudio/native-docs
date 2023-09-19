@@ -19,7 +19,7 @@ signingConfigs {
         config {
             keyAlias '签名别名'
             keyPassword '签名密码'
-            storeFile file('xxx/xxx/xxx.keystore或xxx/xxx/xxx.jks') // 路劲为相对路径或绝对路径
+            storeFile file('xxx/xxx/xxx.keystore或xxx/xxx/xxx.jks') // 路径为相对路径或绝对路径
             storePassword '密码'
             v1SigningEnabled true //兼容v1
             v2SigningEnabled true //兼容v2

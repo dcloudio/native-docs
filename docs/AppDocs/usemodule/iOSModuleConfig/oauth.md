@@ -38,7 +38,7 @@ Search for the feature.plist file (located in PandoraApi.bundle) in the project,
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|iblibOauth.a、UniVerify.framework、GTCommonSDK.framework、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
+|iblibOauth.a、UniVerify.framework、GTCommonSDK.xcframework、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
 
 ### 工程配置
 ### Project configuration
