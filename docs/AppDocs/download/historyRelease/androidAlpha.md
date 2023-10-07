@@ -1,3 +1,8 @@
+### 2023年08月03日发布——HBuilderX（3.8.12.20230802-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.8.12.20230802-alpha）版本生成本地打包App资源。
++ 适配 支持 Android14 系统
+
 ### 2023年07月20日发布——HBuilderX（3.8.11.20230719-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.11.20230719-alpha）版本生成本地打包App资源。

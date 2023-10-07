@@ -27,14 +27,15 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年08月03日发布——HBuilderX（3.8.12.20230802-alpha）
+### 2023年10月07日发布——HBuilderX（3.91.2023092719-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.8.12.20230802-alpha）版本生成本地打包App资源。
-+ 适配 支持 Android14 系统
++ 更新uni-app离线打包支持，需使用HBuilderX（3.91.2023092719-alpha）版本生成本地打包App资源。
++ 修复 uni.downloadFile 下载 wgt 文件可能没有文件后缀的Bug
++ 更新 Facebook 登录 SDK 为 16.1.3 版，解决登录异常的问题
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
