@@ -40,12 +40,12 @@
 |快手|v3.3.46|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
 |优量汇|v4.14.32|UniAD/优量汇|
-|穿山甲|v5.5.0.3|UniAD/穿山甲|
-|穿山甲Gromore|v5.3.6.0|UniAD/穿山甲Gromore|
+|穿山甲|v5.6.0.5|UniAD/穿山甲|
+|穿山甲Gromore|v5.6.0.5|UniAD/穿山甲Gromore|
 |Sigmob|v4.9.3|UniAD/Sigmob|
-|百度百青藤|v5.31|UniAD/百度|
-|Google AdMob|v9.14.0|UniAD/AdMob|
-|Pangle|v5.2.0.1|UniAD/Pangle|
+|百度百青藤|v5.321|UniAD/百度|
+|Google AdMob|v10.9.0|UniAD/AdMob|
+|Pangle|v5.5.0.4|UniAD/Pangle|
 |Paypal支付|v0.79.0|Payment/Paypal|
 | Paypal Payment| v0.79.0| Payment/Paypal|
 |Stripe支付|v21.10.0|Payment/Stripe|
