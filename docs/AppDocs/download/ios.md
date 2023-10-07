@@ -42,18 +42,18 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年08月02日发布——HBuilderX（3.8.12.20230802-alpha）
+### 2023年09月27日发布——HBuilderX（3.91.2023092719-alpha）
 
-[和彩云，提取码: 4UQv](https://caiyun.139.com/m/i?115CoUOJeUeN7)
+[和彩云，提取码: dwpo](https://caiyun.139.com/m/i?115Cemy8glefG)
 
-[百度网盘，提取码: j9zn](https://pan.baidu.com/s/1XT7FZWK-pYcbcP0E8pt06g?pwd=j9zn)
+[百度网盘，提取码: upbg](https://pan.baidu.com/s/1hP052R05Ey0TZDSSpC7ilQ?pwd=upbg)
 
-+ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
-+ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
-+ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.5.0.3 版；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
++ 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
++ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
++ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.6.0.5 版；百度百青藤广告联盟SDK 为 5.321 版；Pangle SDK 为 5.5.0.4 版；Google AdMob SDK 为 10.9.0 版
 
-[和彩云历史版本，提取码: i8tQ](https://caiyun.139.com/m/i?115CoUOHJA1lg) 
+[和彩云历史版本，提取码: 9PPG](https://caiyun.139.com/m/i?115CemyDNQuBc) 
 
-[百度网盘历史版本，提取码: a549](https://pan.baidu.com/s/1IeoDu6oMVv2ndnsJR7ueqQ?pwd=a549)
+[百度网盘历史版本，提取码: xyh6](https://pan.baidu.com/s/1w3d_KHAtBKB2DxPgOQpowg?pwd=xyh6)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)

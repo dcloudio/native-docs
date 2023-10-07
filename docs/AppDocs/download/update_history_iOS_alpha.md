@@ -1,5 +1,11 @@
 ## Alpha版历次更新说明
 
+## 3.8.12.20230802-alpha
+
++ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
++ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
++ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.5.0.3 版；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
+
 ## 3.8.11.20230719-alpha
 
 + 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版
