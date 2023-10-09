@@ -9,10 +9,10 @@
 
 ## 更新日志
 
-#### SDK 3.8.12
+#### SDK 3.8.12（补丁版本1）
 [点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.8.12.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.8.12.20230817.html)
++ 适配 iOS17 解决 nvue 页面可能导致的崩溃 Bug;
 
 ## 历史版本
 > 历史版本仅提供上个正式版本的 SDK 下载
@@ -20,20 +20,19 @@
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
 
-#### SDK 3.8.7
+#### SDK 3.8.12
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.8.12.20230817.html)
 
+#### SDK 3.8.7
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.8.7.20230703.html)
 
 #### SDK 3.8.4
-
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.8.4.20230531.html)
 
 #### SDK 3.7.11
-
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.11.20230427.html)
 
 #### SDK 3.7.9
-
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.7.9.20230324.html)
 
 #### SDK 3.7.3
