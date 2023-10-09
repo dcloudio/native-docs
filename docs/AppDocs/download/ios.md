@@ -22,9 +22,9 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ### 2023年08月17日发布——HBuilderX（3.8.12.20230817） 
 
-[和彩云，提取码: yfof](https://caiyun.139.com/m/i?115ConIcN0D2g) 
+[和彩云，提取码: a69E](https://caiyun.139.com/m/i?115ComLyhnmhe) 
 
-[百度网盘，提取码: dgc7](https://pan.baidu.com/s/1_qJaQtYEEcO4MroFask-Sg?pwd=dgc7)
+[百度网盘，提取码: aqia](https://pan.baidu.com/s/1uhtt18f4BPHGI1OsY3EV2Q?pwd=aqia)
 
 + 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版；快手广告联盟SDK 为 3.3.46 版；穿山甲广告联盟SDK 为 5.5.0.3 版本；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
 + 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
