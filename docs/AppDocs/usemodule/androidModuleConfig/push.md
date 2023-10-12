@@ -356,7 +356,7 @@ android {
 + Add the following content under the dependencies node
 
 ```
-implementation 'com.google.firebase:firebase-messaging:23.0.0'
+implementation 'com.google.firebase:firebase-messaging:23.2.1'
 ```
 
 
@@ -418,7 +418,7 @@ apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 - Add the following content under dependencies
 ```
 dependencies {
-    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
 }
 ```
 

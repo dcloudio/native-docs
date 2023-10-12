@@ -117,7 +117,7 @@ apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 - Add the following content under dependencies
 ```
 dependencies {
-    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
 }
 ```
 
