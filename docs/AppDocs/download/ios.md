@@ -44,19 +44,17 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年09月27日发布——HBuilderX（3.91.2023092719-alpha）
+### 2023年10月11日发布——HBuilderX（3.92.2023101106-alpha）
 
-[和彩云，提取码: dwpo](https://caiyun.139.com/m/i?115Cemy8glefG)
+[和彩云，提取码: 3Uk9](https://caiyun.139.com/m/i?115CeSZTOXzai)
 
-[百度网盘，提取码: upbg](https://pan.baidu.com/s/1hP052R05Ey0TZDSSpC7ilQ?pwd=upbg)
+[百度网盘，提取码: s4rg](https://pan.baidu.com/s/10l1dS6K5N8Q3nQFPNgoYPg?pwd=s4rg)
 
-+ 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
-+ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
-+ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.6.0.5 版；百度百青藤广告联盟SDK 为 5.321 版；Pangle SDK 为 5.5.0.4 版；Google AdMob SDK 为 10.9.0 版
++ 修复 App-iOS平台 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
 
-[和彩云历史版本，提取码: 9PPG](https://caiyun.139.com/m/i?115CemyDNQuBc) 
+[和彩云历史版本，提取码: jrUn](https://caiyun.139.com/m/i?115Com59aleKX) 
 
-[百度网盘历史版本，提取码: xyh6](https://pan.baidu.com/s/1w3d_KHAtBKB2DxPgOQpowg?pwd=xyh6)
+[百度网盘历史版本，提取码: 9v46](https://pan.baidu.com/s/1LI4ZjpEOSnSYNh6KDHG5Dg?pwd=9v46)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)

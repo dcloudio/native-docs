@@ -5,6 +5,12 @@
 
 无
 
+## 3.91.2023092719-alpha
+
++ 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
++ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
++ 更新 uni-AD模块 穿山甲广告联盟SDK 为 5.6.0.5 版；百度百青藤广告联盟SDK 为 5.321 版；Pangle SDK 为 5.5.0.4 版；Google AdMob SDK 为 10.9.0 版
+
 ## 3.8.12.20230802-alpha
 
 + 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
