@@ -10,6 +10,6 @@ A: 可能是工程为纯OC的项目，部分SDK更新后需要swift环境导致�
 
 A: 问题原因是依赖库中有模拟器+真机多架构的二进制文件。 Xcode 12.3 起，Apple 不建议在一个.framework 文件中绑定多平台的库，建议使用.xcframework 文件替代。解决方式是在 Xcode 中，进入 TARGETS > Project Name > Build Settings > Build Options 菜单，将 Validate Workspace 设置为 Yes。
 
-## Q: 升级Xcode15后编译报错，提示文件重复添加
+## Q: 升级Xcode15后编译报错提示文件重复添加，或运行时闪退
 
-A: Build Settings -> Other Linker Flags 加入 -ld64。
+A: Build Settings -> Other Linker Flags 加入 -ld_classic。
