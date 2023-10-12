@@ -294,7 +294,7 @@ android {
 + 在dependencies节点下添加下面内容
 
 ```
-implementation 'com.google.firebase:firebase-messaging:23.0.0'
+implementation 'com.google.firebase:firebase-messaging:23.2.1'
 ```
 
 
@@ -348,7 +348,7 @@ apply plugin: 'com.google.gms.google-services'  // Google Services plugin
 - 在dependencies下添加下面内容
 ```
 dependencies {
-    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.2.1'
 }
 ```
 
