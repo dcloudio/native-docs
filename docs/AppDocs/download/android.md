@@ -7,7 +7,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115CeToKu5FaM)，提取码: 8JuJ
+[和彩云](https://caiyun.139.com/m/i?115Cno1Tgreld)，提取码: xZry
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.8.12.20230817）版本生成本地打包App资源。
 + 修复 UniPush1.0 指定格式透传消息不会创建推送消息的Bug
