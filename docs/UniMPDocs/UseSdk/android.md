@@ -109,7 +109,7 @@ def mfph = [
 ]
 android {
 	defaultConfig {
-		targetSdkVersion 26 //最优26 2.8.11开始支持29~30
+		targetSdkVersion 26
 		ndk {
             abiFilters 'x86','armeabi-v7a',"arm64-v8a" //不支持armeabi
         }
@@ -145,7 +145,7 @@ dependencies {
 }
 ```
 
-**注意！！！！ targetSdkVersion 取值范围最高30 最优26 HX2.8.11+已支持targetSdkVersion设置30**
+
 
 
 ### uni小程序集成的第三方依赖库与宿主发生冲突
