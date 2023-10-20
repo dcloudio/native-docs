@@ -27,15 +27,19 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年10月12日发布——HBuilderX（3.92.2023101106-alpha）
+### 2023年10月20日发布——HBuilderX（3.93.2023101913-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.92.2023101106-alpha）版本生成本地打包App资源。
-+ 修复 云端打包 Storage 相关接口设置和获取内容异常的Bug
-+ vue 页面调用 API 传参对象中包含Any类型字段时可能出现异常的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.93.2023101913-alpha）版本生成本地打包App资源。
++ App-Android平台 修复 console 输出对象信息中包含 private 属性和方法的Bug
++ App-Android平台 修复 number 数据类型在某些情况除法运行结果不正确的Bug
++ 更新 uni-AD SDK，对接双11预算，其中腾讯优量汇SDK为 4.542.1412 版；穿山甲&GroMore SDK 为 5.6.1.6 版；快手广告SDK为 3.3.53.3 版；快手内容联盟SDK 为 3.3.53 版；Sigmob广告联盟SDK为 4.12.7 版；百度百青藤广告SDK为 9.322 版；华为广告SDK为 13.4.66.300 版
++ Android平台 调整 默认支持CPU类型为arm64-v8a，解决在华为新设备（如Mate60、X5）应用启动慢的问题 [详情](https://uniapp.dcloud.net.cn/tutorial/app-android-abifilters.html#default)
++ Android平台 修复 上架 OPPO 应用市场可能提示`含数字天堂(dcloud)广告插件`的Bug [详情](https://ask.dcloud.net.cn/question/174958)
++ Android平台 修复 uni-AD 红包广告可能不展示的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 

@@ -1,3 +1,9 @@
+### 2023年10月12日发布——HBuilderX（3.92.2023101106-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.92.2023101106-alpha）版本生成本地打包App资源。
++ 修复 云端打包 Storage 相关接口设置和获取内容异常的Bug
++ vue 页面调用 API 传参对象中包含Any类型字段时可能出现异常的Bug
+
 ### 2023年10月07日发布——HBuilderX（3.91.2023092719-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.91.2023092719-alpha）版本生成本地打包App资源。
