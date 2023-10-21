@@ -48,7 +48,7 @@
 
 [百度网盘，提取码: 9kkp](https://pan.baidu.com/s/1tZu69u4UWWE784HL4ewaeA?pwd=9kkp)
 
-+ 更新 对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMoreSDK为 5.7.0.4 版；快手广告SDK为 3.3.53 版；快手内容联盟SDK Android为 3.3.53 版；Sigmob广告联盟SDK为 4.10.0 版；百度百青藤广告SDK为 5.322 版；
++ 更新 对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMoreSDK为 5.7.0.4 版；快手广告SDK为 3.3.53 版；Sigmob广告联盟SDK为 4.10.0 版；百度百青藤广告SDK为 5.322 版；
 
 [和彩云历史版本，提取码: a4rs](https://caiyun.139.com/m/i?115CeS5LAOcdH) 
 
