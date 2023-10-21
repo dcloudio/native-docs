@@ -42,16 +42,16 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年10月11日发布——HBuilderX（3.92.2023101106-alpha）
+### 2023年10月19日发布——HBuilderX（3.93.2023101913-alpha）
 
-[和彩云，提取码: 3Uk9](https://caiyun.139.com/m/i?115CeSZTOXzai)
+[和彩云，提取码: GgcJ](https://caiyun.139.com/m/i?115Co7cVDHCzn)
 
-[百度网盘，提取码: s4rg](https://pan.baidu.com/s/10l1dS6K5N8Q3nQFPNgoYPg?pwd=s4rg)
+[百度网盘，提取码: 9kkp](https://pan.baidu.com/s/1tZu69u4UWWE784HL4ewaeA?pwd=9kkp)
 
-+ 修复 App-iOS平台 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
++ 更新 对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMoreSDK为 5.7.0.4 版；快手广告SDK为 3.3.53 版；快手内容联盟SDK Android为 3.3.53 版；Sigmob广告联盟SDK为 4.10.0 版；百度百青藤广告SDK为 5.322 版；
 
-[和彩云历史版本，提取码: jrUn](https://caiyun.139.com/m/i?115Com59aleKX) 
+[和彩云历史版本，提取码: a4rs](https://caiyun.139.com/m/i?115CeS5LAOcdH) 
 
-[百度网盘历史版本，提取码: 9v46](https://pan.baidu.com/s/1LI4ZjpEOSnSYNh6KDHG5Dg?pwd=9v46)
+[百度网盘历史版本，提取码: 9czy](https://pan.baidu.com/s/1M-tLKvbyPIDTie9KE5WuVg?pwd=9czy)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
