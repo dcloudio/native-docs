@@ -5,6 +5,10 @@
 
 无
 
+## 3.92.2023101106-alpha
+
++ 修复 App-iOS平台 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
+
 ## 3.91.2023092719-alpha
 
 + 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
