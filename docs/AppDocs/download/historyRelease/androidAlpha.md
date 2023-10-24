@@ -1,3 +1,13 @@
+### 2023年10月20日发布——HBuilderX（3.93.2023101913-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.93.2023101913-alpha）版本生成本地打包App资源。
++ App-Android平台 修复 console 输出对象信息中包含 private 属性和方法的Bug
++ App-Android平台 修复 number 数据类型在某些情况除法运行结果不正确的Bug
++ 更新 uni-AD SDK，对接双11预算，其中腾讯优量汇SDK为 4.542.1412 版；穿山甲&GroMore SDK 为 5.6.1.6 版；快手广告SDK为 3.3.53.3 版；快手内容联盟SDK 为 3.3.53 版；Sigmob广告联盟SDK为 4.12.7 版；百度百青藤广告SDK为 9.322 版；华为广告SDK为 13.4.66.300 版
++ Android平台 调整 默认支持CPU类型为arm64-v8a，解决在华为新设备（如Mate60、X5）应用启动慢的问题 [详情](https://uniapp.dcloud.net.cn/tutorial/app-android-abifilters.html#default)
++ Android平台 修复 上架 OPPO 应用市场可能提示`含数字天堂(dcloud)广告插件`的Bug [详情](https://ask.dcloud.net.cn/question/174958)
++ Android平台 修复 uni-AD 红包广告可能不展示的Bug
+
 ### 2023年10月12日发布——HBuilderX（3.92.2023101106-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.92.2023101106-alpha）版本生成本地打包App资源。
