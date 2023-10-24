@@ -42,16 +42,16 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年10月19日发布——HBuilderX（3.93.2023101913-alpha）
+### 2023年10月23日发布——HBuilderX（3.94.2023102311-alpha）
 
-[和彩云，提取码: GgcJ](https://caiyun.139.com/m/i?115Co7cVDHCzn)
+[和彩云，提取码: dNBW](https://caiyun.139.com/m/i?115CeVuOVutnx)
 
-[百度网盘，提取码: 9kkp](https://pan.baidu.com/s/1tZu69u4UWWE784HL4ewaeA?pwd=9kkp)
+[百度网盘，提取码: c6px](https://pan.baidu.com/s/1I5HntRjtOGU5d5OesLUrpw?pwd=c6px)
 
-+ 更新 对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMoreSDK为 5.7.0.4 版；快手广告SDK为 3.3.53 版；Sigmob广告联盟SDK为 4.10.0 版；百度百青藤广告SDK为 5.322 版；
++ 更新 百度百青藤广告SDK 为 5.324 版，解决信息流广告偶现无法关闭的Bug
 
-[和彩云历史版本，提取码: a4rs](https://caiyun.139.com/m/i?115CeS5LAOcdH) 
+[和彩云历史版本，提取码: okE7](https://caiyun.139.com/m/i?115CeVuVXulxL) 
 
-[百度网盘历史版本，提取码: 9czy](https://pan.baidu.com/s/1M-tLKvbyPIDTie9KE5WuVg?pwd=9czy)
+[百度网盘历史版本，提取码: emw2](https://pan.baidu.com/s/1egaoNRy0RJsqlwbYGPsmUA?pwd=emw2)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
