@@ -5,6 +5,10 @@
 
 无
 
+## 3.93.2023101913-alpha
+
++ 更新 对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMoreSDK为 5.7.0.4 版；快手广告SDK为 3.3.53 版；Sigmob广告联盟SDK为 4.10.0 版；百度百青藤广告SDK为 5.322 版；
+
 ## 3.92.2023101106-alpha
 
 + 修复 App-iOS平台 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
