@@ -159,3 +159,8 @@ DCSDKInitConfig config = new DCSDKInitConfig.Builder()
                 .setCustomOAID("xxxxxx")
                 .build();
 ```
+
+## Q: Android 14 宿主进程被杀死，导致功能异常的问题
+
+Android 14 版本新增 [进程缓存机制] (https://developer.android.com/about/versions/14/behavior-changes-all#cached-apps)，导致宿主长期在后台可能被系统缓存回收。针对这种情况，建议在android 14以上设备增加前台服务，避免被宿主进程会缓存回收。
+
