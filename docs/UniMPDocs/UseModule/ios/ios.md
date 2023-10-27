@@ -125,8 +125,7 @@ Then you can call Gallery related functions;
 
 
 <h3 id="moduletable"></h3>
-### 功能模块对照表 （温馨提示表格可左右滑动）
-### Function module comparison table (warm reminder table can be slid left and right)
+### 功能模块对照表 （ **温馨提示表格可左右滑动** ）
 
 <table>
 	<tr>
