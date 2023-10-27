@@ -1,5 +1,14 @@
 ## 正式版历次更新说明
 
+## 3.8.12.20230817
+
++ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版；快手广告联盟SDK 为 3.3.46 版；穿山甲广告联盟SDK 为 5.5.0.3 版本；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
++ 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
++ 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
++ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
++ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
++ 修复 wgt热更新后整包覆盖安装引起应用启动白屏的Bug[详情](https://ask.dcloud.net.cn/question/163393)
+
 ## 3.8.7.20230703
 
 + 修复 uni.setTabBarItem 动态设置 gif 图片不生效的Bug[详情](https://ask.dcloud.net.cn/question/171342)

@@ -19,23 +19,21 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2023年08月17日发布——HBuilderX（3.8.12.20230817） 
+### 2023年10月26日发布——HBuilderX（3.94.2023102613） 
 
-[和彩云，提取码: a69E](https://caiyun.139.com/m/i?115ComLyhnmhe) 
+[和彩云，提取码: MqFg](https://caiyun.139.com/m/i?115CoB6GqVset) 
 
-[百度网盘，提取码: aqia](https://pan.baidu.com/s/1uhtt18f4BPHGI1OsY3EV2Q?pwd=aqia)
+[百度网盘，提取码: 527f](https://pan.baidu.com/s/1eEejqvhPiABTl5HDWUK88Q?pwd=527f)
 
-+ 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版；快手广告联盟SDK 为 3.3.46 版；穿山甲广告联盟SDK 为 5.5.0.3 版本；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
-+ 补齐 一键登录 icon 支持 width、height 属性设置 logo 图片的宽高[文档](https://uniapp.dcloud.net.cn/univerify.html)
-+ 修复 tabBar 使用 iconfont 字体图标时，样式可能不正常的Bug[详情](https://ask.dcloud.net.cn/question/173375)
-+ 修复 uni.setTabBarItem 动态设置 gif 后再设置普通图片可能不生效的Bug
-+ 修复 uni-AD模块 穿山甲GroMore激励视频 close 事件返回的 isEnded 属性返回值可能不正确的Bug
-+ 修复 wgt热更新后整包覆盖安装引起应用启动白屏的Bug[详情](https://ask.dcloud.net.cn/question/163393)
++ 更新 uni-AD SDK，对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMore SDK 为 5.7.0.4 版；快手广告SDK 为 3.3.53 版；Sigmob广告联盟SDK 为 4.10.0 版；百度百青藤广告SDK 为 5.324 版；
++ 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
++ 修复 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
++ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
 
 
-[和彩云历史版本，提取码: KTch](https://caiyun.139.com/m/i?115ConJIYzT1T) 
+[和彩云历史版本，提取码: A83Z](https://caiyun.139.com/m/i?115CeVdl7Xt58) 
 
-[百度网盘历史版本，提取码: 9aei](https://pan.baidu.com/s/18fdKFWenPTqjlXQUwvn_nw?pwd=9aei)
+[百度网盘历史版本，提取码: fvmk](https://pan.baidu.com/s/1YGUZw1xE0xccOpATenrOlA?pwd=fvmk)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
