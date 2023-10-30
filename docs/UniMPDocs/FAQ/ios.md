@@ -1,3 +1,7 @@
+## Q：升级 Xcode 15 运行报错
+
+A: ⚠️ 使用 Xcode15 运行在 iOS14 及以下低版本的设备时，打开小程序时可能会出现莫名其妙的崩溃问题（也可能是莫名其妙的报错），这是因为新版本 Xcode 编译器对低版本的iOS兼容性存在问题，需要在工程的 build setting -> Other linker flags中添加 -ld64，然后重新运行即可;
+
 ## Q：原生工程弹窗提示 “HTML5 + Rumtime D”
 
 ![](https://ask.dcloud.net.cn/uploads/article/20200226/b761ed2d441819a7a369fbffc9ee7586.png)
