@@ -2,6 +2,10 @@
 
 提供相对 HBuilderX 最新正式版 及上个正式版本的 SDK 下载，如果您当前集成的 SDK 版本低于 HBuilderX 版本，但是功能都正常的话可以选择不升级 SDK，按照这个 [文档](https://ask.dcloud.net.cn/article/35627) 添加配置可以屏蔽版本不一致的弹窗提示，框架正常情况都是向下兼容的，您也可以查看一下更新日志考虑是否升级 SDK。
 
+## Xcode 15 运行说明
+
+⚠️ 使用 Xcode15 运行在 iOS14 及以下低版本的设备时，打开小程序时可能会出现莫名其妙的崩溃问题，这是因为新版本 Xcode 编译器对低版本的iOS兼容性存在问题，需要在工程的 `build setting -> Other linker flags `中添加 `-ld64`，然后重新运行即可;
+
 ## SDK 升级说明
 **⚠️注意：功能模块中的依赖库需要依赖基础模块的库，更新SDK版本时，需要将使用到的基础库和功能模块的依赖库及资源文件统一升级，如果仅升级部分库可能会导致版本不一致出现问题；**
 
@@ -9,16 +13,19 @@
 
 ## 更新日志
 
-#### SDK 3.8.12（补丁版本1）
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.8.12.zip)
+#### SDK 3.94
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.94.zip)
 
-+ 适配 iOS17 解决 nvue 页面可能导致的崩溃 Bug;
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.94.2023102613.html)
 
 ## 历史版本
 > 历史版本仅提供上个正式版本的 SDK 下载
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.8.12（补丁版本1）
++ 适配 iOS17 解决 nvue 页面可能导致的崩溃 Bug;
 
 #### SDK 3.8.12
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.8.12.20230817.html)
