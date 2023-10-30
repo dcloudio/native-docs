@@ -20,21 +20,18 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ## iOS 离线SDK - 正式版
 
-### 2023年10月26日发布——HBuilderX（3.94.2023102613） 
+### 2023年10月28日发布——HBuilderX（3.95.2023102806） 
 
-[和彩云，提取码: MqFg](https://caiyun.139.com/m/i?115CoB6GqVset) 
+[和彩云，提取码: 9ipK](https://caiyun.139.com/m/i?115CepUf9ggQ7) 
 
-[百度网盘，提取码: 527f](https://pan.baidu.com/s/1eEejqvhPiABTl5HDWUK88Q?pwd=527f)
+[百度网盘，提取码: 6tqv](https://pan.baidu.com/s/1wClLzpfZACsy8nGtB9HKpg?pwd=6tqv)
 
-+ 更新 uni-AD SDK，对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMore SDK 为 5.7.0.4 版；快手广告SDK 为 3.3.53 版；Sigmob广告联盟SDK 为 4.10.0 版；百度百青藤广告SDK 为 5.324 版；
-+ 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
-+ 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
-+ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
+无
 
 
-[和彩云历史版本，提取码: A83Z](https://caiyun.139.com/m/i?115CeVdl7Xt58) 
+[和彩云历史版本，提取码: F3dR](https://caiyun.139.com/m/i?115CoAxJIfEz0) 
 
-[百度网盘历史版本，提取码: fvmk](https://pan.baidu.com/s/1YGUZw1xE0xccOpATenrOlA?pwd=fvmk)
+[百度网盘历史版本，提取码: 8h4r](https://pan.baidu.com/s/1OX1pCyeM7zus9ba2uQPLmg?pwd=8h4r)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 

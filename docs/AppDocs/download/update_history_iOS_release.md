@@ -1,5 +1,12 @@
 ## 正式版历次更新说明
 
+## 3.94.2023102613
+
++ 更新 uni-AD SDK，对接双11预算，其中腾讯优量汇SDK为 4.14.45 版；穿山甲&GroMore SDK 为 5.7.0.4 版；快手广告SDK 为 3.3.53 版；Sigmob广告联盟SDK 为 4.10.0 版；百度百青藤广告SDK 为 5.324 版；
++ 修复 nvue 页面在 iOS17 设备可能引起崩溃的Bug[详情](https://ask.dcloud.net.cn/question/179220)
++ 修复 应用语言设置为英文时，nvue map 组件仍然显示中文的Bug[详情](https://ask.dcloud.net.cn/question/178833)
++ 修复 3.7.12版更新个验SDK引出的 一键登录弹窗模式下点击关闭不会触发 fail 回调的Bug[详情](https://ask.dcloud.net.cn/question/177253)
+
 ## 3.8.12.20230817
 
 + 更新 uni-AD模块 腾讯优量汇广告联盟SDK 为 4.14.32 版；快手广告联盟SDK 为 3.3.46 版；穿山甲广告联盟SDK 为 5.5.0.3 版本；穿山甲GroMore SDK 为 5.3.6.0 版；百度百青藤广告联盟SDK 为 5.31 版；Sigmob广告联盟SDK 为 4.9.3 版
