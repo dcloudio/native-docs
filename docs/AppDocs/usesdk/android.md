@@ -110,7 +110,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 	
 	applicationId为应用的包名，一般设置为反向域名，不建议修改。
 
-	建议将targetSdkVersion设置为25或以上。
+	建议将targetSdkVersion设置为30或以上。
 	
 	App离线SDK minSdkVersion最低支持21，小于21在部分5.0以下机型上将无法正常使用。
 	
@@ -124,7 +124,7 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		defaultConfig {
 			applicationId "com.example.myapplication"
 			minSdkVersion 21
-			targetSdkVersion 28
+			targetSdkVersion 30
 			versionCode 1
 			versionName "1.0"
 			multiDexEnabled true
