@@ -140,8 +140,7 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
 	applicationId为应用的包名，一般设置为反向域名，不建议修改。
 	applicationId is the package name of the application, which is generally set to the reverse domain name, and it is not recommended to modify it.
 
-	建议将targetSdkVersion设置为25或以上。
-	It is recommended to set targetSdkVersion to 25 or above.
+	建议将targetSdkVersion设置为30或以上。
 	
 	App离线SDK minSdkVersion最低支持21，小于21在部分5.0以下机型上将无法正常使用。
 	App offline SDK minSdkVersion supports at least 21, if it is less than 21, it will not work properly on some models below 5.0.
@@ -157,7 +156,7 @@ The HBuilder-Integrate-AS project is provided after 2.7.0, which can be directly
 		defaultConfig {
 			applicationId "com.example.myapplication"
 			minSdkVersion 21
-			targetSdkVersion 28
+			targetSdkVersion 30
 			versionCode 1
 			versionName "1.0"
 			multiDexEnabled true
