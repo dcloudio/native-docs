@@ -1,3 +1,10 @@
+### 2023年10月24日发布——HBuilderX（3.94.2023102311-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.94.2023102311-alpha）版本生成本地打包App资源。
++ Android平台 修复 targetSdkVersion 设置为 33 在 Android13 设备保存图片到相册失败的Bug
++ App-Android平台 修复 number 的 toFixed 方法返回结果可能异常的Bug
++ App-Android平台 修复 number 数据类型的位运算操作可能引起崩溃的Bug
+
 ### 2023年10月20日发布——HBuilderX（3.93.2023101913-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.93.2023101913-alpha）版本生成本地打包App资源。
