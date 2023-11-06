@@ -39,17 +39,18 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2023年10月23日发布——HBuilderX（3.94.2023102311-alpha）
+### 2023年11月05日发布——HBuilderX（3.97.2023110504-alpha）
 
-[和彩云，提取码: dNBW](https://caiyun.139.com/m/i?115CeVuOVutnx)
+[和彩云，提取码: POf7](https://caiyun.139.com/m/i?115CoUWRcS3rX)
 
-[百度网盘，提取码: c6px](https://pan.baidu.com/s/1I5HntRjtOGU5d5OesLUrpw?pwd=c6px)
+[百度网盘，提取码: 258x](https://pan.baidu.com/s/1qOx9g-4-xDPcQZrn2WZdDw?pwd=258x)
 
-+ 更新 百度百青藤广告SDK 为 5.324 版，解决信息流广告偶现无法关闭的Bug
+无
 
-[和彩云历史版本，提取码: okE7](https://caiyun.139.com/m/i?115CeVuVXulxL) 
+ 
+[和彩云历史版本，提取码: 5qmx](https://caiyun.139.com/m/i?115CnqaUrjOE5) 
 
-[百度网盘历史版本，提取码: emw2](https://pan.baidu.com/s/1egaoNRy0RJsqlwbYGPsmUA?pwd=emw2)
+[百度网盘历史版本，提取码: t4xn](https://pan.baidu.com/s/1VHAB2KiJcKyu4G0Z7VEDhA?pwd=t4xn)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
 [Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
