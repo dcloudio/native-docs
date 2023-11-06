@@ -24,17 +24,17 @@
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 **⚠️Note: If the click fails to download, you can right-click the link -> select "Save link as.." to download. **
 
-### 2023年10月26日发布
+### 2023年11月06日发布
 
 
-#### SDK 3.94 版本
+#### SDK 3.96 版本
 
-[点击下载SDK-Android@3.94-20231027.zip](https://native-res.dcloud.net.cn/unimp-sdk/SDK-Android%403.94-20231027.zip)
+[点击下载SDK-Android@3.96-20231106.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.96-20231106.zip)
 
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.94.2023102613.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.96.2023110403.html)
 + 示例项目 新增android 14 前台服务示例，避免宿主被杀死导致程序异常
 
 ## 升级SDK注意事项
