@@ -3,13 +3,13 @@
 1. **注意：HBuilderX 3.7.6版本开始，微信、支付宝、高德改为线上依赖，涉及到的模块有：微信支付、微信登录、微信分享、支付宝支付、高德地图、高德定位，涉及上述功能的App请参考文档重新集成。**
 2. **注意：HBuilderX 3.2.5版本之后适配了AndroidX，升级时需要参考文档重新配置**
 
-### 2023年10月30日发布——HBuilderX（3.95.2023102806）
+### 2023年11月06日发布——HBuilderX（3.96.2023110403）
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
 [和彩云](https://caiyun.139.com/m/i?115Cno1RLX28f)，提取码: 7tgK
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.95.2023102806）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.96.2023110403）版本生成本地打包App资源。
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/1qxxUqh9ifF7mfJ4T46NB4Q)，提取码: xwe9
 
@@ -20,16 +20,13 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年10月24日发布——HBuilderX（3.94.2023102311-alpha）
+### 2023年11月06日发布——HBuilderX（3.97.2023110504-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.94.2023102311-alpha）版本生成本地打包App资源。
-+ Android平台 修复 targetSdkVersion 设置为 33 在 Android13 设备保存图片到相册失败的Bug
-+ App-Android平台 修复 number 的 toFixed 方法返回结果可能异常的Bug
-+ App-Android平台 修复 number 数据类型的位运算操作可能引起崩溃的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.97.2023110504-alpha）版本生成本地打包App资源。
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
