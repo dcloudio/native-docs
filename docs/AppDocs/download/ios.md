@@ -37,17 +37,17 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年11月05日发布——HBuilderX（3.97.2023110504-alpha）
+### 2023年11月20日发布——HBuilderX（3.98.2023112011-alpha）
 
-[和彩云，提取码: POf7](https://caiyun.139.com/m/i?115CoUWRcS3rX)
+[和彩云，提取码: Co4B](https://caiyun.139.com/m/i?115CnpeQMjhCH)
 
-[百度网盘，提取码: 258x](https://pan.baidu.com/s/1qOx9g-4-xDPcQZrn2WZdDw?pwd=258x)
+[百度网盘，提取码: 5uit](https://pan.baidu.com/s/1nz-z7hCUPew2wB1fk5qAcQ?pwd=5uit)
 
 无
 
  
-[和彩云历史版本，提取码: 5qmx](https://caiyun.139.com/m/i?115CnqaUrjOE5) 
+[和彩云历史版本，提取码: LVha](https://caiyun.139.com/m/i?115Ceo9rd7PZ9) 
 
-[百度网盘历史版本，提取码: t4xn](https://pan.baidu.com/s/1VHAB2KiJcKyu4G0Z7VEDhA?pwd=t4xn)
+[百度网盘历史版本，提取码: t7ux](https://pan.baidu.com/s/19TiZYG1mWsF4nmy10in9pQ?pwd=t7ux)
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
