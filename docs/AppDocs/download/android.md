@@ -20,13 +20,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年11月06日发布——HBuilderX（3.97.2023110504-alpha）
+### 2023年11月21日发布——HBuilderX（3.98.2023112011-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.97.2023110504-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（3.98.2023112011-alpha）版本生成本地打包App资源。
++ 更新 uni-AD 模块 穿山甲&GroMore SDK为 5.7.0.5 版，解决加载广告可能会崩溃的Bug
 
 [百度网盘下载历史版本](https://pan.baidu.com/s/10fne34bwxWGtDJTd4PhroA)，提取码: 6msp
 
