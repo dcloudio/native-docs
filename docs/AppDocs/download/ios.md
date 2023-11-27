@@ -19,18 +19,18 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2023年11月04日发布——HBuilderX（3.96.2023110403） 
+### 2023年11月25日发布——HBuilderX（3.98.2023112510） 
 
-[和彩云，提取码: 8yLu](https://caiyun.139.com/m/i?115CeVBRPMhah) 
+[和彩云，提取码: 3YYc](https://caiyun.139.com/m/i?115CoTBGeYqOc) 
 
-[百度网盘，提取码: vi3f](https://pan.baidu.com/s/1LsuqsRYa46GrMbIumcMKbw?pwd=vi3f)
+[百度网盘，提取码: rs8e](https://pan.baidu.com/s/1oliL_RjMQwzp7Wd5So7K_g?pwd=rs8e)
 
 无
 
 
-[和彩云历史版本，提取码: HvHR](https://caiyun.139.com/m/i?115CeVBTkhKax) 
+[和彩云历史版本，提取码: h9P6](https://caiyun.139.com/m/i?115Con75Pxj8P) 
 
-[百度网盘历史版本，提取码: w1j9](https://pan.baidu.com/s/1_EmNVBdA-wq8ZeW9dq5EtA?pwd=w1j9)
+[百度网盘历史版本，提取码: sub7](https://pan.baidu.com/s/1VNHJHiV_iTP3jg-n49ZNww?pwd=sub7)
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
