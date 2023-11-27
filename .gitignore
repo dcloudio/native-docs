@@ -2,4 +2,3 @@ node_modules
 docs/.vuepress/dist
 .DS_Store
 **/sitemap.xml
-dist
