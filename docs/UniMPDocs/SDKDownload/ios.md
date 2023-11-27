@@ -19,10 +19,10 @@ The recommended method is to put the entire SDK under the project path. When add
 ## 更新日志
 ## Update log
 
-#### SDK 3.94
-[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.94.zip)
+#### SDK 3.98
+[点击下载 UniMP_iOS_SDK](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_iOS%403.98.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.94.2023102613.html)
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.98.2023112510.html)
 
 ## 历史版本
 ## historic version
@@ -31,6 +31,12 @@ The recommended method is to put the entire SDK under the project path. When add
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 3.96
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.96.2023110403.html)
+
+#### SDK 3.94
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.94.2023102613.html)
 
 #### SDK 3.8.12（补丁版本1）
 + 适配 iOS17 解决 nvue 页面可能导致的崩溃 Bug;
