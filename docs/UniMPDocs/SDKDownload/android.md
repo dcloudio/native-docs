@@ -22,11 +22,10 @@
 
 [点击下载UniMPSDK_Android@3.98-20231128.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.98-20231128.zip)
 
-sss
 #### 更新日志
 
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.98.2023112510.html)
-ss
+
 ## 升级SDK注意事项
 
 + 3.7.3 版本之后，uni-jsframework 修改为内置集成，开发者无需手动处理
