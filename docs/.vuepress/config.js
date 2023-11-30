@@ -70,8 +70,24 @@ const config = {
         .end()
         .plugin('normallize-link')
         .use(require('./markdown/normallizeLink'))
+        .end()
+				.plugin('img-add-attrs')
+				.use(require('./markdown/img-add-attrs'))
+        .end()
+				.plugin('attrs')
+        .use(require('markdown-it-attrs'),[{
+          leftDelimiter: '#{',
+          rightDelimiter: '}'
+        }])
+        .end()
+        .plugin('task-lists')
+        .use(require('markdown-it-task-lists'))
+        .end()
+        .plugin('markdown-it-raw-table')
+        .use(require('markdown-it-raw-table'))
     }
   },
+  patterns: ['**/!(_sidebar).md', '**/*.vue'],
   chainWebpack(config, isServer) {
     config.resolve.alias.set(
       '@theme-config',
@@ -79,8 +95,38 @@ const config = {
     )
   },
   plugins: [
-    ["vuepress-plugin-juejin-style-copy", copyOptions]
-  ]
+    ["vuepress-plugin-juejin-style-copy", copyOptions],
+    [
+      'named-chunks',
+      {
+        layoutChunkName: (layout) => 'layout-' + layout.componentName,
+        pageChunkName: page => {
+          const _context = page._context
+          const pageHeaders = (page.headers || []).map(item => item.title).join(',')
+          if (pageHeaders) {
+            const originDescription = page.frontmatter.description || ''
+            page.frontmatter = {
+              ...page.frontmatter,
+              description: `${_context.siteConfig.description ? `${_context.siteConfig.description},` : ''}${pageHeaders}${originDescription ? `,${originDescription}` : ''}`.slice(0, 150),
+            }
+          }
+          const pagePath = page.path.indexOf('.html') === -1 ? page.path + 'index' : page.path
+          const curPath = 'docs/' + pagePath.replace('docs/', '').substring(1).replace(/\.html/g, "")
+          return curPath
+        }
+      }
+    ]
+  ],
+  /**
+   *
+   * @param {string} path path: js 资源文件路径
+   * @param {string} type type: 资源文件类型，取值有 script 等
+   * @returns
+   */
+  shouldPrefetch: (path, type) => {
+    if (type === 'script') return path.includes('vendors~') || path.includes('layout-') || path.includes('index.')
+    return false
+  }
 }
 
 module.exports = config
