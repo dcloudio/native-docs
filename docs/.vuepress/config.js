@@ -80,7 +80,7 @@ module.exports = merge({
     )
   },
   plugins: [
-    ["vuepress-plugin-juejin-style-copy", copyOptions],
+    ["vuepress-plugin-juejin-style-copy", require(`./config/${process.env.DOCS_LOCAL}/copy`)]
     [
       'named-chunks',
       {
@@ -112,6 +112,4 @@ module.exports = merge({
     if (type === 'script') return path.includes('vendors~') || path.includes('layout-') || path.includes('index.')
     return false
   }
-}
-
-module.exports = config
+}, config)
