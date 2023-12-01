@@ -27,10 +27,7 @@
 
 无
 
-
-[和彩云历史版本，提取码: h9P6](https://caiyun.139.com/m/i?115Con75Pxj8P) 
-
-[百度网盘历史版本，提取码: sub7](https://pan.baidu.com/s/1VNHJHiV_iTP3jg-n49ZNww?pwd=sub7)
+[历史版本，提取码: ufci](https://pan.baidu.com/s/1CbF9f9XCZf8GBR1K5rZEQA?pwd=ufci) 
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
@@ -45,9 +42,6 @@
 
 无
 
- 
-[和彩云历史版本，提取码: LVha](https://caiyun.139.com/m/i?115Ceo9rd7PZ9) 
-
-[百度网盘历史版本，提取码: t7ux](https://pan.baidu.com/s/19TiZYG1mWsF4nmy10in9pQ?pwd=t7ux)
+[历史版本，提取码: 33ef](https://pan.baidu.com/s/1Z_ZWtc2U300EZtNgCJO33w?pwd=33ef) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
