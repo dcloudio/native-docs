@@ -1,4 +1,7 @@
+const base = '/en/'
+
 const config = {
+  base,
   title: 'uniMPSdk',
   head: [
     ['link', {
@@ -19,6 +22,13 @@ const config = {
       indexName: 'zh-uniapp',
       appId: 'PQIR5NL8CZ',
       searchParameters: { hitsPerPage: 50 }
+    }
+  },
+  markdown: {
+    chainMarkdown (config) {
+      config
+        .plugin('add-base-to-md')
+        .use(require('../markdown/add-base-to-md'), [{ base }])
     }
   }
 }
