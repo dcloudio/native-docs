@@ -1,3 +1,8 @@
+### 2023年11月21日发布——HBuilderX（3.98.2023112011-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（3.98.2023112011-alpha）版本生成本地打包App资源。
++ 更新 uni-AD 模块 穿山甲&GroMore SDK为 5.7.0.5 版，解决加载广告可能会崩溃的Bug
+
 ### 2023年11月06日发布——HBuilderX（3.97.2023110504-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.97.2023110504-alpha）版本生成本地打包App资源。
