@@ -7,7 +7,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115Cno1RLX28f)，提取码: 7tgK
+[和彩云](https://caiyun.139.com/m/i?115ColSYHmSwb)，提取码: 0E0j
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.98.2023112510）版本生成本地打包App资源。
 + 更新 uni-AD 模块 穿山甲&GroMore SDK为 5.7.0.5 版，解决加载广告可能会崩溃的Bug
@@ -21,14 +21,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2023年11月21日发布——HBuilderX（3.98.2023112011-alpha）
+### 2023年12月16日发布——HBuilderX（3.99.2023121601-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
 [和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（3.98.2023112011-alpha）版本生成本地打包App资源。
-+ 更新 uni-AD 模块 穿山甲&GroMore SDK为 5.7.0.5 版，解决加载广告可能会崩溃的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（3.99.2023121601-alpha）版本生成本地打包App资源。
++ 更新 UniPush使用的个推核心组件 SDK 为 3.2.9.0 版，个推 SDK 为 3.3.3.0 版，支持荣耀厂商推送；谷歌渠道个推 SDK 为 4.4.3.6 版，适配Android14
 
 [历史版本](https://pan.baidu.com/s/1BOzJygO0U39WsydCVMHomA?pwd=98nu)
 
