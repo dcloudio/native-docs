@@ -247,13 +247,14 @@ For certificate configuration and usage instructions, please refer to [Document]
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibOauth.a、libGoogleOauth.a、GoogleSignIn.framework、GoogleSignInDependencies.framework|AuthenticationServices.framework、CoreText.framework、CoreGraphics.framework、LocalAuthentication.framework、SafariServices.framework、Security.framework|GoogleSignIn.bundle|
+|liblibOauth.a、libGoogleOauth.a、GoogleSignIn.xcframework、AppAuth.xcframework、GTMAppAuth.xcframework、GTMSessionFetcher.xcframework|CoreText.framework、CoreGraphics.framework、LocalAuthentication.framework、SafariServices.framework、Security.framework|GoogleSignIn.bundle|
 
 ### 工程配置
 ### Project configuration
 
-1.在 info.plist 添加 `googleOauth` 项，填写Google `clientid`，参考如下：
-![](https://native-res.dcloud.net.cn/images/uniapp/nativedocs/iOS/oauth_google_clientid.png)
+1.在 info.plist 添加 `GIDClientID` 项，填写Google `clientid` ,如下图所示
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/google-info-plist.jpg)
+
 
 2.在工程的 info -> URL types 中添加配置，identifier 填写`google_url`， 添加您的反向clientid作为URL Schemes，如下图所示
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/gg_urlschemes.png)
@@ -267,14 +268,14 @@ For certificate configuration and usage instructions, please refer to [Document]
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibOauth.a、libFBOauth.a、FBSDKCoreKit.framework、FBAEMKit.framework、FBSDKCoreKit_Basics.framework、FBSDKLoginKit.framework|libc++.tbd、Accelerate.framework、Accounts.framework、AdSupport.framework、AudioToolbox.framework、CoreGraphics.framework、QuartzCore.framework、Security.framework、Social.framework、StoreKit.framework、|无|
-| liblibOauth.a、libFBOauth.a、FBSDKCoreKit.framework、FBAEMKit.framework、FBSDKCoreKit_Basics.framework、FBSDKLoginKit.framework| libc++.tbd、Accelerate.framework、Accounts.framework、AdSupport.framework、AudioToolbox.framework、CoreGraphics.framework、QuartzCore.framework、Security.framework、Social.framework、StoreKit.framework、|none|
+|liblibOauth.a、libFBOauth.a、FBSDKCoreKit.xcframework、FBAEMKit.xcframework、FBSDKCoreKit_Basics.xcframework、FBSDKLoginKit.xcframework|libc++.tbd、Accelerate.framework、Accounts.framework、AdSupport.framework、AudioToolbox.framework、CoreGraphics.framework、QuartzCore.framework、Security.framework、Social.framework、StoreKit.framework、|无|
 
 ### 工程配置
 ### Project configuration
 
-1.在 info.plist 添加 `FacebookAppID` 项，填写Facebook `appid`，参考如下：
-![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_appid.png)
+1.在 info.plist 添加 `FacebookAppID` `FacebookClientToken` 项，分别填写Facebook `appid`和`clientToken`,如下图所示
+![](https://native-res.dcloud.net.cn/images/uniapp/oauth/facebook-info-plist.jpg)
+
 
 2.在工程的 info -> URL types 中添加配置，identifier 填写`facebook `，URL Schemes 填写`fb[后面填写appid]`,如下图所示
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/oauth/fb_urlschemes.png)
@@ -301,6 +302,11 @@ The method of calling the framework in the system callback method of the AppDele
 
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     [PDRCore handleSysEvent:PDRCoreSysEventOpenURLWithOptions withObject:@[url,options]];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler{
+    [PDRCore handleSysEvent:PDRCoreSysEventContinueUserActivity withObject:userActivity];
     return YES;
 }
 

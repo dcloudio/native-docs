@@ -113,9 +113,7 @@ Fill in the universal link domain name
 | liblibPayment.a、libIAPPay.a| StoreKit.framework| none |
 
 ## paypal支付
-## paypal payment
-注:SDK3.3.7+、iOS11.0+
-Note: SDK3.3.7+, iOS11.0+
+注:SDK3.3.7+、iOS13.0+
 
 ### 添加依赖库及资源
 ### Add dependent libraries and resources
@@ -144,8 +142,7 @@ Note: SDK3.3.7+, iOS13.0+
 |依赖库|系统库|资源文件|
 |Dependent Libraries|System Libraries|Resource Files|
 |:--|:--|:--|
-|liblibPayment.a、libstripepay.a、Stripe.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework|无|无|
-| liblibPayment.a, libstripepay.a, Stripe.xcframework, StripeCore.xcframework, StripeUICore.xcframework, Stripe3DS2.xcframework|None|None|
+|liblibPayment.a、libstripepay.a、StripeApplePay.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework、StripePayments.xcframework、StripePaymentsUI.xcframework、StripePaymentSheet.xcframework|无|无|
 
 ### 工程配置
 ### Project configuration

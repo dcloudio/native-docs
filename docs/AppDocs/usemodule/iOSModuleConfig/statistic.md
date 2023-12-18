@@ -63,7 +63,7 @@ After HBuilderX2.2.5 (including 2.2.5), Umeng v6.0.5 statistical SDK is integrat
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--:|:--:|:--:|
-|liblibStatistic.a<br>libGoogleStatistic.a<br>FirebaseCore.xcframework,<br>FirebaseCoreDiagnostics.xcframework<br>FirebaseInstallations.xcframework,<br>GoogleAppMeasurement.xcframework<br>GoogleAppMeasurementIdentitySupport.xcframework<br>GoogleDataTransport.xcframework<br>GoogleUtilities.xcframework<br>PromisesObjC.xcframework<br>nanopb.xcframework<br>||GoogleService-Info.plist|
+|liblibStatistic.a<br>libGoogleStatistic.a<br>FirebaseCore.xcframework,<br>FirebaseCoreInternal.xcframework<br>FirebaseInstallations.xcframework,<br>GoogleAppMeasurement.xcframework<br>GoogleAppMeasurementIdentitySupport.xcframework<br>GoogleUtilities.xcframework<br>FBLPromises.xcframework<br>nanopb.xcframework<br>||GoogleService-Info.plist|
 
 
 
