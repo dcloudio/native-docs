@@ -1,6 +1,8 @@
 ## 一键登录
 >2.9.12+ 版本新增支持
 
+**注意：HBuilderX 3.99及以上版本，个推sdk由aar导入改为仓储方式，所以请注意3.99版本的配置与低版本并不相同。**
+
 ### 需要拷贝的文件
 
 **需要引入工程的aar文件**
@@ -11,18 +13,40 @@
 | SDK\libs | gysdk-3.0.6.0.aar |
 | SDK\libs | oauth-univerify-release.aar |
 
+HBuilderX 3.99及以上版本所需的libs仅为：
+
+|路径|文件|
+| :-------: | :-------: |
+| SDK\libs | oauth-univerify-release.aar |
+
 
 ### 需要修改的配置选项
 
-**需要在build.gradle 中 defaultConfig 节点下的 manifestPlaceholders 新增配置选项**
+**需要app的build.gradle中配置如下 **
 
 
 ```js
-"GETUI_APPID"     : "%GETUI_APPID%",
-"GY_APP_ID"       : "%GY_APP_ID%",
-"GT_INSTALL_CHANNEL":"HBuilder",
-// （GT_INSTALL_CHANNEL 固定值 "HBuilder"）
+android {
+    defaultConfig {
+        manifestPlaceholders = [
+			"GETUI_APPID"     : "%GETUI_APPID%",
+            "GY_APP_ID"       : "%GY_APP_ID%",
+            "GT_INSTALL_CHANNEL":"HBuilder",
+            // （GT_INSTALL_CHANNEL 固定值 "HBuilder"）
+        ]
+    }
+}
 ```
+
+
+HBuilderX 3.99及以上版本，需要增加仓储依赖
+```js
+dependencies {
+    implementation 'com.getui:gtc:3.2.9.0'  //个推核心组件
+    implementation 'com.getui:gysdk:3.1.4.0'
+}
+```
+
 
 GETUI_APPID与GY_APP_ID对应[开发者中心](https://dev.dcloud.net.cn/)一键登录->基础配置->一键登录应用ID（离线打包使用），GETUI_APPID与GY_APP_ID取值相同。
 
