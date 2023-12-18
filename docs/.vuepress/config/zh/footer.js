@@ -13,11 +13,11 @@ export default {
 				},
 				{
 					subTitle: 'uni-app x',
-					url: 'https://uniapp.dcloud.net.cn/',
+					url: 'https://doc.dcloud.net.cn/uni-app-x/',
 				},
 				{
 					subTitle: 'uniCloud',
-					url: 'https://uniapp.dcloud.net.cn/uniCloud/README',
+					url: 'https://doc.dcloud.net.cn/uniCloud/',
 				},
 				{
 					subTitle: 'uniMPsdk',
