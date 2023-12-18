@@ -67,7 +67,7 @@
 
 |依赖库|系统库|依赖资源|
 |:--:|:--:|:--:|
-|liblibPush.a<br>libFCMPush.a<br>FirebaseCore.xcframework,<br>FirebaseCoreDiagnostics.xcframework<br>FirebaseInstallations.xcframework,<br>GoogleDataTransport.xcframework<br>GoogleUtilities.xcframework<br>PromisesObjC.xcframework<br>nanopb.xcframework<br>FirebaseMessaging.xcframework|UserNotifications.framework|GoogleService-Info.plist|
+|liblibPush.a<br>libFCMPush.a<br>FirebaseCore.xcframework,<br>FirebaseCoreInternal.xcframework<br>FirebaseInstallations.xcframework,<br>GoogleDataTransport.xcframework<br>GoogleUtilities.xcframework<br>FBLPromises.xcframework<br>nanopb.xcframework<br>FirebaseMessaging.xcframework|UserNotifications.framework|GoogleService-Info.plist|
 
 
 

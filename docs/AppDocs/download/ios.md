@@ -6,13 +6,11 @@
 
 **SDK目录下的 /SDK/Bundles/PandoraApi.bundle/feature.plist，如果之前有修改过需要开发者自行备份,升级完SDK再次覆盖此文件,避免升级造成部分功能异常**
 
-**离线SDK 3.6.15版本之后，使用个推SDK需要swift环境，纯oc项目需要支持桥接swift(工程中新建一个swift文件后，根据提示操作即可)**
-
-**离线SDK 3.7.0版本之后，一键登录依赖的个验SDK基础库由libGTCommonSDK-1.2.2.7.a 更换为GTCommonSDK.framework**
-
-**离线SDK 3.8.0版本之后，一键登录依赖的个验SDK基础库由GTCommonSDK.framework 更换为GTCommonSDK.xcframework**
+**离线SDK更新后编译报错，可根据报错信息查看离线相关模块依赖库是否有更新**
 
 **离线SDK 3.8.0版本之后，部分广告SDK由.a文件变更为.framework文件，穿山甲以及GromoreSDK由framework变更为xcframework[详情](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/uniad.html)**
+
+**离线SDK 3.99版本之后，Paypal支付最低支持系统版本由iOS11变更为iOS13**
 
 **若使用百度网盘下载后解压失败，请使用和彩云下载**
 
@@ -34,14 +32,20 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2023年11月20日发布——HBuilderX（3.98.2023112011-alpha）
+### 2023年12月16日发布——HBuilderX（3.99.2023121601-alpha）
 
-[和彩云，提取码: Co4B](https://caiyun.139.com/m/i?115CnpeQMjhCH)
+[和彩云，提取码: qV2S](https://caiyun.139.com/m/i?115CelzgVUETc)
 
-[百度网盘，提取码: 5uit](https://pan.baidu.com/s/1nz-z7hCUPew2wB1fk5qAcQ?pwd=5uit)
+[百度网盘，提取码: j2sb](https://pan.baidu.com/s/1ZlMzeR42XvEU4zCEZRPVDQ?pwd=j2sb)
 
-无
++ 修复 iPhone 15 设备无法获取手机型号的Bug[详情](https://ask.dcloud.net.cn/question/182298)
++ 修复 iOS17系统视频播放控件 video 竖屏状态下进入全屏后退出全屏无法正常显示的Bug
++ 更新 支付模块 微信 SDK 为 2.0.2 版；支付宝 SDK 为 15.8.6 版； Paypal SDK 为 1.2.0 版；Stripe SDK 为 23.18.2 版
++ 更新 分享/登录模块 微信 SDK 为 2.0.2 版；QQ SDK 为 3.5.14 版；新浪微博 SDK 为 3.3.4 版；Facebook SDK 为 16.2.1 版；Google SDK 为 7.0.0 版
++ 更新 地图/定位模块 高德地图 SDK 为 9.7.0 版，高德定位 SDK 为 2.10.0 版；百度地图 SDK 为 6.6.0 版，百度定位 SDK 为 2.0.9 版
++ 更新 统计模块 友盟基础库 SDK 为 7.4.2 版，友盟统计 SDK 为 9.6.1 版；Google 统计 SDK 为 10.18.0 版
++ 更新 uni-AD模块 Google AdMob SDK 为 10.13.0 版
 
-[历史版本，提取码: 33ef](https://pan.baidu.com/s/1Z_ZWtc2U300EZtNgCJO33w?pwd=33ef) 
+[历史版本，提取码: pjq1](https://pan.baidu.com/s/1yn23aHMhfokejSjCn334ag?pwd=pjq1) 
 
 [历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
