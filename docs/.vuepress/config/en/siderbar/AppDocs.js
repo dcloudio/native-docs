@@ -1,8 +1,4 @@
 export default {
-  contactItems: [
-  ],
-  codeHosting: [
-  ],
   qq_group: [
     {
       "number": "256775471",
