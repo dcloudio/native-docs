@@ -47,6 +47,6 @@
 |Paypal支付|v1.2.0|Payment/Paypal|
 |Stripe支付|v23.18.2|Payment/Stripe|
 |个推|v2.7.4.2|Push/UniPush|
-|个验|v3.0.4.1|Oauth/一键登录|
+|个验|v3.0.6.0|Oauth/一键登录|
 |Google统计|v10.18.0|Statistic/Google|
 |FCM推送|v10.18.0|Push/FCM|
