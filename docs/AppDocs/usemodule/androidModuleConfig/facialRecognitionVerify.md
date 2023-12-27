@@ -8,9 +8,11 @@
 
 |路径|文件|
 | :-------: | :-------: |
-| SDK\libs | uni-facialRecognitionVerify-release.aar、aliyun-face-XXX.aar、aliyun-facelanguage-XXX.aar、aliyun-photinus-XXX.aar、aliyun-wishverify-XXX.aar、Android-AliyunFaceGuard-10036.aar、APSecuritySDK-DeepSec-7.0.1.20220813.jiagu.aar|
+| SDK\libs | uni-facialRecognitionVerify-release.aar、aliyun-base-XXX.aar、aliyun-facade-XXX.aar、aliyun-face-XXX.aar、aliyun-faceaudio-XXX.aar、aliyun-facelanguage-XXX.aar、aliyun-wishverify-XXX.aar、Android-AliyunFaceGuard-10042.aar、APSecuritySDK-DeepSec-7.0.1.20230914.jiagu.aar|
 
 `XXX`为版本号，具体版本号以下载的SDK中的为准
+
+HBuilder X 3.99 新增了`facialRecognitionVerify-support-release.aar`库，作用是应用可以在X86设备上正常运行，但调用`uni.startFacialRecognitionVerify()`会触发错误回调。如果不支持X86设备，可以不用引入。
 
 **在app级的build.gradle配置**
 
