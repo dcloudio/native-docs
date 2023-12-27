@@ -79,27 +79,7 @@ module.exports = merge({
     )
   },
   plugins: [
-    ["vuepress-plugin-juejin-style-copy", require(`./config/${process.env.DOCS_LOCAL}/copy`)],
-    [
-      'named-chunks',
-      {
-        layoutChunkName: (layout) => 'layout-' + layout.componentName,
-        pageChunkName: page => {
-          const _context = page._context
-          const pageHeaders = (page.headers || []).map(item => item.title).join(',')
-          if (pageHeaders) {
-            const originDescription = page.frontmatter.description || ''
-            page.frontmatter = {
-              ...page.frontmatter,
-              description: `${_context.siteConfig.description ? `${_context.siteConfig.description},` : ''}${pageHeaders}${originDescription ? `,${originDescription}` : ''}`.slice(0, 150),
-            }
-          }
-          const pagePath = page.path.indexOf('.html') === -1 ? page.path + 'index' : page.path
-          const curPath = 'docs/' + pagePath.replace('docs/', '').substring(1).replace(/\.html/g, "")
-          return curPath
-        }
-      }
-    ]
+    ["vuepress-plugin-juejin-style-copy", copyOptions]
   ],
   /**
    *
