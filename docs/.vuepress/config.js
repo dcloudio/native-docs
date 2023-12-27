@@ -78,9 +78,6 @@ module.exports = merge({
       path.resolve(process.cwd(), 'docs/.vuepress/config', process.env.DOCS_LOCAL)
     )
   },
-  plugins: [
-    ["vuepress-plugin-juejin-style-copy", copyOptions]
-  ],
   /**
    *
    * @param {string} path path: js 资源文件路径
