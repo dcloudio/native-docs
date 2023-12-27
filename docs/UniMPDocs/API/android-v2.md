@@ -1,8 +1,8 @@
 # unimp小程序V2版 (支持同时运行多个小程序)
 
-[SDK下载](UniMPDocs/SDKDownload/android)
+[SDK下载](/UniMPDocs/SDKDownload/android)
 
-## 类 DCUniMPSDK 
+## 类 DCUniMPSDK
 
 uni小程序SDK入口句柄,该类为工厂模式。通过`getInstance()`获取对象实例！
 
@@ -546,7 +546,7 @@ uni.onNativeEventReceive(function(event, data){
 |:----|:----
 |boolean|true表示运行中 false表示已停止运行
 
-#### IUniMP.showUniMP() 
+#### IUniMP.showUniMP()
 
 当前小程序显示到前台。仅开启后台模式生效！v3.2.6+
 
@@ -890,7 +890,7 @@ public class MySplashView implements IDCUniMPAppSplashView {
 |:----|:----|:----|:----
 |menuDefFontColor|String|"#000000"|字体颜色 可取值："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串，
 
-### DCUniMPPermissionUtil 
+### DCUniMPPermissionUtil
 
 小程序权限申请工具
 

@@ -1,7 +1,7 @@
 ## 开发环境
-	
+
 - iOS开发环境，请使用 Xcode 14 及以上版本；
-- [下载 uni小程序SDK](UniMPDocs/SDKDownload/ios)；
+- [下载 uni小程序SDK](/UniMPDocs/SDKDownload/ios)；
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
 
 ## 集成方式
@@ -68,7 +68,7 @@ UniMPSDK/Core 目录结构说明
 
 <img src="https://ask.dcloud.net.cn/uploads/article/20200208/b57287eaf2e63b0076bf36b943fc486a.png" width="50%">
 
-然后选中您的项目，右键->发行->原生App-制作应用wgt包 
+然后选中您的项目，右键->发行->原生App-制作应用wgt包
 （注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包”）
 
 <img src="https://ask.dcloud.net.cn/uploads/article/20200225/9fea6e3877e029ef03f4fed4db434dea.png" width="50%">
@@ -107,14 +107,14 @@ UniMPSDK/Core 目录结构说明
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+
     // 配置参数
     NSMutableDictionary *options = [NSMutableDictionary dictionaryWithDictionary:launchOptions];
     // 设置 debug YES 会在控制台输出 js log，默认不输出 log，注：需要引入 liblibLog.a 库
     [options setObject:[NSNumber numberWithBool:YES] forKey:@"debug"];
     // 初始化引擎
     [DCUniMPSDKEngine initSDKEnvironmentWithLaunchOptions:options];
-    
+
     return YES;
 }
 ```
@@ -253,7 +253,7 @@ UniMPSDK/Core 目录结构说明
 #### uni小程序应用资源升级
 
 1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在 App 升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`installUniMPResourceWithAppid:resourceFilePath:password:error:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
- 
+
 2. **小程序触发更新：**小程序内下载新的wgt包，然后调用更新api应用新的wgt资源，具体请参考 [wgt 资源在线升级/热更新](https://ask.dcloud.net.cn/article/35667)
 
 

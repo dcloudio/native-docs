@@ -10,7 +10,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 下载uni小程序 2.9.8+SDK [详情](UniMPDocs/SDKDownload/android.md)；
+- 下载uni小程序 2.9.8+SDK [详情](/UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.9.8+](https://www.dcloud.io/hbuilderx.html)
 
 ## 注意事项
@@ -36,7 +36,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 
 #### 宿主启动的activity关闭后会回到宿主页面。不回到小程序页面
 
-+ 宿主启动activity时请使用DCUniMPSDK.getInstance().startActivityForUniMPTask [详情](UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
++ 宿主启动activity时请使用DCUniMPSDK.getInstance().startActivityForUniMPTask [详情](/UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
 
 #### 宿主启动的Dialog无正常显示到小程序页面之上
 
@@ -69,9 +69,9 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 
  - 在现有Android项目中创建library的Module。例如`TestModule`
  - 配置刚创建的Module的build.gradle信息。
-	
+
 	**示例:**
-	
+
 	```
 	//导入aar需要的配置
 	repositories {
@@ -89,27 +89,27 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
 		compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')
 	}
 	```
-	
+
 	**Tips:**
-	
+
 	uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+
-	
+
 #### 2.创建TestModule类
 
  - Module 扩展必须继承 UniModule 类
- 
+
 	**示例:**
-	
+
 	```JAVA
 	public class TestModule extends UniModule
 	```
-	
+
  - 扩展方法必须加上@UniJSMethod (uiThread = false or true) 注解。UniApp 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
  - UniApp是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
-	
+
 	**示例:**
-	
+
 	```JAVA
 	//run ui thread
     @UniJSMethod(uiThread = true)
@@ -121,7 +121,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
             callback.invoke(data);
         }
     }
-	
+
 	//run JS thread
     @UniJSMethod (uiThread = false)
     public JSONObject testSyncFunc(){
@@ -130,7 +130,7 @@ uni 扩展原生能力有两种方式：一种是不需要参与页面布局，�
         return data;
     }
 	```
-	
+
  - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
  ```
  -keep public class * extends io.dcloud.feature.uniapp.common.UniModule{*;}
@@ -179,7 +179,7 @@ module 支持在 vue 和 nvue 中使用
 </template>
 
 <script>
-	// 获取 module 
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		methods: {
@@ -207,12 +207,12 @@ module 支持在 vue 和 nvue 中使用
 
 ```
 
-**Tips** 
+**Tips**
 
 uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持该方法！
 
 
-## 扩展组件 component 
+## 扩展组件 component
 
 下面以`TestComponent`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；
 
@@ -225,14 +225,14 @@ uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持
  - Component 扩展类必须继承 UniComponent
 
 	**示例:**
-	
+
 	```JAVA
 	public class TestText extends UniComponent<TextView>
 	```
  - UniComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
-	
+
 	**示例:**
-	
+
 	```JAVA
 	@Override
     protected TextView initComponentHostView(@NonNull Context context) {
@@ -242,23 +242,23 @@ uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持
         return textView;
     }
 	```
-	
+
  - Component 对应的设置属性的方法必须添加注解 @UniComponentProp(name=value(value is attr or style of dsl))
-	
+
 	**示例:**
-	
+
 	```JAVA
 	@UniComponentProp(name = "tel")
     public void setTel(String telNumber) {
         getHostView().setText("tel: " + telNumber);
     }
 	```
-	
- - UniApp 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
+
+ - UniApp 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码
  ```
  -keep public class * extends io.dcloud.feature.uniapp.common.UniComponent{*;}
  ```
- 
+
  - Component 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数
  - Component定义组件方法.
 
@@ -271,25 +271,25 @@ uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持
  }
  ```
  + 注册组之后，你可以在UniApp 文件中调用
- 
+
  ```JS
  <template>
  	<div>
  		<myText ref="telText" tel="12305" style="width:200;height:100" @onTel="onTel" @click="myTextClick"></myText>
  	</div>
  </template>
- <script>  
-     export default {  
-         methods: {  
+ <script>
+     export default {
+         methods: {
  			myTextClick(e) {
  				this.$refs.telText.clearTel();
  			}
-         }  
-     } 
- </script>  
+         }
+     }
+ </script>
  ```
- 
- 
+
+
 #### 3.注册TestComponent组件
 
 由于uni小程序运行在独立子进程中。内存与宿主不共享。所以`宿主进程`注册了`TestComponent`，在uni小程序是无法使用的。
@@ -332,20 +332,20 @@ public class App extends Application {
 	</div>
 </template>
 
-<script>  
-    export default {  
-        data() {  
-            return {  
-            }  
-        },  
-        onLoad() {  
-        },  
-        methods: {  
+<script>
+    export default {
+        data() {
+            return {
+            }
+        },
+        onLoad() {
+        },
+        methods: {
 			onTel: (e)=> {
 				console.log("onTel="+e.detail.tel);
 			}
-        }  
-    }  
+        }
+    }
 </script>
 ```
 
@@ -381,15 +381,15 @@ fireEvent("onTel", params);
 //标签注册接收onTel事件
 <myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
 //事件回调
-methods: {  
+methods: {
 	onTel: (e)=> {
 		console.log("onTel="+e.detail.tel);
 	}
-}  
+}
 ```
 
 **注意**
-	
+
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
 ## JSCallback结果回调
@@ -417,7 +417,7 @@ public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
 ```
 
 **注意**
-	
+
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 
 ## globalEvent 事件
@@ -513,11 +513,11 @@ public void gotoNativePage(){
 可以按以下步骤操作实现：
 
 在插件的UniModule/UniComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
-   
+
    **示例**
-   
+
    ```JAVA
-   public static int REQUEST_CODE = 1000; //数据返回标识code 
+   public static int REQUEST_CODE = 1000; //数据返回标识code
    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
@@ -529,9 +529,9 @@ public void gotoNativePage(){
    ```
 
 通过startActivityForResult加上返回标识code跳转其他Activity页面。
-   
+
    **示例**
-   
+
    ```JAVA
    @UniJSMethod (uiThread = true)
     public void gotoNativePage(){
@@ -541,11 +541,11 @@ public void gotoNativePage(){
         }
     }
    ```
-   
+
 Activity页面在关闭前调用setResult设置标识code将要返回的参数放进Intent中。
-   
+
    **示例**
-   
+
    ```JAVA
    Intent intent = new Intent();
    intent.putExtra("respond", "我是原生页面");
@@ -576,18 +576,18 @@ Activity页面在关闭前调用setResult设置标识code将要返回的参数�
 **示例：**
 
 ```
-{  
-  "nativePlugins": [  
+{
+  "nativePlugins": [
     {
-      "plugins": [  
-        {  
-          "type": "module",  
-          "name": "DCloud-RichAlert",  
-          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"  
-        }  
-      ]  
-    }  
-  ]  
+      "plugins": [
+        {
+          "type": "module",
+          "name": "DCloud-RichAlert",
+          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"
+        }
+      ]
+    }
+  ]
 }
 ```
 

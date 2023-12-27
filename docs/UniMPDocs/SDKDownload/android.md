@@ -5,7 +5,7 @@
 ### UniMPSDK V2版本
 
 + 支持同时运行多个小程序。也是后续主要维护的版本。V1版本将不再维护更新！需要注意。
-+ SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](UniMPDocs/API/android-v2);
++ SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](/UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](/UniMPDocs/API/android-v2);
 
 ### UniMPSDK V1版本
 

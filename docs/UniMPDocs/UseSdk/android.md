@@ -4,7 +4,7 @@ uni小程序SDK原生开发者交流QQ群： 892918401
 
 - JAVA环境 jdk1.7+(最优1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
+- 下载uni小程序 SDK [详情](/UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 - Android API 最低运行版本 21
 
@@ -61,7 +61,7 @@ Libs文件夹中的`依赖库`是不用全部都集成到宿主项目中。可�
  Bluetooth-release.aar
  android-gif-drawable-release@1.2.23.aar //必须集成
  ```
- 
+
 ```
 dependencies {
 	implementation 'androidx.recyclerview:recyclerview:1.0.0' //必须集成，android 自带recyclerview支持
@@ -195,7 +195,7 @@ dependencies {
 
 ## 代码实现
 
-阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)
+阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)
 
 #### 初始化uniMPSDK
 
@@ -325,7 +325,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 
 #### 启动uni小程序携带启动参数
 
-调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 
@@ -341,7 +341,7 @@ try {
 
 #### 启动uni小程序直达二级页面
 
-调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 

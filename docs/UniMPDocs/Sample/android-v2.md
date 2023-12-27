@@ -1,6 +1,6 @@
 # unimp小程序V2版 (支持同时运行多个小程序)
 
-[SDK下载](UniMPDocs/SDKDownload/android)
+[SDK下载](/UniMPDocs/SDKDownload/android)
 
 ## 启动小程序
 
@@ -89,7 +89,7 @@ var arguments = plus.runtime.arguments;
 
 宿主启动小程序时可通过传入页面路径来打开指定页面
 
-**页面路径格式要求** 
+**页面路径格式要求**
 
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
 
@@ -105,14 +105,14 @@ pages/component/view/view?action=redirect
 DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/view/view?action=redirect");
 ```
 
-<!-- 
+<!--
 #### 屏蔽返回
 
 直达二级页面如果您想屏蔽返回按钮及返回手势，可以在小程序页面的 `onLoad()` 方法中获取当前页面调用 `setStyle()` 方法实现，代码如下
 
 **Tips**
 
-`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
+`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"}
 
 ```
 // 启动直达二级页面屏蔽返回手势及返回按钮
@@ -125,7 +125,7 @@ DCUniMPSDK.getInstance().openUniMP(context,"__UNI__04E3A11", "pages/component/vi
 				const currentWebview = this.$scope.$getAppWebview();
 				currentWebview.setStyle({
 					popGesture: 'none', // 取消手势返回
-					titleNView: { 
+					titleNView: {
 						autoBackButton: false // 取消默认返回按钮
 					}
 				})
@@ -179,7 +179,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new IUniMPOnCloseCallBack() {
 
 > 注：需要先获取IUniMP接口对象！可通过openUniMP获取IUniMP接口对象
 
-宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](UniMPDocs/Extension/android)实现!
+宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](/UniMPDocs/Extension/android)实现!
 
 #### 宿主发送事件
 
@@ -312,7 +312,7 @@ DCUniMPSDK.getInstance().setOnUniMPEventCallBack(new IOnUniMPEventCallBack() {
 
 宿主添加的菜单按钮在每个页面都会显示
 
-DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置. 
+DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置.
 
 ```JAVA
 MenuActionSheetItem item = new MenuActionSheetItem("关于", "gy");
@@ -346,7 +346,7 @@ DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButto
 
 ```
 {
-	"pages": [ 
+	"pages": [
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -355,7 +355,7 @@ DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButto
 					"bounce": "vertical",
 					"titleNView": {
 						"buttons": [{
-							"text": "\ue534",  
+							"text": "\ue534",
 							"title":"关于", 	  //注意：title 为 uni小程序中显示的按钮标题，如果没有设置则显示 text 字段
 							"fontSrc": "/static/uni.ttf",
 							"fontSize": "22px",
@@ -528,7 +528,7 @@ IUniMP.closeUniMP()
 ```
 
 
-## 修改启动动画 
+## 修改启动动画
 
 3.4.7版本开始支持
 

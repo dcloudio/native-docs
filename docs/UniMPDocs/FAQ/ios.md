@@ -8,7 +8,7 @@ A: ⚠️ 使用 Xcode15 运行在 iOS14 及以下低版本的设备时，打开
 
 A：请参考解决方法 [点击查看详情](https://ask.dcloud.net.cn/article/35963)
 
-## Q：提示 打包时未添加  xxx 模块 ... 
+## Q：提示 打包时未添加  xxx 模块 ...
 
 ![](https://ask.dcloud.net.cn/uploads/article/20200320/71334000758150ffe0b3440e4f29e3e0.png)
 
@@ -20,7 +20,7 @@ A：如果您原生工程依赖的三方库与SDK依赖的三方库冲突
 
 - 源码开源的三方库比如 SDWebImage、ZXing等，建议您使用SDK内置的三方库，移除您之前依赖的三方库，这些库的 .h 头文件存放在 UNMPSDK/Features/inc 路径中的，将对应库的头文件引入到您的工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
 - 源码不开源的三方库比如 高德地图、微信、支付宝等，这类库官方依赖的版本如下表，如果您依赖的版本与SDk依赖的版本一致，你在使用SDK的功能模块时就不需要添加对应的三方库，如果版本不一致，请以高版本为准，如果SDK内使用的版本过低请您反馈给我我们，我们会做升级处理；
-- 还有一种解决方法，就是您不使用官方扩展的功能模块，然后按照[文档](UniMPDocs/Extension/ios.md)自行扩展这部分功能；
+- 还有一种解决方法，就是您不使用官方扩展的功能模块，然后按照[文档](/UniMPDocs/Extension/ios.md)自行扩展这部分功能；
 
 [依赖的三方库版本说明](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/dependentLibrary)
 
@@ -133,7 +133,7 @@ A: push 方式打开小程序时 由于小程序页面隐藏了导航栏，默�
 }
 ```
 
-## Q：wgt资源释放失败 
+## Q：wgt资源释放失败
 
 A：调用`releaseAppResourceToRunPathWithAppid:` 释放wgt资源是通过调用 SSZipArchive 库（编译在 libcoreSupport.a 库中）的方法将 wgt 资源解压到运行路径中，如果您的项目按照文档集成 UniMPSDK 基础库后 wgt 资源释放失败可以尝试将 libcoreSupport.a 库移除，然后将 `SSZipArchive` 库添加到工程
 

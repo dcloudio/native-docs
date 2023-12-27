@@ -9,7 +9,7 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 
 ## 开发环境
 - iOS开发环境，请使用 Xcode 11.0 及以上版本；
-- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](UniMPDocs/UseSdk/ios.md)
+- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](/UniMPDocs/UseSdk/ios.md)
 - 安装 uni小程序开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) （注：版本需与您使用的 uni小程序SDK 版本保持一致）
 
 ## 扩展 module
@@ -39,9 +39,9 @@ uni 原生端是基于 WeexSDK 来实现扩展原生能力，扩展原生能力�
 - (void)testAsyncFunc:(NSDictionary *)options callback:(WXModuleKeepAliveCallback)callback {
     // options 为 js 端调用此方法时传递的参数
     NSLog(@"%@",options);
-    
+
     // 可以在该方法中实现原生能力，然后通过 callback 回调到 js
-    
+
     // 回调方法，传递参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
     if (callback) {
         // 第一个参数为回传给js端的数据，第二个参数为标识，表示该回调方法是否支持多次调用，如果原生端需要多次回调js端则第二个参数传 YES;
@@ -65,11 +65,11 @@ WX_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
 - (NSString *)testSyncFunc:(NSDictionary *)options {
     // options 为 js 端调用此方法时传递的参数
     NSLog(@"%@",options);
-    
+
     /*
      可以在该方法中实现原生功能，然后直接通过 return 返回参数给 js
      */
-    
+
     // 同步返回参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
     return @"success";
 }
@@ -91,13 +91,13 @@ WX_EXPORT_METHOD_SYNC(@selector(testSyncFunc:))
     ...
     // 初始化引擎
     [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];
-    
+
     // 注册 module 注：module的 Name 需要保证唯一， class：为 module 的类名
     [WXSDKEngine registerModule:@"TestModule" withClass:NSClassFromString(@"TestModule")];
-    
+
     return YES;
 }
-``` 
+```
 
 
 到此，我们已经完成了一个简单的 module 扩展
@@ -115,7 +115,7 @@ module 支持在 vue 和 nvue 中使用
 </template>
 
 <script>
-	// 获取 module 
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		methods: {
@@ -141,10 +141,10 @@ module 支持在 vue 和 nvue 中使用
 </script>
 
 ```
-然后可以导出 uni小程序资源，导入到 App 中查看效果； 
+然后可以导出 uni小程序资源，导入到 App 中查看效果；
 
 
-## 扩展组件 component 
+## 扩展组件 component
 
 下面以`TestComponent`为例，源码请查看 uni小程序SDK 包中的示例 demo 工程；
 
@@ -158,7 +158,7 @@ module 支持在 vue 和 nvue 中使用
 @end
 
 ```
- 
+
 #### 2. 覆写 `WXComponent` 中的生命周期方法
 
 **- `loadView` 方法**
@@ -189,10 +189,10 @@ module 支持在 vue 和 nvue 中使用
     ...
     // 初始化引擎
     [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];
-    
+
     // 注册 component 注：component 的 Name 需要保证唯一， class：为 component 的类名
     [WXSDKEngine registerComponent:@"testmap" withClass:NSClassFromString(@"TestMapComponent")];
-    
+
     return YES;
 }
 ```
@@ -208,7 +208,7 @@ module 支持在 vue 和 nvue 中使用
 </template>
 ```
 
-#### 自定义事件  
+#### 自定义事件
 
 ##### 1. 对于每个组件默认提供了一些事件能力，如点击等。假如想给我们的地图组件提供 `mapLoaded` 事件。
 
@@ -281,7 +281,7 @@ export default {
 ##### 原生端实现
 
 **1. 覆盖组件初始化方法 `initWithRef...`
-给组件添加一个成员变量记录 `showTraffic` 属性的值，并在 init 方法中初始化。**   
+给组件添加一个成员变量记录 `showTraffic` 属性的值，并在 init 方法中初始化。**
 
 ```Objective-C
 - (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance {
@@ -384,7 +384,7 @@ WX_EXPORT_METHOD(@selector(focus:))
 </template>
 
 <script>
-	// 获取 module 
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		onLoad() {

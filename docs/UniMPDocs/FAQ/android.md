@@ -37,9 +37,9 @@ A：uni小程序示例中包含了大部分的功能模块。开发者可根据�
 2、可以修改ndk的cpu支持型号，用户自行选择。例如只需要在真机上运行的话，只需要'armeabi-v7a'既可。
 
 ## Q: uni小程序不需要集成分享、支付等第三方的功能。集成到我的Android项目中APK的体积会增加多少？
-A: 如果排除视频、地图、分享、支付、登录、直播pusher等功只集成[基础模块](UniMPDocs/UseSdk/android?id=unimpsdksdklibs-%E4%BE%9D%E8%B5%96%E5%BA%93%E8%AF%B4%E6%98%8E)。占用APK体积大小如下：
+A: 如果排除视频、地图、分享、支付、登录、直播pusher等功只集成[基础模块](/UniMPDocs/UseSdk/android?id=unimpsdksdklibs-%E4%BE%9D%E8%B5%96%E5%BA%93%E8%AF%B4%E6%98%8E)。占用APK体积大小如下：
 
-  |cpu型号.so选择|apk占用大小   
+  |cpu型号.so选择|apk占用大小
   |:---|:---
   |armeabi-v7a|约7MB左右
   |'armeabi-v7a'、'x86'、'arm64-v8a'|约16MB左右
@@ -68,7 +68,7 @@ A：请检查混淆配置文件。如果未包含以下配置请添加到混淆�
 
 A：遇到该问题请按一下步骤进行操作
 
-1、检测UniMPSDK中的资源dcloud_properties.xml是否集成，相关模块是否按照`Feature 依赖库说明.xls`配置[详情](UniMPDocs/UseModule/android/android)
+1、检测UniMPSDK中的资源dcloud_properties.xml是否集成，相关模块是否按照`Feature 依赖库说明.xls`配置[详情](/UniMPDocs/UseModule/android/android)
 
 2、检测项目的混淆配置是否集成了UniMPSDK中的`proguard.cfg`，没有请集成
 
@@ -102,12 +102,12 @@ A: 请按以下配置修改：
 
 ## Q: 部分版本支付宝支付，偶发没有回调的问题，如何解决？
 
-A：注意两点，  1   activity 换成 AppCompatActivity  2  libs 里面没有用到的aar 尽量去掉。  
+A：注意两点，  1   activity 换成 AppCompatActivity  2  libs 里面没有用到的aar 尽量去掉。
 
 
 ## Q: uni-app项目 能否集成到android studio的 任意module下的asset中
 
-A：不可以，默认只能放在app module下。 
+A：不可以，默认只能放在app module下。
 
 
 ## Q: unimp支持打开多个小程序实例吗？
@@ -115,11 +115,11 @@ A：不可以，默认只能放在app module下。
 A： 目前最多同时开启3个unimp小程序。超过3个则遵循先入先出的原则关闭早先打开的小程序。需要注意！
 
 
-	
+
 ## Q: 打包Android 10上无法启动相机
 
 A: 在application节点下添加provider节点
-	
+
 ```
 		<provider
             android:name="io.dcloud.common.util.DCloud_FileProvider"
@@ -139,7 +139,7 @@ ${apk.applicationId}须替换成应用的包名。
 由于unimp 小程序运行在独进程 会涉及进程初始化。无法控制三方SDK初始化时隐私合规问题。因此建议开发隐私未同意时不要初始化unimpSDK
 
 ```
-if(隐私协议是否同意) 
+if(隐私协议是否同意)
     // 用户同意隐私协议后再初始化sdk
     DCUniMPSDK.getInstance().initialize(...)
 }

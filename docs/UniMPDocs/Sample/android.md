@@ -1,6 +1,6 @@
 # unimp小程序V1版 (不支持同时运行多个小程序)
 
-[SDK下载](UniMPDocs/SDKDownload/android)
+[SDK下载](/UniMPDocs/SDKDownload/android)
 
 ## 启动小程序
 
@@ -23,7 +23,7 @@ DCUniMPSDK.getInstance().startApp(context, appid, splashClass, redirectPath, arg
 
 **Tips**
 
-Android startApp详细说明可参考[uni小程序SDK API参考手册](UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
+Android startApp详细说明可参考[uni小程序SDK API参考手册](/UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
 
 ### 启动小程序并传参
 
@@ -52,7 +52,7 @@ var arguments = plus.runtime.arguments;
 
 宿主启动小程序时可通过传入页面路径来打开指定页面
 
-**页面路径格式要求** 
+**页面路径格式要求**
 
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
 
@@ -74,7 +74,7 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/vie
 
 **Tips**
 
-`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
+`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"}
 
 ```
 // 启动直达二级页面屏蔽返回手势及返回按钮
@@ -87,7 +87,7 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/vie
 				const currentWebview = this.$scope.$getAppWebview();
 				currentWebview.setStyle({
 					popGesture: 'none', // 取消手势返回
-					titleNView: { 
+					titleNView: {
 						autoBackButton: false // 取消默认返回按钮
 					}
 				})
@@ -96,7 +96,7 @@ DCUniMPSDK.getInstance().startApp(context,"__UNI__04E3A11", "pages/component/vie
 		}
 	}
 </script>
-``` 
+```
 
 
 ## 关闭小程序
@@ -138,7 +138,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCal
 
 > 2.6.10 版本开始支持此功能
 
-宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](UniMPDocs/Extension/android)实现!
+宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](/UniMPDocs/Extension/android)实现!
 
 ### 宿主 App 向小程序发送事件
 
@@ -272,7 +272,7 @@ DCUniMPSDK.getInstance().setOnUniMPEventCallBack(new DCUniMPSDK.IOnUniMPEventCal
 
 宿主添加的菜单按钮在每个页面都会显示
 
-DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置. 
+DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置.
 
 ```JAVA
 MenuActionSheetItem item = new MenuActionSheetItem("关于", "gy");
@@ -306,7 +306,7 @@ DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButto
 
 ```
 {
-	"pages": [ 
+	"pages": [
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -315,7 +315,7 @@ DCUniMPSDK.getInstance().setDefMenuButtonClickCallBack(new DCUniMPSDK.IMenuButto
 					"bounce": "vertical",
 					"titleNView": {
 						"buttons": [{
-							"text": "\ue534",  
+							"text": "\ue534",
 							"title":"关于", 	  //注意：title 为 uni小程序中显示的按钮标题，如果没有设置则显示 text 字段
 							"fontSrc": "/static/uni.ttf",
 							"fontSize": "22px",

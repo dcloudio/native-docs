@@ -8,13 +8,13 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 ## 开发环境
 
 - iOS开发环境，Xcode14 及以上版本
-- 下载开发插件需要的 [SDK包](AppDocs/download/ios.md) 并解压
-- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) 
+- 下载开发插件需要的 [SDK包](/AppDocs/download/ios.md) 并解压
+- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html)
 
 ### SDK 包结构说明
 
 ```
-|--iOSSDK	
+|--iOSSDK
 	|-- HBuilder-Hello				// uni-app 离线打包工程
 	|-- HBuilder-uniPluginDemo		// uni-app 插件开发主工程 （本文档需要使用的工程）
 	|-- SDK							// 依赖库及依赖资源文件
@@ -22,7 +22,7 @@ uni原生插件指的是将您原生开发的功能按照规范封装成插件�
 	|-- readme.txt					// 目录说明
 ```
 
-SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`DCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`DCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](/AppDocs/README.md)
 
 ## 创建插件工程
 
@@ -97,7 +97,7 @@ SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**�
 
 - module：不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，通过扩展`module`的方式来实现；
 - component：需要参与页面布局，比如：`map`、`image`等需要显示`UI`的功能，通过扩展`component`即组件的方法来实现；
-  
+
 您需要根据实际的情况选择扩展方式，当然插件中可以同时存在 `module` 和 `component`，也可以是多个 `module` 和 多个 `component`；
 
 **特别注意**
@@ -137,10 +137,10 @@ TestModule.h 文件截图：
 /// 异步方法（注：异步方法会在主线程（UI线程）执行）
 /// @param options js 端调用方法时传递的参数   支持：String、Number、Boolean、JsonObject 类型
 /// @param callback 回调方法，回传参数给 js 端   支持： NSString、NSDictionary（只能包含基本数据类型）、NSNumber 类型
-- (void)testAsyncFunc:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback { 
-    
-    // options 为 js 端调用此方法时传递的参数 NSLog(@"%@",options); // 可以在该方法中实现原生能力，然后通过 callback 回调到 js 
- 
+- (void)testAsyncFunc:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback {
+
+    // options 为 js 端调用此方法时传递的参数 NSLog(@"%@",options); // 可以在该方法中实现原生能力，然后通过 callback 回调到 js
+
    if (callback) {
        // 第一个参数为回传给js端的数据，第二个参数为标识，表示该回调方法是否支持多次调用，如果原生端需要多次回调js端则第二个参数传 YES;
         callback(@"success",NO);
@@ -212,7 +212,7 @@ TestModule.m 文件截图：
 - (BOOL)application:(UIApplication *_Nullable)application continueUserActivity:(NSUserActivity *_Nullable)userActivity restorationHandler:(void(^_Nullable)(NSArray * __nullable restorableObjects))restorationHandler API_AVAILABLE(ios(8.0));
 ```
 
-具体示例请查看 [离线SDK包](AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
+具体示例请查看 [离线SDK包](/AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
 
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_h.jpg)
@@ -312,7 +312,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 </template>
 
 <script>
-	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module 
+	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module
 	var testModule = uni.requireNativePlugin("DCTestUniPlugin-TestModule")
 	export default {
 		methods: {
@@ -335,7 +335,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 					'name': 'uni-app',
 					'age': 1
 				})
-				
+
 				uni.showToast({
 					title:'调用同步方法 ' + ret,
 					icon: "none"
@@ -383,9 +383,9 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 **注**：前端代码修改后重新导入资源时，需要在插件开发工程中删除之前导入的资源，同时将模拟器或真机上的 App 删除，在按照上面的教程操作，避免因为缓存问题导致加载的还是旧的资源；
 
-接下来，我们学习一下如何扩展 Component 
+接下来，我们学习一下如何扩展 Component
 
-### 扩展组件 component 
+### 扩展组件 component
 > 以`TestComponent`为例，源码请查看 `iOSSDK/HBuilder-uniPluginDemo/DCTestUniPlugin` 插件工程；
 
 新建`TestComponent`类，继承`DCUniComponent`类（如果这个类里什么代码也不写，它和默认的的 `<view>` 组件能力是一致的）
@@ -398,7 +398,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 @end
 
 ```
- 
+
 #### 复写 `DCUniComponent` 中的生命周期方法
 
 **- `loadView` 方法**
@@ -460,7 +460,7 @@ module 支持在 vue 和 nvue 中调用，添加如下代码
 
 刚刚做的组件只实现了 UI 显示，下面讲解组件的交互方式等一些高阶用法
 
-#### 自定义事件  
+#### 自定义事件
 
 ##### 对于每个组件默认提供了一些事件能力，如点击等。假如想给我们的地图组件提供 `mapLoaded` 事件。
 
@@ -705,7 +705,7 @@ DCUniSDKInstance * instance = self.uniInstance;
 ### 编写 package.json 配置文件
 > package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等信息
 
-新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下所示
+新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](/NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下所示
 
 ```json
 {
@@ -784,22 +784,22 @@ A: 由于官方 UniAD 广告组件集成了“广点通”和“穿山甲”SDK�
         // 当前视图是被presented出来的
         UIViewController *nextRootVC = [vc presentedViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else if ([vc isKindOfClass:[UITabBarController class]]) {
         // 根视图为UITabBarController
         UIViewController *nextRootVC = [(UITabBarController *)vc selectedViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else if ([vc isKindOfClass:[UINavigationController class]]){
         // 根视图为UINavigationController
         UIViewController *nextRootVC = [(UINavigationController *)vc visibleViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else {
         // 根视图为非导航类
         currentShowingVC = vc;
     }
-    
+
     return currentShowingVC;
 }
 ```
@@ -827,10 +827,10 @@ NSString *imgPath = [appinfo.documentPath stringByAppendingPathComponent:@"test.
 
 说明：`"_doc"` 是一个特殊字符，和原生端的 `appinfo.documentPath`对应
 
-```				
+```
 // 1.使用相对路径（直接使用 "_doc/" 拼接图片路径）
 var relativePath = "_doc/test.png"
-				
+
 // 2.使用平台的绝对路径（先将 "_doc/" 转换成原生绝对路径在拼接图片路径）
 var docPath = plus.io.convertLocalFileSystemURL("_doc/");
 var absolutePath = docPath + 'test.png'
