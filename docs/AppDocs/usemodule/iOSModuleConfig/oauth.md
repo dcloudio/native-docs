@@ -23,7 +23,7 @@ Oauth 模块支持
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|liblibOauth.a、UniVerify.framework、GTCommonSDK.xcframework、GeYanSdk.framework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
+|liblibOauth.a、UniVerify.framework、GTCommonSDK.xcframework、GeYanSdk.xcframework|libz.tbd、libc++.tbd、libsqlite3.0.tbd、AdSupport.framework|TYRZResource.bundle|
 
 ### 工程配置
 

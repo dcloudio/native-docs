@@ -17,15 +17,23 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2023年11月25日发布——HBuilderX（3.98.2023112510） 
+### 2023年12月26日发布——HBuilderX（3.99.2023122611） 
 
-[和彩云，提取码: 3YYc](https://caiyun.139.com/m/i?115CoTBGeYqOc) 
+[和彩云，提取码: YNyK](https://caiyun.139.com/m/i?115CnSnXpCQAV) 
 
-[百度网盘，提取码: rs8e](https://pan.baidu.com/s/1oliL_RjMQwzp7Wd5So7K_g?pwd=rs8e)
+[百度网盘，提取码: v64d](https://pan.baidu.com/s/1_IrW-JC_bgbCDx0XU8oS3Q?pwd=v64d)
 
-无
++ 修复 iPhone 15 设备无法获取手机型号的Bug[详情](https://ask.dcloud.net.cn/question/182298)
++ 修复 iOS17系统视频播放控件 video 竖屏状态下进入全屏后退出全屏无法正常显示的Bug
++ 修复 nvue map 组件选择 google 地图时，使用自定义气泡导致应用崩溃的Bug[详情](https://ask.dcloud.net.cn/question/183494)
++ 更新 支付模块 微信 SDK 为 2.0.2 版；支付宝 SDK 为 15.8.6 版； Paypal SDK 为 1.2.0 版；Stripe SDK 为 23.18.2 版
++ 更新 分享/登录模块 微信 SDK 为 2.0.2 版；QQ SDK 为 3.5.14 版；新浪微博 SDK 为 3.3.4 版；Facebook SDK 为 16.2.1 版；Google SDK 为 7.0.0 版
++ 更新 地图/定位模块 高德地图 SDK 为 9.7.0 版，高德定位 SDK 为 2.10.0 版；百度地图 SDK 为 6.6.0 版，百度定位 SDK 为 2.0.9 版
++ 更新 统计模块 友盟基础库 SDK 为 7.4.2 版，友盟统计 SDK 为 9.6.1 版；Google 统计 SDK 为 10.18.0 版
++ 更新 uni-AD模块 Google AdMob SDK 为 10.13.0 版
++ 更新 一键登录使用的个验 SDK为 3.0.6.0 版，解决联通运营商一键认证服务主体变更导致新开通应用预登录可能失败的问题
 
-[历史版本，提取码: ufci](https://pan.baidu.com/s/1CbF9f9XCZf8GBR1K5rZEQA?pwd=ufci) 
+[历史版本，提取码: cpmi](https://pan.baidu.com/s/1Q6Axh0lNw-C3NVpqaYDIKg?pwd=cpmi) 
 
 [历次更新日志](AppDocs/download/update_history_iOS_release.md)
 
