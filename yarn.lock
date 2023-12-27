@@ -1146,6 +1146,14 @@
   resolved "https://registry.npmmirror.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
+"@sindresorhus/slugify@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.npmmirror.com/@sindresorhus/slugify/-/slugify-0.8.0.tgz#5550b7fa064f3a8a82651463ad635378054c72d0"
+  integrity sha512-Y+C3aG0JHmi4nCfixHgq0iAtqWCjMCliWghf6fXbemRKSGzpcrHdYxGZGDt8MeFg+gH7ounfMbz6WogqKCWvDg==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    lodash.deburr "^4.1.0"
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.npmmirror.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -2598,7 +2606,7 @@ caseless@~0.12.0:
   resolved "https://registry.npmmirror.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==
 
-chalk@^2.0.0, chalk@^2.3.2, chalk@^2.4.1:
+chalk@^2.0.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.npmmirror.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -2796,7 +2804,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2, commander@^2.20.0:
+commander@2, commander@^2.19.0, commander@^2.20.0:
   version "2.20.3"
   resolved "https://registry.npmmirror.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -3953,6 +3961,11 @@ detect-node@^2.0.4:
   resolved "https://registry.npmmirror.com/detect-node/-/detect-node-2.1.0.tgz#c9c70775a49c3d03bc2c06d9a73be550f978f8b1"
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
+diacritics@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmmirror.com/diacritics/-/diacritics-1.3.0.tgz#3efa87323ebb863e6696cebb0082d48ff3d6f7a1"
+  integrity sha512-wlwEkqcsaxvPJML+rDh/2iS824jbREk6DUMUKkEaSlxdYHeS43cClJtsWglvw2RfeXGm6ohKDqsXteJ5sP5enA==
+
 diffie-hellman@^5.0.0:
   version "5.0.3"
   resolved "https://registry.npmmirror.com/diffie-hellman/-/diffie-hellman-5.0.3.tgz#40e8ee98f55a2149607146921c63e1ae5f3d2875"
@@ -4858,7 +4871,7 @@ globby@^7.1.1:
     pify "^3.0.0"
     slash "^1.0.0"
 
-globby@^9.2.0:
+globby@^9.1.0, globby@^9.2.0:
   version "9.2.0"
   resolved "https://registry.npmmirror.com/globby/-/globby-9.2.0.tgz#fd029a706c703d29bdd170f4b6db3a3f7a7cb63d"
   integrity sha512-ollPHROa5mcxDEkwg6bPt3QbEf4pDQSNtd6JPL1YvOvAo/7/0VAm9TccUeoTmarjPw4pfUthSCqcyfNB1I3ZSg==
@@ -6000,6 +6013,11 @@ lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmmirror.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
+
+lodash.deburr@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
+  integrity sha512-m/M1U1f3ddMCs6Hq2tAsYThTBDaAKFDX3dwDo97GEYzamXi9SqUpjWi/Rrj/gf3X2n8ktwgZrlP1z6E3v/IExQ==
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
@@ -9028,6 +9046,17 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
+vuepress-plugin-check-md2@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-check-md2/-/vuepress-plugin-check-md2-1.0.4.tgz#b263ceb8cf096771943a4104604ad61769e41401"
+  integrity sha512-Zvm56ylpfUvUMj15BaNF+uaM3NVR3+F/gRJs5gDcErH2yn4DjM7vbWajqeryxmKhBhRV83zBPO/PEzknZ+qaVA==
+  dependencies:
+    "@sindresorhus/slugify" "^0.8.0"
+    chalk "^2.4.2"
+    commander "^2.19.0"
+    diacritics "^1.3.0"
+    globby "^9.1.0"
+
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"
   resolved "https://registry.npmmirror.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz#37fff05662fedbd63ffd3a5463b2592c7a7f3133"
@@ -9069,15 +9098,16 @@ vuepress-plugin-zooming@^1.1.8:
   dependencies:
     zooming "^2.1.1"
 
-vuepress-theme-uni-app-test@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.1.tgz#31839d5169032df54e48a8014645b6299f2ec5fe"
-  integrity sha512-qh3Vh+5Hu73Z1WbGBk4R4WzGf6RfQ4/P8ai/+Ecvf5jOpi8JzVaDfzD+9eKbh1qH1QHXkDVUA+wYoZE2XHYzJQ==
+vuepress-theme-uni-app-test@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.4.tgz#6f7175f7b8ebc00a7496b7d02027c4900790aedc"
+  integrity sha512-WEvTL6xvw4Bzw7efqe/Y4dhpfdGYaKUsdoW5WmlcWDPxcWmT/pLMa7JYmGlGvJPFjhi6Ak3j//sIkEJbAsYcgQ==
   dependencies:
     "@vuepress/plugin-back-to-top" "^1.9.5"
     "@vuepress/theme-default" "^1.8.2"
     algoliasearch "^4.13.1"
     clipboard "^2.0.11"
+    vuepress-plugin-check-md2 "^1.0.4"
     vuepress-plugin-juejin-style-copy "^1.0.4"
     vuepress-plugin-mermaidjs "1.9.1"
     vuepress-plugin-named-chunks "^1.1.4"
