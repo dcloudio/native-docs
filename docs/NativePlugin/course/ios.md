@@ -13,16 +13,14 @@ The uni native plug-in refers to encapsulating your natively developed functions
 ## Development environment
 
 - iOS开发环境，Xcode14 及以上版本
-- 下载开发插件需要的 [SDK包](AppDocs/download/ios.md) 并解压
-- Download the [SDK package](AppDocs/download/ios.md) needed to develop the plug-in and decompress it
-- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html) 
-- Install the uni-app development tool [HBuilderX](http://www.dcloud.io/hbuilderx.html)
+- 下载开发插件需要的 [SDK包](/AppDocs/download/ios.md) 并解压
+- 安装 uni-app 开发工具 [HBuilderX](http://www.dcloud.io/hbuilderx.html)
 
 ### SDK 包结构说明
 ### SDK package structure description
 
 ```
-|--iOSSDK	
+|--iOSSDK
 	|-- HBuilder-Hello				// uni-app 离线打包工程
 	|-- HBuilder-uniPluginDemo		// uni-app 插件开发主工程 （本文档需要使用的工程）
 	|-- SDK							// 依赖库及依赖资源文件
@@ -30,8 +28,7 @@ The uni native plug-in refers to encapsulating your natively developed functions
 	|-- readme.txt					// 目录说明
 ```
 
-SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`DCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](AppDocs/README.md)
-The `HBuilder-uniPluginDemo` in the SDK directory is the main project for **uni native plug-in development**. This project has been fully configured with all configurations. The development of uni native plug-ins needs to rely on this project. The plug-in example project `DCTestUniPlugin` in this document It is also in the directory, and the native plug-in project `DCRichAlert` corresponding to [Native Enhanced Prompt Box Plug-in](https://ext.dcloud.net.cn/plugin?id=36) in the plug-in market is also placed in this directory. As a reference for developers, other projects and documents, you don’t need to care about developing uni native plug-ins. If you want to know more, you can refer to App Offline Packaging [Related Documents](AppDocs/README.md)
+SDK 目录中的 `HBuilder-uniPluginDemo`为 **uni原生插件开发主工程**，该工程已经将各项配置都配置齐全，开发uni原生插件需要依赖此工程，本文档的插件示例工程`DCTestUniPlugin`也在目录中，另外插件市场的 [原生增强提示框插件](https://ext.dcloud.net.cn/plugin?id=36) 对应的原生插件工程`DCRichAlert`也放到了此目录中提供给开发者作为参考，其他工程及文件，开发uni原生插件不需要关心，如果想了解更多可以参考 App离线打包 [相关文档](/AppDocs/README.md)
 
 ## 创建插件工程
 ## Create plugin project
@@ -129,8 +126,7 @@ Native plug-ins are implemented based on the DCUniPlugin specification. There ar
 - module：不需要参与页面布局，只需要通过 API 调用原生功能，比如：获取当前定位信息、数据请求等功能，通过扩展`module`的方式来实现；
 - module: No need to participate in page layout, only need to call native functions through API, such as: obtain current location information, data request and other functions, and realize it by extending `module`;
 - component：需要参与页面布局，比如：`map`、`image`等需要显示`UI`的功能，通过扩展`component`即组件的方法来实现；
-- component: need to participate in the page layout, such as `map`, `image` and other functions that need to display `UI`, which are realized by extending `component`, that is, the method of components;
-  
+
 您需要根据实际的情况选择扩展方式，当然插件中可以同时存在 `module` 和 `component`，也可以是多个 `module` 和 多个 `component`；
 You need to choose the extension method according to the actual situation. Of course, `module` and `component` can exist in the plug-in at the same time, or there can be multiple `module` and multiple `component`;
 
@@ -183,12 +179,10 @@ Then add the implementation method in the TestModule.m file
 /// @param options js 端调用方法时传递的参数   支持：String、Number、Boolean、JsonObject 类型
 /// @param options The parameters passed when calling the method on the js side Support: String, Number, Boolean, JsonObject type
 /// @param callback 回调方法，回传参数给 js 端   支持： NSString、NSDictionary（只能包含基本数据类型）、NSNumber 类型
-/// @param callback Callback method, return parameters to js side Support: NSString, NSDictionary (can only contain basic data types), NSNumber type
-- (void)testAsyncFunc:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback { 
-    
-    // options 为 js 端调用此方法时传递的参数 NSLog(@"%@",options); // 可以在该方法中实现原生能力，然后通过 callback 回调到 js 
-    // options is the parameter passed when calling this method on the js side NSLog(@"%@",options); // You can implement native capabilities in this method, and then call back to js through callback
- 
+- (void)testAsyncFunc:(NSDictionary *)options callback:(UniModuleKeepAliveCallback)callback {
+
+    // options 为 js 端调用此方法时传递的参数 NSLog(@"%@",options); // 可以在该方法中实现原生能力，然后通过 callback 回调到 js
+
    if (callback) {
        // 第一个参数为回传给js端的数据，第二个参数为标识，表示该回调方法是否支持多次调用，如果原生端需要多次回调js端则第二个参数传 YES;
        // The first parameter is the data sent back to the js side, and the second parameter is the identifier, indicating whether the callback method supports multiple calls. If the native side needs to call back the js side multiple times, the second parameter is YES;
@@ -274,8 +268,7 @@ Comply with the `UniPluginProtocol` protocol
 - (BOOL)application:(UIApplication *_Nullable)application continueUserActivity:(NSUserActivity *_Nullable)userActivity restorationHandler:(void(^_Nullable)(NSArray * __nullable restorableObjects))restorationHandler API_AVAILABLE(ios(8.0));
 ```
 
-具体示例请查看 [离线SDK包](AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
-For specific examples, please see `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m` in [Offline SDK Package](AppDocs/download/ios.md)
+具体示例请查看 [离线SDK包](/AppDocs/download/ios.md) 中 `HBuilder-uniPluginDemo/DCTestUniPlugin/DCTestUniPlugin/TestPluginProxy.m`
 
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/TestPluginProxy_h.jpg)
@@ -396,8 +389,7 @@ module supports calling in vue and nvue, add the following code
 </template>
 
 <script>
-	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module 
-	// First you need to get the module through uni.requireNativePlugin("ModuleName")
+	// 首先需要通过 uni.requireNativePlugin("ModuleName") 获取 module
 	var testModule = uni.requireNativePlugin("DCTestUniPlugin-TestModule")
 	export default {
 		methods: {
@@ -422,7 +414,7 @@ module supports calling in vue and nvue, add the following code
 					'name': 'uni-app',
 					'age': 1
 				})
-				
+
 				uni.showToast({
 					title:'调用同步方法 ' + ret,
 					icon: "none"
@@ -484,11 +476,9 @@ Then run the project test, as shown in the figure below (the method of the modul
 **注**：前端代码修改后重新导入资源时，需要在插件开发工程中删除之前导入的资源，同时将模拟器或真机上的 App 删除，在按照上面的教程操作，避免因为缓存问题导致加载的还是旧的资源；
 **Note**: When re-importing resources after the front-end code is modified, you need to delete the previously imported resources in the plug-in development project, and delete the app on the simulator or the real machine at the same time. Follow the above tutorial to avoid caching problems. The old resources are still loaded;
 
-接下来，我们学习一下如何扩展 Component 
-Next, let's learn how to extend Component
+接下来，我们学习一下如何扩展 Component
 
-### 扩展组件 component 
-### Extension component component
+### 扩展组件 component
 > 以`TestComponent`为例，源码请查看 `iOSSDK/HBuilder-uniPluginDemo/DCTestUniPlugin` 插件工程；
 > Take `TestComponent` as an example, please refer to `iOSSDK/HBuilder-uniPluginDemo/DCTestUniPlugin` plug-in project for source code;
 
@@ -503,7 +493,7 @@ Create a new `TestComponent` class and inherit the `DCUniComponent` class (if no
 @end
 
 ```
- 
+
 #### 复写 `DCUniComponent` 中的生命周期方法
 #### Override the lifecycle method in `DCUniComponent`
 
@@ -584,8 +574,7 @@ Then run the test, the effect is as follows:
 刚刚做的组件只实现了 UI 显示，下面讲解组件的交互方式等一些高阶用法
 The component just made only realizes the UI display, and some advanced usages such as the interaction method of the component are explained below
 
-#### 自定义事件  
-#### Custom Events
+#### 自定义事件
 
 ##### 对于每个组件默认提供了一些事件能力，如点击等。假如想给我们的地图组件提供 `mapLoaded` 事件。
 ##### For each component, some event capabilities are provided by default, such as click and so on. Let's say we want to provide a `mapLoaded` event to our map component.
@@ -894,8 +883,7 @@ Then click `Run button` or `Command + B` to compile and run the project
 > package.json 为插件的配置文件，配置了插件id、格式、插件资源以及插件所需权限等等信息
 > package.json is the configuration file of the plug-in, which configures the plug-in id, format, plug-in resources, permissions required by the plug-in, etc.
 
-新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下所示
-Create a `package.json` file, and then please refer to [uni native plug-in package format](NativePlugin/course/package) instructions, fill in the plug-in configuration information according to the actual situation of your plug-in, the example plug-in is configured as follows
+新建一个 `package.json` 文件，然后请参考 [uni原生插件包格式](/NativePlugin/course/package) 说明，根据您插件实际情况填写插件配置信息，示例插件配置完后如下所示
 
 ```json
 {
@@ -994,25 +982,25 @@ For details, please refer to the open source project [Baidu OCR recognition plug
         // The current view is presented
         UIViewController *nextRootVC = [vc presentedViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else if ([vc isKindOfClass:[UITabBarController class]]) {
         // 根视图为UITabBarController
         // The root view is UITabBarController
         UIViewController *nextRootVC = [(UITabBarController *)vc selectedViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else if ([vc isKindOfClass:[UINavigationController class]]){
         // 根视图为UINavigationController
         // The root view is UINavigationController
         UIViewController *nextRootVC = [(UINavigationController *)vc visibleViewController];
         currentShowingVC = [self findCurrentShowingViewControllerFrom:nextRootVC];
-        
+
     } else {
         // 根视图为非导航类
         // The root view is a non-navigation class
         currentShowingVC = vc;
     }
-    
+
     return currentShowingVC;
 }
 ```
@@ -1049,11 +1037,11 @@ NSString *imgPath = [appinfo.documentPath stringByAppendingPathComponent:@"test.
 说明：`"_doc"` 是一个特殊字符，和原生端的 `appinfo.documentPath`对应
 Note: `"_doc"` is a special character, corresponding to `appinfo.documentPath` on the native side
 
-```				
+```
 // 1.使用相对路径（直接使用 "_doc/" 拼接图片路径）
 // 1. Use relative paths (directly use "_doc/" to stitch image paths)
 var relativePath = "_doc/test.png"
-				
+
 // 2.使用平台的绝对路径（先将 "_doc/" 转换成原生绝对路径在拼接图片路径）
 // 2. Use the absolute path of the platform (first convert "_doc/" into a native absolute path before stitching the image path)
 var docPath = plus.io.convertLocalFileSystemURL("_doc/");

@@ -7,8 +7,7 @@ uni applet SDK native developer communication QQ group: 892918401
 - JAVA环境 jdk1.7+(最优1.8)
 - JAVA environment jdk1.7+ (best 1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- Android Studio download address: [Android Studio official website](https://developer.android.google.cn/studio/index.html) OR [Android Studio Chinese community] (http://www.android-studio.org/ )
-- 下载uni小程序 SDK [详情](UniMPDocs/SDKDownload/android.md)；
+- 下载uni小程序 SDK [详情](/UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.6.2+](https://www.dcloud.io/hbuilderx.html)
 - Android API 最低运行版本 21
 - Android API minimum running version 21
@@ -77,7 +76,7 @@ In addition to SDKs such as video, map, sharing, payment, login, and live pusher
  Bluetooth-release.aar
  android-gif-drawable-release@1.2.23.aar //必须集成
  ```
- 
+
 ```
 dependencies {
 	implementation 'androidx.recyclerview:recyclerview:1.0.0' //必须集成，android 自带recyclerview支持
@@ -248,8 +247,7 @@ Versions before 3.3.7 The application resource package (.wgt) can choose to obta
 ## 代码实现
 ## Code
 
-阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)
-Read [uni Mini Program SDK API Reference Manual](UniMPDocs/API/android-v2)
+阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)
 
 #### 初始化uniMPSDK
 #### Initialize uniMPSDK
@@ -403,8 +401,7 @@ DCUniMPSDK.getInstance().releaseWgtToRunPathFromePath("__UNI__04E3A11", wgtPath,
 #### 启动uni小程序携带启动参数
 #### Start the uni applet with startup parameters
 
-调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
-When calling DCUniMPSDK.getInstance().openUniMP to start the uni applet. Just set the corresponding arguments (startup parameters) parameters. For specific instructions, please read the relevant instructions of the openUniMP method in [uni Mini Program SDK API Reference Manual](UniMPDocs/API/android-v2).
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应arguments(启动参数)参数即可。具体说明请阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 **example**
@@ -422,8 +419,7 @@ try {
 #### 启动uni小程序直达二级页面
 #### Start the uni applet to go directly to the secondary page
 
-调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](UniMPDocs/API/android-v2)中openUniMP方法相关说明。
-When calling DCUniMPSDK.getInstance().openUniMP to start the uni applet. Just set the corresponding path (direct page address) parameter. For specific instructions, please read the relevant instructions of the openUniMP method in [uni Mini Program SDK API Reference Manual](UniMPDocs/API/android-v2).
+调用DCUniMPSDK.getInstance().openUniMP启动uni小程序时。设置相应path(直达页面地址)参数即可。具体说明请阅读[uni小程序SDK API参考手册](/UniMPDocs/API/android-v2)中openUniMP方法相关说明。
 
 **示例**
 **example**

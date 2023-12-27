@@ -1,11 +1,9 @@
 # unimp小程序V2版 (支持同时运行多个小程序)
 # unimp applet V2 (supports running multiple applets at the same time)
 
-[SDK下载](UniMPDocs/SDKDownload/android)
-[SDK Download](UniMPDocs/SDKDownload/android)
+[SDK下载](/UniMPDocs/SDKDownload/android)
 
-## 类 DCUniMPSDK 
-## class DCUniMPSDK
+## 类 DCUniMPSDK
 
 uni小程序SDK入口句柄,该类为工厂模式。通过`getInstance()`获取对象实例！
 The uni applet SDK entry handle, which is a factory model. Get the object instance through `getInstance()`!
@@ -725,7 +723,7 @@ none
 |boolean|true表示运行中 false表示已停止运行
 |boolean|true means it is running, false means it has stopped running
 
-#### IUniMP.showUniMP() 
+#### IUniMP.showUniMP()
 
 当前小程序显示到前台。仅开启后台模式生效！v3.2.6+
 The current applet is displayed to the foreground. Only enable the background mode to take effect! v3.2.6+
@@ -1197,7 +1195,7 @@ Set menu default button text to have color
 |menuDefFontColor|String|"#000000"|字体颜色 可取值："#RRGGBB" 和 "rgba(R,G,B,A)" 格式字符串，
 |menuDefFontColor|String|"#000000"|Font color Possible values: "#RRGGBB" and "rgba(R,G,B,A)" format strings,
 
-### DCUniMPPermissionUtil 
+### DCUniMPPermissionUtil
 
 小程序权限申请工具
 Mini Program Permission Application Tool

@@ -16,8 +16,7 @@ There are two ways for uni to expand its native capabilities: one is that it doe
 - JAVA环境 jdk1.7+(最优1.8)
 - JAVA environment jdk1.7+ (best 1.8)
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
-- Android Studio download address: [Android Studio official website](https://developer.android.google.cn/studio/index.html) OR [Android Studio Chinese community] (http://www.android-studio.org/ )
-- 下载uni小程序 2.9.8+SDK [详情](UniMPDocs/SDKDownload/android.md)；
+- 下载uni小程序 2.9.8+SDK [详情](/UniMPDocs/SDKDownload/android.md)；
 - [HBuilderX-2.9.8+](https://www.dcloud.io/hbuilderx.html)
 
 ## 注意事项
@@ -56,8 +55,7 @@ Because the applet runs an independent process and the host process does not sha
 #### 宿主启动的activity关闭后会回到宿主页面。不回到小程序页面
 #### After the activity started by the host is closed, it will return to the host page. Do not return to the applet page
 
-+ 宿主启动activity时请使用DCUniMPSDK.getInstance().startActivityForUniMPTask [详情](UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
-+ When the host starts the activity, please use DCUniMPSDK.getInstance().startActivityForUniMPTask [Details](UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
++ 宿主启动activity时请使用DCUniMPSDK.getInstance().startActivityForUniMPTask [详情](/UniMPDocs/API/android-v2?id=dcunimpsdkgetinstancestartactivityforunimptask)
 
 #### 宿主启动的Dialog无正常显示到小程序页面之上
 #### The Dialog started by the host is not normally displayed on the applet page
@@ -105,11 +103,9 @@ Let's take `TestModule` as an example, please refer to the sample DEMO project i
  - 在现有Android项目中创建library的Module。例如`TestModule`
  - Create a library module in an existing Android project. For example `TestModule`
  - 配置刚创建的Module的build.gradle信息。
- - Configure the build.gradle information of the newly created Module.
-	
+
 	**示例:**
-	**Example:**
-	
+
 	```
 	//导入aar需要的配置
 	//Import the configuration required by aar
@@ -129,35 +125,30 @@ Let's take `TestModule` as an example, please refer to the sample DEMO project i
 		compileOnly fileTree(include: ['uniapp-release.aar'], dir: '../app/libs')
 	}
 	```
-	
+
 	**Tips:**
-	
+
 	uniapp-release.aar是扩展module主要依赖库，必须导入此依赖库！
 	uniapp-release.aar is the main dependency library of the extension module, which must be imported!
 	HX3.1.6+开始 集成SDK需要将compileSdkVersion调高至29+
-	HX3.1.6+ starts to integrate SDK and needs to increase compileSdkVersion to 29+
-	
+
 #### 2.创建TestModule类
 #### 2. Create the TestModule class
 
  - Module 扩展必须继承 UniModule 类
- - Module extension must inherit UniModule class
- 
+
 	**示例:**
-	**Example:**
-	
+
 	```JAVA
 	public class TestModule extends UniModule
 	```
-	
+
  - 扩展方法必须加上@UniJSMethod (uiThread = false or true) 注解。UniApp 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
  - The extension method must be annotated with @UniJSMethod (uiThread = false or true). UniApp will judge whether the current method should run on the UI thread according to the annotation, and whether the current method is an extension method.
  - UniApp是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
- - UniApp calls the Module extension method based on reflection, so the extension method in the Module must be of public type.
-	
+
 	**示例:**
-	**Example:**
-	
+
 	```JAVA
 	//run ui thread
     @UniJSMethod(uiThread = true)
@@ -169,7 +160,7 @@ Let's take `TestModule` as an example, please refer to the sample DEMO project i
             callback.invoke(data);
         }
     }
-	
+
 	//run JS thread
     @UniJSMethod (uiThread = false)
     public JSONObject testSyncFunc(){
@@ -178,7 +169,7 @@ Let's take `TestModule` as an example, please refer to the sample DEMO project i
         return data;
     }
 	```
-	
+
  - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
  - Also because it is called through reflection, Module cannot be confused. Please add the code in the obfuscation file:
  ```
@@ -239,8 +230,7 @@ module supports use in vue and nvue
 </template>
 
 <script>
-	// 获取 module 
-	// get module
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		methods: {
@@ -270,14 +260,13 @@ module supports use in vue and nvue
 
 ```
 
-**Tips** 
+**Tips**
 
 uni.requireNativePlugin仅用于获取UniModule的对象。UniComponent不支持该方法！
 uni.requireNativePlugin is only used to obtain UniModule objects. UniComponent does not support this method!
 
 
-## 扩展组件 component 
-## Extension component component
+## 扩展组件 component
 
 下面以`TestComponent`为例，源码请查看 uni小程序SDK 包中的示例 DEMO 工程；
 Let's take `TestComponent` as an example, please refer to the sample DEMO project in the uni applet SDK package for the source code;
@@ -295,17 +284,14 @@ Please refer to [Extension Module](/UniMPDocs/Extension/android?id=_1%E5%88%9B%E
  - Component extension class must inherit UniComponent
 
 	**示例:**
-	**Example:**
-	
+
 	```JAVA
 	public class TestText extends UniComponent<TextView>
 	```
  - UniComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
- - UniComponent's initComponentHostView callback function. This callback function will be triggered when the Component's view is constructed.
-	
+
 	**示例:**
-	**Example:**
-	
+
 	```JAVA
 	@Override
     protected TextView initComponentHostView(@NonNull Context context) {
@@ -315,26 +301,23 @@ Please refer to [Extension Module](/UniMPDocs/Extension/android?id=_1%E5%88%9B%E
         return textView;
     }
 	```
-	
+
  - Component 对应的设置属性的方法必须添加注解 @UniComponentProp(name=value(value is attr or style of dsl))
- - The method of setting properties corresponding to Component must be annotated @UniComponentProp(name=value(value is attr or style of dsl))
-	
+
 	**示例:**
-	**Example:**
-	
+
 	```JAVA
 	@UniComponentProp(name = "tel")
     public void setTel(String telNumber) {
         getHostView().setText("tel: " + telNumber);
     }
 	```
-	
- - UniApp 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
- - UniApp invokes the corresponding method through reflection, so the corresponding attribute method of Component must be public and cannot be confused. Please add the code in the obfuscation file
+
+ - UniApp 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码
  ```
  -keep public class * extends io.dcloud.feature.uniapp.common.UniComponent{*;}
  ```
- 
+
  - Component 扩展的方法可以使用 int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject 类型的参数
  - Component extension methods can use parameters of type int, double, float, String, Map, List, com.alibaba.fastjson.JSONObject
  - Component定义组件方法.
@@ -351,26 +334,25 @@ Please refer to [Extension Module](/UniMPDocs/Extension/android?id=_1%E5%88%9B%E
  }
  ```
  + 注册组之后，你可以在UniApp 文件中调用
- + After registering the group, you can call the
- 
+
  ```JS
  <template>
  	<div>
  		<myText ref="telText" tel="12305" style="width:200;height:100" @onTel="onTel" @click="myTextClick"></myText>
  	</div>
  </template>
- <script>  
-     export default {  
-         methods: {  
+ <script>
+     export default {
+         methods: {
  			myTextClick(e) {
  				this.$refs.telText.clearTel();
  			}
-         }  
-     } 
- </script>  
+         }
+     }
+ </script>
  ```
- 
- 
+
+
 #### 3.注册TestComponent组件
 #### 3. Register TestComponent component
 
@@ -423,20 +405,20 @@ Note: extended components can only be used in `nvue` files
 	</div>
 </template>
 
-<script>  
-    export default {  
-        data() {  
-            return {  
-            }  
-        },  
-        onLoad() {  
-        },  
-        methods: {  
+<script>
+    export default {
+        data() {
+            return {
+            }
+        },
+        onLoad() {
+        },
+        methods: {
 			onTel: (e)=> {
 				console.log("onTel="+e.detail.tel);
 			}
-        }  
-    }  
+        }
+    }
 </script>
 ```
 
@@ -483,17 +465,15 @@ fireEvent("onTel", params);
 //Tag registration to receive onTel event
 <myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
 //事件回调
-//event callback
-methods: {  
+methods: {
 	onTel: (e)=> {
 		console.log("onTel="+e.detail.tel);
 	}
-}  
+}
 ```
 
 **注意**
-**Notice**
-	
+
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 When executing the custom event fireEvent, the data resources of params must be put into "detail". If you don't put the data you have to return in "detail", it may be lost. caution! ! !
 
@@ -527,8 +507,7 @@ public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
 ```
 
 **注意**
-**Notice**
-	
+
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 When executing the custom event fireEvent, the data resources of params must be put into "detail". If you don't put the data you have to return in "detail", it may be lost. caution! ! !
 
@@ -657,13 +636,11 @@ If the applet is not running in the background mode setEnableBackground = false,
 It can be achieved by following steps:
 
 在插件的UniModule/UniComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
-Implement the onActivityResult method in the UniModule/UniComponent of the plug-in. By identifying the code and the parameter KEY to distinguish the current Result is the return value you need
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
-   public static int REQUEST_CODE = 1000; //数据返回标识code 
+   public static int REQUEST_CODE = 1000; //数据返回标识code
    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
@@ -675,11 +652,9 @@ Implement the onActivityResult method in the UniModule/UniComponent of the plug-
    ```
 
 通过startActivityForResult加上返回标识code跳转其他Activity页面。
-Use startActivityForResult plus the return identification code to jump to other activity pages.
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
    @UniJSMethod (uiThread = true)
     public void gotoNativePage(){
@@ -689,13 +664,11 @@ Use startActivityForResult plus the return identification code to jump to other 
         }
     }
    ```
-   
+
 Activity页面在关闭前调用setResult设置标识code将要返回的参数放进Intent中。
-Before the activity page is closed, call setResult to set the identification code and put the parameters to be returned into the Intent.
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
    Intent intent = new Intent();
    intent.putExtra("respond", "我是原生页面");
@@ -736,18 +709,18 @@ Before the activity page is closed, call setResult to set the identification cod
 **Example:**
 
 ```
-{  
-  "nativePlugins": [  
+{
+  "nativePlugins": [
     {
-      "plugins": [  
-        {  
-          "type": "module",  
-          "name": "DCloud-RichAlert",  
-          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"  
-        }  
-      ]  
-    }  
-  ]  
+      "plugins": [
+        {
+          "type": "module",
+          "name": "DCloud-RichAlert",
+          "class": "uni.dcloud.io.uniplugin_richalert.RichAlertModule"
+        }
+      ]
+    }
+  ]
 }
 ```
 

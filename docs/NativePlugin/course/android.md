@@ -6,8 +6,7 @@ When you read this document, we assume that you already have corresponding Andro
 **为了插件开发者更方便快捷的开发uni原生插件！2.9.8版本起修改了uni插件开发API及规范。当然还会继续兼容老的插件运行及开发。推荐插件开发者按新版规范实现开发插件。方便日后更高效的更新迭代uni原生插件！**
 **For plug-in developers to develop uni native plug-ins more conveniently and quickly! From version 2.9.8, the uni plug-in development API and specifications have been modified. Of course, it will continue to be compatible with old plug-in operation and development. Plug-in developers are recommended to implement and develop plug-ins according to the new specification. It is convenient to update and iterate uni native plug-ins more efficiently in the future! **
 
-## 开发环境 
-## Development environment
+## 开发环境
 - JAVA环境 jdk1.8
 - JAVA environment jdk1.8
 - Android Studio 下载地址：[Android Studio官网](https://developer.android.google.cn/studio/index.html) OR [Android Studio中文社区](http://www.android-studio.org/)
@@ -26,9 +25,7 @@ When you read this document, we assume that you already have corresponding Andro
 		- 修复部分SDK集成后编译打包失败问题
 		- Fixed the problem of compilation and packaging failure after part of the SDK integration
 		- 适配android11的编译新特性。
-		- Adapt to the new compilation features of android11.
-		- 修复tools.build:gradle:3.2.1版本编译检测是否需要AndroidX依赖库不准确问题。**如果您的插件在HX3.0.0+版本编译报错需要AndroidX依赖库。那证明您之前集成的SDK是需要AndroidX的。请配置useAndroidX。**具体可查看[package.json](NativePlugin/course/package)
-		- Fix the inaccurate problem of tools.build:gradle:3.2.1 version compilation detection whether AndroidX dependency library is required. **If your plug-in is compiled in HX3.0.0+ version and reports an error, it needs the AndroidX dependency library. That proves that the SDK you integrated before requires AndroidX. Please configure useAndroidX. **For details, see [package.json](NativePlugin/course/package)
+		- 修复tools.build:gradle:3.2.1版本编译检测是否需要AndroidX依赖库不准确问题。**如果您的插件在HX3.0.0+版本编译报错需要AndroidX依赖库。那证明您之前集成的SDK是需要AndroidX的。请配置useAndroidX。**具体可查看[package.json](/NativePlugin/course/package)
 		- 如果您下载的SDK是3.0.0+版本请将本地gradle版本升级到6.5-all，tools.build:gradle版本升级到4.1.1。防止编译报错等问题。如果遇到编译内存不足可能是关闭了R8混淆导致 需要开启。
 		- If the SDK you downloaded is version 3.0.0+, please upgrade the local gradle version to 6.5-all, tools.build:gradle version to 4.1.1. Prevent compilation errors and other issues. If you encounter insufficient compilation memory, it may be that the R8 confusion is turned off and needs to be turned on.
 		- **tools.build:gradle:4.1.1版本编译器可能无法适配老的插件原生编译。会导致之前的插件可能无法正常编译通过或编译完成apk无法正常使用！需要插件开发者尽快适配4.1.1的编译环境。**
@@ -88,8 +85,7 @@ You can customize your own functions according to your own business. There are t
 - Pay special attention to the uni-app plug-in currently only supports Module extension and Component extension, and does not support Adapter extension for the time being! ! !
 
 ### 扩展 Module
-### Extend Module
- 
+
 - Module 扩展 非 UI 的特定功能
 - Module extends non-UI specific functionality
 - Module 不支持代码通过 new Module的方式创建对象。无法正常使用！
@@ -131,16 +127,14 @@ dependencies {
 ```
 
 **Tips:**
-	
+
 uniapp-v8-release.aar是扩展module主要依赖库，必须导入此依赖库！
-uniapp-v8-release.aar is the main dependency library of the extension module, which must be imported!
-	
+
 #### 创建TestModule类
 #### Create TestModule class
 
 - Module 扩展必须继承 UniModule 类
-- Module extension must inherit UniModule class
- 
+
 **示例:**
 **Example:**
 
@@ -151,11 +145,9 @@ public class TestModule extends UniModule
 - 扩展方法必须加上@UniJSMethod (uiThread = false or true) 注解。UniApp 会根据注解来判断当前方法是否要运行在 UI 线程，和当前方法是否是扩展方法。
 - The extension method must be annotated with @UniJSMethod (uiThread = false or true). UniApp will judge whether the current method should run on the UI thread according to the annotation, and whether the current method is an extension method.
 - UniApp是根据反射来进行调用 Module 扩展方法，所以Module中的扩展方法必须是 public 类型。
-- UniApp calls the Module extension method based on reflection, so the extension method in the Module must be of public type.
-	
+
 **示例:**
-**Example:**
-	
+
 ```JAVA
 //run ui thread
 @UniJSMethod(uiThread = true)
@@ -176,7 +168,7 @@ public JSONObject testSyncFunc(){
     return data;
 }
 ```
-	
+
 - 同样因为是通过反射调用，Module 不能被混淆。请在混淆文件中添加代码：
 - Also because it is called through reflection, Module cannot be confused. Please add the code in the obfuscation file:
 
@@ -211,17 +203,14 @@ Please refer to [Extension Module](/NativePlugin/course/android?id=%E5%88%9B%E5%
 - Component extension classes must inherit UniComponent, and parent container Components (such as ViewGroup components) need to inherit UniVContainer
 
 **示例:**
-**Example:**
-	
+
 ```JAVA
 public class TestText extends UniComponent<TextView>
 ```
 - UniComponent的initComponentHostView回调函数。构建Component的view时会触发此回调函数。
-- UniComponent's initComponentHostView callback function. This callback function will be triggered when the Component's view is constructed.
-	
+
 **示例:**
-**Example:**
-	
+
 ```JAVA
 @Override
 protected TextView initComponentHostView(@NonNull Context context) {
@@ -231,26 +220,22 @@ protected TextView initComponentHostView(@NonNull Context context) {
     return textView;
 }
 ```
-	
+
 - Component 对应的设置属性的方法必须添加注解 @UniComponentProp(name=value(value is attr or style of dsl))
-- The method of setting properties corresponding to Component must be annotated @UniComponentProp(name=value(value is attr or style of dsl))
-	
+
 **示例:**
-**Example:**
-	
+
 ```JAVA
 @UniComponentProp(name = "tel")
 public void setTel(String telNumber) {
     getHostView().setText("tel: " + telNumber);
 }
 ```
-- UniApp sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码 
-- UniApp sdk invokes the corresponding method through reflection, so the property method corresponding to Component must be public and cannot be confused. Please add the code in the obfuscation file
+- UniApp sdk 通过反射调用对应的方法，所以 Component 对应的属性方法必须是 public，并且不能被混淆。请在混淆文件中添加代码
 ```
 -keep public class * extends io.dcloud.feature.uniapp.ui.component.UniComponent{*;}
 ```
-- Component 扩展的方法可以使用 int, double, float, String, Map, List , com.alibaba.fastjson.JSONObject类型的参数, 
-- Component extension methods can use parameters of type int, double, float, String, Map, List , com.alibaba.fastjson.JSONObject,
+- Component 扩展的方法可以使用 int, double, float, String, Map, List , com.alibaba.fastjson.JSONObject类型的参数,
 - Component 定义组件方法.
 - Component defines component methods.
 
@@ -265,25 +250,24 @@ public void setTel(String telNumber) {
  }
  ```
  + 注册组之后，你可以在nvue 文件中调用
- + After registering the group, you can call it in the nvue file
- 
+
  ```JS
  <template>
  	<div>
  		<myText ref="telText" tel="12305" style="width:200;height:100" @onTel="onTel" @click="myTextClick"></myText>
  	</div>
  </template>
- <script>  
-     export default {  
-         methods: {  
+ <script>
+     export default {
+         methods: {
  			myTextClick(e) {
  				this.$refs.telText.clearTel();
  			}
-         }  
-     } 
- </script>  
+         }
+     }
+ </script>
  ```
- 
+
 ### component 自定义发送事件
 ### component custom send event
 
@@ -328,12 +312,11 @@ fireEvent("onTel", params);
 //Tag registration to receive onTel event
 <myText tel="12305" style="width:200;height:100" @onTel="onTel"></myText>
 //事件回调
-//event callback
-methods: {  
+methods: {
 	onTel: (e)=> {
 		console.log("onTel="+e.detail.tel);
 	}
-}  
+}
 ```
 ### UniJSCallback结果回调
 ### UniJSCallback result callback
@@ -365,8 +348,7 @@ public void testAsyncFunc(JSONObject options, UniJSCallback callback) {
 ```
 
 **注意**
-**Notice**
-	
+
 执行自定义事件fireEvent时params的数据资源都要放入到"detail"中。如果没有将你得返回的数据放入"detail"中将可能丢失。请注意！！！
 When executing the custom event fireEvent, the data resources of params must be put into "detail". If you don't put the data you have to return in "detail", it may be lost. caution! ! !
 
@@ -499,7 +481,7 @@ public class RichAlertModule extends UniDestroyableModule {
             alert.dismiss();
         }
     }
-	
+
 }
 ```
 
@@ -507,50 +489,48 @@ public class RichAlertModule extends UniDestroyableModule {
 #### Use RichAlert example in HBuilderX project
 
 ```JS
-// require插件名称  
-// require plugin name
-const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');              
-// 使用插件  
-// use the plugin
-dcRichAlert.show({  
-    position: 'bottom',  
-    title: "提示信息",  
-    titleColor: '#FF0000',  
-    content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",  
-    contentAlign: 'left',  
-    checkBox: {  
-        title: '不再提示',  
-        isSelected: true  
-    },  
-    buttons: [{  
-        title: '取消'  
-    },  
-    {  
-        title: '否'  
-    },  
-    {  
-        title: '确认',  
-        titleColor: '#3F51B5'  
-    }  
-    ]  
-}, result => {  
-    switch (result.type) {  
-        case 'button':  
-            console.log("callback---button--" + result.index);  
-            break;  
-        case 'checkBox':  
-            console.log("callback---checkBox--" + result.isSelected);  
-            break;  
-        case 'a':  
-            console.log("callback---a--" + JSON.stringify(result));  
-            break;  
-        case 'backCancel':  
-            console.log("callback---backCancel--");  
-            break;  
-   }  
+// require插件名称
+const dcRichAlert = uni.requireNativePlugin('DCloud-RichAlert');
+// 使用插件
+dcRichAlert.show({
+    position: 'bottom',
+    title: "提示信息",
+    titleColor: '#FF0000',
+    content: "<a href='https://uniapp.dcloud.io/' value='Hello uni-app'>uni-app</a> 是一个使用 Vue.js 开发跨平台应用的前端框架!\n免费的\n免费的\n免费的\n重要的事情说三遍",
+    contentAlign: 'left',
+    checkBox: {
+        title: '不再提示',
+        isSelected: true
+    },
+    buttons: [{
+        title: '取消'
+    },
+    {
+        title: '否'
+    },
+    {
+        title: '确认',
+        titleColor: '#3F51B5'
+    }
+    ]
+}, result => {
+    switch (result.type) {
+        case 'button':
+            console.log("callback---button--" + result.index);
+            break;
+        case 'checkBox':
+            console.log("callback---checkBox--" + result.isSelected);
+            break;
+        case 'a':
+            console.log("callback---a--" + JSON.stringify(result));
+            break;
+        case 'backCancel':
+            console.log("callback---backCancel--");
+            break;
+   }
 });
 ```
-	
+
 ## 插件调试
 ## Plugin debugging
 
@@ -570,8 +550,7 @@ Choose one of the above two methods
  - 创建一个实体类并实现UniAppHookProxy接口，在onCreate函数中添加组件注册相关参数 或 填写插件需要在启动时初始化的逻辑。
  - Create an entity class and implement the UniAppHookProxy interface, add component registration related parameters in the onCreate function or fill in the logic that the plug-in needs to be initialized at startup.
  - 在UniPlugin-Hello-AS工程下 “app” Module根目录assets/dcloud_uniplugins.json文件，在hooksClass节点添加你创建实现UniAppHookProxy接口的实体类完整名称填入其中即可 (有些需要初始化操作的需求可以在此处添加逻辑，无特殊操作仅使用第一种方式注册即可无需集成UniAppHookProxy接口)
- - In the "app" Module root directory assets/dcloud_uniplugins.json file under the UniPlugin-Hello-AS project, add the full name of the entity class you created to implement the UniAppHookProxy interface in the hooksClass node and fill it in (some requirements that require initialization operations can be found in Add logic here, no special operations, just use the first method to register, no need to integrate the UniAppHookProxy interface)
- 
+
  ```JAVA
   public class RichAlert_AppProxy implements UniAppHookProxy {
   	@Override
@@ -581,7 +560,7 @@ Choose one of the above two methods
 		//可通过UniSDKEngine注册UniModule或者UniComponent
 		//Can register UniModule or UniComponent through UniSDKEngine
   	}
-	
+
 	@Override
 	public void onSubProcessCreate(Application application) {
 		//其他子进程初始化回调 可用于初始化需要子进程初始化需要的逻辑
@@ -593,19 +572,15 @@ Choose one of the above two methods
 #### dcloud_uniplugins.json说明
 #### dcloud_uniplugins.json Description
 
-- `nativePlugins`： 插件跟节点 可存放多个插件 
-- `nativePlugins`: Plugins and nodes can store multiple plugins
+- `nativePlugins`： 插件跟节点 可存放多个插件
 - `hooksClass`： 生命周期代理（实现AppHookProxy接口类）格式(完整包名加类名)
 - `hooksClass`: lifecycle proxy (implementing the AppHookProxy interface class) format (full package name plus class name)
 - `plugins`: 插件数组
 - `plugins`: array of plugins
 - `name` : 注册名称
-- `name` : name of the registry
-- `class` : module 或 component 实体类完整名称  
-- `class` : module or component entity class full name
+- `class` : module 或 component 实体类完整名称
 - `type` : module 或 component类型。
-- `type` : module or component type.
-	   
+
 ```JSON
 {
 	"nativePlugins": [
@@ -632,7 +607,7 @@ Get the plugin object by using uni.requireNativePlugin.
 ```
 const pluginImpl = uni.requireNativePlugin('插件 name')
 ```
-			
+
 ### 集成uni-app项目测试插件
 ### Integrate uni-app project test plugin
 
@@ -666,12 +641,10 @@ const pluginImpl = uni.requireNativePlugin('插件 name')
 <img src="https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/android_plugin_img_16.png" width=700>
 
 - 配置"app"Module下的 build.gradle. 在dependencies节点添加插件project引用 （以uniplugin_richalert为例）
-- Configure build.gradle under the "app"Module. Add a plugin project reference to the dependencies node (take uniplugin_richalert as an example)
-	
+
 ```
 // 添加uni-app插件
-// add uni-app plugin
-implementation project(':uniplugin_richalert')	
+implementation project(':uniplugin_richalert')
 ```
 - 运行测试。测试运行时一切要以真机运行为主。
 - Run tests. When the test is running, everything should be based on the real machine.
@@ -684,13 +657,9 @@ implementation project(':uniplugin_richalert')
 	- android文件
 	- android file
 		- .aar文件 :  包括插件aar、插件所依赖的aar。
-		- .aar file: including the plug-in aar and the aar that the plug-in depends on.
-		- libs文件夹 :  存放插件包依赖的第三方 .jar文件和.so文件 
-		- libs folder: store the third-party .jar files and .so files that the plug-in package depends on
+		- libs文件夹 :  存放插件包依赖的第三方 .jar文件和.so文件
 	- package.json 插件信息
-	- package.json plugin information
-		- [点击查看具体说明](/NativePlugin/course/package.md) 
-		- [Click to view detailed instructions](/NativePlugin/course/package.md)
+		- [点击查看具体说明](/NativePlugin/course/package.md)
 
 #### 准备相关文件
 #### Prepare related files
@@ -856,9 +825,7 @@ public void onActivityResume() {
 + 对有些插件需要引用到.so文件，需要特殊配置一下.请参考[Android studio添加第三方库和so](https://blog.csdn.net/anhenzhufeng/article/details/78913341)
 + Some plug-ins need to be referenced to .so files, which require special configuration. Please refer to [Android studio add third-party libraries and so](https://blog.csdn.net/anhenzhufeng/article/details/78913341)
 + 代码中用到的JSONObject、JSONArray 要使用com.alibaba.fastjson.JSONArray;com.alibaba.fastjson.JSONObject; 不要使用org.json.JSONObject;org.json.JSONArray 否则造成参数无法正常传递使用等问题。
-+ JSONObject and JSONArray used in the code should use com.alibaba.fastjson.JSONArray; com.alibaba.fastjson.JSONObject; do not use org.json.JSONObject; org.json.JSONArray, otherwise it will cause problems such as parameters cannot be passed normally.
-+ aar放到android目录下。jar放到libs目录下。也可使用compileOnly修饰，然后将相应的依赖库名称配置到package.json中的dependencies节点下。具体参考[package.json文档](NativePlugin/course/package?id=packagejson)
-+ put aar in the android directory. jar into the libs directory. It can also be modified with compileOnly, and then configure the corresponding dependent library name under the dependencies node in package.json. For details, refer to [package.json document](NativePlugin/course/package?id=packagejson)
++ aar放到android目录下。jar放到libs目录下。也可使用compileOnly修饰，然后将相应的依赖库名称配置到package.json中的dependencies节点下。具体参考[package.json文档](/NativePlugin/course/package?id=packagejson)
 + 第三方库依赖冲突。一种是主app已完整集成相关第三方库。可使用compileOnly修饰即可。如果主app仅集成了部分第三方库。可参考https://blog.csdn.net/wapchief/article/details/80514880
 + Third-party library dependency conflicts. One is that the main app has fully integrated related third-party libraries. It can be modified with compileOnly. If the main app only integrates some third-party libraries. Please refer to https://blog.csdn.net/wapchief/article/details/80514880
 + .os文件需要注意 armeabi-v7a必须存在，没有可能无法正常使用！其他cpu类型os库x86 、arm64-v8a、x86-64如有最好添加。
@@ -934,13 +901,11 @@ Q: After the plug-in jumps to the Activity page. There is data that needs to be 
 A:可以按以下步骤操作实现：
 A: It can be realized by following the steps below:
    * 在插件的UniModule/UniComponent实现onActivityResult方法。通过标识code和参数KEY去区分当前的Result是你需要的返回值
-   * Implement the onActivityResult method in the UniModule/UniComponent of the plug-in. By identifying the code and the parameter KEY to distinguish the current Result is the return value you need
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
-   public static int REQUEST_CODE = 1000; //数据返回标识code 
+   public static int REQUEST_CODE = 1000; //数据返回标识code
    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == REQUEST_CODE && data.hasExtra("respond")) {
@@ -951,11 +916,9 @@ A: It can be realized by following the steps below:
     }
    ```
    * 通过startActivityForResult加上返回标识code跳转其他Activity页面。
-   * Jump to other Activity pages through startActivityForResult plus return identification code.
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
    @UniJSMethod (uiThread = true)
     public void gotoNativePage(){
@@ -966,11 +929,9 @@ A: It can be realized by following the steps below:
     }
    ```
    * Activity页面在关闭前调用setResult设置标识code将要返回的参数放进Intent中。
-   * Before the Activity page is closed, call setResult to set the identification code and put the parameters to be returned into the Intent.
-   
+
    **示例**
-   **example**
-   
+
    ```JAVA
    Intent intent = new Intent();
    intent.putExtra("respond", "我是原生页面");
@@ -996,11 +957,9 @@ A:
  + 请尽量使用主APP集成的三方库去实现你的插件依赖集成。请告知使用该插件需要‘XXX’模块才可正常运行。版本号可[查看](https://ask.dcloud.net.cn/article/35419)
  + Please try to use the three-party library integrated with the main APP to realize your plug-in dependency integration. Please inform that using this plugin requires the 'XXX' module to function properly. The version number can be [view](https://ask.dcloud.net.cn/article/35419)
  + 如果集成的三方库无法使用主APP集成的三方库。请告知插件使用者不要集成‘XXX’模块。防止打包失败。
- + If the integrated third-party library cannot use the third-party library integrated with the main APP. Please inform plugin users not to integrate 'XXX' modules. Prevent packaging failures.
- 
+
 Q：HX3.0.0+版本云打包编译之前插件无法编译通过。HX2.9.8版本云打包是可以的。
-Q: The plug-in cannot be compiled before HX3.0.0+ version cloud packaging and compilation. HX2.9.8 version cloud packaging is possible.
- 
+
 A:
 
  + 请检查一下之前编译插件的配置`build.gradle`文件。检测是否使用`api files(xxx.aar)`引入某些依赖库aar文件。如果有这样的配置请改为使用compileOnly 修饰。否则无法在3.0.0+编译通过。主要原因就是资源冲突。 `api files(xxx.aar)`这种玩法是错误的。
@@ -1024,7 +983,7 @@ Q：插件生产文件路径需要注意哪些？
 Q: What should be paid attention to in the plug-in production file path?
 
 A:
- 
+
 + 插件生成的路径尽量添加`file://`防止路径被转换导致无法正确获取文件
 + Try to add `file://` to the path generated by the plug-in to prevent the path from being converted and the file cannot be obtained correctly
 + 尽量将文件放到`/storage/emulated/0/Android/data/$应用的包名$/apps/$uniapp的appid$/doc/`目录下

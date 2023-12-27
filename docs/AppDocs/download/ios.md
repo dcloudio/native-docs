@@ -18,9 +18,9 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ## iOS 离线SDK - 正式版
 
-### 2023年12月26日发布——HBuilderX（3.99.2023122611） 
+### 2023年12月26日发布——HBuilderX（3.99.2023122611）
 
-[和彩云，提取码: YNyK](https://caiyun.139.com/m/i?115CnSnXpCQAV) 
+[和彩云，提取码: YNyK](https://caiyun.139.com/m/i?115CnSnXpCQAV)
 
 [百度网盘，提取码: v64d](https://pan.baidu.com/s/1_IrW-JC_bgbCDx0XU8oS3Q?pwd=v64d)
 
@@ -34,9 +34,9 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 + 更新 uni-AD模块 Google AdMob SDK 为 10.13.0 版
 + 更新 一键登录使用的个验 SDK为 3.0.6.0 版，解决联通运营商一键认证服务主体变更导致新开通应用预登录可能失败的问题
 
-[历史版本，提取码: cpmi](https://pan.baidu.com/s/1Q6Axh0lNw-C3NVpqaYDIKg?pwd=cpmi) 
+[历史版本，提取码: cpmi](https://pan.baidu.com/s/1Q6Axh0lNw-C3NVpqaYDIKg?pwd=cpmi)
 
-[历次更新日志](AppDocs/download/update_history_iOS_release.md)
+[历次更新日志](update_history_iOS_release.md)
 
 
 ## iOS 离线SDK - Alpha版
@@ -56,7 +56,6 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 + 更新 统计模块 友盟基础库 SDK 为 7.4.2 版，友盟统计 SDK 为 9.6.1 版；Google 统计 SDK 为 10.18.0 版
 + 更新 uni-AD模块 Google AdMob SDK 为 10.13.0 版
 
-[历史版本，提取码: pjq1](https://pan.baidu.com/s/1yn23aHMhfokejSjCn334ag?pwd=pjq1) 
+[历史版本，提取码: pjq1](https://pan.baidu.com/s/1yn23aHMhfokejSjCn334ag?pwd=pjq1)
 
-[历次更新说明](AppDocs/download/update_history_iOS_alpha.md)
-[Previous update instructions](AppDocs/download/update_history_iOS_alpha.md)
+[历次更新说明](update_history_iOS_alpha.md)

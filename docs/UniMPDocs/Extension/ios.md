@@ -15,9 +15,7 @@ The native end of uni is based on WeexSDK to realize the expansion of native cap
 ## 开发环境
 ## Development environment
 - iOS开发环境，请使用 Xcode 11.0 及以上版本；
-- iOS development environment, please use Xcode 11.0 and above;
-- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](UniMPDocs/UseSdk/ios.md)
-- There is an integrated iOS uni applet SDK native project; [Integration Documentation](UniMPDocs/UseSdk/ios.md)
+- 已有集成 iOS uni小程序SDK 原生工程；[集成文档](/UniMPDocs/UseSdk/ios.md)
 - 安装 uni小程序开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) （注：版本需与您使用的 uni小程序SDK 版本保持一致）
 - Install the uni applet development tool [HBuilderX](https://www.dcloud.io/hbuilderx.html) (Note: The version must be consistent with the uni applet SDK version you use)
 
@@ -58,10 +56,9 @@ Let's take `TestModule` as an example, please refer to the sample demo project i
     // options 为 js 端调用此方法时传递的参数
     // options is the parameter passed when calling this method on the js side
     NSLog(@"%@",options);
-    
+
     // 可以在该方法中实现原生能力，然后通过 callback 回调到 js
-    // You can implement native capabilities in this method, and then call back to js through callback
-    
+
     // 回调方法，传递参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
     // callback method, passing parameters to the js side Note: only supports returning String or NSDictionary (map) types
     if (callback) {
@@ -93,11 +90,11 @@ WX_EXPORT_METHOD(@selector(testAsyncFunc:callback:))
     // options 为 js 端调用此方法时传递的参数
     // options is the parameter passed when calling this method on the js side
     NSLog(@"%@",options);
-    
+
     /*
      可以在该方法中实现原生功能，然后直接通过 return 返回参数给 js
      */
-    
+
     // 同步返回参数给 js 端 注：只支持返回 String 或 NSDictionary (map) 类型
     // Synchronously return parameters to the js side Note: only supports returning String or NSDictionary (map) types
     return @"success";
@@ -125,14 +122,14 @@ After initializing the DCUniMPSDKEngine method, register the module
     // 初始化引擎
     // Initialize the engine
     [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];
-    
+
     // 注册 module 注：module的 Name 需要保证唯一， class：为 module 的类名
     // Register module Note: The Name of the module needs to be unique, class: the class name of the module
     [WXSDKEngine registerModule:@"TestModule" withClass:NSClassFromString(@"TestModule")];
-    
+
     return YES;
 }
-``` 
+```
 
 
 到此，我们已经完成了一个简单的 module 扩展
@@ -153,8 +150,7 @@ module supports use in vue and nvue
 </template>
 
 <script>
-	// 获取 module 
-	// get module
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		methods: {
@@ -182,12 +178,10 @@ module supports use in vue and nvue
 </script>
 
 ```
-然后可以导出 uni小程序资源，导入到 App 中查看效果； 
-Then you can export the uni applet resource and import it into the App to view the effect;
+然后可以导出 uni小程序资源，导入到 App 中查看效果；
 
 
-## 扩展组件 component 
-## Extension component component
+## 扩展组件 component
 
 下面以`TestComponent`为例，源码请查看 uni小程序SDK 包中的示例 demo 工程；
 Let's take `TestComponent` as an example, please refer to the sample demo project in the uni applet SDK package for the source code;
@@ -203,7 +197,7 @@ Let's take `TestComponent` as an example, please refer to the sample demo projec
 @end
 
 ```
- 
+
 #### 2. 覆写 `WXComponent` 中的生命周期方法
 #### 2. Override the lifecycle methods in `WXComponent`
 
@@ -241,11 +235,11 @@ After initializing the DCUniMPSDKEngine method, register the component
     // 初始化引擎
     // Initialize the engine
     [DCUniMPSDKEngine initSDKEnvironmentWihtLaunchOptions:options];
-    
+
     // 注册 component 注：component 的 Name 需要保证唯一， class：为 component 的类名
     // Register component Note: The Name of the component needs to be unique, class: the class name of the component
     [WXSDKEngine registerComponent:@"testmap" withClass:NSClassFromString(@"TestMapComponent")];
-    
+
     return YES;
 }
 ```
@@ -263,8 +257,7 @@ Note: extended components can only be used in `nvue` files
 </template>
 ```
 
-#### 自定义事件  
-#### Custom Events
+#### 自定义事件
 
 ##### 1. 对于每个组件默认提供了一些事件能力，如点击等。假如想给我们的地图组件提供 `mapLoaded` 事件。
 ##### 1. For each component, some event capabilities are provided by default, such as click and so on. Let's say we want to provide a `mapLoaded` event to our map component.
@@ -351,9 +344,7 @@ Add a new property `showTraffic` to our map component. In the front-end code, yo
 ##### Native implementation
 
 **1. 覆盖组件初始化方法 `initWithRef...`
-**1. Override component initialization method `initWithRef...`
-给组件添加一个成员变量记录 `showTraffic` 属性的值，并在 init 方法中初始化。**   
-Add a member variable to the component to record the value of the `showTraffic` property and initialize it in the init method. **
+给组件添加一个成员变量记录 `showTraffic` 属性的值，并在 init 方法中初始化。**
 
 ```Objective-C
 - (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance {
@@ -483,8 +474,7 @@ So far, you have completed component extension;
 </template>
 
 <script>
-	// 获取 module 
-	// get module
+	// 获取 module
 	var testModule = uni.requireNativePlugin("TestModule")
 	export default {
 		onLoad() {

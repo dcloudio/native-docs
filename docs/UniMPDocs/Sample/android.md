@@ -1,8 +1,7 @@
 # unimp小程序V1版 (不支持同时运行多个小程序)
 # unimp applet V1 version (does not support running multiple applets at the same time)
 
-[SDK下载](UniMPDocs/SDKDownload/android)
-[SDK Download](UniMPDocs/SDKDownload/android)
+[SDK下载](/UniMPDocs/SDKDownload/android)
 
 ## 启动小程序
 ## Start the applet
@@ -35,8 +34,7 @@ DCUniMPSDK.getInstance().startApp(context, appid, splashClass, redirectPath, arg
 
 **Tips**
 
-Android startApp详细说明可参考[uni小程序SDK API参考手册](UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
-For details about Android startApp, please refer to [uni Mini Program SDK API Reference Manual](UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
+Android startApp详细说明可参考[uni小程序SDK API参考手册](/UniMPDocs/API/android?id=dcunimpsdkgetinstancestartapp)
 
 ### 启动小程序并传参
 ### Start the applet and pass parameters
@@ -72,8 +70,7 @@ var arguments = plus.runtime.arguments;
 宿主启动小程序时可通过传入页面路径来打开指定页面
 When the host starts the applet, the specified page can be opened by passing in the page path
 
-**页面路径格式要求** 
-**Page path format requirements**
+**页面路径格式要求**
 
 路径从 pages/ 开始填写绝对路径并支持参数 示例：
 The path starts from pages/ and fills in the absolute path and supports parameters. Example:
@@ -100,8 +97,7 @@ Go directly to the secondary page If you want to block the back button and the b
 
 **Tips**
 
-`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"} 
-The parameter `e` of `onLoad(e){}` method is the parameter passed in when going directly to the page, such as `pages/component/view/view?action=redirect`, and the framework will automatically convert the parameter into jsonObject type {"action ":"redirect"}
+`onLoad(e){}` 方法的参数`e`即为直达页面时传入的参数比如`pages/component/view/view?action=redirect`，框架会自动将参数转换成 jsonObject 类型 {"action":"redirect"}
 
 ```
 // 启动直达二级页面屏蔽返回手势及返回按钮
@@ -116,7 +112,7 @@ The parameter `e` of `onLoad(e){}` method is the parameter passed in when going 
 				const currentWebview = this.$scope.$getAppWebview();
 				currentWebview.setStyle({
 					popGesture: 'none', // 取消手势返回
-					titleNView: { 
+					titleNView: {
 						autoBackButton: false // 取消默认返回按钮
 					}
 				})
@@ -125,7 +121,7 @@ The parameter `e` of `onLoad(e){}` method is the parameter passed in when going 
 		}
 	}
 </script>
-``` 
+```
 
 
 ## 关闭小程序
@@ -178,8 +174,7 @@ DCUniMPSDK.getInstance().setUniMPOnCloseCallBack(new DCUniMPSDK.IUniMPOnCloseCal
 > 2.6.10 版本开始支持此功能
 > This feature has been supported since version 2.6.10
 
-宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](UniMPDocs/Extension/android)实现!
-Host-applet communication is suitable for simple data interaction. If you want the applet to call the API method provided by the host, please use [Android native extension](UniMPDocs/Extension/android) to achieve complex extension capabilities!
+宿主与小程序通讯适用于简单的数据交互。如果希望小程序调用宿主提供的API方法,实现复杂扩展能力请使用[Android原生扩展](/UniMPDocs/Extension/android)实现!
 
 ### 宿主 App 向小程序发送事件
 ### The host app sends events to the applet
@@ -357,8 +352,7 @@ Click the `···` button on the left side of the capsule button to pop up the `
 宿主添加的菜单按钮在每个页面都会显示
 The menu button added by the host will be displayed on every page
 
-DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置. 
-DCSDKInitConfig sets [setMenuActionSheetItems](/UniMPDocs/API/android?id=%E7%B1%BBmenuactionsheetitem) to implement global menu button settings.
+DCSDKInitConfig设置[setMenuActionSheetItems](/UniMPDocs/API/android?id=类menuactionsheetitem)实现全局菜单按钮设置.
 
 ```JAVA
 MenuActionSheetItem item = new MenuActionSheetItem("关于", "gy");
@@ -396,7 +390,7 @@ In the applet, you can add a menu button for a page separately, open `pages.json
 
 ```
 {
-	"pages": [ 
+	"pages": [
 		{
 			"path": "pages/tabBar/component/component",
 			"style": {
@@ -405,7 +399,7 @@ In the applet, you can add a menu button for a page separately, open `pages.json
 					"bounce": "vertical",
 					"titleNView": {
 						"buttons": [{
-							"text": "\ue534",  
+							"text": "\ue534",
 							"title":"关于", 	  //注意：title 为 uni小程序中显示的按钮标题，如果没有设置则显示 text 字段
 							"fontSrc": "/static/uni.ttf",
 							"fontSize": "22px",

@@ -1,9 +1,7 @@
 ## 开发环境
-## Development environment
-	
+
 - iOS开发环境，请使用 Xcode 14 及以上版本；
-- [下载 uni小程序SDK](UniMPDocs/SDKDownload/ios)；
-- [Download uni applet SDK](UniMPDocs/SDKDownload/ios);
+- [下载 uni小程序SDK](/UniMPDocs/SDKDownload/ios)；
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
 - Install the development tool [HBuilderX](https://www.dcloud.io/hbuilderx.html) Please keep the same version as the SDK
 
@@ -91,8 +89,7 @@ First select your uni-app project in HBuilderX, if not, please create a new uni-
 
 <img src="https://ask.dcloud.net.cn/uploads/article/20200208/b57287eaf2e63b0076bf36b943fc486a.png" width="50%">
 
-然后选中您的项目，右键->发行->原生App-制作应用wgt包 
-Then select your project, right-click->release->native App-make application wgt package
+然后选中您的项目，右键->发行->原生App-制作应用wgt包
 （注：HBuilderX 2.6.2 以下版本选项是 “原生App-制作移动App资源升级包”）
 (Note: Versions below HBuilderX 2.6.2 have the option "Native App-Make Mobile App Resource Upgrade Package")
 
@@ -142,7 +139,7 @@ Reference the header file `#import "DCUniMP.h"` in `AppDelegate.m`
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+
     // 配置参数
     // configuration parameters
     NSMutableDictionary *options = [NSMutableDictionary dictionaryWithDictionary:launchOptions];
@@ -152,7 +149,7 @@ Reference the header file `#import "DCUniMP.h"` in `AppDelegate.m`
     // 初始化引擎
     // Initialize the engine
     [DCUniMPSDKEngine initSDKEnvironmentWithLaunchOptions:options];
-    
+
     return YES;
 }
 ```
@@ -318,8 +315,7 @@ The generated uni applet wgt resource package can be **deployed to a remote serv
 #### uni applet application resource upgrade
 
 1. **宿主触发更新：**宿主更新 wgt 可以选择从云端下载新的 wgt 资源包或在 App 升级时内置新的 wgt 包，然后调用 DCUniMPSDKEngine 类的`installUniMPResourceWithAppid:resourceFilePath:password:error:`方法传入 wgt 资源路径即可将wgt资源部署到运行路径，覆盖原有应用资源。 **注意：宿主应对 wgt 资源包做好版本管理**
-1. **Host-triggered update: **Host update wgt can choose to download a new wgt resource package from the cloud or build a new wgt package when the App is upgraded, and then call the `installUniMPResourceWithAppid:resourceFilePath:password:error:` method of the DCUniMPSDKEngine class Pass in the wgt resource path to deploy the wgt resource to the running path, covering the original application resource. **Note: The host should do a good job of version management for the wgt resource package**
- 
+
 2. **小程序触发更新：**小程序内下载新的wgt包，然后调用更新api应用新的wgt资源，具体请参考 [wgt 资源在线升级/热更新](https://ask.dcloud.net.cn/article/35667)
 2. **The applet triggers the update: **Download the new wgt package in the applet, and then call the update api to apply the new wgt resource. For details, please refer to [wgt resource online upgrade/hot update](https://ask.dcloud .net.cn/article/35667)
 

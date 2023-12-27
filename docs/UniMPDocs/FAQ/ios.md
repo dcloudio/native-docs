@@ -10,8 +10,7 @@ A: ⚠️ 使用 Xcode15 运行在 iOS14 及以下低版本的设备时，打开
 A：请参考解决方法 [点击查看详情](https://ask.dcloud.net.cn/article/35963)
 A: Please refer to the solution [Click to view details](https://ask.dcloud.net.cn/article/35963)
 
-## Q：提示 打包时未添加  xxx 模块 ... 
-## Q: Prompt that the xxx module was not added when packaging...
+## Q：提示 打包时未添加  xxx 模块 ...
 
 ![](https://ask.dcloud.net.cn/uploads/article/20200320/71334000758150ffe0b3440e4f29e3e0.png)
 
@@ -27,9 +26,7 @@ A: If the three-party library that your native project depends on conflicts with
 - 源码开源的三方库比如 SDWebImage、ZXing等，建议您使用SDK内置的三方库，移除您之前依赖的三方库，这些库的 .h 头文件存放在 UNMPSDK/Features/inc 路径中的，将对应库的头文件引入到您的工程中使用即可，如果您使用内置的三方库导致原生功能异常，请反馈给我们；
 - Open source third-party libraries such as SDWebImage, ZXing, etc. It is recommended that you use the third-party libraries built into the SDK and remove the third-party libraries you previously relied on. The .h header files of these libraries are stored in the UNMPSDK/Features/inc path, and will correspond to Just import the header file of the library into your project and use it. If you use the built-in third-party library and the native function is abnormal, please give us feedback;
 - 源码不开源的三方库比如 高德地图、微信、支付宝等，这类库官方依赖的版本如下表，如果您依赖的版本与SDk依赖的版本一致，你在使用SDK的功能模块时就不需要添加对应的三方库，如果版本不一致，请以高版本为准，如果SDK内使用的版本过低请您反馈给我我们，我们会做升级处理；
-- Three-party libraries whose source code is not open source, such as AutoNavi Maps, WeChat, Alipay, etc. The official versions of such libraries are as follows. If the version you depend on is consistent with the version that SDK depends on, you do not need it when using the functional modules of the SDK Add the corresponding three-party library. If the version is inconsistent, please refer to the higher version. If the version used in the SDK is too low, please give us feedback and we will upgrade it;
-- 还有一种解决方法，就是您不使用官方扩展的功能模块，然后按照[文档](UniMPDocs/Extension/ios.md)自行扩展这部分功能；
-- There is another solution, that is, you do not use the official extended function modules, and then follow the [documentation](UniMPDocs/Extension/ios.md) to expand this part of the function by yourself;
+- 还有一种解决方法，就是您不使用官方扩展的功能模块，然后按照[文档](/UniMPDocs/Extension/ios.md)自行扩展这部分功能；
 
 [依赖的三方库版本说明](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/dependentLibrary)
 [Dependent third-party library version description](https://nativesupport.dcloud.net.cn/AppDocs/usemodule/iOSModuleConfig/dependentLibrary)
@@ -162,8 +159,7 @@ A: When opening the applet in push mode, because the applet page hides the navig
 }
 ```
 
-## Q：wgt资源释放失败 
-## Q: wgt resource release failed
+## Q：wgt资源释放失败
 
 A：调用`releaseAppResourceToRunPathWithAppid:` 释放wgt资源是通过调用 SSZipArchive 库（编译在 libcoreSupport.a 库中）的方法将 wgt 资源解压到运行路径中，如果您的项目按照文档集成 UniMPSDK 基础库后 wgt 资源释放失败可以尝试将 libcoreSupport.a 库移除，然后将 `SSZipArchive` 库添加到工程
 A: Call `releaseAppResourceToRunPathWithAppid:` to release the wgt resource by calling the SSZipArchive library (compiled in the libcoreSupport.a library) to decompress the wgt resource into the running path. If your project fails to release the wgt resource after integrating the UniMPSDK basic library according to the document You can try to remove the libcoreSupport.a library, and then add the `SSZipArchive` library to the project
