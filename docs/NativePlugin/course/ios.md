@@ -933,7 +933,7 @@ After the plug-in package is developed, it can be directly used in the uni-app p
 ### Submit plugins to the marketplace
 
 按照上面的方式放到 HBuilderX 的 uni-app 项目中提交打包测试完插件后，可以将插件包压缩成 zip 格式，然后提交到插件市场共享给其他开发者使用，登录注册[DCloud插件市场](https://ext.dcloud.net.cn/)，然后按照提示步骤提交插件，（需要编写对应插件的使用说明文档，.md（markdown）格式）；
-Put it into the uni-app project of HBuilderX according to the above method, submit the package and test the plug-in, you can compress the plug-in package into a zip format, and then submit it to the plug-in market to share with other developers, log in and register [DCloud plug-in market](https ://ext.dcloud.net.cn/), and then follow the prompts to submit the plug-in, (need to write the corresponding plug-in instruction document, .md (markdown) format);
+Put it into the uni-app project of HBuilderX according to the above method, submit the package and test the plug-in, you can compress the plug-in package into a zip format, and then submit it to the plug-in market to share with other developers, log in and register [DCloud plug-in market](https://ext.dcloud.net.cn/), and then follow the prompts to submit the plug-in, (need to write the corresponding plug-in instruction document, .md (markdown) format);
 
 
 ## 常见问题
