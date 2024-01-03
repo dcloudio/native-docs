@@ -89,7 +89,7 @@
 |liblibPayment.a、libIAPPay.a| StoreKit.framework| 无 |
 
 ## paypal支付
-注:SDK3.3.7+、iOS11.0+
+注:SDK3.3.7+、iOS13.0+
 
 ### 添加依赖库及资源
 
@@ -109,7 +109,7 @@
 
 |依赖库|系统库|资源文件|
 |:--|:--|:--|
-|liblibPayment.a、libstripepay.a、Stripe.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework|无|无|
+|liblibPayment.a、libstripepay.a、StripeApplePay.xcframework、StripeCore.xcframework、StripeUICore.xcframework、Stripe3DS2.xcframework、StripePayments.xcframework、StripePaymentsUI.xcframework、StripePaymentSheet.xcframework|无|无|
 
 ### 工程配置
 1. 在URL Types 中添加当前应用的自定义URL Schemes，参考如下
