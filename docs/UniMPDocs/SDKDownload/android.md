@@ -10,28 +10,22 @@
 + 支持同时运行多个小程序。也是后续主要维护的版本。V1版本将不再维护更新！需要注意。
 + SDK部分类名及API对比V1版本均有调整需参考API文档及示例进行修改! [小程序V2版本功能示例](/UniMPDocs/Sample/android-v2)、[小程序V2版本API文档](/UniMPDocs/API/android-v2);
 
-### UniMPSDK V1版本
-### UniMPSDK V1 version
-
-+ 老版本uni小程序SDK。不支持同时运行多个小程序。3.2.3之后不会再维护更新。
-+ Old version uni applet SDK. Running multiple applets at the same time is not supported. There will be no maintenance updates after 3.2.3.
-
 ## SDK下载
 ## SDK download
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 **⚠️Note: If the click fails to download, you can right-click the link -> select "Save link as.." to download. **
 
-### 2023年11月28日发布
+### 2024年01月03日发布
 
 
-#### SDK 3.98 版本
+#### SDK 3.99 版本
 
-[点击下载UniMPSDK_Android@3.98-20231128.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.98-20231128.zip)
+[点击下载SDK-Android@3.99-20240103.zip](https://native-res.dcloud.net.cn/unimp-sdk/SDK-Android%403.99-20240103.zip)
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.98.2023112510.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.99.2023122611.html)
 
 ## 升级SDK注意事项
 ## Notes on upgrading the SDK
