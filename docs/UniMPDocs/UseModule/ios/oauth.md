@@ -230,7 +230,7 @@ For certificate configuration and usage instructions, please refer to [Document]
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibOauth.a、libGoogleOauth.a、GoogleSignIn.xcframework、AppAuth.xcframework、GTMAppAuth.xcframework、GTMSessionFetcher.xcframework|AuthenticationServices.framework、CoreText.framework、CoreGraphics.framework、LocalAuthentication.framework、SafariServices.framework、Security.framework|GoogleSignIn.bundle|
+|liblibOauth.a、libGoogleOauth.a、GoogleSignIn.xcframework、AppAuth.xcframework、GTMAppAuth.xcframework、GTMSessionFetcher.xcframework|CoreText.framework、CoreGraphics.framework、LocalAuthentication.framework、SafariServices.framework、Security.framework|GoogleSignIn.bundle|
 
 ### 工程配置
 ### Project configuration

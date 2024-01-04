@@ -19,8 +19,7 @@
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|liblibStatistic.a、libUmengStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
-| liblibStatistic.a、libUmengStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework| libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|none|
+|liblibStatistic.a、libUmengStatistic.a、UMDevice.xcframework、UMCommon.xcframework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
 
 **3.3.7 之后 还需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
