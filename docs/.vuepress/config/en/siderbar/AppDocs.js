@@ -23,6 +23,12 @@ export default {
       "state": 0,
       "prefix": "群4",
       joinQQGroupHref: 'https://qm.qq.com/cgi-bin/qm/qr?k=V1NOZh7HCJiPxF_kTjfN9zAGDcKtK74X&jump_from=webapi&authKey=YITNfNnLrVMtt/sfpzDWewYIa1QdkE3LEmh5SaKTE55fYF5wm4ZtdxU8nMtUqR5O'
+    },
+    {
+      "number": "838821538",
+      "state": 0,
+      "prefix": "群5",
+      joinQQGroupHref: 'https://qm.qq.com/cgi-bin/qm/qr?k=u4QqFXRtSkT4GY5yvWt8BJSCoZlol74a&jump_from=webapi&authKey=atlY3ExOao7dODA8XLpQzAgu9+pf1ubLP+KqPI4nJY61SQkmBZXCIWcYkaxkLCpK'
     }
   ]
 }
