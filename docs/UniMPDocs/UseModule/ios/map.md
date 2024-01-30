@@ -30,7 +30,8 @@ Note: userPosition@2x.png is an icon showing user position with directions, whic
 
 |依赖库|系统库|依赖资源|
 |:--|:--|:--|
-|BaiduMapAPI_Utils.framework 、 BaiduMapAPI_Base.framework、 BaiduMapAPI_Search.framework、 BaiduMapAPI_Map.framework、BMKLocationKit.framework、liblibMap.a、libbmapimp.a、libBaiduKeyVerify.a|libc++.tbd、libsqlite3.0.tbd、libz.tbd、QuartzCore.framework 、CoreGraphics.framework 、CoreTelephony.framework、Accelerate.framework、SystemConfiguration.framework 、Security.framework、MapKit.framework 、OpenGLES.framework、CoreLocation.framework|mapapi.bundle|
+|BaiduMapAPI_Utils.framework 、 BaiduMapAPI_Base.framework、 BaiduMapAPI_Search.framework、 BaiduMapAPI_Map.framework、BMKLocationKit.framework、liblibMap.a、libbmapimp.a、libBaiduKeyVerify.a、libssl.a、
+libcrypto.a|libc++.tbd、libsqlite3.0.tbd、libz.tbd、QuartzCore.framework 、CoreGraphics.framework 、CoreTelephony.framework、Accelerate.framework、SystemConfiguration.framework 、Security.framework、MapKit.framework 、OpenGLES.framework、CoreLocation.framework|mapapi.bundle|
 
 ### 账号配置
 1、申请Appkey,如果没有appkey将会导致地图显示不出

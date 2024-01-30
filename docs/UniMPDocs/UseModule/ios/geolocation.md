@@ -11,8 +11,8 @@ The geolocation module can be used normally without adding Baidu or Gaode's depe
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|libBaiduLocationPlugin.a、libBaiduKeyVerify.a、liblibGeolocation.a、BaiduMapAPI_Utils.framework、BaiduMapAPI_Base.framework、BaiduMapAPI_Search.framework、BMKLocationKit.framework|libc++.tbd、libsqlite3.0.tbd、SystemConfiguration.framework、Security.framework、CoreLocation.framework|无|
-| libBaiduLocationPlugin.a、libBaiduKeyVerify.a、liblibGeolocation.a、BaiduMapAPI_Utils.framework、BaiduMapAPI_Base.framework、BaiduMapAPI_Search.framework、BMKLocationKit.framework| libc++.tbd、libsqlite3.0.tbd、SystemConfiguration.framework、Security.framework、CoreLocation.framework|none|
+|libBaiduLocationPlugin.a、libBaiduKeyVerify.a、liblibGeolocation.a、BaiduMapAPI_Utils.framework、BaiduMapAPI_Base.framework、BaiduMapAPI_Search.framework、BMKLocationKit.framework、libssl.a、
+libcrypto.a|libc++.tbd、libsqlite3.0.tbd、SystemConfiguration.framework、Security.framework、CoreLocation.framework|无|
 
 ### 帐号配置
 ### Account Configuration

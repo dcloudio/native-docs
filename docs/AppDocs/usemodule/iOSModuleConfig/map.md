@@ -6,7 +6,7 @@
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|BaiduMapAPI_Utils.framework 、 BaiduMapAPI_Base.framework、 BaiduMapAPI_Search.framework、 BaiduMapAPI_Map.framework、BMKLocationKit.framework、liblibMap.a、libbmapimp.a、libBaiduKeyVerify.a|libc++.tbd、libsqlite3.0.tbd、libz.tbd、QuartzCore.framework 、CoreGraphics.framework 、CoreTelephony.framework、Accelerate.framework、SystemConfiguration.framework 、Security.framework、MapKit.framework 、OpenGLES.framework、CoreLocation.framework|mapapi.bundle|
+|BaiduMapAPI_Utils.framework 、 BaiduMapAPI_Base.framework、 BaiduMapAPI_Search.framework、 BaiduMapAPI_Map.framework、BMKLocationKit.framework、liblibMap.a、libbmapimp.a、libBaiduKeyVerify.a、libssl.a、libcrypto.a|libc++.tbd、libsqlite3.0.tbd、libz.tbd、QuartzCore.framework 、CoreGraphics.framework 、CoreTelephony.framework、Accelerate.framework、SystemConfiguration.framework 、Security.framework、MapKit.framework 、OpenGLES.framework、CoreLocation.framework|mapapi.bundle|
 
 ### 账号配置
 ### Account configuration
