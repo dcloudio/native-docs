@@ -20,9 +20,9 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ### 2023年12月26日发布——HBuilderX（3.99.2023122611）
 
-[和彩云，提取码: YNyK](https://caiyun.139.com/m/i?115CnSnXpCQAV)
+[和彩云，提取码: XoOF](https://caiyun.139.com/m/i?115CeVfzPc45F)
 
-[百度网盘，提取码: v64d](https://pan.baidu.com/s/1_IrW-JC_bgbCDx0XU8oS3Q?pwd=v64d)
+[百度网盘，提取码: mjff](https://pan.baidu.com/s/1qoQzakThPOcRI_PtK58S6w?pwd=mjff)
 
 + 修复 iPhone 15 设备无法获取手机型号的Bug[详情](https://ask.dcloud.net.cn/question/182298)
 + 修复 iOS17系统视频播放控件 video 竖屏状态下进入全屏后退出全屏无法正常显示的Bug
