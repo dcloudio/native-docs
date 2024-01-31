@@ -43,15 +43,19 @@ function parseBar(tab, file, options) {
           if (!link.startsWith('/')) {
             const linkFirstItem = link.split('/')[0]
             if (tab.indexOf(linkFirstItem) === -1) {
-              link = `${tab}${link}`
+              link = path.join(tab, link).replace(/\\/g, '/')
             }
           }
 
-          link = path.join('/', link.replace(/\.md\b/, '')
-            .replace(/\bREADME\b/, '')
-            .replace(/\/index/, '/')
-            .replace(/\?id=/, '#'))
-            .replace(/\\/g, '/')
+          link = path.join(
+						'/',
+						link
+							.replace(/(\bREADME\.md\b)|(\bREADME(?!\.))/i, 'index.html') // README.md | README | readme.md | readme -> index.html
+							.replace(/(\bindex\.md\b)|(index(?!\.))/, 'index.html') // /index -> /index.html
+							.replace(/\.md\b/, '.html') // *.md -> *.html
+							.replace(/\?id=/, '#') // ?id= -> #
+							.replace(/\\/g, '/') // \ -> /
+					)
 
           links.push(link)
         }

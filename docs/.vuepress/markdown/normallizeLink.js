@@ -16,17 +16,17 @@ function normalizeLink(url) {
 }
 
 module.exports = function (md) {
-  md.normalizeLink = (function (oldNormalizeLink) {
-    return function (url) {
-      url = isExternal(url)
-        ? url
-        : normalizeLink(url)
-          .replace(/\.md\b/, '.html')
-          .replace(/\bREADME\b/, 'index.html')
-          .replace(/\/index(?!\.)/, 'index.html')
-          .replace(/\?id=/, '#')
-          .replace(/\\/g, '/')
-      return oldNormalizeLink.bind(this)(url)
-    }
-  })(md.normalizeLink)
+	md.normalizeLink = (function (oldNormalizeLink) {
+		return function (url) {
+			url = isExternal(url)
+				? url
+				: normalizeLink(url)
+						.replace(/(\bREADME\.md\b)|(\bREADME(?!\.))/i, 'index.html') // README.md | README | readme.md | readme -> index.html
+						.replace(/(\bindex\.md\b)|(index(?!\.))/, 'index.html') // /index -> /index.html
+						.replace(/\.md\b/, '.html') // *.md -> *.html
+						.replace(/\?id=/, '#') // ?id= -> #
+						.replace(/\\/g, '/') // \ -> /
+			return oldNormalizeLink.bind(this)(url)
+		}
+	})(md.normalizeLink)
 }
