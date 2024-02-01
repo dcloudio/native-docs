@@ -2,19 +2,106 @@
 
 - iOS开发环境，请使用 Xcode 14 及以上版本；
 - [下载 uni小程序SDK](/UniMPDocs/SDKDownload/ios)；
+- [Cocoapods集成示例](https://gitcode.net/dcloud/unimpsdk-ios)；
 - 安装开发工具 [HBuilderX](https://www.dcloud.io/hbuilderx.html) 请与SDK的版本保持一致
 - Install the development tool [HBuilderX](https://www.dcloud.io/hbuilderx.html) Please keep the same version as the SDK
 
 ## 集成方式
-## Integration method
+UniMPSDK 3.99+ 新增支持Cocoapods集成
+### 1.Pod集成
+#### 安装pod环境
+
+参考[官方安装指南](https://guides.cocoapods.org/using/getting-started.html#getting-started)或[CocoaPods安装教程](https://www.jianshu.com/p/a7faeda8bcbb)。
+
+#### 创建Podfile文件
+在Xcode项目的根目录下，新建一个Podfile文件，在Podfile文件中添加对小程序SDK的依赖，Podfile完整示例如下:
+
+<details> <summary>Podfile文件示例</summary>
+
+``` shell
+
+use_frameworks!   ## Swift项目需要添加
+
+target 'HelloUniMPDemo' do
+
+  pod 'unimp', :subspecs => [
+        'Core',               ##核心库(必需)
+#        'Accelerometer',      ##加速度传感器
+#        'Contacts',           ##通讯录
+#        'Audio',              ##音频
+#        'Camera&Gallery',     ##相机&相册
+#        'File',               ##文件
+#        'Video',              ##视频播放
+#        'LivePusher',         ##直播推流
+#        'NativeJS',           ##JS Reflection call Native
+#        'Orientation',        ##设备方向
+#        'Message',            ##邮件消息
+#        'Zip',                ##压缩
+#        'Proximity',          ##距离传感器
+#        'Sqlite',             ##数据库
+#        'Barcode',            ##扫码
+#        'XMLHttpRequest',     ##网络请求
+#        'Fingerprint',        ##指纹识别
+#        'FaceId',             ##人脸识别
+#        'Log',                ##打印Console.log日志，发布时可移除
+#        'IBeacon',            ##低功耗蓝牙
+#        'BlueTooth',          ##蓝牙
+#        'Speech-Baidu',       ##语音识别-百度
+#        'Statistic-Umeng',    ##友盟统计
+#        ##定位模块(百度高德不能同时引用)
+#        'Geolocation',        ##系统定位
+#        'Geolocation-Gaode',  ##高德定位
+#        'Geolocation-Baidu',  ##百度定位
+#        ##地图(二选一)
+#        'Map-Gaode',          ##高德地图
+#        'Map-Baidu',          ##百度地图
+#        ##支付
+#        'Payment-IAP',        ##苹果内购
+#        'Payment-AliPay',     ##支付宝支付
+#        'Payment-Wechat',     ##微信支付-同时使用微信分享或登录,必需使用包含支付的依赖库
+#        'Payment-Paypal',     ##Paypal支付 iOS13+
+#        'Payment-Stripe',     ##stripe支付 iOS13+
+#        ##分享
+#        'Share-Wechat',       ##微信分享-包含支付
+#        'Share-Wechat-Nopay', ##微信分享-不包含支付
+#        'Share-QQ',           ##QQ分享
+#        'Share-Sina',         ##新浪微博分享
+#        ##登录
+#        'Oauth-Apple',        ##苹果登录
+#        'Oauth-QQ',           ##QQ登录
+#        'Oauth-Wechat',       ##微信登录-包含支付
+#        'Oauth-Wechat-Nopay', ##微信登录-不包含支付
+#        'Oauth-Sina',         ##新浪微博登录
+#        'Oauth-Google',       ##Google登录
+#        'Oauth-Facebook',     ##Facebook登录 iOS12+
+  ]
+
+#  pod 'FBSDKLoginKit','16.2.1' ##使用Oauth-Facebook 时需添加该库
+#  pod 'Stripe','23.18.2'       ##使用Payment-Stripe 时需添加该库
+#  pod 'PayPalCheckout','1.2.0' ##使用Payment-Paypal 时需添加该库
+
+end
+```
+
+</details>
+
+
+
+#### 加载依赖
+
+执行` pod update `或者` pod install `即可。 
+
+#### 其他
+更多cocoapods问题详见[Cocoapods注意事项](/UniMPDocs/FAQ/cocoapods)；
+
+### 2.手动集成
 > 下载的SDK中包含对应的示例工程，供大家参考
 > The downloaded SDK contains corresponding sample projects for your reference
 
 首先您需要一个 iOS 项目，已有项目或 新建一个 `iOS App` 项目，解压 SDK 包，将目录中的 UniMPSDK 文件夹 copy 到工程目录中， 然后按照以下步骤配置您的项目。
 First you need an iOS project, an existing project or create a new `iOS App` project, unzip the SDK package, copy the UniMPSDK folder in the directory to the project directory, and then follow the steps below to configure your project.
 
-### 添加基础依赖库及资源文件
-### Add basic dependencies and resource files
+#### 添加基础依赖库及资源文件
 
 基础依赖库及资源是必须要引入到工程中的，基础依赖库及资源存放在 `UniMPSDK/Core` 目录中
 Basic dependent libraries and resources must be introduced into the project, and basic dependent libraries and resources are stored in the `UniMPSDK/Core` directory
@@ -29,8 +116,7 @@ UniMPSDK/Core directory structure description
 	|-- Resources		// 资源文件
 ```
 
-#### 添加基础依赖库
-#### Add base dependency library
+##### 添加基础依赖库
 
 在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Phases-> Link Binary With Libaries` 中点击“+”按钮，在弹出的窗口中点击 `Add Other -> Add Files...`，然后打开 UniMPSDK/Core/Libs 基础依赖库目录，选中目录中的 .a 库以及 .framework 库单击 `open` 按钮将依赖库添加到工程中
 Select the project name in the directory on the left side of the Xcode project, click the "+" button in `TARGETS->Build Phases-> Link Binary With Libaries`, click `Add Other -> Add Files...` in the pop-up window, and then Open the UniMPSDK/Core/Libs basic dependent library directory, select the .a library and the .framework library in the directory, and click the `open` button to add the dependent library to the project
@@ -38,8 +124,7 @@ Select the project name in the directory on the left side of the Xcode project, 
 <img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp01.png" width="50%">
 <img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp02.png" width="50%">
 
-#### 添加系统依赖库
-#### Add system dependent library
+##### 添加系统依赖库
 
 接下来需要添加系统依赖库，在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Phases-> Link Binary With Libaries` 中点击“+”按钮，在弹出的窗口中查找并选择所需的库（见下表），单击 “Add” 按钮，将库文件添加到工程中。
 Next, you need to add the system dependent library, select the project name in the left directory of the Xcode project, click the "+" button in `TARGETS->Build Phases-> Link Binary With Libaries`, find and select the required one in the pop-up window Library (see the table below), click the "Add" button to add the library file to the project.
@@ -55,8 +140,7 @@ Next, you need to add the system dependent library, select the project name in t
 |CoreGraphics.framework|libc++.tbd|QuickLook.framework|
 |CoreTelephony.framework|libiconv.tbd|
 
-#### 添加依赖资源文件
-#### Add dependent resource files
+##### 添加依赖资源文件
 
 接下来需要添加依赖资源文件，建议在项目中新建一个 `Group`，来管理资源文件，如示例在工程目录中创建的 UniMP 文件夹，然后按功能模块创建不同的目录存放资源文件；
 Next, you need to add dependent resource files. It is recommended to create a `Group` in the project to manage resource files, such as the UniMP folder created in the project directory in the example, and then create different directories according to functional modules to store resource files;
@@ -65,16 +149,14 @@ Add resource file method: Select the location of the imported resource file (Uni
 
 <img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp03.png" width="50%">
 
-#### 添加 .h 头文件
-#### Add .h header file
+##### 添加 .h 头文件
 
 在左侧目录中选中导入头文件的位置（示例中是 UniMP/Core），在右键菜单中选择Add Files to “工程名...”，然后打开 UniMPSDK/Core 目录，选择 Headers 文件夹，然后点击“Add”，将头文件资源添加到工程中
 In the directory on the left, select the location of the imported header file (UniMP/Core in the example), select Add Files to "Project Name..." in the right-click menu, then open the UniMPSDK/Core directory, select the Headers folder, and click "Add", add the header file resource to the project
 
 <img src="http://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/unimp04.png" width="50%">
 
-#### 配置工程
-#### Configuration project
+##### 配置工程
 
 在 Xcode 项目左侧目录选中工程名，在 `TARGETS->Build Settings->Other Linker Flags` 中添加 `-ObjC` 如下图
 Select the project name in the directory on the left side of the Xcode project, and add `-ObjC` in `TARGETS->Build Settings->Other Linker Flags`, as shown below
