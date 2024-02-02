@@ -15,7 +15,7 @@ UniMPSDK 3.99+ 新增支持Cocoapods集成
 #### 创建Podfile文件
 在Xcode项目的根目录下，新建一个Podfile文件，在Podfile文件中添加对小程序SDK的依赖，Podfile完整示例如下:
 
-<details> <summary>Podfile文件示例</summary>
+::: details Podfile文件示例
 
 ``` shell
 
@@ -81,14 +81,12 @@ target 'HelloUniMPDemo' do
 
 end
 ```
-
-</details>
-
+:::
 
 
 #### 加载依赖
 
-执行` pod update `或者` pod install `即可。 
+执行` pod update `或者` pod install `即可。
 
 #### 其他
 更多cocoapods问题详见[Cocoapods注意事项](/UniMPDocs/FAQ/cocoapods)；
