@@ -20,20 +20,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年01月29日发布——HBuilderX（4.0.2024012711-alpha）
+### 2024年02月03日发布——HBuilderX（4.01.2024020211-alpha）
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeVcqseFof)，提取码: cUNU
+[和彩云](https://caiyun.139.com/m/i?115CeVLXGdv4S)，提取码: 6e6Y
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.0.2024012711-alpha）版本生成本地打包App资源。
-+ 修复 uni.chooseLocation 安装后首次调用无法获取位置列表的Bug
-+ 修复 nvue swiper 组件内嵌 swiper 设置 disable-touch 时外层 swiper 无法滑动的Bug
-+ 新增 监听权限申请事件，适用于应用商店要求申请权限时弹出用途说明 [详情](https://uniapp.dcloud.net.cn/api/system/create-request-permission-listener)
-+ 修复 合规检测可能报`多次重复通过getRunningTasks读取任务列表`的Bug [详情](https://ask.dcloud.net.cn/question/185028)
-+ 修复 OPPO应用市场和腾讯管家可能误报`含数字天堂(dcloud)广告插件`的Bug [详情](https://ask.dcloud.net.cn/question/160501)
-+ 修复 模块配置中勾选`facialrecognitionverify(实人认证)`后wgt升级提示未配置此模块的Bug [详情](https://ask.dcloud.net.cn/question/184088)
-+ 修复 视频播放控件 video 退出全屏后软键盘可能无法弹出的Bug [详情](https://ask.dcloud.net.cn/question/183340)
++ 更新uni-app离线打包支持，需使用HBuilderX（4.01.2024020211-alpha）版本生成本地打包App资源。
++ 视频播放控件 video 播放PCM音频格式的视频可能没有声音的Bug
 
 [历史版本](https://pan.baidu.com/s/1BOzJygO0U39WsydCVMHomA?pwd=98nu)
 
