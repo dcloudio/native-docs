@@ -42,16 +42,14 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2024年01月27日发布——HBuilderX（4.0.2024012711-alpha）
+### 2024年02月02日发布——HBuilderX（4.01.2024020211-alpha）
 
-[和彩云，提取码: rJHs](https://caiyun.139.com/m/i?115CnrAUPtE77)
+[和彩云，提取码: wO37](https://caiyun.139.com/m/i?115CepIUM1UP2)
 
-[百度网盘，提取码: mp5n](https://pan.baidu.com/s/17CA3CBnRMNk1z_nWnpxYuQ?pwd=mp5n)
+[百度网盘，提取码: 43zg](https://pan.baidu.com/s/1MaL3nGHA5MmIR_oIQJ56OA?pwd=43zg)
 
-+ 修复 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备设置 allowDuplicates 为 false 时设备数据未更新的Bug[详情](https://ask.dcloud.net.cn/question/182692)
-+ 新增 一键登录 支持设置关闭按钮的宽高
-+ 更新 Uni-AD模块 部分依赖库由framework变更为xcframework
+无
 
-[历史版本，提取码: 7423](https://pan.baidu.com/s/1gJM9_v-yZQ6CgrHDpLyaEA?pwd=7423)
+[历史版本，提取码: rwep](https://pan.baidu.com/s/1lVA-aqM5DrMa9xRoQ37Wog?pwd=rwep)
 
 [历次更新说明](update_history_iOS_alpha.md)
