@@ -7,7 +7,7 @@
 
 [百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
 
-[和彩云](https://caiyun.139.com/m/i?115ColSYHmSwb)，提取码: 0E0j
+[和彩云](https://caiyun.139.com/m/i?115CnpzRf9YgE)，提取码: Sy3R
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.99.2023122611）版本生成本地打包App资源。
 + 更新 UniPush使用的个推核心组件 SDK 为 3.2.9.0 版，个推 SDK 为 3.3.3.0 版，支持荣耀厂商推送；谷歌渠道个推 SDK 为 4.4.3.6 版，适配Android14
@@ -24,7 +24,7 @@
 
 [百度云](https://pan.baidu.com/s/1NLBTW94Im_zg5R38Wiijdg) ，提取码: 5vgk
 
-[和彩云](https://caiyun.139.com/m/i?115CeVLXGdv4S)，提取码: 6e6Y
+[和彩云](https://caiyun.139.com/m/i?115CnW6upgqrp)，提取码: t0vP
 
 + 更新uni-app离线打包支持，需使用HBuilderX（4.01.2024020211-alpha）版本生成本地打包App资源。
 + 视频播放控件 video 播放PCM音频格式的视频可能没有声音的Bug
