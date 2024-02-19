@@ -12,6 +12,10 @@ UniMPSDK 3.99+ 新增支持Cocoapods集成
 
 参考[官方安装指南](https://guides.cocoapods.org/using/getting-started.html#getting-started)或[CocoaPods安装教程](https://www.jianshu.com/p/a7faeda8bcbb)。
 
+#### 安装Git LFS
+部分依赖库文件较大，需要安装git-lfs插件下载大文件，终端执行` git lfs version `查看本地是否已安装该插件，如未安装参考[安装Git LFS](https://docs.github.com/zh/enterprise-server@3.8/repositories/working-with-files/managing-large-files/installing-git-large-file-storage)
+
+
 #### 创建Podfile文件
 在Xcode项目的根目录下，新建一个Podfile文件，在Podfile文件中添加对小程序SDK的依赖，Podfile完整示例如下:
 
