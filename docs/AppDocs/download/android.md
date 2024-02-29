@@ -5,9 +5,9 @@
 
 ### 2023年12月27日发布——HBuilderX（3.99.2023122611）
 
-[百度云](https://pan.baidu.com/s/14SZ-CjlbaNtGHk3CpamgXQ)，提取码: 7rfu
+[百度云](https://pan.baidu.com/s/1p5K9Pz13Ms_HF_0e4YRaDA?pwd=uug2)，提取码: uug2
 
-[和彩云](https://caiyun.139.com/m/i?115CnpzRf9YgE)，提取码: Sy3R
+[和彩云](https://caiyun.139.com/m/i?115CnXN6NUBwk)，提取码: dTN7
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.99.2023122611）版本生成本地打包App资源。
 + 更新 UniPush使用的个推核心组件 SDK 为 3.2.9.0 版，个推 SDK 为 3.3.3.0 版，支持荣耀厂商推送；谷歌渠道个推 SDK 为 4.4.3.6 版，适配Android14
