@@ -21,7 +21,7 @@
 
 #### SDK 3.99 版本
 
-[点击下载SDK-Android@3.99-20240103.zip](https://native-res.dcloud.net.cn/unimp-sdk/SDK-Android%403.99-20240103.zip)
+[点击下载SDK-Android@3.99.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.99.zip)
 
 #### 更新日志
 
@@ -38,8 +38,4 @@
 + 将文档说的4个必须库全部替换更新uniMPSDK-release.aar、uniapp-release.aar、base_oaid_sdk.aar、android-gif-drawable-release@1.xx.aar。其他aar根据之前版本是否集成选择更新替换。
 + Replace all the 4 required libraries mentioned in the document and update uniMPSDK-release.aar, uniapp-release.aar, base_oaid_sdk.aar, android-gif-drawable-release@1.xx.aar. Other aars choose to update and replace according to whether the previous version is integrated.
 
-## 历史稳定版本
-## Historical stable version
 
-百度网盘链接: [https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q](https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q) 提取码: hnug
-Baidu network disk link: [https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q](https://pan.baidu.com/s/1Gb19IMm2ihRA0u4MNzCT4Q) Extraction code: hnug
