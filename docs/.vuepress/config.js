@@ -69,6 +69,9 @@ module.exports = merge({
         .end()
         .plugin('markdown-it-raw-table')
         .use(require('markdown-it-raw-table'))
+        .end()
+        .plugin('subtable')
+        .use(require('./markdown/markdown-it-subtable').markdownIt, [{ flags: ['->'] }])
     }
   },
   patterns: ['**/!(_sidebar).md', '**/*.vue'],
