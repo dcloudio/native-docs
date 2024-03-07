@@ -9065,6 +9065,11 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-expandable-row@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-expandable-row/-/vuepress-plugin-expandable-row-1.0.0.tgz#9197ebb63c0277ae546c18d83dd7734de2438a7f"
+  integrity sha512-255rVtGGeRlTYXxjL4RLbsHfF9Q9fIZH5tIx4BPjYjk5AkULQKE16IekJ+A4mlsH7T944k/2jvxaE1zRy/w5SA==
+
 vuepress-plugin-juejin-style-copy@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmmirror.com/vuepress-plugin-juejin-style-copy/-/vuepress-plugin-juejin-style-copy-1.0.4.tgz#b58d10bdae9673875a33660f8a406f31161284bf"
@@ -9098,16 +9103,17 @@ vuepress-plugin-zooming@^1.1.8:
   dependencies:
     zooming "^2.1.1"
 
-vuepress-theme-uni-app-test@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.7.tgz#566be747f080f551a0f65ac306ccc09dab2ab623"
-  integrity sha512-O+4FGNetUqEHBpz/EE7KJlwNP3LrU2iz7W1WEq2vHnowPyOxwB2DiSA1aHaHhX1zDAG4n/HILQXhjH48r4uGhw==
+vuepress-theme-uni-app-test@^1.4.8:
+  version "1.4.8"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.8.tgz#d4abf41d92dbe1be3b606fef5d1bef88c7282c29"
+  integrity sha512-hrUFRw+wkFfhu3/RZefkVBWYi24TVYLxOHrIhzYQzeoTA3L2GOHcT+hSmMC4lto67jOYU3crHHjcdZ4ZrCkrcA==
   dependencies:
     "@vuepress/plugin-back-to-top" "^1.9.5"
     "@vuepress/theme-default" "^1.8.2"
     algoliasearch "^4.13.1"
     clipboard "^2.0.11"
     vuepress-plugin-check-md2 "^1.0.4"
+    vuepress-plugin-expandable-row "^1.0.0"
     vuepress-plugin-juejin-style-copy "^1.0.4"
     vuepress-plugin-mermaidjs "1.9.1"
     vuepress-plugin-named-chunks "^1.1.4"
