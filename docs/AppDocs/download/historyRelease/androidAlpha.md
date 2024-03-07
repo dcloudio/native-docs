@@ -1,3 +1,8 @@
+### 2024年02月03日发布——HBuilderX（4.01.2024020211-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（4.01.2024020211-alpha）版本生成本地打包App资源。
++ 视频播放控件 video 播放PCM音频格式的视频可能没有声音的Bug
+
 ### 2024年01月29日发布——HBuilderX（4.0.2024012711-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（4.0.2024012711-alpha）版本生成本地打包App资源。
