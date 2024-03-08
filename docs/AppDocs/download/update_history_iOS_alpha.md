@@ -1,5 +1,9 @@
 ## Alpha版历次更新说明
 
+## 4.01.2024020211-alpha
+
+无
+
 ## 4.0.2024012711-alpha
 
 + 修复 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备设置 allowDuplicates 为 false 时设备数据未更新的Bug[详情](https://ask.dcloud.net.cn/question/182692)

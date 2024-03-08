@@ -40,14 +40,16 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年02月02日发布——HBuilderX（4.01.2024020211-alpha）
+### 2024年03月06日发布——HBuilderX（4.02.2024030621-alpha）
 
-[和彩云，提取码: wO37](https://caiyun.139.com/m/i?115CepIUM1UP2)
+[和彩云，提取码: Pqss](https://caiyun.139.com/m/i?115CoUd3owSIk)
 
-[百度网盘，提取码: 43zg](https://pan.baidu.com/s/1MaL3nGHA5MmIR_oIQJ56OA?pwd=43zg)
+[百度网盘，提取码: gyjp](https://pan.baidu.com/s/12YkLFf7LC9jTb4fK8dMvSQ?pwd=gyjp)
 
-无
++ 更新 云端打包环境 XCode 为 15.2 版、iOS SDK 为 17.2 版
++ 修复 应用沙盒 tmp 缓存目录没有及时清理的Bug[详情](https://ask.dcloud.net.cn/question/186250)
++ 修复 应用内存占用过高时系统终止 WKWebview 进程导致页面白屏无法恢复的Bug[详情](https://ask.dcloud.net.cn/question/186341)
 
-[历史版本，提取码: rwep](https://pan.baidu.com/s/1lVA-aqM5DrMa9xRoQ37Wog?pwd=rwep)
+[历史版本，提取码: c1jj](https://pan.baidu.com/s/1ljSXrNPx79BDmBBkPoaEaw?pwd=c1jj)
 
 [历次更新说明](update_history_iOS_alpha.md)
