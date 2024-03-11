@@ -20,19 +20,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年03月07日发布——HBuilderX（4.02.2024030621-alpha）
+### 2024年03月11日发布——HBuilderX（4.03.2024031101-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.02.2024030621-alpha）版本生成本地打包App资源。
-+ 新增 API uni.getChannelManager，获取通知渠道管理器
-+ 修复 首次安装调用 uni.scanCode 可能会出现黑屏的Bug
-+ 更新 uni-AD 快手广告SDK为 3.3.61 版；Sigmob广告联盟SDK为 4.15.1 版；百度百青藤广告SDK为 9.34 版
-+ 更新 UniPush 谷歌渠道 使用的个推 SDK 为 4.4.3.8 版，解决可能无法通过 GooglePlay 审核的问题
-+ 更新 支付模块 Paypal SDK 为 1.2.1 版，解决谷歌商店审核失败的问题
++ 更新uni-app离线打包支持，需使用HBuilderX（4.03.2024031101-alpha）版本生成本地打包App资源。
 
-[历史版本](https://pan.baidu.com/s/1BOzJygO0U39WsydCVMHomA?pwd=98nu)
+[历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
 [历史更新日志](/AppDocs/download/historyRelease/androidAlpha.md)
