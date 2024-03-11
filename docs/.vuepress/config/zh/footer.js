@@ -45,7 +45,7 @@ export default {
 				},
 				{
 					subTitle: 'uni-pay',
-					url: 'https://uniapp.dcloud.net.cn/uniCloud/unipay',
+					url: 'https://doc.dcloud.net.cn/uniCloud/uni-pay/uni-app.html',
 				},
 				{
 					subTitle: 'uni-push',
