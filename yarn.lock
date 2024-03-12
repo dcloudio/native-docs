@@ -1555,14 +1555,6 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
-"@vuepress/plugin-active-header-links@1.9.7":
-  version "1.9.7"
-  resolved "https://registry.npmmirror.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.9.7.tgz#11b3b148d50ebd0a9a9d9e97aa34d81ae04e7307"
-  integrity sha512-G1M8zuV9Og3z8WBiKkWrofG44NEXsHttc1MYreDXfeWh/NLjr9q1GPCEXtiCjrjnHZHB3cSQTKnTqAHDq35PGA==
-  dependencies:
-    "@vuepress/types" "1.9.7"
-    lodash.debounce "^4.0.8"
-
 "@vuepress/plugin-back-to-top@^1.9.5":
   version "1.9.7"
   resolved "https://registry.npmmirror.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.9.7.tgz#249a76d79f1e0c8c71a2804485ad0245837e6bfd"
@@ -1585,14 +1577,6 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-nprogress@1.9.7":
-  version "1.9.7"
-  resolved "https://registry.npmmirror.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.9.7.tgz#76d8368fa26c190ee23c399401a71ec78ffb9744"
-  integrity sha512-sI148igbdRfLgyzB8PdhbF51hNyCDYXsBn8bBWiHdzcHBx974sVNFKtfwdIZcSFsNrEcg6zo8YIrQ+CO5vlUhQ==
-  dependencies:
-    "@vuepress/types" "1.9.7"
-    nprogress "^0.2.0"
-
 "@vuepress/plugin-register-components@1.8.2":
   version "1.8.2"
   resolved "https://registry.npmmirror.com/@vuepress/plugin-register-components/-/plugin-register-components-1.8.2.tgz#2fb45a68b0a1efb8822670d95c3b231a2d0eb74d"
@@ -1604,13 +1588,6 @@
   version "1.8.2"
   resolved "https://registry.npmmirror.com/@vuepress/plugin-search/-/plugin-search-1.8.2.tgz#74b92f663acf6b4560e15dc0442a84c4e874e206"
   integrity sha512-JrSJr9o0Kar14lVtZ4wfw39pplxvvMh8vDBD9oW09a+6Zi/4bySPGdcdaqdqGW+OHSiZNvG+6uyfKSBBBqF6PA==
-
-"@vuepress/plugin-search@1.9.7":
-  version "1.9.7"
-  resolved "https://registry.npmmirror.com/@vuepress/plugin-search/-/plugin-search-1.9.7.tgz#37a4714973ccac8c28837fc72a38ae0888d874bf"
-  integrity sha512-MLpbUVGLxaaHEwflFxvy0pF9gypFVUT3Q9Zc6maWE+0HDWAvzMxo6GBaj6mQPwjOqNQMf4QcN3hDzAZktA+DQg==
-  dependencies:
-    "@vuepress/types" "1.9.7"
 
 "@vuepress/shared-utils@1.8.2":
   version "1.8.2"
@@ -1650,22 +1627,6 @@
     "@vuepress/plugin-active-header-links" "1.8.2"
     "@vuepress/plugin-nprogress" "1.8.2"
     "@vuepress/plugin-search" "1.8.2"
-    docsearch.js "^2.5.2"
-    lodash "^4.17.15"
-    stylus "^0.54.8"
-    stylus-loader "^3.0.2"
-    vuepress-plugin-container "^2.0.2"
-    vuepress-plugin-smooth-scroll "^0.0.3"
-
-"@vuepress/theme-default@^1.8.2":
-  version "1.9.7"
-  resolved "https://registry.npmmirror.com/@vuepress/theme-default/-/theme-default-1.9.7.tgz#9e928b724fdcb12715cc513fdbc27b965944c4a1"
-  integrity sha512-NZzCLIl+bgJIibhkqVmk/NSku57XIuXugxAN3uiJrCw6Mu6sb3xOvbk0En3k+vS2BKHxAZ6Cx7dbCiyknDQnSA==
-  dependencies:
-    "@vuepress/plugin-active-header-links" "1.9.7"
-    "@vuepress/plugin-nprogress" "1.9.7"
-    "@vuepress/plugin-search" "1.9.7"
-    "@vuepress/types" "1.9.7"
     docsearch.js "^2.5.2"
     lodash "^4.17.15"
     stylus "^0.54.8"
@@ -9065,10 +9026,10 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-expandable-row@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmmirror.com/vuepress-plugin-expandable-row/-/vuepress-plugin-expandable-row-1.0.0.tgz#9197ebb63c0277ae546c18d83dd7734de2438a7f"
-  integrity sha512-255rVtGGeRlTYXxjL4RLbsHfF9Q9fIZH5tIx4BPjYjk5AkULQKE16IekJ+A4mlsH7T944k/2jvxaE1zRy/w5SA==
+vuepress-plugin-expandable-row@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-expandable-row/-/vuepress-plugin-expandable-row-1.0.3.tgz#ea5ba27a48d8b0cfa5eecd4a6c0d0d3411bd6737"
+  integrity sha512-BGAd+Wex84XAdf8SEAv0y1b/8YhNst3XnqLei/WkVT7j/lD4Wb+NRhX2OGFfaBkemcSk219goH12DGmaOvTiOg==
 
 vuepress-plugin-juejin-style-copy@^1.0.4:
   version "1.0.4"
@@ -9103,17 +9064,16 @@ vuepress-plugin-zooming@^1.1.8:
   dependencies:
     zooming "^2.1.1"
 
-vuepress-theme-uni-app-test@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.8.tgz#d4abf41d92dbe1be3b606fef5d1bef88c7282c29"
-  integrity sha512-hrUFRw+wkFfhu3/RZefkVBWYi24TVYLxOHrIhzYQzeoTA3L2GOHcT+hSmMC4lto67jOYU3crHHjcdZ4ZrCkrcA==
+vuepress-theme-uni-app-test@^1.4.10:
+  version "1.4.10"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uni-app-test/-/vuepress-theme-uni-app-test-1.4.10.tgz#a143e91b0cfbeb5ef92e0d364d314aaf839bb4ca"
+  integrity sha512-zereHtqmarOb3sCPNz7Ytm1htZ8BHpufGIthmc6wZ/X1jWkEt5gHyyMSoyR+gqn1wf2aqOqxD2EzllC2Bclytw==
   dependencies:
     "@vuepress/plugin-back-to-top" "^1.9.5"
-    "@vuepress/theme-default" "^1.8.2"
     algoliasearch "^4.13.1"
     clipboard "^2.0.11"
     vuepress-plugin-check-md2 "^1.0.4"
-    vuepress-plugin-expandable-row "^1.0.0"
+    vuepress-plugin-expandable-row "^1.0.3"
     vuepress-plugin-juejin-style-copy "^1.0.4"
     vuepress-plugin-mermaidjs "1.9.1"
     vuepress-plugin-named-chunks "^1.1.4"
