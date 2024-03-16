@@ -20,13 +20,17 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年03月11日发布——HBuilderX（4.03.2024031101-alpha）
+### 2024年03月16日发布——HBuilderX（4.04.2024031519-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.03.2024031101-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（4.04.2024031519-alpha）版本生成本地打包App资源。
++ 修复 应用非首次启动可能偶发崩溃的Bug
++ 修复 uni.getStorageSync 特定情况可能丢失字符的Bug
++ 修复 nvue textarea 组件特定情况可能引起崩溃的Bug
++ 更新 地图/定位模块 高德地图 SDK 为 9.8.3 版，高德定位 SDK 为 6.4.2 版，解决无法合规检测的问题
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
