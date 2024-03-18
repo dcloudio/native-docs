@@ -1,4 +1,12 @@
 ## Alpha版历次更新说明
+## 4.03.2024031101-alpha
+
+无
+
+## 4.02.2024030621-alpha
+
++ 修复 应用沙盒 tmp 缓存目录没有及时清理的Bug[详情](https://ask.dcloud.net.cn/question/186250)
++ 修复 应用内存占用过高时系统终止 WKWebview 进程导致页面白屏无法恢复的Bug[详情](https://ask.dcloud.net.cn/question/186341)
 
 ## 4.01.2024020211-alpha
 
