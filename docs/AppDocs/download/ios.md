@@ -42,16 +42,14 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2024年03月06日发布——HBuilderX（4.02.2024030621-alpha）
+### 2024年03月15日发布——HBuilderX（4.04.2024031519-alpha）
 
-[和彩云，提取码: Pqss](https://caiyun.139.com/m/i?115CoUd3owSIk)
+[和彩云，提取码: 7OAb](https://caiyun.139.com/m/i?115CeoayJv0wJ)
 
-[百度网盘，提取码: gyjp](https://pan.baidu.com/s/12YkLFf7LC9jTb4fK8dMvSQ?pwd=gyjp)
+[百度网盘，提取码: bhyk](https://pan.baidu.com/s/12QvdM2dYdkTJbcvb79uHFA?pwd=bhyk)
 
-+ 更新 云端打包环境 XCode 为 15.2 版、iOS SDK 为 17.2 版
-+ 修复 应用沙盒 tmp 缓存目录没有及时清理的Bug[详情](https://ask.dcloud.net.cn/question/186250)
-+ 修复 应用内存占用过高时系统终止 WKWebview 进程导致页面白屏无法恢复的Bug[详情](https://ask.dcloud.net.cn/question/186341)
+无
 
-[历史版本，提取码: c1jj](https://pan.baidu.com/s/1ljSXrNPx79BDmBBkPoaEaw?pwd=c1jj)
+[历史版本，提取码: p6qd](https://pan.baidu.com/s/1DysU1xYmxgGwXvQ3rEMK3A?pwd=p6qd)
 
 [历次更新说明](update_history_iOS_alpha.md)
