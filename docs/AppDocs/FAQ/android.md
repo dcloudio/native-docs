@@ -1,3 +1,13 @@
+### 离线SDK集成实人认证时报错：`lib/*/libc++_shared.so`
+
+离线SDK集成实人认证如果出现`lib/*/libc++_shared.so`报错时，需要在module的build.gradle的android节点下添加如下内容
+
+```
+packagingOptions {
+  pickFirst 'lib/*/libc++_shared.so'
+}
+```
+
 ### 解决 上架 google play 审核报 DCloud SDK 包含从未知来源下载或安装应用 的问题
 
 HBuilder X 3.8.7-alpha开始。离线打包将安装功能独立成单独的aar —— install-apk-release.aar，上架谷歌市场不能包含此库，非谷歌市场可酌情考量。

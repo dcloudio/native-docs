@@ -23,3 +23,11 @@ dependencies {
     implementation "com.aliyun.dpa:oss-android-sdk:+"
 }
 ```
+
+注意：离线SDK集成实人认证如果出现`lib/*/libc++_shared.so`报错时，需要在module的build.gradle的android节点下添加如下内容
+
+```
+packagingOptions {
+  pickFirst 'lib/*/libc++_shared.so'
+}
+```
