@@ -1,3 +1,11 @@
+### 2024年03月16日发布——HBuilderX（4.04.2024031519-alpha）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（4.04.2024031519-alpha）版本生成本地打包App资源。
++ 修复 应用非首次启动可能偶发崩溃的Bug
++ 修复 uni.getStorageSync 特定情况可能丢失字符的Bug
++ 修复 nvue textarea 组件特定情况可能引起崩溃的Bug
++ 更新 地图/定位模块 高德地图 SDK 为 9.8.3 版，高德定位 SDK 为 6.4.2 版，解决无法合规检测的问题
+
 ### 2024年03月11日发布——HBuilderX（4.03.2024031101-alpha）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（4.03.2024031101-alpha）版本生成本地打包App资源。
