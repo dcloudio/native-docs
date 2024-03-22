@@ -40,7 +40,7 @@ function addLoadingAttr(attribs) {
  */
 function matchSrc(src) {
 	return typeof src === 'string'
-		? src.indexOf('qiniu-web-assets.dcloud.net.cn') > -1
+		? (src.indexOf('qiniu-web-assets.dcloud.net.cn') > -1 || src.indexOf('web-ext-storage.dcloud.net.cn') > -1)
 		: false;
 }
 
