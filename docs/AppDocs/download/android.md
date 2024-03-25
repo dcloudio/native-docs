@@ -20,14 +20,13 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年03月21日发布——HBuilderX（4.05.2024032021-alpha）
+### 2024年03月25日发布——HBuilderX（4.06.2024032403-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.05.2024032021-alpha）版本生成本地打包App资源。
-+ 修复 uni.createSelectorQuery 获取的组件对象调用 boundingClientRect 返回数据不准的Bug
++ 更新uni-app离线打包支持，需使用HBuilderX（4.06.2024032403-alpha）版本生成本地打包App资源。
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
