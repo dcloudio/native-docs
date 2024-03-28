@@ -28,15 +28,10 @@
     "dom-serializer": "^2.0.0",
     "fs-extra": "^10.0.0",
     "glob": "^7.1.7",
-    "htmlparser2": "^9.0.0",
-    "markdown-it-attrs": "^4.1.6",
-    "markdown-it-raw-table": "^1.0.0",
-    "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "1.8.2",
-    "vuepress-plugin-named-chunks": "^1.1.4"
+    "htmlparser2": "^9.0.0"
   },
   "dependencies": {
-    "@docsearch/js": "^3.1.0",
-    "vuepress-theme-uni-app-test": "^1.4.10"
+    "vuepress-theme-uniapp-official": "^1.4.14",
+		"vuepress": "1.9.9"
   }
 }

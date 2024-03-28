@@ -7,7 +7,7 @@ const { simplifySlugText, tabs } = require('./utils')
 const copyOptions = require('./config/copy');
 
 const config = {
-  theme: 'vuepress-theme-uni-app-test',
+  theme: 'vuepress-theme-uniapp-official',
   title: 'uni小程序SDK',
   head: [
     ['link', {
@@ -61,6 +61,14 @@ const config = {
     },
     extractHeaders: ['h1', 'h2', 'h3', 'h4'],
     chainMarkdown(config) {
+      const extensionMap = {
+        uts: 'ts'
+      }
+      config.options.highlight((str, lang) => {
+        const extension = extensionMap[lang]
+        return highlight(str, extension || lang)
+      })
+
       config
         .plugin('translate')
         .use(translatePlugin)
@@ -73,18 +81,6 @@ const config = {
         .end()
 				.plugin('img-add-attrs')
 				.use(require('./markdown/img-add-attrs'))
-        .end()
-				.plugin('attrs')
-        .use(require('markdown-it-attrs'),[{
-          leftDelimiter: '#{',
-          rightDelimiter: '}'
-        }])
-        .end()
-        .plugin('task-lists')
-        .use(require('markdown-it-task-lists'))
-        .end()
-        .plugin('markdown-it-raw-table')
-        .use(require('markdown-it-raw-table'))
     }
   },
   patterns: ['**/!(_sidebar).md', '**/*.vue'],
