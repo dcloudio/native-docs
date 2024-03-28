@@ -28,9 +28,7 @@ Search for the feature.plist file (located in PandoraApi.bundle) in the project,
 
 
 ## 一键登录（univerify）
-## One-click login (univerify)
->2.9.12+ 版本支持，手机号一键登录
->2.9.12+ version support, one-click login with mobile phone number
+
 
 ### 添加依赖库及资源
 ### Add dependent libraries and resources
@@ -68,10 +66,6 @@ Search for the feature.plist file (located in PandoraApi.bundle) in the project,
 1.在 info.plist 中添加 sinaweibo 字段，填入自己帐号的信息，如下图
 1. Add the sinaweibo field in info.plist and fill in the information of your own account, as shown in the figure below
 
-![](https://native-res.dcloud.net.cn/images/uniapp/oauth/sinaweibo_320_before.png)
-
-#### 注意 SDK 3.2.0+ 必须按照下图填写
-#### Note that SDK 3.2.0+ must be filled in as shown below
 ![](https://native-res.dcloud.net.cn/images/uniapp/oauth/sinaweibo_plist.png)
 
 
@@ -84,10 +78,6 @@ Search for the feature.plist file (located in PandoraApi.bundle) in the project,
 3.在 info.plist 添加 Schemes 白名单
 3. Add Schemes whitelist in info.plist
 
-![](https://ask.dcloud.net.cn/uploads/article/20151222/9637d63385bc52fee7cdfd45ee3aee55.png)
-
-#### 注意 SDK 3.2.0+ 必须按照下图填写
-#### Note that SDK 3.2.0+ must be filled in as shown below
 ![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/weibo3_3.jpg)
 
 
@@ -129,15 +119,12 @@ Fill in the universal link domain name
 ![](https://ask.dcloud.net.cn/uploads/article/20150929/9f59a997933e98849dad6289c83cce9d.png)
 
 
-#### 注意 SDK 3.2.0+ 必须按照下图填写
-#### Note that SDK 3.2.0+ must be filled in as shown below
-1. 在 info.plist 中添加 qq 字段，填入自己帐号的信息
-1. Add the qq field in info.plist and fill in the information of your own account
+
+3.在 info.plist 中添加 qq 字段，填入自己帐号的信息
 
 ![](https://img-cdn-aliyun.dcloud.net.cn/nativedocs/nativeplugin/Iosimgs/qq_plist.jpg)
 
-2. 配置Associated Domains（域名）
-2. Configure Associated Domains (domain name)
+4.配置Associated Domains（域名）
 
 ![](https://ask.dcloud.net.cn/uploads/article/20191024/2d348820422e3b02d8a65b8f6c6cd830.png)
 
@@ -191,19 +178,13 @@ Fill in the universal link domain name
 
 ![](https://ask.dcloud.net.cn/uploads/article/20191024/0221225d811e93279784d3235a32d055.png)
 
-4.在info.plist root 节点添加`UniversalLinks`字段，值和您在微信开放平台配置的一致，参考如下：(SDK 3.2.0版本以后 此项已废弃，仅保留字段,配置参数已经位置如步骤5所示)
-4. Add the `UniversalLinks` field to the root node of info.plist. The value is the same as what you configured on the WeChat open platform. The reference is as follows: (This item is obsolete after SDK 3.2.0, only the field is reserved, and the configuration parameters are located as in the steps 5)
 
-![](https://ask.dcloud.net.cn/uploads/article/20191016/dfc79b582f04429a83bc2640ec26b2e2.png)
-
-5.在 info.plist 添加 `weixin`(3.2.0 以前为`weixinoauth`) 项，填写微信 `appid` 及  `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
-5. Add `weixin` (before 3.2.0 is `weixinoauth`) item in info.plist, fill in WeChat `appid` and `UniversalLinks`, the value is consistent with your configuration on the WeChat open platform, refer to the following:
+4.在 info.plist 添加 `weixin` ，填写微信 `appid` 及  `UniversalLinks`,值和您在微信开放平台配置的一致，参考如下：
 
 ![](https://native-res.dcloud.net.cn/images/uniapp/oauth/weixin_plist.png)
 
 
-6.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
-6. Call the framework method in the AppDelegate.m system universal link callback method of the project as follows:
+5.在工程的 AppDelegate.m 系统通用链接回调方法中调用框架方法如下：
 
 ```
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler {
