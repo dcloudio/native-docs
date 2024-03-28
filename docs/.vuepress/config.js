@@ -1,5 +1,7 @@
 const path = require('path');
 const { slugify } = require('@vuepress/shared-utils')
+const merge = require('webpack-merge');
+
 const highlight = require('@vuepress/markdown/lib/highlight')
 const translatePlugin = require('./markdown/translate')
 const headerPlugin = require('./markdown/header')
@@ -10,21 +12,8 @@ const config_en = require('./build/config.en');
 
 const config = process.env.DOCS_LOCAL === 'en' ? config_en : config_zh
 
-const config = {
+module.exports = merge({
   theme: 'vuepress-theme-uniapp-official',
-  title: 'uni小程序SDK',
-  head: [
-    ['link', {
-      rel: 'shortcut icon',
-      type: 'image/x-icon',
-      href: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a90b5f95-90ba-4d30-a6a7-cd4d057327db/d23e842c-58fc-4574-998d-17fdc7811cc3.png?v=1556263038788'
-    }]
-  ],
-  locales: {
-    '/': {
-      lang: 'zh-CN',
-    }
-  },
   themeConfig: {
     sidebar: createSidebar(tabs),
     sidebarDepth: 0,
