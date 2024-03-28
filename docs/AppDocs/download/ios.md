@@ -17,18 +17,16 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2024年03月25日发布——HBuilderX（4.06.2024032513）
+### 2024年03月27日发布——HBuilderX（4.07.2024032720）
 
-[和彩云，提取码: xAbn](https://caiyun.139.com/m/i?115CoV2Jf1jXq)
+[和彩云，提取码: XjaA](https://caiyun.139.com/m/i?115CnVJlX3NkM)
 
-[百度网盘，提取码: i92i](https://pan.baidu.com/s/1Rz6wVqdDtgCSsPVBQZjPUA?pwd=i92i)
+[百度网盘，提取码: p9h2](https://pan.baidu.com/s/1rAEoiTVMPQ0nEedUVbHa8g?pwd=p9h2)
 
-+ 修复 应用沙盒 tmp 缓存目录没有及时清理的Bug[详情](https://ask.dcloud.net.cn/question/186250)
-+ 修复 应用内存占用过高时系统终止 WKWebview 进程导致页面白屏无法恢复的Bug[详情](https://ask.dcloud.net.cn/question/186341)
-+ 修复 startBluetoothDevicesDiscovery 搜索附近蓝牙设备设置 allowDuplicates 为 false 时设备数据未更新的Bug[详情](https://ask.dcloud.net.cn/question/182692)
+无
 
 
-[历史版本，提取码: qqw9](https://pan.baidu.com/s/1-2LAiUK4V8_AZMl9RY-IPw?pwd=qqw9)
+[历史版本，提取码: wuez](https://pan.baidu.com/s/177m3hqOeBK-oo7_yYexm7A?pwd=wuez)
 
 [历次更新日志](update_history_iOS_release.md)
 
