@@ -1,3 +1,14 @@
+### 2024年03月26日发布——HBuilderX（4.06.2024032513）
+
++ 更新uni-app离线打包支持，需使用HBuilderX（4.06.2024032513）版本生成本地打包App资源。
++ 修复 应用非首次启动可能偶发崩溃的Bug
++ 修复 uni.getStorageSync 特定情况可能丢失字符的Bug
++ 修复 nvue textarea 组件特定情况可能引起崩溃的Bug
++ 新增 API uni.getChannelManager，获取通知渠道管理器
++ 修复 首次安装调用 uni.scanCode 可能会出现黑屏的Bug
++ 修复 uni.chooseLocation 安装后首次调用无法获取位置列表的Bug
++ 修复 nvue swiper 组件内嵌 swiper 设置 disable-touch 时外层 swiper 无法滑动的Bug
+
 ### 2023年12月27日发布——HBuilderX（3.99.2023122611）
 
 + 更新uni-app离线打包支持，需使用HBuilderX（3.99.2023122611）版本生成本地打包App资源。
