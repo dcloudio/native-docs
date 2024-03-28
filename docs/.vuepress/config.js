@@ -1,7 +1,6 @@
 const path = require('path');
 const { slugify } = require('@vuepress/shared-utils')
-const merge = require('webpack-merge');
-
+const highlight = require('@vuepress/markdown/lib/highlight')
 const translatePlugin = require('./markdown/translate')
 const headerPlugin = require('./markdown/header')
 const createSidebar = require('./markdown/createSidebar')
