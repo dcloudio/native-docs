@@ -11,8 +11,21 @@ const config_en = require('./build/config.en');
 
 const config = process.env.DOCS_LOCAL === 'en' ? config_en : config_zh
 
-module.exports = merge({
-  theme: 'vuepress-theme-uni-app-test',
+const config = {
+  theme: 'vuepress-theme-uniapp-official',
+  title: 'uni小程序SDK',
+  head: [
+    ['link', {
+      rel: 'shortcut icon',
+      type: 'image/x-icon',
+      href: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-a90b5f95-90ba-4d30-a6a7-cd4d057327db/d23e842c-58fc-4574-998d-17fdc7811cc3.png?v=1556263038788'
+    }]
+  ],
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+    }
+  },
   themeConfig: {
     sidebar: createSidebar(tabs),
     sidebarDepth: 0,
@@ -45,6 +58,14 @@ module.exports = merge({
     },
     extractHeaders: ['h1', 'h2', 'h3', 'h4'],
     chainMarkdown(config) {
+      const extensionMap = {
+        uts: 'ts'
+      }
+      config.options.highlight((str, lang) => {
+        const extension = extensionMap[lang]
+        return highlight(str, extension || lang)
+      })
+
       config
         .plugin('translate')
         .use(translatePlugin)
@@ -57,18 +78,6 @@ module.exports = merge({
         .end()
 				.plugin('img-add-attrs')
 				.use(require('./markdown/img-add-attrs'))
-        .end()
-				.plugin('attrs')
-        .use(require('markdown-it-attrs'),[{
-          leftDelimiter: '#{',
-          rightDelimiter: '}'
-        }])
-        .end()
-        .plugin('task-lists')
-        .use(require('markdown-it-task-lists'))
-        .end()
-        .plugin('markdown-it-raw-table')
-        .use(require('markdown-it-raw-table'))
     }
   },
   patterns: ['**/!(_sidebar).md', '**/*.vue'],

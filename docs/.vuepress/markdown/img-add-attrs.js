@@ -61,6 +61,7 @@ function replaceHTML(token, replace, env) {
 	const htmlparser = require('htmlparser2');
 	const serializer = require('dom-serializer');
 	const dom = new htmlparser.parseDocument(token.content, {
+		lowerCaseTags: false,
 		recognizeCDATA: true,
 		recognizeSelfClosing: true,
 	});
