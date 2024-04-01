@@ -691,8 +691,8 @@
 	    </td>
 	    <td> 
 		liblibStatistic.a<br/>
-		UMDevice.framework
-		UMCommon.framework
+		UMDevice.xcframework
+		UMCommon.xcframework
 		UMAPM.framework
 		</td>
 	    <td>
