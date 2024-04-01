@@ -3,26 +3,11 @@
 ### 将友盟统计模块依赖库及资源添加到工程
 ### Add the dependent libraries and resources of the Umeng statistics module to the project
 
-(3.3.7 之前)
-(before 3.3.7)
-
-|依赖库|系统库|资源文件|
-|Dependent Libraries|System Libraries|Resource Files|
-|:--|:--|:--|
-|liblibStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
-| liblibStatistic.a、UMDevice.framework、UMCommon.framework、UMAPM.framework| libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|none|
-
-(3.3.7 之后)
-(after 3.3.7)
-
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
 |liblibStatistic.a、libUmengStatistic.a、UMDevice.xcframework、UMCommon.xcframework、UMAPM.framework|libz.tbd、libsqlite3.tbd、SystemConfiguration.framework、CoreTelephony.framework|无|
 
-
-**3.3.7 之后 还需要在/SDK/Bundles/PandoraApi.bundle/feature.plist文件中 修改如下字段**
-**After 3.3.7, you need to modify the following fields in the /SDK/Bundles/PandoraApi.bundle/feature.plist file**
 ![](https://native-res.dcloud.net.cn/images/uniapp/statistic/feature_umeng.png)
 
 ### 帐号配置
