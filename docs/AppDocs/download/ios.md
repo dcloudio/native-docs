@@ -18,16 +18,16 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 
 ## iOS 离线SDK - 正式版
 
-### 2024年03月27日发布——HBuilderX（4.07.2024032720）
+### 2024年04月01日发布——HBuilderX（4.08.2024040127）
 
-[和彩云，提取码: XjaA](https://caiyun.139.com/m/i?115CnVJlX3NkM)
+[和彩云，提取码: 8xSW](https://caiyun.139.com/m/i?115CooUGbcEOP)
 
-[百度网盘，提取码: p9h2](https://pan.baidu.com/s/1rAEoiTVMPQ0nEedUVbHa8g?pwd=p9h2)
+[百度网盘，提取码: qeyk](https://pan.baidu.com/s/1Ds0KRuEXLmSP6bn5UK83zA?pwd=qeyk)
 
 无
 
 
-[历史版本，提取码: wuez](https://pan.baidu.com/s/177m3hqOeBK-oo7_yYexm7A?pwd=wuez)
+[历史版本，提取码: hg9e](https://pan.baidu.com/s/1pEoGF1A_v61DKD1UMD8Ogw?pwd=hg9e)
 
 [历次更新日志](update_history_iOS_release.md)
 
