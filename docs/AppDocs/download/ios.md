@@ -33,16 +33,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年04月04日发布——HBuilderX（4.11.2024040401-alpha）
+### 2024年04月10日发布——HBuilderX（4.12.2024041009-alpha）
 
-[和彩云，提取码: ELg3](https://caiyun.139.com/m/i?115CnUWXXvFwC)
+[和彩云，提取码: XjD5](https://caiyun.139.com/m/i?115Cemj5jIBmp)
 
-[百度网盘，提取码: 2uk4](https://pan.baidu.com/s/1KKCK_0Qr_QTrV0SGGKhIQQ?pwd=2uk4)
+[百度网盘，提取码: 5n24](https://pan.baidu.com/s/1Pe7k5QfpggHNy8oGK95QbA?pwd=5n24)
 
-+ uni-AD模块 调整 广告对象 getProvider 方法和激励视频对象 onVerify 回调事件中返回的广告提供商标识取值范围为 china、global
-+ 更新 uni-AD SDK 腾讯优量汇SDK为 4.14.70 版；快手广告SDK为 3.3.63 版，快手内容联盟SDK为 3.3.61 版；穿山甲&GroMore SDK为 6.0.0.5 版；Sigmob广告联盟SDK为 4.12.4 版；百度百青藤广告SDK为 5.34 版
-+ 修复 原生插件中使用共享文件报无权限错误的Bug
+无
 
-[历史版本，提取码: u5x6](https://pan.baidu.com/s/1PtoGj4AXxyZyUftT1_m8yQ?pwd=u5x6)
+[历史版本，提取码: sdmf](https://pan.baidu.com/s/1PEN7RYtpxTQb27NMly_JWw?pwd=sdmf)
 
 [历次更新说明](update_history_iOS_alpha.md)

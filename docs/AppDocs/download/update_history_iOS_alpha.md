@@ -1,5 +1,11 @@
 ## Alpha版历次更新说明
 
+## 4.11.2024040401-alpha
+
++ uni-AD模块 调整 广告对象 getProvider 方法和激励视频对象 onVerify 回调事件中返回的广告提供商标识取值范围为 china、global
++ 更新 uni-AD SDK 腾讯优量汇SDK为 4.14.70 版；快手广告SDK为 3.3.63 版，快手内容联盟SDK为 3.3.61 版；穿山甲&GroMore SDK为 6.0.0.5 版；Sigmob广告联盟SDK为 4.12.4 版；百度百青藤广告SDK为 5.34 版
++ 修复 原生插件中使用共享文件报无权限错误的Bug
+
 ## 4.07.2024032807-alpha
 
 无
