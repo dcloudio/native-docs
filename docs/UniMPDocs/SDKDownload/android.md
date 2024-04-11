@@ -11,16 +11,24 @@
 
 **⚠️注意：如果点击无法下载，可右键点击该链接->选择"链接存储为.."进行下载。**
 
-### 2024年01月03日发布
+### 2024年04月11日发布
 
 
-#### SDK 3.99 版本
+#### SDK 4.08 版本
 
-[点击下载SDK-Android@3.99.zip](https://native-res.dcloud.net.cn/unimp-sdk/UniMPSDK_Android%403.99.zip)
+[点击下载SDK-Android@4.08.zip](https://dcloud-sz-native-1317941286.cos.ap-shanghai.myqcloud.com/unimp-sdk/SDK-Android%404.08.2024040127.zip)
 
 #### 更新日志
 
-+ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.99.2023122611.html)
++ 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/4.08.2024040127.html)
+
+
+## 历史版本
+> 历史版本仅提供上个正式版本的 SDK 下载
+
+#### 下载地址
+链接: [https://pan.baidu.com/s/1_aQH2V1Bxngrrm4xsIzpQw?pwd=tfl7](https://pan.baidu.com/s/1_aQH2V1Bxngrrm4xsIzpQw?pwd=tfl7)  密码: tfl7
+
 
 ## 升级SDK注意事项
 
