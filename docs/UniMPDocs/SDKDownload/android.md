@@ -16,7 +16,7 @@
 
 #### SDK 4.08 版本
 
-[点击下载SDK-Android@4.08.zip](https://dcloud-sz-native-1317941286.cos.ap-shanghai.myqcloud.com/unimp-sdk/SDK-Android%404.08.2024040127.zip)
+[点击下载SDK-Android@4.08.zip](https://web-ext-storage.dcloud.net.cn/unimpsdk/android/SDK-Android@4.08.2024040127.zip)
 
 #### 更新日志
 
