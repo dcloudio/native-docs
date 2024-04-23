@@ -14,10 +14,7 @@ function simplifySlugText(text) {
   return text;
 }
 
-const tabs = ['/AppDocs/', '/NativePlugin/', '/']
-
 module.exports = {
   isExternal,
-  simplifySlugText,
-  tabs
+  simplifySlugText
 }

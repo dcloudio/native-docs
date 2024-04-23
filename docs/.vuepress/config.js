@@ -4,7 +4,7 @@ const highlight = require('@vuepress/markdown/lib/highlight')
 const translatePlugin = require('./markdown/translate')
 const headerPlugin = require('./markdown/header')
 const createSidebar = require('./markdown/createSidebar')
-const { simplifySlugText, tabs } = require('./utils')
+const { simplifySlugText } = require('./utils')
 const copyOptions = require('./config/copy');
 
 const config = {
@@ -26,7 +26,7 @@ const config = {
     titleLogo: 'https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativesupport@2x.png',
     logo: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/5a7f902b-21a7-4822-884f-925219eacc4b.png',
     // TODO use plugin/theme
-    sidebar: createSidebar(tabs),
+    sidebar: createSidebar(),
     sidebarDepth: 0,
     nextLinks: false,
     prevLinks: false,
@@ -63,7 +63,9 @@ const config = {
     extractHeaders: ['h1', 'h2', 'h3', 'h4'],
     chainMarkdown(config) {
       const extensionMap = {
-        uts: 'ts'
+        uts: 'ts',
+        uvue: 'vue',
+        'objective-c': 'objc'
       }
       config.options.highlight((str, lang) => {
         const extension = extensionMap[lang]
@@ -84,7 +86,6 @@ const config = {
 				.use(require('./markdown/img-add-attrs'))
     }
   },
-  patterns: ['**/!(_sidebar).md', '**/*.vue'],
   chainWebpack(config, isServer) {
     config.resolve.alias.set(
       '@theme-config',
