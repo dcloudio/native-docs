@@ -1,8 +1,7 @@
 ## DCUniMPSDKEngine
 
 ### 初始化 sdk 全局环境
-### Initialize the sdk global environment
-```objective-c
+```objc
 /// 初始化 sdk 全局环境
 /// Initialize the sdk global environment
 /// @param options 启动参数
@@ -22,25 +21,25 @@ SDK-related methods need to be called in App system lifecycle methods
 **示例**
 **example**
 
-```objective-c
-- (void)applicationDidBecomeActive:(UIApplication *)application {  
-    [DCUniMPSDKEngine applicationDidBecomeActive:application];  
-}  
+```objc
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    [DCUniMPSDKEngine applicationDidBecomeActive:application];
+}
 
-- (void)applicationWillResignActive:(UIApplication *)application {  
-    [DCUniMPSDKEngine applicationWillResignActive:application];  
-}  
+- (void)applicationWillResignActive:(UIApplication *)application {
+    [DCUniMPSDKEngine applicationWillResignActive:application];
+}
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {  
-    [DCUniMPSDKEngine applicationDidEnterBackground:application];  
-}  
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    [DCUniMPSDKEngine applicationDidEnterBackground:application];
+}
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {  
-    [DCUniMPSDKEngine applicationWillEnterForeground:application];  
-}  
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    [DCUniMPSDKEngine applicationWillEnterForeground:application];
+}
 
-- (void)applicationWillTerminate:(UIApplication *)application {  
-    [DCUniMPSDKEngine destory];  
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [DCUniMPSDKEngine destory];
 }
 
 ```
@@ -51,22 +50,19 @@ SDK-related methods need to be called in App system lifecycle methods
 可根据项目需求，选择实现以下方法
 According to the needs of the project, you can choose to implement the following methods
 
-```objective-c
-#pragma mark - 如果需要使用 URL Scheme 或 通用链接相关功能，请实现以下方法  
-#pragma mark - If you need to use URL Scheme or universal link related functions, please implement the following methods
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {  
-    // 通过 url scheme 唤起 App  
-    // invoke the App via the url scheme
-    [DCUniMPSDKEngine application:app openURL:url options:options];  
-    return YES;  
-}  
+```objc
+#pragma mark - 如果需要使用 URL Scheme 或 通用链接相关功能，请实现以下方法
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    // 通过 url scheme 唤起 App
+    [DCUniMPSDKEngine application:app openURL:url options:options];
+    return YES;
+}
 
-- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {  
-    // 通过通用链接唤起 App  
-    // invoke the App via a universal link
-    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];  
-    return YES;  
-}  
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+    // 通过通用链接唤起 App
+    [DCUniMPSDKEngine application:application continueUserActivity:userActivity];
+    return YES;
+}
 
 ```
 
@@ -74,13 +70,13 @@ According to the needs of the project, you can choose to implement the following
 ### 获取uni小程序应用资源部署路径
 ### Get the uni applet application resource deployment path
 
-```objective-c
+```objc
 /// 获取 App 运行路径，注：需要将应用资源放到此路径下 （3.3.7+ 支持）
 /// @param appid appid
 + (NSString *)getUniMPRunPathWithAppid:(NSString *)appid;
 ```
 
-```
+```objc
 /// 获取 App 运行路径，注：需要将应用资源放到此路径下 (3.3.7+ 已废弃)
 /// @param appid appid
 + (NSString *)getAppRunPathWithAppid:(NSString *)appid;
@@ -89,23 +85,21 @@ According to the needs of the project, you can choose to implement the following
 ### 判断应用资源是否已经部署
 ### Determine whether the application resource has been deployed
 
-```objective-c
+```objc
 /// 运行目录中是否已经存在小程序资源 （3.3.7+ 支持）
 /// @param appid appid
 + (BOOL)isExistsUniMP:(NSString *)appid;
 ```
 
-```
+```objc
 /// 运行目录中是否已经存在 App （3.3.7+ 已废弃）
 /// @param appid appid
 + (BOOL)isExistsApp:(NSString *)appid;
 ```
 
-<h3 id="installWgt"></h3>
-### 将wgt应用资源包部署到运行路径中
-### Deploy the wgt application resource package to the running path
+### 将wgt应用资源包部署到运行路径中 @installwgt
 
-```objective-c
+```objc
 /// 将wgt资源部署到运行路径中 (3.3.7+ 支持)
 /// @param appid appid
 /// @param wgtPath wgt资源路径
@@ -132,7 +126,7 @@ According to the needs of the project, you can choose to implement the following
 ### 启动小程序应用
 ### Start the applet application
 
-```objective-c
+```objc
 /// 启动小程序 （2.8.0+ 支持）
 /// @param appid appid
 /// @param configuration 小程序的配置信息
@@ -145,7 +139,7 @@ According to the needs of the project, you can choose to implement the following
 ```
 
 
-```objective-c
+```objc
 /// 启动 App 已废弃
 /// @param appid appid
 /// @param arguments 启动参数（可以在小程序中通过 plus.runtime.arguments 获取此参数）
@@ -167,7 +161,7 @@ According to the needs of the project, you can choose to implement the following
 
 **DCUniMPCompletionBlock**
 
-```
+```objc
 /// 加载小程序 block 回调
 /// Load applet block callback
 /// uniMPInstance: 加载成功返回小程序实例，失败则为 nil
@@ -182,7 +176,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 > 2.8.0+ 支持
 > 2.8.0+ support
 
-```objective-c
+```objc
 /// 预加载小程序
 /// @param appid appid
 /// @param configuration 小程序的配置信息
@@ -197,7 +191,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 关闭当前小程序应用
 ### Close the current applet application
 
-```objective-c
+```objc
 /// 关闭当前小程序应用
 /// Close the current applet application
 + (void)closeUniMP;
@@ -206,7 +200,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 获取当前运行的小程序appid
 ### Get the currently running applet appid
 
-```objective-c
+```objc
 /// 获取当前运行的小程序appid
 /// Get the currently running applet appid
 + (NSString *)getActiveUniMPAppid;
@@ -215,7 +209,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 获取当前小程序页面的直达链接url
 ### Get the direct link url of the current applet page
 
-```objective-c
+```objc
 /// 获取当前小程序页面的直达链接url
 /// Get the direct link url of the current applet page
 + (NSString *)getCurrentPageUrl;
@@ -224,7 +218,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 获取已经部署的小程序应用资源版本信息
 ### Get the version information of the deployed Mini Program application resources
 
-```objective-c
+```objc
 /// 获取已经部署的小程序应用资源版本信息
 /// @param appid appid
 /// 返回数据为 manifest 中的配置信息
@@ -241,24 +235,21 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 > 3.0.0+ 版本支持
 > 3.0.0+ version support
 
-```
+```objc
 /// 小程序打开状态，调用此方法可获取小程序对应的 ViewController 实例
 /// The open state of the applet, call this method to get the ViewController instance corresponding to the applet
 + (UIViewController *)getUniMPViewController;
 ```
 
-<h3 id="SetNavigationBarHidden"></h3>
-### 小程序页面关闭时设置原生导航栏的显隐
-### Set the visibility of the native navigation bar when the applet page is closed
+
+### 小程序页面关闭时设置原生导航栏的显隐 @setnavigationbarhidden
 > 3.1.0+ 版本支持
 > 3.1.0+ version support
 
-**说明：**当小程序是通过 DCUniMPOpenModePush 方式打开（即通过原生导航控制器push方式打开小程序页面）如果系统导航栏是显示状态，进入小程序时会隐藏系统导航栏并在小程序页面关闭或从小程序页面在 push 到宿主其他原生页面时会将系统导航栏恢复之前的显隐状态；如果您想控制导航栏的显隐可通过此方法来实现 <br>
-**Note: **When the applet is opened by DCUniMPOpenModePush (that is, the applet page is opened by native navigation controller push), if the system navigation bar is displayed, the system navigation bar will be hidden and displayed on the applet page when entering the applet. When the applet page is closed or pushed to host other native pages, the system navigation bar will be restored to its previous visible and hidden state; if you want to control the visible and hidden of the navigation bar, you can use this method to achieve it<br>
-**场景：**在显示系统导航栏的页面 push 进入小程序页面，从小程序页面 push 到其他原生页面时需要隐藏系统导航栏，则可以在跳转页面前调用此方法来处理；
-**Scenario: **Push the page displaying the system navigation bar to enter the applet page. When pushing from the applet page to other native pages, you need to hide the system navigation bar. You can call this method to handle it before jumping to the page;
+**说明：** 当小程序是通过 DCUniMPOpenModePush 方式打开（即通过原生导航控制器push方式打开小程序页面）如果系统导航栏是显示状态，进入小程序时会隐藏系统导航栏并在小程序页面关闭或从小程序页面在 push 到宿主其他原生页面时会将系统导航栏恢复之前的显隐状态；如果您想控制导航栏的显隐可通过此方法来实现 <br>
+**场景：** 在显示系统导航栏的页面 push 进入小程序页面，从小程序页面 push 到其他原生页面时需要隐藏系统导航栏，则可以在跳转页面前调用此方法来处理；
 
-```
+```objc
 /// 注意：只有通过 push 的方式打开小程序才生效
 /// Note: Only when the applet is opened via push will it take effect
 /// @param hidden 是否隐藏
@@ -271,7 +262,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 > 3.1.22+ 支持
 > 3.1.22+ support
 
-```
+```objc
 /// 设置 push 打开方式小程序内是否自动控制原生导航栏的显隐（默认控制）
 /// @param isControl Bool
 + (void)setAutoControlNavigationBar:(BOOL)isControl;
@@ -280,7 +271,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 向小程序发送事件（已废弃，使用 DCUniMPInstance 实例方法）
 ### Send events to applets (deprecated, use DCUniMPInstance instance method)
 
-```objective-c
+```objc
 /// 向小程序发送事件
 /// Send events to the applet
 /// @param event 事件名称
@@ -293,7 +284,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）
 ### Set whether to display or hide the capsule button on the navigation bar (default display)
 
-```
+```objc
 /// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示） （3.1.22+ 支持）
 /// Set whether to display or hide the capsule button on the navigation bar (default display) (supported by 3.1.22+)
 /// @param capsuleButtonHidden Bool 是否隐藏胶囊按钮
@@ -302,7 +293,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ```
 
 
-```objective-c
+```objc
 /// 设置导航栏上的胶囊按钮显示还是隐藏（默认显示）(已废弃)
 /// Set whether to display or hide the capsule button on the navigation bar (default display) (deprecated)
 /// @param menuButtonHidden Bool 是否隐藏胶囊按钮
@@ -315,7 +306,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 > 3.1.22+ 版本支持
 > 3.1.22+ version support
 
-```
+```objc
 /// 配置胶囊按钮样式
 /// @param capsuleButtonStyle DCUniMPCapsuleButtonStyle
 + (void)configCapsuleButtonStyle:(DCUniMPCapsuleButtonStyle *)capsuleButtonStyle;
@@ -324,7 +315,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 配置点击菜单按钮弹出 ActionSheet 视图的样式
 ### Configure the style of the ActionSheet view that pops up when the menu button is clicked
 
-```objective-c
+```objc
 /// 配置点击菜单按钮弹出 ActionSheet 视图的样式
 /// @param menuActionSheetStyle DCUniMPMenuActionSheetStyle
 + (void)configMenuActionSheetStyle:(DCUniMPMenuActionSheetStyle *)menuActionSheetStyle;
@@ -333,7 +324,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 配置胶囊按钮菜单 ActionSheet 全局项
 ### Configure capsule button menu ActionSheet global items
 
-```objective-c
+```objc
 /// 配置胶囊按钮菜单 ActionSheet 全局项
 /// Configure capsule button menu ActionSheet global items
 /// @param items DCUniMPMenuActionSheetItem 数组
@@ -344,7 +335,7 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### 设置 DCUniMPSDKEngineDelegate
 ### Set DCUniMPSDKEngineDelegate
 
-```objective-c
+```objc
 /// 设置 DCUniMPSDKEngineDelegate
 /// Set DCUniMPSDKEngineDelegate
 /// @param delegate 代理对象
@@ -356,26 +347,26 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 ### DCUniMPSDKEngineDelegate 相关方法
 ### DCUniMPSDKEngineDelegate related methods
 
-```
+```objc
 /// 拦截胶囊`x`关闭按钮事件，注意：实现该方法后框架内不会执行关闭小程序的逻辑，需要宿主自行处理逻辑 （3.2.9+ 支持）
 /// @param appid appid
 - (void)hookCapsuleCloseButtonClicked:(NSString *)appid;
 ```
 
-```
+```objc
 /// 拦截胶囊`···`菜单按钮事件，注意：实现该方法后框架内不会弹出actionSheet弹窗，需宿主自行处理逻辑 （3.2.9+ 支持）
 /// @param appid appid
 - (void)hookCapsuleMenuButtonClicked:(NSString *)appid;
 ```
 
 
-```
+```objc
 /// 胶囊按钮‘x’关闭按钮点击回调 （3.1.22+ 支持）
 /// @param appid appid
 - (void)closeButtonClicked:(NSString *)appid;
 ```
 
-```
+```objc
 /// 胶囊按钮菜单 ActionSheetItem 点击回调方法
 /// @param appid appid
 /// @param identifier item 项的标识
@@ -383,19 +374,19 @@ typedef void(^DCUniMPCompletionBlock)(DCUniMPInstance *_Nullable uniMPInstance, 
 - (void)defaultMenuItemClicked:(NSString *)appid identifier:(NSString *)identifier;
 ```
 
-```
+```objc
 /// 返回打开小程序时的闪屏视图
 /// @param appid appid
 - (UIView *)splashViewForApp:(NSString *)appid;
 ```
 
-```
+```objc
 /// 关闭小程序的回调方法
 /// @param appid appid
 - (void)uniMPOnClose:(NSString *)appid;
 ```
 
-```
+```objc
 /// 小程序向原生发送事件回调方法
 /// Small program sends event callback method to native
 /// @param appid 对应小程序的appid
@@ -448,10 +439,9 @@ DCUniMPConfiguration class provides configuration information for applets
 
 ## DCUniMPInstance
 > 2.8.0+ 支持
-> 2.8.0+ support
- 
+
 ### DCUniMPResultBlock
-```
+```objc
 /// 方法执行回调block
 /// Method execution callback block
 /// @param success 是否执行成功
@@ -462,30 +452,26 @@ typedef void(^DCUniMPResultBlock)(BOOL success, NSError *_Nullable error);
 ```
 
 ### 将小程序显示到前台
-### Display the applet to the foreground
-```
+```objc
 - (void)showWithCompletion:(DCUniMPResultBlock)completion;
 ```
 
 ### 将小程序隐藏到后台
-### Hide the applet to the background
-```
+```objc
 - (void)hideWithCompletion:(DCUniMPResultBlock)completion;
 ```
 
 ### 关闭小程序
-### Close the applet
-```
+```objc
 - (void)closeWithCompletion:(DCUniMPResultBlock)completion;
 ```
 
-<h3 id="sendUniMPEvent"></h3>
-### 向小程序发送事件
-### Send events to applets
+### 向小程序发送事件 @sendunimpevent
+
 > 3.2.1+ 支持
 > 3.2.1+ support
 
-```
+```objc
 /// @param event 事件名称
 /// @param event event name
 /// @param data 数据：NSString 或 NSDictionary 类型

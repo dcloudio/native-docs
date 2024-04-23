@@ -6,16 +6,16 @@ const highlight = require('@vuepress/markdown/lib/highlight')
 const translatePlugin = require('./markdown/translate')
 const headerPlugin = require('./markdown/header')
 const createSidebar = require('./markdown/createSidebar')
-const { simplifySlugText, tabs } = require('./utils')
-const config_zh = require('./build/config.zh');
-const config_en = require('./build/config.en');
-
-const config = process.env.DOCS_LOCAL === 'en' ? config_en : config_zh
+const { simplifySlugText } = require('./utils')
+const copyOptions = require('./config/copy');
 
 module.exports = merge({
   theme: 'vuepress-theme-uniapp-official',
   themeConfig: {
-    sidebar: createSidebar(tabs),
+    titleLogo: 'https://img.cdn.aliyun.dcloud.net.cn/nativedocs/nativesupport@2x.png',
+    logo: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/5a7f902b-21a7-4822-884f-925219eacc4b.png',
+    // TODO use plugin/theme
+    sidebar: createSidebar(),
     sidebarDepth: 0,
     nextLinks: false,
     prevLinks: false,
@@ -47,7 +47,9 @@ module.exports = merge({
     extractHeaders: ['h1', 'h2', 'h3', 'h4'],
     chainMarkdown(config) {
       const extensionMap = {
-        uts: 'ts'
+        uts: 'ts',
+        uvue: 'vue',
+        'objective-c': 'objc'
       }
       config.options.highlight((str, lang) => {
         const extension = extensionMap[lang]
@@ -68,7 +70,6 @@ module.exports = merge({
 				.use(require('./markdown/img-add-attrs'))
     }
   },
-  patterns: ['**/!(_sidebar).md', '**/*.vue'],
   chainWebpack(config, isServer) {
     config.resolve.alias.set(
       '@theme-config',
@@ -85,4 +86,6 @@ module.exports = merge({
     if (type === 'script') return path.includes('vendors~') || path.includes('layout-') || path.includes('index.')
     return false
   }
-}, config)
+}
+
+module.exports = config

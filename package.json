@@ -37,7 +37,7 @@
     "htmlparser2": "^9.0.0"
   },
   "dependencies": {
-    "vuepress-theme-uniapp-official": "^1.4.14",
+    "vuepress-theme-uniapp-official": "^1.4.15",
 		"vuepress": "1.9.9"
   }
 }
