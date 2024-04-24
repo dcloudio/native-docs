@@ -33,14 +33,21 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年04月10日发布——HBuilderX（4.12.2024041009-alpha）
+### 2024年04月23日发布——HBuilderX（4.13.2024042321-alpha）
 
-[和彩云，提取码: XjD5](https://caiyun.139.com/m/i?115Cemj5jIBmp)
+[和彩云，提取码: UTOH](https://caiyun.139.com/m/i?115CeVKtPVv4W)
 
-[百度网盘，提取码: 5n24](https://pan.baidu.com/s/1Pe7k5QfpggHNy8oGK95QbA?pwd=5n24)
+[百度网盘，提取码: 8mfq](https://pan.baidu.com/s/1WrsC1-tyXT24_8G8a3_h1g?pwd=8mfq)
 
-无
++ 【重要】新增 支持隐私清单，满足Appstore从5月1日起的新合规要求[文档](https://uniapp.dcloud.net.cn/tutorial/app-ios-privacyinfo.html)
++ 更新 Google AdMob SDK 为 11.2.0 版
++ 更新 推送模块 FCM SDK 为 10.23.1 版
++ 更新 统计模块 Google 统计 SDK 为 10.23.1 版
++ 更新 登录模块 Facebook SDK 为 17.0.0 版；Google SDK 为 7.1.0 版
++ 修复 离线SDK集成 PDFNet.framework 运行时闪退的Bug
++ 修复 一键登录 更换移动手机卡可能仍然返回上一个手机号的Bug
++ 修复 atob 处理特定字符串可能异常的Bug
 
-[历史版本，提取码: sdmf](https://pan.baidu.com/s/1PEN7RYtpxTQb27NMly_JWw?pwd=sdmf)
+[历史版本，提取码: j3qg](https://pan.baidu.com/s/11bhiscNWX8xl9A4SgmuQUQ?pwd=j3qg)
 
 [历次更新说明](update_history_iOS_alpha.md)

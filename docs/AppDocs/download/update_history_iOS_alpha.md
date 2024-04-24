@@ -1,5 +1,9 @@
 ## Alpha版历次更新说明
 
+## 4.12.2024041009-alpha
+
+无
+
 ## 4.11.2024040401-alpha
 
 + uni-AD模块 调整 广告对象 getProvider 方法和激励视频对象 onVerify 回调事件中返回的广告提供商标识取值范围为 china、global
