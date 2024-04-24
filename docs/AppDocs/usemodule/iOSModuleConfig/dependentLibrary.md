@@ -24,8 +24,8 @@
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
 | SSZipArchive| 2.2.3|Basic library/corresponding library libcoreSupport.a|
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
-|Google登录|v7.0.0|Oauth/Google|
-|Facebook登录|v16.2.1|Oauth/Facebook|
+|Google登录|v7.1.0|Oauth/Google|
+|Facebook登录|v17.0.0|Oauth/Facebook|
 |快手|v3.3.53|UniAD/快手|
 |快手内容联盟|v3.3.32|UniAD/快手内容联盟|
 |优量汇|v4.14.45|UniAD/优量汇|
@@ -33,11 +33,11 @@
 |穿山甲Gromore|v5.7.0.4|UniAD/穿山甲Gromore|
 |Sigmob|v4.10.0|UniAD/Sigmob|
 |百度百青藤|v5.324|UniAD/百度|
-|Google AdMob|v10.13.0|UniAD/AdMob|
+|Google AdMob|v11.2.0|UniAD/AdMob|
 |Pangle|v5.5.0.4|UniAD/Pangle|
 |Paypal支付|v1.2.0|Payment/Paypal|
 |Stripe支付|v23.18.2|Payment/Stripe|
 |个推|v2.7.4.2|Push/UniPush|
 |个验|v3.0.7.0|Oauth/一键登录|
-|Google统计|v10.18.0|Statistic/Google|
-|FCM推送|v10.18.0|Push/FCM|
+|Google统计|v10.23.1|Statistic/Google|
+|FCM推送|v10.23.1|Push/FCM|
