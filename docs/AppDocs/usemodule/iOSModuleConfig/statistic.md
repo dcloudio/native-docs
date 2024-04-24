@@ -29,7 +29,8 @@
 After HBuilderX2.2.5 (including 2.2.5), Umeng v6.0.5 statistical SDK is integrated in the base. Because Umeng is official, starting from component products, [Youmeng+] SDK collects idfa logo by default, which is used to More accurate analysis and verification data. For the case that the app itself has not obtained idfa, it is recommended to configure the app as follows when submitting the app to the AppStore: (to avoid being rejected by Apple because "the app does not contain advertising functions, but has obtained the advertising identifier IDFA".)
 
 ![](https://img.cdn.aliyun.dcloud.net.cn/nativedocs/5SDKiOS/statistic/40552.png)
-
+### 隐私清单
+![友盟统计隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-ios-statistic-umeng-privacyinfo.jpg)
 
 
 ## Firebase Analytics （3.3.7+ 新增）
