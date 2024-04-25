@@ -409,4 +409,9 @@ The generated uni applet wgt resource package can be **deployed to a remote serv
 #### uni applet application deletion
 
 可通过 DCUniMPSDKEngine 类的 `getUniMPRunPathWithAppid:` 方法获取应用运行路径，删除应用资源即可；
-The application running path can be obtained through the `getUniMPRunPathWithAppid:` method of the DCUniMPSDKEngine class, and the application resource can be deleted;
+
+
+### 隐私清单
+![基础模块隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-sdk-core-privacyinfo.jpg)
+
+> 集成[友盟统计模块](/UniMPDocs/UseModule/ios/umstatistic.md)需要根据该模块的文档补充填写隐私清单
