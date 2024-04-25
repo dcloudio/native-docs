@@ -1030,6 +1030,12 @@
 
 [info.plist文件中如何添加隐私权限配置](http://ask.dcloud.net.cn/article/931)
 
+#### 隐私清单
+SDK 4.13之后的版本在示例工程中包含基础模块的隐私清单，4.13之前版本也可以直接用4.13的隐私清单
+基础模块隐私清单如下所示：
+![基础模块隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-sdk-core-privacyinfo.jpg)
+
+> 集成[uni-AD模块](/AppDocs/usemodule/iOSModuleConfig/uniad.md)以及[统计模块](/AppDocs/usemodule/iOSModuleConfig/statistic.md)需要根据该模块的文档补充填写隐私清单
 
 
 ### 其他模块/三方SDK配置
@@ -1037,7 +1043,7 @@
 * [定位配置](/AppDocs/usemodule/iOSModuleConfig/geolocation.md)
 * [推送配置](/AppDocs/usemodule/iOSModuleConfig/push.md)
 * [分享配置](/AppDocs/usemodule/iOSModuleConfig/share.md)
-* [登陆鉴权配置](/AppDocs/usemodule/iOSModuleConfig/oauth.md)
+* [登录鉴权配置](/AppDocs/usemodule/iOSModuleConfig/oauth.md)
 * [地图配置](/AppDocs/usemodule/iOSModuleConfig/map.md)
 * [支付配置](/AppDocs/usemodule/iOSModuleConfig/pay.md)
 * [语音识别配置](/AppDocs/usemodule/iOSModuleConfig/speech.md)
