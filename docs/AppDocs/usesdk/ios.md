@@ -1,6 +1,6 @@
 ## 开发环境
 
--  安装 Xcode 14 及以上版本 
+-  安装 Xcode 15 及以上版本 
 -  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
 - App离线SDK下载：[最新iOS平台SDK下载](/AppDocs/download/ios.md)
 - 确保版本一致,请确保从HBuilderX导出的打包资源的HBuilderX的版本号和App离线SDK发布的版本号是一致的，如下2张图里的版本号：
@@ -297,6 +297,13 @@ Build为编译版本号，App Store判断升级使用，推荐与manifest.json�
 
 9、在HBuildX里，找到之前appid相同的js工程准备调试，点击“运行” --“运行到手机或模拟器“--“使用自定义基座运行（iOS）”，等待连接成功之后就可以了。
 
+### 隐私清单
+SDK 4.13之后的版本在示例工程中包含基础模块的隐私清单，4.13之前版本也可以直接用4.13的隐私清单
+基础模块隐私清单如下所示：
+![基础模块隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-sdk-core-privacyinfo.jpg)
+
+> 集成[uni-AD模块](/AppDocs/usemodule/iOSModuleConfig/uniad.md)以及[统计模块](/AppDocs/usemodule/iOSModuleConfig/statistic.md)需要根据该模块的文档补充填写隐私清单
+> 
 ## 运行
 
 连接手机，编译运行，如果App成功跑起来了，说明原生工程配置完成。
