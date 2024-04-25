@@ -352,3 +352,9 @@ UniMPSDK/Core 目录结构说明
 #### uni小程序应用删除
 
 可通过 DCUniMPSDKEngine 类的 `getUniMPRunPathWithAppid:` 方法获取应用运行路径，删除应用资源即可；
+
+
+### 隐私清单
+![基础模块隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-sdk-core-privacyinfo.jpg)
+
+> 集成[友盟统计模块](/UniMPDocs/UseModule/ios/umstatistic.md)需要根据该模块的文档补充填写隐私清单
