@@ -1,7 +1,7 @@
 ## 开发环境
 ## Development environment
 
--  安装 Xcode 14 及以上版本 
+-  安装 Xcode 15 及以上版本 
 -  [HBuilderX下载](https://www.dcloud.io/hbuilderx.html)
 - [HBuilderX Download](https://www.dcloud.io/hbuilderx.html)
 - App离线SDK下载：[最新iOS平台SDK下载](/AppDocs/download/ios.md)
@@ -394,6 +394,13 @@ Channel: you can fill in apple.
 9、在HBuildX里，找到之前appid相同的js工程准备调试，点击“运行” --“运行到手机或模拟器“--“使用自定义基座运行（iOS）”，等待连接成功之后就可以了。
 9、 In HBuildX, find the js project with the same appid before and prepare for debugging, click "Run" -- "Run to mobile phone or simulator" -- "Run with custom base (iOS)", wait for the connection to be successful up.
 
+### 隐私清单
+SDK 4.13之后的版本在示例工程中包含基础模块的隐私清单，4.13之前版本也可以直接用4.13的隐私清单
+基础模块隐私清单如下所示：
+![基础模块隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-sdk-core-privacyinfo.jpg)
+
+> 集成[uni-AD模块](/AppDocs/usemodule/iOSModuleConfig/uniad.md)以及[统计模块](/AppDocs/usemodule/iOSModuleConfig/statistic.md)需要根据该模块的文档补充填写隐私清单
+> 
 ## 运行
 ## run
 
