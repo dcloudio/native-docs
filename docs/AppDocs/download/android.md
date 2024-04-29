@@ -19,15 +19,13 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年04月24日发布——HBuilderX（4.13.2024042321-alpha）
+### 2024年04月29日发布——HBuilderX（4.14.2024042905-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.13.2024042321-alpha）版本生成本地打包App资源。
-+ 更新 uni-AD模块 快手广告和快手内容联盟SDK为 4.14.32 版
-+ 更新 统计模块 友盟统计 SDK 为 9.6.8 版
++ 更新uni-app离线打包支持，需使用HBuilderX（4.14.2024042905-alpha）版本生成本地打包App资源。
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
