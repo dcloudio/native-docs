@@ -17,27 +17,42 @@
 
 ## iOS 离线SDK - 正式版
 
-### 2024年04月01日发布——HBuilderX（4.08.2024040127）
+### 2024年04月30日发布——HBuilderX（4.14.2024043008）
 
-[和彩云，提取码: 8xSW](https://caiyun.139.com/m/i?115CooUGbcEOP)
+[和彩云，提取码: JKtW](https://caiyun.139.com/m/i?115CoUMzaGYEf)
 
-[百度网盘，提取码: qeyk](https://pan.baidu.com/s/1Ds0KRuEXLmSP6bn5UK83zA?pwd=qeyk)
+[百度网盘，提取码: rmar](https://pan.baidu.com/s/1lQEyB10gZuSjYcdbz8Vp2w?pwd=rmar)
 
-无
++ 【重要】新增 支持隐私清单，满足Appstore从5月1日起的新合规要求[文档](https://uniapp.dcloud.net.cn/tutorial/app-ios-privacyinfo.html)
++ 更新 腾讯优量汇SDK为 4.14.70 版
++ 更新 穿山甲&GroMore SDK 为 6.0.0.5 版
++ 更新 快手广告SDK为 3.3.63 版
++ 更新 快手内容联盟SDK为 3.3.61 版
++ 更新 Sigmob广告联盟SDK 为 4.12.4 版
++ 更新 百度百青藤广告SDK 为 5.34 版
++ 更新 Google AdMob SDK 为 11.2.0 版
++ 更新 推送模块 FCM SDK 为 10.23.1 版
++ 更新 统计模块 Google 统计 SDK 为 10.23.1 版
++ 更新 登录模块 Facebook SDK 为 17.0.0 版；Google SDK 为 7.1.0 版
++ 调整 uni-AD 广告对象 getProvider 方法和激励视频对象 onVerify 回调事件中返回的广告提供商标识取值范围为 china、global
++ 修复 离线SDK集成 PDFNet.framework 运行时闪退的Bug
++ 修复 一键登录 更换移动手机卡可能仍然返回上一个手机号的Bug
++ 修复 atob 处理特定字符串可能异常的Bug
++ 修复 原生插件中使用共享文件报无权限错误的Bug
 
 
-[历史版本，提取码: hg9e](https://pan.baidu.com/s/1pEoGF1A_v61DKD1UMD8Ogw?pwd=hg9e)
+[历史版本，提取码: mui6](https://pan.baidu.com/s/13-9-luO4hnYhXKMIQeHMEA?pwd=mui6)
 
 [历次更新日志](update_history_iOS_release.md)
 
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年04月23日发布——HBuilderX（4.13.2024042321-alpha）
+### 2024年04月29日发布——HBuilderX（4.14.2024042905-alpha）
 
-[和彩云，提取码: UTOH](https://caiyun.139.com/m/i?115CeVKtPVv4W)
+[和彩云，提取码: WuyX](https://caiyun.139.com/m/i?115CnWQEeEs8P)
 
-[百度网盘，提取码: 8mfq](https://pan.baidu.com/s/1WrsC1-tyXT24_8G8a3_h1g?pwd=8mfq)
+[百度网盘，提取码: ks14](https://pan.baidu.com/s/1tdukWfrgv_Ee_BmQtd3vJQ?pwd=ks14)
 
 + 【重要】新增 支持隐私清单，满足Appstore从5月1日起的新合规要求[文档](https://uniapp.dcloud.net.cn/tutorial/app-ios-privacyinfo.html)
 + 更新 Google AdMob SDK 为 11.2.0 版
@@ -48,6 +63,6 @@
 + 修复 一键登录 更换移动手机卡可能仍然返回上一个手机号的Bug
 + 修复 atob 处理特定字符串可能异常的Bug
 
-[历史版本，提取码: j3qg](https://pan.baidu.com/s/11bhiscNWX8xl9A4SgmuQUQ?pwd=j3qg)
+[历史版本，提取码: 1tuf](https://pan.baidu.com/s/1JjyhLx2ZCHJ6o8fBcmgGWA?pwd=1tuf)
 
 [历次更新说明](update_history_iOS_alpha.md)
