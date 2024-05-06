@@ -78,7 +78,7 @@ Channel: you can fill in apple.
 
 ### 隐私清单
 优量汇的隐私清单需要手动合并到App的隐私清单中内容如下
-![优量汇隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/native-ios-ad-gdt-privacyinfo.jpg)
+![优量汇隐私清单](https://web-ext-storage.dcloud.net.cn/doc/app/ios/uniad-adt-privacyinfo.jpg)
 
 
 ## 快手
