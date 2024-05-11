@@ -1,5 +1,9 @@
 ## Alpha版历次更新说明
 
+## 4.14.2024042905-alpha
+
+无
+
 ## 4.13.2024042321-alpha
 
 + 【重要】新增 支持隐私清单，满足Appstore从5月1日起的新合规要求[文档](https://uniapp.dcloud.net.cn/tutorial/app-ios-privacyinfo.html)
