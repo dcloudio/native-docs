@@ -18,13 +18,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年04月29日发布——HBuilderX（4.14.2024042905-alpha）
+### 2024年05月11日发布——HBuilderX（4.16.2024051009-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.14.2024042905-alpha）版本生成本地打包App资源。
++ 更新uni-app离线打包支持，需使用HBuilderX（4.16.2024051009-alpha）版本生成本地打包App资源。
++ 更新 登录模块 Facebook SDK 为 17.0.0 版，去除com.google.android.gms.permission.AD_ID权限，解决谷歌审核报您的应用未使用广告 ID的Bug
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
