@@ -34,14 +34,14 @@ If your current integrated SDK version is lower than the HBuilderX version, but 
 ## iOS 离线SDK - Alpha版
 ## iOS Offline SDK - Alpha Version
 
-### 2024年05月10日发布——HBuilderX（4.16.2024051009-alpha）
+### 2024年05月11日发布——HBuilderX（4.17.2024051110-alpha）
 
-[和彩云，提取码: WWtO](https://caiyun.139.com/m/i?115CnVTffwZxN)
+[和彩云，提取码: mVw5](https://caiyun.139.com/m/i?115CnVKi86DM8)
 
-[百度网盘，提取码: a7bi](https://pan.baidu.com/s/1-5B0nE4iQ6WBY0dJf8trqQ?pwd=a7bi)
+[百度网盘，提取码: k2gy](https://pan.baidu.com/s/1mz4xO6CHHjlPF60ZuX748Q?pwd=k2gy)
 
-无
++ 修复 微信中通过 <wx-open-launch-app> 开放标签唤起 app 时获取启动参数异常的Bug[详情](https://ask.dcloud.net.cn/question/190840)
 
-[历史版本，提取码: 5jvi](https://pan.baidu.com/s/1BreBqR2ZWw4DUuL9zaf5RQ?pwd=5jvi)
+[历史版本，提取码: dpxp](https://pan.baidu.com/s/1cXFLivHeSUKMorCpGCxZyA?pwd=dpxp)
 
 [历次更新说明](update_history_iOS_alpha.md)
