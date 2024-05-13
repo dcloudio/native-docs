@@ -39,10 +39,10 @@ export default {
 					subTitle: 'uni-id',
 					url: 'https://uniapp.dcloud.net.cn/uniCloud/uni-id',
 				},
-				{
-					subTitle: 'uni-search',
-					url: 'https://ext.dcloud.net.cn/plugin?id=3851',
-				},
+        {
+        	subTitle: 'uni-cdn',
+        	url: 'https://doc.dcloud.net.cn/uniCloud/uni-cdn/intro.html',
+        },
 				{
 					subTitle: 'uni-pay',
 					url: 'https://doc.dcloud.net.cn/uniCloud/uni-pay/uni-app.html',
@@ -90,7 +90,11 @@ export default {
 				{
 					subTitle: 'uniCloud-map',
 					url: 'https://doc.dcloud.net.cn/uniCloud/unicloud-map.html'
-				}
+				},
+        {
+        	subTitle: 'uni-search',
+        	url: 'https://ext.dcloud.net.cn/plugin?id=3851',
+        }
 			],
 		},
 	],
