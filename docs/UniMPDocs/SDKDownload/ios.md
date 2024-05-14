@@ -19,10 +19,12 @@ The recommended method is to put the entire SDK under the project path. When add
 ## 更新日志
 ## Update log
 
-#### SDK 4.08
-[点击下载 UniMP_iOS_SDK](https://web-ext-storage.dcloud.net.cn/unimpsdk/ios/UniMPSDK_iOS@4.08.zip)
+#### SDK 4.15
+[点击下载 UniMP_iOS_SDK](https://web-ext-storage.dcloud.net.cn/unimpsdk/ios/UniMPSDK_iOS@4.15.zip)
 
-+ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/4.08.2024040127.html)
++ 修改逻辑小程序SDK环境不清理 tmp 目录
++ [其他更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/4.15.2024050802.html)
+
 
 ## 历史版本
 ## historic version
@@ -31,6 +33,9 @@ The recommended method is to put the entire SDK under the project path. When add
 
 #### 下载地址
 链接: [https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ](https://pan.baidu.com/s/1UCsDFTc7IdhgCarPmuGHaQ)  密码: edh1
+
+#### SDK 4.08
++ [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/4.08.2024040127.html)
 
 #### SDK 3.99
 + [更新详情](https://download1.dcloud.net.cn/hbuilderx/changelog/3.99.2023122611.html)
