@@ -325,8 +325,8 @@ facebook_app_id 和  fb_login_protocol_scheme
 
 下面是一个完整的示例
 ```xml
-<string name="facebook_app_id">1966893263469923</string>
-<string name="fb_login_protocol_scheme">fb1966893263469923</string>
+<string name="facebook_app_id">xxxxxxxxxxxxxxxx</string>
+<string name="fb_login_protocol_scheme">fbxxxxxxxxxxxxxxxx</string>
 ```
 
 **dcloud_properties.xml需要添加如下代码**
