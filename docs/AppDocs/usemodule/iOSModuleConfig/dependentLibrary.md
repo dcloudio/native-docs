@@ -8,8 +8,8 @@
 |高德定位|v2.10.0|Geolocation/高德定位 |
 |百度地图|v6.6.0|Maps/百度地图 |
 |高德地图|v9.7.0|Maps/高德地图 |
-|微信SDK|v2.0.2|Oauth、Share、Payment/微信|
-|AlipaySDK|v15.8.6|Payment/支付宝|
+|微信SDK|v2.0.4|Oauth、Share、Payment/微信|
+|AlipaySDK|v15.8.18|Payment/支付宝|
 |QQSDK|v3.5.14|Oauth、Share/QQ|
 |新浪微博SDK|v3.3.4|Oauth、Share/新浪微博|
 |又拍云|v4.1.7|LivePusher（直播推流）|
