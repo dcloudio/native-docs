@@ -50,9 +50,8 @@ Channel: you can fill in apple.
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdCsj.xcframework、BUAdSDK.xcframework、BURelyFoundation.xcframework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、DeviceCheck.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
+|DCUniAdCsj.xcframework、BUAdSDK.xcframework、BURelyFoundation.xcframework|Accelerate.framework、AdSupport.framework、AudioToolbox.framework、AVFoundation.framework、CoreGraphics.framework、CoreImage.framework、CoreLocation.framework、CoreMotion.framework、CoreMedia.framework、CoreTelephony.framework、CoreText.framework、ImageIO.framework、JavaScriptCore.framework、MapKit.framework、MediaPlayer.framework、MobileCoreServices.framework、QuartzCore.framework、Security.framework、StoreKit.framework、SystemConfiguration.framework、UIKit.framework、WebKit.framework、DeviceCheck.framework、libbz2.tbd、libc++.tbd、libiconv.tbd、libresolv.9.tbd、libsqlite3.tbd、libxml2.tbd、libz.tbd、libc++abi.tbd|CSJAdSDK.bundle|
 
-注：3.8.0之前的版本依赖库使用:libDCUniAdCsj.a、BUAdSDK.framework、BURelyFoundation.framework、CSJAdSDK.framework
 
 ## 今日头条穿山甲Gromore(3.5.2+版本支持)
 ## Today's headline pangolin Gromore (supported by version 3.5.2+)
@@ -62,9 +61,8 @@ Channel: you can fill in apple.
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdGm.xcframework、BUAdSDK.xcframework、BURelyFoundation.xcframework、CSJAdSDK.xcframework(3.8.10版本废弃)、CSJMediation.xcframework|StoreKit.framework、MobileCoreServices.framework、WebKit.framework、MediaPlayer.framework、CoreMedia.framework、CoreLocation.framework、AVFoundation.framework、CoreTelephony.framework、SystemConfiguration.framework、AdSupport.framework、CoreMotion.framework、JavaScriptCore.framework、DeviceCheck.framework、libresolv.9.tbd、libc++.tbd、libc++abi.tbd、libz.tbd、libsqlite3.tbd|CSJAdSDK.bundle|
+|DCUniAdGm.xcframework、BUAdSDK.xcframework、CSJMediation.xcframework|Accelerate.framework、AdSupport.framework、AudioToolbox.framework、AVFoundation.framework、CoreGraphics.framework、CoreImage.framework、CoreLocation.framework、CoreMotion.framework、CoreMedia.framework、CoreTelephony.framework、CoreText.framework、ImageIO.framework、JavaScriptCore.framework、MapKit.framework、MediaPlayer.framework、MobileCoreServices.framework、QuartzCore.framework、Security.framework、StoreKit.framework、SystemConfiguration.framework、UIKit.framework、WebKit.framework、DeviceCheck.framework、libbz2.tbd、libc++.tbd、libiconv.tbd、libresolv.9.tbd、libsqlite3.tbd、libxml2.tbd、libz.tbd、libc++abi.tbd|CSJAdSDK.bundle|
 
-注：3.8.0之前的版本依赖库使用:libDCUniAdGm.a、ABUAdCsjAdapter.framework、ABUAdSDK.framework、BUAdSDK.framework、BURelyFoundation.framework、CSJAdSDK.framework
 
 ## 腾讯优量汇
 ## Tencent Youlianghui
@@ -89,7 +87,7 @@ Channel: you can fill in apple.
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdKs.xcframework、KSAdSDK.xcframework(动态库)|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd|无|
+|DCUniAdKs.xcframework、KSAdSDK.xcframework(动态库)|Foundation.framework、UIKit.framework、MobileCoreServices.framework、CoreGraphics.framework、Security.framework、SystemConfiguration.framework、CoreTelephony.framework、AdSupport.framework、CoreData.framework、StoreKit.framework、AVFoundation.framework、MediaPlayer.framework、CoreMedia.framework、WebKit.framework、Accelerate.framework、CoreLocation.framework、AVKit.framework、MessageUI.framework、QuickLook.framework、AddressBook.framework、CoreMotion.framework、libz.tbd、libresolv.9.tbd、libsqlite3.tbd、libc++.tbd、libc++abi.tbd|无|
 
 快手广告SDK使用Libs/KSAdSDK.xcframework
 Kuaishou Advertising SDK uses Libs/KSAdSDK.xcframework
@@ -103,7 +101,7 @@ Kuaishou content alliance SDK (including advertising SDK) uses Libs/KSAdSDK.fram
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdSgm.xcframework、WindSDK.xcframework、WindFoundation.xcframework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreMotion.framework、MediaPlayer.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libc++.tbd、libz.tbd、libbz2.1.0.tbd、libsqlite3.tbd|无|
+|DCUniAdSgm.xcframework、WindSDK.xcframework、WindFoundation.xcframework|StoreKit.framework、CFNetwork.framework、CoreMedia.framework、AdSupport.framework、CoreGraphics.framework、AVFoundation.framework、CoreLocation.framework、CoreTelephony.framework、SafariServices.framework、MobileCoreServices.framework、WebKit.framework、SystemConfiguration.framework、ImageIO.framework、libz.tbd、libsqlite3.tbd|无|
 
 ## 百度百青藤(3.4.1+版本支持)
 ## Baidu Baiqingteng (3.4.1+ version support)
