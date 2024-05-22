@@ -74,7 +74,7 @@ Channel: you can fill in apple.
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdGdt.xcframework、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、libz.tbd、libxml2.tbd|无|
+|DCUniAdGdt.xcframework、libGDTMobSDK.a|AdSupport.framework、CoreLocation.framework、QuartzCore.framework、SystemConfiguration.framework、CoreTelephony.framework、Security.framework、StoreKit.framework、AVFoundation.framework、WebKit.framework、JavaScriptCore.framework、libz.tbd、libc++.tbd、libxml2.tbd、sqlite3.tbd|无|
 
 ### 隐私清单
 优量汇的隐私清单需要手动合并到App的隐私清单中内容如下
