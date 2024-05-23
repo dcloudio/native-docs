@@ -467,6 +467,7 @@ buildscript {
 
   dependencies {
     // ...
+    // 注意：如果gradle的版本号大于7.3.0。Google-Services的版本号应该改成4.3.14以上。
     classpath 'com.google.gms:google-services:4.3.10'  // Google Services plugin
   }
 }
@@ -481,6 +482,8 @@ allprojects {
 }
 
 ```
+
+**注意：如果gradle的版本号大于7.3.0。Google-Services的版本号应该改成4.3.14以上。**
 
 **app级的build.gradle设置**
 - 在build.gradle最前面添加下面内容
