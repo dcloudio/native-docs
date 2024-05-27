@@ -1,4 +1,7 @@
 ## 简介
+
+**App原生插件已不再更新维护，推荐插件开发者改用uts插件。uni-app 和 uni-app x 均可使用。[详见](https://doc.dcloud.net.cn/uni-app-x/plugin/uts-plugin.html)**
+
 当HBuilderX中提供的能力无法满足App功能需求，需要通过使用Andorid/iOS原生开发实现时，可使用`App离线SDK`开发原生插件来扩展原生能力。
 
 根据项目类型，可以通过以下方式扩展开发原生插件
