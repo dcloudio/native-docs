@@ -50,7 +50,7 @@ Channel: you can fill in apple.
 |依赖库|系统库|依赖资源|
 |Dependent Libraries|System Libraries|Dependent Resources|
 |:--|:--|:--|
-|DCUniAdCsj.xcframework、BUAdSDK.xcframework、BURelyFoundation.xcframework|Accelerate.framework、AdSupport.framework、AudioToolbox.framework、AVFoundation.framework、CoreGraphics.framework、CoreImage.framework、CoreLocation.framework、CoreMotion.framework、CoreMedia.framework、CoreTelephony.framework、CoreText.framework、ImageIO.framework、JavaScriptCore.framework、MapKit.framework、MediaPlayer.framework、MobileCoreServices.framework、QuartzCore.framework、Security.framework、StoreKit.framework、SystemConfiguration.framework、UIKit.framework、WebKit.framework、DeviceCheck.framework、libbz2.tbd、libc++.tbd、libiconv.tbd、libresolv.9.tbd、libsqlite3.tbd、libxml2.tbd、libz.tbd、libc++abi.tbd|CSJAdSDK.bundle|
+|DCUniAdCsj.xcframework、BUAdSDK.xcframework、CSJMediation.xcframework|Accelerate.framework、AdSupport.framework、AudioToolbox.framework、AVFoundation.framework、CoreGraphics.framework、CoreImage.framework、CoreLocation.framework、CoreMotion.framework、CoreMedia.framework、CoreTelephony.framework、CoreText.framework、ImageIO.framework、JavaScriptCore.framework、MapKit.framework、MediaPlayer.framework、MobileCoreServices.framework、QuartzCore.framework、Security.framework、StoreKit.framework、SystemConfiguration.framework、UIKit.framework、WebKit.framework、DeviceCheck.framework、libbz2.tbd、libc++.tbd、libiconv.tbd、libresolv.9.tbd、libsqlite3.tbd、libxml2.tbd、libz.tbd、libc++abi.tbd|CSJAdSDK.bundle|
 
 
 ## 今日头条穿山甲Gromore(3.5.2+版本支持)
