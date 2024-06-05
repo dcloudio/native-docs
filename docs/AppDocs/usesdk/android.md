@@ -350,6 +350,35 @@ Package name作为应用标志，涉及申请第三方平台账号，一般情�
 		* [定位插件配置](http://ask.dcloud.net.cn/article/213)
 
 -->
+
+## uts插件@utsconfig
+
+**注意：需要HBuilder X 4.18版本及以上。**
+
+如果uni-app项目包括uts原生插件，资源导出之后会在resources目录下新增uni_modules目录。参考：
+
+![](https://web-ext-storage.dcloud.net.cn/native/doc/android/android_unimodules.png)
+
+### 添加uts依赖
+	
+1. 将`utsplugin-release.aar`拷贝到项目的libs目录下
+2. 在app项目的build.gradle中添加如下内容
+	```groovy
+	dependencies {
+	    implementation "com.squareup.okhttp3:okhttp:3.12.12"
+	    implementation "androidx.core:core-ktx:1.6.0"
+	    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
+	    implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.0"
+	    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8"
+	    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.8"
+	    implementation "com.github.getActivity:XXPermissions:18.0"
+	}
+	```
+### 配置uts插件
+
+uts原生插件导入参考[文档](https://doc.dcloud.net.cn/uni-app-x/native/use/android.html#%E9%85%8D%E7%BD%AEuts%E6%8F%92%E4%BB%B6)，将uts插件导入到android项目中。
+
+具体示例可以参考离线打包SDK中的`UniPlugin-Hello-AS`工程。
 	
 ## 运行
 
