@@ -18,14 +18,17 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年05月11日发布——HBuilderX（4.16.2024051009-alpha）
+### 2024年06月05日发布——HBuilderX（4.18.2024053112-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CeVJLJ9ols)，提取码: q4rD
 
-+ 更新uni-app离线打包支持，需使用HBuilderX（4.16.2024051009-alpha）版本生成本地打包App资源。
-+ 更新 登录模块 Facebook SDK 为 17.0.0 版，去除com.google.android.gms.permission.AD_ID权限，解决谷歌审核报您的应用未使用广告 ID的Bug
+* 更新uni-app离线打包支持，需使用HBuilderX（4.18.2024053112-alpha）版本生成本地打包App资源。
+* 更新 uni-AD模块 腾讯优量汇SDK为 4.575.1445 版；穿山甲&GroMore SDK为 6.1.0.4 版；Sigmob广告联盟SDK为 4.17.1 版；百度百青藤广告SDK为 9.35 版
+* 更新 地图/定位模块 高德地图 SDK 为 10.0.700 版，高德定位 SDK 为 6.4.5 版， 解决华为Mate60及后续设备定位失败的Bug [详情](https://ask.dcloud.net.cn/question/187119)
+* 更新 uni实人认证使用的阿里云金融级实人认证SDK为 2.3.16.1 版
+* 修复 uni-AD 信息流广告可能出现的广告加载成功但是无法展示的Bug
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 
