@@ -16,10 +16,11 @@
 
 #### SDK 4.15 版本
 
-[点击下载SDK-Android@4.15.zip](https://web-ext-storage.dcloud.net.cn/unimpsdk/android/SDK-Android@4.15-20240524.zip)
+[点击下载SDK-Android@4.15.zip](https://web-ext-storage.dcloud.net.cn/unimpsdk/android/SDK-Android@4.15-20240606.zip)
 
 #### 更新日志
 
++ [重要] 修复Android平台 修复 应用长时间处于后台可能报错的Bug [详情](https://ask.dcloud.net.cn/question/189480)
 + 其他更新 [详情](https://download1.dcloud.net.cn/hbuilderx/changelog/4.15.2024050802.html)
 
 
