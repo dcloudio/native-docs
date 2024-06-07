@@ -11,13 +11,14 @@
 
 **在app级的build.gradle配置**
 
-```
+```groovy
 dependencies {
+    implementation "com.squareup.okhttp3:okhttp:3.12.12"
     implementation "androidx.core:core-ktx:1.6.0"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.10"
     implementation "org.jetbrains.kotlin:kotlin-reflect:1.6.0"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.8"
-    implementation "com.airbnb.android:lottie:3.4.0"
+    implementation "com.github.getActivity:XXPermissions:18.0"
 }
 ```
