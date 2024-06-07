@@ -32,14 +32,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年05月11日发布——HBuilderX（4.17.2024051110-alpha）
+### 2024年06月07日发布——HBuilderX（4.19.2024060704-alpha）
 
-[和彩云，提取码: mVw5](https://caiyun.139.com/m/i?115CnVKi86DM8)
+[和彩云，提取码: ysQ5](https://caiyun.139.com/m/i?115CnnL1GwDMN)
 
-[百度网盘，提取码: k2gy](https://pan.baidu.com/s/1mz4xO6CHHjlPF60ZuX748Q?pwd=k2gy)
+[百度网盘，提取码: yk6q](https://pan.baidu.com/s/1MVCH_UVOSLYtlSsGefwf1A?pwd=yk6q)
 
-+ 修复 微信中通过 <wx-open-launch-app> 开放标签唤起 app 时获取启动参数异常的Bug[详情](https://ask.dcloud.net.cn/question/190840)
++ 更新 uni-AD模块 腾讯优量汇SDK为 4.14.76 版；快手广告SDK为 3.3.65 版；穿山甲&GroMoreSDK为 6.2.0.0 版；Sigmob广告联盟SDK为 4.13.0 版；
 
-[历史版本，提取码: dpxp](https://pan.baidu.com/s/1cXFLivHeSUKMorCpGCxZyA?pwd=dpxp)
+[历史版本，提取码: tcw9](https://pan.baidu.com/s/1c0-K9hDXy5J-zKELh5NXOA?pwd=tcw9)
 
 [历次更新说明](update_history_iOS_alpha.md)

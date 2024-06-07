@@ -14,7 +14,7 @@
 |友盟UMCommon|v7.4.2|Statistic(友盟统计)|
 |友盟UMAPM|v1.8.4|Statistic(友盟统计)|
 |IJKPlayer|https://gitee.com/dcloud/IJKMediaFramework 源码编译|VideoPlayer（视频播放）|
-|SDWebImage|v5.10.0|基础库/对应的库 libSDWebImage.a |
+|SDWebImage|v5.19.2|基础库/对应的库 libSDWebImage.a |
 |Masonry|1.1.0|VideoPlayer/对应的库 Masonry.framework|
 |SSZipArchive|2.2.3|基础库/对应的库 libcoreSupport.a|
 | ZXing ||Barcode/对应的库 libDCUniZXing.a 源码已修改|
