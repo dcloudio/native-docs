@@ -22,8 +22,7 @@ HBuilderX 3.99及以上版本所需的libs仅为：
 
 ### 需要修改的配置选项
 
-**需要app的build.gradle中配置如下 **
-
+在app的build.gradle中配置
 
 ```js
 android {
@@ -38,15 +37,31 @@ android {
 }
 ```
 
+**HBuilderX 3.99及以上版本，需要增加仓储依赖**
 
-HBuilderX 3.99及以上版本，需要增加仓储依赖
+首先在项目根目录下的build.gradle增加个推仓库源。
+
 ```js
-dependencies {
-    implementation 'com.getui:gtc:3.2.9.0'  //个推核心组件
-    implementation 'com.getui:gysdk:3.1.4.0'
+allprojects {
+	repositories {
+		jcenter()
+		google()
+        // 个推的Maven仓库地址
+        maven { 
+            url 'https://mvn.getui.com/nexus/content/repositories/releases' 
+        }
+	}
 }
 ```
 
+然后在app的build.gradle中配置仓储依赖。
+
+```js
+dependencies {
+    implementation 'com.getui:gtc:3.2.16.0'  //个推核心组件
+    implementation 'com.getui:gysdk:3.1.7.0'
+}
+```
 
 GETUI_APPID与GY_APP_ID对应[开发者中心](https://dev.dcloud.net.cn/)一键登录->基础配置->一键登录应用ID（离线打包使用），GETUI_APPID与GY_APP_ID取值相同。
 
