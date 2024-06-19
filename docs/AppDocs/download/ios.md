@@ -32,14 +32,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年06月07日发布——HBuilderX（4.19.2024060704-alpha）
+### 2024年06月18日发布——HBuilderX（4.21.2024061818-alpha）
 
-[和彩云，提取码: ysQ5](https://caiyun.139.com/m/i?115CnnL1GwDMN)
+[和彩云，提取码: qEv0](https://caiyun.139.com/m/i?115CnWx5dzhbq)
 
-[百度网盘，提取码: yk6q](https://pan.baidu.com/s/1MVCH_UVOSLYtlSsGefwf1A?pwd=yk6q)
+[百度网盘，提取码: 4tit](https://pan.baidu.com/s/1Udg8nXjeZXrVKMqVdI0n0g?pwd=4tit)
 
-+ 更新 uni-AD模块 腾讯优量汇SDK为 4.14.76 版；快手广告SDK为 3.3.65 版；穿山甲&GroMoreSDK为 6.2.0.0 版；Sigmob广告联盟SDK为 4.13.0 版；
+无
 
-[历史版本，提取码: tcw9](https://pan.baidu.com/s/1c0-K9hDXy5J-zKELh5NXOA?pwd=tcw9)
+[历史版本，提取码: 2a9b](https://pan.baidu.com/s/1MdmLrMX4pkkSOPa9ssjevQ?pwd=2a9b)
 
 [历次更新说明](update_history_iOS_alpha.md)
