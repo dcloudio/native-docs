@@ -62,6 +62,69 @@ services节点下添加
 	<service name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.StatisticsBootImpl"/>
 ```
 
+
+## 友盟统计-google play
+
+### Androidmainfest.xml文件需要修改的项
+**需要在application节点前添加权限**
+
+```xml
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />,
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />,
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />,
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+**application节点内配置如下代码**
+```xml
+<meta-data            
+    android:name="UMENG_APPKEY"
+    android:value="%appkey_android%" />
+<meta-data            
+    android:name="UMENG_CHANNEL"
+    android:value="%channelid_android%" />"
+```
+
+其中`appkey_android`、`channelid_android`分别为友盟平台的appkey和渠道id，请开发者根据自身信息填写。
+
+
+**需要引入工程的jar、aar文件**
+
+需要将以下jar、aar文件放到工程的libs目录下
+
+| 路径 | 文件 | 
+| :-------: | :-------: |
+| SDK\libs | statistic-release.aar, statistic-umeng-release-gp.aar|
+
+
+**通过gradle集成友盟SDK**
+
+在主工程的build.gradle文件配置dependencies
+```
+dependencies {
+    implementation 'com.umeng.umsdk:apm:1.9.5'
+}
+```
+
+**dcloud_properties.xml需要添加如下代码**
+
+dcloud_properties.xml文件在assets/data目录下
+
+``` xml
+<feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl">
+	<module name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.UmengStatistics" />
+</feature>
+```
+services节点下添加
+
+```xml
+	<service name="Statistic-Umeng" value="io.dcloud.feature.statistics.umeng.StatisticsBootImpl"/>
+```
+
+
+
+
+
 ## 谷歌统计
 
 ### Gradle配置
