@@ -18,15 +18,14 @@
 
 ## Android 离线SDK - Alpha版
 
-### 2024年06月07日发布——HBuilderX（4.19.2024060704-alpha）
+### 2024年06月19日发布——HBuilderX（4.21.2024061818-alpha）
 
 [百度云](https://pan.baidu.com/s/1IQDhk2MhPf8AG9eXxfnGew?pwd=929t) ，提取码: 929t
 
 [和彩云](https://caiyun.139.com/m/i?115CnrGjAyY22)，提取码: QNcU
 
-* 更新uni-app离线打包支持，需使用HBuilderX（4.19.2024060704-alpha）版本生成本地打包App资源。
-* 更新 一键登录、UniPush 使用的个推核心组件 SDK 为 3.2.16.0 版，一键登录 使用的个验SDK为 3.1.7.0 版，UniPush 使用的个推SDK为 3.3.7.0 版，适配小米应用商店的隐私合规要求
-
+* 更新uni-app离线打包支持，需使用HBuilderX（4.21.2024061818-alpha）版本生成本地打包App资源。
+* 更新 统计模块 google渠道友盟统计 SDK 为 9.6.8 版，解决可能无法通过 GooglePlay 审核的问题 [详情](https://ask.dcloud.net.cn/question/189922)
 
 [历史版本](https://pan.baidu.com/s/1KtOCtMZJSgfAayHNjTpdTg?pwd=4hvi)
 

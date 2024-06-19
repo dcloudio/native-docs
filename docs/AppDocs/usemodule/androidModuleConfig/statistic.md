@@ -105,7 +105,7 @@ Add under the services node
 
 | 路径 | 文件 | 
 | :-------: | :-------: |
-| SDK\libs | statistic-release.aar, statistic-umeng-release-gp.aar|
+| SDK\libs | statistic-release.aar, statistic-umeng-gp-release.aar|
 
 
 **通过gradle集成友盟SDK**
