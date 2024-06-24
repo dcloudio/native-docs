@@ -103,7 +103,7 @@ export default {
 			title: '运营产品',
 			content: [
 				{
-					subTitle: 'uni-AD',
+					subTitle: 'uni-ad',
 					url: 'https://uniad.dcloud.net.cn/login',
 				},
 				{
