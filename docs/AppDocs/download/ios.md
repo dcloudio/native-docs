@@ -32,14 +32,14 @@
 
 ## iOS 离线SDK - Alpha版
 
-### 2024年06月18日发布——HBuilderX（4.21.2024061818-alpha）
+### 2024年06月24日发布——HBuilderX（4.22.2024062415-alpha）
 
-[和彩云，提取码: qEv0](https://caiyun.139.com/m/i?115CnWx5dzhbq)
+[和彩云，提取码: phdA](https://caiyun.139.com/m/i?115CopKDM9CL8)
 
-[百度网盘，提取码: 4tit](https://pan.baidu.com/s/1Udg8nXjeZXrVKMqVdI0n0g?pwd=4tit)
+[百度网盘，提取码: z5wu](https://pan.baidu.com/s/17PsCdDEMYGp_I29mErsRbw?pwd=z5wu)
 
 无
 
-[历史版本，提取码: 2a9b](https://pan.baidu.com/s/1MdmLrMX4pkkSOPa9ssjevQ?pwd=2a9b)
+[历史版本，提取码: mewk](https://pan.baidu.com/s/14D7VbdN0L16r5S8es3MuxQ?pwd=mewk)
 
 [历次更新说明](update_history_iOS_alpha.md)
