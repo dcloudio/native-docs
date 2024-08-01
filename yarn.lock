@@ -8877,10 +8877,10 @@ term-size@^2.1.0:
   resolved "https://registry.npmmirror.com/term-size/-/term-size-2.2.1.tgz#2a6a54840432c2fb6320fea0f415531e90189f54"
   integrity sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==
 
-terser-webpack-plugin@^1.4.3:
-  version "1.4.5"
-  resolved "https://registry.npmmirror.com/terser-webpack-plugin/-/terser-webpack-plugin-1.4.5.tgz#a217aefaea330e734ffacb6120ec1fa312d6040b"
-  integrity sha512-04Rfe496lN8EYruwi6oPQkG0vo8C+HT49X687FZnpPF0qMAIHONI6HEXYPKDOE8e5HjXTyKfqRd/agHtH0kOtw==
+terser-webpack-plugin@1.4.6, terser-webpack-plugin@^1.4.3:
+  version "1.4.6"
+  resolved "https://registry.npmmirror.com/terser-webpack-plugin/-/terser-webpack-plugin-1.4.6.tgz#87fcb6593fd1c977cd09e56143ecd31404600755"
+  integrity sha512-2lBVf/VMVIddjSn3GqbT90GvIJ/eYXJkt8cTzU7NbjKqK8fwv18Ftr4PlbF46b/e88743iZFL5Dtr/rC4hjIeA==
   dependencies:
     cacache "^12.0.2"
     find-cache-dir "^2.1.0"
@@ -9490,10 +9490,10 @@ vuepress-plugin-container@^2.0.2:
     "@vuepress/shared-utils" "^1.2.0"
     markdown-it-container "^2.0.0"
 
-vuepress-plugin-expandable-row@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmmirror.com/vuepress-plugin-expandable-row/-/vuepress-plugin-expandable-row-1.0.6.tgz#7d188f7146872b5b14df32d4d2d52a260ab5a624"
-  integrity sha512-ok3VurXWFZaHjMOzgvmi9PIwC9JCecXg1fsH/F+oxfn6mwB16OMummHIv6bde3v+xBob6Tb4pBbSJGHzJcu1vQ==
+vuepress-plugin-expandable-row@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-expandable-row/-/vuepress-plugin-expandable-row-1.0.9.tgz#97a74741c13df062af090208fd09544444e25d13"
+  integrity sha512-CSLv5eRLRARuHUec6y3uzf4HnFRmiGls7O1WAery8pBGmK4DXnrBcHENNtBtsIWAuSOtE8vSNtjTJTJtBXOXmw==
 
 vuepress-plugin-juejin-style-copy@^1.0.4:
   version "1.0.4"
@@ -9528,10 +9528,10 @@ vuepress-plugin-zooming@^1.1.8:
   dependencies:
     zooming "^2.1.1"
 
-vuepress-theme-uniapp-official@^1.4.15:
-  version "1.4.15"
-  resolved "https://registry.npmmirror.com/vuepress-theme-uniapp-official/-/vuepress-theme-uniapp-official-1.4.15.tgz#9af69902b83bb6f078215d2138c79555e877b1a8"
-  integrity sha512-yP0Imb9MksiFhOV8jfntWyjKADPpuEXmBFCP0bwQUznDQyce8IM3wXp5PLQeDPunUDDjLkYfzS0t1UHBYWzFIA==
+vuepress-theme-uniapp-official@^1.4.25:
+  version "1.4.25"
+  resolved "https://registry.npmmirror.com/vuepress-theme-uniapp-official/-/vuepress-theme-uniapp-official-1.4.25.tgz#0985eb8ca54e2d6a43dcc8c99cf985d7b2ce7764"
+  integrity sha512-OWX0QUUI+MAtkmBwUFJeQ/l0/sxgBwPj+rjkroCZ8GAffyev5ejh7wKyoCirhWyI4F1NWIR22Tp87FstfURLoA==
   dependencies:
     "@docsearch/css" "^3.6.0"
     "@vuepress/plugin-back-to-top" "^1.9.5"
@@ -9541,7 +9541,7 @@ vuepress-theme-uniapp-official@^1.4.15:
     markdown-it-raw-table "^1.0.0"
     markdown-it-task-lists "^2.1.1"
     vuepress-plugin-check-md2 "^1.0.5"
-    vuepress-plugin-expandable-row "^1.0.6"
+    vuepress-plugin-expandable-row "^1.0.9"
     vuepress-plugin-juejin-style-copy "^1.0.4"
     vuepress-plugin-mermaidjs "1.9.1"
     vuepress-plugin-named-chunks "^1.1.4"

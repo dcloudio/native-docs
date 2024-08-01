@@ -31,7 +31,10 @@
     "htmlparser2": "^9.0.0"
   },
   "dependencies": {
-    "vuepress-theme-uniapp-official": "^1.4.15",
+    "vuepress-theme-uniapp-official": "^1.4.25",
 		"vuepress": "1.9.9"
+  },
+  "resolutions": {
+    "terser-webpack-plugin": "1.4.6"
   }
 }

@@ -13,7 +13,7 @@ function parseBar(tab, file, options) {
   const linkName = options.link || 'link'
   const contents = []
 
-  new MarkdownIt().parse(fs.readFileSync(file, { encoding: 'utf-8' }).replace(/<!--([\s\S]*?)-->/g, '')).forEach(token => {
+  new MarkdownIt().parse(fs.readFileSync(file, { encoding: 'utf-8' }).replace(/<!--([\s\S]*?)-->/g, '').replace(/\t/g, '  ')).forEach(token => {
     if (token.type === 'inline') {
       let text
       let link
