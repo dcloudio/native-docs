@@ -68,7 +68,7 @@ const config = {
         'objective-c': 'objc'
       }
       config.options.highlight((str, lang) => {
-        const extension = extensionMap[lang]
+        const extension = extensionMap[lang.toLowerCase()]
         return highlight(str, extension || lang)
       })
 
